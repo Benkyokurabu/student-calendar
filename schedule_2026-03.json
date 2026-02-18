@@ -2013,6 +2013,28 @@
     "label": "中３S 数学"
   },
   {
+    "date": "2026-03-28",
+    "time": "2:55～4:25",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_S_math",
+    "label": "中３S 数学"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_A_math",
+    "label": "中３A 数学"
+  },
+  {
     "date": "2026-03-30",
     "time": "4:55～6:15",
     "grade": "e6",
@@ -4134,6 +4156,50 @@
     "room": "1",
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "4:45～6:15",
+    "grade": "j1",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j1_A_eng",
+    "label": "中１A 英語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_B_math",
+    "label": "中１B 数学"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_eng",
+    "label": "中３A 英語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_math",
+    "label": "中３A 数学"
   },
   {
     "date": "2026-03-30",
