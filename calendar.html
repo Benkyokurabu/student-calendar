@@ -12,8 +12,10 @@
       color: #111827;
     }
 
+    /* 画面幅でのはみ出し防止（スマホ対策） */
     *, *::before, *::after { box-sizing: border-box; }
 
+    /* スマホ時にカレンダーが枠からはみ出るのを防ぐ：横スクロールで保持 */
     .cal-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .cal-inner { min-width: 560px; width: 100%; }
 
@@ -25,6 +27,7 @@
       .card { padding: 14px 14px; }
       select { min-width: 140px; }
 
+      /* ★曜日と日付の列位置を揃えるため、gap/padを変数で共有 */
       .cal-wrap { --cal-gap: 4px; --cal-pad: 0px; }
       .cell { min-height: 78px; padding: 6px; }
 
@@ -39,7 +42,7 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
     h1 { margin: 0 0 8px 0; font-size: 18px; }
-    h2 { margin: 0 0 12px 0; font-size: 15px; }
+    h2 { margin: 0; font-size: 15px; }
     .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
     select, button { font-size: 14px; }
     select {
@@ -115,8 +118,38 @@
       font-size: 13px;
     }
 
+    .footer-note { margin-top: 10px; font-size: 12px; color: #6b7280; }
+    code { background: #f3f4f6; padding: 1px 6px; border-radius: 6px; }
+
+    /* ★「月間カレンダー」見出し行：右側に注意文を置く */
+    .cal-header{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap; /* スマホで右側が下段に回り込む */
+    }
+    .cal-header .note-right{
+      margin: 0;
+      font-size: 12px;
+      color: #6b7280;
+      text-align: right;
+      white-space: nowrap; /* PCでは1行維持 */
+    }
+    @media (max-width: 520px){
+      .cal-header .note-right{
+        text-align: left;
+        white-space: normal; /* スマホでは折り返し可 */
+      }
+    }
+
     /* ===== 月間カレンダー ===== */
+
+    /* ★曜日と日付の列位置ズレを防ぐための共有変数（PC既定） */
     .cal-wrap { --cal-gap: 8px; --cal-pad: 0px; display: grid; gap: 10px; }
+
+    /* ★曜日行と日付グリッドの「同一ラッパ」 */
     .cal-panel { padding: var(--cal-pad); }
 
     .dow {
@@ -133,10 +166,12 @@
     .dow div.sun { color: #b91c1c; font-weight: 700; }
     .dow div.sat { color: #1d4ed8; font-weight: 700; }
 
+    /* 週末うっすら色分け */
     .cell.sun:not(.off) { background: #fff7f7; }
     .cell.sat:not(.off) { background: #f3f8ff; }
     .cell.sun:hover:not(.off), .cell.sat:hover:not(.off) { filter: brightness(0.99); }
 
+    /* 今日 */
     .cell.today:not(.off) { border-color: #93c5fd; }
     .cell.today .date-num {
       display: inline-flex;
@@ -151,6 +186,7 @@
       line-height: 1;
     }
 
+    /* 授業あり日のアクセント（控えめ） */
     .cell.has-lessons:not(.off)::before {
       content: "";
       position: absolute;
@@ -162,6 +198,7 @@
       background: rgba(37, 99, 235, 0.35);
     }
 
+    /* ====== マス内：複数授業を全部表示（時間順） ====== */
     .lesson-list {
       display: flex;
       flex-direction: column;
@@ -207,6 +244,7 @@
       border: 1px solid #e5e7eb;
     }
 
+    /* 科目別カラー（薄め） */
     .subj-arith { border-color: #99f6e4; background: #f0fdfa; }
     .subj-arith .sub-tag { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
 
@@ -225,6 +263,7 @@
     .subj-soc { border-color: #fecdd3; background: #fff1f2; }
     .subj-soc .sub-tag { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
 
+    /* sub-tag を単体でも使えるように */
     .sub-tag.subj-arith { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
     .sub-tag.subj-math  { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
     .sub-tag.subj-eng   { background: #dcfce7; border-color: #86efac; color: #166534; }
@@ -232,13 +271,16 @@
     .sub-tag.subj-sci   { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
     .sub-tag.subj-soc   { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
 
+    /* ====== 日別詳細：読みやすく（ゼブラ＋時間強調） ====== */
     tbody tr:nth-child(even) td { background: #fcfdff; }
     td.col-time { font-weight: 900; color: #111827; font-size: 14px; letter-spacing: .2px; }
 
+    /* クリック後のフィードバック */
     #dayDetailArea.flash .card {
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
     }
 
+    /* ★日付グリッドも曜日行と同じ列定義・同じgap・同じ横padにする */
     .grid {
       display: grid;
       grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -260,7 +302,10 @@
       transition: background 0.12s ease, border-color 0.12s ease, transform 0.06s ease;
       min-width: 0;
     }
-    .cell:hover { background: #f9fafb; border-color: #d1d5db; }
+    .cell:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
     .cell:active { transform: translateY(1px); }
     .cell.off {
       background: #f8fafc;
@@ -302,14 +347,25 @@
     }
     .firstline.muted { color: #9ca3af; }
 
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 8px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
-    th { text-align: left; color: #374151; font-weight: 700; background: #f9fafb; }
+    /* ===== 日別詳細 ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    th {
+      text-align: left;
+      color: #374151;
+      font-weight: 700;
+      background: #f9fafb;
+    }
     .nowrap { white-space: nowrap; }
     .right { text-align: right; }
-
-    .footer-note { margin-top: 10px; font-size: 12px; color: #6b7280; }
-    code { background: #f3f4f6; padding: 1px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
@@ -344,7 +400,10 @@
   </div>
 
   <div class="card">
-    <h2>授業を選択（学年 → 科目 → クラス）</h2>
+    <div class="cal-header">
+      <h2>授業を選択（学年 → 科目 → クラス）</h2>
+      <p class="note-right"></p>
+    </div>
     <div id="subjectArea" class="subject-grid"></div>
     <div id="hintArea" class="muted" style="margin-top:10px;"></div>
   </div>
@@ -352,7 +411,12 @@
   <div id="statusArea"></div>
 
   <div class="card">
-    <h2>月間カレンダー</h2>
+    <!-- ★ここを変更：注意文を右側（または折り返しで下段）へ -->
+    <div class="cal-header">
+      <h2>月間カレンダー</h2>
+      <p class="note-right">※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。</p>
+    </div>
+
     <div class="cal-wrap">
       <div class="cal-scroll">
         <div class="cal-inner">
@@ -364,9 +428,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-note">
-      ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
     </div>
   </div>
 
@@ -425,6 +486,7 @@
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
+  // 校舎込みクラス（案2）
   function makeClassToken(campusMode, campusCode, cls) {
     const c = String(cls || "").trim();
     if (!c) return "";
@@ -480,7 +542,10 @@
   campusSelect.addEventListener("change", () => {
     const prevCampus = state.campus;
     state.campus = campusSelect.value;
+
+    // campus切替で選択の意味が変わるため安全に移行
     migrateSelectionsForCampusMode(prevCampus, state.campus);
+
     saveState();
     rebuildUI();
     renderAll();
@@ -531,6 +596,7 @@
       }
     } catch (e) {}
 
+    // 旧データ互換：campus=allでクラスだけ保存されていたら削る（混在防止）
     if (state.campus === "all") {
       for (const k of Object.keys(state.selected)) {
         const s = state.selected[k];
@@ -828,20 +894,19 @@
     const subj = lesson.subject;
     const time = timeStart(lesson.time);
     const room = lesson.room ? `${lesson.room}` : "";
-    const cls = lesson.class || "";
     const campus = lesson.campus || "";
 
     return `
       <div class="lesson-item ${subjectCss(subj)}">
         <span class="lesson-time">${escapeHtml(time)}</span>
         <span class="sub-tag ${subjectCss(subj)}">${escapeHtml(SUBJECT_LABEL[subj] || subj)}</span>
-        <span class="cls-tag">${escapeHtml(cls)}</span>
+        <span class="cls-tag">${escapeHtml(lesson.class || "")}</span>
         <span class="campus-tag">${escapeHtml(campusShort(campus))}${escapeHtml(room)}</span>
       </div>
     `;
   }
 
-  /* ★変更点：授業欄にはクラスだけ表示（教室番号は右列にあるので不要） */
+  /* 授業欄にはクラスだけ表示（教室番号は右列にあるので不要） */
   function detailMainLabel(it) {
     const cls = it.class || "";
     return `${cls}`;
