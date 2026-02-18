@@ -329,7 +329,8 @@
 
     <div class="footer-note">
       ※ 学年を選ぶと、その月に存在する授業だけが「科目→クラス」で選べます。<br/>
-      ※ 中1・中2・小学生は、理科／社会は表示されません（今年度の開講なし前提）。
+      ※ 中1・中2・小学生は、理科／社会は表示されません（今年度の開講なし前提）。<br/>
+      ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
     </div>
   </div>
 
@@ -348,9 +349,6 @@
         <div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div>
       </div>
       <div id="monthGrid" class="grid"></div>
-    </div>
-    <div class="footer-note">
-      ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
     </div>
   </div>
 
@@ -853,7 +851,7 @@
   }
 
   function detailMainLabel(lesson) {
-    // 旧版に寄せて「クラスのみ」表示（教室は右列にあるため）
+    // 「クラスのみ」表示（教室は右列）
     return `${(lesson.class || "").trim()}`;
   }
 
