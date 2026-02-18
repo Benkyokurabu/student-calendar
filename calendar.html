@@ -21,9 +21,7 @@
     h1 { margin: 0 0 8px 0; font-size: 18px; }
     h2 { margin: 0 0 12px 0; font-size: 15px; }
     .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-    select, button {
-      font-size: 14px;
-    }
+    select, button { font-size: 14px; }
     select {
       padding: 6px 10px;
       border-radius: 10px;
@@ -41,7 +39,6 @@
     button:hover { background: #f3f4f6; }
     .muted { color: #6b7280; font-size: 13px; }
     #filterSummary{ font-weight:700; color:#111827; }
-
 
     .pill {
       display: inline-block;
@@ -113,12 +110,10 @@
     .dow div.sun { color: #b91c1c; font-weight: 700; }
     .dow div.sat { color: #1d4ed8; font-weight: 700; }
 
-    /* 週末うっすら色分け（A:おすすめ） */
     .cell.sun:not(.off) { background: #fff7f7; }
     .cell.sat:not(.off) { background: #f3f8ff; }
     .cell.sun:hover:not(.off), .cell.sat:hover:not(.off) { filter: brightness(0.99); }
 
-    /* 今日（A:おすすめ） */
     .cell.today:not(.off) { border-color: #93c5fd; }
     .cell.today .date-num {
       display: inline-flex;
@@ -133,7 +128,6 @@
       line-height: 1;
     }
 
-    /* 授業あり日のアクセント（控えめ） */
     .cell.has-lessons:not(.off)::before {
       content: "";
       position: absolute;
@@ -145,7 +139,6 @@
       background: rgba(37, 99, 235, 0.35);
     }
 
-    /* ====== マス内：複数授業を全部表示（時間順） ====== */
     .lesson-list {
       display: flex;
       flex-direction: column;
@@ -210,7 +203,6 @@
     .subj-soc { border-color: #fecdd3; background: #fff1f2; }
     .subj-soc .sub-tag { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
 
-    /* sub-tag を単体でも使えるように（表の中など） */
     .sub-tag.subj-arith { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
     .sub-tag.subj-math  { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
     .sub-tag.subj-eng   { background: #dcfce7; border-color: #86efac; color: #166534; }
@@ -218,11 +210,9 @@
     .sub-tag.subj-sci   { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
     .sub-tag.subj-soc   { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
 
-    /* ====== 日別詳細：読みやすく（ゼブラ＋時間強調） ====== */
     tbody tr:nth-child(even) td { background: #fcfdff; }
     td.col-time { font-weight: 900; color: #111827; font-size: 14px; letter-spacing: .2px; }
 
-    /* D: クリック後のフィードバック（軽いハイライト） */
     #dayDetailArea.flash .card {
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
     }
@@ -289,19 +279,6 @@
       width:fit-content;
     }
 
-    .firstline {
-      font-size: 12px;
-      color: #111827;
-      line-height: 1.25;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;   /* 2行まで（ただしQ1=Bなので基本1行。長い時に2行保険） */
-      -webkit-box-orient: vertical;
-      word-break: break-word;
-    }
-    .firstline.muted { color: #9ca3af; }
-
-    /* ===== 日別詳細 ===== */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -381,16 +358,14 @@
 
 <script>
 (() => {
-  // ====== 設定（固定仕様） ======
+  // ====== 設定 ======
   const STORAGE_KEY = "benkyo_student_calendar_v3";
 
-  // 学年コード → 表示
   const GRADE_LABEL = {
     e4: "小4", e5: "小5", e6: "小6",
     j1: "中1", j2: "中2", j3: "中3",
   };
 
-  // 科目コード → 表示
   const SUBJECT_LABEL = {
     arith: "算数",
     math: "数学",
@@ -399,6 +374,7 @@
     sci: "理科",
     soc: "社会",
   };
+
   // クラス表示順（S→A→B→X→C）
   const CLASS_ORDER = ["S","A","B","X","C"];
   const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
@@ -406,15 +382,7 @@
     const k = String(c || "").trim();
     return (k in CLASS_RANK) ? CLASS_RANK[k] : 999;
   }
-  function classSort(a,b){
-    return (classRank(a) - classRank(b)) || String(a).localeCompare(String(b));
-  }
-  function sortClasses(arr){
-    return (arr || []).slice().sort(classSort);
-  }
 
-
-  // 学年ごとの「選べる科目」（UIルール）
   const ALLOWED_SUBJECTS_BY_GRADE = {
     e4: ["arith", "eng", "jp"],
     e5: ["arith", "eng", "jp"],
@@ -440,31 +408,45 @@
   document.getElementById("todayBtn").addEventListener("click", () => setToThisMonth());
   document.getElementById("clearBtn").addEventListener("click", () => clearSelections());
 
-  gradeSelect.addEventListener("change", () => {
-    state.grade = gradeSelect.value;
-    // 学年が変わったら、選択日もリセット（混乱防止）
-    state.selectedDate = null;
-    saveState();
-    rebuildUI();
-    renderAll();
-  });
-
-  campusSelect.addEventListener("change", () => {
-    state.campus = campusSelect.value; // all/hon/minami
-    // 校舎変更でも選択日は維持（その日が消えるなら詳細は空になる）
-    saveState();
-    renderAll();
-  });
-
-  // ====== 状態 ======
+  // ====== 日付 ======
   const today = new Date();
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
-  // state.selected: { [subjectCode]: Set(classLetter) }
+  // ====== 校舎込みトークン（旧版方式） ======
+  // campusMode = all の時だけ token = "hon:S" / "minami:S" のように分ける
+  function makeClassToken(campusMode, campusCode, cls) {
+    const c = String(cls || "").trim();
+    if (!c) return "";
+    if (campusMode === "all") return `${campusCode}:${c}`;
+    return c; // hon/minami の時は "S" のまま
+  }
+  function parseClassToken(token) {
+    const s = String(token || "").trim();
+    const m = s.match(/^(hon|minami):(.+)$/);
+    if (!m) return { campus: null, cls: s };
+    return { campus: m[1], cls: m[2] };
+  }
+  function campusLabel(code) {
+    if (code === "hon") return "本校";
+    if (code === "minami") return "南教室";
+    return code || "";
+  }
+  function campusShort(code) {
+    if (code === "hon") return "本";
+    if (code === "minami") return "南";
+    return (code || "").toString();
+  }
+  function classTokenLabel(token) {
+    const { campus, cls } = parseClassToken(token);
+    if (!campus) return cls;
+    return `${campusLabel(campus)}${cls}`;
+  }
+
+  // ====== 状態 ======
   let state = {
     grade: "j3",
-    campus: "all",
+    campus: "all",      // all/hon/minami
     selectedDate: null, // "YYYY-MM-DD"
     selected: {
       jp: new Set(),
@@ -476,7 +458,54 @@
     }
   };
 
-  let allLessons = []; // その月の schedule_YYYY-MM.json
+  let allLessons = [];
+
+  gradeSelect.addEventListener("change", () => {
+    state.grade = gradeSelect.value;
+    state.selectedDate = null;
+    saveState();
+    rebuildUI();
+    renderAll();
+  });
+
+  campusSelect.addEventListener("change", () => {
+    const prevCampus = state.campus;
+    state.campus = campusSelect.value; // all/hon/minami
+    migrateSelectionsForCampusMode(prevCampus, state.campus);
+    saveState();
+    rebuildUI();
+    renderAll();
+  });
+
+  // campusモード切替時の選択移行（旧版方式そのまま）
+  function migrateSelectionsForCampusMode(prevCampus, nextCampus) {
+    for (const subj of Object.keys(state.selected)) {
+      const s = state.selected[subj];
+      if (!(s instanceof Set)) continue;
+      const nextSet = new Set();
+
+      // all -> hon/minami： "hon:S" から "S" へ（対象キャンパスのみ）
+      if (prevCampus === "all" && (nextCampus === "hon" || nextCampus === "minami")) {
+        for (const token of s) {
+          const p = parseClassToken(token);
+          if (p.campus === nextCampus && p.cls) nextSet.add(p.cls);
+        }
+        state.selected[subj] = nextSet;
+        continue;
+      }
+
+      // hon/minami -> all： "S" から "hon:S" or "minami:S" へ（元キャンパスを付与）
+      if ((prevCampus === "hon" || prevCampus === "minami") && nextCampus === "all") {
+        for (const token of s) {
+          const p = parseClassToken(token);
+          const cls = p.cls;
+          if (cls) nextSet.add(makeClassToken("all", prevCampus, cls));
+        }
+        state.selected[subj] = nextSet;
+        continue;
+      }
+    }
+  }
 
   // ====== 保存/復元 ======
   function loadState() {
@@ -487,10 +516,7 @@
 
       if (obj.grade && GRADE_LABEL[obj.grade]) state.grade = obj.grade;
       if (obj.campus && ["all","hon","minami"].includes(obj.campus)) state.campus = obj.campus;
-
-      if (typeof obj.selectedDate === "string" || obj.selectedDate === null) {
-        state.selectedDate = obj.selectedDate;
-      }
+      if (typeof obj.selectedDate === "string" || obj.selectedDate === null) state.selectedDate = obj.selectedDate;
 
       if (obj.selected && typeof obj.selected === "object") {
         for (const k of Object.keys(state.selected)) {
@@ -501,6 +527,17 @@
     } catch (e) {
       // 破損していても落とさない
     }
+
+    // allモードなのに "S" だけが混ざっている古い状態は捨てる（旧版HTMLと同じ処理）
+    if (state.campus === "all") {
+      for (const k of Object.keys(state.selected)) {
+        const s = state.selected[k];
+        if (!(s instanceof Set)) continue;
+        for (const token of Array.from(s)) {
+          if (!String(token).includes(":")) s.delete(token);
+        }
+      }
+    }
   }
 
   function saveState() {
@@ -510,9 +547,7 @@
       selectedDate: state.selectedDate,
       selected: {},
     };
-    for (const k of Object.keys(state.selected)) {
-      out.selected[k] = Array.from(state.selected[k]);
-    }
+    for (const k of Object.keys(state.selected)) out.selected[k] = Array.from(state.selected[k]);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(out));
   }
 
@@ -531,7 +566,6 @@
     const [y, m] = currentYM.split("-").map(Number);
     const d = new Date(y, m - 1 + delta, 1);
     currentYM = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
-    // 月が変わったら選択日もクリア（別月の同日誤表示を防ぐ）
     state.selectedDate = null;
     saveState();
     loadMonth(currentYM);
@@ -559,8 +593,6 @@
 
   // ====== データ読み込み ======
   async function fetchJsonForMonth(ym) {
-    // calendar.html と JSON の置き場所がずれるケース（GitHub Pages のサブフォルダ運用等）に備えて、
-    // いくつかの候補パスを順に試します。どれか1つでも見つかればOKです。
     const candidates = [
       `schedule_${ym}.json`,
       `./schedule_${ym}.json`,
@@ -571,7 +603,7 @@
 
     const tried = [];
     for (const base of candidates) {
-      const url = `${base}?ts=${Date.now()}`; // キャッシュ回避（軽いのでOK）
+      const url = `${base}?ts=${Date.now()}`;
       tried.push(url);
       try {
         const res = await fetch(url, { cache: "no-store" });
@@ -579,9 +611,7 @@
         const data = await res.json();
         if (!Array.isArray(data)) throw new Error("JSON形式エラー: 配列ではありません");
         return data;
-      } catch (_) {
-        // 次の候補へ
-      }
+      } catch (_) {}
     }
 
     throw new Error(
@@ -607,7 +637,6 @@
       allLessons = [];
       rebuildUI();
       renderAll();
-
       statusArea.innerHTML = `
         <div class="card error">
           <div><b>${ymToLabel(ym)}のデータが読み込めませんでした。</b></div>
@@ -621,28 +650,28 @@
   }
 
   function normalizeLessons(list) {
-    // 必須フィールドを揃える（壊れていても落とさない）
     return list.map(x => ({
       date: x.date || "",
       time: x.time || "",
       grade: x.grade || "",
-      class: (x.class || "").toString().trim(),     // "S"など
+      class: (x.class || "").toString().trim(),
       subject: x.subject || "",
-      campus: x.campus || "",                       // "hon"/"minami"
-      room: (x.room || "").toString().trim(),       // "3"
+      campus: x.campus || "",
+      room: (x.room || "").toString().trim(),
       groupKey: x.groupKey || "",
       label: x.label || "",
-    })).filter(x => x.date && x.time && x.grade && x.subject); // 最低限
+    })).filter(x => x.date && x.time && x.grade && x.subject);
   }
 
-  // ====== UI再構築（学年→科目→クラス） ======
+  // ====== UI再構築 ======
   function rebuildGradeSelect() {
     const grades = Object.keys(GRADE_LABEL);
     gradeSelect.innerHTML = grades.map(g => `<option value="${g}">${GRADE_LABEL[g]}</option>`).join("");
     gradeSelect.value = state.grade;
   }
 
-  function getMonthAvailableClassesBySubject(grade) {
+  // ★ここが肝：allなら hon:S / minami:S を両方候補に出す
+  function getMonthAvailableOptionsBySubject(grade, campusMode) {
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const map = {};
     for (const subj of Object.keys(SUBJECT_LABEL)) map[subj] = new Set();
@@ -650,8 +679,13 @@
     for (const l of allLessons) {
       if (l.grade !== grade) continue;
       if (!allowed.has(l.subject)) continue;
+      if (campusMode !== "all" && l.campus !== campusMode) continue;
+
       const cls = (l.class || "").trim();
-      if (cls) map[l.subject].add(cls);
+      if (!cls) continue;
+
+      const token = makeClassToken(campusMode, l.campus, cls);
+      if (token) map[l.subject].add(token);
     }
     return map;
   }
@@ -661,14 +695,26 @@
 
     const grade = state.grade;
     const allowedSubjects = ALLOWED_SUBJECTS_BY_GRADE[grade] || [];
-    const availableMap = getMonthAvailableClassesBySubject(grade);
+    const availableMap = getMonthAvailableOptionsBySubject(grade, state.campus);
 
     let any = false;
 
     for (const subj of allowedSubjects) {
-      const availableClasses = sortClasses(Array.from(availableMap[subj] || []));
-      if (availableClasses.length === 0) continue; // その月に存在しない科目は非表示
+      const available = Array.from(availableMap[subj] || []);
+      if (available.length === 0) continue;
       any = true;
+
+      // 表示順：本校→南教室→(その他)、その中で S/A/B/X/C
+      available.sort((a,b) => {
+        const pa = parseClassToken(a);
+        const pb = parseClassToken(b);
+        const campusRank = (c) => (c === "hon" ? 0 : (c === "minami" ? 1 : 9));
+        const ra = campusRank(pa.campus || "");
+        const rb = campusRank(pb.campus || "");
+        return (ra - rb) ||
+               (classRank(pa.cls) - classRank(pb.cls)) ||
+               String(pa.cls).localeCompare(String(pb.cls));
+      });
 
       const box = document.createElement("div");
       box.className = "subject-box";
@@ -681,26 +727,28 @@
       const checks = document.createElement("div");
       checks.className = "class-checks";
 
-      for (const cls of availableClasses) {
-        const id = `chk_${subj}_${cls}`;
+      for (const token of available) {
+        const safe = String(token).replace(/[^a-zA-Z0-9_:-]/g, "_");
+        const id = `chk_${subj}_${safe}`;
+
         const wrap = document.createElement("label");
         wrap.className = "chk";
         wrap.innerHTML = `
           <input type="checkbox" id="${id}" />
-          <span>${cls}</span>
+          <span>${escapeHtml(classTokenLabel(token))}</span>
         `;
         const input = wrap.querySelector("input");
-        input.checked = state.selected[subj]?.has(cls) || false;
+        input.checked = state.selected[subj]?.has(token) || false;
+
         input.addEventListener("change", () => {
           if (!state.selected[subj]) state.selected[subj] = new Set();
-          if (input.checked) state.selected[subj].add(cls);
-          else state.selected[subj].delete(cls);
+          if (input.checked) state.selected[subj].add(token);
+          else state.selected[subj].delete(token);
 
-          // 選択が変わったら、選択日が「表示対象外」になる可能性があるので、
-          // 残すが、詳細が空ならメッセージで案内する。
           saveState();
           renderAll();
         });
+
         checks.appendChild(wrap);
       }
 
@@ -721,19 +769,17 @@
     const selectedCount = Object.keys(state.selected)
       .reduce((acc, k) => acc + (state.selected[k]?.size || 0), 0);
 
-    if (selectedCount === 0) {
-      hintArea.textContent = "※ 科目ごとに、受講しているクラス（S/A/B/X/C）にチェックを入れてください。";
-    } else {
-      hintArea.textContent = "";
-    }
+    hintArea.textContent = selectedCount === 0
+      ? "※ 科目ごとに、受講しているクラスにチェックを入れてください。"
+      : "";
   }
 
-  // ====== フィルタ（選択された授業だけ） ======
+  // ====== フィルタ ======
   function getSelectedPairs() {
-    const selectedPairs = new Set(); // "subj|cls"
+    const selectedPairs = new Set(); // "subj|token"
     for (const subj of Object.keys(state.selected)) {
-      for (const cls of state.selected[subj]) {
-        selectedPairs.add(`${subj}|${cls}`);
+      for (const token of state.selected[subj]) {
+        selectedPairs.add(`${subj}|${token}`);
       }
     }
     return selectedPairs;
@@ -745,14 +791,18 @@
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const selectedPairs = getSelectedPairs();
 
-    // 何も選んでない時は空（事故防止）
     if (selectedPairs.size === 0) return [];
 
     let list = allLessons.filter(l => {
       if (l.grade !== grade) return false;
       if (!allowed.has(l.subject)) return false;
+
+      // campus が hon/minami の時はまず校舎で絞る
       if (campus !== "all" && l.campus !== campus) return false;
-      return selectedPairs.has(`${l.subject}|${l.class}`);
+
+      // token を「現在の campusモード」に合わせて生成して照合
+      const token = makeClassToken(campus, l.campus, l.class);
+      return selectedPairs.has(`${l.subject}|${token}`);
     });
 
     // 安定ソート
@@ -768,24 +818,9 @@
     return list;
   }
 
-  function campusLabel(code) {
-    if (code === "hon") return "本校";
-    if (code === "minami") return "南教室";
-    return code || "";
-  }
-
-
-  function campusShort(code) {
-    if (code === "hon") return "本";
-    if (code === "minami") return "南";
-    return (code || "").toString();
-  }
-
   function timeStart(timeStr) {
-    // "4:45～6:15" -> "4:45"
     return (timeStr || "").split(/[～~]/)[0].trim();
   }
-
   function timeStartMinutes(timeStr) {
     const t = timeStart(timeStr);
     const m = t.match(/^(\d{1,2}):(\d{2})$/);
@@ -801,9 +836,12 @@
     const subjName = SUBJECT_LABEL[lesson.subject] || lesson.subject || "";
     const cls = (lesson.class || "").trim();
     const t = timeStart(lesson.time);
+
+    // allの時は「本/南」を右端に表示（分かりやすい）
     const campusMark = (state.campus === "all")
-      ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}</span>`
-      : "";
+      ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}${escapeHtml(lesson.room || "")}</span>`
+      : `<span class="campus-tag">${escapeHtml(lesson.room || "")}</span>`;
+
     return `
       <div class="lesson-item ${subjectCss(lesson.subject)}">
         <span class="lesson-time">${escapeHtml(t)}</span>
@@ -815,41 +853,22 @@
   }
 
   function detailMainLabel(lesson) {
-    const subjName = SUBJECT_LABEL[lesson.subject] || "";
-    const label = (lesson.label || "").toString();
-    if (label && subjName) {
-      const stripped = label.replace(subjName, "").replace(/\s+/g, " ").trim();
-      if (stripped) return stripped;
-    }
-    const g = GRADE_LABEL[lesson.grade] || (lesson.grade || "");
-    const cls = (lesson.class || "").trim();
-    return `${g}${cls}`.trim();
+    // 旧版に寄せて「クラスのみ」表示（教室は右列にあるため）
+    return `${(lesson.class || "").trim()}`;
   }
 
-
-  function shortLine(lesson) {
-    // マス内1行表示（Q1=B）
-    // 例： "18:35 中3S 数学" のように短め
-    const timeShort = (lesson.time || "").split(/[～~]/)[0].trim(); // "18:35"
-    const label = lesson.label || "";
-    // labelは "中３S 数学" のように来る想定。全角数字が混ざっても表示は許容。
-    return `${timeShort} ${label}`.trim();
-  }
-
-  // ====== 月間グリッド描画 ======
+  // ====== 月間グリッド ======
   function buildMonthMatrix(ym) {
     const [y, m] = ym.split("-").map(Number);
     const first = new Date(y, m - 1, 1);
-    const startDow = first.getDay(); // 0:Sun
+    const startDow = first.getDay();
     const daysInMonth = new Date(y, m, 0).getDate();
 
-    // 6週固定（42マス）
     const cells = [];
     for (let i = 0; i < 42; i++) {
       const dayNum = i - startDow + 1;
-      if (dayNum < 1 || dayNum > daysInMonth) {
-        cells.push(null);
-      } else {
+      if (dayNum < 1 || dayNum > daysInMonth) cells.push(null);
+      else {
         const date = `${y}-${String(m).padStart(2,"0")}-${String(dayNum).padStart(2,"0")}`;
         cells.push({ date, dayNum });
       }
@@ -860,14 +879,13 @@
   function renderMonthGrid(filtered) {
     monthGrid.innerHTML = "";
 
-    const countByDate = new Map(); // date -> lessons[]
+    const countByDate = new Map();
     for (const l of filtered) {
       if (!countByDate.has(l.date)) countByDate.set(l.date, []);
       countByDate.get(l.date).push(l);
     }
-    // その日内も安定ソート（最初の1件の決定が安定）
     for (const [d, arr] of countByDate.entries()) {
-      arr.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (classRank(a.class) - classRank(b.class)) || (a.label||"").localeCompare(b.label||""));
+      arr.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (classRank(a.class) - classRank(b.class)));
     }
 
     const cells = buildMonthMatrix(currentYM);
@@ -878,7 +896,7 @@
 
       if (!cell) {
         div.classList.add("off");
-        div.innerHTML = `<div class="date-row"><span class="date-num"> </span></div><div class="firstline muted"> </div>`;
+        div.innerHTML = `<div class="date-row"><span class="date-num"> </span></div>`;
         monthGrid.appendChild(div);
         continue;
       }
@@ -889,15 +907,14 @@
       if (dow === 0) div.classList.add("sun");
       if (dow === 6) div.classList.add("sat");
       if (cell.date === TODAY_YMD) div.classList.add("today");
+
       const isSelected = (state.selectedDate === cell.date);
-
       if (isSelected) div.classList.add("selected");
-
       if (list.length > 0) div.classList.add("has-lessons");
 
       const badge = list.length > 0 ? `<span class="badge">${list.length}件</span>` : "";
 
-      const MAX_IN_CELL = 3; // A案：月間マスは最大3件＋「＋n件」
+      const MAX_IN_CELL = 3;
       const shown = list.slice(0, MAX_IN_CELL);
       const rest  = Math.max(0, list.length - shown.length);
 
@@ -913,14 +930,11 @@
         ${lessonsHtml}
       `;
 
-
       div.addEventListener("click", () => {
-        // 授業がない日でも選択はできる（詳細に「予定がありません」を出す）
         state.selectedDate = cell.date;
         saveState();
         renderAll();
 
-        // D: クリック後、日別詳細へ導線（見落とし防止）
         setTimeout(() => {
           const card = document.getElementById("dayDetailCard");
           if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -937,7 +951,6 @@
   function renderDayDetail(filtered) {
     dayDetailArea.innerHTML = "";
 
-    // 何も授業を選択していない場合は出さない（混乱防止）
     const selectedPairs = getSelectedPairs();
     if (selectedPairs.size === 0) {
       dayDetailArea.innerHTML = `
@@ -948,31 +961,21 @@
       return;
     }
 
-    // 選択日が未選択なら「今日」を初期選択（その月の中で）
     if (!state.selectedDate) {
-      const [y,m] = currentYM.split("-").map(Number);
-      const todayYMD = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
-      // 今月なら今日、違う月なら1日
-      if (todayYMD.startsWith(currentYM)) state.selectedDate = todayYMD;
-      else state.selectedDate = `${y}-${String(m).padStart(2,"0")}-01`;
+      if (TODAY_YMD.startsWith(currentYM)) state.selectedDate = TODAY_YMD;
+      else state.selectedDate = `${currentYM}-01`;
       saveState();
     }
 
     const date = state.selectedDate;
     const items = filtered.filter(x => x.date === date);
-    items.sort((a,b) => (
-      (timeStartMinutes(a.time) - timeStartMinutes(b.time)) ||
-      (classRank(a.class) - classRank(b.class)) ||
-      String(a.subject||"").localeCompare(String(b.subject||"")) ||
-      String(a.campus||"").localeCompare(String(b.campus||"")) ||
-      String(a.room||"").localeCompare(String(b.room||""))
-    ));
+    items.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (a.campus||"").localeCompare(b.campus||"") || (a.room||"").localeCompare(b.room||""));
 
     const header = `
       <div class="card" id="dayDetailCard">
         <h2>日別詳細：${escapeHtml(ymdToLabel(date))}</h2>
         ${items.length === 0
-          ? `<div class="muted">この日は、選択中の授業（学年・科目・クラス・校舎条件）に一致する予定がありません。</div>`
+          ? `<div class="muted">この日は、選択中の授業に一致する予定がありません。</div>`
           : `
             <table>
               <thead>
@@ -997,23 +1000,29 @@
           `}
       </div>
     `;
-
     dayDetailArea.innerHTML = header;
   }
 
-  // ====== 全体描画 ======
-  
+  // ====== 表示テキスト ======
   function selectedSummaryText() {
     const g = GRADE_LABEL[state.grade] || state.grade || "";
     const campus = (state.campus === "all") ? "校舎：すべて" : ("校舎：" + (state.campus === "hon" ? "本校" : "南教室"));
 
-    // 科目→クラスを短くまとめる（例：数S,A / 英A）
     const parts = [];
     const order = ["arith","math","eng","jp","sci","soc"];
     for (const subj of order) {
       const set = state.selected[subj];
       if (!set || set.size === 0) continue;
-      const cls = sortClasses(Array.from(set)).join("・");
+
+      const cls = (Array.from(set)).sort((a,b) => {
+        const pa = parseClassToken(a);
+        const pb = parseClassToken(b);
+        const campusRank = (c) => (c === "hon" ? 0 : (c === "minami" ? 1 : 9));
+        return (campusRank(pa.campus || "") - campusRank(pb.campus || "")) ||
+               (classRank(pa.cls) - classRank(pb.cls)) ||
+               String(pa.cls).localeCompare(String(pb.cls));
+      }).map(t => classTokenLabel(t)).join("・");
+
       parts.push(`${SUBJECT_LABEL[subj]}：${cls}`);
     }
 
@@ -1023,16 +1032,12 @@
 
   function renderAll() {
     ymPill.textContent = ymToLabel(currentYM);
-
-    if (filterSummary) {
-      filterSummary.textContent = selectedSummaryText();
-    }
+    if (filterSummary) filterSummary.textContent = selectedSummaryText();
 
     const filtered = getFilteredLessons();
     renderMonthGrid(filtered);
     renderDayDetail(filtered);
 
-    // ステータス（任意だが、混乱を減らす）
     statusArea.innerHTML = "";
     if (filtered.length > 0) {
       const days = new Set(filtered.map(x => x.date)).size;
@@ -1047,7 +1052,6 @@
     }
   }
 
-  // ====== util ======
   function escapeHtml(s) {
     return String(s)
       .replaceAll("&", "&amp;")
