@@ -1,221 +1,1042 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>スケジュール表</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>スケジュール表（自分の授業表示）</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 24px;
+      background: #f5f7fb;
+      color: #111827;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    h1 { margin: 0; font-size: 18px; }
+    h2 { margin: 0 0 12px 0; font-size: 15px; }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    select, button { font-size: 14px; }
+    select {
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      min-width: 160px;
+    }
+    button {
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      cursor: pointer;
+    }
+    button:hover { background: #f3f4f6; }
+    .muted { color: #6b7280; font-size: 13px; }
+    #filterSummary{ font-weight:700; color:#111827; }
 
-<style>
-body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  margin:24px;
-  background:#f5f7fb;
-  color:#111827;
-}
-.card{
-  background:#fff;
-  border-radius:12px;
-  padding:16px 20px;
-  margin-bottom:16px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.06);
-}
-h1{margin:0;font-size:18px;}
-h2{margin:0;font-size:15px;}
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 12px;
+      margin-left: 8px;
+    }
 
-.muted{color:#6b7280;font-size:13px;}
+    /* ★ タイトル右側（または下）に注意文を置くためのヘッダー */
+    .topbar{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap: wrap; /* 画面が狭いと下に落ちる */
+      margin-bottom: 6px;
+    }
+    .topbar-right{
+      margin-left:auto;
+      text-align:right;
+      max-width: 520px;
+      line-height: 1.35;
+    }
 
-.cal-head{
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-bottom:10px;
-}
-.cal-head-note{
-  margin-left:auto;
-  text-align:right;
-  line-height:1.4;
-  max-width:520px;
-}
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .subject-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fafafa;
+    }
+    .subject-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .class-checks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+    }
+    .chk {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      user-select: none;
+    }
+    .chk input { transform: translateY(1px); }
 
-.dow{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:8px;
-  font-size:12px;
-  color:#6b7280;
-  padding:0 2px;
-}
-.dow div{text-align:center;}
-.dow .sun{color:#b91c1c;font-weight:700;}
-.dow .sat{color:#1d4ed8;font-weight:700;}
+    .error {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      color: #9f1239;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:8px;
-}
-.cell{
-  background:#fff;
-  border:1px solid #e5e7eb;
-  border-radius:12px;
-  min-height:95px;
-  padding:8px;
-  cursor:pointer;
-}
-.cell.off{
-  background:#f8fafc;
-  color:#94a3b8;
-  cursor:default;
-}
-.cell.selected{
-  border-color:#2563eb;
-  background:#eff6ff;
-}
-.date-row{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:6px;
-}
-.date-num{font-weight:800;font-size:13px;}
-.badge{
-  font-size:11px;
-  padding:2px 8px;
-  border-radius:999px;
-  background:#eef2ff;
-  color:#3730a3;
-}
+    /* ===== 月間カレンダー ===== */
+    .cal-wrap { display: grid; gap: 10px; }
+    .dow {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 0 2px;
+    }
+    .dow div { text-align: center; }
+    .dow div.sun { color: #b91c1c; font-weight: 700; }
+    .dow div.sat { color: #1d4ed8; font-weight: 700; }
 
-.lesson{
-  font-size:12px;
-  margin-bottom:4px;
-}
+    .cell.sun:not(.off) { background: #fff7f7; }
+    .cell.sat:not(.off) { background: #f3f8ff; }
+    .cell.sun:hover:not(.off), .cell.sat:hover:not(.off) { filter: brightness(0.99); }
 
-table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:14px;
-}
-th,td{
-  padding:8px 6px;
-  border-bottom:1px solid #e5e7eb;
-}
-th{
-  text-align:left;
-  background:#f9fafb;
-}
-</style>
+    .cell.today:not(.off) { border-color: #93c5fd; }
+    .cell.today .date-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .cell.has-lessons:not(.off)::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 12px 0 0 12px;
+      background: rgba(37, 99, 235, 0.35);
+    }
+
+    .lesson-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .lesson-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 6px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+    .lesson-time {
+      font-size: 12px;
+      font-weight: 800;
+      color: #111827;
+      white-space: nowrap;
+    }
+    .sub-tag {
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .cls-tag, .campus-tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: #374151;
+      white-space: nowrap;
+    }
+    .campus-tag {
+      margin-left: auto;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #374151;
+      border: 1px solid #e5e7eb;
+    }
+
+    /* 科目別カラー（薄め） */
+    .subj-arith { border-color: #99f6e4; background: #f0fdfa; }
+    .subj-arith .sub-tag { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
+
+    .subj-math { border-color: #bfdbfe; background: #eff6ff; }
+    .subj-math .sub-tag { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
+
+    .subj-eng { border-color: #bbf7d0; background: #f0fdf4; }
+    .subj-eng .sub-tag { background: #dcfce7; border-color: #86efac; color: #166534; }
+
+    .subj-jp { border-color: #fde68a; background: #fffbeb; }
+    .subj-jp .sub-tag { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
+
+    .subj-sci { border-color: #e9d5ff; background: #faf5ff; }
+    .subj-sci .sub-tag { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
+
+    .subj-soc { border-color: #fecdd3; background: #fff1f2; }
+    .subj-soc .sub-tag { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
+
+    .sub-tag.subj-arith { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
+    .sub-tag.subj-math  { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
+    .sub-tag.subj-eng   { background: #dcfce7; border-color: #86efac; color: #166534; }
+    .sub-tag.subj-jp    { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
+    .sub-tag.subj-sci   { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
+    .sub-tag.subj-soc   { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
+
+    tbody tr:nth-child(even) td { background: #fcfdff; }
+    td.col-time { font-weight: 900; color: #111827; font-size: 14px; letter-spacing: .2px; }
+
+    #dayDetailArea.flash .card {
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+    }
+    .cell {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      min-height: 84px;
+      padding: 8px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.12s ease, border-color 0.12s ease, transform 0.06s ease;
+    }
+    .cell:hover { background: #f9fafb; border-color: #d1d5db; }
+    .cell:active { transform: translateY(1px); }
+    .cell.off {
+      background: #f8fafc;
+      border-color: #eef2f7;
+      color: #94a3b8;
+      cursor: default;
+    }
+    .cell.selected {
+      border-color: #2563eb;
+      background: #eff6ff;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.16) inset;
+    }
+    .date-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .date-num { font-weight: 800; font-size: 13px; }
+    .badge {
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      white-space: nowrap;
+    }
+    .more-indicator{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:6px;
+      padding:2px 8px;
+      border-radius:999px;
+      background:#f3f4f6;
+      border:1px solid #e5e7eb;
+      color:#374151;
+      font-size:11px;
+      font-weight:700;
+      width:fit-content;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 8px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { text-align: left; color: #374151; font-weight: 700; background: #f9fafb; }
+    .nowrap { white-space: nowrap; }
+    .right { text-align: right; }
+
+    .footer-note { margin-top: 10px; font-size: 12px; color: #6b7280; }
+    code { background: #f3f4f6; padding: 1px 6px; border-radius: 6px; }
+  </style>
 </head>
-
 <body>
 
-<div class="card">
-  <h1>スケジュール表 <span id="ymLabel"></span></h1>
-</div>
+  <div class="card">
+    <!-- ★「スケジュール表」の右側（狭いと下）に注意文を配置 -->
+    <div class="topbar">
+      <div>
+        <h1>スケジュール表 <span id="ym-pill" class="pill"></span></h1>
+        <div id="filterSummary" class="muted" style="margin-top:6px;"></div>
+      </div>
+      <div class="topbar-right muted">
+        ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
+      </div>
+    </div>
 
-<div class="card">
-  <div class="cal-head">
-    <h2>月間カレンダー</h2>
-    <div class="cal-head-note muted">
-      ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
+    <div class="row" style="margin-top:10px;">
+      <button id="prevBtn">◀ 前月</button>
+      <button id="todayBtn">今月</button>
+      <button id="nextBtn">翌月 ▶</button>
+
+      <span style="width:12px;"></span>
+
+      <label class="muted">学年</label>
+      <select id="gradeSelect"></select>
+
+      <label class="muted">校舎</label>
+      <select id="campusSelect">
+        <option value="all">すべて</option>
+        <option value="hon">本校のみ</option>
+        <option value="minami">南教室のみ</option>
+      </select>
+
+      <button id="clearBtn">選択リセット</button>
+    </div>
+
+    <div class="footer-note">
+      ※ 学年を選ぶと、その月に存在する授業だけが「科目→クラス」で選べます。<br/>
+      ※ 中1・中2・小学生は、理科／社会は表示されません（今年度の開講なし前提）。
     </div>
   </div>
 
-  <div class="dow">
-    <div class="sun">日</div>
-    <div>月</div>
-    <div>火</div>
-    <div>水</div>
-    <div>木</div>
-    <div>金</div>
-    <div class="sat">土</div>
+  <div class="card">
+    <h2>授業を選択（学年 → 科目 → クラス）</h2>
+    <div id="subjectArea" class="subject-grid"></div>
+    <div id="hintArea" class="muted" style="margin-top:10px;"></div>
   </div>
 
-  <div id="monthGrid" class="grid"></div>
-</div>
+  <div id="statusArea"></div>
 
-<div id="detailArea"></div>
+  <div class="card">
+    <h2>月間カレンダー</h2>
+    <div class="cal-wrap">
+      <div class="dow">
+        <div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div>
+      </div>
+      <div id="monthGrid" class="grid"></div>
+    </div>
+  </div>
+
+  <div id="dayDetailArea"></div>
 
 <script>
-const today = new Date();
-let currentYM = today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0");
-let selectedDate = null;
-let lessons = [];
+(() => {
+  const STORAGE_KEY = "benkyo_student_calendar_v3";
 
-document.getElementById("ymLabel").textContent =
-  today.getFullYear()+"年"+(today.getMonth()+1)+"月";
+  const GRADE_LABEL = {
+    e4: "小4", e5: "小5", e6: "小6",
+    j1: "中1", j2: "中2", j3: "中3",
+  };
 
-fetch("schedule_" + currentYM + ".json")
-  .then(res => res.json())
-  .then(data => {
-    lessons = data;
-    renderCalendar();
-  })
-  .catch(()=>renderCalendar());
+  const SUBJECT_LABEL = {
+    arith: "算数",
+    math: "数学",
+    eng: "英語",
+    jp: "国語",
+    sci: "理科",
+    soc: "社会",
+  };
 
-function renderCalendar(){
-  const grid = document.getElementById("monthGrid");
-  grid.innerHTML = "";
+  const CLASS_ORDER = ["S","A","B","X","C"];
+  const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
+  function classRank(c){
+    const k = String(c || "").trim();
+    return (k in CLASS_RANK) ? CLASS_RANK[k] : 999;
+  }
 
-  const [y,m] = currentYM.split("-").map(Number);
-  const first = new Date(y,m-1,1);
-  const startDay = first.getDay();
-  const days = new Date(y,m,0).getDate();
+  const ALLOWED_SUBJECTS_BY_GRADE = {
+    e4: ["arith", "eng", "jp"],
+    e5: ["arith", "eng", "jp"],
+    e6: ["arith", "eng", "jp"],
+    j1: ["math", "eng", "jp"],
+    j2: ["math", "eng", "jp"],
+    j3: ["math", "eng", "jp", "sci", "soc"],
+  };
 
-  for(let i=0;i<42;i++){
-    const dayNum = i-startDay+1;
-    const div = document.createElement("div");
-    div.className="cell";
+  const ymPill = document.getElementById("ym-pill");
+  const filterSummary = document.getElementById("filterSummary");
+  const gradeSelect = document.getElementById("gradeSelect");
+  const campusSelect = document.getElementById("campusSelect");
+  const subjectArea = document.getElementById("subjectArea");
+  const hintArea = document.getElementById("hintArea");
+  const statusArea = document.getElementById("statusArea");
+  const monthGrid = document.getElementById("monthGrid");
+  const dayDetailArea = document.getElementById("dayDetailArea");
 
-    if(dayNum<1 || dayNum>days){
-      div.classList.add("off");
-      grid.appendChild(div);
-      continue;
+  document.getElementById("prevBtn").addEventListener("click", () => shiftMonth(-1));
+  document.getElementById("nextBtn").addEventListener("click", () => shiftMonth(1));
+  document.getElementById("todayBtn").addEventListener("click", () => setToThisMonth());
+  document.getElementById("clearBtn").addEventListener("click", () => clearSelections());
+
+  const today = new Date();
+  const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+
+  function makeClassToken(campusMode, campusCode, cls) {
+    const c = String(cls || "").trim();
+    if (!c) return "";
+    if (campusMode === "all") return `${campusCode}:${c}`;
+    return c;
+  }
+  function parseClassToken(token) {
+    const s = String(token || "").trim();
+    const m = s.match(/^(hon|minami):(.+)$/);
+    if (!m) return { campus: null, cls: s };
+    return { campus: m[1], cls: m[2] };
+  }
+  function campusLabel(code) {
+    if (code === "hon") return "本校";
+    if (code === "minami") return "南教室";
+    return code || "";
+  }
+  function campusShort(code) {
+    if (code === "hon") return "本";
+    if (code === "minami") return "南";
+    return (code || "").toString();
+  }
+  function classTokenLabel(token) {
+    const { campus, cls } = parseClassToken(token);
+    if (!campus) return cls;
+    return `${campusLabel(campus)}${cls}`;
+  }
+
+  let state = {
+    grade: "j3",
+    campus: "all",
+    selectedDate: null,
+    selected: {
+      jp: new Set(),
+      math: new Set(),
+      arith: new Set(),
+      eng: new Set(),
+      sci: new Set(),
+      soc: new Set(),
+    }
+  };
+
+  let allLessons = [];
+
+  gradeSelect.addEventListener("change", () => {
+    state.grade = gradeSelect.value;
+    state.selectedDate = null;
+    saveState();
+    rebuildUI();
+    renderAll();
+  });
+
+  campusSelect.addEventListener("change", () => {
+    const prevCampus = state.campus;
+    state.campus = campusSelect.value;
+    migrateSelectionsForCampusMode(prevCampus, state.campus);
+    saveState();
+    rebuildUI();
+    renderAll();
+  });
+
+  function migrateSelectionsForCampusMode(prevCampus, nextCampus) {
+    for (const subj of Object.keys(state.selected)) {
+      const s = state.selected[subj];
+      if (!(s instanceof Set)) continue;
+      const nextSet = new Set();
+
+      if (prevCampus === "all" && (nextCampus === "hon" || nextCampus === "minami")) {
+        for (const token of s) {
+          const p = parseClassToken(token);
+          if (p.campus === nextCampus && p.cls) nextSet.add(p.cls);
+        }
+        state.selected[subj] = nextSet;
+        continue;
+      }
+
+      if ((prevCampus === "hon" || prevCampus === "minami") && nextCampus === "all") {
+        for (const token of s) {
+          const p = parseClassToken(token);
+          const cls = p.cls;
+          if (cls) nextSet.add(makeClassToken("all", prevCampus, cls));
+        }
+        state.selected[subj] = nextSet;
+        continue;
+      }
+    }
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const obj = JSON.parse(raw);
+
+      if (obj.grade && GRADE_LABEL[obj.grade]) state.grade = obj.grade;
+      if (obj.campus && ["all","hon","minami"].includes(obj.campus)) state.campus = obj.campus;
+      if (typeof obj.selectedDate === "string" || obj.selectedDate === null) state.selectedDate = obj.selectedDate;
+
+      if (obj.selected && typeof obj.selected === "object") {
+        for (const k of Object.keys(state.selected)) {
+          const arr = obj.selected[k];
+          if (Array.isArray(arr)) state.selected[k] = new Set(arr);
+        }
+      }
+    } catch (e) {}
+
+    if (state.campus === "all") {
+      for (const k of Object.keys(state.selected)) {
+        const s = state.selected[k];
+        if (!(s instanceof Set)) continue;
+        for (const token of Array.from(s)) {
+          if (!String(token).includes(":")) s.delete(token);
+        }
+      }
+    }
+  }
+
+  function saveState() {
+    const out = {
+      grade: state.grade,
+      campus: state.campus,
+      selectedDate: state.selectedDate,
+      selected: {},
+    };
+    for (const k of Object.keys(state.selected)) out.selected[k] = Array.from(state.selected[k]);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(out));
+  }
+
+  function clearSelections() {
+    for (const k of Object.keys(state.selected)) state.selected[k].clear();
+    state.campus = "all";
+    campusSelect.value = "all";
+    state.selectedDate = null;
+    saveState();
+    rebuildUI();
+    renderAll();
+  }
+
+  function shiftMonth(delta) {
+    const [y, m] = currentYM.split("-").map(Number);
+    const d = new Date(y, m - 1 + delta, 1);
+    currentYM = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    state.selectedDate = null;
+    saveState();
+    loadMonth(currentYM);
+  }
+
+  function setToThisMonth() {
+    const d = new Date();
+    currentYM = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    state.selectedDate = null;
+    saveState();
+    loadMonth(currentYM);
+  }
+
+  function ymToLabel(ym) {
+    const [y, m] = ym.split("-");
+    return `${y}年${Number(m)}月`;
+  }
+
+  function ymdToLabel(ymd) {
+    if (!ymd) return "";
+    const dt = new Date(ymd + "T00:00:00");
+    const w = "日月火水木金土"[dt.getDay()];
+    return `${ymd}（${w}）`;
+  }
+
+  async function fetchJsonForMonth(ym) {
+    const candidates = [
+      `schedule_${ym}.json`,
+      `./schedule_${ym}.json`,
+      `../schedule_${ym}.json`,
+      `./data/schedule_${ym}.json`,
+      `./json/schedule_${ym}.json`,
+    ];
+
+    const tried = [];
+    for (const base of candidates) {
+      const url = `${base}?ts=${Date.now()}`;
+      tried.push(url);
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) continue;
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error("JSON形式エラー: 配列ではありません");
+        return data;
+      } catch (_) {}
     }
 
-    const dateStr =
-      y+"-"+String(m).padStart(2,"0")+"-"+String(dayNum).padStart(2,"0");
+    throw new Error(
+      `この月のJSONが見つかりません。calendar.html と同じフォルダに schedule_${ym}.json を置くか、` +
+      `data/ または json/ フォルダに置いてください。試行URL: ` + tried.join(" , ")
+    );
+  }
 
-    const dayLessons = lessons.filter(l=>l.date===dateStr);
+  async function loadMonth(ym) {
+    ymPill.textContent = ymToLabel(ym);
+    statusArea.innerHTML = "";
+    hintArea.textContent = "読み込み中…";
+    monthGrid.innerHTML = "";
+    dayDetailArea.innerHTML = "";
 
-    div.innerHTML =
-      '<div class="date-row">' +
-      '<span class="date-num">'+dayNum+'</span>' +
-      (dayLessons.length?'<span class="badge">'+dayLessons.length+'件</span>':'')+
-      '</div>' +
-      dayLessons.slice(0,3).map(l=>'<div class="lesson">'+l.time+' '+l.label+'</div>').join("");
+    try {
+      const data = await fetchJsonForMonth(ym);
+      allLessons = normalizeLessons(data);
+      hintArea.textContent = "";
+      rebuildUI();
+      renderAll();
+    } catch (e) {
+      allLessons = [];
+      rebuildUI();
+      renderAll();
+      statusArea.innerHTML = `
+        <div class="card error">
+          <div><b>${ymToLabel(ym)}のデータが読み込めませんでした。</b></div>
+          <div style="margin-top:6px;">原因例：この月の <code>schedule_${ym}.json</code> をまだアップしていない／ファイル名が違う</div>
+          <div style="margin-top:6px;">場所：${escapeHtml(location.href)}</div>
+          <div style="margin-top:6px;">詳細：${escapeHtml(String(e.message || e))}</div>
+        </div>
+      `;
+      hintArea.textContent = "※ この月のJSONが無い場合は表示できません。";
+    }
+  }
 
-    div.addEventListener("click",()=>{
-      selectedDate = dateStr;
-      renderDetail();
-      renderCalendar();
+  function normalizeLessons(list) {
+    return list.map(x => ({
+      date: x.date || "",
+      time: x.time || "",
+      grade: x.grade || "",
+      class: (x.class || "").toString().trim(),
+      subject: x.subject || "",
+      campus: x.campus || "",
+      room: (x.room || "").toString().trim(),
+      groupKey: x.groupKey || "",
+      label: x.label || "",
+    })).filter(x => x.date && x.time && x.grade && x.subject);
+  }
+
+  function rebuildGradeSelect() {
+    const grades = Object.keys(GRADE_LABEL);
+    gradeSelect.innerHTML = grades.map(g => `<option value="${g}">${GRADE_LABEL[g]}</option>`).join("");
+    gradeSelect.value = state.grade;
+  }
+
+  function getMonthAvailableOptionsBySubject(grade, campusMode) {
+    const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
+    const map = {};
+    for (const subj of Object.keys(SUBJECT_LABEL)) map[subj] = new Set();
+
+    for (const l of allLessons) {
+      if (l.grade !== grade) continue;
+      if (!allowed.has(l.subject)) continue;
+      if (campusMode !== "all" && l.campus !== campusMode) continue;
+
+      const cls = (l.class || "").trim();
+      if (!cls) continue;
+
+      const token = makeClassToken(campusMode, l.campus, cls);
+      if (token) map[l.subject].add(token);
+    }
+    return map;
+  }
+
+  function rebuildSubjectArea() {
+    subjectArea.innerHTML = "";
+
+    const grade = state.grade;
+    const allowedSubjects = ALLOWED_SUBJECTS_BY_GRADE[grade] || [];
+    const availableMap = getMonthAvailableOptionsBySubject(grade, state.campus);
+
+    let any = false;
+
+    for (const subj of allowedSubjects) {
+      const available = Array.from(availableMap[subj] || []);
+      if (available.length === 0) continue;
+      any = true;
+
+      available.sort((a,b) => {
+        const pa = parseClassToken(a);
+        const pb = parseClassToken(b);
+        const campusRank = (c) => (c === "hon" ? 0 : (c === "minami" ? 1 : 9));
+        return (campusRank(pa.campus || "") - campusRank(pb.campus || "")) ||
+               (classRank(pa.cls) - classRank(pb.cls)) ||
+               String(pa.cls).localeCompare(String(pb.cls));
+      });
+
+      const box = document.createElement("div");
+      box.className = "subject-box";
+
+      const title = document.createElement("div");
+      title.className = "subject-title";
+      title.innerHTML = `<span>${SUBJECT_LABEL[subj]}</span><span class="muted">${GRADE_LABEL[grade]}</span>`;
+      box.appendChild(title);
+
+      const checks = document.createElement("div");
+      checks.className = "class-checks";
+
+      for (const token of available) {
+        const safe = String(token).replace(/[^a-zA-Z0-9_:-]/g, "_");
+        const id = `chk_${subj}_${safe}`;
+
+        const wrap = document.createElement("label");
+        wrap.className = "chk";
+        wrap.innerHTML = `
+          <input type="checkbox" id="${id}" />
+          <span>${escapeHtml(classTokenLabel(token))}</span>
+        `;
+
+        const input = wrap.querySelector("input");
+        input.checked = state.selected[subj]?.has(token) || false;
+
+        input.addEventListener("change", () => {
+          if (!state.selected[subj]) state.selected[subj] = new Set();
+          if (input.checked) state.selected[subj].add(token);
+          else state.selected[subj].delete(token);
+
+          saveState();
+          renderAll();
+        });
+
+        checks.appendChild(wrap);
+      }
+
+      box.appendChild(checks);
+      subjectArea.appendChild(box);
+    }
+
+    if (!any) {
+      subjectArea.innerHTML = `<div class="muted">この月（${ymToLabel(currentYM)}）には、${GRADE_LABEL[grade]}の授業データが見つかりませんでした。</div>`;
+    }
+  }
+
+  function rebuildUI() {
+    rebuildGradeSelect();
+    campusSelect.value = state.campus;
+    rebuildSubjectArea();
+
+    const selectedCount = Object.keys(state.selected)
+      .reduce((acc, k) => acc + (state.selected[k]?.size || 0), 0);
+
+    hintArea.textContent = selectedCount === 0
+      ? "※ 科目ごとに、受講しているクラスにチェックを入れてください。"
+      : "";
+  }
+
+  function getSelectedPairs() {
+    const selectedPairs = new Set();
+    for (const subj of Object.keys(state.selected)) {
+      for (const token of state.selected[subj]) {
+        selectedPairs.add(`${subj}|${token}`);
+      }
+    }
+    return selectedPairs;
+  }
+
+  function getFilteredLessons() {
+    const grade = state.grade;
+    const campus = state.campus;
+    const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
+    const selectedPairs = getSelectedPairs();
+    if (selectedPairs.size === 0) return [];
+
+    let list = allLessons.filter(l => {
+      if (l.grade !== grade) return false;
+      if (!allowed.has(l.subject)) return false;
+      if (campus !== "all" && l.campus !== campus) return false;
+      const token = makeClassToken(campus, l.campus, l.class);
+      return selectedPairs.has(`${l.subject}|${token}`);
     });
 
-    if(selectedDate===dateStr) div.classList.add("selected");
+    list.sort((a,b) => (
+      a.date.localeCompare(b.date) ||
+      (timeStartMinutes(a.time) - timeStartMinutes(b.time)) ||
+      (classRank(a.class) - classRank(b.class)) ||
+      (a.label || "").localeCompare(b.label || "") ||
+      (a.campus || "").localeCompare(b.campus || "") ||
+      (a.room || "").localeCompare(b.room || "")
+    ));
 
-    grid.appendChild(div);
+    return list;
   }
-}
 
-function renderDetail(){
-  const area = document.getElementById("detailArea");
-  const list = lessons.filter(l=>l.date===selectedDate);
+  function timeStart(timeStr) {
+    return (timeStr || "").split(/[～~]/)[0].trim();
+  }
 
-  area.innerHTML =
-    '<div class="card">'+
-    '<h2>日別詳細：'+selectedDate+'</h2>'+
-    (list.length===0?
-      '<div class="muted">授業はありません。</div>'
-      :
-      '<table>'+
-      '<tr><th>時間</th><th>授業</th><th>校舎</th><th>教室</th></tr>'+
-      list.map(l=>'<tr><td>'+l.time+'</td><td>'+l.label+'</td><td>'+l.campus+'</td><td>'+l.room+'</td></tr>').join("")+
-      '</table>'
-    )+
-    '</div>';
-}
+  function timeStartMinutes(timeStr) {
+    const t = timeStart(timeStr);
+    const m = t.match(/^(\d{1,2}):(\d{2})$/);
+    if (!m) return 9999;
+    return Number(m[1]) * 60 + Number(m[2]);
+  }
+
+  function subjectCss(subjectCode) {
+    return `subj-${subjectCode || "unknown"}`;
+  }
+
+  function cellLessonHtml(lesson) {
+    const subjName = SUBJECT_LABEL[lesson.subject] || lesson.subject || "";
+    const cls = (lesson.class || "").trim();
+    const t = timeStart(lesson.time);
+
+    const campusMark = (state.campus === "all")
+      ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}${escapeHtml(lesson.room || "")}</span>`
+      : `<span class="campus-tag">${escapeHtml(lesson.room || "")}</span>`;
+
+    return `
+      <div class="lesson-item ${subjectCss(lesson.subject)}">
+        <span class="lesson-time">${escapeHtml(t)}</span>
+        <span class="sub-tag">${escapeHtml(subjName)}</span>
+        ${cls ? `<span class="cls-tag">${escapeHtml(cls)}</span>` : ``}
+        ${campusMark}
+      </div>
+    `.trim();
+  }
+
+  function detailMainLabel(lesson) {
+    return `${(lesson.class || "").trim()}`;
+  }
+
+  function buildMonthMatrix(ym) {
+    const [y, m] = ym.split("-").map(Number);
+    const first = new Date(y, m - 1, 1);
+    const startDow = first.getDay();
+    const daysInMonth = new Date(y, m, 0).getDate();
+
+    const cells = [];
+    for (let i = 0; i < 42; i++) {
+      const dayNum = i - startDow + 1;
+      if (dayNum < 1 || dayNum > daysInMonth) cells.push(null);
+      else {
+        const date = `${y}-${String(m).padStart(2,"0")}-${String(dayNum).padStart(2,"0")}`;
+        cells.push({ date, dayNum });
+      }
+    }
+    return cells;
+  }
+
+  function renderMonthGrid(filtered) {
+    monthGrid.innerHTML = "";
+
+    const countByDate = new Map();
+    for (const l of filtered) {
+      if (!countByDate.has(l.date)) countByDate.set(l.date, []);
+      countByDate.get(l.date).push(l);
+    }
+    for (const [d, arr] of countByDate.entries()) {
+      arr.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (classRank(a.class) - classRank(b.class)));
+    }
+
+    const cells = buildMonthMatrix(currentYM);
+
+    for (const cell of cells) {
+      const div = document.createElement("div");
+      div.className = "cell";
+
+      if (!cell) {
+        div.classList.add("off");
+        div.innerHTML = `<div class="date-row"><span class="date-num"> </span></div>`;
+        monthGrid.appendChild(div);
+        continue;
+      }
+
+      const list = countByDate.get(cell.date) || [];
+      const dt = new Date(cell.date + "T00:00:00");
+      const dow = dt.getDay();
+      if (dow === 0) div.classList.add("sun");
+      if (dow === 6) div.classList.add("sat");
+      if (cell.date === TODAY_YMD) div.classList.add("today");
+
+      if (state.selectedDate === cell.date) div.classList.add("selected");
+      if (list.length > 0) div.classList.add("has-lessons");
+
+      const badge = list.length > 0 ? `<span class="badge">${list.length}件</span>` : "";
+
+      const MAX_IN_CELL = 3;
+      const shown = list.slice(0, MAX_IN_CELL);
+      const rest  = Math.max(0, list.length - shown.length);
+
+      const lessonsHtml = list.length > 0
+        ? `<div class="lesson-list">${shown.map(cellLessonHtml).join("")}</div>` + (rest > 0 ? `<div class="more-indicator">＋${rest}件</div>` : ``)
+        : `<div class="lesson-list"></div>`;
+
+      div.innerHTML = `
+        <div class="date-row">
+          <span class="date-num">${cell.dayNum}</span>
+          ${badge}
+        </div>
+        ${lessonsHtml}
+      `;
+
+      div.addEventListener("click", () => {
+        state.selectedDate = cell.date;
+        saveState();
+        renderAll();
+
+        setTimeout(() => {
+          const card = document.getElementById("dayDetailCard");
+          if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+          dayDetailArea.classList.add("flash");
+          setTimeout(() => dayDetailArea.classList.remove("flash"), 700);
+        }, 0);
+      });
+
+      monthGrid.appendChild(div);
+    }
+  }
+
+  function renderDayDetail(filtered) {
+    dayDetailArea.innerHTML = "";
+
+    const selectedPairs = getSelectedPairs();
+    if (selectedPairs.size === 0) {
+      dayDetailArea.innerHTML = `
+        <div class="card">
+          <div class="muted">科目→クラスにチェックを入れると、カレンダーに反映されます。</div>
+        </div>
+      `;
+      return;
+    }
+
+    if (!state.selectedDate) {
+      if (TODAY_YMD.startsWith(currentYM)) state.selectedDate = TODAY_YMD;
+      else state.selectedDate = `${currentYM}-01`;
+      saveState();
+    }
+
+    const date = state.selectedDate;
+    const items = filtered.filter(x => x.date === date);
+    items.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (a.campus||"").localeCompare(b.campus||"") || (a.room||"").localeCompare(b.room||""));
+
+    dayDetailArea.innerHTML = `
+      <div class="card" id="dayDetailCard">
+        <h2>日別詳細：${escapeHtml(ymdToLabel(date))}</h2>
+        ${items.length === 0
+          ? `<div class="muted">この日は、選択中の授業に一致する予定がありません。</div>`
+          : `
+            <table>
+              <thead>
+                <tr>
+                  <th class="nowrap">時間</th>
+                  <th>授業</th>
+                  <th class="nowrap">校舎</th>
+                  <th class="nowrap right">教室</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${items.map(it => `
+                  <tr>
+                    <td class="nowrap col-time">${escapeHtml(it.time)}</td>
+                    <td><span class="sub-tag ${subjectCss(it.subject)}">${escapeHtml(SUBJECT_LABEL[it.subject] || it.subject)}</span> ${escapeHtml(detailMainLabel(it))}</td>
+                    <td class="nowrap">${escapeHtml(campusLabel(it.campus))}</td>
+                    <td class="nowrap right">${escapeHtml(it.room || "")}</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          `}
+      </div>
+    `;
+  }
+
+  function selectedSummaryText() {
+    const g = GRADE_LABEL[state.grade] || state.grade || "";
+    const campus = (state.campus === "all") ? "校舎：すべて" : ("校舎：" + (state.campus === "hon" ? "本校" : "南教室"));
+
+    const parts = [];
+    const order = ["arith","math","eng","jp","sci","soc"];
+    for (const subj of order) {
+      const set = state.selected[subj];
+      if (!set || set.size === 0) continue;
+
+      const cls = (Array.from(set)).sort((a,b) => {
+        const pa = parseClassToken(a);
+        const pb = parseClassToken(b);
+        const campusRank = (c) => (c === "hon" ? 0 : (c === "minami" ? 1 : 9));
+        return (campusRank(pa.campus || "") - campusRank(pb.campus || "")) ||
+               (classRank(pa.cls) - classRank(pb.cls)) ||
+               String(pa.cls).localeCompare(String(pb.cls));
+      }).map(t => classTokenLabel(t)).join("・");
+
+      parts.push(`${SUBJECT_LABEL[subj]}：${cls}`);
+    }
+
+    const sel = parts.length ? parts.join(" ／ ") : "未選択（科目→クラスにチェックしてください）";
+    return `${g} ／ ${campus} ／ ${sel}`;
+  }
+
+  function renderAll() {
+    ymPill.textContent = ymToLabel(currentYM);
+    if (filterSummary) filterSummary.textContent = selectedSummaryText();
+
+    const filtered = getFilteredLessons();
+    renderMonthGrid(filtered);
+    renderDayDetail(filtered);
+
+    statusArea.innerHTML = "";
+    if (filtered.length > 0) {
+      const days = new Set(filtered.map(x => x.date)).size;
+      statusArea.innerHTML = `
+        <div class="card">
+          <div class="muted">
+            表示対象：${GRADE_LABEL[state.grade]} ／ 校舎：${state.campus === "all" ? "すべて" : (state.campus === "hon" ? "本校" : "南教室")}
+            ／ 授業日数：${days}日 ／ 授業件数：${filtered.length}件
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  loadState();
+  rebuildUI();
+  loadMonth(currentYM);
+})();
 </script>
-
 </body>
 </html>
