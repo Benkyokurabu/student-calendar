@@ -22,60 +22,23 @@ body{
 h1{margin:0;font-size:18px;}
 h2{margin:0;font-size:15px;}
 
-.row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  align-items:center;
-}
-
-select,button{font-size:14px;}
-select{
-  padding:6px 10px;
-  border-radius:10px;
-  border:1px solid #d1d5db;
-  background:#fff;
-  min-width:160px;
-}
-button{
-  padding:6px 10px;
-  border-radius:10px;
-  border:1px solid #d1d5db;
-  background:#fff;
-  cursor:pointer;
-}
-button:hover{background:#f3f4f6;}
-
 .muted{color:#6b7280;font-size:13px;}
-#filterSummary{font-weight:700;}
 
-.pill{
-  display:inline-block;
-  padding:2px 10px;
-  border-radius:999px;
-  background:#eef2ff;
-  color:#3730a3;
-  font-size:12px;
-  margin-left:8px;
-}
-
-/* ===== 月間カレンダー見出し ===== */
 .cal-head{
   display:flex;
   align-items:flex-end;
   justify-content:space-between;
   gap:12px;
-  flex-wrap:wrap;      /* 狭いと下へ */
+  flex-wrap:wrap;
   margin-bottom:10px;
 }
 .cal-head-note{
   margin-left:auto;
   text-align:right;
-  line-height:1.35;
+  line-height:1.4;
   max-width:520px;
 }
 
-/* ===== カレンダー ===== */
 .dow{
   display:grid;
   grid-template-columns:repeat(7,1fr);
@@ -93,12 +56,11 @@ button:hover{background:#f3f4f6;}
   grid-template-columns:repeat(7,1fr);
   gap:8px;
 }
-
 .cell{
   background:#fff;
   border:1px solid #e5e7eb;
   border-radius:12px;
-  min-height:90px;
+  min-height:95px;
   padding:8px;
   cursor:pointer;
 }
@@ -117,16 +79,15 @@ button:hover{background:#f3f4f6;}
   margin-bottom:6px;
 }
 .date-num{font-weight:800;font-size:13px;}
-
 .badge{
-  font-size:12px;
+  font-size:11px;
   padding:2px 8px;
   border-radius:999px;
   background:#eef2ff;
   color:#3730a3;
 }
 
-.lesson-item{
+.lesson{
   font-size:12px;
   margin-bottom:4px;
 }
@@ -150,26 +111,7 @@ th{
 <body>
 
 <div class="card">
-  <h1>スケジュール表 <span id="ym-pill" class="pill"></span></h1>
-  <div id="filterSummary" class="muted" style="margin-top:6px;"></div>
-
-  <div class="row" style="margin-top:10px;">
-    <button id="prevBtn">◀ 前月</button>
-    <button id="todayBtn">今月</button>
-    <button id="nextBtn">翌月 ▶</button>
-
-    <span style="width:12px;"></span>
-
-    <label class="muted">学年</label>
-    <select id="gradeSelect"></select>
-
-    <label class="muted">校舎</label>
-    <select id="campusSelect">
-      <option value="all">すべて</option>
-      <option value="hon">本校のみ</option>
-      <option value="minami">南教室のみ</option>
-    </select>
-  </div>
+  <h1>スケジュール表 <span id="ymLabel"></span></h1>
 </div>
 
 <div class="card">
@@ -193,12 +135,86 @@ th{
   <div id="monthGrid" class="grid"></div>
 </div>
 
-<div id="dayDetailArea"></div>
+<div id="detailArea"></div>
 
 <script>
-// ===== 既存JSはそのまま =====
-// あなたの現在のJS部分をここにそのまま貼ってください。
-// （今回の変更は見出し位置のみなので、JS修正は不要です）
+const today = new Date();
+let currentYM = today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0");
+let selectedDate = null;
+let lessons = [];
+
+document.getElementById("ymLabel").textContent =
+  today.getFullYear()+"年"+(today.getMonth()+1)+"月";
+
+fetch("schedule_" + currentYM + ".json")
+  .then(res => res.json())
+  .then(data => {
+    lessons = data;
+    renderCalendar();
+  })
+  .catch(()=>renderCalendar());
+
+function renderCalendar(){
+  const grid = document.getElementById("monthGrid");
+  grid.innerHTML = "";
+
+  const [y,m] = currentYM.split("-").map(Number);
+  const first = new Date(y,m-1,1);
+  const startDay = first.getDay();
+  const days = new Date(y,m,0).getDate();
+
+  for(let i=0;i<42;i++){
+    const dayNum = i-startDay+1;
+    const div = document.createElement("div");
+    div.className="cell";
+
+    if(dayNum<1 || dayNum>days){
+      div.classList.add("off");
+      grid.appendChild(div);
+      continue;
+    }
+
+    const dateStr =
+      y+"-"+String(m).padStart(2,"0")+"-"+String(dayNum).padStart(2,"0");
+
+    const dayLessons = lessons.filter(l=>l.date===dateStr);
+
+    div.innerHTML =
+      '<div class="date-row">' +
+      '<span class="date-num">'+dayNum+'</span>' +
+      (dayLessons.length?'<span class="badge">'+dayLessons.length+'件</span>':'')+
+      '</div>' +
+      dayLessons.slice(0,3).map(l=>'<div class="lesson">'+l.time+' '+l.label+'</div>').join("");
+
+    div.addEventListener("click",()=>{
+      selectedDate = dateStr;
+      renderDetail();
+      renderCalendar();
+    });
+
+    if(selectedDate===dateStr) div.classList.add("selected");
+
+    grid.appendChild(div);
+  }
+}
+
+function renderDetail(){
+  const area = document.getElementById("detailArea");
+  const list = lessons.filter(l=>l.date===selectedDate);
+
+  area.innerHTML =
+    '<div class="card">'+
+    '<h2>日別詳細：'+selectedDate+'</h2>'+
+    (list.length===0?
+      '<div class="muted">授業はありません。</div>'
+      :
+      '<table>'+
+      '<tr><th>時間</th><th>授業</th><th>校舎</th><th>教室</th></tr>'+
+      list.map(l=>'<tr><td>'+l.time+'</td><td>'+l.label+'</td><td>'+l.campus+'</td><td>'+l.room+'</td></tr>').join("")+
+      '</table>'
+    )+
+    '</div>';
+}
 </script>
 
 </body>
