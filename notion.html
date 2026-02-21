@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notionが開けない場合（代替リンク）</title>
+
+  <!-- まずはNotion既定URLへ自動転送 -->
+  <meta http-equiv="refresh" content="2; url=NOTION_DEFAULT_URL_HERE" />
+
+  <style>
+    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;margin:24px;max-width:760px;line-height:1.7}
+    .card{border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin:14px 0;background:#fff}
+    a.btn{display:inline-block;padding:10px 14px;border:1px solid #111;border-radius:12px;text-decoration:none;margin:6px 10px 6px 0}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
+    small{color:#555}
+  </style>
+</head>
+<body>
+  <h1>Notionページへ移動します</h1>
+  <p>2秒後に自動で移動します。うまく開けない場合は、下の別リンクをお試しください。</p>
+
+  <div class="card">
+    <p><strong>おすすめ（まず試す）</strong></p>
+    <a class="btn" href="https://www.notion.so/Web-19ef012080a780eea6c8c6caba0ed95f?source=copy_link">Notion既定URL</a>
+    <small>例：<code>https://xxxx.notion.site/...</code></small>
+  </div>
+
+  <div class="card">
+    <p><strong>代替1：カスタムドメイン（お持ちの場合）</strong></p>
+    <a class="btn" href="NOTION_CUSTOM_DOMAIN_URL_HERE">カスタムドメイン</a>
+  </div>
+
+  <div class="card">
+    <p><strong>代替2：複製ページ（緊急用）</strong></p>
+    <a class="btn" href="NOTION_DUPLICATE_URL_HERE">複製ページのURL</a>
+  </div>
+
+  <div class="card">
+    <p><strong>補足</strong></p>
+    <small>
+      「シークレットでは開ける」場合、通常ブラウザ側の <code>notion.so</code>/<code>notion.site</code> のサイトデータ削除で改善することがあります。
+    </small>
+  </div>
+</body>
+</html>
