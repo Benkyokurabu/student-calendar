@@ -8,7 +8,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -19,7 +21,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -30,7 +34,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -41,7 +47,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -52,7 +60,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -63,7 +73,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -74,7 +86,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -85,7 +99,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -96,7 +112,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -107,7 +125,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -118,7 +138,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -129,7 +151,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -140,7 +164,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -151,7 +177,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -162,7 +190,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -173,7 +203,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -184,7 +216,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -195,7 +229,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -206,7 +242,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -217,7 +255,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -228,7 +268,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -239,7 +281,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -250,7 +294,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -261,7 +307,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -272,7 +320,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -283,7 +333,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -294,7 +346,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -305,7 +359,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -316,7 +372,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -327,7 +385,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -338,7 +398,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -349,7 +411,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -360,7 +424,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -371,7 +437,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -382,7 +450,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -393,7 +463,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -404,7 +476,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -415,7 +489,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -426,7 +502,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -437,7 +515,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -448,7 +528,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -459,7 +541,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -470,7 +554,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": true,
+    "displayTitle": "3A社対面"
   },
   {
     "date": "2026-03-07",
@@ -481,7 +567,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": true,
+    "displayTitle": "3S理対面"
   },
   {
     "date": "2026-03-07",
@@ -492,7 +580,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -503,7 +593,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": true,
+    "displayTitle": "3A理対面"
   },
   {
     "date": "2026-03-07",
@@ -514,7 +606,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": true,
+    "displayTitle": "3S社対面"
   },
   {
     "date": "2026-03-09",
@@ -525,7 +619,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -536,7 +632,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -547,7 +645,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -558,7 +658,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -569,7 +671,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -580,7 +684,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -591,7 +697,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -602,7 +710,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -613,7 +723,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -624,7 +736,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -635,7 +749,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -646,7 +762,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -657,7 +775,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -668,7 +788,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -679,7 +801,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -690,7 +814,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -701,7 +827,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": true,
+    "displayTitle": "3S国対面"
   },
   {
     "date": "2026-03-11",
@@ -712,7 +840,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -723,7 +853,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -734,7 +866,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -745,7 +879,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -756,7 +892,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -767,7 +905,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -778,7 +918,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -789,7 +931,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j2_X_math",
-    "label": "中２X 数学"
+    "label": "中２X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -800,7 +944,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -811,7 +957,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -822,7 +970,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -833,7 +983,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -844,7 +996,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -855,7 +1009,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -866,7 +1022,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -877,7 +1035,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -888,7 +1048,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -899,7 +1061,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -910,7 +1074,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -921,7 +1087,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -932,7 +1100,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -943,7 +1113,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -954,7 +1126,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -965,7 +1139,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -976,7 +1152,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -987,7 +1165,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -998,7 +1178,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": true,
+    "displayTitle": "3A国対面"
   },
   {
     "date": "2026-03-14",
@@ -1009,7 +1191,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1020,7 +1204,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1031,7 +1217,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1042,7 +1230,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1053,7 +1243,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1064,7 +1256,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1075,7 +1269,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1086,7 +1282,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_X_eng",
-    "label": "中２X 英語"
+    "label": "中２X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1097,7 +1295,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -1108,7 +1308,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1119,7 +1321,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1130,7 +1334,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1141,7 +1347,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1152,7 +1360,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": true,
+    "displayTitle": "1S国対面"
   },
   {
     "date": "2026-03-17",
@@ -1163,7 +1373,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1174,7 +1386,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1185,7 +1399,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -1196,7 +1412,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1207,7 +1425,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1218,7 +1438,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1229,7 +1451,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1240,7 +1464,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1251,7 +1477,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1262,7 +1490,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1273,7 +1503,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -1284,7 +1516,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1295,7 +1529,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1306,7 +1542,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1317,7 +1555,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1328,7 +1568,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1339,7 +1581,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1350,7 +1594,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1361,7 +1607,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1372,7 +1620,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1383,7 +1633,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -1394,7 +1646,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1405,7 +1659,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1416,7 +1672,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1427,7 +1685,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1438,7 +1698,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1449,7 +1711,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1460,7 +1724,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1471,7 +1737,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1482,7 +1750,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1493,7 +1763,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1504,7 +1776,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -1515,7 +1789,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1526,7 +1802,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_e4_X_arith",
-    "label": "小４X 算数"
+    "label": "小４X 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1537,7 +1815,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1548,7 +1828,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1559,7 +1841,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": true,
+    "displayTitle": "2S国対面"
   },
   {
     "date": "2026-03-23",
@@ -1570,7 +1854,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1581,7 +1867,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1592,7 +1880,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1603,7 +1893,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -1614,7 +1906,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -1625,7 +1919,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -1636,7 +1932,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -1647,7 +1945,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -1658,7 +1958,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -1669,7 +1971,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": true,
+    "displayTitle": "2A国対面"
   },
   {
     "date": "2026-03-24",
@@ -1680,7 +1984,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1691,7 +1997,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1702,7 +2010,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1713,7 +2023,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1724,7 +2036,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1735,7 +2049,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1746,7 +2062,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1757,7 +2075,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -1768,7 +2088,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1779,7 +2101,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1790,7 +2114,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1801,7 +2127,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1812,7 +2140,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1823,7 +2153,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1834,7 +2166,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1845,7 +2179,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1856,7 +2192,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1867,7 +2205,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -1878,7 +2218,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1889,7 +2231,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1900,7 +2244,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_e4_X_jp",
-    "label": "小４X 国語"
+    "label": "小４X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1911,7 +2257,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1922,7 +2270,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1933,7 +2283,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1944,7 +2296,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1955,7 +2309,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1966,7 +2322,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1977,7 +2335,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1988,7 +2348,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -1999,7 +2361,9 @@
     "campus": "hon",
     "room": "3",
     "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -2010,7 +2374,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -2021,7 +2387,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -2032,7 +2400,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2043,7 +2413,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_e6_X_jp",
-    "label": "小６X 国語"
+    "label": "小６X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2054,7 +2426,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2065,7 +2439,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2076,7 +2452,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2087,7 +2465,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2098,7 +2478,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2109,7 +2491,9 @@
     "campus": "hon",
     "room": "7",
     "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -2120,7 +2504,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -2131,7 +2517,9 @@
     "campus": "hon",
     "room": "6",
     "groupKey": "hon_e5_X_jp",
-    "label": "小５X 国語"
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -2142,7 +2530,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": true,
+    "displayTitle": "1A国対面"
   },
   {
     "date": "2026-03-31",
@@ -2153,7 +2543,9 @@
     "campus": "hon",
     "room": "4",
     "groupKey": "hon_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -2164,7 +2556,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -2175,7 +2569,9 @@
     "campus": "hon",
     "room": "1",
     "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -2186,7 +2582,9 @@
     "campus": "hon",
     "room": "2",
     "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2197,7 +2595,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2208,7 +2608,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2219,7 +2621,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2230,7 +2634,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2241,7 +2647,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2252,7 +2660,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-02",
@@ -2263,7 +2673,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2274,7 +2686,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2285,7 +2699,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2296,7 +2712,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2307,7 +2725,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2318,7 +2738,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2329,7 +2751,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2340,7 +2764,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2351,7 +2777,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-03",
@@ -2362,7 +2790,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2373,7 +2803,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2384,7 +2816,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2395,7 +2829,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2406,7 +2842,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2417,7 +2855,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2428,7 +2868,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2439,7 +2881,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2450,7 +2894,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-04",
@@ -2461,7 +2907,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2472,7 +2920,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2483,7 +2933,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2494,7 +2946,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2505,7 +2959,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2516,7 +2972,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2527,7 +2985,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2538,7 +2998,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-05",
@@ -2549,7 +3011,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2560,7 +3024,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2571,7 +3037,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2582,7 +3050,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2593,7 +3063,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2604,7 +3076,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2615,7 +3089,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2626,7 +3102,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-06",
@@ -2637,7 +3115,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -2648,7 +3128,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -2659,7 +3141,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -2670,7 +3154,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -2681,7 +3167,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-07",
@@ -2692,7 +3180,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -2703,7 +3193,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -2714,7 +3206,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -2725,7 +3219,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-09",
@@ -2736,7 +3232,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": true,
+    "displayTitle": "3A社対面"
   },
   {
     "date": "2026-03-09",
@@ -2747,7 +3245,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": true,
+    "displayTitle": "3S理対面"
   },
   {
     "date": "2026-03-09",
@@ -2758,7 +3258,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": true,
+    "displayTitle": "3A理対面"
   },
   {
     "date": "2026-03-09",
@@ -2769,7 +3271,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": true,
+    "displayTitle": "3S社対面"
   },
   {
     "date": "2026-03-10",
@@ -2780,7 +3284,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2791,7 +3297,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2802,7 +3310,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2813,7 +3323,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2824,7 +3336,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2835,7 +3349,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2846,7 +3362,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": true,
+    "displayTitle": "3S国対面"
   },
   {
     "date": "2026-03-10",
@@ -2857,7 +3375,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2868,7 +3388,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-10",
@@ -2879,7 +3401,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2890,7 +3414,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2901,7 +3427,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2912,7 +3440,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2923,7 +3453,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2934,7 +3466,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2945,7 +3479,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2956,7 +3492,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-11",
@@ -2967,7 +3505,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -2978,7 +3518,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -2989,7 +3531,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3000,7 +3544,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3011,7 +3557,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3022,7 +3570,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j2_X_math",
-    "label": "中２X 数学"
+    "label": "中２X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3033,7 +3583,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3044,7 +3596,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3055,7 +3609,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-12",
@@ -3066,7 +3622,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3077,7 +3635,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3088,7 +3648,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3099,7 +3661,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3110,7 +3674,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3121,7 +3687,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3132,7 +3700,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3143,7 +3713,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3154,7 +3726,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3165,7 +3739,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-13",
@@ -3176,7 +3752,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -3187,7 +3765,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-14",
@@ -3198,7 +3778,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3209,7 +3791,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3220,7 +3804,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3231,7 +3817,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3242,7 +3830,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3253,7 +3843,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3264,7 +3856,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_X_eng",
-    "label": "中２X 英語"
+    "label": "中２X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3275,7 +3869,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-16",
@@ -3286,7 +3882,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3297,7 +3895,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3308,7 +3908,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3319,7 +3921,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3330,7 +3934,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3341,7 +3947,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3352,7 +3960,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": true,
+    "displayTitle": "3A国対面"
   },
   {
     "date": "2026-03-17",
@@ -3363,7 +3973,9 @@
     "campus": "minami",
     "room": "6",
     "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3374,7 +3986,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-17",
@@ -3385,7 +3999,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3396,7 +4012,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3407,7 +4025,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3418,7 +4038,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3429,7 +4051,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3440,7 +4064,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3451,7 +4077,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3462,7 +4090,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3473,7 +4103,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-18",
@@ -3484,7 +4116,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3495,7 +4129,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3506,7 +4142,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3517,7 +4155,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3528,7 +4168,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3539,7 +4181,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3550,7 +4194,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_eng",
-    "label": "中３X 英語"
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3561,7 +4207,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3572,7 +4220,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-19",
@@ -3583,7 +4233,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3594,7 +4246,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3605,7 +4259,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3616,7 +4272,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3627,7 +4285,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3638,7 +4298,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3649,7 +4311,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3660,7 +4324,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3671,7 +4337,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-20",
@@ -3682,7 +4350,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3693,7 +4363,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_e4_X_arith",
-    "label": "小４X 算数"
+    "label": "小４X 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3704,7 +4376,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_S_arith",
-    "label": "小５S 算数"
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3715,7 +4389,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3726,7 +4402,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3737,7 +4415,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3748,7 +4428,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-23",
@@ -3759,7 +4441,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3770,7 +4454,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数"
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3781,7 +4467,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数"
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3792,7 +4480,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": true,
+    "displayTitle": "1S国対面"
   },
   {
     "date": "2026-03-24",
@@ -3803,7 +4493,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3814,7 +4506,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3825,7 +4519,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語"
+    "label": "中２A 国語",
+    "faceToFace": true,
+    "displayTitle": "2A国対面"
   },
   {
     "date": "2026-03-24",
@@ -3836,7 +4532,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-24",
@@ -3847,7 +4545,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3858,7 +4558,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数"
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3869,7 +4571,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数"
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3880,7 +4584,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3891,7 +4597,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3902,7 +4610,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3913,7 +4623,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_X_jp",
-    "label": "中３X 国語"
+    "label": "中３X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3924,7 +4636,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3935,7 +4649,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語"
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-25",
@@ -3946,7 +4662,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_j3_X_math",
-    "label": "中３X 数学"
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -3957,7 +4675,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語"
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -3968,7 +4688,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語"
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -3979,7 +4701,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語"
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -3990,7 +4714,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語"
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -4001,7 +4727,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語"
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -4012,7 +4740,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -4023,7 +4753,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-26",
@@ -4034,7 +4766,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4045,7 +4779,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4056,7 +4792,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_e4_X_jp",
-    "label": "小４X 国語"
+    "label": "小４X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4067,7 +4805,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_e5_A_jp",
-    "label": "小５A 国語"
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4078,7 +4818,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_e6_A_eng",
-    "label": "小６A 英語"
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4089,7 +4831,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語"
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4100,7 +4844,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4111,7 +4857,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語"
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4122,7 +4870,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語"
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4133,7 +4883,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語"
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4144,7 +4896,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語"
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-27",
@@ -4155,7 +4909,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語"
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -4166,7 +4922,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語"
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -4177,7 +4935,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学"
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -4188,7 +4948,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語"
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-28",
@@ -4199,7 +4961,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学"
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4210,7 +4974,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学"
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4221,7 +4987,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_e6_X_jp",
-    "label": "小６X 国語"
+    "label": "小６X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4232,7 +5000,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学"
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4243,7 +5013,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会"
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4254,7 +5026,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科"
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4265,7 +5039,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学"
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4276,7 +5052,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科"
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-30",
@@ -4287,7 +5065,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会"
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4298,7 +5078,9 @@
     "campus": "minami",
     "room": "4",
     "groupKey": "minami_e5_X_jp",
-    "label": "小５X 国語"
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4309,7 +5091,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j1_A_jp",
-    "label": "中１A 国語"
+    "label": "中１A 国語",
+    "faceToFace": true,
+    "displayTitle": "1A国対面"
   },
   {
     "date": "2026-03-31",
@@ -4320,7 +5104,9 @@
     "campus": "minami",
     "room": "5",
     "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語"
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4331,7 +5117,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学"
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4342,7 +5130,9 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学"
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4353,7 +5143,9 @@
     "campus": "minami",
     "room": "3",
     "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語"
+    "label": "中２S 国語",
+    "faceToFace": true,
+    "displayTitle": "2S国対面"
   },
   {
     "date": "2026-03-31",
@@ -4364,7 +5156,9 @@
     "campus": "minami",
     "room": "1",
     "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学"
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-03-31",
@@ -4375,6 +5169,8 @@
     "campus": "minami",
     "room": "2",
     "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学"
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
   }
 ]
