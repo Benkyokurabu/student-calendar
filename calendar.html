@@ -18,7 +18,7 @@
       margin-bottom: 16px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
-    h1 { margin: 0; font-size: 18px; }
+    h1 { margin: 0 0 8px 0; font-size: 18px; }
     h2 { margin: 0 0 12px 0; font-size: 15px; }
     .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
     select, button { font-size: 14px; }
@@ -48,22 +48,6 @@
       color: #3730a3;
       font-size: 12px;
       margin-left: 8px;
-    }
-
-    /* ★ タイトル右側（または下）に注意文を置くためのヘッダー */
-    .topbar{
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-between;
-      gap: 12px;
-      flex-wrap: wrap; /* 画面が狭いと下に落ちる */
-      margin-bottom: 6px;
-    }
-    .topbar-right{
-      margin-left:auto;
-      text-align:right;
-      max-width: 520px;
-      line-height: 1.35;
     }
 
     .subject-grid {
@@ -113,6 +97,11 @@
 
     /* ===== 月間カレンダー ===== */
     .cal-wrap { display: grid; gap: 10px; }
+
+    /* 追加：見出し右に注意文（狭い画面は折り返し） */
+    .cal-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:10px; }
+    .cal-head-note { margin-left:auto; text-align:right; max-width:520px; line-height:1.35; }
+
     .dow {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -122,6 +111,7 @@
       padding: 0 2px;
     }
     .dow div { text-align: center; }
+
     .dow div.sun { color: #b91c1c; font-weight: 700; }
     .dow div.sat { color: #1d4ed8; font-weight: 700; }
 
@@ -247,7 +237,10 @@
       cursor: pointer;
       transition: background 0.12s ease, border-color 0.12s ease, transform 0.06s ease;
     }
-    .cell:hover { background: #f9fafb; border-color: #d1d5db; }
+    .cell:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
     .cell:active { transform: translateY(1px); }
     .cell.off {
       background: #f8fafc;
@@ -291,9 +284,22 @@
       width:fit-content;
     }
 
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 8px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
-    th { text-align: left; color: #374151; font-weight: 700; background: #f9fafb; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    th {
+      text-align: left;
+      color: #374151;
+      font-weight: 700;
+      background: #f9fafb;
+    }
     .nowrap { white-space: nowrap; }
     .right { text-align: right; }
 
@@ -304,17 +310,8 @@
 <body>
 
   <div class="card">
-    <!-- ★「スケジュール表」の右側（狭いと下）に注意文を配置 -->
-    <div class="topbar">
-      <div>
-        <h1>スケジュール表 <span id="ym-pill" class="pill"></span></h1>
-        <div id="filterSummary" class="muted" style="margin-top:6px;"></div>
-      </div>
-      <div class="topbar-right muted">
-        ※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。
-      </div>
-    </div>
-
+    <h1>スケジュール表 <span id="ym-pill" class="pill"></span></h1>
+    <div id="filterSummary" class="muted" style="margin-top:6px;"></div>
     <div class="row" style="margin-top:10px;">
       <button id="prevBtn">◀ 前月</button>
       <button id="todayBtn">今月</button>
@@ -336,8 +333,8 @@
     </div>
 
     <div class="footer-note">
-      ※ 学年を選ぶと、その月にある授業が「科目→クラス」で選べます。<br/>
-      ※ 中1・中2・小学生は、理科／社会は表示されません。
+      ※ 学年を選ぶと、その月に存在する授業だけが「科目→クラス」で選べます。<br/>
+      ※ 中1・中2・小学生は、理科／社会は表示されません（今年度の開講なし前提）。
     </div>
   </div>
 
@@ -350,7 +347,10 @@
   <div id="statusArea"></div>
 
   <div class="card">
-    <h2>月間カレンダー</h2>
+    <div class="cal-head">
+      <h2 style="margin:0;">月間カレンダー</h2>
+      <div class="cal-head-note muted">※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。</div>
+    </div>
     <div class="cal-wrap">
       <div class="dow">
         <div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div>
@@ -363,6 +363,7 @@
 
 <script>
 (() => {
+  // ====== 設定 ======
   const STORAGE_KEY = "benkyo_student_calendar_v3";
 
   const GRADE_LABEL = {
@@ -379,6 +380,7 @@
     soc: "社会",
   };
 
+  // クラス表示順（S→A→B→X→C）
   const CLASS_ORDER = ["S","A","B","X","C"];
   const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
   function classRank(c){
@@ -395,6 +397,7 @@
     j3: ["math", "eng", "jp", "sci", "soc"],
   };
 
+  // ====== DOM ======
   const ymPill = document.getElementById("ym-pill");
   const filterSummary = document.getElementById("filterSummary");
   const gradeSelect = document.getElementById("gradeSelect");
@@ -410,15 +413,18 @@
   document.getElementById("todayBtn").addEventListener("click", () => setToThisMonth());
   document.getElementById("clearBtn").addEventListener("click", () => clearSelections());
 
+  // ====== 日付 ======
   const today = new Date();
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
+  // ====== 校舎込みトークン（旧版方式） ======
+  // campusMode = all の時だけ token = "hon:S" / "minami:S" のように分ける
   function makeClassToken(campusMode, campusCode, cls) {
     const c = String(cls || "").trim();
     if (!c) return "";
     if (campusMode === "all") return `${campusCode}:${c}`;
-    return c;
+    return c; // hon/minami の時は "S" のまま
   }
   function parseClassToken(token) {
     const s = String(token || "").trim();
@@ -442,10 +448,11 @@
     return `${campusLabel(campus)}${cls}`;
   }
 
+  // ====== 状態 ======
   let state = {
     grade: "j3",
-    campus: "all",
-    selectedDate: null,
+    campus: "all",      // all/hon/minami
+    selectedDate: null, // "YYYY-MM-DD"
     selected: {
       jp: new Set(),
       math: new Set(),
@@ -468,19 +475,21 @@
 
   campusSelect.addEventListener("change", () => {
     const prevCampus = state.campus;
-    state.campus = campusSelect.value;
+    state.campus = campusSelect.value; // all/hon/minami
     migrateSelectionsForCampusMode(prevCampus, state.campus);
     saveState();
     rebuildUI();
     renderAll();
   });
 
+  // campusモード切替時の選択移行（旧版方式そのまま）
   function migrateSelectionsForCampusMode(prevCampus, nextCampus) {
     for (const subj of Object.keys(state.selected)) {
       const s = state.selected[subj];
       if (!(s instanceof Set)) continue;
       const nextSet = new Set();
 
+      // all -> hon/minami： "hon:S" から "S" へ（対象キャンパスのみ）
       if (prevCampus === "all" && (nextCampus === "hon" || nextCampus === "minami")) {
         for (const token of s) {
           const p = parseClassToken(token);
@@ -490,6 +499,7 @@
         continue;
       }
 
+      // hon/minami -> all： "S" から "hon:S" or "minami:S" へ（元キャンパスを付与）
       if ((prevCampus === "hon" || prevCampus === "minami") && nextCampus === "all") {
         for (const token of s) {
           const p = parseClassToken(token);
@@ -502,6 +512,7 @@
     }
   }
 
+  // ====== 保存/復元 ======
   function loadState() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -518,8 +529,11 @@
           if (Array.isArray(arr)) state.selected[k] = new Set(arr);
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      // 破損していても落とさない
+    }
 
+    // allモードなのに "S" だけが混ざっている古い状態は捨てる（旧版HTMLと同じ処理）
     if (state.campus === "all") {
       for (const k of Object.keys(state.selected)) {
         const s = state.selected[k];
@@ -552,6 +566,7 @@
     renderAll();
   }
 
+  // ====== 月移動 ======
   function shiftMonth(delta) {
     const [y, m] = currentYM.split("-").map(Number);
     const d = new Date(y, m - 1 + delta, 1);
@@ -581,6 +596,7 @@
     return `${ymd}（${w}）`;
   }
 
+  // ====== データ読み込み ======
   async function fetchJsonForMonth(ym) {
     const candidates = [
       `schedule_${ym}.json`,
@@ -649,15 +665,20 @@
       room: (x.room || "").toString().trim(),
       groupKey: x.groupKey || "",
       label: x.label || "",
+      // 追加：対面表示用（フィルタやトークン運用には関与しない）
+      faceToFace: !!x.faceToFace,
+      displayTitle: (x.displayTitle || "").toString().trim(),
     })).filter(x => x.date && x.time && x.grade && x.subject);
   }
 
+  // ====== UI再構築 ======
   function rebuildGradeSelect() {
     const grades = Object.keys(GRADE_LABEL);
     gradeSelect.innerHTML = grades.map(g => `<option value="${g}">${GRADE_LABEL[g]}</option>`).join("");
     gradeSelect.value = state.grade;
   }
 
+  // ★ここが肝：allなら hon:S / minami:S を両方候補に出す
   function getMonthAvailableOptionsBySubject(grade, campusMode) {
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const map = {};
@@ -691,11 +712,14 @@
       if (available.length === 0) continue;
       any = true;
 
+      // 表示順：本校→南教室→(その他)、その中で S/A/B/X/C
       available.sort((a,b) => {
         const pa = parseClassToken(a);
         const pb = parseClassToken(b);
         const campusRank = (c) => (c === "hon" ? 0 : (c === "minami" ? 1 : 9));
-        return (campusRank(pa.campus || "") - campusRank(pb.campus || "")) ||
+        const ra = campusRank(pa.campus || "");
+        const rb = campusRank(pb.campus || "");
+        return (ra - rb) ||
                (classRank(pa.cls) - classRank(pb.cls)) ||
                String(pa.cls).localeCompare(String(pb.cls));
       });
@@ -721,7 +745,6 @@
           <input type="checkbox" id="${id}" />
           <span>${escapeHtml(classTokenLabel(token))}</span>
         `;
-
         const input = wrap.querySelector("input");
         input.checked = state.selected[subj]?.has(token) || false;
 
@@ -759,8 +782,9 @@
       : "";
   }
 
+  // ====== フィルタ ======
   function getSelectedPairs() {
-    const selectedPairs = new Set();
+    const selectedPairs = new Set(); // "subj|token"
     for (const subj of Object.keys(state.selected)) {
       for (const token of state.selected[subj]) {
         selectedPairs.add(`${subj}|${token}`);
@@ -771,19 +795,25 @@
 
   function getFilteredLessons() {
     const grade = state.grade;
-    const campus = state.campus;
+    const campus = state.campus; // all/hon/minami
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const selectedPairs = getSelectedPairs();
+
     if (selectedPairs.size === 0) return [];
 
     let list = allLessons.filter(l => {
       if (l.grade !== grade) return false;
       if (!allowed.has(l.subject)) return false;
+
+      // campus が hon/minami の時はまず校舎で絞る
       if (campus !== "all" && l.campus !== campus) return false;
+
+      // token を「現在の campusモード」に合わせて生成して照合
       const token = makeClassToken(campus, l.campus, l.class);
       return selectedPairs.has(`${l.subject}|${token}`);
     });
 
+    // 安定ソート
     list.sort((a,b) => (
       a.date.localeCompare(b.date) ||
       (timeStartMinutes(a.time) - timeStartMinutes(b.time)) ||
@@ -799,7 +829,6 @@
   function timeStart(timeStr) {
     return (timeStr || "").split(/[～~]/)[0].trim();
   }
-
   function timeStartMinutes(timeStr) {
     const t = timeStart(timeStr);
     const m = t.match(/^(\d{1,2}):(\d{2})$/);
@@ -811,11 +840,21 @@
     return `subj-${subjectCode || "unknown"}`;
   }
 
+  // 追加：表示名（対面なら displayTitle を優先）
+  function getEventTitle(ev) {
+    const t = (ev && ev.displayTitle) ? String(ev.displayTitle).trim() : "";
+    return t ? t : (ev && ev.label ? ev.label : "");
+  }
+
   function cellLessonHtml(lesson) {
     const subjName = SUBJECT_LABEL[lesson.subject] || lesson.subject || "";
     const cls = (lesson.class || "").trim();
     const t = timeStart(lesson.time);
 
+    // 対面など displayTitle がある場合は、それを優先表示（例：2S国対面）
+    const clsText = (lesson.displayTitle && lesson.displayTitle.trim()) ? lesson.displayTitle.trim() : cls;
+
+    // allの時は「本/南」を右端に表示（分かりやすい）
     const campusMark = (state.campus === "all")
       ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}${escapeHtml(lesson.room || "")}</span>`
       : `<span class="campus-tag">${escapeHtml(lesson.room || "")}</span>`;
@@ -824,16 +863,20 @@
       <div class="lesson-item ${subjectCss(lesson.subject)}">
         <span class="lesson-time">${escapeHtml(t)}</span>
         <span class="sub-tag">${escapeHtml(subjName)}</span>
-        ${cls ? `<span class="cls-tag">${escapeHtml(cls)}</span>` : ``}
+        ${clsText ? `<span class="cls-tag">${escapeHtml(clsText)}</span>` : ``}
         ${campusMark}
       </div>
     `.trim();
   }
 
   function detailMainLabel(lesson) {
+    // 対面など displayTitle がある場合は、それを優先表示（例：2S国対面）
+    const t = (lesson.displayTitle || "").trim();
+    if (t) return t;
     return `${(lesson.class || "").trim()}`;
   }
 
+  // ====== 月間グリッド ======
   function buildMonthMatrix(ym) {
     const [y, m] = ym.split("-").map(Number);
     const first = new Date(y, m - 1, 1);
@@ -884,7 +927,8 @@
       if (dow === 6) div.classList.add("sat");
       if (cell.date === TODAY_YMD) div.classList.add("today");
 
-      if (state.selectedDate === cell.date) div.classList.add("selected");
+      const isSelected = (state.selectedDate === cell.date);
+      if (isSelected) div.classList.add("selected");
       if (list.length > 0) div.classList.add("has-lessons");
 
       const badge = list.length > 0 ? `<span class="badge">${list.length}件</span>` : "";
@@ -922,6 +966,7 @@
     }
   }
 
+  // ====== 日別詳細 ======
   function renderDayDetail(filtered) {
     dayDetailArea.innerHTML = "";
 
@@ -945,7 +990,7 @@
     const items = filtered.filter(x => x.date === date);
     items.sort((a,b) => (timeStartMinutes(a.time) - timeStartMinutes(b.time)) || (a.campus||"").localeCompare(b.campus||"") || (a.room||"").localeCompare(b.room||""));
 
-    dayDetailArea.innerHTML = `
+    const header = `
       <div class="card" id="dayDetailCard">
         <h2>日別詳細：${escapeHtml(ymdToLabel(date))}</h2>
         ${items.length === 0
@@ -974,8 +1019,10 @@
           `}
       </div>
     `;
+    dayDetailArea.innerHTML = header;
   }
 
+  // ====== 表示テキスト ======
   function selectedSummaryText() {
     const g = GRADE_LABEL[state.grade] || state.grade || "";
     const campus = (state.campus === "all") ? "校舎：すべて" : ("校舎：" + (state.campus === "hon" ? "本校" : "南教室"));
@@ -1033,9 +1080,11 @@
       .replaceAll("'", "&#039;");
   }
 
+  // ====== 初期化 ======
   loadState();
   rebuildUI();
   loadMonth(currentYM);
+
 })();
 </script>
 </body>
