@@ -340,7 +340,7 @@
 
 <script>
 (() => {
-  const STORAGE_KEY = "benkyo_teacher_calendar_v3";
+  const STORAGE_KEY = "benkyo_teacher_calendar_v4";
 
   const teacherChecks = document.getElementById("teacherChecks");
   const campusSelect = document.getElementById("campusSelect");
@@ -362,6 +362,20 @@
   let cachedLatestPayload = null;
   let cachedLatestYM = null;
   let payload = { year: null, month: null, teachers: [], items: [] };
+
+  const TEACHER_SORT_ORDER = {
+    "岩本": 1,
+    "工藤": 2,
+    "金子": 3,
+    "金城": 4,
+    "鈴木": 5,
+    "髙山": 6,
+    "高山": 6,
+    "治彦": 7,
+    "真下": 8,
+    "森松": 9,
+    "未判定": 999
+  };
 
   let state = {
     teachers: [],
@@ -471,6 +485,23 @@
     return normalizeTeacherName(itemOrName);
   }
 
+  function teacherSortKey(name) {
+    const s = String(name || "").trim();
+    const base = (s === "高山") ? "髙山" : s;
+    if (Object.prototype.hasOwnProperty.call(TEACHER_SORT_ORDER, base)) {
+      return [0, TEACHER_SORT_ORDER[base], base];
+    }
+    return [1, 9999, base];
+  }
+
+  function sortTeachers(list) {
+    return [...list].sort((a, b) => {
+      const ka = teacherSortKey(a);
+      const kb = teacherSortKey(b);
+      return (ka[0] - kb[0]) || (ka[1] - kb[1]) || String(ka[2]).localeCompare(String(kb[2]), "ja");
+    });
+  }
+
   function gradeLabel(code) {
     return {
       e4: "小4",
@@ -533,11 +564,8 @@
   }
 
   function collectTeachers(items) {
-    return Array.from(new Set(items.map(x => x.teacher).filter(Boolean))).sort((a, b) => {
-      const ar = a === "未判定" ? 1 : 0;
-      const br = b === "未判定" ? 1 : 0;
-      return (ar - br) || a.localeCompare(b, "ja");
-    });
+    const uniq = Array.from(new Set(items.map(x => x.teacher).filter(Boolean)));
+    return sortTeachers(uniq);
   }
 
   function inferYMFromItems(items) {
@@ -657,9 +685,9 @@
   }
 
   function rebuildTeacherChecks() {
-    const teachers = Array.isArray(payload.teachers) && payload.teachers.length ? payload.teachers : collectTeachers(payload.items || []);
+    const teachers = Array.isArray(payload.teachers) && payload.teachers.length ? sortTeachers(payload.teachers) : collectTeachers(payload.items || []);
     const validSet = new Set(teachers);
-    state.teachers = state.teachers.filter(t => validSet.has(t));
+    state.teachers = sortTeachers(state.teachers.filter(t => validSet.has(t)));
 
     if (teachers.length > 0 && state.teachers.length === 0) {
       state.teachers = [teachers[0]];
@@ -691,6 +719,7 @@
         } else {
           state.teachers = state.teachers.filter(x => x !== name);
         }
+        state.teachers = sortTeachers(state.teachers);
         state.selectedDate = null;
         saveState();
         renderAll();
@@ -718,12 +747,14 @@
         if (t !== 0) return t;
         if ((a.campus || "") !== (b.campus || "")) return (a.campus || "").localeCompare(b.campus || "", "ja");
         if ((a.room || "") !== (b.room || "")) return (a.room || "").localeCompare(b.room || "", "ja");
-        return (a.title || "").localeCompare(b.title || "", "ja");
+        const ka = teacherSortKey(a.teacher);
+        const kb = teacherSortKey(b.teacher);
+        return (ka[0] - kb[0]) || (ka[1] - kb[1]) || String(ka[2]).localeCompare(String(kb[2]), "ja");
       });
   }
 
   function selectedSummaryText() {
-    const names = state.teachers.map(getTeacherLabel);
+    const names = sortTeachers(state.teachers).map(getTeacherLabel);
     const teacherText = names.length ? names.join("・") : "未選択";
     const campusText = state.campus === "all" ? "校舎：すべて" : `校舎：${campusLabel(state.campus)}`;
     return `${teacherText} ／ ${campusText}`;
@@ -867,7 +898,9 @@
       if (t !== 0) return t;
       if ((a.campus || "") !== (b.campus || "")) return (a.campus || "").localeCompare(b.campus || "", "ja");
       if ((a.room || "") !== (b.room || "")) return (a.room || "").localeCompare(b.room || "", "ja");
-      return (a.teacher || "").localeCompare(b.teacher || "", "ja");
+      const ka = teacherSortKey(a.teacher);
+      const kb = teacherSortKey(b.teacher);
+      return (ka[0] - kb[0]) || (ka[1] - kb[1]) || String(ka[2]).localeCompare(String(kb[2]), "ja");
     });
 
     dayDetailArea.innerHTML = `
@@ -917,7 +950,7 @@
       statusArea.innerHTML = `
         <div class="card">
           <div class="muted">
-            表示対象：${escapeHtml(state.teachers.map(getTeacherLabel).join("・"))} ／ 校舎：${state.campus === "all" ? "すべて" : escapeHtml(campusLabel(state.campus))}
+            表示対象：${escapeHtml(sortTeachers(state.teachers).map(getTeacherLabel).join("・"))} ／ 校舎：${state.campus === "all" ? "すべて" : escapeHtml(campusLabel(state.campus))}
             ／ 授業日数：${days}日 ／ 授業件数：${filtered.length}件
           </div>
         </div>
