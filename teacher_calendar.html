@@ -38,7 +38,7 @@
     }
     button:hover { background: #f3f4f6; }
     .muted { color: #6b7280; font-size: 13px; }
-    #filterSummary{ font-weight:700; color:#111827; }
+    #filterSummary { font-weight: 700; color: #111827; }
     .pill {
       display: inline-block;
       padding: 2px 10px;
@@ -56,6 +56,24 @@
       border-radius: 12px;
       font-size: 13px;
     }
+
+    .teacher-checks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      margin-top: 10px;
+    }
+    .chk {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      user-select: none;
+    }
+    .chk input { transform: translateY(1px); }
 
     .cal-wrap { display: grid; gap: 10px; }
     .cal-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:10px; }
@@ -143,7 +161,37 @@
       font-weight: 700;
       white-space: nowrap;
     }
-    .more-indicator{
+    .grade-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .grade-e4 { border-color: #a7f3d0; background: #ecfdf5; }
+    .grade-e4.grade-pill { background: #d1fae5; border-color: #6ee7b7; color: #065f46; }
+
+    .grade-e5 { border-color: #bfdbfe; background: #eff6ff; }
+    .grade-e5.grade-pill { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
+
+    .grade-e6 { border-color: #fde68a; background: #fffbeb; }
+    .grade-e6.grade-pill { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
+
+    .grade-j1 { border-color: #e9d5ff; background: #faf5ff; }
+    .grade-j1.grade-pill { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
+
+    .grade-j2 { border-color: #fecdd3; background: #fff1f2; }
+    .grade-j2.grade-pill { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
+
+    .grade-j3 { border-color: #c7d2fe; background: #eef2ff; }
+    .grade-j3.grade-pill { background: #e0e7ff; border-color: #a5b4fc; color: #3730a3; }
+
+    .more-indicator {
       display:inline-flex;
       align-items:center;
       justify-content:center;
@@ -252,9 +300,6 @@
 
       <span style="width:12px;"></span>
 
-      <label class="muted">先生</label>
-      <select id="teacherSelect"></select>
-
       <label class="muted">校舎</label>
       <select id="campusSelect">
         <option value="all">すべて</option>
@@ -263,6 +308,11 @@
       </select>
 
       <button id="clearBtn">選択リセット</button>
+    </div>
+
+    <div style="margin-top:14px;">
+      <div class="muted" style="margin-bottom:6px;">先生（複数選択可）</div>
+      <div id="teacherChecks" class="teacher-checks"></div>
     </div>
 
     <div class="muted" style="margin-top:10px;">
@@ -290,9 +340,9 @@
 
 <script>
 (() => {
-  const STORAGE_KEY = "benkyo_teacher_calendar_v2";
+  const STORAGE_KEY = "benkyo_teacher_calendar_v3";
 
-  const teacherSelect = document.getElementById("teacherSelect");
+  const teacherChecks = document.getElementById("teacherChecks");
   const campusSelect = document.getElementById("campusSelect");
   const ymPill = document.getElementById("ym-pill");
   const filterSummary = document.getElementById("filterSummary");
@@ -314,17 +364,10 @@
   let payload = { year: null, month: null, teachers: [], items: [] };
 
   let state = {
-    teacher: "",
+    teachers: [],
     campus: "all",
     selectedDate: null,
   };
-
-  teacherSelect.addEventListener("change", () => {
-    state.teacher = teacherSelect.value;
-    state.selectedDate = null;
-    saveState();
-    renderAll();
-  });
 
   campusSelect.addEventListener("change", () => {
     state.campus = campusSelect.value;
@@ -338,7 +381,13 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return;
       const obj = JSON.parse(raw);
-      if (typeof obj.teacher === "string") state.teacher = obj.teacher;
+
+      if (Array.isArray(obj.teachers)) {
+        state.teachers = obj.teachers.map(x => String(x || "").trim()).filter(Boolean);
+      } else if (typeof obj.teacher === "string" && obj.teacher.trim()) {
+        state.teachers = [obj.teacher.trim()];
+      }
+
       if (typeof obj.selectedDate === "string" || obj.selectedDate === null) state.selectedDate = obj.selectedDate;
       if (["all", "hon", "minami"].includes(obj.campus)) state.campus = obj.campus;
     } catch (_) {}
@@ -349,11 +398,11 @@
   }
 
   function clearSelections() {
-    state.teacher = teacherSelect.options.length ? (teacherSelect.options[0].value || "") : "";
+    state.teachers = [];
     state.campus = "all";
     state.selectedDate = null;
-    teacherSelect.value = state.teacher;
     campusSelect.value = state.campus;
+    rebuildTeacherChecks();
     saveState();
     renderAll();
   }
@@ -420,6 +469,21 @@
       return normalizeTeacherName(itemOrName.teacher || "");
     }
     return normalizeTeacherName(itemOrName);
+  }
+
+  function gradeLabel(code) {
+    return {
+      e4: "小4",
+      e5: "小5",
+      e6: "小6",
+      j1: "中1",
+      j2: "中2",
+      j3: "中3",
+    }[code] || "";
+  }
+
+  function gradeClass(code) {
+    return gradeLabel(code) ? `grade-${code}` : "";
   }
 
   function normalizePayload(raw) {
@@ -534,7 +598,7 @@
       cachedLatestPayload = raw;
       cachedLatestYM = payload.year && payload.month ? `${payload.year}-${pad2(payload.month)}` : inferYMFromItems(payload.items);
       if (cachedLatestYM) currentYM = cachedLatestYM;
-      rebuildTeacherSelect();
+      rebuildTeacherChecks();
       renderAll();
     } catch (_) {
       await loadMonth(currentYM);
@@ -550,11 +614,11 @@
     try {
       const raw = await fetchJsonForMonth(ym);
       payload = normalizePayload(raw);
-      rebuildTeacherSelect();
+      rebuildTeacherChecks();
       renderAll();
     } catch (e) {
       payload = { year: Number(ym.slice(0,4)), month: Number(ym.slice(5,7)), teachers: [], items: [] };
-      rebuildTeacherSelect();
+      rebuildTeacherChecks();
       renderAll();
       statusArea.innerHTML = `
         <div class="card error">
@@ -581,7 +645,7 @@
       state.selectedDate = null;
       saveState();
       payload = normalizePayload(cachedLatestPayload || payload);
-      rebuildTeacherSelect();
+      rebuildTeacherChecks();
       renderAll();
       return;
     }
@@ -592,41 +656,60 @@
     loadMonth(currentYM);
   }
 
-  function rebuildTeacherSelect() {
+  function rebuildTeacherChecks() {
     const teachers = Array.isArray(payload.teachers) && payload.teachers.length ? payload.teachers : collectTeachers(payload.items || []);
-    const prev = state.teacher;
+    const validSet = new Set(teachers);
+    state.teachers = state.teachers.filter(t => validSet.has(t));
 
-    teacherSelect.innerHTML = "";
+    if (teachers.length > 0 && state.teachers.length === 0) {
+      state.teachers = [teachers[0]];
+    }
+
+    teacherChecks.innerHTML = "";
+
     if (teachers.length === 0) {
-      teacherSelect.innerHTML = '<option value="">（先生データなし）</option>';
-      state.teacher = "";
-      teacherSelect.value = "";
+      teacherChecks.innerHTML = '<div class="muted">（先生データなし）</div>';
       saveState();
       campusSelect.value = state.campus;
       return;
     }
 
-    teachers.forEach(name => {
-      const opt = document.createElement("option");
-      opt.value = name;
-      opt.textContent = getTeacherLabel(name);
-      teacherSelect.appendChild(opt);
-    });
+    for (const name of teachers) {
+      const safe = String(name).replace(/[^a-zA-Z0-9_\-]/g, "_");
+      const id = `teacher_${safe}`;
+      const wrap = document.createElement("label");
+      wrap.className = "chk";
+      wrap.innerHTML = `
+        <input type="checkbox" id="${id}">
+        <span>${escapeHtml(getTeacherLabel(name))}</span>
+      `;
+      const input = wrap.querySelector("input");
+      input.checked = state.teachers.includes(name);
+      input.addEventListener("change", () => {
+        if (input.checked) {
+          if (!state.teachers.includes(name)) state.teachers.push(name);
+        } else {
+          state.teachers = state.teachers.filter(x => x !== name);
+        }
+        state.selectedDate = null;
+        saveState();
+        renderAll();
+      });
+      teacherChecks.appendChild(wrap);
+    }
 
-    state.teacher = teachers.includes(prev) ? prev : teachers[0];
-    teacherSelect.value = state.teacher;
     campusSelect.value = state.campus;
     saveState();
   }
 
   function getFilteredItems() {
-    const teacher = state.teacher;
+    const selectedTeachers = new Set(state.teachers);
     const campus = state.campus;
-    if (!teacher) return [];
+    if (selectedTeachers.size === 0) return [];
 
     return (payload.items || [])
       .filter(item => {
-        if (item.teacher !== teacher) return false;
+        if (!selectedTeachers.has(item.teacher)) return false;
         if (campus !== "all" && item.campus !== campus) return false;
         return true;
       })
@@ -640,7 +723,8 @@
   }
 
   function selectedSummaryText() {
-    const teacherText = state.teacher ? getTeacherLabel(state.teacher) : "未選択";
+    const names = state.teachers.map(getTeacherLabel);
+    const teacherText = names.length ? names.join("・") : "未選択";
     const campusText = state.campus === "all" ? "校舎：すべて" : `校舎：${campusLabel(state.campus)}`;
     return `${teacherText} ／ ${campusText}`;
   }
@@ -677,9 +761,13 @@
     const t = timeStart(item.time);
     const title = getDisplayTitle(item);
     const campusRoom = `${campusShort(item.campus)}${item.room || ""}`;
+    const gradeCode = item.grade || "";
+    const gLabel = gradeLabel(gradeCode);
+    const gClass = gradeClass(gradeCode);
     return `
-      <div class="lesson-item">
+      <div class="lesson-item ${escapeHtml(gClass)}">
         <span class="lesson-time">${escapeHtml(t)}</span>
+        ${gLabel ? `<span class="grade-pill ${escapeHtml(gClass)}">${escapeHtml(gLabel)}</span>` : ``}
         <span class="title-tag">${escapeHtml(title)}</span>
         <span class="campus-tag">${escapeHtml(campusRoom)}</span>
       </div>
@@ -757,9 +845,9 @@
   function renderDayDetail(filtered) {
     dayDetailArea.innerHTML = "";
 
-    if (!state.teacher) {
+    if (state.teachers.length === 0) {
       dayDetailArea.innerHTML = `
-        <div class="card"><div class="muted">先生を選択すると、その月の授業が表示されます。</div></div>
+        <div class="card"><div class="muted">先生にチェックを入れると、その月の授業が表示されます。</div></div>
       `;
       return;
     }
@@ -778,7 +866,8 @@
       const t = timeStartMinutes(a.time) - timeStartMinutes(b.time);
       if (t !== 0) return t;
       if ((a.campus || "") !== (b.campus || "")) return (a.campus || "").localeCompare(b.campus || "", "ja");
-      return (a.room || "").localeCompare(b.room || "", "ja");
+      if ((a.room || "") !== (b.room || "")) return (a.room || "").localeCompare(b.room || "", "ja");
+      return (a.teacher || "").localeCompare(b.teacher || "", "ja");
     });
 
     dayDetailArea.innerHTML = `
@@ -792,6 +881,7 @@
                 <tr>
                   <th class="nowrap">時間</th>
                   <th>授業</th>
+                  <th class="nowrap">先生</th>
                   <th class="nowrap">校舎</th>
                   <th class="nowrap right">教室</th>
                 </tr>
@@ -800,7 +890,8 @@
                 ${items.map(it => `
                   <tr>
                     <td class="nowrap col-time">${escapeHtml(it.time)}</td>
-                    <td>${escapeHtml(getDisplayTitle(it))}</td>
+                    <td>${gradeLabel(it.grade) ? `<span class="grade-pill ${escapeHtml(gradeClass(it.grade))}">${escapeHtml(gradeLabel(it.grade))}</span> ` : ``}${escapeHtml(getDisplayTitle(it))}</td>
+                    <td class="nowrap">${escapeHtml(getTeacherLabel(it))}</td>
                     <td class="nowrap">${escapeHtml(it.campusLabel || campusLabel(it.campus))}</td>
                     <td class="nowrap right">${escapeHtml(it.room || "")}</td>
                   </tr>
@@ -821,12 +912,12 @@
     renderDayDetail(filtered);
 
     statusArea.innerHTML = "";
-    if (state.teacher) {
+    if (state.teachers.length > 0) {
       const days = new Set(filtered.map(x => x.date)).size;
       statusArea.innerHTML = `
         <div class="card">
           <div class="muted">
-            表示対象：${escapeHtml(getTeacherLabel(state.teacher))} ／ 校舎：${state.campus === "all" ? "すべて" : escapeHtml(campusLabel(state.campus))}
+            表示対象：${escapeHtml(state.teachers.map(getTeacherLabel).join("・"))} ／ 校舎：${state.campus === "all" ? "すべて" : escapeHtml(campusLabel(state.campus))}
             ／ 授業日数：${days}日 ／ 授業件数：${filtered.length}件
           </div>
         </div>
@@ -835,8 +926,8 @@
   }
 
   loadState();
-  teacherSelect.innerHTML = '<option value="">読み込み中…</option>';
   campusSelect.value = state.campus;
+  teacherChecks.innerHTML = '<div class="muted">読み込み中…</div>';
   loadInitialMonth();
 })();
 </script>
