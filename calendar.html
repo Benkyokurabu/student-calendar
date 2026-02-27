@@ -418,6 +418,10 @@
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
+  // latest読込用キャッシュ
+  let cachedLatestRaw = null;
+  let cachedLatestYM = null;
+
   // ====== 校舎込みトークン（旧版方式） ======
   // campusMode = all の時だけ token = "hon:S" / "minami:S" のように分ける
   function makeClassToken(campusMode, campusCode, cls) {
@@ -597,16 +601,9 @@
   }
 
   // ====== データ読み込み ======
-  async function fetchJsonForMonth(ym) {
-    const candidates = [
-      `schedule_${ym}.json`,
-      `./schedule_${ym}.json`,
-      `../schedule_${ym}.json`,
-      `./data/schedule_${ym}.json`,
-      `./json/schedule_${ym}.json`,
-    ];
-
+  async function fetchJsonFromCandidates(candidates, labelForError) {
     const tried = [];
+
     for (const base of candidates) {
       const url = `${base}?ts=${Date.now()}`;
       tried.push(url);
@@ -619,10 +616,74 @@
       } catch (_) {}
     }
 
-    throw new Error(
-      `この月のJSONが見つかりません。calendar.html と同じフォルダに schedule_${ym}.json を置くか、` +
-      `data/ または json/ フォルダに置いてください。試行URL: ` + tried.join(" , ")
-    );
+    throw new Error(`${labelForError} が見つかりません。試行URL: ` + tried.join(" , "));
+  }
+
+  async function fetchLatestJson() {
+    const candidates = [
+      "schedule_latest.json",
+      "./schedule_latest.json",
+      "../schedule_latest.json",
+      "./data/schedule_latest.json",
+      "./json/schedule_latest.json",
+    ];
+    return await fetchJsonFromCandidates(candidates, "schedule_latest.json");
+  }
+
+  async function fetchJsonForMonth(ym) {
+    if (cachedLatestRaw && cachedLatestYM === ym) {
+      return cachedLatestRaw;
+    }
+
+    const candidates = [
+      `schedule_${ym}.json`,
+      `./schedule_${ym}.json`,
+      `../schedule_${ym}.json`,
+      `./data/schedule_${ym}.json`,
+      `./json/schedule_${ym}.json`,
+    ];
+
+    return await fetchJsonFromCandidates(candidates, `schedule_${ym}.json`);
+  }
+
+  function inferYMFromLessons(list) {
+    if (!Array.isArray(list) || list.length === 0) return null;
+
+    const dates = list
+      .map(x => String(x.date || ""))
+      .filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s))
+      .sort();
+
+    if (dates.length === 0) return null;
+    return dates[0].slice(0, 7);
+  }
+
+  async function loadInitialMonth() {
+    ymPill.textContent = ymToLabel(currentYM);
+    statusArea.innerHTML = "";
+    hintArea.textContent = "読み込み中…";
+    monthGrid.innerHTML = "";
+    dayDetailArea.innerHTML = "";
+
+    try {
+      const data = await fetchLatestJson();
+      const normalized = normalizeLessons(data);
+
+      cachedLatestRaw = data;
+      cachedLatestYM = inferYMFromLessons(normalized);
+
+      if (cachedLatestYM) {
+        currentYM = cachedLatestYM;
+      }
+
+      allLessons = normalized;
+      hintArea.textContent = "";
+      rebuildUI();
+      renderAll();
+    } catch (_) {
+      // latest が無い場合は、従来どおり「今月の月別JSON」を読みにいく
+      await loadMonth(currentYM);
+    }
   }
 
   async function loadMonth(ym) {
@@ -1083,7 +1144,7 @@
   // ====== 初期化 ======
   loadState();
   rebuildUI();
-  loadMonth(currentYM);
+  loadInitialMonth();
 
 })();
 </script>
