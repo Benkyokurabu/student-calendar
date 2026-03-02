@@ -305,6 +305,12 @@
 
     .footer-note { margin-top: 10px; font-size: 12px; color: #6b7280; }
     code { background: #f3f4f6; padding: 1px 6px; border-radius: 6px; }
+  
+    .journal-row td { background: #fbfdff; padding-top: 10px; padding-bottom: 12px; }
+    .journal-box { display: grid; gap: 6px; font-size: 13px; }
+    .btn.btn-small { display: inline-block; padding: 6px 10px; border-radius: 8px; border: 1px solid #dbe4f0; background: #ffffff; text-decoration: none; color: #111827; }
+    .btn.btn-small:hover { background: #f5f7fb; }
+
   </style>
 </head>
 <body>
@@ -421,6 +427,11 @@
   // latest読込用キャッシュ
   let cachedLatestRaw = null;
   let cachedLatestYM = null;
+
+  // journal読込用キャッシュ
+  let cachedJournalPayload = null; // {ym, generatedAt, items}
+  let cachedJournalYM = null;
+  let journalItems = {}; // eventKey -> {content,pages,homework,recordingUrl}
 
   // ====== 校舎込みトークン（旧版方式） ======
   // campusMode = all の時だけ token = "hon:S" / "minami:S" のように分ける
@@ -646,6 +657,62 @@
     return await fetchJsonFromCandidates(candidates, `schedule_${ym}.json`);
   }
 
+
+  async function fetchLatestJournalJson() {
+    const candidates = [
+      "journal_latest.json",
+      "./journal_latest.json",
+      "../journal_latest.json",
+      "./data/journal_latest.json",
+      "./json/journal_latest.json",
+    ];
+    return await fetchJsonFromCandidates(candidates, "journal_latest.json");
+  }
+
+  async function fetchJournalForMonth(ym) {
+    const candidates = [
+      `journal_${ym}.json`,
+      `./journal_${ym}.json`,
+      `../journal_${ym}.json`,
+      `./data/journal_${ym}.json`,
+      `./json/journal_${ym}.json`,
+    ];
+    return await fetchJsonFromCandidates(candidates, `journal_${ym}.json`);
+  }
+
+  async function loadJournal(ym) {
+    // schedule側のYMに合わせて journal を読む。無ければ空のまま。
+    try {
+      if (cachedJournalPayload && cachedJournalYM === ym) {
+        journalItems = (cachedJournalPayload.items || {});
+        return;
+      }
+
+      // まず月別JSONを試す（無ければlatest）
+      let payload = null;
+      try {
+        payload = await fetchJournalForMonth(ym);
+      } catch (_) {
+        payload = await fetchLatestJournalJson();
+      }
+
+      // 互換: {items:{...}} も {<eventKey>:{...}} も受ける
+      if (payload && payload.items && typeof payload.items === "object") {
+        cachedJournalPayload = payload;
+        cachedJournalYM = ym;
+        journalItems = payload.items || {};
+      } else if (payload && typeof payload === "object") {
+        cachedJournalPayload = { ym, generatedAt: "", items: payload };
+        cachedJournalYM = ym;
+        journalItems = payload || {};
+      } else {
+        journalItems = {};
+      }
+    } catch (_) {
+      journalItems = {};
+    }
+  }
+
   function inferYMFromLessons(list) {
     if (!Array.isArray(list) || list.length === 0) return null;
 
@@ -679,6 +746,7 @@
       allLessons = normalized;
       hintArea.textContent = "";
       rebuildUI();
+      await loadJournal(currentYM);
       renderAll();
     } catch (_) {
       // latest が無い場合は、従来どおり「今月の月別JSON」を読みにいく
@@ -698,6 +766,7 @@
       allLessons = normalizeLessons(data);
       hintArea.textContent = "";
       rebuildUI();
+      await loadJournal(ym);
       renderAll();
     } catch (e) {
       allLessons = [];
@@ -1067,14 +1136,40 @@
                 </tr>
               </thead>
               <tbody>
-                ${items.map(it => `
-                  <tr>
-                    <td class="nowrap col-time">${escapeHtml(it.time)}</td>
-                    <td><span class="sub-tag ${subjectCss(it.subject)}">${escapeHtml(SUBJECT_LABEL[it.subject] || it.subject)}</span> ${escapeHtml(detailMainLabel(it))}</td>
-                    <td class="nowrap">${escapeHtml(campusLabel(it.campus))}</td>
-                    <td class="nowrap right">${escapeHtml(it.room || "")}</td>
-                  </tr>
-                `).join("")}
+                ${items.map(it => {
+                    const ek = buildEventKey(it);
+                    const j = (journalItems && journalItems[ek]) ? journalItems[ek] : {};
+                    const content = ((j.content ?? "") + "").trim();
+                    const pages = ((j.pages ?? "") + "").trim();
+                    const homework = ((j.homework ?? "") + "").trim();
+                    const rec = ((j.recordingUrl ?? "") + "").trim();
+
+                    const contentHtml = content ? nl2brEscaped(content) : '<span class="muted">(未入力)</span>';
+                    const pagesHtml = pages ? nl2brEscaped(pages) : '<span class="muted">(未入力)</span>';
+                    const homeworkHtml = homework ? nl2brEscaped(homework) : '<span class="muted">(未入力)</span>';
+                    const recHtml = rec
+                      ? `<a class="btn btn-small" href="${escapeHtml(rec)}" target="_blank" rel="noopener">見る</a>`
+                      : '<span class="muted">(未入力)</span>';
+
+                    return `
+                      <tr>
+                        <td class="nowrap col-time">${escapeHtml(it.time)}</td>
+                        <td><span class="sub-tag ${subjectCss(it.subject)}">${escapeHtml(SUBJECT_LABEL[it.subject] || it.subject)}</span> ${escapeHtml(detailMainLabel(it))}</td>
+                        <td class="nowrap">${escapeHtml(campusLabel(it.campus))}</td>
+                        <td class="nowrap right">${escapeHtml(it.room || "")}</td>
+                      </tr>
+                      <tr class="journal-row">
+                        <td colspan="4">
+                          <div class="journal-box">
+                            <div><b>授業内容：</b> ${contentHtml}</div>
+                            <div><b>ページ：</b> ${pagesHtml}</div>
+                            <div><b>宿題：</b> ${homeworkHtml}</div>
+                            <div><b>録画：</b> ${recHtml}</div>
+                          </div>
+                        </td>
+                      </tr>
+                    `;
+                  }).join("")}
               </tbody>
             </table>
           `}
