@@ -353,7 +353,7 @@
   const GRADE_LABEL = { e4: "小4", e5: "小5", e6: "小6", j1: "中1", j2: "中2", j3: "中3" };
   const SUBJECT_LABEL = { arith: "算数", math: "数学", eng: "英語", jp: "国語", sci: "理科", soc: "社会" };
 
-  // クラス表示順（S→A→B→X→C）
+  // クラス表示順（S→A→B→X→C）を厳守
   const CLASS_ORDER = ["S","A","B","X","C"];
   const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
   function classRank(c){
@@ -387,9 +387,6 @@
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
-  let cachedLatestRaw = null;
-  let cachedLatestYM = null;
-
   // ====== 状態 ======
   let state = {
     grade: "j3", campus: "all", selectedDate: null,
@@ -402,22 +399,20 @@
 
   // ====== データ読み込み ======
   async function fetchJsonFromCandidates(candidates, labelForError) {
-    const tried = [];
     for (const base of candidates) {
       const url = `${base}?ts=${Date.now()}`;
-      tried.push(url);
       try {
         const res = await fetch(url, { cache: "no-store" });
         if (!res.ok) continue;
-        const data = await res.json();
-        return data;
+        return await res.json();
       } catch (_) {}
     }
-    return null; // 失敗しても落とさない
+    return null;
   }
 
   async function loadJournalSafe(ym) {
     if (journalLoadedYM === ym) return;
+    // 最新と月別の両方を読み込み統合する
     const monthly = await fetchJsonFromCandidates([`journal_${ym}.json`], "journal_monthly");
     const latest = await fetchJsonFromCandidates(["journal_latest.json"], "journal_latest");
     const merged = {};
@@ -427,10 +422,11 @@
     journalLoadedYM = ym;
   }
 
+  // ★紐付けキーの完全一致化（重要！）
   function buildEventKeyFromLesson(it) {
-    // 記号「~」と「～」の揺れを吸収
-    const time = String(it?.time ?? "").replace(/~/g, "～").trim();
     const date = String(it?.date ?? "").trim();
+    // 記号の全角半角の揺れを修正して結合
+    const time = String(it?.time ?? "").replace(/~/g, "～").trim();
     const campus = String(it?.campus ?? "").trim();
     const gk = String(it?.groupKey ?? "").trim();
     const room = String(it?.room ?? "").trim();
@@ -445,11 +441,12 @@
 
   function renderDayDetailRows(it) {
     const ek = buildEventKeyFromLesson(it);
+    // JSONの正しい構造（entries配下）からデータを抽出
     const entry = journalEntries[ek] || { content:"", page:"", homework:[], recordingUrl:"" };
     const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">（未入力）</span>`;
     const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">（未入力）</span>`;
     
-    // 宿題（リスト形式）の処理
+    // 宿題（配列形式）の処理
     const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
     const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">（未入力）</span>`;
     
@@ -466,7 +463,7 @@
       <tr class="journal-row">
         <td colspan="4">
           <div class="journal-grid">
-            <div class="j-label">授業内容</div><div class="j-val">${contentHtml}</div>
+            <div class="j-label">指導内容</div><div class="j-val">${contentHtml}</div>
             <div class="j-label">ページ</div><div class="j-val">${pageHtml}</div>
             <div class="j-label">宿題</div><div class="j-val">${hwHtml}</div>
             <div class="j-label">録画</div><div class="j-val">${recHtml}</div>
@@ -476,7 +473,7 @@
     `;
   }
 
-  // --- 以下、既存のバックアップロジックを維持 ---
+  // --- ユーティリティ ---
   function subjectCss(s) { return `subj-${s}`; }
   function escapeHtml(s) { return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
 
@@ -560,6 +557,7 @@
       const checks = document.createElement("div");
       checks.className = "class-checks";
       const classes = [...new Set(allLessons.filter(l => l.grade === state.grade && l.subject === subj && (state.campus==='all'||l.campus===state.campus)).map(l => state.campus==='all' ? `${l.campus}:${l.class}` : l.class))];
+      // ★クラス並び順でソートを維持
       classes.sort((a,b) => classRank(a.split(":").pop()) - classRank(b.split(":").pop()));
       classes.forEach(cls => {
         const label = document.createElement("label");
