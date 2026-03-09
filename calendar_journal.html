@@ -98,7 +98,6 @@
     /* ===== 月間カレンダー ===== */
     .cal-wrap { display: grid; gap: 10px; }
 
-    /* 追加：見出し右に注意文（狭い画面は折り返し） */
     .cal-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:10px; }
     .cal-head-note { margin-left:auto; text-align:right; max-width:520px; line-height:1.35; }
 
@@ -189,31 +188,18 @@
       border: 1px solid #e5e7eb;
     }
 
-    /* 科目別カラー（薄め） */
     .subj-arith { border-color: #99f6e4; background: #f0fdfa; }
     .subj-arith .sub-tag { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
-
     .subj-math { border-color: #bfdbfe; background: #eff6ff; }
     .subj-math .sub-tag { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
-
     .subj-eng { border-color: #bbf7d0; background: #f0fdf4; }
     .subj-eng .sub-tag { background: #dcfce7; border-color: #86efac; color: #166534; }
-
     .subj-jp { border-color: #fde68a; background: #fffbeb; }
     .subj-jp .sub-tag { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
-
     .subj-sci { border-color: #e9d5ff; background: #faf5ff; }
     .subj-sci .sub-tag { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
-
     .subj-soc { border-color: #fecdd3; background: #fff1f2; }
     .subj-soc .sub-tag { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
-
-    .sub-tag.subj-arith { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
-    .sub-tag.subj-math  { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
-    .sub-tag.subj-eng   { background: #dcfce7; border-color: #86efac; color: #166534; }
-    .sub-tag.subj-jp    { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
-    .sub-tag.subj-sci   { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
-    .sub-tag.subj-soc   { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
 
     tbody tr:nth-child(even) td { background: #fcfdff; }
     td.col-time { font-weight: 900; color: #111827; font-size: 14px; letter-spacing: .2px; }
@@ -408,7 +394,6 @@
     soc: "社会",
   };
 
-  // クラス表示順（S→A→B→X→C）
   const CLASS_ORDER = ["S","A","B","X","C"];
   const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
   function classRank(c){
@@ -446,11 +431,9 @@
   const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
 
-  // latest読込用キャッシュ
   let cachedLatestRaw = null;
   let cachedLatestYM = null;
 
-  // ====== 校舎込みトークン（旧版方式） ======
   function makeClassToken(campusMode, campusCode, cls) {
     const c = String(cls || "").trim();
     if (!c) return "";
@@ -495,7 +478,6 @@
   };
 
   let allLessons = [];
-  // ====== 授業日誌（journal_*.json） ======
   let journalEntries = {}; 
   let journalLoadedYM = null;
 
@@ -685,9 +667,9 @@
     try { monthly = await fetchJournalForMonth(ym); } catch (_) {}
     try { latest = await fetchJournalLatest(); } catch (_) {}
     const merged = {};
-    // ★ここを items に修正
-    if (monthly && monthly.items && typeof monthly.items === "object") Object.assign(merged, monthly.items);
-    if (latest && latest.items && typeof latest.items === "object") Object.assign(merged, latest.items);
+    // 正しいキー名「entries」で読み込むように修正
+    if (monthly && monthly.entries && typeof monthly.entries === "object") Object.assign(merged, monthly.entries);
+    if (latest && latest.entries && typeof latest.entries === "object") Object.assign(merged, latest.entries);
     journalEntries = merged;
   }
 
@@ -1073,12 +1055,16 @@
     return (journalEntries && journalEntries[ek]) ? journalEntries[ek] : null;
   }
 
-  // ★ここを strings と pages に修正
+  // 正しいJSON構造に合わせて読み取るように修正
   function renderDayDetailRows(it) {
-    const entry = getJournalEntryForLesson(it) || { content:"", pages:"", homework:"", recordingUrl:"" };
+    const entry = getJournalEntryForLesson(it) || { content:"", page:"", homework:[], recordingUrl:"" };
     const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">（未入力）</span>`;
-    const pageHtml = entry.pages ? formatMultiline(entry.pages) : `<span class="j-empty">（未入力）</span>`;
-    const hwHtml = entry.homework ? formatMultiline(entry.homework) : `<span class="j-empty">（未入力）</span>`;
+    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">（未入力）</span>`;
+    
+    const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
+    const hwText = hwArr.join("\n");
+    const hwHtml = hwText ? formatMultiline(hwText) : `<span class="j-empty">（未入力）</span>`;
+    
     const url = String(entry.recordingUrl || "").trim();
     const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">（未入力）</span>`;
 
