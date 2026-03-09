@@ -3,70 +3,343 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>スケジュール表（授業日誌表示対応）</title>
+  <title>スケジュール表（自分の授業表示）</title>
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; background: #f5f7fb; color: #111827; }
-    .card { background: #ffffff; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 24px;
+      background: #f5f7fb;
+      color: #111827;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
     h1 { margin: 0 0 8px 0; font-size: 18px; }
     h2 { margin: 0 0 12px 0; font-size: 15px; }
-    .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 10px; }
-    select, button { font-size: 14px; padding: 6px 10px; border-radius: 10px; border: 1px solid #d1d5db; background: #fff; cursor: pointer; }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    select, button { font-size: 14px; }
+    select {
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      min-width: 160px;
+    }
+    button {
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      cursor: pointer;
+    }
     button:hover { background: #f3f4f6; }
     .muted { color: #6b7280; font-size: 13px; }
-    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #eef2ff; color: #3730a3; font-size: 12px; margin-left: 8px; }
-    .subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-    .subject-box { border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; background: #fafafa; }
-    .subject-title { font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
-    .class-checks { display: flex; flex-wrap: wrap; gap: 8px 12px; }
-    .chk { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 10px; border: 1px solid #e5e7eb; background: #fff; user-select: none; }
+    #filterSummary{ font-weight:700; color:#111827; }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 12px;
+      margin-left: 8px;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .subject-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fafafa;
+    }
+    .subject-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .class-checks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+    }
+    .chk {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      user-select: none;
+    }
+    .chk input { transform: translateY(1px); }
+
+    .error {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      color: #9f1239;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    /* ===== 月間カレンダー ===== */
     .cal-wrap { display: grid; gap: 10px; }
-    .dow { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; font-size: 12px; color: #6b7280; text-align: center; }
-    .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
-    .cell { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; min-height: 84px; padding: 8px; position: relative; cursor: pointer; }
-    .cell.today { border-color: #2563eb; }
-    .cell.selected { border-color: #2563eb; background: #eff6ff; }
-    .cell.off { background: #f8fafc; color: #94a3b8; cursor: default; }
-    .lesson-item { display: flex; align-items: center; gap: 6px; padding: 3px 6px; border-radius: 10px; border: 1px solid #e5e7eb; background: #fff; font-size: 11px; margin-bottom: 2px; }
-    .sub-tag { font-weight: 800; padding: 1px 6px; border-radius: 999px; font-size: 10px; }
-    .subj-arith .sub-tag, .subj-math .sub-tag { background: #dbeafe; color: #1d4ed8; }
-    .subj-eng .sub-tag { background: #dcfce7; color: #166534; }
-    .subj-jp .sub-tag { background: #fef3c7; color: #92400e; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 8px; border-bottom: 1px solid #e5e7eb; text-align: left; }
-    .journal-row td { background: #f9fafb; padding: 12px; border-top: none; }
-    .journal-grid { display: grid; grid-template-columns: 100px 1fr; gap: 8px; font-size: 13px; }
-    .j-label { font-weight: 600; color: #374151; }
-    .j-val { color: #111827; }
-    .j-empty { color: #9ca3af; font-style: italic; }
-    .j-link { display: inline-block; padding: 4px 12px; background: #fff; border: 1px solid #d1d5db; border-radius: 999px; text-decoration: none; color: #111827; font-size: 12px; }
+
+    .cal-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:10px; }
+    .cal-head-note { margin-left:auto; text-align:right; max-width:520px; line-height:1.35; }
+
+    .dow {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 0 2px;
+    }
+    .dow div { text-align: center; }
+
+    .dow div.sun { color: #b91c1c; font-weight: 700; }
+    .dow div.sat { color: #1d4ed8; font-weight: 700; }
+
+    .cell.sun:not(.off) { background: #fff7f7; }
+    .cell.sat:not(.off) { background: #f3f8ff; }
+    .cell.sun:hover:not(.off), .cell.sat:hover:not(.off) { filter: brightness(0.99); }
+
+    .cell.today:not(.off) { border-color: #93c5fd; }
+    .cell.today .date-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .cell.has-lessons:not(.off)::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 12px 0 0 12px;
+      background: rgba(37, 99, 235, 0.35);
+    }
+
+    .lesson-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .lesson-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 6px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+    .lesson-time {
+      font-size: 12px;
+      font-weight: 800;
+      color: #111827;
+      white-space: nowrap;
+    }
+    .sub-tag {
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .cls-tag, .campus-tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: #374151;
+      white-space: nowrap;
+    }
+    .campus-tag {
+      margin-left: auto;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #374151;
+      border: 1px solid #e5e7eb;
+    }
+
+    /* 科目別カラー */
+    .subj-arith { border-color: #99f6e4; background: #f0fdfa; }
+    .subj-arith .sub-tag { background: #ccfbf1; border-color: #5eead4; color: #0f766e; }
+    .subj-math { border-color: #bfdbfe; background: #eff6ff; }
+    .subj-math .sub-tag { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
+    .subj-eng { border-color: #bbf7d0; background: #f0fdf4; }
+    .subj-eng .sub-tag { background: #dcfce7; border-color: #86efac; color: #166534; }
+    .subj-jp { border-color: #fde68a; background: #fffbeb; }
+    .subj-jp .sub-tag { background: #fef3c7; border-color: #fcd34d; color: #92400e; }
+    .subj-sci { border-color: #e9d5ff; background: #faf5ff; }
+    .subj-sci .sub-tag { background: #f3e8ff; border-color: #d8b4fe; color: #6b21a8; }
+    .subj-soc { border-color: #fecdd3; background: #fff1f2; }
+    .subj-soc .sub-tag { background: #ffe4e6; border-color: #fda4af; color: #9f1239; }
+
+    tbody tr:nth-child(even) td { background: #fcfdff; }
+    td.col-time { font-weight: 900; color: #111827; font-size: 14px; letter-spacing: .2px; }
+
+    #dayDetailArea.flash .card {
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+    }
+    .cell {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      min-height: 84px;
+      padding: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+    .cell:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
+    .cell.off {
+      background: #f8fafc;
+      border-color: #eef2f7;
+      color: #94a3b8;
+      cursor: default;
+    }
+    .cell.selected {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+    .date-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .date-num { font-weight: 800; font-size: 13px; }
+    .badge {
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      white-space: nowrap;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    th {
+      text-align: left;
+      color: #374151;
+      font-weight: 700;
+      background: #f9fafb;
+    }
+    .nowrap { white-space: nowrap; }
+    .right { text-align: right; }
+
+    /* ====== 授業日誌（生徒表示用） ====== */
+    .journal-row td{
+      background:#f9fafb;
+      border-top: none;
+      padding: 10px 12px;
+    }
+    .journal-grid{
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 6px 10px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .j-label{ color:#374151; font-weight:600; }
+    .j-val{ color:#111827; white-space: normal; }
+    .j-empty{ color:#6b7280; }
+    .j-link{
+      display:inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      text-decoration: none;
+      font-size: 12px;
+      color:#111827;
+      background:#ffffff;
+    }
+    .j-link:hover{ background:#f3f4f6; }
   </style>
 </head>
 <body>
 
   <div class="card">
     <h1>スケジュール表 <span id="ym-pill" class="pill"></span></h1>
-    <div id="filterSummary" class="muted"></div>
-    <div class="row">
-      <button onclick="shiftMonth(-1)">◀ 前月</button>
-      <button onclick="setToThisMonth()">今月</button>
-      <button onclick="shiftMonth(1)">翌月 ▶</button>
+    <div id="filterSummary" class="muted" style="margin-top:6px;"></div>
+    <div class="row" style="margin-top:10px;">
+      <button id="prevBtn">◀ 前月</button>
+      <button id="todayBtn">今月</button>
+      <button id="nextBtn">翌月 ▶</button>
+      <span style="width:12px;"></span>
+      <label class="muted">学年</label>
       <select id="gradeSelect"></select>
+      <label class="muted">校舎</label>
       <select id="campusSelect">
-        <option value="all">校舎：すべて</option>
-        <option value="hon">本校</option>
-        <option value="minami">南教室</option>
+        <option value="all">すべて</option>
+        <option value="hon">本校のみ</option>
+        <option value="minami">南教室のみ</option>
       </select>
-      <button onclick="clearSelections()">リセット</button>
+      <button id="clearBtn">選択リセット</button>
     </div>
   </div>
 
   <div class="card">
+    <h2>授業を選択（学年 → 科目 → クラス）</h2>
     <div id="subjectArea" class="subject-grid"></div>
+    <div id="hintArea" class="muted" style="margin-top:10px;"></div>
   </div>
 
+  <div id="statusArea"></div>
+
   <div class="card">
+    <div class="cal-head">
+      <h2 style="margin:0;">月間カレンダー</h2>
+    </div>
     <div class="cal-wrap">
-      <div class="dow"><div>日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div>土</div></div>
+      <div class="dow">
+        <div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div>
+      </div>
       <div id="monthGrid" class="grid"></div>
     </div>
   </div>
@@ -75,176 +348,239 @@
 
 <script>
 (() => {
-  const STORAGE_KEY = "benkyo_student_calendar_v5";
-  const GRADE_LABEL = { e4:"小4", e5:"小5", e6:"小6", j1:"中1", j2:"中2", j3:"中3" };
-  const SUBJECT_LABEL = { arith:"算数", math:"数学", eng:"英語", jp:"国語", sci:"理科", soc:"社会" };
-  const ALLOWED_SUBJECTS = { e4:["arith","eng","jp"], e5:["arith","eng","jp"], e6:["arith","eng","jp"], j1:["math","eng","jp"], j2:["math","eng","jp"], j3:["math","eng","jp","sci","soc"] };
-  
-  // ★クラス並び順の厳守
+  // ====== 設定 ======
+  const STORAGE_KEY = "benkyo_student_calendar_v4";
+  const GRADE_LABEL = { e4: "小4", e5: "小5", e6: "小6", j1: "中1", j2: "中2", j3: "中3" };
+  const SUBJECT_LABEL = { arith: "算数", math: "数学", eng: "英語", jp: "国語", sci: "理科", soc: "社会" };
+
+  // クラス表示順（S→A→B→X→C）
   const CLASS_ORDER = ["S","A","B","X","C"];
-  const classRank = (c) => { let r = CLASS_ORDER.indexOf(String(c).trim()); return r === -1 ? 99 : r; };
-
-  let state = { grade: "j3", campus: "all", selectedDate: null, selected: { jp:new Set(), math:new Set(), arith:new Set(), eng:new Set(), sci:new Set(), soc:new Set() } };
-  let allLessons = [], journalEntries = {}, currentYM = new Date().toISOString().slice(0, 7);
-
-  async function fetchJSON(url) {
-    try {
-      const res = await fetch(`${url}?ts=${Date.now()}`, { cache: "no-store" });
-      return res.ok ? await res.json() : null;
-    } catch { return null; }
+  const CLASS_RANK = Object.fromEntries(CLASS_ORDER.map((c,i)=>[c,i]));
+  function classRank(c){
+    const k = String(c || "").trim();
+    return (k in CLASS_RANK) ? CLASS_RANK[k] : 999;
   }
 
-  async function loadData() {
-    const data = await fetchJSON("schedule_latest.json") || await fetchJSON(`schedule_${currentYM}.json`);
-    if (data) allLessons = data;
+  const ALLOWED_SUBJECTS_BY_GRADE = {
+    e4: ["arith", "eng", "jp"], e5: ["arith", "eng", "jp"], e6: ["arith", "eng", "jp"],
+    j1: ["math", "eng", "jp"], j2: ["math", "eng", "jp"], j3: ["math", "eng", "jp", "sci", "soc"]
+  };
 
-    // 授業日誌データの読み込み
-    const [jLatest, jMonth] = await Promise.all([fetchJSON("journal_latest.json"), fetchJSON(`journal_${currentYM}.json`)]);
-    journalEntries = Object.assign({}, jMonth?.entries || {}, jLatest?.entries || {});
+  // ====== DOM ======
+  const ymPill = document.getElementById("ym-pill");
+  const filterSummary = document.getElementById("filterSummary");
+  const gradeSelect = document.getElementById("gradeSelect");
+  const campusSelect = document.getElementById("campusSelect");
+  const subjectArea = document.getElementById("subjectArea");
+  const hintArea = document.getElementById("hintArea");
+  const statusArea = document.getElementById("statusArea");
+  const monthGrid = document.getElementById("monthGrid");
+  const dayDetailArea = document.getElementById("dayDetailArea");
+
+  document.getElementById("prevBtn").addEventListener("click", () => shiftMonth(-1));
+  document.getElementById("nextBtn").addEventListener("click", () => shiftMonth(1));
+  document.getElementById("todayBtn").addEventListener("click", () => setToThisMonth());
+  document.getElementById("clearBtn").addEventListener("click", () => clearSelections());
+
+  // ====== 日付 ======
+  const today = new Date();
+  const TODAY_YMD = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  let currentYM = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+
+  let cachedLatestRaw = null;
+  let cachedLatestYM = null;
+
+  // ====== 状態 ======
+  let state = {
+    grade: "j3", campus: "all", selectedDate: null,
+    selected: { jp: new Set(), math: new Set(), arith: new Set(), eng: new Set(), sci: new Set(), soc: new Set() }
+  };
+
+  let allLessons = [];
+  let journalEntries = {}; 
+  let journalLoadedYM = null;
+
+  // ====== データ読み込み ======
+  async function fetchJsonFromCandidates(candidates, labelForError) {
+    const tried = [];
+    for (const base of candidates) {
+      const url = `${base}?ts=${Date.now()}`;
+      tried.push(url);
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) continue;
+        const data = await res.json();
+        return data;
+      } catch (_) {}
+    }
+    return null; // 失敗しても落とさない
+  }
+
+  async function loadJournalSafe(ym) {
+    if (journalLoadedYM === ym) return;
+    const monthly = await fetchJsonFromCandidates([`journal_${ym}.json`], "journal_monthly");
+    const latest = await fetchJsonFromCandidates(["journal_latest.json"], "journal_latest");
+    const merged = {};
+    if (monthly && monthly.entries) Object.assign(merged, monthly.entries);
+    if (latest && latest.entries) Object.assign(merged, latest.entries);
+    journalEntries = merged;
+    journalLoadedYM = ym;
+  }
+
+  function buildEventKeyFromLesson(it) {
+    // 記号「~」と「～」の揺れを吸収
+    const time = String(it?.time ?? "").replace(/~/g, "～").trim();
+    const date = String(it?.date ?? "").trim();
+    const campus = String(it?.campus ?? "").trim();
+    const gk = String(it?.groupKey ?? "").trim();
+    const room = String(it?.room ?? "").trim();
+    return `${date}|${time}|${campus}|${gk}|${room}`;
+  }
+
+  function formatMultiline(text) {
+    const s = String(text ?? "");
+    if (!s) return "";
+    return escapeHtml(s).replaceAll("\n", "<br>");
+  }
+
+  function renderDayDetailRows(it) {
+    const ek = buildEventKeyFromLesson(it);
+    const entry = journalEntries[ek] || { content:"", page:"", homework:[], recordingUrl:"" };
+    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">（未入力）</span>`;
+    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">（未入力）</span>`;
     
+    // 宿題（リスト形式）の処理
+    const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
+    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">（未入力）</span>`;
+    
+    const url = String(entry.recordingUrl || "").trim();
+    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">（未入力）</span>`;
+
+    return `
+      <tr>
+        <td class="nowrap col-time">${escapeHtml(it.time)}</td>
+        <td><span class="sub-tag ${subjectCss(it.subject)}">${escapeHtml(SUBJECT_LABEL[it.subject] || it.subject)}</span> ${escapeHtml(it.class)}</td>
+        <td class="nowrap">${escapeHtml(it.campus === 'hon' ? '本校' : '南教室')}</td>
+        <td class="nowrap right">${escapeHtml(it.room || "")}</td>
+      </tr>
+      <tr class="journal-row">
+        <td colspan="4">
+          <div class="journal-grid">
+            <div class="j-label">授業内容</div><div class="j-val">${contentHtml}</div>
+            <div class="j-label">ページ</div><div class="j-val">${pageHtml}</div>
+            <div class="j-label">宿題</div><div class="j-val">${hwHtml}</div>
+            <div class="j-label">録画</div><div class="j-val">${recHtml}</div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
+  // --- 以下、既存のバックアップロジックを維持 ---
+  function subjectCss(s) { return `subj-${s}`; }
+  function escapeHtml(s) { return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
+
+  async function loadInitialMonth() {
+    const data = await fetchJsonFromCandidates(["schedule_latest.json", `schedule_${currentYM}.json`], "schedule");
+    if (data && Array.isArray(data)) {
+      allLessons = data;
+      if (data[0] && data[0].date) currentYM = data[0].date.slice(0, 7);
+    }
+    await loadJournalSafe(currentYM);
     rebuildUI();
-    render();
+    renderAll();
   }
 
-  // ★Event KeyをPython版と完全に一致させる
-  function buildEventKey(l) {
-    const time = String(l.time || "").replace(/~/g, "～").trim();
-    const room = String(l.room || "").trim();
-    return `${l.date}|${time}|${l.campus}|${l.groupKey}|${room}`;
+  function renderAll() {
+    ymPill.textContent = currentYM.replace("-", "年") + "月";
+    renderMonthGrid();
+    renderDayDetail();
   }
 
-  function renderGrid() {
-    const grid = document.getElementById("monthGrid");
-    grid.innerHTML = "";
+  function renderMonthGrid() {
+    monthGrid.innerHTML = "";
     const [y, m] = currentYM.split("-").map(Number);
     const first = new Date(y, m-1, 1).getDay();
     const days = new Date(y, m, 0).getDate();
+    const filtered = getFilteredLessons();
 
     for (let i = 0; i < 42; i++) {
       const d = i - first + 1;
       const div = document.createElement("div");
       div.className = "cell" + (d < 1 || d > days ? " off" : "");
       if (d >= 1 && d <= days) {
-        const date = `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-        div.innerHTML = `<b>${d}</b>`;
-        const dayLessons = allLessons.filter(l => l.date === date && checkSelected(l));
+        const date = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        div.innerHTML = `<div class="date-row"><span class="date-num">${d}</span></div>`;
+        const dayLessons = filtered.filter(l => l.date === date);
         dayLessons.forEach(l => {
-          const ldiv = document.createElement("div");
-          ldiv.className = `lesson-item subj-${l.subject}`;
-          ldiv.innerHTML = `<span class="sub-tag">${SUBJECT_LABEL[l.subject]}</span> <span>${l.class}</span>`;
-          div.appendChild(ldiv);
+          const item = document.createElement("div");
+          item.className = `lesson-item ${subjectCss(l.subject)}`;
+          item.innerHTML = `<span class="sub-tag">${SUBJECT_LABEL[l.subject]}</span><span class="cls-tag">${l.class}</span>`;
+          div.appendChild(item);
         });
         if (state.selectedDate === date) div.classList.add("selected");
-        div.onclick = () => { state.selectedDate = date; render(); };
+        div.onclick = () => { state.selectedDate = date; renderAll(); };
       }
-      grid.appendChild(div);
+      monthGrid.appendChild(div);
     }
   }
 
-  function renderDetail() {
-    const area = document.getElementById("dayDetailArea");
-    if (!state.selectedDate) return area.innerHTML = "";
-    const items = allLessons.filter(l => l.date === state.selectedDate && checkSelected(l));
-    
-    let html = `<div class="card"><h2>${state.selectedDate} の授業詳細</h2><table>`;
-    items.forEach(it => {
-      const key = buildEventKey(it);
-      const entry = journalEntries[key] || { content: "", page: "", homework: [], recordingUrl: "" };
-      
-      // ★デバッグ用: マッチしない場合にコンソールにヒントを出す
-      if (!journalEntries[key]) console.log("Key not found:", key);
-
-      // ★宿題が配列の場合に対応
-      const hwHtml = Array.isArray(entry.homework) ? entry.homework.join("<br>") : (entry.homework || "");
-      
-      html += `
-        <tr><td><b>${it.time}</b></td><td>${SUBJECT_LABEL[it.subject]} (${it.class})</td><td>${it.campus} ${it.room}</td></tr>
-        <tr class="journal-row"><td colspan="3">
-          <div class="journal-grid">
-            <div class="j-label">指導内容</div><div class="j-val">${entry.content || '<span class="j-empty">未入力</span>'}</div>
-            <div class="j-label">ページ</div><div class="j-val">${entry.page || '<span class="j-empty">未入力</span>'}</div>
-            <div class="j-label">宿題</div><div class="j-val">${hwHtml || '<span class="j-empty">未入力</span>'}</div>
-            <div class="j-label">録画</div><div class="j-val">${entry.recordingUrl ? `<a href="${entry.recordingUrl}" class="j-link" target="_blank">録画を見る</a>` : '<span class="j-empty">未入力</span>'}</div>
-          </div>
-        </td></tr>`;
-    });
-    area.innerHTML = html + "</table></div>";
+  function renderDayDetail() {
+    if (!state.selectedDate) return dayDetailArea.innerHTML = "";
+    const items = getFilteredLessons().filter(l => l.date === state.selectedDate);
+    let html = `<div class="card"><h2>${state.selectedDate} の授業詳細</h2><table><thead><tr><th>時間</th><th>授業</th><th>校舎</th><th class="right">教室</th></tr></thead><tbody>`;
+    items.forEach(it => html += renderDayDetailRows(it));
+    dayDetailArea.innerHTML = html + "</tbody></table></div>";
   }
 
-  function checkSelected(l) {
-    if (l.grade !== state.grade) return false;
-    if (state.campus !== "all" && l.campus !== state.campus) return false;
-    const token = state.campus === "all" ? `${l.campus}:${l.class}` : l.class;
-    return state.selected[l.subject]?.has(token);
+  function getFilteredLessons() {
+    return allLessons.filter(l => {
+      if (l.grade !== state.grade) return false;
+      if (state.campus !== "all" && l.campus !== state.campus) return false;
+      const token = state.campus === "all" ? `${l.campus}:${l.class}` : l.class;
+      return state.selected[l.subject]?.has(token);
+    }).sort((a,b) => (a.date.localeCompare(b.date)) || (classRank(a.class) - classRank(b.class)));
   }
-
-  function render() {
-    document.getElementById("ym-pill").textContent = currentYM.replace("-", "年") + "月";
-    renderGrid();
-    renderDetail();
-  }
-
-  window.shiftMonth = (n) => {
-    const [y, m] = currentYM.split("-").map(Number);
-    currentYM = new Date(y, m - 1 + n, 1).toISOString().slice(0, 7);
-    loadData();
-  };
-  window.setToThisMonth = () => { currentYM = new Date().toISOString().slice(0, 7); loadData(); };
-  window.clearSelections = () => { Object.keys(state.selected).forEach(k => state.selected[k].clear()); saveState(); rebuildUI(); render(); };
 
   function rebuildUI() {
-    const gradeSel = document.getElementById("gradeSelect");
-    gradeSel.innerHTML = Object.entries(GRADE_LABEL).map(([k,v]) => `<option value="${k}" ${state.grade===k?'selected':''}>${v}</option>`).join("");
-    gradeSel.onchange = (e) => { state.grade = e.target.value; rebuildUI(); render(); };
-    const campSel = document.getElementById("campusSelect");
-    campSel.value = state.campus;
-    campSel.onchange = (e) => { state.campus = e.target.value; rebuildUI(); render(); };
+    gradeSelect.innerHTML = Object.entries(GRADE_LABEL).map(([k,v]) => `<option value="${k}" ${state.grade===k?'selected':''}>${v}</option>`).join("");
+    gradeSelect.onchange = (e) => { state.grade = e.target.value; rebuildSubjectArea(); renderAll(); };
+    campusSelect.value = state.campus;
+    campusSelect.onchange = (e) => { state.campus = e.target.value; rebuildSubjectArea(); renderAll(); };
+    rebuildSubjectArea();
+  }
 
-    const area = document.getElementById("subjectArea");
-    area.innerHTML = "";
-    ALLOWED_SUBJECTS[state.grade].forEach(subj => {
+  function rebuildSubjectArea() {
+    subjectArea.innerHTML = "";
+    const allowed = ALLOWED_SUBJECTS_BY_GRADE[state.grade];
+    allowed.forEach(subj => {
       const box = document.createElement("div");
       box.className = "subject-box";
       box.innerHTML = `<div class="subject-title">${SUBJECT_LABEL[subj]}</div>`;
       const checks = document.createElement("div");
       checks.className = "class-checks";
-      
       const classes = [...new Set(allLessons.filter(l => l.grade === state.grade && l.subject === subj && (state.campus==='all'||l.campus===state.campus)).map(l => state.campus==='all' ? `${l.campus}:${l.class}` : l.class))];
-      
-      // ★クラス並び順（S,A,B,X,C）でソート
-      classes.sort((a, b) => classRank(a.split(":").pop()) - classRank(b.split(":").pop()));
-
+      classes.sort((a,b) => classRank(a.split(":").pop()) - classRank(b.split(":").pop()));
       classes.forEach(cls => {
         const label = document.createElement("label");
         label.className = "chk";
-        const isHon = cls.startsWith("hon");
-        label.innerHTML = `<input type="checkbox" ${state.selected[subj].has(cls)?'checked':''}> ${state.campus==='all'?(isHon?'本':'南'):''}${cls.split(":").pop()}`;
-        label.querySelector("input").onchange = (e) => {
-          if (e.target.checked) state.selected[subj].add(cls); else state.selected[subj].delete(cls);
-          saveState(); render();
-        };
+        label.innerHTML = `<input type="checkbox" ${state.selected[subj].has(cls)?'checked':''}> ${cls.includes(':') ? (cls.startsWith('hon')?'本':'南')+cls.split(':')[1] : cls}`;
+        label.querySelector("input").onchange = (e) => { if (e.target.checked) state.selected[subj].add(cls); else state.selected[subj].delete(cls); saveState(); renderAll(); };
         checks.appendChild(label);
       });
       box.appendChild(checks);
-      area.appendChild(box);
+      subjectArea.appendChild(box);
     });
   }
 
-  function saveState() {
-    const data = { ...state, selected: Object.fromEntries(Object.entries(state.selected).map(([k,v])=>[k, [...v]])) };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  }
-  function loadState() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      const obj = JSON.parse(saved);
-      state.grade = obj.grade; state.campus = obj.campus;
-      Object.keys(obj.selected).forEach(k => state.selected[k] = new Set(obj.selected[k]));
-    }
-  }
+  function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify({ grade: state.grade, campus: state.campus, selected: Object.fromEntries(Object.entries(state.selected).map(([k,v])=>[k, Array.from(v)])) })); }
+  function loadState() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { const obj = JSON.parse(saved); state.grade = obj.grade; state.campus = obj.campus; Object.keys(obj.selected).forEach(k => state.selected[k] = new Set(obj.selected[k])); } }
+  function shiftMonth(n) { const [y, m] = currentYM.split("-").map(Number); const d = new Date(y, m - 1 + n, 1); currentYM = d.toISOString().slice(0, 7); loadJournalSafe(currentYM).then(renderAll); }
+  function setToThisMonth() { currentYM = new Date().toISOString().slice(0, 7); loadJournalSafe(currentYM).then(renderAll); }
+  function clearSelections() { Object.keys(state.selected).forEach(k => state.selected[k].clear()); saveState(); rebuildSubjectArea(); renderAll(); }
 
   loadState();
-  loadData();
+  loadInitialMonth();
 })();
 </script>
 </body>
