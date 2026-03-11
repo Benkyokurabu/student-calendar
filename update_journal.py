@@ -25,7 +25,6 @@ def get_journal_dir():
     user_home = Path.home()
     candidates = [
         user_home / "OneDrive" / "●勉強クラブ共有" / TARGET_FOLDER_NAME,
-        user_home / "OneDrive - 個人用" / "●勉強クラブ共有" / TARGET_FOLDER_NAME,
         Path(r"C:\Users\kudok\OneDrive\●勉強クラブ共有\09　授業日誌")
     ]
     for c in candidates:
@@ -33,8 +32,10 @@ def get_journal_dir():
     return None
 
 def find_workbook(journal_dir, filename):
+    # まず指定の名前で探す
     p = journal_dir / filename
     if p.exists(): return p
+    # 見つからない場合はサブフォルダ内を全検索
     for candidate in journal_dir.rglob(filename):
         if candidate.is_file(): return candidate
     return None
@@ -42,7 +43,9 @@ def find_workbook(journal_dir, filename):
 def generate(repo_dir, journal_dir):
     repo_dir = Path(repo_dir)
     sched_path = repo_dir / "schedule_latest.json"
-    if not sched_path.exists(): return
+    if not sched_path.exists():
+        print(f"[エラー] {sched_path.name} が見つかりません。")
+        return
 
     events = json.loads(sched_path.read_text(encoding="utf-8"))
     map_path = repo_dir / "journal_map_latest.json"
@@ -51,14 +54,11 @@ def generate(repo_dir, journal_dir):
     
     entries = {}
     temp_dir = repo_dir / "__tmp__"
-    
-    # 【改良】アクセス拒否エラーを回避するための処理
     if temp_dir.exists():
-        try:
-            shutil.rmtree(temp_dir, ignore_errors=True)
-        except:
-            pass
+        shutil.rmtree(temp_dir, ignore_errors=True)
     temp_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"\n--- データ読み取り詳細レポート ---")
 
     for ev in events:
         key = f"{ev.get('date','')}|{str(ev.get('time','')).replace('~','～').strip()}|{ev.get('campus','')}|{ev.get('groupKey','')}|{str(ev.get('room',''))}"
@@ -67,36 +67,53 @@ def generate(repo_dir, journal_dir):
             l_idx = slots_map.get("slots", {}).get(gk, []).index(key) + 1
         except: l_idx = 1
         
-        fname = f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{'X' if ev['class']=='X' else ''}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
+        # クラス名(S, A, B)をファイル名に含めるかどうかの柔軟な判定
+        cls_code = ev.get('class', '')
+        possible_filenames = [
+            f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{cls_code}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx",
+            f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
+        ]
+        
+        wb_path = None
+        for fname in possible_filenames:
+            wb_path = find_workbook(journal_dir, fname)
+            if wb_path: break
+        
         content, page, hw, rec = "", "", [], ""
-        wb_path = find_workbook(journal_dir, fname)
         
         if wb_path:
+            print(f"【発見】 {wb_path.name}")
             try:
-                # 重複を避けるためタイムスタンプ付きでコピー
-                tmp_path = temp_dir / f"{int(time.time()*1000)}_{fname}"
+                tmp_path = temp_dir / f"{int(time.time()*1000)}_{wb_path.name}"
                 shutil.copy2(wb_path, tmp_path)
                 wb = load_workbook(tmp_path, data_only=True, read_only=True)
                 m_idx = int(ev['date'].split("-")[1])
                 sheet_name = f"{m_idx}月"
+                
                 if sheet_name in wb.sheetnames:
                     ws = wb[sheet_name]
-                    br, sc = BASE_ROW.get(ev['class'], 7), FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
+                    br = BASE_ROW.get(cls_code, 7)
+                    sc = FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
+                    
                     content = str(ws.cell(br, sc+2).value or "").strip()
                     page = str(ws.cell(br+1, sc+4).value or "").strip()
-                    hw = [x for x in [str(ws.cell(br+2, sc+3).value or "").strip(), str(ws.cell(br+3, sc+3).value or "").strip()] if x]
-                    rec = str(ws.cell(br+10, sc+2).value or "").strip()
+                    print(f"  -> {ev['date']} {cls_code}クラス 読込成功: 「{content[:10]}...」")
                 wb.close()
             except Exception as e:
-                print(f"[WARN] {fname} の読み取りスキップ: {e}")
+                print(f"  -> [失敗] 読み取りエラー: {e}")
+        else:
+            # 2S数学などの場合に、どの名前で探して見つからなかったかを表示
+            print(f"【未発見】 探した名前: {possible_filenames[0]}")
+
         entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
 
     (repo_dir / "journal_latest.json").write_text(json.dumps({"month": "latest", "generatedAt": datetime.now().isoformat(), "entries": entries}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"--- レポート終了 ---\n")
 
 def git_push(repo_dir):
     print("[INFO] GitHubへ送信中...")
     subprocess.run(["git", "-C", str(repo_dir), "add", "."], check=False)
-    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Sync Update"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Debug Update"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "push"], check=False)
 
 if __name__ == "__main__":
@@ -104,15 +121,9 @@ if __name__ == "__main__":
     parser.add_argument("--mode")
     parser.add_argument("--do-backup", action="store_true")
     args = parser.parse_args()
-    
     current_repo = Path(__file__).parent.resolve()
     j_dir = get_journal_dir()
-    
     if j_dir:
-        print(f"[OK] フォルダ発見: {j_dir}")
         generate(current_repo, j_dir)
-        if args.mode == "auto":
-            git_push(current_repo)
+        if args.mode == "auto": git_push(current_repo)
         print("[INFO] done.")
-    else:
-        print("[ERROR] 日誌フォルダが見つかりませんでした。")
