@@ -6,6 +6,7 @@ import os
 import shutil
 import subprocess
 import time
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from openpyxl import load_workbook
@@ -32,20 +33,25 @@ def get_journal_dir():
     return None
 
 def find_workbook(journal_dir, filename):
-    # まず指定の名前で探す
     p = journal_dir / filename
     if p.exists(): return p
-    # 見つからない場合はサブフォルダ内を全検索
     for candidate in journal_dir.rglob(filename):
         if candidate.is_file(): return candidate
+    return None
+
+def get_best_sheet(wb, m_idx):
+    """3月、03月、３月などの表記揺れを吸収して正しいシートを返す"""
+    targets = [f"{m_idx}月", f"{m_idx:02}月", unicodedata.normalize('NFKC', f"{m_idx}月"), f"{m_idx}"]
+    for t in targets:
+        for name in wb.sheetnames:
+            if name.strip() == t:
+                return wb[name]
     return None
 
 def generate(repo_dir, journal_dir):
     repo_dir = Path(repo_dir)
     sched_path = repo_dir / "schedule_latest.json"
-    if not sched_path.exists():
-        print(f"[エラー] {sched_path.name} が見つかりません。")
-        return
+    if not sched_path.exists(): return
 
     events = json.loads(sched_path.read_text(encoding="utf-8"))
     map_path = repo_dir / "journal_map_latest.json"
@@ -54,8 +60,7 @@ def generate(repo_dir, journal_dir):
     
     entries = {}
     temp_dir = repo_dir / "__tmp__"
-    if temp_dir.exists():
-        shutil.rmtree(temp_dir, ignore_errors=True)
+    if temp_dir.exists(): shutil.rmtree(temp_dir, ignore_errors=True)
     temp_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n--- データ読み取り詳細レポート ---")
@@ -67,7 +72,6 @@ def generate(repo_dir, journal_dir):
             l_idx = slots_map.get("slots", {}).get(gk, []).index(key) + 1
         except: l_idx = 1
         
-        # クラス名(S, A, B)をファイル名に含めるかどうかの柔軟な判定
         cls_code = ev.get('class', '')
         possible_filenames = [
             f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{cls_code}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx",
@@ -80,30 +84,27 @@ def generate(repo_dir, journal_dir):
             if wb_path: break
         
         content, page, hw, rec = "", "", [], ""
-        
         if wb_path:
-            print(f"【発見】 {wb_path.name}")
             try:
                 tmp_path = temp_dir / f"{int(time.time()*1000)}_{wb_path.name}"
                 shutil.copy2(wb_path, tmp_path)
                 wb = load_workbook(tmp_path, data_only=True, read_only=True)
                 m_idx = int(ev['date'].split("-")[1])
-                sheet_name = f"{m_idx}月"
                 
-                if sheet_name in wb.sheetnames:
-                    ws = wb[sheet_name]
+                ws = get_best_sheet(wb, m_idx)
+                if ws:
                     br = BASE_ROW.get(cls_code, 7)
                     sc = FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
-                    
                     content = str(ws.cell(br, sc+2).value or "").strip()
                     page = str(ws.cell(br+1, sc+4).value or "").strip()
-                    print(f"  -> {ev['date']} {cls_code}クラス 読込成功: 「{content[:10]}...」")
+                    h1 = str(ws.cell(br+2, sc+3).value or "").strip()
+                    h2 = str(ws.cell(br+3, sc+3).value or "").strip()
+                    hw = [x for x in [h1, h2] if x]
+                    rec = str(ws.cell(br+10, sc+2).value or "").strip()
+                    if content:
+                        print(f"【成功】 {wb_path.name} ({ev['date']}) -> 「{content[:10]}...」")
                 wb.close()
-            except Exception as e:
-                print(f"  -> [失敗] 読み取りエラー: {e}")
-        else:
-            # 2S数学などの場合に、どの名前で探して見つからなかったかを表示
-            print(f"【未発見】 探した名前: {possible_filenames[0]}")
+            except: pass
 
         entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
 
@@ -113,7 +114,7 @@ def generate(repo_dir, journal_dir):
 def git_push(repo_dir):
     print("[INFO] GitHubへ送信中...")
     subprocess.run(["git", "-C", str(repo_dir), "add", "."], check=False)
-    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Debug Update"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Sync Final Fix"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "push"], check=False)
 
 if __name__ == "__main__":
