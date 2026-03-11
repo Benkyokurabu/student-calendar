@@ -1,6 +1,6 @@
 {
   "month": "latest",
-  "generatedAt": "2026-03-11T16:15:52.797842",
+  "generatedAt": "2026-03-11T16:19:51.175531",
   "entries": {
     "2026-03-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "",
@@ -1275,10 +1275,12 @@
       "recordingUrl": ""
     },
     "2026-03-03|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "recordingUrl": ""
+      "content": "みなみ",
+      "page": "ちゅう２",
+      "homework": [
+        "えすの"
+      ],
+      "recordingUrl": "だよ"
     },
     "2026-03-03|8:25～9:55|minami|minami_j2_A_jp|6": {
       "content": "",
