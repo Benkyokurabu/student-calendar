@@ -5,7 +5,7 @@ import json
 import os
 import shutil
 import subprocess
-import time
+import tempfile
 import unicodedata
 from datetime import datetime
 from pathlib import Path
@@ -40,7 +40,7 @@ def find_workbook(journal_dir, filename):
     return None
 
 def get_best_sheet(wb, m_idx):
-    """3月、03月、３月などの表記揺れを吸収して正しいシートを返す"""
+    """表記揺れを吸収して正しいシートを返す"""
     targets = [f"{m_idx}月", f"{m_idx:02}月", unicodedata.normalize('NFKC', f"{m_idx}月"), f"{m_idx}"]
     for t in targets:
         for name in wb.sheetnames:
@@ -51,7 +51,9 @@ def get_best_sheet(wb, m_idx):
 def generate(repo_dir, journal_dir):
     repo_dir = Path(repo_dir)
     sched_path = repo_dir / "schedule_latest.json"
-    if not sched_path.exists(): return
+    if not sched_path.exists():
+        print(f"[エラー] {sched_path.name} が見つかりません。")
+        return
 
     events = json.loads(sched_path.read_text(encoding="utf-8"))
     map_path = repo_dir / "journal_map_latest.json"
@@ -59,62 +61,70 @@ def generate(repo_dir, journal_dir):
     slots_map = json.loads(map_path.read_text(encoding="utf-8")) if map_path.exists() else {"slots": {}}
     
     entries = {}
-    temp_dir = repo_dir / "__tmp__"
-    if temp_dir.exists(): shutil.rmtree(temp_dir, ignore_errors=True)
-    temp_dir.mkdir(parents=True, exist_ok=True)
+    # 【改良】一時フォルダをリポジトリの外に作成して GitHub への混入を防止
+    with tempfile.TemporaryDirectory() as temp_dir:
+        temp_path = Path(temp_dir)
+        print(f"\n--- データ読み取り詳細レポート ---")
 
-    print(f"\n--- データ読み取り詳細レポート ---")
-
-    for ev in events:
-        key = f"{ev.get('date','')}|{str(ev.get('time','')).replace('~','～').strip()}|{ev.get('campus','')}|{ev.get('groupKey','')}|{str(ev.get('room',''))}"
-        gk = ev.get("groupKey", "")
-        try:
-            l_idx = slots_map.get("slots", {}).get(gk, []).index(key) + 1
-        except: l_idx = 1
-        
-        cls_code = ev.get('class', '')
-        possible_filenames = [
-            f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{cls_code}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx",
-            f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
-        ]
-        
-        wb_path = None
-        for fname in possible_filenames:
-            wb_path = find_workbook(journal_dir, fname)
-            if wb_path: break
-        
-        content, page, hw, rec = "", "", [], ""
-        if wb_path:
+        for ev in events:
+            key = f"{ev.get('date','')}|{str(ev.get('time','')).replace('~','～').strip()}|{ev.get('campus','')}|{ev.get('groupKey','')}|{str(ev.get('room',''))}"
+            gk = ev.get("groupKey", "")
             try:
-                tmp_path = temp_dir / f"{int(time.time()*1000)}_{wb_path.name}"
-                shutil.copy2(wb_path, tmp_path)
-                wb = load_workbook(tmp_path, data_only=True, read_only=True)
-                m_idx = int(ev['date'].split("-")[1])
-                
-                ws = get_best_sheet(wb, m_idx)
-                if ws:
-                    br = BASE_ROW.get(cls_code, 7)
-                    sc = FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
-                    content = str(ws.cell(br, sc+2).value or "").strip()
-                    page = str(ws.cell(br+1, sc+4).value or "").strip()
-                    h1 = str(ws.cell(br+2, sc+3).value or "").strip()
-                    h2 = str(ws.cell(br+3, sc+3).value or "").strip()
-                    hw = [x for x in [h1, h2] if x]
-                    rec = str(ws.cell(br+10, sc+2).value or "").strip()
-                    if content:
-                        print(f"【成功】 {wb_path.name} ({ev['date']}) -> 「{content[:10]}...」")
-                wb.close()
-            except: pass
+                l_idx = slots_map.get("slots", {}).get(gk, []).index(key) + 1
+            except: l_idx = 1
+            
+            cls_code = ev.get('class', '')
+            fname = f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{cls_code}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
+            fname_no_cls = f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
+            
+            wb_path = find_workbook(journal_dir, fname) or find_workbook(journal_dir, fname_no_cls)
+            
+            content, page, hw, rec = "", "", [], ""
+            if wb_path:
+                try:
+                    tmp_wb_file = temp_path / wb_path.name
+                    shutil.copy2(wb_path, tmp_wb_file)
+                    wb = load_workbook(tmp_wb_file, data_only=True, read_only=True)
+                    m_idx = int(ev['date'].split("-")[1])
+                    
+                    ws = get_best_sheet(wb, m_idx)
+                    if ws:
+                        br = BASE_ROW.get(cls_code, 7)
+                        sc = FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
+                        content = str(ws.cell(br, sc+2).value or "").strip()
+                        page = str(ws.cell(br+1, sc+4).value or "").strip()
+                        h1 = str(ws.cell(br+2, sc+3).value or "").strip()
+                        h2 = str(ws.cell(br+3, sc+3).value or "").strip()
+                        hw = [x for x in [h1, h2] if x]
+                        rec = str(ws.cell(br+10, sc+2).value or "").strip()
+                        
+                        if content:
+                            print(f"【成功】 {ev['date']} {ev['grade']}{cls_code} {SUBJECT_JP.get(ev['subject'])} -> 「{content[:10]}...」")
+                        else:
+                            print(f"【注意】 {wb_path.name} の {m_idx}月シート ({br}行,{sc+2}列) が空です")
+                    else:
+                        print(f"【失敗】 {wb_path.name} に「{m_idx}月」シートがありません")
+                    wb.close()
+                except Exception as e:
+                    print(f"【失敗】 {wb_path.name} 読込エラー: {e}")
+            else:
+                # ログを出しすぎないよう重要なものだけ表示
+                if "j2" in ev['grade'] and "math" in ev['subject']:
+                    print(f"【未発見】 期待したファイル: {fname}")
 
-        entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
+            entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
 
-    (repo_dir / "journal_latest.json").write_text(json.dumps({"month": "latest", "generatedAt": datetime.now().isoformat(), "entries": entries}, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 保存
+    output_data = {"month": "latest", "generatedAt": datetime.now().isoformat(), "entries": entries}
+    (repo_dir / "journal_latest.json").write_text(json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"--- レポート終了 ---\n")
 
 def git_push(repo_dir):
     print("[INFO] GitHubへ送信中...")
-    subprocess.run(["git", "-C", str(repo_dir), "add", "."], check=False)
-    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Sync Final Fix"], check=False)
+    # 明示的に __tmp__ を無視するように git add
+    subprocess.run(["git", "-C", str(repo_dir), "add", "journal_latest.json"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "add", "update_journal.py"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Sync Journal Content"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "push"], check=False)
 
 if __name__ == "__main__":
