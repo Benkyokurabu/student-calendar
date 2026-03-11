@@ -1,6 +1,6 @@
 {
   "month": "latest",
-  "generatedAt": "2026-03-11T20:27:46.700129",
+  "generatedAt": "2026-03-11T20:30:27.561147",
   "entries": {
     "2026-03-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "",
@@ -1609,10 +1609,12 @@
       "recordingUrl": ""
     },
     "2026-03-11|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "recordingUrl": ""
+      "content": "要点８、例題まで",
+      "page": "P16",
+      "homework": [
+        "P19、＃２３"
+      ],
+      "recordingUrl": "https://us06web.zoom.us/rec/share/oN7ePzZrGHF3s3QiqwfatcC5CifRe4U-L5kExGS0zg24PueKIF4Hl6wLCo9A_tKS.P5ONBw1ZO6r2-iz3?startTime=1773221931000"
     },
     "2026-03-11|8:25～9:55|minami|minami_j2_B_math|1": {
       "content": "",
