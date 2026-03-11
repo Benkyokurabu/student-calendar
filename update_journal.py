@@ -1,24 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""update_journal.py
-授業日誌のExcelからJSONを生成し、GitHubへ反映するプログラム本体です。
-"""
-
 import argparse
 import json
 import os
-import re
 import shutil
 import subprocess
-import sys
 import time
-from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
 from openpyxl import load_workbook
 
-# 抽出ルール設定
+# --- 設定（既存の動作を維持） ---
 BASE_ROW = {"S": 7, "A": 27, "B": 47, "X": 7}
 BLOCK_WIDTH = 10
 FIRST_BLOCK_COL = 2
@@ -27,73 +19,100 @@ CAMPUS_JP = {"hon": "本校", "minami": "南教室"}
 GRADE_JP = {"e4": "小４", "e5": "小５", "e6": "小６", "j1": "中１", "j2": "中２", "j3": "中３"}
 SUBJECT_JP = {"eng": "英語", "math": "数学", "jp": "国語", "sci": "理科", "soc": "社会", "arith": "算数"}
 
-def safe_mkdir(p: Path) -> None: p.mkdir(parents=True, exist_ok=True)
-def read_json(path: Path) -> Any:
-    with path.open("r", encoding="utf-8") as f: return json.load(f)
-def atomic_write_text(path: Path, text: str) -> None:
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(text, encoding="utf-8")
-    tmp.replace(path)
-def normalize_str(v: Any) -> str: return str(v).strip() if v is not None else ""
+TARGET_FOLDER_NAME = "09　授業日誌"
 
-def build_event_key(ev: Dict[str, Any]) -> str:
-    t = str(ev.get('time','')).replace('~','～').strip()
-    return f"{ev.get('date','')}|{t}|{ev.get('campus','')}|{ev.get('groupKey','')}|{str(ev.get('room',''))}"
+def get_journal_dir():
+    user_home = Path.home()
+    candidates = [
+        user_home / "OneDrive" / "●勉強クラブ共有" / TARGET_FOLDER_NAME,
+        user_home / "OneDrive - 個人用" / "●勉強クラブ共有" / TARGET_FOLDER_NAME,
+        Path(r"C:\Users\kudok\OneDrive\●勉強クラブ共有\09　授業日誌")
+    ]
+    for c in candidates:
+        if c.exists(): return c
+    return None
 
-def find_workbook(journal_dir: Path, filename: str) -> Optional[Path]:
-    # 深い階層のサブフォルダ（南教室 ＞ 中１ など）まで自動で潜って検索します
-    if (journal_dir / filename).exists(): return journal_dir / filename
+def find_workbook(journal_dir, filename):
+    p = journal_dir / filename
+    if p.exists(): return p
     for candidate in journal_dir.rglob(filename):
         if candidate.is_file(): return candidate
     return None
 
-def load_schedule_files(repo_dir: Path) -> Tuple[Dict[str, List[Dict[str, Any]]], Optional[str]]:
-    month_events = {}
-    for p in sorted(repo_dir.glob("schedule_????-??.json")):
-        m = re.search(r"schedule_(\d{4}-\d{2})\.json$", p.name)
-        if m: month_events[m.group(1)] = read_json(p)
-    latest_month = None; latest_path = repo_dir / "schedule_latest.json"
-    if latest_path.exists():
-        le = read_json(latest_path)
-        if le:
-            ms = sorted({str(ev.get("date", ""))[:7] for ev in le if ev.get("date")})
-            if ms: latest_month = ms[-1]; month_events.setdefault(latest_month, le)
-    return month_events, latest_month
+def generate(repo_dir, journal_dir):
+    repo_dir = Path(repo_dir)
+    sched_path = repo_dir / "schedule_latest.json"
+    if not sched_path.exists(): return
 
-def generate_journal_for_month(repo_dir, month, events, journal_dir, temp_dir):
-    needed = {f"{CAMPUS_JP.get(str(ev.get('campus')), '')}{GRADE_JP.get(str(ev.get('grade')), '')}{'X' if str(ev.get('class'))=='X' else ''}{SUBJECT_JP.get(str(ev.get('subject')), '')}_{str(ev.get('date'))[:4]}.xlsx" for ev in events}
-    wb_handles = {}
-    for fname in needed:
-        p = find_workbook(journal_dir, fname)
-        if p:
-            copy_p = temp_dir / fname
-            shutil.copy2(p, copy_p)
-            wb_handles[fname] = load_workbook(copy_p, read_only=True, data_only=True)
+    events = json.loads(sched_path.read_text(encoding="utf-8"))
+    map_path = repo_dir / "journal_map_latest.json"
+    if not map_path.exists(): map_path = repo_dir / "journal_map_2026-03.json"
+    slots_map = json.loads(map_path.read_text(encoding="utf-8")) if map_path.exists() else {"slots": {}}
+    
     entries = {}
+    temp_dir = repo_dir / "__tmp__"
+    
+    # 【改良】アクセス拒否エラーを回避するための処理
+    if temp_dir.exists():
+        try:
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        except:
+            pass
+    temp_dir.mkdir(parents=True, exist_ok=True)
+
     for ev in events:
-        ek = build_event_key(ev); content = ""; page = ""; hw = []; rec = ""
-        entries[ek] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
-    for h in wb_handles.values(): h.close()
-    return {"month": month, "generatedAt": datetime.now().isoformat(), "entries": entries}
+        key = f"{ev.get('date','')}|{str(ev.get('time','')).replace('~','～').strip()}|{ev.get('campus','')}|{ev.get('groupKey','')}|{str(ev.get('room',''))}"
+        gk = ev.get("groupKey", "")
+        try:
+            l_idx = slots_map.get("slots", {}).get(gk, []).index(key) + 1
+        except: l_idx = 1
+        
+        fname = f"{CAMPUS_JP.get(ev['campus'])}{GRADE_JP.get(ev['grade'])}{'X' if ev['class']=='X' else ''}{SUBJECT_JP.get(ev['subject'])}_2026.xlsx"
+        content, page, hw, rec = "", "", [], ""
+        wb_path = find_workbook(journal_dir, fname)
+        
+        if wb_path:
+            try:
+                # 重複を避けるためタイムスタンプ付きでコピー
+                tmp_path = temp_dir / f"{int(time.time()*1000)}_{fname}"
+                shutil.copy2(wb_path, tmp_path)
+                wb = load_workbook(tmp_path, data_only=True, read_only=True)
+                m_idx = int(ev['date'].split("-")[1])
+                sheet_name = f"{m_idx}月"
+                if sheet_name in wb.sheetnames:
+                    ws = wb[sheet_name]
+                    br, sc = BASE_ROW.get(ev['class'], 7), FIRST_BLOCK_COL + (l_idx - 1) * BLOCK_WIDTH
+                    content = str(ws.cell(br, sc+2).value or "").strip()
+                    page = str(ws.cell(br+1, sc+4).value or "").strip()
+                    hw = [x for x in [str(ws.cell(br+2, sc+3).value or "").strip(), str(ws.cell(br+3, sc+3).value or "").strip()] if x]
+                    rec = str(ws.cell(br+10, sc+2).value or "").strip()
+                wb.close()
+            except Exception as e:
+                print(f"[WARN] {fname} の読み取りスキップ: {e}")
+        entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
+
+    (repo_dir / "journal_latest.json").write_text(json.dumps({"month": "latest", "generatedAt": datetime.now().isoformat(), "entries": entries}, ensure_ascii=False, indent=2), encoding="utf-8")
 
 def git_push(repo_dir):
-    # GitHubへの自動送信機能を実行します
+    print("[INFO] GitHubへ送信中...")
     subprocess.run(["git", "-C", str(repo_dir), "add", "."], check=False)
-    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Update Journal"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Sync Update"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "push"], check=False)
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--journal-dir"); ap.add_argument("--backup-dir"); ap.add_argument("--mode"); ap.add_argument("--do-backup", action="store_true")
-    args = ap.parse_args()
-    repo_dir = Path(__file__).parent.resolve(); journal_dir = Path(args.journal_dir).resolve()
-    m_events, latest_m = load_schedule_files(repo_dir)
-    temp_dir = repo_dir / "__tmp__"; safe_mkdir(temp_dir)
-    for month, evs in m_events.items():
-        jobj = generate_journal_for_month(repo_dir, month, evs, journal_dir, temp_dir)
-        atomic_write_text(repo_dir / f"journal_{month}.json", json.dumps(jobj, ensure_ascii=False, indent=2))
-    if latest_m: shutil.copy2(repo_dir / f"journal_{latest_m}.json", repo_dir / "journal_latest.json")
-    if args.mode == "auto": git_push(repo_dir)
-    print("[INFO] done.")
-
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mode")
+    parser.add_argument("--do-backup", action="store_true")
+    args = parser.parse_args()
+    
+    current_repo = Path(__file__).parent.resolve()
+    j_dir = get_journal_dir()
+    
+    if j_dir:
+        print(f"[OK] フォルダ発見: {j_dir}")
+        generate(current_repo, j_dir)
+        if args.mode == "auto":
+            git_push(current_repo)
+        print("[INFO] done.")
+    else:
+        print("[ERROR] 日誌フォルダが見つかりませんでした。")
