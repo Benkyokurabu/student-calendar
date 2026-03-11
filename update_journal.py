@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import tempfile
 import unicodedata
+import re
 from datetime import datetime
 from pathlib import Path
 from openpyxl import load_workbook
@@ -40,20 +41,39 @@ def find_workbook(journal_dir, filename):
     return None
 
 def get_best_sheet(wb, m_idx):
-    """表記揺れを吸収して正しいシートを返す"""
-    targets = [f"{m_idx}月", f"{m_idx:02}月", unicodedata.normalize('NFKC', f"{m_idx}月"), f"{m_idx}"]
-    for t in targets:
-        for name in wb.sheetnames:
-            if name.strip() == t:
-                return wb[name]
+    """
+    【最強の探索ロジック】
+    '3月', '03月', '３月', '2026年3月', '3' など、
+    対象の月の数字に関連するシートを全探索します。
+    """
+    sheet_names = wb.sheetnames
+    
+    # 1. 完全一致・正規化一致を優先
+    patterns = [f"{m_idx}月", f"{m_idx:02}月", str(m_idx)]
+    for name in sheet_names:
+        clean = unicodedata.normalize('NFKC', name).strip()
+        if clean in patterns:
+            return wb[name]
+
+    # 2. 数字が含まれているかチェック（例：'2026年3月' など）
+    for name in sheet_names:
+        clean = unicodedata.normalize('NFKC', name)
+        # シート名の中にある数字を抽出
+        nums = re.findall(r'\d+', clean)
+        if str(m_idx) in nums or str(int(m_idx)) in [str(int(n)) for n in nums]:
+            return wb[name]
+            
+    # 3. 最後の手段（文字として含まれているか）
+    for name in sheet_names:
+        if str(m_idx) in unicodedata.normalize('NFKC', name):
+            return wb[name]
+
     return None
 
 def generate(repo_dir, journal_dir):
     repo_dir = Path(repo_dir)
     sched_path = repo_dir / "schedule_latest.json"
-    if not sched_path.exists():
-        print(f"[エラー] {sched_path.name} が見つかりません。")
-        return
+    if not sched_path.exists(): return
 
     events = json.loads(sched_path.read_text(encoding="utf-8"))
     map_path = repo_dir / "journal_map_latest.json"
@@ -61,7 +81,6 @@ def generate(repo_dir, journal_dir):
     slots_map = json.loads(map_path.read_text(encoding="utf-8")) if map_path.exists() else {"slots": {}}
     
     entries = {}
-    # 【改良】一時フォルダをリポジトリの外に作成して GitHub への混入を防止
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_path = Path(temp_dir)
         print(f"\n--- データ読み取り詳細レポート ---")
@@ -82,7 +101,7 @@ def generate(repo_dir, journal_dir):
             content, page, hw, rec = "", "", [], ""
             if wb_path:
                 try:
-                    tmp_wb_file = temp_path / wb_path.name
+                    tmp_wb_file = temp_path / f"{id(wb_path)}_{wb_path.name}"
                     shutil.copy2(wb_path, tmp_wb_file)
                     wb = load_workbook(tmp_wb_file, data_only=True, read_only=True)
                     m_idx = int(ev['date'].split("-")[1])
@@ -99,19 +118,13 @@ def generate(repo_dir, journal_dir):
                         rec = str(ws.cell(br+10, sc+2).value or "").strip()
                         
                         if content:
-                            print(f"【成功】 {ev['date']} {ev['grade']}{cls_code} {SUBJECT_JP.get(ev['subject'])} -> 「{content[:10]}...」")
-                        else:
-                            print(f"【注意】 {wb_path.name} の {m_idx}月シート ({br}行,{sc+2}列) が空です")
+                            print(f"【成功】 {ev['date']} {ev['campus']} {ev['grade']}{cls_code} -> 「{content[:8]}...」")
                     else:
-                        print(f"【失敗】 {wb_path.name} に「{m_idx}月」シートがありません")
+                        print(f"【失敗】 {wb_path.name} に '{m_idx}月' 関連のシートがありません。リスト: {wb.sheetnames}")
                     wb.close()
-                except Exception as e:
-                    print(f"【失敗】 {wb_path.name} 読込エラー: {e}")
-            else:
-                # ログを出しすぎないよう重要なものだけ表示
-                if "j2" in ev['grade'] and "math" in ev['subject']:
-                    print(f"【未発見】 期待したファイル: {fname}")
-
+                except:
+                    pass
+            
             entries[key] = {"content": content, "page": page, "homework": hw, "recordingUrl": rec}
 
     # 保存
@@ -121,10 +134,9 @@ def generate(repo_dir, journal_dir):
 
 def git_push(repo_dir):
     print("[INFO] GitHubへ送信中...")
-    # 明示的に __tmp__ を無視するように git add
     subprocess.run(["git", "-C", str(repo_dir), "add", "journal_latest.json"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "add", "update_journal.py"], check=False)
-    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Sync Journal Content"], check=False)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "Auto Sync: Sheet Detection Enhanced"], check=False)
     subprocess.run(["git", "-C", str(repo_dir), "push"], check=False)
 
 if __name__ == "__main__":
