@@ -1,0 +1,858 @@
+[
+  {
+    "date": "2026-03-02",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-03",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-03",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-04",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-04",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-07",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "１Ｂ数",
+    "label": "中１B 数学"
+  },
+  {
+    "date": "2026-03-09",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-10",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-10",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-11",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-11",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-14",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "３Ａ数",
+    "label": "中３A 数学"
+  },
+  {
+    "date": "2026-03-14",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "１Ａ英",
+    "label": "中１A 英語"
+  },
+  {
+    "date": "2026-03-16",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-17",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-17",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-18",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-18",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-23",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-23",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "6",
+    "rawText": "４Ｘ算",
+    "label": "小４X 算数"
+  },
+  {
+    "date": "2026-03-24",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-24",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-25",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-25",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "1",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "3",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "4",
+    "rawText": "４Ｘ国",
+    "label": "小４X 国語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "2:55～4:25",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "３Ｓ数",
+    "label": "中３S 数学"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "8:25～9:55",
+    "campusLabel": "本校",
+    "room": "2",
+    "rawText": "３Ａ数",
+    "label": "中３A 数学"
+  },
+  {
+    "date": "2026-03-30",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "4",
+    "rawText": "６Ｘ国",
+    "label": "小６X 国語"
+  },
+  {
+    "date": "2026-03-31",
+    "time": "4:55～6:15",
+    "campusLabel": "本校",
+    "room": "6",
+    "rawText": "５Ｘ国",
+    "label": "小５X 国語"
+  },
+  {
+    "date": "2026-03-02",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-03",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-03",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-04",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-04",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-05",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-06",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-07",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "１Ｓ英",
+    "label": "中１S 英語"
+  },
+  {
+    "date": "2026-03-09",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-10",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-10",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-11",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-11",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-12",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-13",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-16",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-17",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-17",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-18",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-18",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-19",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-20",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-23",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ｓ算",
+    "label": "小５S 算数"
+  },
+  {
+    "date": "2026-03-23",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "4",
+    "rawText": "４Ｘ算",
+    "label": "小４X 算数"
+  },
+  {
+    "date": "2026-03-24",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "５Ａ算",
+    "label": "小５A 算数"
+  },
+  {
+    "date": "2026-03-24",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ｓ算",
+    "label": "小６S 算数"
+  },
+  {
+    "date": "2026-03-25",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ算",
+    "label": "小６A 算数"
+  },
+  {
+    "date": "2026-03-25",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ算",
+    "label": "小４A 算数"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ａ国",
+    "label": "小６A 国語"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "５Ａ英",
+    "label": "小５A 英語"
+  },
+  {
+    "date": "2026-03-26",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "４Ａ国",
+    "label": "小４A 国語"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "６Ｓ英",
+    "label": "小６S 英語"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "６Ａ英",
+    "label": "小６A 英語"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "3",
+    "rawText": "５Ａ国",
+    "label": "小５A 国語"
+  },
+  {
+    "date": "2026-03-27",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "5",
+    "rawText": "４Ｘ国",
+    "label": "小４X 国語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "１Ａ英",
+    "label": "中１A 英語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "6:35～8:05",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "３Ａ英",
+    "label": "中３A 英語"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "6:35～8:05",
+    "campusLabel": "南教室",
+    "room": "2",
+    "rawText": "１Ｂ数",
+    "label": "中１B 数学"
+  },
+  {
+    "date": "2026-03-28",
+    "time": "8:25～9:55",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "３Ａ数",
+    "label": "中３A 数学"
+  },
+  {
+    "date": "2026-03-30",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "1",
+    "rawText": "１Ａ数",
+    "label": "中１A 数学"
+  },
+  {
+    "date": "2026-03-30",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "5",
+    "rawText": "６Ｘ国",
+    "label": "小６X 国語"
+  },
+  {
+    "date": "2026-03-31",
+    "time": "4:45～6:15",
+    "campusLabel": "南教室",
+    "room": "4",
+    "rawText": "５Ｘ国",
+    "label": "小５X 国語"
+  }
+]
