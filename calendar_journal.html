@@ -573,8 +573,17 @@
 
   function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify({ grade: state.grade, campus: state.campus, selected: Object.fromEntries(Object.entries(state.selected).map(([k,v])=>[k, Array.from(v)])) })); }
   function loadState() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { const obj = JSON.parse(saved); state.grade = obj.grade; state.campus = obj.campus; Object.keys(obj.selected).forEach(k => state.selected[k] = new Set(obj.selected[k])); } }
-  function shiftMonth(n) { const [y, m] = currentYM.split("-").map(Number); const d = new Date(y, m - 1 + n, 1); currentYM = d.toISOString().slice(0, 7); loadJournalSafe(currentYM).then(renderAll); }
-  function setToThisMonth() { currentYM = new Date().toISOString().slice(0, 7); loadJournalSafe(currentYM).then(renderAll); }
+  async function loadMonthData(ym) {
+    const sched = await fetchJsonFromCandidates([`schedule_${ym}.json`, "schedule_latest.json"], "schedule");
+    if (sched && Array.isArray(sched)) {
+      allLessons = sched;
+    }
+    await loadJournalSafe(ym);
+    rebuildUI();
+    renderAll();
+  }
+  function shiftMonth(n) { const [y, m] = currentYM.split("-").map(Number); const d = new Date(y, m - 1 + n, 1); currentYM = d.toISOString().slice(0, 7); loadMonthData(currentYM); }
+  function setToThisMonth() { currentYM = new Date().toISOString().slice(0, 7); loadMonthData(currentYM); }
   function clearSelections() { Object.keys(state.selected).forEach(k => state.selected[k].clear()); saveState(); rebuildSubjectArea(); renderAll(); }
 
   loadState();
