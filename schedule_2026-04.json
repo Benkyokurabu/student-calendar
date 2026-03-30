@@ -1,526 +1,6 @@
 [
   {
-    "date": "2026-04-01",
-    "time": "2:55～4:25",
-    "grade": "j3",
-    "class": "A",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_A_eng",
-    "label": "中３A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_e5_A_jp",
-    "label": "小５A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "4:55～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_e6_A_jp",
-    "label": "小６A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_j3_X_jp",
-    "label": "中３X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "X",
-    "subject": "math",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j3_X_math",
-    "label": "中３X 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
     "date": "2026-04-02",
-    "time": "2:55～4:25",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:55～6:15",
-    "grade": "e4",
-    "class": "A",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_e4_A_arith",
-    "label": "小４A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "S",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_e5_S_arith",
-    "label": "小５S 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:55～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_e6_A_eng",
-    "label": "小６A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j3_X_eng",
-    "label": "中３X 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "2:55～4:25",
-    "grade": "j1",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j1_S_math",
-    "label": "中１S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "2:55～4:25",
-    "grade": "j2",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:55～6:15",
-    "grade": "j3",
-    "class": "S",
-    "subject": "soc",
-    "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_e5_A_arith",
-    "label": "小５A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:55～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_e6_A_arith",
-    "label": "小６A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:55～6:15",
-    "grade": "e6",
-    "class": "S",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_e6_S_arith",
-    "label": "小６S 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "2:55～4:25",
-    "grade": "j3",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_A_math",
-    "label": "中３A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "4:55～6:15",
-    "grade": "j1",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j1_A_math",
-    "label": "中１A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j1_B_math",
-    "label": "中１B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j1_S_eng",
-    "label": "中１S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "A",
-    "subject": "soc",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "sci",
-    "campus": "hon",
-    "room": "7",
-    "groupKey": "hon_j3_S_sci",
-    "label": "中３S 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "A",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_A_math",
-    "label": "中２A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "sci",
-    "campus": "hon",
-    "room": "7",
-    "groupKey": "hon_j3_A_sci",
-    "label": "中３A 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "soc",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j3_S_soc",
-    "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -533,7 +13,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -546,7 +26,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -559,7 +39,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -572,7 +52,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -585,7 +65,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -598,7 +78,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -611,7 +91,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
+    "date": "2026-04-02",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -624,20 +104,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
-    "time": "4:55～6:15",
-    "grade": "j3",
-    "class": "A",
-    "subject": "soc",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j3_A_soc",
-    "label": "中３A 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -650,7 +117,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -663,7 +130,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -676,7 +143,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -689,7 +156,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -702,20 +169,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j3_S_jp",
-    "label": "中３S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -728,7 +182,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-04-03",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -741,20 +195,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-07",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -767,7 +208,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -780,7 +221,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -793,20 +234,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "A",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_A_eng",
-    "label": "中２A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -819,20 +247,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j2_B_eng",
-    "label": "中２B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
@@ -845,7 +260,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -858,7 +273,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-08",
+    "date": "2026-04-04",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "X",
@@ -871,7 +286,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -884,7 +299,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "S",
@@ -897,7 +312,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -910,7 +325,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
@@ -923,7 +338,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -936,7 +351,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "B",
@@ -949,7 +364,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -962,7 +377,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -975,7 +390,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -988,7 +403,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-05",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -1001,7 +416,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -1014,7 +429,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -1027,7 +442,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -1040,7 +455,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -1053,7 +468,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -1066,7 +481,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -1079,7 +494,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_S_jp",
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -1092,124 +520,98 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
+    "date": "2026-04-06",
     "time": "8:25～9:55",
     "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_S_math",
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "4:55～6:15",
+    "grade": "j1",
     "class": "B",
     "subject": "math",
     "campus": "hon",
     "room": "2",
-    "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学",
+    "groupKey": "hon_j1_B_math",
+    "label": "中１B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-11",
-    "time": "4:55～6:15",
-    "grade": "j3",
-    "class": "S",
-    "subject": "math",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_S_math",
-    "label": "中３S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-11",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j1_A_eng",
-    "label": "中１A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-11",
+    "date": "2026-04-07",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
     "subject": "soc",
     "campus": "hon",
-    "room": "2",
+    "room": "3",
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "3A社対面"
   },
   {
-    "date": "2026-04-11",
+    "date": "2026-04-07",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
     "subject": "sci",
     "campus": "hon",
-    "room": "1",
+    "room": "2",
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
+    "faceToFace": true,
+    "displayTitle": "3S理対面"
+  },
+  {
+    "date": "2026-04-07",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_S_eng",
+    "label": "中２S 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-11",
+    "date": "2026-04-07",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
     "subject": "sci",
     "campus": "hon",
-    "room": "2",
+    "room": "3",
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "3A理対面"
   },
   {
-    "date": "2026-04-11",
+    "date": "2026-04-07",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
     "subject": "soc",
     "campus": "hon",
-    "room": "1",
+    "room": "2",
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "3S社対面"
   },
   {
-    "date": "2026-04-13",
-    "time": "4:55～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_e4_X_arith",
-    "label": "小４X 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-13",
+    "date": "2026-04-09",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -1222,7 +624,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-09",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -1235,7 +637,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-09",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -1248,7 +650,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-09",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -1261,20 +663,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-09",
     "time": "8:25～9:55",
     "grade": "j3",
-    "class": "A",
-    "subject": "jp",
+    "class": "S",
+    "subject": "eng",
     "campus": "hon",
     "room": "2",
-    "groupKey": "hon_j3_A_jp",
-    "label": "中３A 国語",
+    "groupKey": "hon_j3_S_eng",
+    "label": "中３S 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -1287,7 +689,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -1300,7 +702,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -1313,7 +715,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -1326,7 +728,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -1339,7 +741,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -1352,20 +754,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_S_eng",
-    "label": "中２S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-14",
+    "date": "2026-04-10",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -1378,7 +767,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-10",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -1391,7 +793,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-11",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -1404,7 +806,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-11",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -1417,33 +819,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-15",
+    "date": "2026-04-11",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
     "subject": "jp",
     "campus": "hon",
-    "room": "3",
+    "room": "2",
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "3S国対面"
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-11",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
@@ -1456,7 +845,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-11",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -1469,20 +858,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "eng",
-    "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -1495,7 +871,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "S",
@@ -1508,7 +884,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -1521,7 +897,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
@@ -1534,7 +910,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -1547,7 +923,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "X",
@@ -1560,7 +936,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "B",
@@ -1573,7 +949,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -1586,7 +962,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -1599,7 +975,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -1612,7 +988,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -1625,7 +1001,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -1638,7 +1014,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -1651,7 +1027,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -1664,7 +1040,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -1677,7 +1053,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -1690,7 +1066,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -1703,7 +1079,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -1716,7 +1092,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -1729,7 +1105,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -1742,7 +1118,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
+    "date": "2026-04-14",
+    "time": "4:55～6:15",
+    "grade": "j1",
+    "class": "A",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j1_A_eng",
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-14",
     "time": "4:55～6:15",
     "grade": "j3",
     "class": "A",
@@ -1755,33 +1144,46 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
+    "date": "2026-04-14",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_j1_A_math",
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-14",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
     "subject": "math",
     "campus": "hon",
-    "room": "2",
+    "room": "1",
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
+    "date": "2026-04-14",
     "time": "6:35～8:05",
     "grade": "j3",
-    "class": "S",
-    "subject": "eng",
+    "class": "A",
+    "subject": "jp",
     "campus": "hon",
-    "room": "1",
-    "groupKey": "hon_j3_S_eng",
-    "label": "中３S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "room": "2",
+    "groupKey": "hon_j3_A_jp",
+    "label": "中３A 国語",
+    "faceToFace": true,
+    "displayTitle": "3A国対面"
   },
   {
-    "date": "2026-04-18",
+    "date": "2026-04-14",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -1794,7 +1196,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -1807,20 +1209,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
-    "time": "4:55～6:15",
-    "grade": "e6",
-    "class": "X",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_e6_X_jp",
-    "label": "小６X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -1833,20 +1222,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
     "subject": "jp",
     "campus": "hon",
-    "room": "2",
+    "room": "3",
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -1859,7 +1248,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -1872,7 +1261,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -1885,7 +1274,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "X",
@@ -1898,7 +1287,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -1911,7 +1300,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -1924,7 +1313,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -1937,7 +1326,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -1950,33 +1339,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
     "subject": "jp",
     "campus": "hon",
-    "room": "2",
+    "room": "3",
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
     "subject": "jp",
     "campus": "hon",
-    "room": "3",
+    "room": "2",
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "1S国対面"
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -1989,20 +1378,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
     "subject": "jp",
     "campus": "hon",
-    "room": "2",
+    "room": "3",
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -2015,7 +1404,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-17",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_S_eng",
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-18",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -2028,7 +1430,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -2041,7 +1443,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -2054,7 +1456,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -2067,7 +1469,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -2080,20 +1482,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
     "subject": "eng",
     "campus": "hon",
-    "room": "1",
+    "room": "2",
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -2106,7 +1508,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "X",
@@ -2119,7 +1521,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -2132,7 +1534,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "S",
@@ -2145,7 +1547,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -2158,7 +1560,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
@@ -2171,7 +1573,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -2184,7 +1586,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "B",
@@ -2197,7 +1599,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "X",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_j3_X_eng",
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-19",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -2210,7 +1625,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -2223,7 +1638,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -2236,20 +1651,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
-    "time": "4:55～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "jp",
+    "date": "2026-04-20",
+    "time": "2:55～4:25",
+    "grade": "j1",
+    "class": "S",
+    "subject": "math",
     "campus": "hon",
-    "room": "4",
-    "groupKey": "hon_e4_X_jp",
-    "label": "小４X 国語",
+    "room": "1",
+    "groupKey": "hon_j1_S_math",
+    "label": "中１S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
+    "time": "2:55～4:25",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_B_math",
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-20",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -2262,7 +1690,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
@@ -2275,7 +1703,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -2288,7 +1716,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -2301,7 +1729,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -2314,7 +1742,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -2327,7 +1755,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -2340,7 +1768,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -2353,59 +1781,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j3_B_math",
-    "label": "中３B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
     "subject": "math",
     "campus": "hon",
-    "room": "3",
+    "room": "2",
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-25",
-    "time": "2:55～4:25",
-    "grade": "j2",
-    "class": "S",
-    "subject": "math",
+    "date": "2026-04-23",
+    "time": "4:55～6:15",
+    "grade": "e4",
+    "class": "X",
+    "subject": "arith",
     "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_S_math",
-    "label": "中２S 数学",
+    "room": "6",
+    "groupKey": "hon_e4_X_arith",
+    "label": "小４X 算数",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-25",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "hon",
-    "room": "2",
-    "groupKey": "hon_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
@@ -2418,7 +1820,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -2431,7 +1833,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_S_jp",
+    "label": "中２S 国語",
+    "faceToFace": true,
+    "displayTitle": "2S国対面"
+  },
+  {
+    "date": "2026-04-23",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -2444,7 +1859,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -2457,7 +1872,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -2470,7 +1885,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -2483,7 +1898,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-23",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -2496,7 +1911,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-24",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "A",
@@ -2509,20 +1924,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
-    "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "X",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_e5_X_jp",
-    "label": "小５X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-24",
     "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
@@ -2535,33 +1937,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "3",
-    "groupKey": "hon_j1_A_jp",
-    "label": "中１A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j1_S_jp",
-    "label": "中１S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-24",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "B",
@@ -2574,33 +1950,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-24",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_S_eng",
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
     "subject": "jp",
     "campus": "hon",
-    "room": "3",
+    "room": "2",
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "2A国対面"
   },
   {
-    "date": "2026-04-28",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_j2_S_jp",
-    "label": "中２S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-24",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -2613,1138 +1989,605 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-01",
-    "time": "4:45～6:15",
-    "grade": "j1",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "A",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_X_jp",
-    "label": "中３X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-01",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "X",
-    "subject": "math",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_X_math",
-    "label": "中３X 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "2:55～4:25",
-    "grade": "j3",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_X_eng",
-    "label": "中３X 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-02",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "2:55～4:25",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:45～6:15",
-    "grade": "j3",
-    "class": "S",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:45～6:15",
+    "date": "2026-04-25",
+    "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
     "subject": "jp",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e5_A_jp",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
-    "time": "4:45～6:15",
+    "date": "2026-04-25",
+    "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e6_A_eng",
-    "label": "小６A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
+    "subject": "jp",
+    "campus": "hon",
     "room": "1",
-    "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語",
+    "groupKey": "hon_e6_A_jp",
+    "label": "小６A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
+    "date": "2026-04-25",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
     "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_A_eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
+    "date": "2026-04-25",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
     "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_A_eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
+    "date": "2026-04-25",
     "time": "6:35～8:05",
     "grade": "j3",
-    "class": "S",
+    "class": "X",
     "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_X_jp",
+    "label": "中３X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-03",
+    "date": "2026-04-25",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
     "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_S_eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-03",
+    "date": "2026-04-25",
     "time": "8:25～9:55",
     "grade": "j3",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語",
+    "class": "A",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_A_jp",
+    "label": "中３A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-04",
-    "time": "4:45～6:15",
-    "grade": "j1",
-    "class": "A",
+    "date": "2026-04-25",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "X",
     "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_j3_X_math",
+    "label": "中３X 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-04",
-    "time": "4:45～6:15",
-    "grade": "j3",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
+    "date": "2026-04-26",
+    "time": "2:55～4:25",
     "grade": "j1",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
     "room": "1",
-    "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語",
+    "groupKey": "hon_j1_S_math",
+    "label": "中１S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j3",
+    "date": "2026-04-26",
+    "time": "4:55～6:15",
+    "grade": "e4",
     "class": "A",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会",
+    "subject": "arith",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_e4_A_arith",
+    "label": "小４A 算数",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-04",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "sci",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "sci",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-04",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "4:45～6:15",
+    "date": "2026-04-26",
+    "time": "4:55～6:15",
     "grade": "e5",
     "class": "S",
     "subject": "arith",
-    "campus": "minami",
+    "campus": "hon",
     "room": "2",
-    "groupKey": "minami_e5_S_arith",
+    "groupKey": "hon_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-06",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j1_S_math",
-    "label": "中１S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "A",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "sci",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_S_sci",
-    "label": "中３S 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "sci",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_A_sci",
-    "label": "中３A 理科",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-06",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_S_soc",
-    "label": "中３S 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "4:45～6:15",
-    "grade": "j3",
-    "class": "A",
-    "subject": "soc",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_A_soc",
-    "label": "中３A 社会",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "S",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j1_A_jp",
-    "label": "中１A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "A",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-07",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e4_A_arith",
-    "label": "小４A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e6_A_arith",
-    "label": "小６A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_A_math",
-    "label": "中１A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j1_B_math",
-    "label": "中１B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "A",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_math",
-    "label": "中３A 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_X_jp",
-    "label": "中３X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-08",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "X",
-    "subject": "math",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_X_math",
-    "label": "中３X 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e4_A_jp",
-    "label": "小４A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e5_A_eng",
-    "label": "小５A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e6_A_jp",
-    "label": "小６A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_S_eng",
-    "label": "中１S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "X",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_j3_X_eng",
-    "label": "中３X 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_B_eng",
-    "label": "中２B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-09",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_e5_A_jp",
-    "label": "小５A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "4:45～6:15",
+    "date": "2026-04-26",
+    "time": "4:55～6:15",
     "grade": "e6",
     "class": "A",
     "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e6_A_eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-10",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e6_S_eng",
-    "label": "小６S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_A_eng",
-    "label": "中１A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "A",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_A_eng",
-    "label": "中２A 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_eng",
-    "label": "中３B 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-10",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "S",
-    "subject": "eng",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_S_eng",
-    "label": "中３S 英語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-11",
+    "date": "2026-04-26",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
     "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_B_math",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-11",
+    "date": "2026-04-26",
     "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_A_jp",
-    "label": "中３A 国語",
+    "grade": "j2",
+    "class": "B",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_B_math",
+    "label": "中２B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-11",
+    "date": "2026-04-26",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_A_math",
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j3_B_math",
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_j3_S_eng",
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "2:55～4:25",
+    "grade": "j2",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_A_math",
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:55～6:15",
+    "grade": "e4",
+    "class": "X",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_e4_X_jp",
+    "label": "小４X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:55～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "arith",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_e5_A_arith",
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:55～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "arith",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_e6_A_arith",
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:55～6:15",
+    "grade": "e6",
+    "class": "S",
+    "subject": "arith",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_e6_S_arith",
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_j1_A_math",
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "B",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_B_math",
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_S_math",
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_S_jp",
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
     "subject": "math",
-    "campus": "minami",
+    "campus": "hon",
     "room": "1",
-    "groupKey": "minami_j3_A_math",
+    "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_e4_X_arith",
-    "label": "小４X 算数",
+    "date": "2026-04-27",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "hon",
+    "room": "3",
+    "groupKey": "hon_j3_B_math",
+    "label": "中３B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-27",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_S_math",
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-28",
+    "time": "2:55～4:25",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_S_math",
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-28",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_A_math",
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "4:55～6:15",
+    "grade": "e6",
+    "class": "X",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_e6_X_jp",
+    "label": "小６X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j1_S_eng",
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "soc",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_A_soc",
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "sci",
+    "campus": "hon",
+    "room": "7",
+    "groupKey": "hon_j3_S_sci",
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "A",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_A_eng",
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "sci",
+    "campus": "hon",
+    "room": "7",
+    "groupKey": "hon_j3_A_sci",
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "soc",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j3_S_soc",
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-31",
+    "time": "4:55～6:15",
+    "grade": "e5",
+    "class": "X",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_e5_X_jp",
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-31",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j1_A_jp",
+    "label": "中１A 国語",
+    "faceToFace": true,
+    "displayTitle": "1A国対面"
+  },
+  {
+    "date": "2026-04-31",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "4",
+    "groupKey": "hon_j1_S_jp",
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-31",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-31",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "1",
+    "groupKey": "hon_j3_A_eng",
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-31",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "hon",
+    "room": "2",
+    "groupKey": "hon_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-02",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "S",
@@ -3757,20 +2600,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
     "subject": "math",
     "campus": "minami",
-    "room": "3",
+    "room": "1",
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -3783,20 +2626,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
     "subject": "soc",
     "campus": "minami",
-    "room": "1",
+    "room": "5",
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -3809,33 +2652,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
     "subject": "sci",
     "campus": "minami",
-    "room": "1",
+    "room": "2",
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-13",
+    "date": "2026-04-02",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
     "subject": "soc",
     "campus": "minami",
-    "room": "2",
+    "room": "5",
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -3848,7 +2691,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "S",
@@ -3861,7 +2704,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -3874,7 +2717,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -3887,7 +2730,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
@@ -3900,33 +2743,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
     "subject": "math",
     "campus": "minami",
-    "room": "3",
+    "room": "2",
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
-    "time": "6:35～8:05",
-    "grade": "j3",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j3_S_jp",
-    "label": "中３S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
@@ -3939,7 +2769,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -3952,7 +2782,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-14",
+    "date": "2026-04-03",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -3965,7 +2795,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "4:45～6:15",
     "grade": "e4",
     "class": "A",
@@ -3978,7 +2808,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -3991,7 +2821,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -4004,7 +2834,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
@@ -4017,7 +2847,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -4030,33 +2860,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "A",
-    "subject": "math",
+    "date": "2026-04-04",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "X",
+    "subject": "jp",
     "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学",
+    "room": "5",
+    "groupKey": "minami_j3_X_jp",
+    "label": "中３X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "B",
     "subject": "math",
     "campus": "minami",
-    "room": "2",
+    "room": "1",
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-04",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -4069,7 +2899,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-04",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "X",
+    "subject": "math",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_j3_X_math",
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-05",
     "time": "4:45～6:15",
     "grade": "e4",
     "class": "A",
@@ -4082,7 +2925,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-05",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -4095,7 +2938,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-05",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -4108,7 +2951,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-05",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -4121,7 +2964,605 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-05",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-05",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "X",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_j3_X_eng",
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-05",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-05",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_eng",
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e5_A_jp",
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e6_A_eng",
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_S_eng",
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_A_eng",
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_A_eng",
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_S_jp",
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_S_eng",
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-06",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_S_eng",
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "4:45～6:15",
+    "grade": "j1",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_S_eng",
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_A_eng",
+    "label": "中２A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_B_math",
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_S_eng",
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_math",
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-09",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "S",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e5_S_arith",
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-09",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j1_S_math",
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-09",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "6",
+    "groupKey": "minami_j2_S_jp",
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-09",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "soc",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_A_soc",
+    "label": "中３A 社会",
+    "faceToFace": true,
+    "displayTitle": "3A社対面"
+  },
+  {
+    "date": "2026-04-09",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "sci",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_S_sci",
+    "label": "中３S 理科",
+    "faceToFace": true,
+    "displayTitle": "3S理対面"
+  },
+  {
+    "date": "2026-04-09",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "sci",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_A_sci",
+    "label": "中３A 理科",
+    "faceToFace": true,
+    "displayTitle": "3A理対面"
+  },
+  {
+    "date": "2026-04-09",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "soc",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_S_soc",
+    "label": "中３S 社会",
+    "faceToFace": true,
+    "displayTitle": "3S社対面"
+  },
+  {
+    "date": "2026-04-10",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e5_A_arith",
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "S",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e6_S_arith",
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "6",
+    "groupKey": "minami_j1_A_jp",
+    "label": "中１A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j1_S_jp",
+    "label": "中１S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_A_math",
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_S_math",
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j3_S_jp",
+    "label": "中３S 国語",
+    "faceToFace": true,
+    "displayTitle": "3S国対面"
+  },
+  {
+    "date": "2026-04-10",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "6",
+    "groupKey": "minami_j2_A_jp",
+    "label": "中２A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_B_math",
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-10",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_S_math",
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "4:45～6:15",
+    "grade": "e4",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e4_A_arith",
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_A_arith",
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_A_math",
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j1_B_math",
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_math",
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_B_math",
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_A_jp",
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-11",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_S_math",
+    "label": "中３S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-12",
+    "time": "4:45～6:15",
+    "grade": "e4",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e4_A_jp",
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-12",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e5_A_eng",
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-12",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_A_jp",
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-12",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_S_eng",
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "X",
@@ -4134,7 +3575,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "B",
@@ -4147,7 +3588,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -4160,7 +3601,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "B",
@@ -4173,7 +3614,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-16",
+    "date": "2026-04-12",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -4186,7 +3627,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -4199,7 +3640,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -4212,7 +3653,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "S",
@@ -4225,20 +3666,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
     "subject": "eng",
     "campus": "minami",
-    "room": "2",
+    "room": "3",
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
@@ -4251,7 +3692,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-13",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -4264,7 +3718,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-13",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
@@ -4277,7 +3744,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-17",
+    "date": "2026-04-13",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -4290,59 +3757,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
-    "time": "4:45～6:15",
+    "date": "2026-04-14",
+    "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
-    "subject": "math",
+    "subject": "eng",
     "campus": "minami",
     "room": "1",
-    "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学",
+    "groupKey": "minami_j3_S_eng",
+    "label": "中３S 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
-    "time": "6:35～8:05",
-    "grade": "j1",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j1_S_jp",
-    "label": "中１S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-18",
-    "time": "6:35～8:05",
-    "grade": "j3",
+    "date": "2026-04-14",
+    "time": "8:25～9:55",
+    "grade": "j2",
     "class": "A",
     "subject": "eng",
     "campus": "minami",
     "room": "1",
-    "groupKey": "minami_j3_A_eng",
-    "label": "中３A 英語",
+    "groupKey": "minami_j2_A_eng",
+    "label": "中２A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-18",
-    "time": "8:25～9:55",
-    "grade": "j3",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "S",
@@ -4355,20 +3796,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "X",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_e6_X_jp",
-    "label": "小６X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -4381,7 +3809,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "6",
+    "groupKey": "minami_j2_S_jp",
+    "label": "中２S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -4394,7 +3835,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -4407,20 +3848,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "B",
-    "subject": "math",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j2_B_math",
-    "label": "中２B 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "X",
@@ -4433,7 +3861,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -4446,7 +3874,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-16",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -4459,7 +3887,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -4472,7 +3900,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "S",
@@ -4485,20 +3913,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
     "subject": "jp",
     "campus": "minami",
-    "room": "3",
+    "room": "6",
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
@@ -4511,7 +3939,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -4524,20 +3952,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j3_A_jp",
+    "label": "中３A 国語",
+    "faceToFace": true,
+    "displayTitle": "3A国対面"
+  },
+  {
+    "date": "2026-04-17",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "A",
     "subject": "jp",
     "campus": "minami",
-    "room": "3",
+    "room": "6",
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -4550,7 +3991,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-21",
+    "date": "2026-04-17",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -4563,7 +4004,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "4:45～6:15",
     "grade": "e4",
     "class": "A",
@@ -4576,7 +4017,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -4589,7 +4030,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -4602,7 +4043,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "B",
@@ -4615,7 +4056,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -4628,7 +4069,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "X",
@@ -4641,7 +4082,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "B",
@@ -4654,20 +4095,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "S",
-    "subject": "math",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_j2_S_math",
-    "label": "中２S 数学",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -4680,7 +4108,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-18",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "X",
@@ -4693,7 +4121,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:45～6:15",
     "grade": "e4",
     "class": "A",
@@ -4706,7 +4134,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -4719,7 +4147,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -4732,7 +4160,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -4745,20 +4173,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
-    "time": "6:35～8:05",
-    "grade": "j2",
-    "class": "S",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "3",
-    "groupKey": "minami_j2_S_jp",
-    "label": "中２S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "B",
@@ -4771,7 +4186,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "X",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_j3_X_eng",
+    "label": "中３X 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-19",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "B",
@@ -4784,7 +4212,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-23",
+    "date": "2026-04-19",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j2_S_eng",
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-19",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -4797,20 +4238,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
-    "time": "4:45～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "jp",
+    "date": "2026-04-20",
+    "time": "2:55～4:25",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
     "campus": "minami",
-    "room": "5",
-    "groupKey": "minami_e4_X_jp",
-    "label": "小４X 国語",
+    "room": "1",
+    "groupKey": "minami_j3_B_eng",
+    "label": "中３B 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "A",
@@ -4823,7 +4264,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "A",
@@ -4836,7 +4277,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "4:45～6:15",
     "grade": "e6",
     "class": "S",
@@ -4849,7 +4290,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
@@ -4862,7 +4303,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
@@ -4875,7 +4316,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -4888,7 +4329,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
@@ -4901,7 +4342,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-24",
+    "date": "2026-04-20",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -4914,21 +4355,255 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-25",
+    "date": "2026-04-23",
     "time": "4:45～6:15",
-    "grade": "j2",
+    "grade": "e4",
+    "class": "X",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_e4_X_arith",
+    "label": "小４X 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "4:45～6:15",
+    "grade": "e5",
     "class": "S",
-    "subject": "eng",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e5_S_arith",
+    "label": "小５S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j1_S_math",
+    "label": "中１S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "soc",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_A_soc",
+    "label": "中３A 社会",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "sci",
     "campus": "minami",
     "room": "2",
-    "groupKey": "minami_j2_S_eng",
-    "label": "中２S 英語",
+    "groupKey": "minami_j3_S_sci",
+    "label": "中３S 理科",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "sci",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_A_sci",
+    "label": "中３A 理科",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-23",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "soc",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_S_soc",
+    "label": "中３S 社会",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e5_A_arith",
+    "label": "小５A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "S",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e6_S_arith",
+    "label": "小６S 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j1_S_jp",
+    "label": "中１S 国語",
+    "faceToFace": true,
+    "displayTitle": "1S国対面"
+  },
+  {
+    "date": "2026-04-24",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_A_math",
+    "label": "中２A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_S_math",
+    "label": "中２S 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j2_A_jp",
+    "label": "中２A 国語",
+    "faceToFace": true,
+    "displayTitle": "2A国対面"
+  },
+  {
+    "date": "2026-04-24",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_B_math",
+    "label": "中３B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-24",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "S",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j3_S_math",
+    "label": "中３S 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
     "date": "2026-04-25",
     "time": "4:45～6:15",
+    "grade": "e4",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e4_A_arith",
+    "label": "小４A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_A_arith",
+    "label": "小６A 算数",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_A_math",
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j1_B_math",
+    "label": "中１B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
     "subject": "math",
@@ -4943,17 +4618,121 @@
     "date": "2026-04-25",
     "time": "6:35～8:05",
     "grade": "j3",
-    "class": "B",
-    "subject": "math",
+    "class": "X",
+    "subject": "jp",
     "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_j3_B_math",
-    "label": "中３B 数学",
+    "room": "5",
+    "groupKey": "minami_j3_X_jp",
+    "label": "中３X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
     "date": "2026-04-25",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "B",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j2_B_math",
+    "label": "中２B 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_A_jp",
+    "label": "中３A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-25",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "X",
+    "subject": "math",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_j3_X_math",
+    "label": "中３X 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "4:45～6:15",
+    "grade": "e4",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e4_A_jp",
+    "label": "小４A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e5_A_eng",
+    "label": "小５A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_A_jp",
+    "label": "小６A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j1_S_eng",
+    "label": "中１S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_B_eng",
+    "label": "中３B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -4966,8 +4745,112 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-25",
+    "date": "2026-04-26",
     "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-26",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_eng",
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "2:55～4:25",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_eng",
+    "label": "中３A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:45～6:15",
+    "grade": "e4",
+    "class": "X",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_e4_X_jp",
+    "label": "小４X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "A",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_e5_A_jp",
+    "label": "小５A 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_e6_A_eng",
+    "label": "小６A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_e6_S_eng",
+    "label": "小６S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j1_A_eng",
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
     "subject": "eng",
@@ -4979,33 +4862,137 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-25",
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j2",
+    "class": "B",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "3",
+    "groupKey": "minami_j2_B_eng",
+    "label": "中２B 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "S",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_j3_S_jp",
+    "label": "中３S 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
+    "time": "8:25～9:55",
+    "grade": "j2",
+    "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "2",
+    "groupKey": "minami_j2_S_eng",
+    "label": "中２S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-27",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_S_eng",
+    "label": "中３S 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-28",
+    "time": "4:45～6:15",
+    "grade": "j1",
+    "class": "A",
+    "subject": "eng",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j1_A_eng",
+    "label": "中１A 英語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-28",
+    "time": "6:35～8:05",
+    "grade": "j1",
+    "class": "B",
     "subject": "math",
     "campus": "minami",
     "room": "2",
-    "groupKey": "minami_j3_S_math",
-    "label": "中３S 数学",
+    "groupKey": "minami_j1_B_math",
+    "label": "中１B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "S",
-    "subject": "arith",
+    "date": "2026-04-28",
+    "time": "6:35～8:05",
+    "grade": "j3",
+    "class": "A",
+    "subject": "eng",
     "campus": "minami",
     "room": "1",
-    "groupKey": "minami_e5_S_arith",
-    "label": "小５S 算数",
+    "groupKey": "minami_j3_A_eng",
+    "label": "中３A 英語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-28",
+    "time": "8:25～9:55",
+    "grade": "j3",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j3_A_math",
+    "label": "中３A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "4:45～6:15",
+    "grade": "j1",
+    "class": "A",
+    "subject": "math",
+    "campus": "minami",
+    "room": "1",
+    "groupKey": "minami_j1_A_math",
+    "label": "中１A 数学",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
+    "time": "4:45～6:15",
+    "grade": "e6",
+    "class": "X",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "5",
+    "groupKey": "minami_e6_X_jp",
+    "label": "小６X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-30",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -5018,7 +5005,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-30",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "A",
@@ -5031,7 +5018,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-30",
     "time": "6:35～8:05",
     "grade": "j3",
     "class": "S",
@@ -5044,20 +5031,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-30",
     "time": "8:25～9:55",
     "grade": "j2",
-    "class": "A",
+    "class": "B",
     "subject": "math",
     "campus": "minami",
     "room": "1",
-    "groupKey": "minami_j2_A_math",
-    "label": "中２A 数学",
+    "groupKey": "minami_j2_B_math",
+    "label": "中２B 数学",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-30",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "A",
@@ -5070,7 +5057,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-27",
+    "date": "2026-04-30",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
@@ -5083,20 +5070,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "A",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "1",
-    "groupKey": "minami_e5_A_arith",
-    "label": "小５A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "4:45～6:15",
     "grade": "e5",
     "class": "X",
@@ -5109,46 +5083,33 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
-    "time": "4:45～6:15",
-    "grade": "e6",
-    "class": "S",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "2",
-    "groupKey": "minami_e6_S_arith",
-    "label": "小６S 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "A",
     "subject": "jp",
     "campus": "minami",
-    "room": "6",
+    "room": "3",
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "1A国対面"
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
     "subject": "jp",
     "campus": "minami",
-    "room": "4",
+    "room": "5",
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "A",
@@ -5161,7 +5122,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -5174,33 +5135,20 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
-    "time": "8:25～9:55",
-    "grade": "j2",
-    "class": "A",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "6",
-    "groupKey": "minami_j2_A_jp",
-    "label": "中２A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "8:25～9:55",
     "grade": "j2",
     "class": "S",
     "subject": "jp",
     "campus": "minami",
-    "room": "4",
+    "room": "3",
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
-    "faceToFace": false,
-    "displayTitle": ""
+    "faceToFace": true,
+    "displayTitle": "2S国対面"
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "B",
@@ -5213,7 +5161,7 @@
     "displayTitle": ""
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-04-31",
     "time": "8:25～9:55",
     "grade": "j3",
     "class": "S",
