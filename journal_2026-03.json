@@ -1,6 +1,6 @@
 {
   "month": "2026-03",
-  "generatedAt": "2026-03-28T22:56:19",
+  "generatedAt": "2026-03-30T22:56:15",
   "entries": {
     "2026-03-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "",
@@ -185,7 +185,7 @@
       "recordingUrl": ""
     },
     "2026-03-05|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "あああ",
+      "content": "",
       "page": "",
       "homework": [],
       "report": "",
@@ -493,7 +493,7 @@
       "recordingUrl": ""
     },
     "2026-03-12|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "いいい",
+      "content": "",
       "page": "",
       "homework": [],
       "report": "",
@@ -850,7 +850,7 @@
       "recordingUrl": ""
     },
     "2026-03-19|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "ううう",
+      "content": "",
       "page": "",
       "homework": [],
       "report": "",
@@ -1312,10 +1312,12 @@
       "recordingUrl": ""
     },
     "2026-03-30|6:35～8:05|hon|hon_j2_B_eng|2": {
-      "content": "",
+      "content": "接続詞that・助動詞may",
       "page": "",
-      "homework": [],
-      "report": "",
+      "homework": [
+        "#50"
+      ],
+      "report": "接続詞thatの指導後、助動詞へ。全体的に語彙がない。豊田が一番有るかも。豊田と宮澤は座席の工夫が必要か。雰囲気は悪くはない。スマホを回収した。",
       "recordingUrl": ""
     },
     "2026-03-30|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -1333,11 +1335,13 @@
       "recordingUrl": ""
     },
     "2026-03-30|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "通常テキスト#52リスニングまで",
+      "page": "HereWeGoテキストp5#10まで",
+      "homework": [
+        "HereWeGoテキスト#5から7,11と18の訳を作る"
+      ],
+      "report": "並べ替えの宿題はやはりa picture of youでミスがあった。リスニング#52では、聞き返しも含めて２回ずつ聞かせ、穴埋めさせた。後半はHWGへ。時制の意識が薄いものが多い。また石川はとんでもない訳をつけてしまうことが多い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/aLSke4029kL7H0ViDN5B7LPSNNAHpq1uNod1wZ6Vn6cDJl4cGUmNLqPwevl-KykM.IRWKgQUHUUpBIdLs?startTime=1774870037000"
     },
     "2026-03-30|8:25～9:55|hon|hon_j3_A_sci|7": {
       "content": "",
@@ -1347,11 +1351,14 @@
       "recordingUrl": ""
     },
     "2026-03-30|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "安土桃山まで終了",
+      "page": "マイクリアp72～",
+      "homework": [
+        "マイクリアp74-75〇込み",
+        "ドリルp56-57〇込み"
+      ],
+      "report": "p76-p77(１)までを復習として解いた後、安土桃山で終了。次回は江戸から",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/9xB81PEM-R0apxUM4H4uvdLxYcZ5b8-ZrRoDeWfgXXW6z8V9C3Y6l2DD86xfmghi.IrCrcB_sDdzkqEj_?startTime=1774870216000"
     },
     "2026-03-31|4:55～6:15|hon|hon_e5_X_jp|6": {
       "content": "",
@@ -2677,11 +2684,14 @@
       "recordingUrl": ""
     },
     "2026-03-30|4:45～6:15|minami|minami_j1_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "要点18除法まで",
+      "page": "P42",
+      "homework": [
+        "P37＃４０，P39＃４４",
+        "P40,41□４、□５、P42＃４５"
+      ],
+      "report": "累乗のところで伊藤・江藤・大竹あたりがなかなかよくできるようにならなかった。一応最後は大丈夫になってくれたと思う。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/9dy_eSGlcmITIuLqCEoHGJsejFjQTIh9GgsT9-4eTvRhDBGSs9hlxyyaYU3SPyfA.zqjf7oIgwE2NqEPx"
     },
     "2026-03-30|4:45～6:15|minami|minami_e6_X_jp|5": {
       "content": "",
