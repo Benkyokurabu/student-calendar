@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-03-30T19:33:49",
+  "generatedAt": "2026-04-01T13:43:14",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -2376,11 +2376,13 @@
       "recordingUrl": ""
     },
     "2026-04-20|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "要点１５例２",
+      "page": "P28まで",
+      "homework": [
+        "P30□１～□３、P３１□１～□３"
+      ],
+      "report": "P28までの回だったこともあり、ゆっくり丁寧に進めた。大竹・山本あたりはかっこの外し方が分かっておらず、苦戦していた。次回の悪魔くんとヨーコちゃんのところは、役を生徒にやらせながら読ませつつ進めてみてください。★の問題はBではやらないようにしてください。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/qHnjD7CIyWCF6V-jNqDJo-1NPjsdr-khdiSw6wP_xH9ZDAjS2_rfReYzGTgdgPRx.phdtV_09oqjxy7r3?startTime=1774870255000"
     },
     "2026-04-20|8:25～9:55|minami|minami_j2_X_eng|6": {
       "content": "",
@@ -2509,11 +2511,13 @@
       "recordingUrl": ""
     },
     "2026-04-22|8:25～9:55|minami|minami_j2_S_math|2": {
-      "content": "",
+      "content": "の計算ｐ13要点９分配法則の利用",
       "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "homework": [
+        "ｐ59～ｐ61"
+      ],
+      "report": "演習問題まで終了。確認問題が宿題。",
+      "recordingUrl": "https://www.notion.so/311f012080a780508da1f92f6fb68cef?source=copy_link"
     },
     "2026-04-22|8:25～9:55|minami|minami_j3_A_jp|5": {
       "content": "",
@@ -2719,11 +2723,14 @@
       "recordingUrl": ""
     },
     "2026-04-27|8:25～9:55|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "要点⑯～⑱",
+      "page": "ｐ37まで",
+      "homework": [
+        "ｐ４２",
+        "nを使い５で割ると３余る数を表してくる"
+      ],
+      "report": "全体的に理解力の追い付かない生徒が目立った。ジョン、石井、など。指示語の意味を確認しつつ進めたが、来週できていないかもしれない。次回は2数を区別することに注力していく。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/JHG3zHw1ypBQg_qYBqnH7lQsUGc-ZkmYqbnWf1LeUTw8uBJNBw5jXAk5Rlb8zlek.mo5zhflDTf0v-RyD?startTime=1774949859000"
     },
     "2026-04-27|8:25～9:55|minami|minami_j3_A_sci|2": {
       "content": "",
