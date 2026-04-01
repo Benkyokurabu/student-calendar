@@ -1153,8 +1153,8 @@
     "room": "2",
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
-    "faceToFace": true,
-    "displayTitle": "3A社対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-11",
@@ -1166,8 +1166,8 @@
     "room": "1",
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
-    "faceToFace": true,
-    "displayTitle": "3S理対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-11",
@@ -1179,8 +1179,8 @@
     "room": "2",
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
-    "faceToFace": true,
-    "displayTitle": "3A理対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-11",
@@ -1192,8 +1192,8 @@
     "room": "1",
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
-    "faceToFace": true,
-    "displayTitle": "3S社対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-13",
@@ -1270,8 +1270,8 @@
     "room": "2",
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
-    "faceToFace": true,
-    "displayTitle": "3A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-14",
@@ -1439,8 +1439,8 @@
     "room": "3",
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
-    "faceToFace": true,
-    "displayTitle": "3S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-15",
@@ -1756,6 +1756,19 @@
   },
   {
     "date": "2026-04-18",
+    "time": "4:55～6:15",
+    "grade": "e5",
+    "class": "X",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_e5_X_jp",
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -1842,8 +1855,8 @@
     "room": "2",
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
-    "faceToFace": true,
-    "displayTitle": "2S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-20",
@@ -1959,8 +1972,8 @@
     "room": "2",
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
-    "faceToFace": true,
-    "displayTitle": "1A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-21",
@@ -1972,8 +1985,8 @@
     "room": "3",
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
-    "faceToFace": true,
-    "displayTitle": "1S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-21",
@@ -1998,8 +2011,8 @@
     "room": "2",
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
-    "faceToFace": true,
-    "displayTitle": "2A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-21",
@@ -2511,19 +2524,6 @@
   {
     "date": "2026-04-28",
     "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "X",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_e5_X_jp",
-    "label": "小５X 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
-    "time": "4:55～6:15",
     "grade": "e6",
     "class": "S",
     "subject": "eng",
@@ -3714,8 +3714,8 @@
     "room": "1",
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
-    "faceToFace": true,
-    "displayTitle": "3A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-11",
@@ -3792,8 +3792,8 @@
     "room": "1",
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
-    "faceToFace": true,
-    "displayTitle": "3A社対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-13",
@@ -3805,8 +3805,8 @@
     "room": "2",
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
-    "faceToFace": true,
-    "displayTitle": "3S理対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-13",
@@ -3818,8 +3818,8 @@
     "room": "1",
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
-    "faceToFace": true,
-    "displayTitle": "3A理対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-13",
@@ -3831,8 +3831,8 @@
     "room": "2",
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
-    "faceToFace": true,
-    "displayTitle": "3S社対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-14",
@@ -3922,8 +3922,8 @@
     "room": "2",
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
-    "faceToFace": true,
-    "displayTitle": "3S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-14",
@@ -4304,6 +4304,19 @@
   },
   {
     "date": "2026-04-18",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "X",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_e5_X_jp",
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -4312,8 +4325,8 @@
     "room": "2",
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
-    "faceToFace": true,
-    "displayTitle": "1S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-18",
@@ -4494,8 +4507,8 @@
     "room": "3",
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
-    "faceToFace": true,
-    "displayTitle": "1A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-21",
@@ -4533,8 +4546,8 @@
     "room": "3",
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
-    "faceToFace": true,
-    "displayTitle": "2A国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-21",
@@ -4754,8 +4767,8 @@
     "room": "3",
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
-    "faceToFace": true,
-    "displayTitle": "2S国対面"
+    "faceToFace": false,
+    "displayTitle": ""
   },
   {
     "date": "2026-04-23",
@@ -5092,19 +5105,6 @@
     "room": "1",
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "X",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_e5_X_jp",
-    "label": "小５X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
