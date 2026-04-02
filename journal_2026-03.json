@@ -1,6 +1,6 @@
 {
   "month": "2026-03",
-  "generatedAt": "2026-04-01T16:54:23",
+  "generatedAt": "2026-04-02T14:20:55",
   "entries": {
     "2026-03-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "",
@@ -73,10 +73,12 @@
       "recordingUrl": ""
     },
     "2026-03-03|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "物語文",
+      "page": "新中学問題集ｐ１０～１１",
+      "homework": [
+        "漢字帳ｐｐ１４～１７"
+      ],
+      "report": "今回は物語文を扱った。場面整理が自力で出来ない生徒が多く、解説に苦労した。また、本文のセリフなどから場面を自分で解釈するのが難しいようだった。戸部、井上はほぼ答えのようなヒントを出しても答えが出せなかった。要注意。",
       "recordingUrl": ""
     },
     "2026-03-03|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -185,7 +187,7 @@
       "recordingUrl": ""
     },
     "2026-03-05|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
+      "content": "あああ",
       "page": "",
       "homework": [],
       "report": "",
@@ -493,7 +495,7 @@
       "recordingUrl": ""
     },
     "2026-03-12|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
+      "content": "いいい",
       "page": "",
       "homework": [],
       "report": "",
@@ -850,7 +852,7 @@
       "recordingUrl": ""
     },
     "2026-03-19|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
+      "content": "ううう",
       "page": "",
       "homework": [],
       "report": "",
@@ -1305,11 +1307,14 @@
       "recordingUrl": ""
     },
     "2026-03-30|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "通常テキストL1#98リスニングまで",
+      "page": "HereWeGoテキストp11#18発音まで",
+      "homework": [
+        "通常テキスト#80,81,88",
+        "HereWeGoテキスト#6,7,13,14,18"
+      ],
+      "report": "数字1-12のつづりテストから。星、戸部にミスがあった。特に戸部は３つミス。通常テキストの宿題個所並べ替えでは、以前間違えていたところを、戸部、戸張、大宮もクリアしていた。リスニング聞き返しでは皆に英文をまねさせた。後半はＨＷＧへ。Ｕｎｉｔ１終わりきらず。通常テキストの#89以降は、順次宿題化する。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/aLSke4029kL7H0ViDN5B7LPSNNAHpq1uNod1wZ6Vn6cDJl4cGUmNLqPwevl-KykM.IRWKgQUHUUpBIdLs?startTime=1774863352000"
     },
     "2026-03-30|6:35～8:05|hon|hon_j2_B_eng|2": {
       "content": "接続詞that・助動詞may",
@@ -1371,18 +1376,22 @@
       "recordingUrl": ""
     },
     "2026-03-31|6:35～8:05|hon|hon_j1_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "物語文",
+      "page": "新中学問題集ｐ１０～１１",
+      "homework": [
+        "漢字帳ｐｐ１４～１７"
+      ],
+      "report": "今回は物語文を扱った。場面整理が自力で出来ない生徒が多く、解説に苦労した。また、本文のセリフなどから場面を自分で解釈するのが難しいようだった。戸部、井上はほぼ答えのようなヒントを出しても答えが出せなかった。要注意。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/EdbR_gIHU_56gjMhgNnMPDvDmuQrsxix90blO8qhdfFgpDXH1ehGhPLTsQ7wO_Y_.VS9EZaB196mE_zqR?startTime=1774950099000"
     },
     "2026-03-31|6:35～8:05|hon|hon_j1_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "小説文",
+      "page": "P10~11",
+      "homework": [
+        "漢字帳P14-17"
+      ],
+      "report": "小説文を扱う。情景描写からの読み取りがメイン。外前田以外はよくできていた。本日初参加の平岡君も上々の出来。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/9uXG9N4MwU5Mc-SRe06To-S0R0Ib9HpOu7EHX9puPTNxH6VYAq0bcMlLQGXfp-yB._rF7aWE6YvhNW4Pb?startTime=1774949754000"
     },
     "2026-03-31|6:35～8:05|hon|hon_j2_B_eng|1": {
       "content": "リスニング／Here We Go",
@@ -1447,7 +1456,7 @@
       "recordingUrl": ""
     },
     "2026-03-02|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
+      "content": "17気象観測ｐ106～ｐ109□３まで",
       "page": "",
       "homework": [],
       "report": "",
@@ -2724,7 +2733,7 @@
       "recordingUrl": ""
     },
     "2026-03-30|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
+      "content": "17気象観測ｐ106～ｐ109□３まで",
       "page": "",
       "homework": [],
       "report": "",
@@ -2738,7 +2747,7 @@
       "recordingUrl": ""
     },
     "2026-03-30|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
+      "content": "17気象観測ｐ106～ｐ109□３まで",
       "page": "",
       "homework": [],
       "report": "",
@@ -2752,17 +2761,21 @@
       "recordingUrl": ""
     },
     "2026-03-31|4:45～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "向田邦子／父の詫び状",
+      "page": "テキストp16-17",
+      "homework": [
+        "なし"
+      ],
+      "report": "月岡さんと１：１の授業。記述が解けずに涙目になっていた。",
       "recordingUrl": ""
     },
     "2026-03-31|6:35～8:05|minami|minami_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "文学的文章",
+      "page": "テキストp10-11",
+      "homework": [
+        "漢字p14-17"
+      ],
+      "report": "佐藤いっせいくん初見学。理解力はやや低く、指示した作業にも時間がかかる場面が多い。今後は継続的な注視が必要である。\n園田は非常に積極的に発言していた。オンライン環境では家族の目があり発言しづらいとのことだが、本日はその様子を感じさせない取り組みであった。\n藤井は引き続きもの静かではあったが、笑顔もあり、発言も見られた点は良かった。\n羅来はこのクラスの中でも最も安定している印象。",
       "recordingUrl": ""
     },
     "2026-03-31|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -2787,25 +2800,31 @@
       "recordingUrl": ""
     },
     "2026-03-31|8:25～9:55|minami|minami_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "古文①仮名遣い",
+      "page": "テキストp52-53",
+      "homework": [
+        "漢字p16-19"
+      ],
+      "report": "本日より古文の指導を開始。本校の進度に遅れることなく、同一の進行となった。\n仮名遣いは、中２から受講を開始した生徒にやや不安定な場面も見られましたが、最終的には大きな問題はなく、良好な仕上がりとなった。\np.52～53の古文では、助動詞の用法についてもあわせて指導した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/JFrZW2rG6zql8WK5bkAfrqc8C7bH9jdBIQkYcUlnc4Iy028LtdkSFfMn7eBLf_Yt.P6rCjJXC6FsGklEK"
     },
     "2026-03-31|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "因数分解③～④",
+      "page": "p33まで",
+      "homework": [
+        "ｐ28、29、34"
+      ],
+      "report": "前回の内容はことごとく忘れられていた。やはりＢだからとも思ったが一応注意した。因数分解そのものは見よう見まねでやっているのがほとんどだが、少しずつ定着させていきたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/z0cm60QH6HY8NTyrulgFYNpA6A5rKnd-6Dazq-AqLFGys62HPJQOE_EfXoE5G0LI.c4UreZ_qeJX8m-Gs?startTime=1774956274000"
     },
     "2026-03-31|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
+      "content": "p33＃41まで、平方根の計算",
       "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "homework": [
+        "ｐ36～ｐ37□５まで"
+      ],
+      "report": "平方根の展開の計算まで。最後にいろいろ問題を行なったがあまりできていない。次回ももう少し練習する。",
+      "recordingUrl": "https://www.notion.so/311f012080a7800c94fdfeca099ab75b?source=copy_link"
     }
   }
 }
