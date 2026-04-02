@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>スケジュール表（自分の授業表示）</title>
+  <title>スケジュール表</title>
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -305,6 +305,34 @@
 
     .footer-note { margin-top: 10px; font-size: 12px; color: #6b7280; }
     code { background: #f3f4f6; padding: 1px 6px; border-radius: 6px; }
+
+    /* ====== 授業日誌（生徒表示用） ====== */
+    .journal-row td{
+      background:#f9fafb;
+      border-top: none;
+      padding: 10px 12px;
+    }
+    .journal-grid{
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 6px 10px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .j-label{ color:#374151; font-weight:600; }
+    .j-val{ color:#111827; white-space: normal; }
+    .j-empty{ color:#6b7280; }
+    .j-link{
+      display:inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      text-decoration: none;
+      font-size: 12px;
+      color:#111827;
+      background:#ffffff;
+    }
+    .j-link:hover{ background:#f3f4f6; }
   </style>
 </head>
 <body>
@@ -349,7 +377,7 @@
   <div class="card">
     <div class="cal-head">
       <h2 style="margin:0;">月間カレンダー</h2>
-      <div class="cal-head-note muted">※ 日付をクリックすると、その日の授業（詳細）が下に表示されます。</div>
+      <div class="cal-head-note muted">※ 日付をクリックすると、その日の授業（詳細＋日誌）が下に表示されます。</div>
     </div>
     <div class="cal-wrap">
       <div class="dow">
@@ -364,7 +392,7 @@
 <script>
 (() => {
   // ====== 設定 ======
-  const STORAGE_KEY = "benkyo_student_calendar_v3";
+  const STORAGE_KEY = "benkyo_student_calendar_v4";
 
   const GRADE_LABEL = {
     e4: "小4", e5: "小5", e6: "小6",
@@ -422,13 +450,12 @@
   let cachedLatestRaw = null;
   let cachedLatestYM = null;
 
-  // ====== 校舎込みトークン（旧版方式） ======
-  // campusMode = all の時だけ token = "hon:S" / "minami:S" のように分ける
+  // ====== 校舎込みトークン ======
   function makeClassToken(campusMode, campusCode, cls) {
     const c = String(cls || "").trim();
     if (!c) return "";
     if (campusMode === "all") return `${campusCode}:${c}`;
-    return c; // hon/minami の時は "S" のまま
+    return c;
   }
   function parseClassToken(token) {
     const s = String(token || "").trim();
@@ -455,8 +482,8 @@
   // ====== 状態 ======
   let state = {
     grade: "j3",
-    campus: "all",      // all/hon/minami
-    selectedDate: null, // "YYYY-MM-DD"
+    campus: "all",
+    selectedDate: null,
     selected: {
       jp: new Set(),
       math: new Set(),
@@ -468,6 +495,8 @@
   };
 
   let allLessons = [];
+  let journalEntries = {};
+  let journalLoadedYM = null;
 
   gradeSelect.addEventListener("change", () => {
     state.grade = gradeSelect.value;
@@ -479,21 +508,19 @@
 
   campusSelect.addEventListener("change", () => {
     const prevCampus = state.campus;
-    state.campus = campusSelect.value; // all/hon/minami
+    state.campus = campusSelect.value;
     migrateSelectionsForCampusMode(prevCampus, state.campus);
     saveState();
     rebuildUI();
     renderAll();
   });
 
-  // campusモード切替時の選択移行（旧版方式そのまま）
   function migrateSelectionsForCampusMode(prevCampus, nextCampus) {
     for (const subj of Object.keys(state.selected)) {
       const s = state.selected[subj];
       if (!(s instanceof Set)) continue;
       const nextSet = new Set();
 
-      // all -> hon/minami： "hon:S" から "S" へ（対象キャンパスのみ）
       if (prevCampus === "all" && (nextCampus === "hon" || nextCampus === "minami")) {
         for (const token of s) {
           const p = parseClassToken(token);
@@ -503,7 +530,6 @@
         continue;
       }
 
-      // hon/minami -> all： "S" から "hon:S" or "minami:S" へ（元キャンパスを付与）
       if ((prevCampus === "hon" || prevCampus === "minami") && nextCampus === "all") {
         for (const token of s) {
           const p = parseClassToken(token);
@@ -533,11 +559,8 @@
           if (Array.isArray(arr)) state.selected[k] = new Set(arr);
         }
       }
-    } catch (e) {
-      // 破損していても落とさない
-    }
+    } catch (e) {}
 
-    // allモードなのに "S" だけが混ざっている古い状態は捨てる（旧版HTMLと同じ処理）
     if (state.campus === "all") {
       for (const k of Object.keys(state.selected)) {
         const s = state.selected[k];
@@ -601,9 +624,8 @@
   }
 
   // ====== データ読み込み ======
-  async function fetchJsonFromCandidates(candidates, labelForError) {
+  async function fetchScheduleFromCandidates(candidates, labelForError) {
     const tried = [];
-
     for (const base of candidates) {
       const url = `${base}?ts=${Date.now()}`;
       tried.push(url);
@@ -615,8 +637,20 @@
         return data;
       } catch (_) {}
     }
-
     throw new Error(`${labelForError} が見つかりません。試行URL: ` + tried.join(" , "));
+  }
+
+  // 日誌JSON用（配列でなくオブジェクト）
+  async function fetchJsonAny(candidates) {
+    for (const base of candidates) {
+      const url = `${base}?ts=${Date.now()}`;
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) continue;
+        return await res.json();
+      } catch (_) {}
+    }
+    return null;
   }
 
   async function fetchLatestJson() {
@@ -627,14 +661,13 @@
       "./data/schedule_latest.json",
       "./json/schedule_latest.json",
     ];
-    return await fetchJsonFromCandidates(candidates, "schedule_latest.json");
+    return await fetchScheduleFromCandidates(candidates, "schedule_latest.json");
   }
 
   async function fetchJsonForMonth(ym) {
     if (cachedLatestRaw && cachedLatestYM === ym) {
       return cachedLatestRaw;
     }
-
     const candidates = [
       `schedule_${ym}.json`,
       `./schedule_${ym}.json`,
@@ -642,22 +675,73 @@
       `./data/schedule_${ym}.json`,
       `./json/schedule_${ym}.json`,
     ];
-
-    return await fetchJsonFromCandidates(candidates, `schedule_${ym}.json`);
+    return await fetchScheduleFromCandidates(candidates, `schedule_${ym}.json`);
   }
 
   function inferYMFromLessons(list) {
     if (!Array.isArray(list) || list.length === 0) return null;
-
     const dates = list
       .map(x => String(x.date || ""))
       .filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s))
       .sort();
-
     if (dates.length === 0) return null;
     return dates[0].slice(0, 7);
   }
 
+  // ====== 授業日誌 読み込み ======
+  async function loadJournalSafe(ym) {
+    if (journalLoadedYM === ym) return;
+    const monthly = await fetchJsonAny([`journal_${ym}.json`]);
+    const latest = await fetchJsonAny(["journal_latest.json"]);
+    const merged = {};
+    if (monthly && monthly.entries) Object.assign(merged, monthly.entries);
+    if (latest && latest.entries) Object.assign(merged, latest.entries);
+    journalEntries = merged;
+    journalLoadedYM = ym;
+  }
+
+  function buildEventKeyFromLesson(it) {
+    const date = String(it?.date ?? "").trim();
+    const time = String(it?.time ?? "").replace(/~/g, "\uff5e").trim();
+    const campus = String(it?.campus ?? "").trim();
+    const gk = String(it?.groupKey ?? "").trim();
+    const room = String(it?.room ?? "").trim();
+    return `${date}|${time}|${campus}|${gk}|${room}`;
+  }
+
+  function formatMultiline(text) {
+    const s = String(text ?? "");
+    if (!s) return "";
+    return escapeHtml(s).replaceAll("\n", "<br>");
+  }
+
+  function renderJournalRow(it) {
+    const ek = buildEventKeyFromLesson(it);
+    const entry = journalEntries[ek] || { content:"", page:"", homework:[], recordingUrl:"" };
+    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">（未入力）</span>`;
+    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">（未入力）</span>`;
+
+    const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
+    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">（未入力）</span>`;
+
+    const url = String(entry.recordingUrl || "").trim();
+    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">（未入力）</span>`;
+
+    return `
+      <tr class="journal-row">
+        <td colspan="4">
+          <div class="journal-grid">
+            <div class="j-label">指導内容</div><div class="j-val">${contentHtml}</div>
+            <div class="j-label">ページ</div><div class="j-val">${pageHtml}</div>
+            <div class="j-label">宿題</div><div class="j-val">${hwHtml}</div>
+            <div class="j-label">録画</div><div class="j-val">${recHtml}</div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
+  // ====== 初期読み込み ======
   async function loadInitialMonth() {
     ymPill.textContent = ymToLabel(currentYM);
     statusArea.innerHTML = "";
@@ -678,10 +762,10 @@
 
       allLessons = normalized;
       hintArea.textContent = "";
+      await loadJournalSafe(currentYM);
       rebuildUI();
       renderAll();
     } catch (_) {
-      // latest が無い場合は、従来どおり「今月の月別JSON」を読みにいく
       await loadMonth(currentYM);
     }
   }
@@ -697,6 +781,7 @@
       const data = await fetchJsonForMonth(ym);
       allLessons = normalizeLessons(data);
       hintArea.textContent = "";
+      await loadJournalSafe(ym);
       rebuildUI();
       renderAll();
     } catch (e) {
@@ -726,7 +811,6 @@
       room: (x.room || "").toString().trim(),
       groupKey: x.groupKey || "",
       label: x.label || "",
-      // 追加：対面表示用（フィルタやトークン運用には関与しない）
       faceToFace: !!x.faceToFace,
       displayTitle: (x.displayTitle || "").toString().trim(),
     })).filter(x => x.date && x.time && x.grade && x.subject);
@@ -739,7 +823,6 @@
     gradeSelect.value = state.grade;
   }
 
-  // ★ここが肝：allなら hon:S / minami:S を両方候補に出す
   function getMonthAvailableOptionsBySubject(grade, campusMode) {
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const map = {};
@@ -773,7 +856,6 @@
       if (available.length === 0) continue;
       any = true;
 
-      // 表示順：本校→南教室→(その他)、その中で S/A/B/X/C
       available.sort((a,b) => {
         const pa = parseClassToken(a);
         const pb = parseClassToken(b);
@@ -845,7 +927,7 @@
 
   // ====== フィルタ ======
   function getSelectedPairs() {
-    const selectedPairs = new Set(); // "subj|token"
+    const selectedPairs = new Set();
     for (const subj of Object.keys(state.selected)) {
       for (const token of state.selected[subj]) {
         selectedPairs.add(`${subj}|${token}`);
@@ -856,7 +938,7 @@
 
   function getFilteredLessons() {
     const grade = state.grade;
-    const campus = state.campus; // all/hon/minami
+    const campus = state.campus;
     const allowed = new Set(ALLOWED_SUBJECTS_BY_GRADE[grade] || []);
     const selectedPairs = getSelectedPairs();
 
@@ -865,16 +947,12 @@
     let list = allLessons.filter(l => {
       if (l.grade !== grade) return false;
       if (!allowed.has(l.subject)) return false;
-
-      // campus が hon/minami の時はまず校舎で絞る
       if (campus !== "all" && l.campus !== campus) return false;
 
-      // token を「現在の campusモード」に合わせて生成して照合
       const token = makeClassToken(campus, l.campus, l.class);
       return selectedPairs.has(`${l.subject}|${token}`);
     });
 
-    // 安定ソート
     list.sort((a,b) => (
       a.date.localeCompare(b.date) ||
       (timeStartMinutes(a.time) - timeStartMinutes(b.time)) ||
@@ -888,7 +966,7 @@
   }
 
   function timeStart(timeStr) {
-    return (timeStr || "").split(/[～~]/)[0].trim();
+    return (timeStr || "").split(/[\uff5e~]/)[0].trim();
   }
   function timeStartMinutes(timeStr) {
     const t = timeStart(timeStr);
@@ -901,21 +979,18 @@
     return `subj-${subjectCode || "unknown"}`;
   }
 
-  // 追加：表示名（対面なら displayTitle を優先）
-  function getEventTitle(ev) {
-    const t = (ev && ev.displayTitle) ? String(ev.displayTitle).trim() : "";
-    return t ? t : (ev && ev.label ? ev.label : "");
+  function detailMainLabel(lesson) {
+    const t = (lesson.displayTitle || "").trim();
+    if (t) return t;
+    return `${(lesson.class || "").trim()}`;
   }
 
   function cellLessonHtml(lesson) {
     const subjName = SUBJECT_LABEL[lesson.subject] || lesson.subject || "";
     const cls = (lesson.class || "").trim();
     const t = timeStart(lesson.time);
-
-    // 対面など displayTitle がある場合は、それを優先表示（例：2S国対面）
     const clsText = (lesson.displayTitle && lesson.displayTitle.trim()) ? lesson.displayTitle.trim() : cls;
 
-    // allの時は「本/南」を右端に表示（分かりやすい）
     const campusMark = (state.campus === "all")
       ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}${escapeHtml(lesson.room || "")}</span>`
       : `<span class="campus-tag">${escapeHtml(lesson.room || "")}</span>`;
@@ -928,13 +1003,6 @@
         ${campusMark}
       </div>
     `.trim();
-  }
-
-  function detailMainLabel(lesson) {
-    // 対面など displayTitle がある場合は、それを優先表示（例：2S国対面）
-    const t = (lesson.displayTitle || "").trim();
-    if (t) return t;
-    return `${(lesson.class || "").trim()}`;
   }
 
   // ====== 月間グリッド ======
@@ -1027,7 +1095,7 @@
     }
   }
 
-  // ====== 日別詳細 ======
+  // ====== 日別詳細（日誌付き） ======
   function renderDayDetail(filtered) {
     dayDetailArea.innerHTML = "";
 
@@ -1074,6 +1142,7 @@
                     <td class="nowrap">${escapeHtml(campusLabel(it.campus))}</td>
                     <td class="nowrap right">${escapeHtml(it.room || "")}</td>
                   </tr>
+                  ${renderJournalRow(it)}
                 `).join("")}
               </tbody>
             </table>
