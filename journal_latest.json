@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-02T21:57:59",
+  "generatedAt": "2026-04-02T22:13:37",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -94,11 +94,13 @@
       "recordingUrl": ""
     },
     "2026-04-02|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
+      "content": "正負の数、四則の混じった計算・累乗まで",
       "page": "",
-      "homework": [],
+      "homework": [
+        "p45残り、p46～p47★以外、p50～p51残り"
+      ],
       "report": "",
-      "recordingUrl": ""
+      "recordingUrl": "https://us06web.zoom.us/rec/share/RjHp2cda933dl1HaxQjJ7Bmlhph-iHIT-dbBzT6XYlzROWtsb0AgrcwX-Af-ZUdE.jRd3wMkO64Odt6Fd?startTime=1775122673000"
     },
     "2026-04-02|6:35～8:05|hon|hon_j1_S_math|2": {
       "content": "㉔～㉗",
