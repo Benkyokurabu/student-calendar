@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-02T16:51:13",
+  "generatedAt": "2026-04-02T21:31:48",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -75,17 +75,22 @@
       "recordingUrl": ""
     },
     "2026-04-02|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "",
+      "content": "体積⑤、まとめまで",
       "page": "",
-      "homework": [],
-      "report": "",
+      "homework": [
+        "ホープドリルp70～73、算数ドリルp17～p20"
+      ],
+      "report": "長谷川佳那汰君が基礎的な部分で躓いていた。オンラインだったこともあり、少し集中ができていなかったかもしれない。",
       "recordingUrl": ""
     },
     "2026-04-02|4:55～6:15|hon|hon_e6_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "緑テキスト#11まで",
+      "page": "EnglishTravelerp12の４段目/p13C②まで",
+      "homework": [
+        "緑テキスト#9,10,13",
+        "緑テキスト#11/13で練習した文を見ずに言えるようにする"
+      ],
+      "report": "宿題個所の単語はテキストを伏せて答えさせた。おとでは言えるが、つづりはまだまだ。暗唱は少し詰まるものもいた。Who isではthat woman/She isも練習した。",
       "recordingUrl": ""
     },
     "2026-04-02|6:35～8:05|hon|hon_j1_B_math|3": {
@@ -96,17 +101,22 @@
       "recordingUrl": ""
     },
     "2026-04-02|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "㉔～㉗",
+      "page": "ｐ64まで",
+      "homework": [
+        "＃63③、ｐ68～70（来週まで）"
+      ],
+      "report": "髙橋ゆのがやや遅いが、一応、ついてこれていた。倍数と約数のところの理解が意外とみな弱かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/8f5zWqo5jrQOTiO-9Orov1RFw5wnUCvkSad6pMk7gzlGC-AnfMN9ErMefMPn5ezS.xAf4pyOfqifvyLiU?startTime=1775122529000"
     },
     "2026-04-02|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "連語テキストp27まで",
+      "page": "通常テキスト#30まで",
+      "homework": [
+        "通常テキスト#31,32,34,37",
+        "HereWeGoテキスト持参する"
+      ],
+      "report": "連語の#4部分のプリントをやらせる間に連語長をチェック。深井、大沢、矢田、瀬戸口はやり残しがあったので次回までとした。平居も含めて次回やってなかったら残ってやってもらうと伝えた。現在完了は#27で継続を表す二つのやり方を復習。ここでは大澤がすっかり忘れていた様子だったので、次のまとめＰも含めて復習した。#30はどこが動詞で、過去分詞は何かを先に見てから取り組ませたが、疑問文や否定文で特に定着していないものがいたので補講に呼ぶ。北面、中田、矢田、青木、深井あたりはよくできる。下位層との差が激しく、進度が取れない。",
       "recordingUrl": ""
     },
     "2026-04-02|6:35～8:05|hon|hon_j3_X_eng|6": {
@@ -124,7 +134,7 @@
       "recordingUrl": ""
     },
     "2026-04-02|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "",
+      "content": "まとめ～⑥",
       "page": "",
       "homework": [],
       "report": "",
@@ -949,6 +959,13 @@
       "report": "",
       "recordingUrl": ""
     },
+    "2026-04-18|4:55～6:15|hon|hon_e5_X_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
     "2026-04-18|6:35～8:05|hon|hon_j2_S_math|2": {
       "content": "",
       "page": "",
@@ -1355,13 +1372,6 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-28|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
     "2026-04-28|4:55～6:15|hon|hon_e6_S_eng|1": {
       "content": "",
       "page": "",
@@ -1461,11 +1471,13 @@
       "recordingUrl": ""
     },
     "2026-04-01|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
+      "content": "式の計算、数字を入れ替えた数の和や差",
       "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "homework": [
+        "p35、p37、p42、p46（すべて★以外）"
+      ],
+      "report": "末次由果さんと内田菜花さんがややまだ苦労していたようだった。式証明の穴埋めでもまだ少し不安定なのでよく復習できるようにしたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/3b3bihBe724qF8EzQ3khyWADD4pNbk6w1dtCGDmbpf--_rd8sDtd7mRvCe8PiHsR.eEpbropk78exqrx6?startTime=1775042910000"
     },
     "2026-04-01|8:25～9:55|minami|minami_j2_S_math|2": {
       "content": "＃62②まで",
@@ -1513,10 +1525,12 @@
       "recordingUrl": ""
     },
     "2026-04-02|4:45～6:15|minami|minami_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "漢字の音訓、熟字訓",
+      "page": "練成テキストｐｐ８１～８２",
+      "homework": [
+        "漢字帳ｐ２１～２４"
+      ],
+      "report": "今回は漢字の音訓と熟字訓を扱った。音訓については最初区別がついていなかったが、解説後はよくできていた。嶋田と香月の反応の鈍さが際立ってきた。注視が必要。",
       "recordingUrl": ""
     },
     "2026-04-02|6:35～8:05|minami|minami_j1_S_eng|2": {
@@ -1541,10 +1555,12 @@
       "recordingUrl": ""
     },
     "2026-04-02|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "リスニング演習",
+      "page": "#３９",
+      "homework": [
+        "連語帳ｐ２０～２１"
+      ],
+      "report": "今回はリスニング演習を行った。リスニングの心構えについてまだ定着していないようで、問題の予想などが出来ていない。また、まだリスニングの速度に慣れていない様子。速度を意識させて読む練習を今後も行っていく。",
       "recordingUrl": ""
     },
     "2026-04-02|8:25～9:55|minami|minami_j3_A_eng|1": {
@@ -2324,6 +2340,13 @@
       "report": "",
       "recordingUrl": ""
     },
+    "2026-04-18|4:45～6:15|minami|minami_e5_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
     "2026-04-18|6:35～8:05|minami|minami_j1_S_jp|2": {
       "content": "",
       "page": "",
@@ -2745,13 +2768,6 @@
       "recordingUrl": ""
     },
     "2026-04-28|4:45～6:15|minami|minami_e5_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|4:45～6:15|minami|minami_e5_X_jp|4": {
       "content": "",
       "page": "",
       "homework": [],

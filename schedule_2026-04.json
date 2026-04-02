@@ -1756,6 +1756,19 @@
   },
   {
     "date": "2026-04-18",
+    "time": "4:55～6:15",
+    "grade": "e5",
+    "class": "X",
+    "subject": "jp",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_e5_X_jp",
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j2",
     "class": "S",
@@ -2505,19 +2518,6 @@
     "room": "2",
     "groupKey": "hon_e4_A_jp",
     "label": "小４A 国語",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
-    "time": "4:55～6:15",
-    "grade": "e5",
-    "class": "X",
-    "subject": "jp",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_e5_X_jp",
-    "label": "小５X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
@@ -4304,6 +4304,19 @@
   },
   {
     "date": "2026-04-18",
+    "time": "4:45～6:15",
+    "grade": "e5",
+    "class": "X",
+    "subject": "jp",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_e5_X_jp",
+    "label": "小５X 国語",
+    "faceToFace": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-18",
     "time": "6:35～8:05",
     "grade": "j1",
     "class": "S",
@@ -5092,19 +5105,6 @@
     "room": "1",
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
-    "faceToFace": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-28",
-    "time": "4:45～6:15",
-    "grade": "e5",
-    "class": "X",
-    "subject": "jp",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_e5_X_jp",
-    "label": "小５X 国語",
     "faceToFace": false,
     "displayTitle": ""
   },
