@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-04T17:40:02",
+  "generatedAt": "2026-04-04T18:33:26",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -176,7 +176,7 @@
       "report": "少し進みが遅くなってしまった。次回がテスト１回前なので上手くまとめたい。",
       "recordingUrl": "https://us06web.zoom.us/rec/share/HJETDRSTEIk21WcNlHCe20trn0Djszo0TdmQGRp6pSAuER93MmJ6V5bBeOYC-fAb.bAEShYHek833_8OO?startTime=1775195901000"
     },
-    "2026-04-03|4:55～6:15|hon|hon_j3_S_soc|4": {
+    "2026-04-03|4:45～6:15|hon|hon_j3_S_soc|4": {
       "content": "江戸／p78【２】商業まで",
       "page": "マイクリアp78～",
       "homework": [
@@ -282,11 +282,14 @@
       "report": "置き換えの因数分解までやってぎりぎりだった。遅れは取り戻せず。田村や青木が因数分解の基本の部分ですら苦戦していた。",
       "recordingUrl": "https://us06web.zoom.us/rec/share/UAWJdO9Eg3q_v-IU__9wDuhfC3NIEhp-HWVNrAV-cBU9YDLNhzF1TPq_Ds0GhzLj.IAV7TbL3bcPlm0RZ"
     },
-    "2026-04-04|4:55～6:15|hon|hon_j1_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+    "2026-04-04|4:45～6:15|hon|hon_j1_A_math|1": {
+      "content": "素因数分解",
+      "page": "P59＃60②まで",
+      "homework": [
+        "P63～65、P57＃58",
+        "P59＃60④～⑧"
+      ],
+      "report": "なんとか素因数分解に入った。",
       "recordingUrl": ""
     },
     "2026-04-04|6:35～8:05|hon|hon_j1_B_math|2": {
@@ -394,7 +397,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-07|4:55～6:15|hon|hon_j3_A_soc|6": {
+    "2026-04-07|4:45～6:15|hon|hon_j3_A_soc|6": {
       "content": "",
       "page": "",
       "homework": [],
@@ -660,7 +663,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-11|4:55～6:15|hon|hon_j3_S_math|1": {
+    "2026-04-11|4:45～6:15|hon|hon_j3_S_math|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -996,7 +999,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-18|4:55～6:15|hon|hon_j3_A_math|1": {
+    "2026-04-18|4:45～6:15|hon|hon_j3_A_math|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1472,14 +1475,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-01|4:45～6:15|minami|minami_e4_A_arith|3": {
+    "2026-04-01|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-01|4:45～6:15|minami|minami_e6_A_arith|1": {
+    "2026-04-01|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1556,7 +1559,7 @@
       "report": "Here We Goの単語確認を終え、本文の訳を進めた。後半は演習問題へ。時間を取り答え合わせ。やはり時制に関する意識が甘い部分が多々見られたので、時制を中心に同意表現なども指導。",
       "recordingUrl": "https://us06web.zoom.us/rec/share/jULEdYkBB7T8VvoX2uBI5UQ5EbNryhLNlPeczJCcLOcaCpP743jDaXHWcl31yzVO.HTQGZ7J4WdBHfyhX?startTime=1775109364000"
     },
-    "2026-04-02|4:45～6:15|minami|minami_e4_A_jp|3": {
+    "2026-04-02|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "ことばのきまり",
       "page": "p34-35",
       "homework": [
@@ -1565,7 +1568,7 @@
       "report": "菅原と清水が宿題忘れ。菅原は、集中力がなく非常に手がかかる。また、作業も雑。斎藤兄弟は、慣れてきたためか表情がとても豊かになった。",
       "recordingUrl": ""
     },
-    "2026-04-02|4:45～6:15|minami|minami_e5_A_eng|2": {
+    "2026-04-02|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "UNIT2　Bの復習～C 英単語６コ",
       "page": "",
       "homework": [
@@ -1574,7 +1577,7 @@
       "report": "本日の単語テストは皆まずまずの出来。岡﨑も満点だったのでほめたが、文字と発音が一致していないふしがあるので、少しずつフォニックスも取り入れたいところ。音読練習も宿題と課すこととした。",
       "recordingUrl": ""
     },
-    "2026-04-02|4:45～6:15|minami|minami_e6_A_jp|1": {
+    "2026-04-02|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "漢字の音訓、熟字訓",
       "page": "練成テキストｐｐ８１～８２",
       "homework": [
@@ -1642,13 +1645,15 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/p0jEQMslBhQvuck7RR-zMs8qDg9VWBl7TRRCw3doc2KHuiUoC3ep0SIcoalYfWcI._1ZkJcdQdGlbYMCm?startTime=1775196294000"
     },
     "2026-04-03|4:45～6:15|minami|minami_j3_S_soc|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "江戸／p78【２】商業まで",
+      "page": "マイクリアp78～",
+      "homework": [
+        "なし／明日まとめて"
+      ],
+      "report": "p77の演習を使って室町～安土の復習を終えたのち、p78の江戸へ。明日は順調にいけば江戸は終わる。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/igsNBLQgnH_bJRtkirqH5-S0qgNeeFf25qYrTrnr6Z7YN74TXnbejGBXCoF60nZl.dqxt-AtF46dZvGV2"
     },
-    "2026-04-03|4:45～6:15|minami|minami_e5_A_jp|3": {
+    "2026-04-03|4:55～6:15|minami|minami_e5_A_jp|3": {
       "content": "ことばのきまり",
       "page": "テキストP34-35",
       "homework": [
@@ -1657,7 +1662,7 @@
       "report": "ことばのきまりの学習の続きから。仮名遣いと国語辞典の使い方の単元だが、今年もかなり厳しい状態。関根君が現段階では最もできるか。",
       "recordingUrl": "https://us06web.zoom.us/rec/share/K_bfUdWjX4SZ-xEnu77KlUaqUY_iEfwqMXurYB7s7VhjZ8CFLkwBScAFcRd7KSXT.Vz3nBwKU44u4m5KQ?startTime=1775203357000"
     },
-    "2026-04-03|4:45～6:15|minami|minami_e6_A_eng|2": {
+    "2026-04-03|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "緑テキスト#11まで",
       "page": "Travelerのp12の4段目Who is",
       "homework": [
@@ -1667,7 +1672,7 @@
       "report": "宿題個所の英単語はテキストを伏せて答えさせたが、まだオーラルでもおぼつかなかった。綴りもまだまだ。Are youの暗唱は宮嶋が少し詰まったが、良好。Let's PracticeBの①②を行い、Is sheも指導した。後半はWho isに入り、練習ページではthat womanおよび答え方も指導。答えではShe is Ken's mother.で行った。次回暗唱ではそれも。前回欠席の中井、今回から正式に入った高野はしっかりできていた。",
       "recordingUrl": "なし"
     },
-    "2026-04-03|4:45～6:15|minami|minami_e6_S_eng|1": {
+    "2026-04-03|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "English Travel UNIT2 C・D",
       "page": "P18 緑＃31まで",
       "homework": [
@@ -1743,11 +1748,13 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/r7dRHJiIbtMV3emgBbS1W-2-uzmd5d8JqgzfEs8dOqIABNv1hdxvZ0VIRnmA3eWO.m-s69ur8bryrF9Gr?startTime=1775215864000"
     },
     "2026-04-04|4:45～6:15|minami|minami_j1_A_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "要点22四則混合",
+      "page": "ｐ52＃53",
+      "homework": [
+        "ｐ53"
+      ],
+      "report": "四則混合についての計算練習をした。全体的に難しくできが悪いものがおおい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/WAlZm20jHqRnfxLVdfq_56Ap0HCuGha4WnT2zuDO2hy-fFx3A4CjvS0iCt3x9Yi7._1gmV3R6zITWXk0I?startTime=1775288854000"
     },
     "2026-04-04|4:45～6:15|minami|minami_j3_A_eng|1": {
       "content": "",
@@ -1791,7 +1798,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-06|4:45～6:15|minami|minami_e5_S_arith|2": {
+    "2026-04-06|4:55～6:15|minami|minami_e5_S_arith|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1854,14 +1861,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-07|4:45～6:15|minami|minami_e5_A_arith|1": {
+    "2026-04-07|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-07|4:45～6:15|minami|minami_e6_S_arith|2": {
+    "2026-04-07|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1924,14 +1931,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-08|4:45～6:15|minami|minami_e4_A_arith|3": {
+    "2026-04-08|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-08|4:45～6:15|minami|minami_e6_A_arith|1": {
+    "2026-04-08|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1987,21 +1994,21 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-09|4:45～6:15|minami|minami_e4_A_jp|3": {
+    "2026-04-09|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-09|4:45～6:15|minami|minami_e5_A_eng|2": {
+    "2026-04-09|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-09|4:45～6:15|minami|minami_e6_A_jp|1": {
+    "2026-04-09|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2043,21 +2050,21 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-10|4:45～6:15|minami|minami_e5_A_jp|3": {
+    "2026-04-10|4:55～6:15|minami|minami_e5_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-10|4:45～6:15|minami|minami_e6_A_eng|2": {
+    "2026-04-10|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-10|4:45～6:15|minami|minami_e6_S_eng|1": {
+    "2026-04-10|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2120,14 +2127,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-13|4:45～6:15|minami|minami_e4_X_arith|4": {
+    "2026-04-13|4:55～6:15|minami|minami_e4_X_arith|4": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-13|4:45～6:15|minami|minami_e5_S_arith|1": {
+    "2026-04-13|4:55～6:15|minami|minami_e5_S_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2176,14 +2183,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-14|4:45～6:15|minami|minami_e5_A_arith|1": {
+    "2026-04-14|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-14|4:45～6:15|minami|minami_e6_S_arith|2": {
+    "2026-04-14|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2246,14 +2253,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-15|4:45～6:15|minami|minami_e4_A_arith|3": {
+    "2026-04-15|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-15|4:45～6:15|minami|minami_e6_A_arith|1": {
+    "2026-04-15|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2302,21 +2309,21 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-16|4:45～6:15|minami|minami_e4_A_jp|3": {
+    "2026-04-16|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-16|4:45～6:15|minami|minami_e5_A_eng|2": {
+    "2026-04-16|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "単元テスト実施日",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-16|4:45～6:15|minami|minami_e6_A_jp|1": {
+    "2026-04-16|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2365,21 +2372,21 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|4:45～6:15|minami|minami_e5_A_jp|3": {
+    "2026-04-17|4:55～6:15|minami|minami_e5_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|4:45～6:15|minami|minami_e6_A_eng|2": {
+    "2026-04-17|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "単元テスト実施日",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|4:45～6:15|minami|minami_e6_S_eng|1": {
+    "2026-04-17|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "単元テスト実施日",
       "page": "",
       "homework": [],
@@ -2428,7 +2435,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-18|4:45～6:15|minami|minami_e5_X_jp|4": {
+    "2026-04-18|4:55～6:15|minami|minami_e5_X_jp|4": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2456,14 +2463,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-20|4:45～6:15|minami|minami_e5_S_arith|1": {
+    "2026-04-20|4:55～6:15|minami|minami_e5_S_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-20|4:45～6:15|minami|minami_e6_X_jp|5": {
+    "2026-04-20|4:55～6:15|minami|minami_e6_X_jp|5": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2519,14 +2526,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-21|4:45～6:15|minami|minami_e5_A_arith|1": {
+    "2026-04-21|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-21|4:45～6:15|minami|minami_e6_S_arith|2": {
+    "2026-04-21|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2575,14 +2582,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-22|4:45～6:15|minami|minami_e4_A_arith|3": {
+    "2026-04-22|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-22|4:45～6:15|minami|minami_e6_A_arith|1": {
+    "2026-04-22|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2645,21 +2652,21 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-23|4:45～6:15|minami|minami_e4_A_jp|3": {
+    "2026-04-23|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-23|4:45～6:15|minami|minami_e5_A_eng|2": {
+    "2026-04-23|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-23|4:45～6:15|minami|minami_e6_A_jp|1": {
+    "2026-04-23|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2701,28 +2708,28 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-24|4:45～6:15|minami|minami_e4_X_jp|5": {
+    "2026-04-24|4:55～6:15|minami|minami_e4_X_jp|5": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-24|4:45～6:15|minami|minami_e5_A_jp|3": {
+    "2026-04-24|4:55～6:15|minami|minami_e5_A_jp|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-24|4:45～6:15|minami|minami_e6_A_eng|2": {
+    "2026-04-24|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-24|4:45～6:15|minami|minami_e6_S_eng|1": {
+    "2026-04-24|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2806,7 +2813,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-27|4:45～6:15|minami|minami_e5_S_arith|1": {
+    "2026-04-27|4:55～6:15|minami|minami_e5_S_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2855,14 +2862,14 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-28|4:45～6:15|minami|minami_e5_A_arith|1": {
+    "2026-04-28|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-28|4:45～6:15|minami|minami_e6_S_arith|2": {
+    "2026-04-28|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "",
       "page": "",
       "homework": [],
