@@ -10,6 +10,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -23,6 +24,7 @@
     "groupKey": "hon_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -36,6 +38,7 @@
     "groupKey": "hon_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -49,6 +52,7 @@
     "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -62,6 +66,7 @@
     "groupKey": "hon_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -75,6 +80,7 @@
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -88,6 +94,7 @@
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -101,6 +108,7 @@
     "groupKey": "hon_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -114,6 +122,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -127,6 +136,7 @@
     "groupKey": "hon_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -140,6 +150,7 @@
     "groupKey": "hon_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -153,6 +164,7 @@
     "groupKey": "hon_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -166,6 +178,7 @@
     "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -179,6 +192,7 @@
     "groupKey": "hon_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -192,6 +206,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -205,6 +220,7 @@
     "groupKey": "hon_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -218,6 +234,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -231,6 +248,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -244,6 +262,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -257,6 +276,7 @@
     "groupKey": "hon_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -270,6 +290,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -283,6 +304,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": true,
     "displayTitle": ""
   },
   {
@@ -296,6 +318,7 @@
     "groupKey": "hon_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -309,6 +332,7 @@
     "groupKey": "hon_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -322,6 +346,7 @@
     "groupKey": "hon_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -335,6 +360,7 @@
     "groupKey": "hon_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -348,6 +374,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -361,6 +388,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -374,6 +402,7 @@
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -387,6 +416,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -400,6 +430,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -413,6 +444,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -426,6 +458,7 @@
     "groupKey": "hon_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -439,6 +472,7 @@
     "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -452,6 +486,7 @@
     "groupKey": "hon_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -465,6 +500,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -478,6 +514,7 @@
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -491,6 +528,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -504,6 +542,7 @@
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -517,6 +556,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -530,6 +570,7 @@
     "groupKey": "hon_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -543,6 +584,7 @@
     "groupKey": "hon_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -556,6 +598,7 @@
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -569,6 +612,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -582,6 +626,7 @@
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -595,6 +640,7 @@
     "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -608,6 +654,7 @@
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -621,6 +668,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -634,6 +682,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": true,
     "displayTitle": ""
   },
   {
@@ -647,6 +696,7 @@
     "groupKey": "hon_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -660,6 +710,7 @@
     "groupKey": "hon_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -673,6 +724,7 @@
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -686,6 +738,7 @@
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -699,6 +752,7 @@
     "groupKey": "hon_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -712,6 +766,7 @@
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -725,6 +780,7 @@
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -738,6 +794,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -751,6 +808,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -764,6 +822,7 @@
     "groupKey": "hon_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -777,6 +836,7 @@
     "groupKey": "hon_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -790,6 +850,7 @@
     "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -803,6 +864,7 @@
     "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -816,6 +878,7 @@
     "groupKey": "hon_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -829,6 +892,7 @@
     "groupKey": "hon_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -842,6 +906,7 @@
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -855,6 +920,7 @@
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -868,6 +934,7 @@
     "groupKey": "hon_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -881,6 +948,7 @@
     "groupKey": "hon_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -894,6 +962,7 @@
     "groupKey": "hon_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -907,6 +976,7 @@
     "groupKey": "hon_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -920,6 +990,7 @@
     "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -933,6 +1004,7 @@
     "groupKey": "hon_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -946,6 +1018,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -959,6 +1032,7 @@
     "groupKey": "hon_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -972,6 +1046,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -985,6 +1060,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -998,6 +1074,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1011,6 +1088,7 @@
     "groupKey": "hon_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1024,6 +1102,7 @@
     "groupKey": "hon_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1037,6 +1116,7 @@
     "groupKey": "hon_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1050,6 +1130,7 @@
     "groupKey": "hon_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1063,6 +1144,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1076,6 +1158,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1089,6 +1172,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1102,6 +1186,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1115,6 +1200,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1128,6 +1214,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1141,6 +1228,7 @@
     "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1154,6 +1242,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A社対面"
   },
   {
@@ -1167,6 +1256,7 @@
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S理対面"
   },
   {
@@ -1180,6 +1270,7 @@
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A理対面"
   },
   {
@@ -1193,6 +1284,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S社対面"
   },
   {
@@ -1206,6 +1298,7 @@
     "groupKey": "hon_e4_X_arith",
     "label": "小４X 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1219,6 +1312,7 @@
     "groupKey": "hon_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1232,6 +1326,7 @@
     "groupKey": "hon_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1245,6 +1340,7 @@
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1258,6 +1354,7 @@
     "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1271,6 +1368,7 @@
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A国対面"
   },
   {
@@ -1284,6 +1382,7 @@
     "groupKey": "hon_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1297,6 +1396,7 @@
     "groupKey": "hon_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1310,6 +1410,7 @@
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1323,6 +1424,7 @@
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1336,6 +1438,7 @@
     "groupKey": "hon_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1349,6 +1452,7 @@
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1362,6 +1466,7 @@
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1375,6 +1480,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1388,6 +1494,7 @@
     "groupKey": "hon_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1401,6 +1508,7 @@
     "groupKey": "hon_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1414,6 +1522,7 @@
     "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1427,6 +1536,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1440,6 +1550,7 @@
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S国対面"
   },
   {
@@ -1453,6 +1564,7 @@
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1466,6 +1578,7 @@
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1479,6 +1592,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1492,6 +1606,7 @@
     "groupKey": "hon_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1505,6 +1620,7 @@
     "groupKey": "hon_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1518,6 +1634,7 @@
     "groupKey": "hon_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1531,6 +1648,7 @@
     "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1544,6 +1662,7 @@
     "groupKey": "hon_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1557,6 +1676,7 @@
     "groupKey": "hon_j2_X_math",
     "label": "中２X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1570,6 +1690,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1583,6 +1704,7 @@
     "groupKey": "hon_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1596,6 +1718,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1609,6 +1732,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1622,6 +1746,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1635,6 +1760,7 @@
     "groupKey": "hon_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1648,6 +1774,7 @@
     "groupKey": "hon_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1661,6 +1788,7 @@
     "groupKey": "hon_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1674,6 +1802,7 @@
     "groupKey": "hon_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1687,6 +1816,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1700,6 +1830,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1713,6 +1844,7 @@
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1726,6 +1858,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1739,6 +1872,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1752,6 +1886,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1765,6 +1900,7 @@
     "groupKey": "hon_e5_X_jp",
     "label": "小５X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1778,6 +1914,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1791,6 +1928,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1804,6 +1942,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1817,6 +1956,7 @@
     "groupKey": "hon_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1830,6 +1970,7 @@
     "groupKey": "hon_e6_X_jp",
     "label": "小６X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1843,6 +1984,7 @@
     "groupKey": "hon_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1856,6 +1998,7 @@
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "2S国対面"
   },
   {
@@ -1869,6 +2012,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1882,6 +2026,7 @@
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1895,6 +2040,7 @@
     "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1908,6 +2054,7 @@
     "groupKey": "hon_j2_X_eng",
     "label": "中２X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1921,6 +2068,7 @@
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1934,6 +2082,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1947,6 +2096,7 @@
     "groupKey": "hon_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1960,6 +2110,7 @@
     "groupKey": "hon_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -1973,6 +2124,7 @@
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "1A国対面"
   },
   {
@@ -1986,6 +2138,7 @@
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "1S国対面"
   },
   {
@@ -1999,6 +2152,7 @@
     "groupKey": "hon_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2012,6 +2166,7 @@
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "2A国対面"
   },
   {
@@ -2025,6 +2180,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2038,6 +2194,7 @@
     "groupKey": "hon_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2051,6 +2208,7 @@
     "groupKey": "hon_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2064,6 +2222,7 @@
     "groupKey": "hon_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2077,6 +2236,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2090,6 +2250,7 @@
     "groupKey": "hon_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2103,6 +2264,7 @@
     "groupKey": "hon_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2116,6 +2278,7 @@
     "groupKey": "hon_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2129,6 +2292,7 @@
     "groupKey": "hon_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2142,6 +2306,7 @@
     "groupKey": "hon_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2155,6 +2320,7 @@
     "groupKey": "hon_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2168,6 +2334,7 @@
     "groupKey": "hon_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2181,6 +2348,7 @@
     "groupKey": "hon_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2194,6 +2362,7 @@
     "groupKey": "hon_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2207,6 +2376,7 @@
     "groupKey": "hon_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2220,6 +2390,7 @@
     "groupKey": "hon_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2233,6 +2404,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2246,6 +2418,7 @@
     "groupKey": "hon_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2259,6 +2432,7 @@
     "groupKey": "hon_e4_X_jp",
     "label": "小４X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2272,6 +2446,7 @@
     "groupKey": "hon_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2285,6 +2460,7 @@
     "groupKey": "hon_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2298,6 +2474,7 @@
     "groupKey": "hon_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2311,6 +2488,7 @@
     "groupKey": "hon_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2324,6 +2502,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2337,6 +2516,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2350,6 +2530,7 @@
     "groupKey": "hon_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2363,6 +2544,7 @@
     "groupKey": "hon_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2376,6 +2558,7 @@
     "groupKey": "hon_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2389,6 +2572,7 @@
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2402,6 +2586,7 @@
     "groupKey": "hon_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2415,6 +2600,7 @@
     "groupKey": "hon_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2428,6 +2614,7 @@
     "groupKey": "hon_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2441,6 +2628,7 @@
     "groupKey": "hon_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2454,6 +2642,7 @@
     "groupKey": "hon_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2467,6 +2656,7 @@
     "groupKey": "hon_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2480,6 +2670,7 @@
     "groupKey": "hon_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2493,6 +2684,7 @@
     "groupKey": "hon_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2506,6 +2698,7 @@
     "groupKey": "hon_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2519,6 +2712,7 @@
     "groupKey": "hon_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2532,6 +2726,7 @@
     "groupKey": "hon_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2545,6 +2740,7 @@
     "groupKey": "hon_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2558,6 +2754,7 @@
     "groupKey": "hon_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2571,6 +2768,7 @@
     "groupKey": "hon_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2584,6 +2782,7 @@
     "groupKey": "hon_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2597,6 +2796,7 @@
     "groupKey": "hon_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2610,6 +2810,7 @@
     "groupKey": "hon_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2623,6 +2824,7 @@
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2636,6 +2838,7 @@
     "groupKey": "minami_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2649,6 +2852,7 @@
     "groupKey": "minami_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2662,6 +2866,7 @@
     "groupKey": "minami_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2675,6 +2880,7 @@
     "groupKey": "minami_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2688,6 +2894,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2701,6 +2908,7 @@
     "groupKey": "minami_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2714,6 +2922,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2727,6 +2936,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2740,6 +2950,7 @@
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2753,6 +2964,7 @@
     "groupKey": "minami_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2766,6 +2978,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2779,6 +2992,7 @@
     "groupKey": "minami_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2792,6 +3006,7 @@
     "groupKey": "minami_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2805,6 +3020,7 @@
     "groupKey": "minami_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2818,6 +3034,7 @@
     "groupKey": "minami_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2831,6 +3048,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2844,6 +3062,7 @@
     "groupKey": "minami_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2857,6 +3076,7 @@
     "groupKey": "minami_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2870,6 +3090,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2883,6 +3104,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2896,6 +3118,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": true,
     "displayTitle": ""
   },
   {
@@ -2909,6 +3132,7 @@
     "groupKey": "minami_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2922,6 +3146,7 @@
     "groupKey": "minami_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2935,6 +3160,7 @@
     "groupKey": "minami_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2948,6 +3174,7 @@
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2961,6 +3188,7 @@
     "groupKey": "minami_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2974,6 +3202,7 @@
     "groupKey": "minami_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -2987,6 +3216,7 @@
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3000,6 +3230,7 @@
     "groupKey": "minami_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3013,6 +3244,7 @@
     "groupKey": "minami_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3026,6 +3258,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3039,6 +3272,7 @@
     "groupKey": "minami_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3052,6 +3286,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3065,6 +3300,7 @@
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3078,6 +3314,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3091,6 +3328,7 @@
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3104,6 +3342,7 @@
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3117,6 +3356,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3130,6 +3370,7 @@
     "groupKey": "minami_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3143,6 +3384,7 @@
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3156,6 +3398,7 @@
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3169,6 +3412,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3182,6 +3426,7 @@
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3195,6 +3440,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3208,6 +3454,7 @@
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3221,6 +3468,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3234,6 +3482,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": true,
     "displayTitle": ""
   },
   {
@@ -3247,6 +3496,7 @@
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3260,6 +3510,7 @@
     "groupKey": "minami_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3273,6 +3524,7 @@
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3286,6 +3538,7 @@
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3299,6 +3552,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3312,6 +3566,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3325,6 +3580,7 @@
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3338,6 +3594,7 @@
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3351,6 +3608,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3364,6 +3622,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3377,6 +3636,7 @@
     "groupKey": "minami_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3390,6 +3650,7 @@
     "groupKey": "minami_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3403,6 +3664,7 @@
     "groupKey": "minami_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3416,6 +3678,7 @@
     "groupKey": "minami_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3429,6 +3692,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3442,6 +3706,7 @@
     "groupKey": "minami_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3455,6 +3720,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3468,6 +3734,7 @@
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3481,6 +3748,7 @@
     "groupKey": "minami_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3494,6 +3762,7 @@
     "groupKey": "minami_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3507,6 +3776,7 @@
     "groupKey": "minami_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3520,6 +3790,7 @@
     "groupKey": "minami_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3533,6 +3804,7 @@
     "groupKey": "minami_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3546,6 +3818,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3559,6 +3832,7 @@
     "groupKey": "minami_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3572,6 +3846,7 @@
     "groupKey": "minami_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3585,6 +3860,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3598,6 +3874,7 @@
     "groupKey": "minami_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3611,6 +3888,7 @@
     "groupKey": "minami_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3624,6 +3902,7 @@
     "groupKey": "minami_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3637,6 +3916,7 @@
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3650,6 +3930,7 @@
     "groupKey": "minami_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3663,6 +3944,7 @@
     "groupKey": "minami_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3676,6 +3958,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3689,6 +3972,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3702,6 +3986,7 @@
     "groupKey": "minami_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3715,6 +4000,7 @@
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A国対面"
   },
   {
@@ -3728,6 +4014,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3741,6 +4028,7 @@
     "groupKey": "minami_e4_X_arith",
     "label": "小４X 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3754,6 +4042,7 @@
     "groupKey": "minami_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3767,6 +4056,7 @@
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3780,6 +4070,7 @@
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3793,6 +4084,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A社対面"
   },
   {
@@ -3806,6 +4098,7 @@
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S理対面"
   },
   {
@@ -3819,6 +4112,7 @@
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3A理対面"
   },
   {
@@ -3832,6 +4126,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S社対面"
   },
   {
@@ -3845,6 +4140,7 @@
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3858,6 +4154,7 @@
     "groupKey": "minami_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3871,6 +4168,7 @@
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3884,6 +4182,7 @@
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3897,6 +4196,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3910,6 +4210,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3923,6 +4224,7 @@
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "3S国対面"
   },
   {
@@ -3936,6 +4238,7 @@
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3949,6 +4252,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3962,6 +4266,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3975,6 +4280,7 @@
     "groupKey": "minami_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -3988,6 +4294,7 @@
     "groupKey": "minami_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4001,6 +4308,7 @@
     "groupKey": "minami_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4014,6 +4322,7 @@
     "groupKey": "minami_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4027,6 +4336,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4040,6 +4350,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4053,6 +4364,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4066,6 +4378,7 @@
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4079,6 +4392,7 @@
     "groupKey": "minami_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4092,6 +4406,7 @@
     "groupKey": "minami_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4105,6 +4420,7 @@
     "groupKey": "minami_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4118,6 +4434,7 @@
     "groupKey": "minami_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4131,6 +4448,7 @@
     "groupKey": "minami_j2_X_math",
     "label": "中２X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4144,6 +4462,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4157,6 +4476,7 @@
     "groupKey": "minami_j3_X_eng",
     "label": "中３X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4170,6 +4490,7 @@
     "groupKey": "minami_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4183,6 +4504,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4196,6 +4518,7 @@
     "groupKey": "minami_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4209,6 +4532,7 @@
     "groupKey": "minami_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4222,6 +4546,7 @@
     "groupKey": "minami_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4235,6 +4560,7 @@
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4248,6 +4574,7 @@
     "groupKey": "minami_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4261,6 +4588,7 @@
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4274,6 +4602,7 @@
     "groupKey": "minami_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4287,6 +4616,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4300,6 +4630,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4313,6 +4644,7 @@
     "groupKey": "minami_e5_X_jp",
     "label": "小５X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4326,6 +4658,7 @@
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "1S国対面"
   },
   {
@@ -4339,6 +4672,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4352,6 +4686,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4365,6 +4700,7 @@
     "groupKey": "minami_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4378,6 +4714,7 @@
     "groupKey": "minami_e6_X_jp",
     "label": "小６X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4391,6 +4728,7 @@
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4404,6 +4742,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4417,6 +4756,7 @@
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4430,6 +4770,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4443,6 +4784,7 @@
     "groupKey": "minami_j2_X_eng",
     "label": "中２X 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4456,6 +4798,7 @@
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4469,6 +4812,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4482,6 +4826,7 @@
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4495,6 +4840,7 @@
     "groupKey": "minami_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4508,6 +4854,7 @@
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "1A国対面"
   },
   {
@@ -4521,6 +4868,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4534,6 +4882,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4547,6 +4896,7 @@
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "2A国対面"
   },
   {
@@ -4560,6 +4910,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4573,6 +4924,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4586,6 +4938,7 @@
     "groupKey": "minami_e4_A_arith",
     "label": "小４A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4599,6 +4952,7 @@
     "groupKey": "minami_e6_A_arith",
     "label": "小６A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4612,6 +4966,7 @@
     "groupKey": "minami_j1_A_math",
     "label": "中１A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4625,6 +4980,7 @@
     "groupKey": "minami_j1_B_math",
     "label": "中１B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4638,6 +4994,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4651,6 +5008,7 @@
     "groupKey": "minami_j3_X_jp",
     "label": "中３X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4664,6 +5022,7 @@
     "groupKey": "minami_j2_B_math",
     "label": "中２B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4677,6 +5036,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4690,6 +5050,7 @@
     "groupKey": "minami_j3_A_jp",
     "label": "中３A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4703,6 +5064,7 @@
     "groupKey": "minami_j3_X_math",
     "label": "中３X 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4716,6 +5078,7 @@
     "groupKey": "minami_e4_A_jp",
     "label": "小４A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4729,6 +5092,7 @@
     "groupKey": "minami_e5_A_eng",
     "label": "小５A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4742,6 +5106,7 @@
     "groupKey": "minami_e6_A_jp",
     "label": "小６A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4755,6 +5120,7 @@
     "groupKey": "minami_j1_S_eng",
     "label": "中１S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4768,6 +5134,7 @@
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": true,
+    "special": false,
     "displayTitle": "2S国対面"
   },
   {
@@ -4781,6 +5148,7 @@
     "groupKey": "minami_j3_B_eng",
     "label": "中３B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4794,6 +5162,7 @@
     "groupKey": "minami_j2_B_eng",
     "label": "中２B 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4807,6 +5176,7 @@
     "groupKey": "minami_j3_A_eng",
     "label": "中３A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4820,6 +5190,7 @@
     "groupKey": "minami_e4_X_jp",
     "label": "小４X 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4833,6 +5204,7 @@
     "groupKey": "minami_e5_A_jp",
     "label": "小５A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4846,6 +5218,7 @@
     "groupKey": "minami_e6_A_eng",
     "label": "小６A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4859,6 +5232,7 @@
     "groupKey": "minami_e6_S_eng",
     "label": "小６S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4872,6 +5246,7 @@
     "groupKey": "minami_j1_A_eng",
     "label": "中１A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4885,6 +5260,7 @@
     "groupKey": "minami_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4898,6 +5274,7 @@
     "groupKey": "minami_j3_S_jp",
     "label": "中３S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4911,6 +5288,7 @@
     "groupKey": "minami_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4924,6 +5302,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4937,6 +5316,7 @@
     "groupKey": "minami_j2_S_eng",
     "label": "中２S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4950,6 +5330,7 @@
     "groupKey": "minami_j3_A_math",
     "label": "中３A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4963,6 +5344,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4976,6 +5358,7 @@
     "groupKey": "minami_j3_S_eng",
     "label": "中３S 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -4989,6 +5372,7 @@
     "groupKey": "minami_j2_A_eng",
     "label": "中２A 英語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5002,6 +5386,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5015,6 +5400,7 @@
     "groupKey": "minami_e5_S_arith",
     "label": "小５S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5028,6 +5414,7 @@
     "groupKey": "minami_j1_S_math",
     "label": "中１S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5041,6 +5428,7 @@
     "groupKey": "minami_j3_A_soc",
     "label": "中３A 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5054,6 +5442,7 @@
     "groupKey": "minami_j3_S_sci",
     "label": "中３S 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5067,6 +5456,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5080,6 +5470,7 @@
     "groupKey": "minami_j3_A_sci",
     "label": "中３A 理科",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5093,6 +5484,7 @@
     "groupKey": "minami_j3_S_soc",
     "label": "中３S 社会",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5106,6 +5498,7 @@
     "groupKey": "minami_e5_A_arith",
     "label": "小５A 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5119,6 +5512,7 @@
     "groupKey": "minami_e6_S_arith",
     "label": "小６S 算数",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5132,6 +5526,7 @@
     "groupKey": "minami_j1_A_jp",
     "label": "中１A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5145,6 +5540,7 @@
     "groupKey": "minami_j1_S_jp",
     "label": "中１S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5158,6 +5554,7 @@
     "groupKey": "minami_j2_A_math",
     "label": "中２A 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5171,6 +5568,7 @@
     "groupKey": "minami_j2_S_math",
     "label": "中２S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5184,6 +5582,7 @@
     "groupKey": "minami_j2_A_jp",
     "label": "中２A 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5197,6 +5596,7 @@
     "groupKey": "minami_j2_S_jp",
     "label": "中２S 国語",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5210,6 +5610,7 @@
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   },
   {
@@ -5223,6 +5624,7 @@
     "groupKey": "minami_j3_S_math",
     "label": "中３S 数学",
     "faceToFace": false,
+    "special": false,
     "displayTitle": ""
   }
 ]

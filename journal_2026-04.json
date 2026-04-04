@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-04T18:47:49",
+  "generatedAt": "2026-04-04T20:19:48",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -293,11 +293,14 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/D71RFypE4S3gcRt_wbqKQ3NAY9v7jlslLkIABdox5M9R4o3wfIvPvFYc_aEgph6X.takJDUzgoETitIE_"
     },
     "2026-04-04|6:35～8:05|hon|hon_j1_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "素因数分解",
+      "page": "P59＃60⑤まで",
+      "homework": [
+        "P53③以外、P57",
+        "P59＃60⑥～⑧、P60□１、□２"
+      ],
+      "report": "カリキュラムが詰まりすぎているのでなんとか工夫しながら先に進めたが、やはりまだ遅れはある。とはいえ次回でテストに向けて形にしてください。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Rc3bUjuQHPX_Tw5XSCeW0u62HTSw2SeKKavxqaF3Dqm_Y24Z_2XfsqeS3p5hLDVf.p69ijQEMKnHl8ZNp?startTime=1775295656000"
     },
     "2026-04-04|6:35～8:05|hon|hon_j1_S_eng|1": {
       "content": "",
@@ -314,11 +317,14 @@
       "recordingUrl": ""
     },
     "2026-04-04|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ112-ｐ115",
+      "homework": [
+        "ドリルｐ62～ｐ63",
+        "〇付けまで"
+      ],
+      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000"
     },
     "2026-04-04|8:25～9:55|hon|hon_j2_A_math|1": {
       "content": "",
@@ -881,7 +887,7 @@
       "recordingUrl": ""
     },
     "2026-04-16|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
+      "content": "単元テスト①",
       "page": "",
       "homework": [],
       "report": "",
@@ -1778,11 +1784,14 @@
       "recordingUrl": ""
     },
     "2026-04-04|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ112-ｐ115",
+      "homework": [
+        "ドリルｐ62～ｐ63",
+        "〇付けまで"
+      ],
+      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000"
     },
     "2026-04-04|8:25～9:55|minami|minami_j3_A_sci|2": {
       "content": "",
