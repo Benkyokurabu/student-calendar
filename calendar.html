@@ -812,6 +812,7 @@
       groupKey: x.groupKey || "",
       label: x.label || "",
       faceToFace: !!x.faceToFace,
+      special: !!x.special,
       displayTitle: (x.displayTitle || "").toString().trim(),
     })).filter(x => x.date && x.time && x.grade && x.subject);
   }
@@ -981,15 +982,17 @@
 
   function detailMainLabel(lesson) {
     const t = (lesson.displayTitle || "").trim();
-    if (t) return t;
-    return `${(lesson.class || "").trim()}`;
+    if (t) return lesson.special && !t.includes("特") ? t + "特" : t;
+    const cls = (lesson.class || "").trim();
+    return lesson.special ? cls + "特" : cls;
   }
 
   function cellLessonHtml(lesson) {
     const subjName = SUBJECT_LABEL[lesson.subject] || lesson.subject || "";
     const cls = (lesson.class || "").trim();
     const t = timeStart(lesson.time);
-    const clsText = (lesson.displayTitle && lesson.displayTitle.trim()) ? lesson.displayTitle.trim() : cls;
+    let clsText = (lesson.displayTitle && lesson.displayTitle.trim()) ? lesson.displayTitle.trim() : cls;
+    if (lesson.special && !clsText.includes("特")) clsText = clsText + "特";
 
     const campusMark = (state.campus === "all")
       ? `<span class="campus-tag">${escapeHtml(campusShort(lesson.campus))}${escapeHtml(lesson.room || "")}</span>`
