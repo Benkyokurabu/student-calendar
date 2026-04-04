@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-04T16:36:13",
+  "generatedAt": "2026-04-04T17:40:02",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -273,11 +273,14 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/cmpUj3aBvLeXMbb_l7HzzQflH62fIhAgIP-UvOxQGj_k4oMwTIyOETh8oYkD4Jc_.KLeP0RcgoUcA1Ocp?startTime=1775217252000"
     },
     "2026-04-04|2:55～4:25|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "置きかえる因数分解",
+      "page": "P39まで",
+      "homework": [
+        "P40＃47①～⑦、＃48⑫～⑭",
+        "P42□７"
+      ],
+      "report": "置き換えの因数分解までやってぎりぎりだった。遅れは取り戻せず。田村や青木が因数分解の基本の部分ですら苦戦していた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/UAWJdO9Eg3q_v-IU__9wDuhfC3NIEhp-HWVNrAV-cBU9YDLNhzF1TPq_Ds0GhzLj.IAV7TbL3bcPlm0RZ"
     },
     "2026-04-04|4:55～6:15|hon|hon_j1_A_math|1": {
       "content": "",
