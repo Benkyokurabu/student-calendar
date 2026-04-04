@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-04T20:37:51",
+  "generatedAt": "2026-04-04T22:23:59",
   "entries": {
     "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -303,11 +303,14 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/Rc3bUjuQHPX_Tw5XSCeW0u62HTSw2SeKKavxqaF3Dqm_Y24Z_2XfsqeS3p5hLDVf.p69ijQEMKnHl8ZNp?startTime=1775295656000"
     },
     "2026-04-04|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "Here We Go UNIT1 / L2 冠詞・名詞",
+      "page": "Ｌ２　Ｐ６説明まで",
+      "homework": [
+        "通常テキスト：Ｌ１#89,90",
+        "Here We Go UNIT1 #19～21"
+      ],
+      "report": "Here We GoのUNIT１の訳を終え、ＵＮＩＴ１の内容を和→英をオーラルで確認。はじめのうちは教科書を丸暗記するくらい読み込むよう伝えた。その後は通常テキストＬ２に入り、冠詞の導入。theの説明まで終えて終了。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/uIDVU75N7zk1D0TDOA4zhjZZ4AkKMOQ3GvwuopS3Ydg9Bdu6AJh3EE_pDAQyud4F.wHdCTj6Obh6yz8TO?startTime=1775295486000"
     },
     "2026-04-04|6:35～8:05|hon|hon_j3_A_soc|3": {
       "content": "",
@@ -327,17 +330,22 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000"
     },
     "2026-04-04|8:25～9:55|hon|hon_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "content": "図形と文字式",
+      "page": "P58まで",
+      "homework": [
+        "P59～61",
+        "テスト勉強"
+      ],
+      "report": "なんとか今日で終わらせることができた。オンラインでの参加も５人くらいいたりして対面で見れたのは７名ほどだったが基本的にはよくできてくれていたと思う。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/jMwUpYzQuVijCG2MfdXIuYbe57fZqF0L5EbWyqqxr8CCQ2IlPoNHasjz1Tx06YXt.KgEzRi0dKyyNgfLi"
     },
     "2026-04-04|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ114□１まで",
+      "homework": [
+        "ドリルｐ60（ｐ61）"
+      ],
+      "report": "雲のできかたから□１気圧と風のところまで終了",
       "recordingUrl": ""
     },
     "2026-04-04|8:25～9:55|hon|hon_j3_S_soc|3": {
@@ -1794,10 +1802,12 @@
       "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000"
     },
     "2026-04-04|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ114□１まで",
+      "homework": [
+        "ドリルｐ60（ｐ61）"
+      ],
+      "report": "雲のできかたから□１気圧と風のところまで終了",
       "recordingUrl": ""
     },
     "2026-04-04|8:25～9:55|minami|minami_j3_S_soc|6": {
