@@ -1,0 +1,600 @@
+{
+  "month": "2026-04",
+  "generatedAt": "2026-04-08T15:43:54",
+  "slots": {
+    "hon_j1_S_eng": [
+      "2026-04-04|6:35～8:05|hon|hon_j1_S_eng|1",
+      "2026-04-06|6:35～8:05|hon|hon_j1_S_eng|1",
+      "2026-04-13|6:35～8:05|hon|hon_j1_S_eng|1",
+      "2026-04-20|6:35～8:05|hon|hon_j1_S_eng|1",
+      "2026-04-27|6:35～8:05|hon|hon_j1_S_eng|1"
+    ],
+    "hon_j1_A_eng": [
+      "2026-04-01|6:35～8:05|hon|hon_j1_A_eng|1",
+      "2026-04-08|6:35～8:05|hon|hon_j1_A_eng|1",
+      "2026-04-11|6:35～8:05|hon|hon_j1_A_eng|3",
+      "2026-04-15|6:35～8:05|hon|hon_j1_A_eng|1",
+      "2026-04-22|6:35～8:05|hon|hon_j1_A_eng|2"
+    ],
+    "hon_j1_S_math": [
+      "2026-04-02|6:35～8:05|hon|hon_j1_S_math|2",
+      "2026-04-03|2:55～4:25|hon|hon_j1_S_math|2",
+      "2026-04-09|6:35～8:05|hon|hon_j1_S_math|2",
+      "2026-04-16|6:35～8:05|hon|hon_j1_S_math|2",
+      "2026-04-23|6:35～8:05|hon|hon_j1_S_math|2"
+    ],
+    "hon_j1_A_math": [
+      "2026-04-03|6:35～8:05|hon|hon_j1_A_math|3",
+      "2026-04-04|4:45～6:15|hon|hon_j1_A_math|1",
+      "2026-04-10|6:35～8:05|hon|hon_j1_A_math|3",
+      "2026-04-17|6:35～8:05|hon|hon_j1_A_math|3",
+      "2026-04-24|6:35～8:05|hon|hon_j1_A_math|3"
+    ],
+    "hon_j1_B_math": [
+      "2026-04-02|6:35～8:05|hon|hon_j1_B_math|3",
+      "2026-04-04|6:35～8:05|hon|hon_j1_B_math|2",
+      "2026-04-09|6:35～8:05|hon|hon_j1_B_math|3",
+      "2026-04-16|6:35～8:05|hon|hon_j1_B_math|3",
+      "2026-04-23|6:35～8:05|hon|hon_j1_B_math|3"
+    ],
+    "hon_j1_S_jp": [
+      "2026-04-07|6:35～8:05|hon|hon_j1_S_jp|4",
+      "2026-04-14|6:35～8:05|hon|hon_j1_S_jp|4",
+      "2026-04-21|6:35～8:05|hon|hon_j1_S_jp|3",
+      "2026-04-28|6:35～8:05|hon|hon_j1_S_jp|6"
+    ],
+    "hon_j1_A_jp": [
+      "2026-04-07|6:35～8:05|hon|hon_j1_A_jp|3",
+      "2026-04-14|6:35～8:05|hon|hon_j1_A_jp|3",
+      "2026-04-21|6:35～8:05|hon|hon_j1_A_jp|2",
+      "2026-04-28|6:35～8:05|hon|hon_j1_A_jp|3"
+    ],
+    "hon_j2_S_eng": [
+      "2026-04-01|8:25～9:55|hon|hon_j2_S_eng|1",
+      "2026-04-08|8:25～9:55|hon|hon_j2_S_eng|2",
+      "2026-04-14|8:25～9:55|hon|hon_j2_S_eng|2",
+      "2026-04-15|8:25～9:55|hon|hon_j2_S_eng|2",
+      "2026-04-22|8:25～9:55|hon|hon_j2_S_eng|1"
+    ],
+    "hon_j2_A_eng": [
+      "2026-04-06|8:25～9:55|hon|hon_j2_A_eng|1",
+      "2026-04-08|6:35～8:05|hon|hon_j2_A_eng|2",
+      "2026-04-13|8:25～9:55|hon|hon_j2_A_eng|1",
+      "2026-04-20|8:25～9:55|hon|hon_j2_A_eng|1",
+      "2026-04-27|8:25～9:55|hon|hon_j2_A_eng|1"
+    ],
+    "hon_j2_B_eng": [
+      "2026-04-07|6:35～8:05|hon|hon_j2_B_eng|1",
+      "2026-04-08|8:25～9:55|hon|hon_j2_B_eng|1",
+      "2026-04-14|6:35～8:05|hon|hon_j2_B_eng|1",
+      "2026-04-21|6:35～8:05|hon|hon_j2_B_eng|1",
+      "2026-04-28|6:35～8:05|hon|hon_j2_B_eng|1"
+    ],
+    "hon_j2_X_eng": [
+      "2026-04-20|8:25～9:55|hon|hon_j2_X_eng|3"
+    ],
+    "hon_j2_S_math": [
+      "2026-04-03|6:35～8:05|hon|hon_j2_S_math|1",
+      "2026-04-10|6:35～8:05|hon|hon_j2_S_math|1",
+      "2026-04-17|6:35～8:05|hon|hon_j2_S_math|1",
+      "2026-04-18|6:35～8:05|hon|hon_j2_S_math|2",
+      "2026-04-24|6:35～8:05|hon|hon_j2_S_math|1",
+      "2026-04-25|2:55～4:25|hon|hon_j2_S_math|2"
+    ],
+    "hon_j2_A_math": [
+      "2026-04-02|8:25～9:55|hon|hon_j2_A_math|2",
+      "2026-04-03|2:55～4:25|hon|hon_j2_A_math|1",
+      "2026-04-04|8:25～9:55|hon|hon_j2_A_math|1",
+      "2026-04-09|8:25～9:55|hon|hon_j2_A_math|2",
+      "2026-04-16|8:25～9:55|hon|hon_j2_A_math|2",
+      "2026-04-23|8:25～9:55|hon|hon_j2_A_math|2"
+    ],
+    "hon_j2_B_math": [
+      "2026-04-02|2:55～4:25|hon|hon_j2_B_math|1",
+      "2026-04-03|6:35～8:05|hon|hon_j2_B_math|2",
+      "2026-04-10|6:35～8:05|hon|hon_j2_B_math|2",
+      "2026-04-17|6:35～8:05|hon|hon_j2_B_math|2",
+      "2026-04-24|6:35～8:05|hon|hon_j2_B_math|2",
+      "2026-04-25|8:25～9:55|hon|hon_j2_B_math|2"
+    ],
+    "hon_j2_X_math": [
+      "2026-04-16|6:35～8:05|hon|hon_j2_X_math|4"
+    ],
+    "hon_j2_S_jp": [
+      "2026-04-06|6:35～8:05|hon|hon_j2_S_jp|3",
+      "2026-04-13|6:35～8:05|hon|hon_j2_S_jp|3",
+      "2026-04-20|6:35～8:05|hon|hon_j2_S_jp|2",
+      "2026-04-28|8:25～9:55|hon|hon_j2_S_jp|6"
+    ],
+    "hon_j2_A_jp": [
+      "2026-04-07|8:25～9:55|hon|hon_j2_A_jp|3",
+      "2026-04-14|8:25～9:55|hon|hon_j2_A_jp|3",
+      "2026-04-21|8:25～9:55|hon|hon_j2_A_jp|2",
+      "2026-04-28|8:25～9:55|hon|hon_j2_A_jp|3"
+    ],
+    "hon_j3_S_eng": [
+      "2026-04-02|8:25～9:55|hon|hon_j3_S_eng|3",
+      "2026-04-09|8:25～9:55|hon|hon_j3_S_eng|3",
+      "2026-04-15|8:25～9:55|hon|hon_j3_S_eng|1",
+      "2026-04-16|8:25～9:55|hon|hon_j3_S_eng|3",
+      "2026-04-18|6:35～8:05|hon|hon_j3_S_eng|1",
+      "2026-04-23|8:25～9:55|hon|hon_j3_S_eng|3"
+    ],
+    "hon_j3_A_eng": [
+      "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1",
+      "2026-04-07|8:25～9:55|hon|hon_j3_A_eng|1",
+      "2026-04-14|8:25～9:55|hon|hon_j3_A_eng|1",
+      "2026-04-21|8:25～9:55|hon|hon_j3_A_eng|1",
+      "2026-04-22|6:35～8:05|hon|hon_j3_A_eng|1",
+      "2026-04-28|8:25～9:55|hon|hon_j3_A_eng|1"
+    ],
+    "hon_j3_B_eng": [
+      "2026-04-02|6:35～8:05|hon|hon_j3_B_eng|1",
+      "2026-04-07|8:25～9:55|hon|hon_j3_B_eng|2",
+      "2026-04-09|6:35～8:05|hon|hon_j3_B_eng|1",
+      "2026-04-15|6:35～8:05|hon|hon_j3_B_eng|2",
+      "2026-04-16|6:35～8:05|hon|hon_j3_B_eng|1",
+      "2026-04-23|6:35～8:05|hon|hon_j3_B_eng|1"
+    ],
+    "hon_j3_X_eng": [
+      "2026-04-02|6:35～8:05|hon|hon_j3_X_eng|6",
+      "2026-04-09|6:35～8:05|hon|hon_j3_X_eng|6",
+      "2026-04-16|6:35～8:05|hon|hon_j3_X_eng|6"
+    ],
+    "hon_j3_S_math": [
+      "2026-04-03|8:25～9:55|hon|hon_j3_S_math|2",
+      "2026-04-10|8:25～9:55|hon|hon_j3_S_math|3",
+      "2026-04-11|4:45～6:15|hon|hon_j3_S_math|1",
+      "2026-04-17|8:25～9:55|hon|hon_j3_S_math|2",
+      "2026-04-18|8:25～9:55|hon|hon_j3_S_math|1",
+      "2026-04-24|8:25～9:55|hon|hon_j3_S_math|3"
+    ],
+    "hon_j3_A_math": [
+      "2026-04-03|8:25～9:55|hon|hon_j3_A_math|1",
+      "2026-04-04|2:55～4:25|hon|hon_j3_A_math|1",
+      "2026-04-10|8:25～9:55|hon|hon_j3_A_math|1",
+      "2026-04-17|8:25～9:55|hon|hon_j3_A_math|1",
+      "2026-04-18|4:45～6:15|hon|hon_j3_A_math|1",
+      "2026-04-24|8:25～9:55|hon|hon_j3_A_math|1"
+    ],
+    "hon_j3_B_math": [
+      "2026-04-02|8:25～9:55|hon|hon_j3_B_math|1",
+      "2026-04-09|8:25～9:55|hon|hon_j3_B_math|1",
+      "2026-04-10|8:25～9:55|hon|hon_j3_B_math|2",
+      "2026-04-16|8:25～9:55|hon|hon_j3_B_math|1",
+      "2026-04-23|8:25～9:55|hon|hon_j3_B_math|1",
+      "2026-04-24|8:25～9:55|hon|hon_j3_B_math|2"
+    ],
+    "hon_j3_X_math": [
+      "2026-04-01|8:25～9:55|hon|hon_j3_X_math|6",
+      "2026-04-08|8:25～9:55|hon|hon_j3_X_math|6",
+      "2026-04-22|8:25～9:55|hon|hon_j3_X_math|6"
+    ],
+    "hon_j3_S_jp": [
+      "2026-04-03|6:35～8:05|hon|hon_j3_S_jp|4",
+      "2026-04-07|6:35～8:05|hon|hon_j3_S_jp|6",
+      "2026-04-15|6:35～8:05|hon|hon_j3_S_jp|3",
+      "2026-04-17|6:35～8:05|hon|hon_j3_S_jp|4",
+      "2026-04-24|6:35～8:05|hon|hon_j3_S_jp|4"
+    ],
+    "hon_j3_A_jp": [
+      "2026-04-01|8:25～9:55|hon|hon_j3_A_jp|4",
+      "2026-04-08|8:25～9:55|hon|hon_j3_A_jp|4",
+      "2026-04-13|8:25～9:55|hon|hon_j3_A_jp|2",
+      "2026-04-15|8:25～9:55|hon|hon_j3_A_jp|4",
+      "2026-04-22|8:25～9:55|hon|hon_j3_A_jp|4"
+    ],
+    "hon_j3_X_jp": [
+      "2026-04-01|6:35～8:05|hon|hon_j3_X_jp|4",
+      "2026-04-08|6:35～8:05|hon|hon_j3_X_jp|4",
+      "2026-04-22|6:35～8:05|hon|hon_j3_X_jp|4"
+    ],
+    "hon_j3_S_sci": [
+      "2026-04-04|6:35～8:05|hon|hon_j3_S_sci|7",
+      "2026-04-06|6:35～8:05|hon|hon_j3_S_sci|7",
+      "2026-04-11|6:35～8:05|hon|hon_j3_S_sci|1",
+      "2026-04-20|6:35～8:05|hon|hon_j3_S_sci|7",
+      "2026-04-27|6:35～8:05|hon|hon_j3_S_sci|7"
+    ],
+    "hon_j3_A_sci": [
+      "2026-04-04|8:25～9:55|hon|hon_j3_A_sci|7",
+      "2026-04-06|8:25～9:55|hon|hon_j3_A_sci|7",
+      "2026-04-11|8:25～9:55|hon|hon_j3_A_sci|2",
+      "2026-04-20|8:25～9:55|hon|hon_j3_A_sci|7",
+      "2026-04-27|8:25～9:55|hon|hon_j3_A_sci|7"
+    ],
+    "hon_j3_S_soc": [
+      "2026-04-03|4:45～6:15|hon|hon_j3_S_soc|4",
+      "2026-04-04|8:25～9:55|hon|hon_j3_S_soc|3",
+      "2026-04-06|8:25～9:55|hon|hon_j3_S_soc|4",
+      null,
+      "2026-04-11|8:25～9:55|hon|hon_j3_S_soc|1",
+      "2026-04-20|8:25～9:55|hon|hon_j3_S_soc|4",
+      "2026-04-27|8:25～9:55|hon|hon_j3_S_soc|4"
+    ],
+    "hon_j3_A_soc": [
+      null,
+      "2026-04-04|6:35～8:05|hon|hon_j3_A_soc|3",
+      "2026-04-06|6:35～8:05|hon|hon_j3_A_soc|4",
+      "2026-04-07|4:45～6:15|hon|hon_j3_A_soc|6",
+      "2026-04-11|6:35～8:05|hon|hon_j3_A_soc|2",
+      "2026-04-20|6:35～8:05|hon|hon_j3_A_soc|4",
+      "2026-04-27|6:35～8:05|hon|hon_j3_A_soc|4"
+    ],
+    "hon_e4_A_arith": [
+      "2026-04-02|4:55～6:15|hon|hon_e4_A_arith|3",
+      "2026-04-09|4:55～6:15|hon|hon_e4_A_arith|3",
+      "2026-04-16|4:55～6:15|hon|hon_e4_A_arith|3",
+      "2026-04-23|4:55～6:15|hon|hon_e4_A_arith|3"
+    ],
+    "hon_e4_X_arith": [
+      "2026-04-13|4:55～6:15|hon|hon_e4_X_arith|6"
+    ],
+    "hon_e4_A_jp": [
+      "2026-04-07|4:55～6:15|hon|hon_e4_A_jp|2",
+      "2026-04-14|4:55～6:15|hon|hon_e4_A_jp|2",
+      "2026-04-21|4:55～6:15|hon|hon_e4_A_jp|2",
+      "2026-04-28|4:55～6:15|hon|hon_e4_A_jp|2"
+    ],
+    "hon_e4_X_jp": [
+      "2026-04-24|4:55～6:15|hon|hon_e4_X_jp|4"
+    ],
+    "hon_e5_A_eng": [
+      "2026-04-06|4:55～6:15|hon|hon_e5_A_eng|2",
+      "2026-04-13|4:55～6:15|hon|hon_e5_A_eng|2",
+      "2026-04-20|4:55～6:15|hon|hon_e5_A_eng|2",
+      "2026-04-27|4:55～6:15|hon|hon_e5_A_eng|2"
+    ],
+    "hon_e5_S_arith": [
+      "2026-04-02|4:55～6:15|hon|hon_e5_S_arith|2",
+      "2026-04-09|4:55～6:15|hon|hon_e5_S_arith|2",
+      "2026-04-16|4:55～6:15|hon|hon_e5_S_arith|2",
+      "2026-04-23|4:55～6:15|hon|hon_e5_S_arith|2"
+    ],
+    "hon_e5_A_arith": [
+      "2026-04-03|4:55～6:15|hon|hon_e5_A_arith|3",
+      "2026-04-10|4:55～6:15|hon|hon_e5_A_arith|3",
+      "2026-04-17|4:55～6:15|hon|hon_e5_A_arith|3",
+      "2026-04-24|4:55～6:15|hon|hon_e5_A_arith|3"
+    ],
+    "hon_e5_A_jp": [
+      "2026-04-01|4:55～6:15|hon|hon_e5_A_jp|2",
+      "2026-04-08|4:55～6:15|hon|hon_e5_A_jp|2",
+      "2026-04-15|4:55～6:15|hon|hon_e5_A_jp|2",
+      "2026-04-22|4:55～6:15|hon|hon_e5_A_jp|2"
+    ],
+    "hon_e5_X_jp": [
+      "2026-04-18|4:55～6:15|hon|hon_e5_X_jp|6"
+    ],
+    "hon_e6_S_eng": [
+      "2026-04-07|4:55～6:15|hon|hon_e6_S_eng|1",
+      "2026-04-14|4:55～6:15|hon|hon_e6_S_eng|1",
+      "2026-04-21|4:55～6:15|hon|hon_e6_S_eng|1",
+      "2026-04-28|4:55～6:15|hon|hon_e6_S_eng|1"
+    ],
+    "hon_e6_A_eng": [
+      "2026-04-02|4:55～6:15|hon|hon_e6_A_eng|1",
+      "2026-04-09|4:55～6:15|hon|hon_e6_A_eng|1",
+      "2026-04-16|4:55～6:15|hon|hon_e6_A_eng|1",
+      "2026-04-23|4:55～6:15|hon|hon_e6_A_eng|1"
+    ],
+    "hon_e6_S_arith": [
+      "2026-04-03|4:55～6:15|hon|hon_e6_S_arith|1",
+      "2026-04-10|4:55～6:15|hon|hon_e6_S_arith|1",
+      "2026-04-17|4:55～6:15|hon|hon_e6_S_arith|1",
+      "2026-04-24|4:55～6:15|hon|hon_e6_S_arith|1"
+    ],
+    "hon_e6_A_arith": [
+      "2026-04-03|4:55～6:15|hon|hon_e6_A_arith|2",
+      "2026-04-10|4:55～6:15|hon|hon_e6_A_arith|2",
+      "2026-04-17|4:55～6:15|hon|hon_e6_A_arith|2",
+      "2026-04-24|4:55～6:15|hon|hon_e6_A_arith|2"
+    ],
+    "hon_e6_A_jp": [
+      "2026-04-01|4:55～6:15|hon|hon_e6_A_jp|1",
+      "2026-04-08|4:55～6:15|hon|hon_e6_A_jp|1",
+      "2026-04-15|4:55～6:15|hon|hon_e6_A_jp|1",
+      "2026-04-22|4:55～6:15|hon|hon_e6_A_jp|1"
+    ],
+    "hon_e6_X_jp": [
+      "2026-04-20|4:55～6:15|hon|hon_e6_X_jp|4"
+    ],
+    "minami_j1_S_eng": [
+      "2026-04-02|6:35～8:05|minami|minami_j1_S_eng|2",
+      "2026-04-03|6:35～8:05|minami|minami_j1_S_eng|3",
+      "2026-04-09|6:35～8:05|minami|minami_j1_S_eng|2",
+      "2026-04-16|6:35～8:05|minami|minami_j1_S_eng|2",
+      "2026-04-23|6:35～8:05|minami|minami_j1_S_eng|2"
+    ],
+    "minami_j1_A_eng": [
+      "2026-04-03|6:35～8:05|minami|minami_j1_A_eng|2",
+      "2026-04-04|6:35～8:05|minami|minami_j1_A_eng|1",
+      "2026-04-10|6:35～8:05|minami|minami_j1_A_eng|2",
+      "2026-04-17|6:35～8:05|minami|minami_j1_A_eng|2",
+      "2026-04-24|6:35～8:05|minami|minami_j1_A_eng|2"
+    ],
+    "minami_j1_S_math": [
+      "2026-04-01|4:45～6:15|minami|minami_j1_S_math|2",
+      "2026-04-06|6:35～8:05|minami|minami_j1_S_math|1",
+      "2026-04-13|6:35～8:05|minami|minami_j1_S_math|3",
+      "2026-04-20|6:35～8:05|minami|minami_j1_S_math|1",
+      "2026-04-27|6:35～8:05|minami|minami_j1_S_math|1"
+    ],
+    "minami_j1_A_math": [
+      "2026-04-01|6:35～8:05|minami|minami_j1_A_math|2",
+      "2026-04-04|4:45～6:15|minami|minami_j1_A_math|2",
+      "2026-04-08|6:35～8:05|minami|minami_j1_A_math|2",
+      "2026-04-15|6:35～8:05|minami|minami_j1_A_math|2",
+      "2026-04-22|6:35～8:05|minami|minami_j1_A_math|2"
+    ],
+    "minami_j1_B_math": [
+      "2026-04-01|6:35～8:05|minami|minami_j1_B_math|3",
+      "2026-04-08|6:35～8:05|minami|minami_j1_B_math|3",
+      "2026-04-11|6:35～8:05|minami|minami_j1_B_math|2",
+      "2026-04-15|6:35～8:05|minami|minami_j1_B_math|3",
+      "2026-04-22|6:35～8:05|minami|minami_j1_B_math|3"
+    ],
+    "minami_j1_S_jp": [
+      "2026-04-07|6:35～8:05|minami|minami_j1_S_jp|5",
+      "2026-04-14|6:35～8:05|minami|minami_j1_S_jp|5",
+      "2026-04-18|6:35～8:05|minami|minami_j1_S_jp|2",
+      "2026-04-28|6:35～8:05|minami|minami_j1_S_jp|4"
+    ],
+    "minami_j1_A_jp": [
+      "2026-04-07|6:35～8:05|minami|minami_j1_A_jp|6",
+      "2026-04-14|6:35～8:05|minami|minami_j1_A_jp|6",
+      "2026-04-21|6:35～8:05|minami|minami_j1_A_jp|3",
+      "2026-04-28|6:35～8:05|minami|minami_j1_A_jp|6"
+    ],
+    "minami_j2_S_eng": [
+      "2026-04-03|8:25～9:55|minami|minami_j2_S_eng|2",
+      "2026-04-10|8:25～9:55|minami|minami_j2_S_eng|3",
+      "2026-04-17|8:25～9:55|minami|minami_j2_S_eng|2",
+      "2026-04-24|8:25～9:55|minami|minami_j2_S_eng|2",
+      "2026-04-25|4:45～6:15|minami|minami_j2_S_eng|2"
+    ],
+    "minami_j2_A_eng": [
+      "2026-04-03|6:35～8:05|minami|minami_j2_A_eng|1",
+      "2026-04-10|6:35～8:05|minami|minami_j2_A_eng|1",
+      "2026-04-17|6:35～8:05|minami|minami_j2_A_eng|1",
+      "2026-04-24|6:35～8:05|minami|minami_j2_A_eng|1",
+      "2026-04-25|8:25～9:55|minami|minami_j2_A_eng|1"
+    ],
+    "minami_j2_B_eng": [
+      "2026-04-02|8:25～9:55|minami|minami_j2_B_eng|2",
+      "2026-04-03|8:25～9:55|minami|minami_j2_B_eng|1",
+      "2026-04-09|8:25～9:55|minami|minami_j2_B_eng|2",
+      "2026-04-16|8:25～9:55|minami|minami_j2_B_eng|2",
+      "2026-04-23|8:25～9:55|minami|minami_j2_B_eng|2"
+    ],
+    "minami_j2_X_eng": [
+      "2026-04-20|8:25～9:55|minami|minami_j2_X_eng|6"
+    ],
+    "minami_j2_S_math": [
+      "2026-04-01|8:25～9:55|minami|minami_j2_S_math|2",
+      "2026-04-07|6:35～8:05|minami|minami_j2_S_math|2",
+      "2026-04-14|6:35～8:05|minami|minami_j2_S_math|3",
+      "2026-04-21|6:35～8:05|minami|minami_j2_S_math|2",
+      "2026-04-22|8:25～9:55|minami|minami_j2_S_math|2",
+      "2026-04-28|6:35～8:05|minami|minami_j2_S_math|2"
+    ],
+    "minami_j2_A_math": [
+      "2026-04-07|6:35～8:05|minami|minami_j2_A_math|1",
+      "2026-04-14|6:35～8:05|minami|minami_j2_A_math|1",
+      "2026-04-15|8:25～9:55|minami|minami_j2_A_math|1",
+      "2026-04-21|6:35～8:05|minami|minami_j2_A_math|1",
+      "2026-04-27|8:25～9:55|minami|minami_j2_A_math|1",
+      "2026-04-28|6:35～8:05|minami|minami_j2_A_math|1"
+    ],
+    "minami_j2_B_math": [
+      "2026-04-01|8:25～9:55|minami|minami_j2_B_math|1",
+      "2026-04-06|8:25～9:55|minami|minami_j2_B_math|1",
+      "2026-04-08|8:25～9:55|minami|minami_j2_B_math|1",
+      "2026-04-15|8:25～9:55|minami|minami_j2_B_math|2",
+      "2026-04-20|8:25～9:55|minami|minami_j2_B_math|1",
+      "2026-04-22|8:25～9:55|minami|minami_j2_B_math|1"
+    ],
+    "minami_j2_X_math": [
+      "2026-04-16|6:35～8:05|minami|minami_j2_X_math|5"
+    ],
+    "minami_j2_S_jp": [
+      "2026-04-06|6:35～8:05|minami|minami_j2_S_jp|6",
+      "2026-04-13|6:35～8:05|minami|minami_j2_S_jp|6",
+      "2026-04-23|6:35～8:05|minami|minami_j2_S_jp|3",
+      "2026-04-28|8:25～9:55|minami|minami_j2_S_jp|4"
+    ],
+    "minami_j2_A_jp": [
+      "2026-04-07|8:25～9:55|minami|minami_j2_A_jp|6",
+      "2026-04-14|8:25～9:55|minami|minami_j2_A_jp|6",
+      "2026-04-21|8:25～9:55|minami|minami_j2_A_jp|3",
+      "2026-04-28|8:25～9:55|minami|minami_j2_A_jp|6"
+    ],
+    "minami_j3_S_eng": [
+      "2026-04-02|2:55～4:25|minami|minami_j3_S_eng|1",
+      "2026-04-03|8:25～9:55|minami|minami_j3_S_eng|3",
+      "2026-04-10|8:25～9:55|minami|minami_j3_S_eng|2",
+      "2026-04-17|8:25～9:55|minami|minami_j3_S_eng|1",
+      "2026-04-24|8:25～9:55|minami|minami_j3_S_eng|1",
+      "2026-04-25|6:35～8:05|minami|minami_j3_S_eng|2"
+    ],
+    "minami_j3_A_eng": [
+      "2026-04-02|8:25～9:55|minami|minami_j3_A_eng|1",
+      "2026-04-04|4:45～6:15|minami|minami_j3_A_eng|1",
+      "2026-04-09|8:25～9:55|minami|minami_j3_A_eng|1",
+      "2026-04-16|8:25～9:55|minami|minami_j3_A_eng|1",
+      "2026-04-18|6:35～8:05|minami|minami_j3_A_eng|1",
+      "2026-04-23|8:25～9:55|minami|minami_j3_A_eng|1"
+    ],
+    "minami_j3_B_eng": [
+      "2026-04-02|6:35～8:05|minami|minami_j3_B_eng|1",
+      "2026-04-03|2:55～4:25|minami|minami_j3_B_eng|1",
+      "2026-04-09|6:35～8:05|minami|minami_j3_B_eng|1",
+      "2026-04-10|8:25～9:55|minami|minami_j3_B_eng|1",
+      "2026-04-16|6:35～8:05|minami|minami_j3_B_eng|1",
+      "2026-04-23|6:35～8:05|minami|minami_j3_B_eng|1"
+    ],
+    "minami_j3_X_eng": [
+      "2026-04-02|6:35～8:05|minami|minami_j3_X_eng|4",
+      "2026-04-09|6:35～8:05|minami|minami_j3_X_eng|4",
+      "2026-04-16|6:35～8:05|minami|minami_j3_X_eng|4"
+    ],
+    "minami_j3_S_math": [
+      "2026-04-07|8:25～9:55|minami|minami_j3_S_math|2",
+      "2026-04-14|8:25～9:55|minami|minami_j3_S_math|2",
+      "2026-04-18|4:45～6:15|minami|minami_j3_S_math|1",
+      "2026-04-21|8:25～9:55|minami|minami_j3_S_math|2",
+      "2026-04-25|8:25～9:55|minami|minami_j3_S_math|2",
+      "2026-04-28|8:25～9:55|minami|minami_j3_S_math|2"
+    ],
+    "minami_j3_A_math": [
+      "2026-04-01|6:35～8:05|minami|minami_j3_A_math|1",
+      "2026-04-08|6:35～8:05|minami|minami_j3_A_math|1",
+      "2026-04-11|8:25～9:55|minami|minami_j3_A_math|1",
+      "2026-04-15|6:35～8:05|minami|minami_j3_A_math|1",
+      "2026-04-22|6:35～8:05|minami|minami_j3_A_math|1",
+      "2026-04-25|4:45～6:15|minami|minami_j3_A_math|1"
+    ],
+    "minami_j3_B_math": [
+      "2026-04-07|8:25～9:55|minami|minami_j3_B_math|1",
+      "2026-04-14|8:25～9:55|minami|minami_j3_B_math|1",
+      "2026-04-18|8:25～9:55|minami|minami_j3_B_math|1",
+      "2026-04-21|8:25～9:55|minami|minami_j3_B_math|1",
+      "2026-04-25|6:35～8:05|minami|minami_j3_B_math|1",
+      "2026-04-28|8:25～9:55|minami|minami_j3_B_math|1"
+    ],
+    "minami_j3_X_math": [
+      "2026-04-01|8:25～9:55|minami|minami_j3_X_math|4",
+      "2026-04-08|8:25～9:55|minami|minami_j3_X_math|4",
+      "2026-04-22|8:25～9:55|minami|minami_j3_X_math|4"
+    ],
+    "minami_j3_S_jp": [
+      "2026-04-03|6:35～8:05|minami|minami_j3_S_jp|5",
+      "2026-04-07|6:35～8:05|minami|minami_j3_S_jp|4",
+      "2026-04-14|6:35～8:05|minami|minami_j3_S_jp|2",
+      "2026-04-17|6:35～8:05|minami|minami_j3_S_jp|5",
+      "2026-04-24|6:35～8:05|minami|minami_j3_S_jp|5"
+    ],
+    "minami_j3_A_jp": [
+      "2026-04-01|8:25～9:55|minami|minami_j3_A_jp|5",
+      "2026-04-08|8:25～9:55|minami|minami_j3_A_jp|5",
+      "2026-04-11|6:35～8:05|minami|minami_j3_A_jp|1",
+      "2026-04-15|8:25～9:55|minami|minami_j3_A_jp|5",
+      "2026-04-22|8:25～9:55|minami|minami_j3_A_jp|5"
+    ],
+    "minami_j3_X_jp": [
+      "2026-04-01|6:35～8:05|minami|minami_j3_X_jp|5",
+      "2026-04-08|6:35～8:05|minami|minami_j3_X_jp|5",
+      "2026-04-22|6:35～8:05|minami|minami_j3_X_jp|5"
+    ],
+    "minami_j3_S_sci": [
+      "2026-04-04|6:35～8:05|minami|minami_j3_S_sci|2",
+      "2026-04-06|6:35～8:05|minami|minami_j3_S_sci|2",
+      "2026-04-13|6:35～8:05|minami|minami_j3_S_sci|2",
+      "2026-04-20|6:35～8:05|minami|minami_j3_S_sci|2",
+      "2026-04-27|6:35～8:05|minami|minami_j3_S_sci|2"
+    ],
+    "minami_j3_A_sci": [
+      "2026-04-04|8:25～9:55|minami|minami_j3_A_sci|2",
+      "2026-04-06|8:25～9:55|minami|minami_j3_A_sci|2",
+      "2026-04-13|8:25～9:55|minami|minami_j3_A_sci|1",
+      "2026-04-20|8:25～9:55|minami|minami_j3_A_sci|2",
+      "2026-04-27|8:25～9:55|minami|minami_j3_A_sci|2"
+    ],
+    "minami_j3_S_soc": [
+      "2026-04-03|4:45～6:15|minami|minami_j3_S_soc|5",
+      "2026-04-04|8:25～9:55|minami|minami_j3_S_soc|6",
+      "2026-04-06|8:25～9:55|minami|minami_j3_S_soc|5",
+      null,
+      "2026-04-13|8:25～9:55|minami|minami_j3_S_soc|2",
+      "2026-04-20|8:25～9:55|minami|minami_j3_S_soc|5",
+      "2026-04-27|8:25～9:55|minami|minami_j3_S_soc|5"
+    ],
+    "minami_j3_A_soc": [
+      null,
+      "2026-04-04|6:35～8:05|minami|minami_j3_A_soc|6",
+      "2026-04-06|6:35～8:05|minami|minami_j3_A_soc|5",
+      "2026-04-07|4:45～6:15|minami|minami_j3_A_soc|4",
+      "2026-04-13|6:35～8:05|minami|minami_j3_A_soc|1",
+      "2026-04-20|6:35～8:05|minami|minami_j3_A_soc|5",
+      "2026-04-27|6:35～8:05|minami|minami_j3_A_soc|5"
+    ],
+    "minami_e4_A_arith": [
+      "2026-04-01|4:55～6:15|minami|minami_e4_A_arith|3",
+      "2026-04-08|4:55～6:15|minami|minami_e4_A_arith|3",
+      "2026-04-15|4:55～6:15|minami|minami_e4_A_arith|3",
+      "2026-04-22|4:55～6:15|minami|minami_e4_A_arith|3"
+    ],
+    "minami_e4_X_arith": [
+      "2026-04-13|4:55～6:15|minami|minami_e4_X_arith|4"
+    ],
+    "minami_e4_A_jp": [
+      "2026-04-02|4:55～6:15|minami|minami_e4_A_jp|3",
+      "2026-04-09|4:55～6:15|minami|minami_e4_A_jp|3",
+      "2026-04-16|4:55～6:15|minami|minami_e4_A_jp|3",
+      "2026-04-23|4:55～6:15|minami|minami_e4_A_jp|3"
+    ],
+    "minami_e4_X_jp": [
+      "2026-04-24|4:55～6:15|minami|minami_e4_X_jp|5"
+    ],
+    "minami_e5_A_eng": [
+      "2026-04-02|4:55～6:15|minami|minami_e5_A_eng|2",
+      "2026-04-09|4:55～6:15|minami|minami_e5_A_eng|2",
+      "2026-04-16|4:55～6:15|minami|minami_e5_A_eng|2",
+      "2026-04-23|4:55～6:15|minami|minami_e5_A_eng|2"
+    ],
+    "minami_e5_S_arith": [
+      "2026-04-06|4:55～6:15|minami|minami_e5_S_arith|2",
+      "2026-04-13|4:55～6:15|minami|minami_e5_S_arith|1",
+      "2026-04-20|4:55～6:15|minami|minami_e5_S_arith|1",
+      "2026-04-27|4:55～6:15|minami|minami_e5_S_arith|1"
+    ],
+    "minami_e5_A_arith": [
+      "2026-04-07|4:55～6:15|minami|minami_e5_A_arith|1",
+      "2026-04-14|4:55～6:15|minami|minami_e5_A_arith|1",
+      "2026-04-21|4:55～6:15|minami|minami_e5_A_arith|1",
+      "2026-04-28|4:55～6:15|minami|minami_e5_A_arith|1"
+    ],
+    "minami_e5_A_jp": [
+      "2026-04-03|4:55～6:15|minami|minami_e5_A_jp|3",
+      "2026-04-10|4:55～6:15|minami|minami_e5_A_jp|3",
+      "2026-04-17|4:55～6:15|minami|minami_e5_A_jp|3",
+      "2026-04-24|4:55～6:15|minami|minami_e5_A_jp|3"
+    ],
+    "minami_e5_X_jp": [
+      "2026-04-18|4:55～6:15|minami|minami_e5_X_jp|4"
+    ],
+    "minami_e6_S_eng": [
+      "2026-04-03|4:55～6:15|minami|minami_e6_S_eng|1",
+      "2026-04-10|4:55～6:15|minami|minami_e6_S_eng|1",
+      "2026-04-17|4:55～6:15|minami|minami_e6_S_eng|1",
+      "2026-04-24|4:55～6:15|minami|minami_e6_S_eng|1"
+    ],
+    "minami_e6_A_eng": [
+      "2026-04-03|4:55～6:15|minami|minami_e6_A_eng|2",
+      "2026-04-10|4:55～6:15|minami|minami_e6_A_eng|2",
+      "2026-04-17|4:55～6:15|minami|minami_e6_A_eng|2",
+      "2026-04-24|4:55～6:15|minami|minami_e6_A_eng|2"
+    ],
+    "minami_e6_S_arith": [
+      "2026-04-07|4:55～6:15|minami|minami_e6_S_arith|2",
+      "2026-04-14|4:55～6:15|minami|minami_e6_S_arith|2",
+      "2026-04-21|4:55～6:15|minami|minami_e6_S_arith|2",
+      "2026-04-28|4:55～6:15|minami|minami_e6_S_arith|2"
+    ],
+    "minami_e6_A_arith": [
+      "2026-04-01|4:55～6:15|minami|minami_e6_A_arith|1",
+      "2026-04-08|4:55～6:15|minami|minami_e6_A_arith|1",
+      "2026-04-15|4:55～6:15|minami|minami_e6_A_arith|1",
+      "2026-04-22|4:55～6:15|minami|minami_e6_A_arith|1"
+    ],
+    "minami_e6_A_jp": [
+      "2026-04-02|4:55～6:15|minami|minami_e6_A_jp|1",
+      "2026-04-09|4:55～6:15|minami|minami_e6_A_jp|1",
+      "2026-04-16|4:55～6:15|minami|minami_e6_A_jp|1",
+      "2026-04-23|4:55～6:15|minami|minami_e6_A_jp|1"
+    ],
+    "minami_e6_X_jp": [
+      "2026-04-20|4:55～6:15|minami|minami_e6_X_jp|5"
+    ]
+  }
+}
