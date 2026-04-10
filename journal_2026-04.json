@@ -1,282 +1,7 @@
 {
   "month": "2026-04",
-  "generatedAt": "2026-04-09T22:55:10",
+  "generatedAt": "2026-04-10T12:49:10",
   "entries": {
-    "2026-04-03|4:55～6:15|minami|minami_e6_S_eng|1": {
-      "content": "English Travel UNIT2 C・D",
-      "page": "P18 緑＃31まで",
-      "report": "三単現の復習をしてからDoes, doesn'tの導入。三単現のルールは何とか身に付けることができているが、定着まではまだまだ練習が必要そうである。",
-      "recordingUrl": "",
-      "homework": [
-        "緑テキスト",
-        "#27～29、32～36"
-      ]
-    },
-    "2026-04-22|4:55～6:15|hon|hon_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|6:35～8:05|hon|hon_j2_B_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-11|6:35～8:05|hon|hon_j3_S_sci|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|6:35～8:05|minami|minami_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "いろいろな因数分解（２）",
-      "page": "P37まで",
-      "report": "因数分解の公式２・３の利用のところ。あまりできていなかったので、黒板にて何度も練習した。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/TF5rL_izrtnSO61gmpTNCd4PCFKudw21ClMk1qBN-Qc7c0MjgpOoIHYv1s6_GrR2.6p7-VzIxdeR6zbL4",
-      "homework": [
-        "ｐ41①～⑪までと、",
-        "ｐ42□１～□６まで"
-      ]
-    },
-    "2026-04-24|8:25～9:55|minami|minami_j3_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "content": "物語文",
-      "page": "新中学問題集ｐ１６～１７",
-      "report": "今回は物語文を扱った。大越、大宮、佐々木はクラスの中では理解力があるように感じる。それ以外は中々自分の言葉で答案を作るのが難しい様子。また、園田、藤井は指名をしても反応がほとんどない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/_kZvQaZpMsqezQSv2A-sPLkZNZLm0zeTJMEmSdKq2m8egfHrGS-VqSDpppZQ_Fwg.uKZxyS9VmRt26-p-?startTime=1775554818000",
-      "homework": [
-        "漢字帳ｐ１９～２２"
-      ]
-    },
-    "2026-04-08|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "式の計算、図形と文字式まで",
-      "page": "p54まで",
-      "report": "少し分数が出てきただけで躓いてしまう者が多かった。川村穂乃華さんがまだ少し不安定な部分が多いのでよく復習できるように。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/z4kZ7VMOpK0daEWPYTGNACKQZp5Ajw5INri5j9HRYjLWolgJF0bAQHuEbeYtB1I9.BgCpIBUZ19olZch9?startTime=1775647523000",
-      "homework": [
-        "p53、p55、p57～58",
-        "ここまでの内容の復習（次回単元テスト）"
-      ]
-    },
-    "2026-04-20|8:25～9:55|minami|minami_j2_X_eng|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "まとめと演習",
-      "page": "",
-      "report": "",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/_0SgThR9xLnyDsIFsSYToGLavpqMAA5lhK_6NfU-yWJ-cxDMJfjeJZHw_RcJIjqe.I_cztH96xeVxpnKC?startTime=1775030181000",
-      "homework": [
-        "ホープp44～45、p66～67、計算ドリルp3～4"
-      ]
-    },
-    "2026-04-22|6:35～8:05|minami|minami_j3_X_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|8:25～9:55|minami|minami_j3_S_soc|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|minami|minami_j3_S_jp|4": {
-      "content": "文節",
-      "page": "要対p18-19,36【１】",
-      "report": "北澤さんが見学をしたが、要対のページがなく、こちらの画面を大きく見せながら進めた。本日から文法に入ったが、やはり中３からの受講組が弱い。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
-      "homework": [
-        "漢字p60-64"
-      ]
-    },
-    "2026-04-06|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "content": "江戸終了",
-      "page": "マイクリアp78～",
-      "report": "江戸は資料問題、総合問題も含め全て終了。特を入れた結果、完全にカリキュラム通りの進行となっている。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/SWBi8UTS1AlCW5OS8-5VVsZlIAuHGY3mPN63yE407bPXmcd6qlXjHH3h9Du-vdFr.XgKqcMulmvtVC57W",
-      "homework": [
-        "ドリルp60-65〇込み"
-      ]
-    },
-    "2026-04-22|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|8:25～9:55|hon|hon_j3_S_eng|3": {
-      "content": "連語テキストp23まで",
-      "page": "HereWeGoテキスト#23まで",
-      "report": "宿題個所の連語はプリントにして確認テストに取り組ませた。沢井の定着が悪い。その後はHWGテキストの進み、Unit1のGoalを。ここは単語のみならず、構文も難しい。後置修飾がついた名詞句の訳し方で苦戦する者がいたので、いくつか練習。また主語動詞を見極めよと指導した。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/vr-8O2CfaCueGfOq_1-qRQLTYtvaw3wZ80IFVvHYcDbCcgYMbFI4jhSUg0tGy4rY.4QsLo74rzc4wzfH2?startTime=1775129176000",
-      "homework": [
-        "HereWeGoテキスト#24から26,p23"
-      ]
-    },
-    "2026-04-17|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|6:35～8:05|hon|hon_j1_A_eng|1": {
-      "content": "自己紹介、HWGunit１",
-      "page": "unit１part１まで",
-      "report": "今回は自己紹介の続きとHWGに入った。初めてや入りたての生徒が多く、これまでの復習を織り交ぜながら進めることになった。特に一般動詞とbe動詞の区別や疑問文の作り方を一人一人確認していくとかなり時間がかかる。",
-      "recordingUrl": "",
-      "homework": [
-        "HWG　unit１　♯４～７"
-      ]
-    },
-    "2026-04-17|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-02|4:55～6:15|minami|minami_e4_A_jp|3": {
-      "content": "ことばのきまり",
-      "page": "p34-35",
-      "report": "菅原と清水が宿題忘れ。菅原は、集中力がなく非常に手がかかる。また、作業も雑。斎藤兄弟は、慣れてきたためか表情がとても豊かになった。",
-      "recordingUrl": "",
-      "homework": [
-        "漢字帳P23-26"
-      ]
-    },
-    "2026-04-28|4:55～6:15|hon|hon_e6_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "Here We Go UNIT1 / L2 冠詞・名詞",
-      "page": "Ｌ２　Ｐ６説明まで",
-      "report": "Here We GoのUNIT１の訳を終え、ＵＮＩＴ１の内容を和→英をオーラルで確認。はじめのうちは教科書を丸暗記するくらい読み込むよう伝えた。その後は通常テキストＬ２に入り、冠詞の導入。theの説明まで終えて終了。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/uIDVU75N7zk1D0TDOA4zhjZZ4AkKMOQ3GvwuopS3Ydg9Bdu6AJh3EE_pDAQyud4F.wHdCTj6Obh6yz8TO?startTime=1775295486000",
-      "homework": [
-        "通常テキスト：Ｌ１#89,90",
-        "Here We Go UNIT1 #19～21"
-      ]
-    },
-    "2026-04-10|4:55～6:15|minami|minami_e5_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|4:55～6:15|minami|minami_e4_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "テスト",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-24|6:35～8:05|minami|minami_j3_S_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|4:55～6:15|hon|hon_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|6:35～8:05|minami|minami_j1_S_eng|2": {
-      "content": "L2　冠詞／don't,can, can't",
-      "page": "L2#15まで",
-      "report": "前回の冠詞の続きから。単数・複数をしっかりと見抜くよう指導しながら演習問題を進めた。続いてdon't,can,can'tの指導へ。カリキュラムは進んでいるので、口頭英作文、筆記の英作文に時間を割いた。次回は単元テストなので、L1の最後の自習ページを宿題とし、テストに備えるよう伝えた。",
-      "recordingUrl": "",
-      "homework": [
-        "L1　＃92～97"
-      ]
-    },
-    "2026-04-10|8:25～9:55|hon|hon_j3_S_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|4:55～6:15|minami|minami_e6_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|8:25～9:55|minami|minami_j2_A_jp|6": {
-      "content": "古文",
-      "page": "新中学問題集ｐ８０",
-      "report": "今回は古文を扱った。時代背景などを解説して本文に入った。古文特有の省略にはまだ慣れていないようで、苦戦する生徒が多かった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Udr7khMiwmGH1Cr0PXWzUs_72fR-9t-aQN-5gr1rgi2ZiHXc6aGDZfTXQWFRuEKY.bXYQHx2_XioH9HW9?startTime=1775561267000",
-      "homework": [
-        "漢字帳ｐ２１～２４"
-      ]
-    },
-    "2026-04-10|4:55～6:15|hon|hon_e6_S_arith|1": {
-      "content": "単元テスト①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
     "2026-04-06|6:35～8:05|hon|hon_j3_S_sci|7": {
       "content": "19大気の動きと日本の天気",
       "page": "ｐ116-ｐ121",
@@ -287,288 +12,19 @@
         "〇付けまで"
       ]
     },
-    "2026-04-25|6:35～8:05|minami|minami_j3_B_math|1": {
+    "2026-04-16|8:25～9:55|hon|hon_j3_B_math|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|6:35～8:05|hon|hon_j2_S_math|1": {
+    "2026-04-10|6:35～8:05|hon|hon_j1_A_math|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
-    },
-    "2026-04-18|4:45～6:15|minami|minami_j3_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|hon|hon_e6_S_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|8:25～9:55|minami|minami_j3_A_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-18|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|8:25～9:55|minami|minami_j3_A_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|4:45～6:15|hon|hon_j3_S_soc|4": {
-      "content": "江戸／p78【２】商業まで",
-      "page": "マイクリアp78～",
-      "report": "p77の演習を使って室町～安土の復習を終えたのち、p78の江戸へ。明日は順調にいけば江戸は終わる。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/igsNBLQgnH_bJRtkirqH5-S0qgNeeFf25qYrTrnr6Z7YN74TXnbejGBXCoF60nZl.dqxt-AtF46dZvGV2",
-      "homework": [
-        "なし／明日まとめて"
-      ]
-    },
-    "2026-04-02|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "リスニング演習",
-      "page": "#39のNo2まで",
-      "report": "現在完了のまとめへ。上下間の差が如実に出始めた。宮本・式田はかなり厳しい。柴田・具志堅はかなり気合が入っていてよい。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/7TU46EbK9ievIovyho7NKDNJCZSnqARuvXA_dr2mjRIkQz9lPic9-KFMvI_O4Xv_.24iugJl1YvmRkwmm?startTime=1775129481000",
-      "homework": [
-        "連語帳P28-29",
-        "通常テキスト#37/38"
-      ]
-    },
-    "2026-04-20|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|2:55～4:25|hon|hon_j2_B_math|1": {
-      "content": "等式の変形の最初",
-      "page": "P49例２①まで",
-      "report": "進度に余裕があったので、偶数・奇数や表に関しても少し説明しました。その後等式の変形に入るところで、項に関して石原などは分かっていなかったので復習を多くしました。よってそのページの途中まで進んで終わりました。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/jwTdPCSW89Tw9s6roaLLpHxntYK2UXfrdWQ1N4FY_nm7MEcKvPix2VXNQ_PDe-G-.vLaBLRtszEyNDCIs",
-      "homework": [
-        "P46□２，□３"
-      ]
-    },
-    "2026-04-11|8:25～9:55|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|hon|hon_j3_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|8:25～9:55|minami|minami_j3_X_math|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|hon|hon_j2_X_math|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "19大気の動きと日本の天気",
-      "page": "ｐ118-1まで",
-      "report": "18の前線の問題から19大気の動きの途中まで終了した。次回は続きから進める。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/gnG_A0U_xFzB6f3D2vIq-R6ALdA_sJ6zw0V11uQ27ajgd0x_2zaKzsz5pf3EIOc3.-wWButRPGHgMoHWC?startTime=1775475267000",
-      "homework": [
-        "ドリルｐ62（ｐ63）"
-      ]
-    },
-    "2026-04-10|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "正負の数、四則混合まで",
-      "page": "",
-      "report": "",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/JwwGJKIYH3nFGu2zY1KqSERRJo7Rqg84NyCi7VT9I-WhK0y1HaVx8kkJojwXzTqw.K0vLjywiov8R4PH1?startTime=1775036103000",
-      "homework": [
-        "p43残り、p44～45残り、p50残り、p51残り、p52残り"
-      ]
-    },
-    "2026-04-14|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "18前線の通過と天気の変化",
-      "page": "ｐ112-ｐ115",
-      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000",
-      "homework": [
-        "ドリルｐ62～ｐ63",
-        "〇付けまで"
-      ]
-    },
-    "2026-04-14|4:55～6:15|minami|minami_e5_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|6:35～8:05|hon|hon_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|6:35～8:05|minami|minami_j3_A_soc|6": {
-      "content": "安土桃山終了、江戸(鎖国の完成まで)",
-      "page": "マイクリアp78～",
-      "report": "江戸は鎖国完成まで。ただ、少々駆け足になってしまった。次回p82の【１】を使って復習後、何とか江戸終了までもっていく。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/BV9zD4FA4InXTXXx1nPJ85ptYW3KGFt8HH5vSRGWedVN91HCgOva6dI58hp4cGAB.I0i-NvVTvK_-tmP0",
-      "homework": [
-        "ドリルp58-59〇こみ"
-      ]
-    },
-    "2026-04-04|6:35～8:05|hon|hon_j1_B_math|2": {
-      "content": "素因数分解",
-      "page": "P59＃60⑤まで",
-      "report": "カリキュラムが詰まりすぎているのでなんとか工夫しながら先に進めたが、やはりまだ遅れはある。とはいえ次回でテストに向けて形にしてください。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Rc3bUjuQHPX_Tw5XSCeW0u62HTSw2SeKKavxqaF3Dqm_Y24Z_2XfsqeS3p5hLDVf.p69ijQEMKnHl8ZNp?startTime=1775295656000",
-      "homework": [
-        "P53③以外、P57",
-        "P59＃60⑥～⑧、P60□１、□２"
-      ]
-    },
-    "2026-04-14|4:55～6:15|hon|hon_e6_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "分配法則",
-      "page": "p56まで",
-      "report": "藤井俊介君は筆記用具を忘れて、そのことをこちらが気付くまで何も手を動かさずにいた。板橋稜君があまり話を聞いていないような式を書いていたのでよく聞いておけるように。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/wn9ICcOUhDtb_4Gl6pTsjMWkUMLuoG5bI7vALBd7ICsuSGjCsRhQJzoh8DzhPrs4.9-neZ7Jv2KqMkwXt?startTime=1775640920000",
-      "homework": [
-        "p57、p63～p66★以外"
-      ]
-    },
-    "2026-04-28|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|8:25～9:55|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|8:25～9:55|hon|hon_j3_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|4:55～6:15|minami|minami_e5_A_eng|2": {
-      "content": "UNIT2　Bの復習～C 英単語６コ",
-      "page": "",
-      "report": "本日の単語テストは皆まずまずの出来。岡﨑も満点だったのでほめたが、文字と発音が一致していないふしがあるので、少しずつフォニックスも取り入れたいところ。音読練習も宿題と課すこととした。",
-      "recordingUrl": "",
-      "homework": [
-        "単語６コ練習 P19音読・暗唱"
-      ]
-    },
-    "2026-04-09|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "新小問・体積",
-      "page": "p62まで",
-      "report": "長谷川佳那汰君がどうしても図形のイメージに苦労していた。単位変換含めよく練習できるといい。西村涼君が宿題が途中までしかやっていなかったので次回確認。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/An1f2VKIkRG30e728jip_Xsr_6-mGSfEBnWxqzPz66dnRvSv6M_dJxPI2Hc7pgAK.4R_ZxhcHtrI2ewdd?startTime=1775721388000",
-      "homework": [
-        "新小学問題集p63～65残り",
-        "算数ドリルp21～24"
-      ]
-    },
-    "2026-04-07|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "content": "物語文",
-      "page": "新中学問題集ｐ１６～１７",
-      "report": "今回は物語文を扱った。大越、大宮、佐々木はクラスの中では理解力があるように感じる。それ以外は中々自分の言葉で答案を作るのが難しい様子。また、園田、藤井は指名をしても反応がほとんどない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/_kZvQaZpMsqezQSv2A-sPLkZNZLm0zeTJMEmSdKq2m8egfHrGS-VqSDpppZQ_Fwg.uKZxyS9VmRt26-p-?startTime=1775554818000",
-      "homework": [
-        "漢字帳ｐ１９～２２"
-      ]
-    },
-    "2026-04-03|8:25～9:55|minami|minami_j2_S_eng|2": {
-      "content": "HereWeGoテキスト#25まで",
-      "page": "",
-      "report": "HereWeGounit1を進めた。過去進行形や接続詞whenの復習をするとともに、at first1の使い方、excited/excitingの違い、somethingと形容詞なども。ノートをとるのが以前よりも積極的になってきた。",
-      "recordingUrl": "なし",
-      "homework": [
-        "HereWeGo#12から14,",
-        "19から21,26,27,p19"
-      ]
     },
     "2026-04-03|4:45～6:15|minami|minami_j3_S_soc|5": {
       "content": "江戸／p78【２】商業まで",
@@ -579,616 +35,7 @@
         "なし／明日まとめて"
       ]
     },
-    "2026-04-14|6:35～8:05|hon|hon_j2_B_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-02|4:55～6:15|hon|hon_e6_A_eng|1": {
-      "content": "緑テキスト#11まで",
-      "page": "EnglishTravelerp12の４段目/p13C②まで",
-      "report": "宿題個所の単語はテキストを伏せて答えさせた。おとでは言えるが、つづりはまだまだ。暗唱は少し詰まるものもいた。Who isではthat woman/She isも練習した。",
-      "recordingUrl": "",
-      "homework": [
-        "緑テキスト#9,10,13",
-        "緑テキスト#11/13で練習した文を見ずに言えるようにする"
-      ]
-    },
-    "2026-04-22|8:25～9:55|hon|hon_j3_X_math|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|4:55～6:15|hon|hon_e6_S_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
     "2026-04-27|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|8:25～9:55|minami|minami_j3_A_sci|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "山村学園",
-      "page": "",
-      "report": "山村学園を扱う。実話をもとにした長文だが、大意はみなOKだが、金子も含め細部なるとまだまだつかみ切れない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/wv8cf3nf2i0GRwyLRNFVrIqFyhusH1zr8DYLSwM__fGSUhHJiHmWbwdXKQxI6iWP.Nbaj4uaBPQXFJzzR?startTime=1775122518000",
-      "homework": [
-        "ST５青森県"
-      ]
-    },
-    "2026-04-01|8:25～9:55|hon|hon_j2_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|4:55～6:15|minami|minami_e6_X_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|4:55～6:15|hon|hon_e6_A_jp|1": {
-      "content": "文の組み立て、漢字の音訓",
-      "page": "p32-35,p81-83",
-      "report": "文の組み立て終了後、音訓の指導に入った。が、練習量が圧倒的に足りていない。p82【３】に相当時間がかかってしまった。p83【２】は多少の導入は済ませたので、各自で取り組むよう指示した。",
-      "recordingUrl": "",
-      "homework": [
-        "単テに向けて勉強"
-      ]
-    },
-    "2026-04-21|6:35～8:05|hon|hon_j2_B_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|4:45～6:15|minami|minami_j1_S_math|2": {
-      "content": "要点２７数の範囲と四則",
-      "page": "P64",
-      "report": "",
-      "recordingUrl": "",
-      "homework": [
-        "P62演習",
-        "P69□９，１０"
-      ]
-    },
-    "2026-04-28|6:35～8:05|minami|minami_j1_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "18前線の通過と天気の変化",
-      "page": "ｐ114□１まで",
-      "report": "雲のできかたから□１気圧と風のところまで終了",
-      "recordingUrl": "",
-      "homework": [
-        "ドリルｐ60（ｐ61）"
-      ]
-    },
-    "2026-04-08|8:25～9:55|hon|hon_j2_S_eng|2": {
-      "content": "the cookies",
-      "page": "#１",
-      "report": "今回はthe cookiesを扱った。清宮、佐藤、伊藤の訳がスムーズにいかないことがあった。単語を覚える速度などもやや見劣りする。この三名はやや心配。",
-      "recordingUrl": "",
-      "homework": [
-        "HWG the cookies #２",
-        "テキスト#６１，６２"
-      ]
-    },
-    "2026-04-10|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|6:35～8:05|minami|minami_j3_X_jp|5": {
-      "content": "文法終了",
-      "page": "p183-187",
-      "report": "文節、単語に特化した文法指導は本日で終了。仕上がりとしては、大宮、金子の２名が非常に良い。",
-      "recordingUrl": "",
-      "homework": [
-        "なし"
-      ]
-    },
-    "2026-04-04|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "18前線の通過と天気の変化",
-      "page": "ｐ112-ｐ115",
-      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000",
-      "homework": [
-        "ドリルｐ62～ｐ63",
-        "〇付けまで"
-      ]
-    },
-    "2026-04-13|4:55～6:15|minami|minami_e4_X_arith|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|minami|minami_e5_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|6:35～8:05|minami|minami_j3_A_soc|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|8:25～9:55|minami|minami_j3_S_soc|6": {
-      "content": "江戸／文化を除き終了",
-      "page": "マイクリアp78～",
-      "report": "江戸は文化を除き終了。文化は入試直前で扱う。次回p83の演習後、p90-93の問題に取りくむつもり。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/R_tPieh8-KfLSr8NH9eVrEvITPSLY4HKS41WfAQ2b21PUJNCG_q3zFaFhsSzpr-p.h25wUgaXD4Ay-lY_?startTime=1775302167000",
-      "homework": [
-        "ドリルp58-59〇こみ"
-      ]
-    },
-    "2026-04-03|2:55～4:25|hon|hon_j1_S_math|2": {
-      "content": "p79#80まで",
-      "page": "",
-      "report": "正負の数の演習さいごまで。高橋ゆのと斎藤ゆきながオンラインで参加。高はしは少し手が上がらないことが多かった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/XghrPoJWMw4a_tKd1sCDFhjSj5M5ISnUu8vgL0w1QahlCPolvpNt8muADm0nyJwz.c_9l-7Eow6BGEeaH",
-      "homework": [
-        "＃63③、ｐ68～70（前回のもの）"
-      ]
-    },
-    "2026-04-03|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "要点23",
-      "page": "ｐ55＃５６",
-      "report": "等式の変形と図形と文字式まですすんだ。全体的にまじめに取り組んでいるが、豊田・菅原らが少しできていない。",
-      "recordingUrl": "",
-      "homework": [
-        "ｐ56～ｐ58□７"
-      ]
-    },
-    "2026-04-23|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|4:55～6:15|minami|minami_e4_A_jp|3": {
-      "content": "国語辞典の使い方",
-      "page": "漢字帳p21-22",
-      "homework": [
-        "漢字帳P28-31",
-        "単語テスト勉強"
-      ],
-      "report": "斎藤兄弟・菅原が宿題忘れ。菅原はほぼ未完。入会して１か月もたたないうちにこの状態は、今後が心配。国語辞典の使い方は、清水が一人大苦戦。",
-      "recordingUrl": ""
-    },
-    "2026-04-06|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "江戸／田沼の失脚まで",
-      "page": "マイクリアp78～",
-      "report": "宿題は、明日までに終わらせるのは無理なのでスクーリングまでに終わらせるよう指示した。明日は江戸を終わらせる。演習も行うつもり。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/_mea1-b9aD9qgK8-BSzxtcaWuVN7WESPqgQO4EOLJ_S0r5_vcDUFBKIJ8MvYE4tZ.M-rugddrgiVBFFVm",
-      "homework": [
-        "ドリルp60-65〇込み"
-      ]
-    },
-    "2026-04-15|8:25～9:55|minami|minami_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|8:25～9:55|minami|minami_j2_S_eng|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|4:55～6:15|hon|hon_e6_S_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-13|6:35～8:05|minami|minami_j1_S_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|8:25～9:55|hon|hon_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|4:55～6:15|minami|minami_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-18|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-11|6:35～8:05|minami|minami_j3_A_jp|1": {
-      "content": "単元テストＡ①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-11|6:35～8:05|hon|hon_j1_A_eng|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-11|6:35～8:05|hon|hon_j3_A_soc|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|4:55～6:15|minami|minami_e5_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "青森県",
-      "page": "第６段落まで",
-      "homework": [
-        "ＳＴ６お茶の水附属"
-      ],
-      "report": "金子が思わぬところで、失点が目立った。原因は右側が弱い。選択肢の場合分けの指導、callの語法など、高度なものを行ってはいるが、何とかついてこられている。永田に続き、大宮も上げてきた。",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|minami|minami_j1_S_jp|5": {
-      "content": "小説文",
-      "page": "P12-15",
-      "report": "漢字帳の確認はみなＯＫ。小説文を扱うが、見学中の大木君は問題慣れしていない様子だが、底力はありそう。髙橋彩音は時折、変な音読するのが気になった。",
-      "recordingUrl": "",
-      "homework": [
-        "漢字帳P19-22"
-      ]
-    },
-    "2026-04-20|4:55～6:15|hon|hon_e6_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|minami|minami_j1_S_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-17|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|minami|minami_j2_X_math|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|8:25～9:55|minami|minami_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|8:25～9:55|hon|hon_j2_A_math|2": {
-      "content": "式の計算、表と規則性まで",
-      "page": "p41まで",
-      "report": "山口結月さんがオンラインだったが回線の調子が悪かったようで途中から落ちてしまっていた。式証明の進め方自体は総じてよくできていたので宿題で確認してください。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/VsR9ItHTQlTq3bObkUl1NMH9dJoaBHYVmeBGdSgmOzTzPjUUw6UWpoVD0lsPMxeU.d1De_Bd0dnm1cm7h?startTime=1775129152000",
-      "homework": [
-        "p39～p41残り"
-      ]
-    },
-    "2026-04-23|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "#66まで",
-      "page": "",
-      "report": "式の値の難しいところの練習。野尻はオンラインだったがよくできていた。あとは、同じくらいのレベル。水上が少し心配かも。",
-      "recordingUrl": "",
-      "homework": [
-        "ｐ68＃71",
-        "ｐ69"
-      ]
-    },
-    "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "This/That is～",
-      "page": "",
-      "report": "宿題個所は、最初を大文字にしないミス、疑問文をYou areとやってしまうミスが見られた。リスニングはPracticeCをやり、Unit2へ。This is,that isをオーラルでいろいろ練習させた。大竹の飲み込みが悪いので、単元テスト前に補講に呼ぶ。",
-      "recordingUrl": "",
-      "homework": [
-        "ノートにやった単語をあと３回",
-        "テキストp14の上の４文暗唱"
-      ]
-    },
-    "2026-04-08|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "要点24素数",
-      "page": "ｐ58＃59",
-      "report": "四則混合の計算後、素数に入った。全体的にはまじめだが、園田が少しついてこれないし、集中力が怪しい。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/I5pFRXwCuO7sCxyPq62mMXPuahxqUsX06lzUyz4YSwaPEY27JT9kWNCXShckVnQa.r1fNzPv2BL7cCcKo?startTime=1775640994000",
-      "homework": [
-        "ｐ57"
-      ]
-    },
-    "2026-04-04|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "18前線の通過と天気の変化",
-      "page": "ｐ114□１まで",
-      "report": "雲のできかたから□１気圧と風のところまで終了",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/E-oFJ-fVDDGecEqHpkJZYKfNc7F7_b7CIsrVsXTLtaKhaPWOxmPRB-Wi6of5mJSA.9gT8VrWQy_hZR0Dk?startTime=1775303844000",
-      "homework": [
-        "ドリルｐ60（ｐ61）"
-      ]
-    },
-    "2026-04-07|4:55～6:15|hon|hon_e4_A_jp|2": {
-      "content": "国語辞典の使い方",
-      "page": "漢字帳P21問１まで",
-      "report": "国語辞典の使い方を指導。小金井はよくわかっていたが、川島・寺本は使い慣れていない様子。岡田はとにかく負けず嫌いなのが、今後の成長に影響しそう。",
-      "recordingUrl": "",
-      "homework": [
-        "漢字帳P23-26"
-      ]
-    },
-    "2026-04-15|6:35～8:05|hon|hon_j1_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-21|4:55～6:15|minami|minami_e6_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|4:55～6:15|hon|hon_e4_A_arith|3": {
-      "content": "グラフの復習",
-      "page": "",
-      "report": "カリキュラム的にはもう終わっているので、テストを印刷してそれを進めていった。",
-      "recordingUrl": "",
-      "homework": [
-        "計算P7～９"
-      ]
-    },
-    "2026-04-25|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|8:25～9:55|hon|hon_j3_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-21|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-16|4:55～6:15|minami|minami_e5_A_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-02|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "まとめ～⑥",
-      "page": "ｐ36まで",
-      "report": "例年に比べて定着率が良い。中村なども欠席の分をうまく取り戻していた。彼は伸びるかもしれない。堀切はやや情報量が多くて混乱していたが一年前に比べてできることがかなり増えている。長谷川がやや掛け算が苦手そう。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/OXs-wo8gY93rFk6TQF2kKn82Hy0Mltai6ycDgTvKOhVDa-Mw7vDv9f-N75D40O8.5vHAeDXqeI839R16",
-      "homework": [
-        "ｐ37（丁寧に）"
-      ]
-    },
-    "2026-04-10|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "整数の性質の証明",
-      "page": "P49",
-      "report": "一応P49まで進んでカリキュラム通り。次回は抜き打ちで確認テストを行う。土曜の補講に来たいという生徒がたくさんいた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/laNAqp_bP3EkDiEQjOe4GTOrIPcWECD-cFsPiQhbQ-3PMfdas_iNDm6XY-Gco4Ja.q7UQY9OIm9fSmzJo",
-      "homework": [
-        "P39～42ミスした問題の解きなおし",
-        "P49,51～52の★★以外、答え合わせまで"
-      ]
-    },
-    "2026-04-20|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|6:35～8:05|hon|hon_j3_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|4:55～6:15|minami|minami_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-11|6:35～8:05|minami|minami_j1_B_math|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1202,160 +49,27 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-07|4:55～6:15|hon|hon_e6_S_eng|1": {
-      "content": "English Travel UNIT2 C・D",
-      "page": "緑テキスト＃30まで",
-      "report": "１週空いてしまったので三単現の用法から確認。山根は文法関係は強いが、単語が弱い。小金井は少しずつクラスに馴染めてきた様子。本日は三単現の否定文、疑問文の導入。あまり難しい用語は使わずに説明したが、まだまだ慣れが必要。果物の単語が終わりきらず。",
+    "2026-04-11|6:35～8:05|hon|hon_j3_A_soc|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|6:35～8:05|hon|hon_j3_X_eng|6": {
+      "content": "青森県",
+      "page": "第６段落まで",
+      "report": "金子が思わぬところで、失点が目立った。原因は右側が弱い。選択肢の場合分けの指導、callの語法など、高度なものを行ってはいるが、何とかついてこられている。永田に続き、大宮も上げてきた。",
       "recordingUrl": "",
       "homework": [
-        "緑テキスト",
-        "#23、24、27～29、32"
+        "ＳＴ６お茶の水附属"
       ]
     },
-    "2026-04-24|4:55～6:15|hon|hon_e4_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|2:55～4:25|hon|hon_j3_A_math|1": {
-      "content": "置きかえる因数分解",
-      "page": "P39まで",
-      "report": "置き換えの因数分解までやってぎりぎりだった。遅れは取り戻せず。田村や青木が因数分解の基本の部分ですら苦戦していた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/UAWJdO9Eg3q_v-IU__9wDuhfC3NIEhp-HWVNrAV-cBU9YDLNhzF1TPq_Ds0GhzLj.IAV7TbL3bcPlm0RZ",
-      "homework": [
-        "P40＃47①～⑦、＃48⑫～⑭",
-        "P42□７"
-      ]
-    },
-    "2026-04-22|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|8:25～9:55|hon|hon_j2_B_eng|1": {
-      "content": "HereWeGO UNIT1・２",
-      "page": "UNIT2＃２まで",
-      "report": "UNIT１のgoalから。昨日のことなので、まずまずの定着度合いであったが、宮澤と豊田は相変わらず手が動かない。単語力強化が第一の目標。次回は単元テストなので、UNIT１の本文を覚えるくらい読み込んでくるよう伝えた。",
-      "recordingUrl": "",
-      "homework": [
-        "Here We Go UNIT1",
-        "#25～27（P18）まで"
-      ]
-    },
-    "2026-04-15|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|6:35～8:05|hon|hon_j1_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|8:25～9:55|hon|hon_j3_A_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|4:55～6:15|minami|minami_e4_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|4:55～6:15|hon|hon_e5_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "content": "HWG　unit１　part２，３",
-      "page": "HWG#１８まで",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-27|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|6:35～8:05|hon|hon_j1_S_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|6:35～8:05|minami|minami_j1_S_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "江戸／田沼の失脚まで",
+    "2026-04-07|4:45～6:15|minami|minami_j3_A_soc|4": {
+      "content": "江戸終了",
       "page": "マイクリアp78～",
-      "report": "宿題は、明日までに終わらせるのは無理なのでスクーリングまでに終わらせるよう指示した。明日は江戸を終わらせる。演習も行うつもり。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/_mea1-b9aD9qgK8-BSzxtcaWuVN7WESPqgQO4EOLJ_S0r5_vcDUFBKIJ8MvYE4tZ.M-rugddrgiVBFFVm",
+      "report": "本日で江戸は終了。次回単テ。ドリルを絶対に持ってくるよう伝えた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
       "homework": [
         "ドリルp60-65〇込み"
       ]
@@ -1369,463 +83,7 @@
         "#17,19,20,22"
       ]
     },
-    "2026-04-27|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|8:25～9:55|minami|minami_j2_S_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|8:25～9:55|hon|hon_j3_B_eng|2": {
-      "content": "ＨＷＧ！ Unit1",
-      "page": "#3まで",
-      "report": "現在完了のまとめ、リスニング演習を軽やかに終え、ＨＷＧへ。語彙を行った後、受動態を軽く行い直す。新井・川島・和田・堀切・中村が強敵。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/JpiHVQFmjHRCaxT2kx0RBjjXD_PVPTOqgxAjAT0rhDXH-rTX9xOcmK0ICxmeqbLc.0AMhWlo1GHhCsyKS?startTime=1775561318000",
-      "homework": [
-        "通常テキスト#38",
-        "HWG! Unit1 #4-6/8/9/11"
-      ]
-    },
-    "2026-04-16|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "単元テスト①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-20|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "体積⑤、まとめまで",
-      "page": "p73まで",
-      "report": "長谷川佳那汰君が基礎的な部分で躓いていた。オンラインだったこともあり、少し集中ができていなかったかもしれない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/LdbL_mcdCxUrl9T0GYP-P-DE-igcb4_iSIJ2r6_lrv2lYZJ47NihQtqGGrQ-rppz.xk7iQAgPNMqmzUJk?startTime=1775116599000",
-      "homework": [
-        "ホープドリルp70～73、算数ドリルp17～p20"
-      ]
-    },
-    "2026-04-13|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-18|4:45～6:15|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|minami|minami_j1_S_eng|2": {
-      "content": "Here We Go UNIT1終了／L2　冠詞",
-      "page": "",
-      "report": "Here We Goは最後まで終わらせ和→英　英→和をテキストを伏せて発音、和訳練習までさせた。時間があまった文はL2の冠詞の指導にあてた。",
-      "recordingUrl": "",
-      "homework": [
-        "HWG UNIT1",
-        "#19～21"
-      ]
-    },
-    "2026-04-20|8:25～9:55|hon|hon_j2_X_eng|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|8:25～9:55|hon|hon_j2_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "式の計算、数字を入れ替えた数の和や差",
-      "page": "",
-      "report": "末次由果さんと内田菜花さんがややまだ苦労していたようだった。式証明の穴埋めでもまだ少し不安定なのでよく復習できるようにしたい。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/3b3bihBe724qF8EzQ3khyWADD4pNbk6w1dtCGDmbpf--_rd8sDtd7mRvCe8PiHsR.eEpbropk78exqrx6?startTime=1775042910000",
-      "homework": [
-        "p35、p37、p42、p46（すべて★以外）"
-      ]
-    },
-    "2026-04-21|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|8:25～9:55|hon|hon_j3_S_soc|3": {
-      "content": "江戸／文化を除き終了",
-      "page": "マイクリアp78～",
-      "report": "江戸は文化を除き終了。文化は入試直前で扱う。次回p83の演習後、p90-93の問題に取りくむつもり。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/R_tPieh8-KfLSr8NH9eVrEvITPSLY4HKS41WfAQ2b21PUJNCG_q3zFaFhsSzpr-p.h25wUgaXD4Ay-lY_?startTime=1775302167000",
-      "homework": [
-        "ドリルp58-59〇こみ"
-      ]
-    },
-    "2026-04-09|8:25～9:55|hon|hon_j3_S_eng|3": {
-      "content": "HereWeGop23まで",
-      "page": "通常テキストL3p6大問２の２まで",
-      "homework": [
-        "単元テスト勉強"
-      ],
-      "report": "HWGの確認テストのあと、通常テキストL3へ。時制に10分で取り組ませ解説。各生徒の点数は出席簿に記載した。助動詞も同じく10分与え解かせ、解説途中で時間切れ。次回は解説の続きからお願いします。",
-      "recordingUrl": ""
-    },
-    "2026-04-18|6:35～8:05|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|4:55～6:15|minami|minami_e5_A_arith|1": {
-      "content": "体積③④",
-      "page": "p68～71",
-      "report": "高橋は計算や図形の見方は安定しているが式を書かない、長澤はバランスはよいが計算が、月森は図形をよく確かめないで思い込みで計算する。原澤、岡崎ともにかなり厳しい感じで成績云々というよりしばらくは学びの大切さを伝えるくらいにしていかないと無理そう。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/eRlzmsx94LhdX9hKWBtRMvDL8zV_RI5_nkP8uS3RrQpe9g2M3Ofx3fOPXsmQn-vY.HN6NloufC-Zi5evh",
-      "homework": [
-        "計算ｐ３～４",
-        "ホープドリルp66～68"
-      ]
-    },
-    "2026-04-21|6:35～8:05|minami|minami_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-18|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|8:25～9:55|minami|minami_j3_X_math|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "p38□９②まで",
-      "page": "",
-      "report": "平方根のほぼ終了のところまで。次回はプリントも含めた宿題へ。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/ZuOos6reMsCOYtv_P7rJfPuYZ_7bXoiI7VU2Ar7JrnPnPBRrDVVNAG-6pDEUUw.A2JtBOM5OCQ0oRD2?startTime=1775561331000",
-      "homework": [
-        "p37□５～□７",
-        "ｐ38□９②～□13、プリントｐ１"
-      ]
-    },
-    "2026-04-03|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "⑧体積④大きな体積□１まで",
-      "page": "ｐ70-71",
-      "report": "③求める工夫～④大きな体積□１まで終了",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/uH0TjDGIt8GYvY26_jk_f8m3DO9mO0E_41LNNA4KkydrmW9SHcDv5BMJtD-wWi4_.T8EqWiF7ukOoGGxJ?startTime=1775203292000",
-      "homework": [
-        "ドリルｐ66～ｐ67",
-        "計算ｐ5～ｐ6"
-      ]
-    },
-    "2026-04-28|4:55～6:15|minami|minami_e6_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|8:25～9:55|hon|hon_j2_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|8:25～9:55|hon|hon_j3_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|8:25～9:55|hon|hon_j2_S_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-07|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "⑲偶数と奇数・演習",
-      "page": "p38～41",
-      "report": "５で割ると１余る数を表してこれたのはクラスの３分の１程度。レベルは全体的に低い気がするが、ジョンが二種類表してきたのでおしゃれだと褒めた。たぶん本日の内容を理解できているのも同じくらいだろうと思うが、鹿内や伊藤などは意外と手が動いていた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/lPJ8rK2G2P9OQvEggP1LBMUa_3g2qtxB8cdHEvria0b9Fv5GlSBFPLGlwfnBZI2O.loB6SBI5okAQk6Kv?startTime=1775554761000",
-      "homework": [
-        "p43～45★中心",
-        "３で割ると１余る数と一の位がa小数第一がbの数を表す"
-      ]
-    },
-    "2026-04-01|8:25～9:55|hon|hon_j3_X_math|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "⑦～⑧置き換え",
-      "page": "ｐ37～38",
-      "report": "宿題を頑張れていたのは堀切、大嶋、長谷川、若原のみだった。他は中村と瀬戸口がわからないで済ませており、その他はそもそも取り組んでいなかったのでかなり叱った。堀切はとても頑張れている。本日も置き換えを最後までやり遂げていた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/gbaQm4p_Surj2FxMEm-BZEdZAWhZJKmg8zxp9QhvMq6b6uicvJGLMxIhojXTQJ4m.iHcD8sAvpq4LhXZn?startTime=1775734261000",
-      "homework": [
-        "ｐ39"
-      ]
-    },
-    "2026-04-13|4:55～6:15|minami|minami_e5_S_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|6:35～8:05|hon|hon_j3_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|8:25～9:55|minami|minami_j2_A_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "分配法則",
-      "page": "＃５４まで",
-      "report": "分配法則が終わらなかった。やはりここはカリキュラム的に詰まりすぎている。要改定",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/hhlftS2eRlCbK7Rvk2NWWVEGpHNZQbqIs-5KUY9NPWUfLd1HOZPVI4kX0VVh-Zw6.sxQnTVQUVlP-0E9Z?startTime=1775209025000",
-      "homework": [
-        "P45＃５０④～⑩",
-        "P51＃５２⑤～⑧、P52＃５３③～⑧、P53"
-      ]
-    },
-    "2026-04-18|8:25～9:55|hon|hon_j3_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "正負の数、四則の混じった計算・累乗まで",
-      "page": "p41",
-      "report": "とにかく総じて計算が安定しない。特に宮田澪君、岩本龍之介君、戸部海晴君は途中式を言われたとおりに書かずに間違えているのでまず板書をちゃんとできるように。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/RjHp2cda933dl1HaxQjJ7Bmlhph-iHIT-dbBzT6XYlzROWtsb0AgrcwX-Af-ZUdE.jRd3wMkO64Odt6Fd?startTime=1775122673000",
-      "homework": [
-        "p45残り、p46～p47★以外、p50～p51残り"
-      ]
-    },
-    "2026-04-23|4:55～6:15|hon|hon_e4_A_arith|3": {
-      "content": "単元テスト",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-14|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|4:45～6:15|minami|minami_j3_A_soc|4": {
-      "content": "江戸終了",
-      "page": "マイクリアp78～",
-      "report": "本日で江戸は終了。次回単テ。ドリルを絶対に持ってくるよう伝えた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
-      "homework": [
-        "ドリルp60-65〇込み"
-      ]
-    },
-    "2026-04-18|6:35～8:05|hon|hon_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|8:25～9:55|hon|hon_j2_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|8:25～9:55|hon|hon_j3_A_jp|4": {
-      "content": "文学的文章の読解",
-      "page": "要対p78-81",
-      "report": "回線環境の悪い子が多い、かつ消極的な子が多く、非常にやりづらい。遠藤、原澤、嶺井など毎回指名する子が偏りがちになっている。そうならないよう工夫もしているが、ここ数年で一番やりづらいかも。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/EkdiMgLv-bM36HxFH1dTRGJBf-dU6CxUQOEqjSUlU2PpkNu3tmGzZE0kx0luAOUu.pRQShMb0yLAxoaqX",
-      "homework": [
-        "漢字p36-40"
-      ]
-    },
-    "2026-04-06|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "通常テキストL2#15まで",
-      "page": "",
-      "report": "通常テキストL2を進めた。theの復習もかねて行った和訳問題では、theを訳出しないミスが散見。また英作文では母音の前のanをミスするものも。今後も注視する。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/B-RA16RL-EbAZoMLTBrf_Ac25A7HzMmT69xjCQ2JA4QuOUnY-HjX02RyNPYG4hpv._dMFHOMlpwsKdiGK?startTime=1775468089000",
-      "homework": [
-        "単元テスト勉強",
-        "L1#91から97"
-      ]
-    },
-    "2026-04-14|6:35～8:05|minami|minami_j3_S_jp|2": {
-      "content": "単元テストＳ①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-23|4:55～6:15|hon|hon_e6_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-03|2:55～4:25|hon|hon_j2_A_math|1": {
-      "content": "等式の変形",
-      "page": "P53③まで",
-      "report": "少し進みが遅くなってしまった。次回がテスト１回前なので上手くまとめたい。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/HJETDRSTEIk21WcNlHCe20trn0Djszo0TdmQGRp6pSAuER93MmJ6V5bBeOYC-fAb.bAEShYHek833_8OO?startTime=1775195901000",
-      "homework": [
-        "P52＃５４④～⑧",
-        "P42～４５★★以外、P56,57"
-      ]
-    },
-    "2026-04-01|4:55～6:15|hon|hon_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|8:25～9:55|hon|hon_j2_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|6:35～8:05|hon|hon_j1_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|4:55～6:15|minami|minami_e5_S_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-11|8:25～9:55|hon|hon_j3_A_sci|2": {
+    "2026-04-22|8:25～9:55|minami|minami_j3_A_jp|5": {
       "content": "",
       "page": "",
       "homework": [],
@@ -1842,892 +100,6 @@
         "単元テストの勉強"
       ]
     },
-    "2026-04-13|4:55～6:15|hon|hon_e4_X_arith|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "連語テキストp27まで",
-      "page": "通常テキスト#30まで",
-      "report": "連語の#4部分のプリントをやらせる間に連語長をチェック。深井、大沢、矢田、瀬戸口はやり残しがあったので次回までとした。平居も含めて次回やってなかったら残ってやってもらうと伝えた。現在完了は#27で継続を表す二つのやり方を復習。ここでは大澤がすっかり忘れていた様子だったので、次のまとめＰも含めて復習した。#30はどこが動詞で、過去分詞は何かを先に見てから取り組ませたが、疑問文や否定文で特に定着していないものがいたので補講に呼ぶ。北面、中田、矢田、青木、深井あたりはよくできる。下位層との差が激しく、進度が取れない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Bg2SP_69qkLAWI0p1DDPX6e14q_X1sk8VXZhyiuZkPyQCYWdmLF1l0IwvvDk6PJn.hQpthyEeFxLAD5xJ?startTime=1775122604000",
-      "homework": [
-        "通常テキスト#31,32,34,37",
-        "HereWeGoテキスト持参する"
-      ]
-    },
-    "2026-04-09|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "３けた÷２けた",
-      "page": "P２５まで",
-      "report": "",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/3nHNpq7hilFy4AO0E7WYHKUi3ACfbtRZEDvWxCaNs61WAn3xtkWQQnkqIjc2GOOk.D39Xv37u0i8QSkQL?startTime=1775030111000",
-      "homework": [
-        "計算P1～４、ドリルP22，23"
-      ]
-    },
-    "2026-04-02|4:55～6:15|hon|hon_e4_A_arith|3": {
-      "content": "何倍の計算",
-      "page": "P27",
-      "report": "カリキュラム通りに進めることができている。小金井も他の生徒と平均化されてきた印象だが、見学の３人は算数はやらないのかも？",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/dnIN0vcA3FCsrwwMrBBInNU7LVhu0i7TRoSbKb3oZJJ3-PNoVCjZ2FkYS4WVtbS0.MyaiCsfEmeI2MSRu?startTime=1775117428000",
-      "homework": [
-        "ドリルP24,25",
-        "計算P4～６"
-      ]
-    },
-    "2026-04-20|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-24|4:55～6:15|minami|minami_e4_X_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|6:35～8:05|minami|minami_j2_S_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|4:45～6:15|minami|minami_j1_A_math|2": {
-      "content": "要点22四則混合",
-      "page": "ｐ52＃53",
-      "report": "四則混合についての計算練習をした。全体的に難しくできが悪いものがおおい。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/WAlZm20jHqRnfxLVdfq_56Ap0HCuGha4WnT2zuDO2hy-fFx3A4CjvS0iCt3x9Yi7._1gmV3R6zITWXk0I?startTime=1775288854000",
-      "homework": [
-        "ｐ53"
-      ]
-    },
-    "2026-04-27|8:25～9:55|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|6:35～8:05|hon|hon_j3_X_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|hon|hon_j2_S_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "まとめ",
-      "page": "",
-      "report": "テストに向けてのまとめ。見学の坂井、石毛は大変そうだった。特に坂井は読む際に指名したが発言できなかった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/yjjOLezYO9ri9zeBUSUdOQn5n2pYl-AkTk9CLLI0E6UU6DDkYG4akk6Qh6EDwxM.r5QbXa7VDKW2GALg?startTime=1775203509000",
-      "homework": [
-        "テスト勉強",
-        "計算P4まで"
-      ]
-    },
-    "2026-04-23|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-04|8:25～9:55|hon|hon_j2_A_math|1": {
-      "content": "図形と文字式",
-      "page": "P58まで",
-      "report": "なんとか今日で終わらせることができた。オンラインでの参加も５人くらいいたりして対面で見れたのは７名ほどだったが基本的にはよくできてくれていたと思う。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/jMwUpYzQuVijCG2MfdXIuYbe57fZqF0L5EbWyqqxr8CCQ2IlPoNHasjz1Tx06YXt.KgEzRi0dKyyNgfLi",
-      "homework": [
-        "P59～61",
-        "テスト勉強"
-      ]
-    },
-    "2026-04-20|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "19大気の動きと日本の天気",
-      "page": "ｐ116-ｐ121",
-      "report": "19の大気～総合力８まで終了。宿題は、ドリルの〇付けまで。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/R8sTUiNjWwO7dCtv2nXdlL9Gu_jTB68dxGdgMp5mWeaOoXhugUkPJC4XVs01rfJK.Wm35wvJZUHGgvhkV",
-      "homework": [
-        "ドリルｐ64～65",
-        "〇付けまで"
-      ]
-    },
-    "2026-04-03|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "㉔～㉘",
-      "page": "ｐ62～65まで",
-      "report": "文字式の扱いの応用。カリキュラムに余裕があったのでゆっくり進めた。正田が少し式の扱いに難儀していたが一応大丈夫そう。疋田、清宮が意外と強い。篠田は証明は発想がしっかりしていてよいが微妙に抜けている",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/fG_LV0pthu_ljxX6alUUwBtV0-L_B51iAn2MlZx6US9gMWd_muE3XBMAQoo4j36r.P4HnLKOkcGEgkuH4",
-      "homework": [
-        "p65＃64②、p67＃67～＃70",
-        "プリント（間違えた人は３問ほど練習しておいてください）"
-      ]
-    },
-    "2026-04-21|8:25～9:55|minami|minami_j2_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-25|8:25～9:55|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|6:35～8:05|hon|hon_j1_S_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-07|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "まとめ・因数分解⑥",
-      "page": "～p36まで",
-      "report": "式田、長山がつまずきがち。他はわりと普通にできている。しかし、授業前に類似の展開を確認しているのでそのせいであるだけだと思う。室伏、高橋、山根は大丈夫そう。長山、式田がたぶんできていない。佐藤も意外と怪しいと思う。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/KbWB1EiNeQdE4lmYjZMCHmxJ4NmQXsg5QdrEa8LDlQFk6YstWqEsF37fAwUnZt36.MOoMiuJtBg68r792",
-      "homework": [
-        "p37"
-      ]
-    },
-    "2026-04-07|4:55～6:15|minami|minami_e6_S_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|8:25～9:55|minami|minami_j2_A_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "江戸終了",
-      "page": "マイクリアp78～",
-      "report": "江戸は資料問題、総合問題も含め全て終了。特を入れた結果、完全にカリキュラム通りの進行となっている。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/SWBi8UTS1AlCW5OS8-5VVsZlIAuHGY3mPN63yE407bPXmcd6qlXjHH3h9Du-vdFr.XgKqcMulmvtVC57W",
-      "homework": [
-        "ドリルp60-65〇込み"
-      ]
-    },
-    "2026-04-21|4:55～6:15|hon|hon_e4_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-25|2:55～4:25|hon|hon_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|4:55～6:15|minami|minami_e5_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-13|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-27|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|8:25～9:55|minami|minami_j2_S_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-06|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "HereWeGoテキスト",
-      "page": "Unit1#23下線部②まで",
-      "report": "宿題個所のHWG#7はテキストを伏せて答えさせた。何度かやり定着をはかった。その後はUnit1を進めた。Goalの途中まで。exciting/-edの違いを解説しつつ、surprise/interestの方も指導。単語練習ができていないのが気がかり。",
-      "recordingUrl": "",
-      "homework": [
-        "HereWeGo#12から14,19から21"
-      ]
-    },
-    "2026-04-17|8:25～9:55|minami|minami_j3_S_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-06|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "等式の変形",
-      "page": "P51まで",
-      "report": "式による説明の解説を終わらせたあと、等式の変形に入ったが途中までしか終わらなかった。次回はこの残りとテキストの残りを進めつつ、単元テストに向けてのまとめをできる範囲でお願いします。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/wDxoKf6p6KVk0puImKDK-bPrfguZBiSaUhtvE_sIlg9-YFvfujzVXIPpg_2c9AbV.Xq74hoNhc7NdGFi5?startTime=1775475024000",
-      "homework": [
-        "P56～P57⑥まで"
-      ]
-    },
-    "2026-04-28|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|8:25～9:55|minami|minami_j3_A_jp|5": {
-      "content": "文学的文章の読解",
-      "page": "要対p78-81",
-      "report": "回線環境の悪い子が多い、かつ消極的な子が多く、非常にやりづらい。遠藤、原澤、嶺井など毎回指名する子が偏りがちになっている。そうならないよう工夫もしているが、ここ数年で一番やりづらいかも。",
-      "recordingUrl": "",
-      "homework": [
-        "漢字p36-40"
-      ]
-    },
-    "2026-04-15|8:25～9:55|hon|hon_j2_S_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|4:55～6:15|minami|minami_e5_S_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-14|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|6:35～8:05|hon|hon_j2_A_eng|2": {
-      "content": "Here We Go UNIT2",
-      "page": "part2 P24 #9まで",
-      "report": "Here We Go UNIT1のgoalの続きから。確認テスト後にUNIT２で動名詞、不定詞のおさらいをしながら進めたがpart2でタイムアップ。とりあえずテスト範囲のUNIT1は終わった。次回は単元テストなので、復習をしてくるよう伝えた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Jc6zzTowBdqm8BiYkK-kC9np1o_VQOHn6JDSrFqvs21rs24pN-57ah5iOUNuz-qx.Ut_KqcjC8pSKSa1U?startTime=1775641036000",
-      "homework": [
-        "Here We Go UNIT1",
-        "#25～27（P18）まで"
-      ]
-    },
-    "2026-04-25|4:45～6:15|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|8:25～9:55|hon|hon_j3_S_math|2": {
-      "content": "加法と減法",
-      "page": "P37まで",
-      "report": "今日は時間が取れたので北辰のプリントを２ページだけ解説を進めることができた。次回はハイレベル問題。さらに北辰のプリントは終わらせる予定",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/cmpUj3aBvLeXMbb_l7HzzQflH62fIhAgIP-UvOxQGj_k4oMwTIyOETh8oYkD4Jc_.KLeP0RcgoUcA1Ocp?startTime=1775217252000",
-      "homework": [
-        "P38～40"
-      ]
-    },
-    "2026-04-28|4:55～6:15|hon|hon_e4_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|4:55～6:15|minami|minami_e5_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "L1#75まで",
-      "page": "",
-      "report": "宿題個所の#40,42,43ではSVOを意識させた。大竹が間違いあり。誕生日のやり取りは、前回欠席者および見学者もいたので、もう一度ざっと復習してから。月の名前暗唱は、時間を与え覚えさせ、全員クリアできた。次回が明日なので、宿題は少し間引きながら出したので、出せていないところも含め、宿題化してください。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/pO8WgTbuMoE8WoI9dcvjOql4w3UIHwIWvQhA3gVi7dfRkS4y9TSfoGx1h1UD6rFx.JbR7vIW0sWKIRfkU?startTime=1775209187000",
-      "homework": [
-        "#59,60,62から65"
-      ]
-    },
-    "2026-04-11|4:45～6:15|hon|hon_j3_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "古文",
-      "page": "新中P54-55",
-      "report": "前回に引き続き、古文を扱う。音読を行わせた後に現代語訳、設問と行った。仮名遣いはみなＯＫ。内容を問うものに関しては中野が苦しいか。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/T280rKNE9qqtt1vO6hZb_oMzEjmlTUOkZ-7LUO1pba3uYU6kJtJKJPgrw3NchnqN.FCp79GcpjRLwZ_T4?startTime=1775468412000",
-      "homework": [
-        "漢字帳P21-24"
-      ]
-    },
-    "2026-04-18|6:35～8:05|minami|minami_j1_S_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "古文",
-      "page": "新中P54-55",
-      "report": "前回に引き続き、古文を扱う。音読を行わせた後に現代語訳、設問と行った。仮名遣いはみなＯＫ。内容を問うものに関しては中野が苦しいか。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/T280rKNE9qqtt1vO6hZb_oMzEjmlTUOkZ-7LUO1pba3uYU6kJtJKJPgrw3NchnqN.FCp79GcpjRLwZ_T4?startTime=1775468412000",
-      "homework": [
-        "漢字帳P21-24"
-      ]
-    },
-    "2026-04-03|6:35～8:05|hon|hon_j3_S_jp|4": {
-      "content": "文学的文章／最高水準より",
-      "page": "最水p34-38",
-      "report": "p34-38は渋幕の過去問。ただ、文章としては読みやすく、問題も変にひねくれていない。宮川、粕川がちょっときつそう。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/GSkjVEEXUIrZrjp_hduZqr_qpEA7JY_4yt-yFA3I4yNfjFoLTfu2yweVK9jiWUoC.qCQ1IqzpOBcNCqDi",
-      "homework": [
-        "漢字p54-58"
-      ]
-    },
-    "2026-04-20|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|6:35～8:05|minami|minami_j3_S_jp|5": {
-      "content": "文学的文章／最高水準より",
-      "page": "最水p34-38",
-      "report": "p34-38は渋幕の過去問。ただ、文章としては読みやすく、問題も変にひねくれていない。宮川、粕川がちょっときつそう。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/GSkjVEEXUIrZrjp_hduZqr_qpEA7JY_4yt-yFA3I4yNfjFoLTfu2yweVK9jiWUoC.qCQ1IqzpOBcNCqDi",
-      "homework": [
-        "漢字p54-58"
-      ]
-    },
-    "2026-04-01|6:35～8:05|hon|hon_j1_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|hon|hon_j1_S_jp|4": {
-      "content": "小説文",
-      "page": "P12-15",
-      "report": "漢字帳の確認はみなＯＫ。小説文を扱うが、見学中の大木君は問題慣れしていない様子だが、底力はありそう。髙橋彩音は時折、変な音読するのが気になった。",
-      "recordingUrl": "",
-      "homework": [
-        "漢字帳P19-22"
-      ]
-    },
-    "2026-04-16|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-02|2:55～4:25|minami|minami_j3_S_eng|1": {
-      "content": "Here We Go UNIT1 終了／演習①時制",
-      "page": "通常テキストL3　P4　３まで",
-      "report": "Here We Goの単語確認を終え、本文の訳を進めた。後半は演習問題へ。時間を取り答え合わせ。やはり時制に関する意識が甘い部分が多々見られたので、時制を中心に同意表現なども指導。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/jULEdYkBB7T8VvoX2uBI5UQ5EbNryhLNlPeczJCcLOcaCpP743jDaXHWcl31yzVO.HTQGZ7J4WdBHfyhX?startTime=1775109364000",
-      "homework": [
-        "連語P20、21"
-      ]
-    },
-    "2026-04-20|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|8:25～9:55|hon|hon_j3_S_eng|3": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-22|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|6:35～8:05|hon|hon_j3_S_jp|3": {
-      "content": "単元テストＳ①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-08|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "単元テスト①",
-      "page": "p4",
-      "report": "宮嶋亮太郎君があまりできていなかった。全員対称移動の対応順を間違えていたのでよく確認しておけるように。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/-pYjXo-WTBKhuSzrt5acD0a5a85BSegspavM1J8qi2viYz5QyV9nkQwUqm070pS0.CAh2uFOuNbUgrfwp?startTime=1775635054000",
-      "homework": [
-        "とき直しプリント",
-        "ホープドリルp66～67"
-      ]
-    },
-    "2026-04-02|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "山村学園",
-      "page": "",
-      "report": "山村学園を扱う。実話をもとにした長文だが、大意はみなOKだが、金子も含め細部なるとまだまだつかみ切れない。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/wv8cf3nf2i0GRwyLRNFVrIqFyhusH1zr8DYLSwM__fGSUhHJiHmWbwdXKQxI6iWP.Nbaj4uaBPQXFJzzR?startTime=1775122518000",
-      "homework": [
-        "ST５青森県"
-      ]
-    },
-    "2026-04-14|4:55～6:15|hon|hon_e4_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "content": "リスニング演習",
-      "page": "#３９",
-      "report": "今回はリスニング演習を行った。リスニングの心構えについてまだ定着していないようで、問題の予想などが出来ていない。また、まだリスニングの速度に慣れていない様子。速度を意識させて読む練習を今後も行っていく。",
-      "recordingUrl": "",
-      "homework": [
-        "連語帳ｐ２０～２１"
-      ]
-    },
-    "2026-04-28|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-08|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "何倍の計算",
-      "page": "P２７まで",
-      "report": "何倍の計算を軽く早めに終わらせて、残りは計算のドリルを一緒に進めさせた。一応皆そこそこ形になっていた様子。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Iw9k5nZErxf-iPM2eoFQ8P0_ykNnyoHe8WAmntAv_MvIOim-RSBDHp1RuuYE6gb2.OnGuhWylmVRpamgf",
-      "homework": [
-        "ドリルP24,25",
-        "計算P9まで"
-      ]
-    },
-    "2026-04-23|8:25～9:55|hon|hon_j3_S_eng|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|8:25～9:55|minami|minami_j2_B_eng|1": {
-      "content": "Unit2",
-      "page": "#11まで",
-      "report": "Unit1の確認テスト終了後、Unit2へ。音読と和訳、文法的説明に重きを置いたが、なかなか進まず。申し訳ございませんでした。",
-      "recordingUrl": "",
-      "homework": [
-        "来週木曜までにWHG#１２，１３，１９，２０，２５，２６",
-        "来週木曜にunit１単語テスト"
-      ]
-    },
-    "2026-04-22|4:55～6:15|hon|hon_e5_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|4:55～6:15|minami|minami_e5_A_eng|2": {
-      "content": "UNIT１・２復習",
-      "page": "Work Book P４～８",
-      "report": "単語テストは皆まずまずの出来。この中だと関根が一番堅いか。次いで月森。岡﨑は書き写しミスをしたり、作業が雑になってしまったりとまだまだ課題は多い。次回は単元テストなので、本日実施したワークブック、単語の復習を宿題とした。",
-      "recordingUrl": "",
-      "homework": [
-        "UNIT１・２単語練習",
-        "ワークブックP4～８復習"
-      ]
-    },
-    "2026-04-14|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-25|6:35～8:05|minami|minami_j3_S_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|4:55～6:15|minami|minami_e6_S_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-01|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|4:55～6:15|hon|hon_e5_A_jp|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|8:25～9:55|hon|hon_j3_S_math|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|4:55～6:15|minami|minami_e6_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-17|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-10|8:25～9:55|minami|minami_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|4:55～6:15|minami|minami_e5_A_jp|3": {
-      "content": "ことばのきまり",
-      "page": "テキストP34-35",
-      "report": "ことばのきまりの学習の続きから。仮名遣いと国語辞典の使い方の単元だが、今年もかなり厳しい状態。関根君が現段階では最もできるか。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/K_bfUdWjX4SZ-xEnu77KlUaqUY_iEfwqMXurYB7s7VhjZ8CFLkwBScAFcRd7KSXT.Vz3nBwKU44u4m5KQ?startTime=1775203357000",
-      "homework": [
-        "漢字帳P21-24"
-      ]
-    },
-    "2026-04-13|8:25～9:55|hon|hon_j3_A_jp|2": {
-      "content": "単元テストＡ①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-18|6:35～8:05|hon|hon_j3_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-06|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "19大気の動きと日本の天気",
-      "page": "ｐ118-1まで",
-      "report": "18の前線の問題から19大気の動きの途中まで終了した。次回は続きから進める。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/gnG_A0U_xFzB6f3D2vIq-R6ALdA_sJ6zw0V11uQ27ajgd0x_2zaKzsz5pf3EIOc3.-wWButRPGHgMoHWC?startTime=1775475267000",
-      "homework": [
-        "ドリルｐ62（ｐ63）"
-      ]
-    },
-    "2026-04-09|4:55～6:15|minami|minami_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|2:55～4:25|minami|minami_j3_B_eng|1": {
-      "content": "Here We Go UNIT1 part2",
-      "page": "HWGワークP６まで",
-      "report": "連語の確認後、Here We Goに入った。受動態を忘れている者もいたので、復習を入れながら進めた。単語は難しい語句が多かったので、あらためて発音、覚える時間をとった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/p0jEQMslBhQvuck7RR-zMs8qDg9VWBl7TRRCw3doc2KHuiUoC3ep0SIcoalYfWcI._1ZkJcdQdGlbYMCm?startTime=1775196294000",
-      "homework": [
-        "Here We Go UNIT1",
-        "#５～７"
-      ]
-    },
-    "2026-04-15|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-07|6:35～8:05|hon|hon_j3_S_jp|6": {
-      "content": "文節",
-      "page": "要対p18-19,36【１】",
-      "report": "北澤さんが見学をしたが、要対のページがなく、こちらの画面を大きく見せながら進めた。本日から文法に入ったが、やはり中３からの受講組が弱い。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
-      "homework": [
-        "漢字p60-64"
-      ]
-    },
-    "2026-04-09|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "HWG#18下線部①まで",
-      "page": "",
-      "homework": [
-        "HereWeGo#7,12から14,16,18"
-      ],
-      "report": "宿題個所の通常テキスト#38のあと、HWGへ。受動態の復習も含め、Bクラスなので丁寧にゆっくり進めた。次回は続きをお願いします。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/O7FB1X-R-jiiD9Bdyn3iLR5NogxKzseuGVx9DqScli9YG0ve_IB73eY-Fg_jpyEt.FmrG1VF8vY6ffbcW?startTime=1775727340000"
-    },
-    "2026-04-10|4:55～6:15|minami|minami_e6_S_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|4:55～6:15|minami|minami_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-27|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-09|8:25～9:55|hon|hon_j2_A_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-16|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-09|4:55～6:15|hon|hon_e6_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-20|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-04|4:45～6:15|minami|minami_j3_A_eng|1": {
-      "content": "Here We Go UNIT1 part2",
-      "page": "＃１１まで",
-      "report": "千葉リスニングを飛ばし、Here We Goへ。Unit1はとにかく重い。受動態・原形不定詞を再度行いながら進めた。次回で終わらせるように頑張る。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/AzpfCQVVmWDrqQuyECG-TAkvbIJzsgytD4VucHkHvK3H_GkYYkn_z-Eagvmz_4PQ._QI8zEVOqiTwjFFe?startTime=1775288996000",
-      "homework": [
-        "HWG! Unit1#5-7",
-        "#12-18"
-      ]
-    },
-    "2026-04-21|4:55～6:15|minami|minami_e5_A_arith|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
     "2026-04-23|6:35～8:05|minami|minami_j1_S_eng|2": {
       "content": "",
       "page": "",
@@ -2735,94 +107,54 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "content": "単元テスト実施日",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-16|4:55～6:15|hon|hon_e6_A_eng|1": {
+    "2026-04-28|8:25～9:55|hon|hon_j2_S_jp|6": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-03|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "緑テキスト#11まで",
-      "page": "Travelerのp12の4段目Who is",
-      "report": "宿題個所の英単語はテキストを伏せて答えさせたが、まだオーラルでもおぼつかなかった。綴りもまだまだ。Are youの暗唱は宮嶋が少し詰まったが、良好。Let's PracticeBの①②を行い、Is sheも指導した。後半はWho isに入り、練習ページではthat womanおよび答え方も指導。答えではShe is Ken's mother.で行った。次回暗唱ではそれも。前回欠席の中井、今回から正式に入った高野はしっかりできていた。",
-      "recordingUrl": "なし",
+    "2026-04-17|6:35～8:05|hon|hon_j2_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|6:35～8:05|hon|hon_j3_B_eng|1": {
+      "content": "HWG#18下線部①まで",
+      "page": "",
+      "report": "宿題個所の通常テキスト#38のあと、HWGへ。受動態の復習も含め、Bクラスなので丁寧にゆっくり進めた。次回は続きをお願いします。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/O7FB1X-R-jiiD9Bdyn3iLR5NogxKzseuGVx9DqScli9YG0ve_IB73eY-Fg_jpyEt.FmrG1VF8vY6ffbcW?startTime=1775727340000",
       "homework": [
-        "緑テキスト#9,10,13",
-        "#11/13の文を見なくても言えるようにしてくる"
+        "HereWeGo#7,12から14,16,18"
       ]
     },
-    "2026-04-23|6:35～8:05|hon|hon_j3_B_eng|1": {
+    "2026-04-14|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-28|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-03|6:35～8:05|minami|minami_j1_S_eng|3": {
-      "content": "L2　冠詞 a,an/the",
-      "page": "P6説明・発音まで",
-      "report": "カリキュラムは進んでいるのでHere We goの暗唱をもう一度取り組ませたが、皆しっかりと覚えられていた。続いて冠詞・複数形の導入。a,an theのはたらきについて指導をすすめていった。",
+    "2026-04-03|6:35～8:05|hon|hon_j2_B_math|2": {
+      "content": "要点23",
+      "page": "ｐ55＃５６",
+      "report": "等式の変形と図形と文字式まですすんだ。全体的にまじめに取り組んでいるが、豊田・菅原らが少しできていない。",
       "recordingUrl": "",
       "homework": [
-        "Ｌ２　＃８～11"
+        "ｐ56～ｐ58□７"
       ]
     },
-    "2026-04-15|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
+    "2026-04-07|8:25～9:55|minami|minami_j3_S_math|2": {
+      "content": "p38□９②まで",
       "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-21|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-25|8:25～9:55|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-24|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|6:35～8:05|minami|minami_j3_X_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
+      "report": "平方根のほぼ終了のところまで。次回はプリントも含めた宿題へ。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/ZuOos6reMsCOYtv_P7rJfPuYZ_7bXoiI7VU2Ar7JrnPnPBRrDVVNAG-6pDEUUw.A2JtBOM5OCQ0oRD2?startTime=1775561331000",
+      "homework": [
+        "p37□５～□７",
+        "ｐ38□９②～□13、プリントｐ１"
+      ]
     },
     "2026-04-27|6:35～8:05|hon|hon_j3_A_soc|4": {
       "content": "",
@@ -2831,109 +163,7 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-02|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "unit１",
-      "page": "",
-      "report": "今回はunit１の単語と訳を扱った。作業スピードはやや遅いが、問題なく進めることが出来た。進度に遅れが少し出ている。",
-      "recordingUrl": "",
-      "homework": [
-        "来週木曜までにWHG#１２，１３，１９，２０，２５，２６",
-        "来週木曜にunit１単語テスト"
-      ]
-    },
-    "2026-04-08|8:25～9:55|minami|minami_j3_X_math|4": {
-      "content": "塾技42根号の計算",
-      "page": "ｐ91",
-      "report": "ルートの最後まで終了。次回までにプリントの作成と取りに来るように、話した。",
-      "recordingUrl": "",
-      "homework": [
-        "なし"
-      ]
-    },
-    "2026-04-07|4:45～6:15|hon|hon_j3_A_soc|6": {
-      "content": "江戸終了",
-      "page": "マイクリアp78～",
-      "report": "本日で江戸は終了。次回単テ。ドリルを絶対に持ってくるよう伝えた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
-      "homework": [
-        "ドリルp60-65〇込み"
-      ]
-    },
-    "2026-04-03|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "content": "Unit1",
-      "page": "#11まで",
-      "report": "教科書単元の入ったが、内容が重く進みが悪い。プロジェクター資料の改善が必要か。",
-      "recordingUrl": "",
-      "homework": [
-        "Unit1 #5-7/12-16/18"
-      ]
-    },
-    "2026-04-28|8:25～9:55|minami|minami_j2_S_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-28|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "㉔～㉗",
-      "page": "ｐ64まで",
-      "report": "髙橋ゆのがやや遅いが、一応、ついてこれていた。倍数と約数のところの理解が意外とみな弱かった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/8f5zWqo5jrQOTiO-9Orov1RFw5wnUCvkSad6pMk7gzlGC-AnfMN9ErMefMPn5ezS.xAf4pyOfqifvyLiU?startTime=1775122529000",
-      "homework": [
-        "＃63③、ｐ68～70（来週まで）"
-      ]
-    },
-    "2026-04-07|8:25～9:55|hon|hon_j2_A_jp|3": {
-      "content": "古文",
-      "page": "新中学問題集ｐ８０",
-      "report": "今回は古文を扱った。時代背景などを解説して本文に入った。古文特有の省略にはまだ慣れていないようで、苦戦する生徒が多かった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/Udr7khMiwmGH1Cr0PXWzUs_72fR-9t-aQN-5gr1rgi2ZiHXc6aGDZfTXQWFRuEKY.bXYQHx2_XioH9HW9?startTime=1775561267000",
-      "homework": [
-        "漢字帳ｐ２１～２４"
-      ]
-    },
-    "2026-04-01|8:25～9:55|minami|minami_j2_S_math|2": {
-      "content": "＃62②まで",
-      "page": "",
-      "report": "ゆっくり進めた。細かいところでミスもあった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/L2eE-0sPQ0o6-1VdynNtQZDYtWspH9eSs_Kd51WYY_Kf9T1vbeSNkA14-5HiLPf1.XLiDc4NY3ZDL0TQH?startTime=1775043158000",
-      "homework": [
-        "＃６３",
-        "P67＃67～70"
-      ]
-    },
-    "2026-04-01|8:25～9:55|minami|minami_j3_A_jp|5": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-15|4:55～6:15|hon|hon_e6_A_jp|1": {
-      "content": "単元テストＡ①",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
-    },
-    "2026-04-03|8:25～9:55|minami|minami_j3_S_eng|3": {
-      "content": "演習①～②助動詞・現在完了",
-      "page": "P10まで",
-      "report": "昨日の演習問題の続きから。助動詞は応答文のmustにつられてしまう生徒が多かったので、注意喚起した。初見ということもあり、正答率はあまりよくない。不安な場合はノートなどに再度練習し、同じパターンの問題で間違えないよう伝えた。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/r7dRHJiIbtMV3emgBbS1W-2-uzmd5d8JqgzfEs8dOqIABNv1hdxvZ0VIRnmA3eWO.m-s69ur8bryrF9Gr?startTime=1775215864000",
-      "homework": [
-        "緑テキストP12～16"
-      ]
-    },
-    "2026-04-28|8:25～9:55|hon|hon_j2_S_jp|6": {
+    "2026-04-20|8:25～9:55|minami|minami_j2_X_eng|6": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2950,16 +180,1941 @@
         "単元別テスト⑭⑮"
       ]
     },
-    "2026-04-09|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "青森県",
-      "page": "第６段落まで",
-      "homework": [
-        "ＳＴ６お茶の水附属"
-      ],
-      "report": "金子が思わぬところで、失点が目立った。原因は右側が弱い。選択肢の場合分けの指導、callの語法など、高度なものを行ってはいるが、何とかついてこられている。永田に続き、大宮も上げてきた。",
+    "2026-04-16|6:35～8:05|hon|hon_j2_X_math|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
       "recordingUrl": ""
     },
-    "2026-04-17|6:35～8:05|hon|hon_j1_A_math|3": {
+    "2026-04-14|6:35～8:05|minami|minami_j2_S_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|6:35～8:05|hon|hon_j3_X_jp|4": {
+      "content": "文法終了",
+      "page": "p183-187",
+      "report": "文節、単語に特化した文法指導は本日で終了。仕上がりとしては、大宮、金子の２名が非常に良い。",
+      "recordingUrl": "",
+      "homework": [
+        "なし"
+      ]
+    },
+    "2026-04-03|4:45～6:15|hon|hon_j3_S_soc|4": {
+      "content": "江戸／p78【２】商業まで",
+      "page": "マイクリアp78～",
+      "report": "p77の演習を使って室町～安土の復習を終えたのち、p78の江戸へ。明日は順調にいけば江戸は終わる。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/igsNBLQgnH_bJRtkirqH5-S0qgNeeFf25qYrTrnr6Z7YN74TXnbejGBXCoF60nZl.dqxt-AtF46dZvGV2",
+      "homework": [
+        "なし／明日まとめて"
+      ]
+    },
+    "2026-04-20|8:25～9:55|minami|minami_j2_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|8:25～9:55|hon|hon_j2_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|4:45～6:15|hon|hon_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|4:55～6:15|minami|minami_e4_A_arith|3": {
+      "content": "３けた÷２けた",
+      "page": "P２５まで",
+      "report": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/3nHNpq7hilFy4AO0E7WYHKUi3ACfbtRZEDvWxCaNs61WAn3xtkWQQnkqIjc2GOOk.D39Xv37u0i8QSkQL?startTime=1775030111000",
+      "homework": [
+        "計算P1～４、ドリルP22，23"
+      ]
+    },
+    "2026-04-11|8:25～9:55|hon|hon_j3_A_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|8:25～9:55|hon|hon_j3_X_math|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|8:25～9:55|minami|minami_j3_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|8:25～9:55|hon|hon_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|8:25～9:55|minami|minami_j3_S_eng|3": {
+      "content": "演習①～②助動詞・現在完了",
+      "page": "P10まで",
+      "report": "昨日の演習問題の続きから。助動詞は応答文のmustにつられてしまう生徒が多かったので、注意喚起した。初見ということもあり、正答率はあまりよくない。不安な場合はノートなどに再度練習し、同じパターンの問題で間違えないよう伝えた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/r7dRHJiIbtMV3emgBbS1W-2-uzmd5d8JqgzfEs8dOqIABNv1hdxvZ0VIRnmA3eWO.m-s69ur8bryrF9Gr?startTime=1775215864000",
+      "homework": [
+        "緑テキストP12～16"
+      ]
+    },
+    "2026-04-02|6:35～8:05|hon|hon_j1_S_math|2": {
+      "content": "㉔～㉗",
+      "page": "ｐ64まで",
+      "report": "髙橋ゆのがやや遅いが、一応、ついてこれていた。倍数と約数のところの理解が意外とみな弱かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/8f5zWqo5jrQOTiO-9Orov1RFw5wnUCvkSad6pMk7gzlGC-AnfMN9ErMefMPn5ezS.xAf4pyOfqifvyLiU?startTime=1775122529000",
+      "homework": [
+        "＃63③、ｐ68～70（来週まで）"
+      ]
+    },
+    "2026-04-07|8:25～9:55|hon|hon_j3_B_eng|2": {
+      "content": "ＨＷＧ！ Unit1",
+      "page": "#3まで",
+      "report": "現在完了のまとめ、リスニング演習を軽やかに終え、ＨＷＧへ。語彙を行った後、受動態を軽く行い直す。新井・川島・和田・堀切・中村が強敵。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/JpiHVQFmjHRCaxT2kx0RBjjXD_PVPTOqgxAjAT0rhDXH-rTX9xOcmK0ICxmeqbLc.0AMhWlo1GHhCsyKS?startTime=1775561318000",
+      "homework": [
+        "通常テキスト#38",
+        "HWG! Unit1 #4-6/8/9/11"
+      ]
+    },
+    "2026-04-28|6:35～8:05|hon|hon_j1_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|6:35～8:05|minami|minami_j3_S_jp|5": {
+      "content": "文学的文章／最高水準より",
+      "page": "最水p34-38",
+      "report": "p34-38は渋幕の過去問。ただ、文章としては読みやすく、問題も変にひねくれていない。宮川、粕川がちょっときつそう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/GSkjVEEXUIrZrjp_hduZqr_qpEA7JY_4yt-yFA3I4yNfjFoLTfu2yweVK9jiWUoC.qCQ1IqzpOBcNCqDi",
+      "homework": [
+        "漢字p54-58"
+      ]
+    },
+    "2026-04-23|8:25～9:55|minami|minami_j2_B_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|8:25～9:55|hon|hon_j3_B_math|1": {
+      "content": "⑦～⑧置き換え",
+      "page": "ｐ37～38",
+      "report": "宿題を頑張れていたのは堀切、大嶋、長谷川、若原のみだった。他は中村と瀬戸口がわからないで済ませており、その他はそもそも取り組んでいなかったのでかなり叱った。堀切はとても頑張れている。本日も置き換えを最後までやり遂げていた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/gbaQm4p_Surj2FxMEm-BZEdZAWhZJKmg8zxp9QhvMq6b6uicvJGLMxIhojXTQJ4m.iHcD8sAvpq4LhXZn?startTime=1775734261000",
+      "homework": [
+        "ｐ39"
+      ]
+    },
+    "2026-04-16|6:35～8:05|hon|hon_j3_B_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-17|6:35～8:05|hon|hon_j3_S_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|4:55～6:15|hon|hon_e4_A_arith|3": {
+      "content": "単元テスト",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-20|4:55～6:15|minami|minami_e6_X_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|8:25～9:55|hon|hon_j2_S_eng|2": {
+      "content": "the cookies",
+      "page": "#１",
+      "report": "今回はthe cookiesを扱った。清宮、佐藤、伊藤の訳がスムーズにいかないことがあった。単語を覚える速度などもやや見劣りする。この三名はやや心配。",
+      "recordingUrl": "",
+      "homework": [
+        "HWG the cookies #２",
+        "テキスト#６１，６２"
+      ]
+    },
+    "2026-04-17|4:55～6:15|hon|hon_e6_S_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|6:35～8:05|minami|minami_j1_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|6:35～8:05|minami|minami_j2_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|4:55～6:15|hon|hon_e6_S_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-14|8:25～9:55|minami|minami_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|8:25～9:55|hon|hon_j3_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|6:35～8:05|minami|minami_j1_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|6:35～8:05|minami|minami_j3_A_jp|1": {
+      "content": "単元テストＡ①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-09|6:35～8:05|minami|minami_j1_S_eng|2": {
+      "content": "L2　冠詞／don't,can, can't",
+      "page": "L2#15まで",
+      "report": "前回の冠詞の続きから。単数・複数をしっかりと見抜くよう指導しながら演習問題を進めた。続いてdon't,can,can'tの指導へ。カリキュラムは進んでいるので、口頭英作文、筆記の英作文に時間を割いた。次回は単元テストなので、L1の最後の自習ページを宿題とし、テストに備えるよう伝えた。",
+      "recordingUrl": "",
+      "homework": [
+        "L1　＃92～97"
+      ]
+    },
+    "2026-04-21|6:35～8:05|hon|hon_j2_B_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|4:55～6:15|hon|hon_e5_A_arith|3": {
+      "content": "⑧体積④大きな体積□１まで",
+      "page": "ｐ70-71",
+      "report": "③求める工夫～④大きな体積□１まで終了",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/uH0TjDGIt8GYvY26_jk_f8m3DO9mO0E_41LNNA4KkydrmW9SHcDv5BMJtD-wWi4_.T8EqWiF7ukOoGGxJ?startTime=1775203292000",
+      "homework": [
+        "ドリルｐ66～ｐ67",
+        "計算ｐ5～ｐ6"
+      ]
+    },
+    "2026-04-28|4:55～6:15|hon|hon_e4_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|4:55～6:15|minami|minami_e6_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|8:25～9:55|minami|minami_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|8:25～9:55|minami|minami_j2_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|8:25～9:55|hon|hon_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|6:35～8:05|hon|hon_j3_S_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|8:25～9:55|hon|hon_j3_S_soc|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|8:25～9:55|minami|minami_j3_A_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|minami|minami_e5_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|8:25～9:55|minami|minami_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-17|4:55～6:15|minami|minami_e6_A_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-08|6:35～8:05|hon|hon_j2_A_eng|2": {
+      "content": "Here We Go UNIT2",
+      "page": "part2 P24 #9まで",
+      "report": "Here We Go UNIT1のgoalの続きから。確認テスト後にUNIT２で動名詞、不定詞のおさらいをしながら進めたがpart2でタイムアップ。とりあえずテスト範囲のUNIT1は終わった。次回は単元テストなので、復習をしてくるよう伝えた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Jc6zzTowBdqm8BiYkK-kC9np1o_VQOHn6JDSrFqvs21rs24pN-57ah5iOUNuz-qx.Ut_KqcjC8pSKSa1U?startTime=1775641036000",
+      "homework": [
+        "Here We Go UNIT1",
+        "#25～27（P18）まで"
+      ]
+    },
+    "2026-04-07|6:35～8:05|hon|hon_j1_S_jp|4": {
+      "content": "小説文",
+      "page": "P12-15",
+      "report": "漢字帳の確認はみなＯＫ。小説文を扱うが、見学中の大木君は問題慣れしていない様子だが、底力はありそう。髙橋彩音は時折、変な音読するのが気になった。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳P19-22"
+      ]
+    },
+    "2026-04-10|6:35～8:05|minami|minami_j1_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|4:55～6:15|minami|minami_e4_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|8:25～9:55|minami|minami_j2_A_jp|6": {
+      "content": "古文",
+      "page": "新中学問題集ｐ８０",
+      "report": "今回は古文を扱った。時代背景などを解説して本文に入った。古文特有の省略にはまだ慣れていないようで、苦戦する生徒が多かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Udr7khMiwmGH1Cr0PXWzUs_72fR-9t-aQN-5gr1rgi2ZiHXc6aGDZfTXQWFRuEKY.bXYQHx2_XioH9HW9?startTime=1775561267000",
+      "homework": [
+        "漢字帳ｐ２１～２４"
+      ]
+    },
+    "2026-04-17|6:35～8:05|minami|minami_j1_A_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-02|4:55～6:15|minami|minami_e4_A_jp|3": {
+      "content": "ことばのきまり",
+      "page": "p34-35",
+      "report": "菅原と清水が宿題忘れ。菅原は、集中力がなく非常に手がかかる。また、作業も雑。斎藤兄弟は、慣れてきたためか表情がとても豊かになった。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳P23-26"
+      ]
+    },
+    "2026-04-09|8:25～9:55|hon|hon_j2_A_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|2:55～4:25|minami|minami_j3_B_eng|1": {
+      "content": "Here We Go UNIT1 part2",
+      "page": "HWGワークP６まで",
+      "report": "連語の確認後、Here We Goに入った。受動態を忘れている者もいたので、復習を入れながら進めた。単語は難しい語句が多かったので、あらためて発音、覚える時間をとった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/p0jEQMslBhQvuck7RR-zMs8qDg9VWBl7TRRCw3doc2KHuiUoC3ep0SIcoalYfWcI._1ZkJcdQdGlbYMCm?startTime=1775196294000",
+      "homework": [
+        "Here We Go UNIT1",
+        "#５～７"
+      ]
+    },
+    "2026-04-03|4:55～6:15|hon|hon_e6_A_arith|2": {
+      "content": "まとめ",
+      "page": "",
+      "report": "テストに向けてのまとめ。見学の坂井、石毛は大変そうだった。特に坂井は読む際に指名したが発言できなかった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/yjjOLezYO9ri9zeBUSUdOQn5n2pYl-AkTk9CLLI0E6UU6DDkYG4akk6Qh6EDwxM.r5QbXa7VDKW2GALg?startTime=1775203509000",
+      "homework": [
+        "テスト勉強",
+        "計算P4まで"
+      ]
+    },
+    "2026-04-15|8:25～9:55|hon|hon_j3_A_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|8:25～9:55|hon|hon_j2_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-06|8:25～9:55|hon|hon_j2_A_eng|1": {
+      "content": "HereWeGoテキスト",
+      "page": "Unit1#23下線部②まで",
+      "report": "宿題個所のHWG#7はテキストを伏せて答えさせた。何度かやり定着をはかった。その後はUnit1を進めた。Goalの途中まで。exciting/-edの違いを解説しつつ、surprise/interestの方も指導。単語練習ができていないのが気がかり。",
+      "recordingUrl": "",
+      "homework": [
+        "HereWeGo#12から14,19から21"
+      ]
+    },
+    "2026-04-02|8:25～9:55|minami|minami_j2_B_eng|2": {
+      "content": "unit１",
+      "page": "",
+      "report": "今回はunit１の単語と訳を扱った。作業スピードはやや遅いが、問題なく進めることが出来た。進度に遅れが少し出ている。",
+      "recordingUrl": "",
+      "homework": [
+        "来週木曜までにWHG#１２，１３，１９，２０，２５，２６",
+        "来週木曜にunit１単語テスト"
+      ]
+    },
+    "2026-04-24|4:55～6:15|minami|minami_e4_X_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|6:35～8:05|hon|hon_j1_S_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-22|8:25～9:55|minami|minami_j3_X_math|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|8:25～9:55|minami|minami_j3_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|8:25～9:55|minami|minami_j3_B_math|1": {
+      "content": "まとめ・因数分解⑥",
+      "page": "～p36まで",
+      "report": "式田、長山がつまずきがち。他はわりと普通にできている。しかし、授業前に類似の展開を確認しているのでそのせいであるだけだと思う。室伏、高橋、山根は大丈夫そう。長山、式田がたぶんできていない。佐藤も意外と怪しいと思う。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/KbWB1EiNeQdE4lmYjZMCHmxJ4NmQXsg5QdrEa8LDlQFk6YstWqEsF37fAwUnZt36.MOoMiuJtBg68r792",
+      "homework": [
+        "p37"
+      ]
+    },
+    "2026-04-27|6:35～8:05|hon|hon_j3_S_sci|7": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|6:35～8:05|hon|hon_j3_A_soc|4": {
+      "content": "江戸／田沼の失脚まで",
+      "page": "マイクリアp78～",
+      "report": "宿題は、明日までに終わらせるのは無理なのでスクーリングまでに終わらせるよう指示した。明日は江戸を終わらせる。演習も行うつもり。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/_mea1-b9aD9qgK8-BSzxtcaWuVN7WESPqgQO4EOLJ_S0r5_vcDUFBKIJ8MvYE4tZ.M-rugddrgiVBFFVm",
+      "homework": [
+        "ドリルp60-65〇込み"
+      ]
+    },
+    "2026-04-08|6:35～8:05|minami|minami_j3_X_jp|5": {
+      "content": "文法終了",
+      "page": "p183-187",
+      "report": "文節、単語に特化した文法指導は本日で終了。仕上がりとしては、大宮、金子の２名が非常に良い。",
+      "recordingUrl": "",
+      "homework": [
+        "なし"
+      ]
+    },
+    "2026-04-18|6:35～8:05|hon|hon_j3_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|6:35～8:05|minami|minami_j1_S_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|8:25～9:55|hon|hon_j3_A_sci|7": {
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ114□１まで",
+      "report": "雲のできかたから□１気圧と風のところまで終了",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/E-oFJ-fVDDGecEqHpkJZYKfNc7F7_b7CIsrVsXTLtaKhaPWOxmPRB-Wi6of5mJSA.9gT8VrWQy_hZR0Dk?startTime=1775303844000",
+      "homework": [
+        "ドリルｐ60（ｐ61）"
+      ]
+    },
+    "2026-04-24|6:35～8:05|minami|minami_j3_S_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|8:25～9:55|minami|minami_j3_S_soc|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|6:35～8:05|minami|minami_j1_A_math|2": {
+      "content": "テスト",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-17|8:25～9:55|minami|minami_j2_S_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-08|8:25～9:55|hon|hon_j2_B_eng|1": {
+      "content": "HereWeGO UNIT1・２",
+      "page": "UNIT2＃２まで",
+      "report": "UNIT１のgoalから。昨日のことなので、まずまずの定着度合いであったが、宮澤と豊田は相変わらず手が動かない。単語力強化が第一の目標。次回は単元テストなので、UNIT１の本文を覚えるくらい読み込んでくるよう伝えた。",
+      "recordingUrl": "",
+      "homework": [
+        "Here We Go UNIT1",
+        "#25～27（P18）まで"
+      ]
+    },
+    "2026-04-04|6:35～8:05|hon|hon_j3_A_soc|3": {
+      "content": "安土桃山終了、江戸(鎖国の完成まで)",
+      "page": "マイクリアp78～",
+      "report": "江戸は鎖国完成まで。ただ、少々駆け足になってしまった。次回p82の【１】を使って復習後、何とか江戸終了までもっていく。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/BV9zD4FA4InXTXXx1nPJ85ptYW3KGFt8HH5vSRGWedVN91HCgOva6dI58hp4cGAB.I0i-NvVTvK_-tmP0",
+      "homework": [
+        "ドリルp58-59〇こみ"
+      ]
+    },
+    "2026-04-18|6:35～8:05|minami|minami_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-17|6:35～8:05|minami|minami_j3_S_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|4:55～6:15|minami|minami_e5_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|4:45～6:15|minami|minami_j3_A_eng|1": {
+      "content": "Here We Go UNIT1 part2",
+      "page": "＃１１まで",
+      "report": "千葉リスニングを飛ばし、Here We Goへ。Unit1はとにかく重い。受動態・原形不定詞を再度行いながら進めた。次回で終わらせるように頑張る。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/AzpfCQVVmWDrqQuyECG-TAkvbIJzsgytD4VucHkHvK3H_GkYYkn_z-Eagvmz_4PQ._QI8zEVOqiTwjFFe?startTime=1775288996000",
+      "homework": [
+        "HWG! Unit1#5-7",
+        "#12-18"
+      ]
+    },
+    "2026-04-28|8:25～9:55|minami|minami_j2_S_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|hon|hon_e6_S_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|4:55～6:15|minami|minami_e6_A_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|8:25～9:55|minami|minami_j2_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|6:35～8:05|minami|minami_j2_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|6:35～8:05|hon|hon_j3_B_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|8:25～9:55|hon|hon_j3_S_soc|3": {
+      "content": "江戸／文化を除き終了",
+      "page": "マイクリアp78～",
+      "report": "江戸は文化を除き終了。文化は入試直前で扱う。次回p83の演習後、p90-93の問題に取りくむつもり。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/R_tPieh8-KfLSr8NH9eVrEvITPSLY4HKS41WfAQ2b21PUJNCG_q3zFaFhsSzpr-p.h25wUgaXD4Ay-lY_?startTime=1775302167000",
+      "homework": [
+        "ドリルp58-59〇こみ"
+      ]
+    },
+    "2026-04-03|6:35～8:05|hon|hon_j1_A_math|3": {
+      "content": "分配法則",
+      "page": "＃５４まで",
+      "report": "分配法則が終わらなかった。やはりここはカリキュラム的に詰まりすぎている。要改定",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/hhlftS2eRlCbK7Rvk2NWWVEGpHNZQbqIs-5KUY9NPWUfLd1HOZPVI4kX0VVh-Zw6.sxQnTVQUVlP-0E9Z?startTime=1775209025000",
+      "homework": [
+        "P45＃５０④～⑩",
+        "P51＃５２⑤～⑧、P52＃５３③～⑧、P53"
+      ]
+    },
+    "2026-04-23|6:35～8:05|minami|minami_j2_S_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|6:35～8:05|minami|minami_j3_B_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|4:55～6:15|minami|minami_e6_S_eng|1": {
+      "content": "English Travel UNIT2 C・D",
+      "page": "P18 緑＃31まで",
+      "report": "三単現の復習をしてからDoes, doesn'tの導入。三単現のルールは何とか身に付けることができているが、定着まではまだまだ練習が必要そうである。",
+      "recordingUrl": "",
+      "homework": [
+        "緑テキスト",
+        "#27～29、32～36"
+      ]
+    },
+    "2026-04-09|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "content": "新小問・体積",
+      "page": "p62まで",
+      "report": "長谷川佳那汰君がどうしても図形のイメージに苦労していた。単位変換含めよく練習できるといい。西村涼君が宿題が途中までしかやっていなかったので次回確認。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/An1f2VKIkRG30e728jip_Xsr_6-mGSfEBnWxqzPz66dnRvSv6M_dJxPI2Hc7pgAK.4R_ZxhcHtrI2ewdd?startTime=1775721388000",
+      "homework": [
+        "新小学問題集p63～65残り",
+        "算数ドリルp21～24"
+      ]
+    },
+    "2026-04-10|8:25～9:55|hon|hon_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|8:25～9:55|minami|minami_j3_A_sci|2": {
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ114□１まで",
+      "report": "雲のできかたから□１気圧と風のところまで終了",
+      "recordingUrl": "",
+      "homework": [
+        "ドリルｐ60（ｐ61）"
+      ]
+    },
+    "2026-04-04|2:55～4:25|hon|hon_j3_A_math|1": {
+      "content": "置きかえる因数分解",
+      "page": "P39まで",
+      "report": "置き換えの因数分解までやってぎりぎりだった。遅れは取り戻せず。田村や青木が因数分解の基本の部分ですら苦戦していた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/UAWJdO9Eg3q_v-IU__9wDuhfC3NIEhp-HWVNrAV-cBU9YDLNhzF1TPq_Ds0GhzLj.IAV7TbL3bcPlm0RZ",
+      "homework": [
+        "P40＃47①～⑦、＃48⑫～⑭",
+        "P42□７"
+      ]
+    },
+    "2026-04-01|4:55～6:15|hon|hon_e6_A_jp|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|8:25～9:55|minami|minami_j3_B_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|6:35～8:05|hon|hon_j2_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|6:35～8:05|hon|hon_j1_B_math|3": {
+      "content": "単元テスト①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-06|4:55～6:15|minami|minami_e5_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|6:35～8:05|minami|minami_j1_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|8:25～9:55|hon|hon_j2_A_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|2:55～4:25|hon|hon_j1_S_math|2": {
+      "content": "p79#80まで",
+      "page": "",
+      "report": "正負の数の演習さいごまで。高橋ゆのと斎藤ゆきながオンラインで参加。高はしは少し手が上がらないことが多かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/XghrPoJWMw4a_tKd1sCDFhjSj5M5ISnUu8vgL0w1QahlCPolvpNt8muADm0nyJwz.c_9l-7Eow6BGEeaH",
+      "homework": [
+        "＃63③、ｐ68～70（前回のもの）"
+      ]
+    },
+    "2026-04-18|4:55～6:15|hon|hon_e5_X_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|6:35～8:05|minami|minami_j1_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|8:25～9:55|hon|hon_j2_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|8:25～9:55|hon|hon_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|6:35～8:05|hon|hon_j1_B_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|4:45～6:15|hon|hon_j3_A_soc|6": {
+      "content": "江戸終了",
+      "page": "マイクリアp78～",
+      "report": "本日で江戸は終了。次回単テ。ドリルを絶対に持ってくるよう伝えた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
+      "homework": [
+        "ドリルp60-65〇込み"
+      ]
+    },
+    "2026-04-08|8:25～9:55|minami|minami_j3_X_math|4": {
+      "content": "塾技42根号の計算",
+      "page": "ｐ91",
+      "report": "ルートの最後まで終了。次回までにプリントの作成と取りに来るように、話した。",
+      "recordingUrl": "",
+      "homework": [
+        "なし"
+      ]
+    },
+    "2026-04-22|6:35～8:05|minami|minami_j3_X_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|4:55～6:15|hon|hon_e6_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-22|6:35～8:05|hon|hon_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|8:25～9:55|minami|minami_j3_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|4:55～6:15|minami|minami_e6_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|6:35～8:05|minami|minami_j3_B_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-01|6:35～8:05|minami|minami_j3_A_math|1": {
+      "content": "くふうして計算する",
+      "page": "＃４９まで",
+      "report": "木川が遅かった。見学の西原さんはかなり良くできていたのでSで良い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/DIjF4__KKTvxfTWSSO0KxCw1yMFnzWBdOIlBc1SSfYKABfe6OpedeXVC15THCysL.4xvmKBtFwbasNl9k",
+      "homework": [
+        "P37＃４３、P39～42、P26～29の（１６）～（３０）"
+      ]
+    },
+    "2026-04-14|8:25～9:55|minami|minami_j2_A_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|8:25～9:55|hon|hon_j3_A_jp|4": {
+      "content": "文学的文章の読解",
+      "page": "要対p78-81",
+      "report": "回線環境の悪い子が多い、かつ消極的な子が多く、非常にやりづらい。遠藤、原澤、嶺井など毎回指名する子が偏りがちになっている。そうならないよう工夫もしているが、ここ数年で一番やりづらいかも。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/EkdiMgLv-bM36HxFH1dTRGJBf-dU6CxUQOEqjSUlU2PpkNu3tmGzZE0kx0luAOUu.pRQShMb0yLAxoaqX",
+      "homework": [
+        "漢字p36-40"
+      ]
+    },
+    "2026-04-01|6:35～8:05|hon|hon_j1_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|4:55～6:15|minami|minami_e4_A_jp|3": {
+      "content": "国語辞典の使い方",
+      "page": "漢字帳p21-22",
+      "report": "斎藤兄弟・菅原が宿題忘れ。菅原はほぼ未完。入会して１か月もたたないうちにこの状態は、今後が心配。国語辞典の使い方は、清水が一人大苦戦。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳P28-31",
+        "単語テスト勉強"
+      ]
+    },
+    "2026-04-01|2:55～4:25|hon|hon_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|6:35～8:05|minami|minami_j1_A_math|2": {
+      "content": "要点24素数",
+      "page": "ｐ58＃59",
+      "report": "四則混合の計算後、素数に入った。全体的にはまじめだが、園田が少しついてこれないし、集中力が怪しい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/I5pFRXwCuO7sCxyPq62mMXPuahxqUsX06lzUyz4YSwaPEY27JT9kWNCXShckVnQa.r1fNzPv2BL7cCcKo?startTime=1775640994000",
+      "homework": [
+        "ｐ57"
+      ]
+    },
+    "2026-04-14|8:25～9:55|hon|hon_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|6:35～8:05|hon|hon_j1_S_math|2": {
+      "content": "㉚～㉛",
+      "page": "ｐ80～",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-03|2:55～4:25|hon|hon_j2_A_math|1": {
+      "content": "等式の変形",
+      "page": "P53③まで",
+      "report": "少し進みが遅くなってしまった。次回がテスト１回前なので上手くまとめたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/HJETDRSTEIk21WcNlHCe20trn0Djszo0TdmQGRp6pSAuER93MmJ6V5bBeOYC-fAb.bAEShYHek833_8OO?startTime=1775195901000",
+      "homework": [
+        "P52＃５４④～⑧",
+        "P42～４５★★以外、P56,57"
+      ]
+    },
+    "2026-04-15|8:25～9:55|hon|hon_j3_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|6:35～8:05|hon|hon_j2_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|8:25～9:55|minami|minami_j3_S_soc|6": {
+      "content": "江戸／文化を除き終了",
+      "page": "マイクリアp78～",
+      "report": "江戸は文化を除き終了。文化は入試直前で扱う。次回p83の演習後、p90-93の問題に取りくむつもり。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/R_tPieh8-KfLSr8NH9eVrEvITPSLY4HKS41WfAQ2b21PUJNCG_q3zFaFhsSzpr-p.h25wUgaXD4Ay-lY_?startTime=1775302167000",
+      "homework": [
+        "ドリルp58-59〇こみ"
+      ]
+    },
+    "2026-04-20|6:35～8:05|hon|hon_j2_S_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "content": "体積⑤、まとめまで",
+      "page": "p73まで",
+      "report": "長谷川佳那汰君が基礎的な部分で躓いていた。オンラインだったこともあり、少し集中ができていなかったかもしれない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/LdbL_mcdCxUrl9T0GYP-P-DE-igcb4_iSIJ2r6_lrv2lYZJ47NihQtqGGrQ-rppz.xk7iQAgPNMqmzUJk?startTime=1775116599000",
+      "homework": [
+        "ホープドリルp70～73、算数ドリルp17～p20"
+      ]
+    },
+    "2026-04-28|6:35～8:05|hon|hon_j1_S_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|4:55～6:15|hon|hon_e6_A_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|6:35～8:05|minami|minami_j2_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|6:35～8:05|minami|minami_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|4:55～6:15|hon|hon_e6_A_jp|1": {
+      "content": "単元テストＡ①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-24|6:35～8:05|hon|hon_j2_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|6:35～8:05|hon|hon_j1_A_jp|3": {
+      "content": "物語文",
+      "page": "新中学問題集ｐ１６～１７",
+      "report": "今回は物語文を扱った。大越、大宮、佐々木はクラスの中では理解力があるように感じる。それ以外は中々自分の言葉で答案を作るのが難しい様子。また、園田、藤井は指名をしても反応がほとんどない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/_kZvQaZpMsqezQSv2A-sPLkZNZLm0zeTJMEmSdKq2m8egfHrGS-VqSDpppZQ_Fwg.uKZxyS9VmRt26-p-?startTime=1775554818000",
+      "homework": [
+        "漢字帳ｐ１９～２２"
+      ]
+    },
+    "2026-04-24|8:25～9:55|hon|hon_j3_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|6:35～8:05|minami|minami_j1_A_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|minami|minami_e6_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|4:55～6:15|minami|minami_e5_A_arith|1": {
+      "content": "体積③④",
+      "page": "p68～71",
+      "report": "高橋は計算や図形の見方は安定しているが式を書かない、長澤はバランスはよいが計算が、月森は図形をよく確かめないで思い込みで計算する。原澤、岡崎ともにかなり厳しい感じで成績云々というよりしばらくは学びの大切さを伝えるくらいにしていかないと無理そう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/eRlzmsx94LhdX9hKWBtRMvDL8zV_RI5_nkP8uS3RrQpe9g2M3Ofx3fOPXsmQn-vY.HN6NloufC-Zi5evh",
+      "homework": [
+        "計算ｐ３～４",
+        "ホープドリルp66～68"
+      ]
+    },
+    "2026-04-14|6:35～8:05|minami|minami_j1_A_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|6:35～8:05|hon|hon_j3_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|4:45～6:15|minami|minami_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|6:35～8:05|minami|minami_j1_S_math|1": {
+      "content": "正負の数の利用",
+      "page": "P70＃74",
+      "report": "清水が項のところがわかっていないらしく、途中で泣いてしまった。土曜日の補講に呼んだ。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/be2BAIXAZ-124hN6QFtSenhyOMdt6XAliB3m_uTu7KrTTwSPVDEfQJHPusN7cQ4k.En1UCVLtTeCBKwVy",
+      "homework": [
+        "P70",
+        "＃74～80"
+      ]
+    },
+    "2026-04-15|4:55～6:15|hon|hon_e5_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|6:35～8:05|hon|hon_j1_B_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|4:55～6:15|hon|hon_e6_A_eng|1": {
+      "content": "緑テキスト#11まで",
+      "page": "EnglishTravelerp12の４段目/p13C②まで",
+      "report": "宿題個所の単語はテキストを伏せて答えさせた。おとでは言えるが、つづりはまだまだ。暗唱は少し詰まるものもいた。Who isではthat woman/She isも練習した。",
+      "recordingUrl": "",
+      "homework": [
+        "緑テキスト#9,10,13",
+        "緑テキスト#11/13で練習した文を見ずに言えるようにする"
+      ]
+    },
+    "2026-04-17|4:55～6:15|minami|minami_e5_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|6:35～8:05|hon|hon_j1_B_math|2": {
+      "content": "素因数分解",
+      "page": "P59＃60⑤まで",
+      "report": "カリキュラムが詰まりすぎているのでなんとか工夫しながら先に進めたが、やはりまだ遅れはある。とはいえ次回でテストに向けて形にしてください。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Rc3bUjuQHPX_Tw5XSCeW0u62HTSw2SeKKavxqaF3Dqm_Y24Z_2XfsqeS3p5hLDVf.p69ijQEMKnHl8ZNp?startTime=1775295656000",
+      "homework": [
+        "P53③以外、P57",
+        "P59＃60⑥～⑧、P60□１、□２"
+      ]
+    },
+    "2026-04-04|6:35～8:05|hon|hon_j3_S_sci|7": {
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ112-ｐ115",
+      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000",
+      "homework": [
+        "ドリルｐ62～ｐ63",
+        "〇付けまで"
+      ]
+    },
+    "2026-04-06|8:25～9:55|minami|minami_j3_A_sci|2": {
+      "content": "19大気の動きと日本の天気",
+      "page": "ｐ118-1まで",
+      "report": "18の前線の問題から19大気の動きの途中まで終了した。次回は続きから進める。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/gnG_A0U_xFzB6f3D2vIq-R6ALdA_sJ6zw0V11uQ27ajgd0x_2zaKzsz5pf3EIOc3.-wWButRPGHgMoHWC?startTime=1775475267000",
+      "homework": [
+        "ドリルｐ62（ｐ63）"
+      ]
+    },
+    "2026-04-13|6:35～8:05|minami|minami_j2_S_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "content": "19大気の動きと日本の天気",
+      "page": "ｐ116-ｐ121",
+      "report": "19の大気～総合力８まで終了。宿題は、ドリルの〇付けまで。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/R8sTUiNjWwO7dCtv2nXdlL9Gu_jTB68dxGdgMp5mWeaOoXhugUkPJC4XVs01rfJK.Wm35wvJZUHGgvhkV",
+      "homework": [
+        "ドリルｐ64～65",
+        "〇付けまで"
+      ]
+    },
+    "2026-04-15|6:35～8:05|minami|minami_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|8:25～9:55|hon|hon_j3_S_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|6:35～8:05|hon|hon_j1_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|4:55～6:15|minami|minami_e5_A_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|6:35～8:05|hon|hon_j3_S_sci|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|6:35～8:05|hon|hon_j3_A_soc|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|6:35～8:05|minami|minami_j2_A_math|1": {
+      "content": "⑲偶数と奇数・演習",
+      "page": "p38～41",
+      "report": "５で割ると１余る数を表してこれたのはクラスの３分の１程度。レベルは全体的に低い気がするが、ジョンが二種類表してきたのでおしゃれだと褒めた。たぶん本日の内容を理解できているのも同じくらいだろうと思うが、鹿内や伊藤などは意外と手が動いていた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/lPJ8rK2G2P9OQvEggP1LBMUa_3g2qtxB8cdHEvria0b9Fv5GlSBFPLGlwfnBZI2O.loB6SBI5okAQk6Kv?startTime=1775554761000",
+      "homework": [
+        "p43～45★中心",
+        "３で割ると１余る数と一の位がa小数第一がbの数を表す"
+      ]
+    },
+    "2026-04-22|6:35～8:05|hon|hon_j3_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|4:55～6:15|hon|hon_e6_S_arith|1": {
+      "content": "単元テスト①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-15|4:55～6:15|minami|minami_e4_A_arith|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|6:35～8:05|minami|minami_j3_X_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|4:45～6:15|minami|minami_j3_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|8:25～9:55|minami|minami_j2_S_eng|2": {
+      "content": "HereWeGoテキスト#25まで",
+      "page": "",
+      "report": "HereWeGounit1を進めた。過去進行形や接続詞whenの復習をするとともに、at first1の使い方、excited/excitingの違い、somethingと形容詞なども。ノートをとるのが以前よりも積極的になってきた。",
+      "recordingUrl": "なし",
+      "homework": [
+        "HereWeGo#12から14,",
+        "19から21,26,27,p19"
+      ]
+    },
+    "2026-04-13|8:25～9:55|minami|minami_j3_A_sci|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|8:25～9:55|hon|hon_j2_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|2:55～4:25|hon|hon_j2_B_math|1": {
+      "content": "等式の変形の最初",
+      "page": "P49例２①まで",
+      "report": "進度に余裕があったので、偶数・奇数や表に関しても少し説明しました。その後等式の変形に入るところで、項に関して石原などは分かっていなかったので復習を多くしました。よってそのページの途中まで進んで終わりました。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/jwTdPCSW89Tw9s6roaLLpHxntYK2UXfrdWQ1N4FY_nm7MEcKvPix2VXNQ_PDe-G-.vLaBLRtszEyNDCIs",
+      "homework": [
+        "P46□２，□３"
+      ]
+    },
+    "2026-04-15|6:35～8:05|hon|hon_j3_S_jp|3": {
+      "content": "単元テストＳ①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-06|4:55～6:15|hon|hon_e5_A_eng|2": {
+      "content": "This/That is～",
+      "page": "",
+      "report": "宿題個所は、最初を大文字にしないミス、疑問文をYou areとやってしまうミスが見られた。リスニングはPracticeCをやり、Unit2へ。This is,that isをオーラルでいろいろ練習させた。大竹の飲み込みが悪いので、単元テスト前に補講に呼ぶ。",
+      "recordingUrl": "",
+      "homework": [
+        "ノートにやった単語をあと３回",
+        "テキストp14の上の４文暗唱"
+      ]
+    },
+    "2026-04-03|8:25～9:55|minami|minami_j2_B_eng|1": {
+      "content": "Unit2",
+      "page": "#11まで",
+      "report": "Unit1の確認テスト終了後、Unit2へ。音読と和訳、文法的説明に重きを置いたが、なかなか進まず。申し訳ございませんでした。",
+      "recordingUrl": "",
+      "homework": [
+        "来週木曜までにWHG#１２，１３，１９，２０，２５，２６",
+        "来週木曜にunit１単語テスト"
+      ]
+    },
+    "2026-04-13|4:55～6:15|hon|hon_e4_X_arith|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|6:35～8:05|hon|hon_j2_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|2:55～4:25|hon|hon_j2_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|6:35～8:05|minami|minami_j3_A_soc|6": {
+      "content": "安土桃山終了、江戸(鎖国の完成まで)",
+      "page": "マイクリアp78～",
+      "report": "江戸は鎖国完成まで。ただ、少々駆け足になってしまった。次回p82の【１】を使って復習後、何とか江戸終了までもっていく。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/BV9zD4FA4InXTXXx1nPJ85ptYW3KGFt8HH5vSRGWedVN91HCgOva6dI58hp4cGAB.I0i-NvVTvK_-tmP0",
+      "homework": [
+        "ドリルp58-59〇こみ"
+      ]
+    },
+    "2026-04-23|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|4:55～6:15|hon|hon_e6_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|4:55～6:15|minami|minami_e6_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|6:35～8:05|minami|minami_j3_X_eng|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|4:55～6:15|minami|minami_e5_A_jp|3": {
+      "content": "ことばのきまり",
+      "page": "テキストP34-35",
+      "report": "ことばのきまりの学習の続きから。仮名遣いと国語辞典の使い方の単元だが、今年もかなり厳しい状態。関根君が現段階では最もできるか。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/K_bfUdWjX4SZ-xEnu77KlUaqUY_iEfwqMXurYB7s7VhjZ8CFLkwBScAFcRd7KSXT.Vz3nBwKU44u4m5KQ?startTime=1775203357000",
+      "homework": [
+        "漢字帳P21-24"
+      ]
+    },
+    "2026-04-28|8:25～9:55|hon|hon_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|8:25～9:55|minami|minami_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|4:55～6:15|minami|minami_e6_A_jp|1": {
+      "content": "漢字の音訓、熟字訓",
+      "page": "練成テキストｐｐ８１～８２",
+      "report": "今回は漢字の音訓と熟字訓を扱った。音訓については最初区別がついていなかったが、解説後はよくできていた。嶋田と香月の反応の鈍さが際立ってきた。注視が必要。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳ｐ２１～２４"
+      ]
+    },
+    "2026-04-27|6:35～8:05|minami|minami_j1_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|6:35～8:05|hon|hon_j1_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|6:35～8:05|hon|hon_j1_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|4:55～6:15|hon|hon_e6_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|8:25～9:55|hon|hon_j3_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|8:25～9:55|minami|minami_j2_S_math|2": {
+      "content": "＃62②まで",
+      "page": "",
+      "report": "ゆっくり進めた。細かいところでミスもあった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/L2eE-0sPQ0o6-1VdynNtQZDYtWspH9eSs_Kd51WYY_Kf9T1vbeSNkA14-5HiLPf1.XLiDc4NY3ZDL0TQH?startTime=1775043158000",
+      "homework": [
+        "＃６３",
+        "P67＃67～70"
+      ]
+    },
+    "2026-04-20|8:25～9:55|minami|minami_j3_A_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|6:35～8:05|hon|hon_j1_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|6:35～8:05|minami|minami_j2_S_math|2": {
+      "content": "#66まで",
+      "page": "",
+      "report": "式の値の難しいところの練習。野尻はオンラインだったがよくできていた。あとは、同じくらいのレベル。水上が少し心配かも。",
+      "recordingUrl": "",
+      "homework": [
+        "ｐ68＃71",
+        "ｐ69"
+      ]
+    },
+    "2026-04-13|4:55～6:15|minami|minami_e5_S_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|4:55～6:15|minami|minami_e6_A_eng|2": {
+      "content": "緑テキスト#11まで",
+      "page": "Travelerのp12の4段目Who is",
+      "report": "宿題個所の英単語はテキストを伏せて答えさせたが、まだオーラルでもおぼつかなかった。綴りもまだまだ。Are youの暗唱は宮嶋が少し詰まったが、良好。Let's PracticeBの①②を行い、Is sheも指導した。後半はWho isに入り、練習ページではthat womanおよび答え方も指導。答えではShe is Ken's mother.で行った。次回暗唱ではそれも。前回欠席の中井、今回から正式に入った高野はしっかりできていた。",
+      "recordingUrl": "なし",
+      "homework": [
+        "緑テキスト#9,10,13",
+        "#11/13の文を見なくても言えるようにしてくる"
+      ]
+    },
+    "2026-04-28|6:35～8:05|minami|minami_j2_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|4:55～6:15|hon|hon_e4_A_arith|3": {
+      "content": "グラフの復習",
+      "page": "",
+      "report": "カリキュラム的にはもう終わっているので、テストを印刷してそれを進めていった。",
+      "recordingUrl": "",
+      "homework": [
+        "計算P7～９"
+      ]
+    },
+    "2026-04-01|4:55～6:15|minami|minami_e6_A_arith|1": {
+      "content": "まとめと演習",
+      "page": "",
+      "report": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/_0SgThR9xLnyDsIFsSYToGLavpqMAA5lhK_6NfU-yWJ-cxDMJfjeJZHw_RcJIjqe.I_cztH96xeVxpnKC?startTime=1775030181000",
+      "homework": [
+        "ホープp44～45、p66～67、計算ドリルp3～4"
+      ]
+    },
+    "2026-04-08|4:55～6:15|hon|hon_e6_A_jp|1": {
+      "content": "文の組み立て、漢字の音訓",
+      "page": "p32-35,p81-83",
+      "report": "文の組み立て終了後、音訓の指導に入った。が、練習量が圧倒的に足りていない。p82【３】に相当時間がかかってしまった。p83【２】は多少の導入は済ませたので、各自で取り組むよう指示した。",
+      "recordingUrl": "",
+      "homework": [
+        "単テに向けて勉強"
+      ]
+    },
+    "2026-04-13|4:55～6:15|minami|minami_e4_X_arith|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|6:35～8:05|hon|hon_j1_A_eng|1": {
+      "content": "自己紹介、HWGunit１",
+      "page": "unit１part１まで",
+      "report": "今回は自己紹介の続きとHWGに入った。初めてや入りたての生徒が多く、これまでの復習を織り交ぜながら進めることになった。特に一般動詞とbe動詞の区別や疑問文の作り方を一人一人確認していくとかなり時間がかかる。",
+      "recordingUrl": "",
+      "homework": [
+        "HWG　unit１　♯４～７"
+      ]
+    },
+    "2026-04-22|6:35～8:05|minami|minami_j1_B_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|4:55～6:15|hon|hon_e6_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|8:25～9:55|minami|minami_j2_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|8:25～9:55|minami|minami_j3_A_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|6:35～8:05|hon|hon_j3_B_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|4:45～6:15|minami|minami_j1_S_math|2": {
+      "content": "要点２７数の範囲と四則",
+      "page": "P64",
+      "report": "",
+      "recordingUrl": "",
+      "homework": [
+        "P62演習",
+        "P69□９，１０"
+      ]
+    },
+    "2026-04-14|8:25～9:55|hon|hon_j2_S_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-13|6:35～8:05|minami|minami_j1_S_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|4:55～6:15|minami|minami_e5_S_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|4:55～6:15|minami|minami_e5_S_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|8:25～9:55|hon|hon_j2_A_math|1": {
+      "content": "図形と文字式",
+      "page": "P58まで",
+      "report": "なんとか今日で終わらせることができた。オンラインでの参加も５人くらいいたりして対面で見れたのは７名ほどだったが基本的にはよくできてくれていたと思う。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/jMwUpYzQuVijCG2MfdXIuYbe57fZqF0L5EbWyqqxr8CCQ2IlPoNHasjz1Tx06YXt.KgEzRi0dKyyNgfLi",
+      "homework": [
+        "P59～61",
+        "テスト勉強"
+      ]
+    },
+    "2026-04-02|2:55～4:25|minami|minami_j3_S_eng|1": {
+      "content": "Here We Go UNIT1 終了／演習①時制",
+      "page": "通常テキストL3　P4　３まで",
+      "report": "Here We Goの単語確認を終え、本文の訳を進めた。後半は演習問題へ。時間を取り答え合わせ。やはり時制に関する意識が甘い部分が多々見られたので、時制を中心に同意表現なども指導。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/jULEdYkBB7T8VvoX2uBI5UQ5EbNryhLNlPeczJCcLOcaCpP743jDaXHWcl31yzVO.HTQGZ7J4WdBHfyhX?startTime=1775109364000",
+      "homework": [
+        "連語P20、21"
+      ]
+    },
+    "2026-04-06|8:25～9:55|hon|hon_j3_S_soc|4": {
+      "content": "江戸終了",
+      "page": "マイクリアp78～",
+      "report": "江戸は資料問題、総合問題も含め全て終了。特を入れた結果、完全にカリキュラム通りの進行となっている。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/SWBi8UTS1AlCW5OS8-5VVsZlIAuHGY3mPN63yE407bPXmcd6qlXjHH3h9Du-vdFr.XgKqcMulmvtVC57W",
+      "homework": [
+        "ドリルp60-65〇込み"
+      ]
+    },
+    "2026-04-01|8:25～9:55|minami|minami_j3_X_math|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|4:55～6:15|minami|minami_e6_A_jp|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|4:55～6:15|minami|minami_e4_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|8:25～9:55|hon|hon_j3_B_math|1": {
+      "content": "まとめ～⑥",
+      "page": "ｐ36まで",
+      "report": "例年に比べて定着率が良い。中村なども欠席の分をうまく取り戻していた。彼は伸びるかもしれない。堀切はやや情報量が多くて混乱していたが一年前に比べてできることがかなり増えている。長谷川がやや掛け算が苦手そう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/OXs-wo8gY93rFk6TQF2kKn82Hy0Mltai6ycDgTvKOhVDa-Mw7vDv9f-N75D40O8.5vHAeDXqeI839R16",
+      "homework": [
+        "ｐ37（丁寧に）"
+      ]
+    },
+    "2026-04-03|8:25～9:55|hon|hon_j3_A_math|1": {
+      "content": "いろいろな因数分解（２）",
+      "page": "P37まで",
+      "report": "因数分解の公式２・３の利用のところ。あまりできていなかったので、黒板にて何度も練習した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/TF5rL_izrtnSO61gmpTNCd4PCFKudw21ClMk1qBN-Qc7c0MjgpOoIHYv1s6_GrR2.6p7-VzIxdeR6zbL4",
+      "homework": [
+        "ｐ41①～⑪までと、",
+        "ｐ42□１～□６まで"
+      ]
+    },
+    "2026-04-17|8:25～9:55|hon|hon_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|8:25～9:55|minami|minami_j2_B_math|1": {
+      "content": "式の計算、図形と文字式まで",
+      "page": "p54まで",
+      "report": "少し分数が出てきただけで躓いてしまう者が多かった。川村穂乃華さんがまだ少し不安定な部分が多いのでよく復習できるように。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/z4kZ7VMOpK0daEWPYTGNACKQZp5Ajw5INri5j9HRYjLWolgJF0bAQHuEbeYtB1I9.BgCpIBUZ19olZch9?startTime=1775647523000",
+      "homework": [
+        "p53、p55、p57～58",
+        "ここまでの内容の復習（次回単元テスト）"
+      ]
+    },
+    "2026-04-17|4:55～6:15|hon|hon_e6_A_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|8:25～9:55|minami|minami_j2_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|4:55～6:15|minami|minami_e5_A_eng|2": {
+      "content": "UNIT１・２復習",
+      "page": "Work Book P４～８",
+      "report": "単語テストは皆まずまずの出来。この中だと関根が一番堅いか。次いで月森。岡﨑は書き写しミスをしたり、作業が雑になってしまったりとまだまだ課題は多い。次回は単元テストなので、本日実施したワークブック、単語の復習を宿題とした。",
+      "recordingUrl": "",
+      "homework": [
+        "UNIT１・２単語練習",
+        "ワークブックP4～８復習"
+      ]
+    },
+    "2026-04-28|8:25～9:55|minami|minami_j3_B_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|8:25～9:55|hon|hon_j3_A_sci|7": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|6:35～8:05|hon|hon_j1_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-09|6:35～8:05|minami|minami_j3_X_eng|4": {
+      "content": "青森県",
+      "page": "第６段落まで",
+      "report": "金子が思わぬところで、失点が目立った。原因は右側が弱い。選択肢の場合分けの指導、callの語法など、高度なものを行ってはいるが、何とかついてこられている。永田に続き、大宮も上げてきた。",
+      "recordingUrl": "",
+      "homework": [
+        "ＳＴ６お茶の水附属"
+      ]
+    },
+    "2026-04-20|6:35～8:05|hon|hon_j3_S_sci|7": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|4:55～6:15|minami|minami_e6_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|4:55～6:15|minami|minami_e6_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|8:25～9:55|minami|minami_j2_A_jp|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|6:35～8:05|hon|hon_j2_S_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|6:35～8:05|minami|minami_j3_X_eng|4": {
+      "content": "山村学園",
+      "page": "",
+      "report": "山村学園を扱う。実話をもとにした長文だが、大意はみなOKだが、金子も含め細部なるとまだまだつかみ切れない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/wv8cf3nf2i0GRwyLRNFVrIqFyhusH1zr8DYLSwM__fGSUhHJiHmWbwdXKQxI6iWP.Nbaj4uaBPQXFJzzR?startTime=1775122518000",
+      "homework": [
+        "ST５青森県"
+      ]
+    },
+    "2026-04-09|6:35～8:05|minami|minami_j3_B_eng|1": {
+      "content": "HWG　unit１　part２，３",
+      "page": "HWG#１８まで",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-03|6:35～8:05|minami|minami_j2_A_eng|1": {
+      "content": "Unit1",
+      "page": "#11まで",
+      "report": "教科書単元の入ったが、内容が重く進みが悪い。プロジェクター資料の改善が必要か。",
+      "recordingUrl": "",
+      "homework": [
+        "Unit1 #5-7/12-16/18"
+      ]
+    },
+    "2026-04-07|6:35～8:05|minami|minami_j1_S_jp|5": {
+      "content": "小説文",
+      "page": "P12-15",
+      "report": "漢字帳の確認はみなＯＫ。小説文を扱うが、見学中の大木君は問題慣れしていない様子だが、底力はありそう。髙橋彩音は時折、変な音読するのが気になった。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳P19-22"
+      ]
+    },
+    "2026-04-02|6:35～8:05|hon|hon_j1_B_math|3": {
+      "content": "正負の数、四則の混じった計算・累乗まで",
+      "page": "p41",
+      "report": "とにかく総じて計算が安定しない。特に宮田澪君、岩本龍之介君、戸部海晴君は途中式を言われたとおりに書かずに間違えているのでまず板書をちゃんとできるように。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/RjHp2cda933dl1HaxQjJ7Bmlhph-iHIT-dbBzT6XYlzROWtsb0AgrcwX-Af-ZUdE.jRd3wMkO64Odt6Fd?startTime=1775122673000",
+      "homework": [
+        "p45残り、p46～p47★以外、p50～p51残り"
+      ]
+    },
+    "2026-04-09|8:25～9:55|minami|minami_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|8:25～9:55|hon|hon_j3_A_sci|7": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|4:55～6:15|minami|minami_e5_A_eng|2": {
+      "content": "UNIT2　Bの復習～C 英単語６コ",
+      "page": "",
+      "report": "本日の単語テストは皆まずまずの出来。岡﨑も満点だったのでほめたが、文字と発音が一致していないふしがあるので、少しずつフォニックスも取り入れたいところ。音読練習も宿題と課すこととした。",
+      "recordingUrl": "",
+      "homework": [
+        "単語６コ練習 P19音読・暗唱"
+      ]
+    },
+    "2026-04-28|4:55～6:15|hon|hon_e6_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|6:35～8:05|hon|hon_j1_S_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|6:35～8:05|hon|hon_j2_B_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-22|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2976,6 +2131,153 @@
         "P59＃60④～⑧"
       ]
     },
+    "2026-04-17|6:35～8:05|minami|minami_j2_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-28|6:35～8:05|hon|hon_j2_B_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|4:55～6:15|hon|hon_e4_A_jp|2": {
+      "content": "国語辞典の使い方",
+      "page": "漢字帳P21問１まで",
+      "report": "国語辞典の使い方を指導。小金井はよくわかっていたが、川島・寺本は使い慣れていない様子。岡田はとにかく負けず嫌いなのが、今後の成長に影響しそう。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字帳P23-26"
+      ]
+    },
+    "2026-04-17|4:55～6:15|hon|hon_e5_A_arith|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|8:25～9:55|hon|hon_j2_X_eng|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|8:25～9:55|hon|hon_j2_S_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-25|8:25～9:55|hon|hon_j2_B_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|6:35～8:05|hon|hon_j1_A_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|4:55～6:15|hon|hon_e5_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|8:25～9:55|minami|minami_j2_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|4:55～6:15|hon|hon_e5_A_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-23|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|8:25～9:55|minami|minami_j2_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|8:25～9:55|hon|hon_j2_A_math|2": {
+      "content": "式の計算、表と規則性まで",
+      "page": "p41まで",
+      "report": "山口結月さんがオンラインだったが回線の調子が悪かったようで途中から落ちてしまっていた。式証明の進め方自体は総じてよくできていたので宿題で確認してください。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/VsR9ItHTQlTq3bObkUl1NMH9dJoaBHYVmeBGdSgmOzTzPjUUw6UWpoVD0lsPMxeU.d1De_Bd0dnm1cm7h?startTime=1775129152000",
+      "homework": [
+        "p39～p41残り"
+      ]
+    },
+    "2026-04-02|6:35～8:05|hon|hon_j3_B_eng|1": {
+      "content": "連語テキストp27まで",
+      "page": "通常テキスト#30まで",
+      "report": "連語の#4部分のプリントをやらせる間に連語長をチェック。深井、大沢、矢田、瀬戸口はやり残しがあったので次回までとした。平居も含めて次回やってなかったら残ってやってもらうと伝えた。現在完了は#27で継続を表す二つのやり方を復習。ここでは大澤がすっかり忘れていた様子だったので、次のまとめＰも含めて復習した。#30はどこが動詞で、過去分詞は何かを先に見てから取り組ませたが、疑問文や否定文で特に定着していないものがいたので補講に呼ぶ。北面、中田、矢田、青木、深井あたりはよくできる。下位層との差が激しく、進度が取れない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Bg2SP_69qkLAWI0p1DDPX6e14q_X1sk8VXZhyiuZkPyQCYWdmLF1l0IwvvDk6PJn.hQpthyEeFxLAD5xJ?startTime=1775122604000",
+      "homework": [
+        "通常テキスト#31,32,34,37",
+        "HereWeGoテキスト持参する"
+      ]
+    },
+    "2026-04-24|8:25～9:55|minami|minami_j3_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-28|6:35～8:05|minami|minami_j1_S_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|4:55～6:15|minami|minami_e6_A_jp|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|8:25～9:55|hon|hon_j3_A_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|4:55～6:15|hon|hon_e4_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
     "2026-04-22|8:25～9:55|hon|hon_j3_A_jp|4": {
       "content": "",
       "page": "",
@@ -2983,7 +2285,160 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-11|8:25～9:55|hon|hon_j3_S_soc|1": {
+    "2026-04-07|6:35～8:05|hon|hon_j3_S_jp|6": {
+      "content": "文節",
+      "page": "要対p18-19,36【１】",
+      "report": "北澤さんが見学をしたが、要対のページがなく、こちらの画面を大きく見せながら進めた。本日から文法に入ったが、やはり中３からの受講組が弱い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
+      "homework": [
+        "漢字p60-64"
+      ]
+    },
+    "2026-04-22|4:55～6:15|hon|hon_e5_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|6:35～8:05|hon|hon_j1_S_eng|1": {
+      "content": "通常テキストL2#15まで",
+      "page": "",
+      "report": "通常テキストL2を進めた。theの復習もかねて行った和訳問題では、theを訳出しないミスが散見。また英作文では母音の前のanをミスするものも。今後も注視する。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/B-RA16RL-EbAZoMLTBrf_Ac25A7HzMmT69xjCQ2JA4QuOUnY-HjX02RyNPYG4hpv._dMFHOMlpwsKdiGK?startTime=1775468089000",
+      "homework": [
+        "単元テスト勉強",
+        "L1#91から97"
+      ]
+    },
+    "2026-04-21|8:25～9:55|hon|hon_j2_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-18|6:35～8:05|minami|minami_j1_S_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-11|4:45～6:15|hon|hon_j3_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|8:25～9:55|minami|minami_j3_S_soc|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|8:25～9:55|minami|minami_j3_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-03|6:35～8:05|hon|hon_j2_S_math|1": {
+      "content": "㉔～㉘",
+      "page": "ｐ62～65まで",
+      "report": "文字式の扱いの応用。カリキュラムに余裕があったのでゆっくり進めた。正田が少し式の扱いに難儀していたが一応大丈夫そう。疋田、清宮が意外と強い。篠田は証明は発想がしっかりしていてよいが微妙に抜けている",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/fG_LV0pthu_ljxX6alUUwBtV0-L_B51iAn2MlZx6US9gMWd_muE3XBMAQoo4j36r.P4HnLKOkcGEgkuH4",
+      "homework": [
+        "p65＃64②、p67＃67～＃70",
+        "プリント（間違えた人は３問ほど練習しておいてください）"
+      ]
+    },
+    "2026-04-24|8:25～9:55|minami|minami_j2_S_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|8:25～9:55|minami|minami_j3_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|6:35～8:05|minami|minami_j2_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|8:25～9:55|minami|minami_j2_B_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-08|6:35～8:05|minami|minami_j1_B_math|3": {
+      "content": "分配法則",
+      "page": "p56まで",
+      "report": "藤井俊介君は筆記用具を忘れて、そのことをこちらが気付くまで何も手を動かさずにいた。板橋稜君があまり話を聞いていないような式を書いていたのでよく聞いておけるように。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/wn9ICcOUhDtb_4Gl6pTsjMWkUMLuoG5bI7vALBd7ICsuSGjCsRhQJzoh8DzhPrs4.9-neZ7Jv2KqMkwXt?startTime=1775640920000",
+      "homework": [
+        "p57、p63～p66★以外"
+      ]
+    },
+    "2026-04-23|4:55～6:15|minami|minami_e6_A_jp|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|4:55～6:15|hon|hon_e5_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-20|6:35～8:05|hon|hon_j1_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|4:55～6:15|hon|hon_e4_A_arith|3": {
+      "content": "何倍の計算",
+      "page": "P27",
+      "report": "カリキュラム通りに進めることができている。小金井も他の生徒と平均化されてきた印象だが、見学の３人は算数はやらないのかも？",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/dnIN0vcA3FCsrwwMrBBInNU7LVhu0i7TRoSbKb3oZJJ3-PNoVCjZ2FkYS4WVtbS0.MyaiCsfEmeI2MSRu?startTime=1775117428000",
+      "homework": [
+        "ドリルP24,25",
+        "計算P4～６"
+      ]
+    },
+    "2026-04-14|6:35～8:05|minami|minami_j2_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-23|6:35～8:05|hon|hon_j1_S_math|2": {
       "content": "",
       "page": "",
       "homework": [],
@@ -2999,6 +2454,585 @@
         "なし"
       ]
     },
+    "2026-04-02|8:25～9:55|minami|minami_j3_A_eng|1": {
+      "content": "リスニング演習",
+      "page": "#39のNo2まで",
+      "report": "現在完了のまとめへ。上下間の差が如実に出始めた。宮本・式田はかなり厳しい。柴田・具志堅はかなり気合が入っていてよい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/7TU46EbK9ievIovyho7NKDNJCZSnqARuvXA_dr2mjRIkQz9lPic9-KFMvI_O4Xv_.24iugJl1YvmRkwmm?startTime=1775129481000",
+      "homework": [
+        "連語帳P28-29",
+        "通常テキスト#37/38"
+      ]
+    },
+    "2026-04-08|4:55～6:15|minami|minami_e6_A_arith|1": {
+      "content": "単元テスト①",
+      "page": "p4",
+      "report": "宮嶋亮太郎君があまりできていなかった。全員対称移動の対応順を間違えていたのでよく確認しておけるように。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/-pYjXo-WTBKhuSzrt5acD0a5a85BSegspavM1J8qi2viYz5QyV9nkQwUqm070pS0.CAh2uFOuNbUgrfwp?startTime=1775635054000",
+      "homework": [
+        "とき直しプリント",
+        "ホープドリルp66～67"
+      ]
+    },
+    "2026-04-17|8:25～9:55|minami|minami_j3_S_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-06|6:35～8:05|minami|minami_j3_A_soc|5": {
+      "content": "江戸／田沼の失脚まで",
+      "page": "マイクリアp78～",
+      "report": "宿題は、明日までに終わらせるのは無理なのでスクーリングまでに終わらせるよう指示した。明日は江戸を終わらせる。演習も行うつもり。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/_mea1-b9aD9qgK8-BSzxtcaWuVN7WESPqgQO4EOLJ_S0r5_vcDUFBKIJ8MvYE4tZ.M-rugddrgiVBFFVm",
+      "homework": [
+        "ドリルp60-65〇込み"
+      ]
+    },
+    "2026-04-20|6:35～8:05|minami|minami_j3_A_soc|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|4:45～6:15|minami|minami_j1_A_math|2": {
+      "content": "要点22四則混合",
+      "page": "ｐ52＃53",
+      "report": "四則混合についての計算練習をした。全体的に難しくできが悪いものがおおい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/WAlZm20jHqRnfxLVdfq_56Ap0HCuGha4WnT2zuDO2hy-fFx3A4CjvS0iCt3x9Yi7._1gmV3R6zITWXk0I?startTime=1775288854000",
+      "homework": [
+        "ｐ53"
+      ]
+    },
+    "2026-04-28|4:55～6:15|minami|minami_e6_S_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|4:55～6:15|minami|minami_e5_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|6:35～8:05|minami|minami_j1_A_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|8:25～9:55|minami|minami_j3_A_jp|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|6:35～8:05|minami|minami_j3_B_eng|1": {
+      "content": "リスニング演習",
+      "page": "#３９",
+      "report": "今回はリスニング演習を行った。リスニングの心構えについてまだ定着していないようで、問題の予想などが出来ていない。また、まだリスニングの速度に慣れていない様子。速度を意識させて読む練習を今後も行っていく。",
+      "recordingUrl": "",
+      "homework": [
+        "連語帳ｐ２０～２１"
+      ]
+    },
+    "2026-04-10|4:55～6:15|hon|hon_e5_A_arith|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|6:35～8:05|hon|hon_j1_S_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|8:25～9:55|minami|minami_j2_B_math|1": {
+      "content": "式の計算、数字を入れ替えた数の和や差",
+      "page": "",
+      "report": "末次由果さんと内田菜花さんがややまだ苦労していたようだった。式証明の穴埋めでもまだ少し不安定なのでよく復習できるようにしたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/3b3bihBe724qF8EzQ3khyWADD4pNbk6w1dtCGDmbpf--_rd8sDtd7mRvCe8PiHsR.eEpbropk78exqrx6?startTime=1775042910000",
+      "homework": [
+        "p35、p37、p42、p46（すべて★以外）"
+      ]
+    },
+    "2026-04-02|6:35～8:05|minami|minami_j1_S_eng|2": {
+      "content": "Here We Go UNIT1終了／L2　冠詞",
+      "page": "",
+      "report": "Here We Goは最後まで終わらせ和→英　英→和をテキストを伏せて発音、和訳練習までさせた。時間があまった文はL2の冠詞の指導にあてた。",
+      "recordingUrl": "",
+      "homework": [
+        "HWG UNIT1",
+        "#19～21"
+      ]
+    },
+    "2026-04-17|8:25～9:55|hon|hon_j3_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-17|6:35～8:05|hon|hon_j2_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|6:35～8:05|minami|minami_j1_S_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-04|6:35～8:05|hon|hon_j1_S_eng|1": {
+      "content": "Here We Go UNIT1 / L2 冠詞・名詞",
+      "page": "Ｌ２　Ｐ６説明まで",
+      "report": "Here We GoのUNIT１の訳を終え、ＵＮＩＴ１の内容を和→英をオーラルで確認。はじめのうちは教科書を丸暗記するくらい読み込むよう伝えた。その後は通常テキストＬ２に入り、冠詞の導入。theの説明まで終えて終了。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/uIDVU75N7zk1D0TDOA4zhjZZ4AkKMOQ3GvwuopS3Ydg9Bdu6AJh3EE_pDAQyud4F.wHdCTj6Obh6yz8TO?startTime=1775295486000",
+      "homework": [
+        "通常テキスト：Ｌ１#89,90",
+        "Here We Go UNIT1 #19～21"
+      ]
+    },
+    "2026-04-13|6:35～8:05|minami|minami_j3_A_soc|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|4:55～6:15|minami|minami_e5_A_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-15|4:55～6:15|minami|minami_e6_A_arith|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-22|6:35～8:05|minami|minami_j3_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|6:35～8:05|minami|minami_j2_S_jp|6": {
+      "content": "古文",
+      "page": "新中P54-55",
+      "report": "前回に引き続き、古文を扱う。音読を行わせた後に現代語訳、設問と行った。仮名遣いはみなＯＫ。内容を問うものに関しては中野が苦しいか。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/T280rKNE9qqtt1vO6hZb_oMzEjmlTUOkZ-7LUO1pba3uYU6kJtJKJPgrw3NchnqN.FCp79GcpjRLwZ_T4?startTime=1775468412000",
+      "homework": [
+        "漢字帳P21-24"
+      ]
+    },
+    "2026-04-16|6:35～8:05|minami|minami_j2_X_math|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|6:35～8:05|minami|minami_j3_S_jp|2": {
+      "content": "単元テストＳ①",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-07|8:25～9:55|hon|hon_j2_A_jp|3": {
+      "content": "古文",
+      "page": "新中学問題集ｐ８０",
+      "report": "今回は古文を扱った。時代背景などを解説して本文に入った。古文特有の省略にはまだ慣れていないようで、苦戦する生徒が多かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Udr7khMiwmGH1Cr0PXWzUs_72fR-9t-aQN-5gr1rgi2ZiHXc6aGDZfTXQWFRuEKY.bXYQHx2_XioH9HW9?startTime=1775561267000",
+      "homework": [
+        "漢字帳ｐ２１～２４"
+      ]
+    },
+    "2026-04-03|6:35～8:05|minami|minami_j1_A_eng|2": {
+      "content": "L1#75まで",
+      "page": "",
+      "report": "宿題個所の#40,42,43ではSVOを意識させた。大竹が間違いあり。誕生日のやり取りは、前回欠席者および見学者もいたので、もう一度ざっと復習してから。月の名前暗唱は、時間を与え覚えさせ、全員クリアできた。次回が明日なので、宿題は少し間引きながら出したので、出せていないところも含め、宿題化してください。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/pO8WgTbuMoE8WoI9dcvjOql4w3UIHwIWvQhA3gVi7dfRkS4y9TSfoGx1h1UD6rFx.JbR7vIW0sWKIRfkU?startTime=1775209187000",
+      "homework": [
+        "#59,60,62から65"
+      ]
+    },
+    "2026-04-01|8:25～9:55|hon|hon_j2_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|8:25～9:55|hon|hon_j3_S_soc|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|6:35～8:05|minami|minami_j3_A_math|1": {
+      "content": "整数の性質の証明",
+      "page": "P49",
+      "report": "一応P49まで進んでカリキュラム通り。次回は抜き打ちで確認テストを行う。土曜の補講に来たいという生徒がたくさんいた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/laNAqp_bP3EkDiEQjOe4GTOrIPcWECD-cFsPiQhbQ-3PMfdas_iNDm6XY-Gco4Ja.q7UQY9OIm9fSmzJo",
+      "homework": [
+        "P39～42ミスした問題の解きなおし",
+        "P49,51～52の★★以外、答え合わせまで"
+      ]
+    },
+    "2026-04-15|6:35～8:05|minami|minami_j1_B_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|8:25～9:55|minami|minami_j3_S_soc|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|6:35～8:05|minami|minami_j1_A_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|8:25～9:55|hon|hon_j3_A_sci|7": {
+      "content": "19大気の動きと日本の天気",
+      "page": "ｐ118-1まで",
+      "report": "18の前線の問題から19大気の動きの途中まで終了した。次回は続きから進める。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/gnG_A0U_xFzB6f3D2vIq-R6ALdA_sJ6zw0V11uQ27ajgd0x_2zaKzsz5pf3EIOc3.-wWButRPGHgMoHWC?startTime=1775475267000",
+      "homework": [
+        "ドリルｐ62（ｐ63）"
+      ]
+    },
+    "2026-04-03|6:35～8:05|minami|minami_j1_S_eng|3": {
+      "content": "L2　冠詞 a,an/the",
+      "page": "P6説明・発音まで",
+      "report": "カリキュラムは進んでいるのでHere We goの暗唱をもう一度取り組ませたが、皆しっかりと覚えられていた。続いて冠詞・複数形の導入。a,an theのはたらきについて指導をすすめていった。",
+      "recordingUrl": "",
+      "homework": [
+        "Ｌ２　＃８～11"
+      ]
+    },
+    "2026-04-23|4:55～6:15|minami|minami_e5_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-02|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "content": "連語テキストp23まで",
+      "page": "HereWeGoテキスト#23まで",
+      "report": "宿題個所の連語はプリントにして確認テストに取り組ませた。沢井の定着が悪い。その後はHWGテキストの進み、Unit1のGoalを。ここは単語のみならず、構文も難しい。後置修飾がついた名詞句の訳し方で苦戦する者がいたので、いくつか練習。また主語動詞を見極めよと指導した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/vr-8O2CfaCueGfOq_1-qRQLTYtvaw3wZ80IFVvHYcDbCcgYMbFI4jhSUg0tGy4rY.4QsLo74rzc4wzfH2?startTime=1775129176000",
+      "homework": [
+        "HereWeGoテキスト#24から26,p23"
+      ]
+    },
+    "2026-04-20|8:25～9:55|hon|hon_j3_S_soc|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-13|4:55～6:15|hon|hon_e5_A_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-09|8:25～9:55|minami|minami_j2_B_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-21|4:55～6:15|hon|hon_e4_A_jp|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|8:25～9:55|minami|minami_j2_S_eng|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-14|8:25～9:55|hon|hon_j2_A_jp|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-03|8:25～9:55|hon|hon_j3_S_math|2": {
+      "content": "加法と減法",
+      "page": "P37まで",
+      "report": "今日は時間が取れたので北辰のプリントを２ページだけ解説を進めることができた。次回はハイレベル問題。さらに北辰のプリントは終わらせる予定",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/cmpUj3aBvLeXMbb_l7HzzQflH62fIhAgIP-UvOxQGj_k4oMwTIyOETh8oYkD4Jc_.KLeP0RcgoUcA1Ocp?startTime=1775217252000",
+      "homework": [
+        "P38～40"
+      ]
+    },
+    "2026-04-17|4:55～6:15|minami|minami_e6_S_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-22|4:55～6:15|hon|hon_e6_A_jp|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-01|8:25～9:55|hon|hon_j3_X_math|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-02|6:35～8:05|hon|hon_j3_X_eng|6": {
+      "content": "山村学園",
+      "page": "",
+      "report": "山村学園を扱う。実話をもとにした長文だが、大意はみなOKだが、金子も含め細部なるとまだまだつかみ切れない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/wv8cf3nf2i0GRwyLRNFVrIqFyhusH1zr8DYLSwM__fGSUhHJiHmWbwdXKQxI6iWP.Nbaj4uaBPQXFJzzR?startTime=1775122518000",
+      "homework": [
+        "ST５青森県"
+      ]
+    },
+    "2026-04-11|6:35～8:05|hon|hon_j1_A_eng|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|6:35～8:05|minami|minami_j3_S_jp|4": {
+      "content": "文節",
+      "page": "要対p18-19,36【１】",
+      "report": "北澤さんが見学をしたが、要対のページがなく、こちらの画面を大きく見せながら進めた。本日から文法に入ったが、やはり中３からの受講組が弱い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QaVcBn610PWzc34uY2IYg-wVndzHm8bS0uzA5Hnuo-vK6kO5pPimBGwDer3aI355.qECiSRlf2Z5NE5uR",
+      "homework": [
+        "漢字p60-64"
+      ]
+    },
+    "2026-04-06|6:35～8:05|hon|hon_j2_S_jp|3": {
+      "content": "古文",
+      "page": "新中P54-55",
+      "report": "前回に引き続き、古文を扱う。音読を行わせた後に現代語訳、設問と行った。仮名遣いはみなＯＫ。内容を問うものに関しては中野が苦しいか。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/T280rKNE9qqtt1vO6hZb_oMzEjmlTUOkZ-7LUO1pba3uYU6kJtJKJPgrw3NchnqN.FCp79GcpjRLwZ_T4?startTime=1775468412000",
+      "homework": [
+        "漢字帳P21-24"
+      ]
+    },
+    "2026-04-17|6:35～8:05|hon|hon_j1_A_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-08|8:25～9:55|minami|minami_j3_A_jp|5": {
+      "content": "文学的文章の読解",
+      "page": "要対p78-81",
+      "report": "回線環境の悪い子が多い、かつ消極的な子が多く、非常にやりづらい。遠藤、原澤、嶺井など毎回指名する子が偏りがちになっている。そうならないよう工夫もしているが、ここ数年で一番やりづらいかも。",
+      "recordingUrl": "",
+      "homework": [
+        "漢字p36-40"
+      ]
+    },
+    "2026-04-03|6:35～8:05|hon|hon_j3_S_jp|4": {
+      "content": "文学的文章／最高水準より",
+      "page": "最水p34-38",
+      "report": "p34-38は渋幕の過去問。ただ、文章としては読みやすく、問題も変にひねくれていない。宮川、粕川がちょっときつそう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/GSkjVEEXUIrZrjp_hduZqr_qpEA7JY_4yt-yFA3I4yNfjFoLTfu2yweVK9jiWUoC.qCQ1IqzpOBcNCqDi",
+      "homework": [
+        "漢字p54-58"
+      ]
+    },
+    "2026-04-16|6:35～8:05|hon|hon_j1_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|6:35～8:05|minami|minami_j1_A_jp|6": {
+      "content": "物語文",
+      "page": "新中学問題集ｐ１６～１７",
+      "report": "今回は物語文を扱った。大越、大宮、佐々木はクラスの中では理解力があるように感じる。それ以外は中々自分の言葉で答案を作るのが難しい様子。また、園田、藤井は指名をしても反応がほとんどない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/_kZvQaZpMsqezQSv2A-sPLkZNZLm0zeTJMEmSdKq2m8egfHrGS-VqSDpppZQ_Fwg.uKZxyS9VmRt26-p-?startTime=1775554818000",
+      "homework": [
+        "漢字帳ｐ１９～２２"
+      ]
+    },
+    "2026-04-24|4:55～6:15|hon|hon_e5_A_arith|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|minami|minami_e6_S_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-06|8:25～9:55|minami|minami_j3_S_soc|5": {
+      "content": "江戸終了",
+      "page": "マイクリアp78～",
+      "report": "江戸は資料問題、総合問題も含め全て終了。特を入れた結果、完全にカリキュラム通りの進行となっている。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/SWBi8UTS1AlCW5OS8-5VVsZlIAuHGY3mPN63yE407bPXmcd6qlXjHH3h9Du-vdFr.XgKqcMulmvtVC57W",
+      "homework": [
+        "ドリルp60-65〇込み"
+      ]
+    },
+    "2026-04-06|8:25～9:55|minami|minami_j2_B_math|1": {
+      "content": "等式の変形",
+      "page": "P51まで",
+      "report": "式による説明の解説を終わらせたあと、等式の変形に入ったが途中までしか終わらなかった。次回はこの残りとテキストの残りを進めつつ、単元テストに向けてのまとめをできる範囲でお願いします。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/wDxoKf6p6KVk0puImKDK-bPrfguZBiSaUhtvE_sIlg9-YFvfujzVXIPpg_2c9AbV.Xq74hoNhc7NdGFi5?startTime=1775475024000",
+      "homework": [
+        "P56～P57⑥まで"
+      ]
+    },
+    "2026-04-21|8:25～9:55|hon|hon_j3_A_eng|1": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-08|4:55～6:15|minami|minami_e4_A_arith|3": {
+      "content": "何倍の計算",
+      "page": "P２７まで",
+      "report": "何倍の計算を軽く早めに終わらせて、残りは計算のドリルを一緒に進めさせた。一応皆そこそこ形になっていた様子。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Iw9k5nZErxf-iPM2eoFQ8P0_ykNnyoHe8WAmntAv_MvIOim-RSBDHp1RuuYE6gb2.OnGuhWylmVRpamgf",
+      "homework": [
+        "ドリルP24,25",
+        "計算P9まで"
+      ]
+    },
+    "2026-04-01|6:35～8:05|minami|minami_j1_B_math|3": {
+      "content": "正負の数、四則混合まで",
+      "page": "",
+      "report": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/JwwGJKIYH3nFGu2zY1KqSERRJo7Rqg84NyCi7VT9I-WhK0y1HaVx8kkJojwXzTqw.K0vLjywiov8R4PH1?startTime=1775036103000",
+      "homework": [
+        "p43残り、p44～45残り、p50残り、p51残り、p52残り"
+      ]
+    },
+    "2026-04-24|8:25～9:55|hon|hon_j3_S_math|3": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|6:35～8:05|hon|hon_j2_S_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-04|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "content": "18前線の通過と天気の変化",
+      "page": "ｐ112-ｐ115",
+      "report": "気圧と風、温暖・寒冷前線などのところまで終了した。宿題はドリルの〇付けまでとした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/nbSfdpUTnLKvvwp10YJMXX33mEsu6boKUEzwwISdL4jZHPVPp4hEtwJ1do_Ee2vY.1aqXWLge5e7Z0IFt?startTime=1775295763000",
+      "homework": [
+        "ドリルｐ62～ｐ63",
+        "〇付けまで"
+      ]
+    },
+    "2026-04-16|6:35～8:05|hon|hon_j3_X_eng|6": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|hon|hon_e4_X_jp|4": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|8:25～9:55|minami|minami_j2_A_math|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-24|4:55～6:15|hon|hon_e6_A_arith|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-10|6:35～8:05|minami|minami_j2_A_eng|1": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
     "2026-04-25|4:45～6:15|minami|minami_j2_S_eng|2": {
       "content": "",
       "page": "",
@@ -3006,91 +3040,66 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-04|6:35～8:05|hon|hon_j3_A_soc|3": {
-      "content": "安土桃山終了、江戸(鎖国の完成まで)",
-      "page": "マイクリアp78～",
-      "report": "江戸は鎖国完成まで。ただ、少々駆け足になってしまった。次回p82の【１】を使って復習後、何とか江戸終了までもっていく。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/BV9zD4FA4InXTXXx1nPJ85ptYW3KGFt8HH5vSRGWedVN91HCgOva6dI58hp4cGAB.I0i-NvVTvK_-tmP0",
-      "homework": [
-        "ドリルp58-59〇こみ"
-      ]
-    },
-    "2026-04-06|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "正負の数の利用",
-      "page": "P70＃74",
-      "report": "清水が項のところがわかっていないらしく、途中で泣いてしまった。土曜日の補講に呼んだ。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/be2BAIXAZ-124hN6QFtSenhyOMdt6XAliB3m_uTu7KrTTwSPVDEfQJHPusN7cQ4k.En1UCVLtTeCBKwVy",
-      "homework": [
-        "P70",
-        "＃74～80"
-      ]
-    },
-    "2026-04-15|6:35～8:05|hon|hon_j3_B_eng|2": {
+    "2026-04-09|4:55～6:15|hon|hon_e6_A_eng|1": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-28|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|8:25～9:55|hon|hon_j2_A_math|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-23|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-22|6:35～8:05|hon|hon_j1_A_eng|2": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-01|8:25～9:55|hon|hon_j3_A_jp|4": {
-      "content": "",
-      "page": "",
-      "homework": [],
-      "report": "",
-      "recordingUrl": ""
-    },
-    "2026-04-02|4:55～6:15|minami|minami_e6_A_jp|1": {
-      "content": "漢字の音訓、熟字訓",
-      "page": "練成テキストｐｐ８１～８２",
-      "report": "今回は漢字の音訓と熟字訓を扱った。音訓については最初区別がついていなかったが、解説後はよくできていた。嶋田と香月の反応の鈍さが際立ってきた。注視が必要。",
+    "2026-04-09|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "content": "HereWeGop23まで",
+      "page": "通常テキストL3p6大問２の２まで",
+      "report": "HWGの確認テストのあと、通常テキストL3へ。時制に10分で取り組ませ解説。各生徒の点数は出席簿に記載した。助動詞も同じく10分与え解かせ、解説途中で時間切れ。次回は解説の続きからお願いします。",
       "recordingUrl": "",
       "homework": [
-        "漢字帳ｐ２１～２４"
+        "単元テスト勉強"
       ]
     },
-    "2026-04-01|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "くふうして計算する",
-      "page": "＃４９まで",
-      "report": "木川が遅かった。見学の西原さんはかなり良くできていたのでSで良い。",
-      "recordingUrl": "https://us06web.zoom.us/rec/share/DIjF4__KKTvxfTWSSO0KxCw1yMFnzWBdOIlBc1SSfYKABfe6OpedeXVC15THCysL.4xvmKBtFwbasNl9k",
-      "homework": [
-        "P37＃４３、P39～42、P26～29の（１６）～（３０）"
-      ]
-    },
-    "2026-04-17|6:35～8:05|minami|minami_j3_S_jp|5": {
+    "2026-04-16|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "",
       "page": "",
       "homework": [],
       "report": "",
       "recordingUrl": ""
+    },
+    "2026-04-21|8:25～9:55|minami|minami_j3_S_math|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-16|4:55～6:15|minami|minami_e5_A_eng|2": {
+      "content": "単元テスト実施日",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "homework": []
+    },
+    "2026-04-25|6:35～8:05|minami|minami_j3_S_eng|2": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-27|6:35～8:05|minami|minami_j3_A_soc|5": {
+      "content": "",
+      "page": "",
+      "homework": [],
+      "report": "",
+      "recordingUrl": ""
+    },
+    "2026-04-07|4:55～6:15|hon|hon_e6_S_eng|1": {
+      "content": "English Travel UNIT2 C・D",
+      "page": "緑テキスト＃30まで",
+      "report": "１週空いてしまったので三単現の用法から確認。山根は文法関係は強いが、単語が弱い。小金井は少しずつクラスに馴染めてきた様子。本日は三単現の否定文、疑問文の導入。あまり難しい用語は使わずに説明したが、まだまだ慣れが必要。果物の単語が終わりきらず。",
+      "recordingUrl": "",
+      "homework": [
+        "緑テキスト",
+        "#23、24、27～29、32"
+      ]
     },
     "2026-04-10|8:25～9:55|minami|minami_j3_S_eng|2": {
       "content": "",
@@ -3099,14 +3108,12 @@
       "report": "",
       "recordingUrl": ""
     },
-    "2026-04-08|6:35～8:05|hon|hon_j3_X_jp|4": {
-      "content": "文法終了",
-      "page": "p183-187",
-      "report": "文節、単語に特化した文法指導は本日で終了。仕上がりとしては、大宮、金子の２名が非常に良い。",
+    "2026-04-13|8:25～9:55|hon|hon_j3_A_jp|2": {
+      "content": "単元テストＡ①",
+      "page": "",
+      "report": "",
       "recordingUrl": "",
-      "homework": [
-        "なし"
-      ]
+      "homework": []
     },
     "2026-04-08|4:55～6:15|hon|hon_e5_A_jp|2": {
       "content": "漢字のまとめ",
@@ -3116,13 +3123,6 @@
       "homework": [
         "漢字帳ｐ２６～２９"
       ]
-    },
-    "2026-04-09|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "㉚～㉛",
-      "page": "ｐ80～",
-      "report": "",
-      "recordingUrl": "",
-      "homework": []
     }
   }
 }
