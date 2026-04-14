@@ -1290,6 +1290,20 @@
   {
     "date": "2026-04-13",
     "time": "4:55～6:15",
+    "grade": "e4",
+    "class": "X",
+    "subject": "arith",
+    "campus": "hon",
+    "room": "6",
+    "groupKey": "hon_e4_X_arith",
+    "label": "小４X 算数",
+    "faceToFace": false,
+    "special": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-13",
+    "time": "4:55～6:15",
     "grade": "e5",
     "class": "A",
     "subject": "eng",
@@ -1927,20 +1941,6 @@
     "room": "1",
     "groupKey": "hon_j3_S_math",
     "label": "中３S 数学",
-    "faceToFace": false,
-    "special": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
-    "time": "4:55～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "arith",
-    "campus": "hon",
-    "room": "6",
-    "groupKey": "hon_e4_X_arith",
-    "label": "小４X 算数",
     "faceToFace": false,
     "special": false,
     "displayTitle": ""
@@ -4020,6 +4020,20 @@
   {
     "date": "2026-04-13",
     "time": "4:55～6:15",
+    "grade": "e4",
+    "class": "X",
+    "subject": "arith",
+    "campus": "minami",
+    "room": "4",
+    "groupKey": "minami_e4_X_arith",
+    "label": "小４X 算数",
+    "faceToFace": false,
+    "special": false,
+    "displayTitle": ""
+  },
+  {
+    "date": "2026-04-13",
+    "time": "4:55～6:15",
     "grade": "e5",
     "class": "S",
     "subject": "arith",
@@ -4671,20 +4685,6 @@
     "room": "1",
     "groupKey": "minami_j3_B_math",
     "label": "中３B 数学",
-    "faceToFace": false,
-    "special": false,
-    "displayTitle": ""
-  },
-  {
-    "date": "2026-04-20",
-    "time": "4:55～6:15",
-    "grade": "e4",
-    "class": "X",
-    "subject": "arith",
-    "campus": "minami",
-    "room": "4",
-    "groupKey": "minami_e4_X_arith",
-    "label": "小４X 算数",
     "faceToFace": false,
     "special": false,
     "displayTitle": ""
