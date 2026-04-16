@@ -65,6 +65,7 @@
   .field-row .field { flex: 1; }
 
   /* --- 印刷用 (B5: 176mm x 250mm, 全授業を1枚に) --- */
+  /* B5印刷領域 = 250 - 12(余白) = 238mm。カード間隔2mm。 */
   @media print {
     body { background: #fff; margin: 0; padding: 0; }
     .controls { display: none !important; }
@@ -79,11 +80,21 @@
       border: 1pt solid #000; border-radius: 0;
       margin-bottom: 2mm;
       page-break-inside: avoid; break-inside: avoid;
+      overflow: hidden;
+      display: flex; flex-direction: column;
     }
+    .lesson-card:last-child { margin-bottom: 0; }
+
+    /* 授業数に応じた高さ */
+    .count-1 .lesson-card { height: 238mm; }
+    .count-2 .lesson-card { height: 118mm; }
+    .count-3 .lesson-card { height: 78mm; }
+    .count-4 .lesson-card { height: 58mm; }
+    .count-5 .lesson-card { height: 46mm; }
 
     .card-header {
       background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact;
-      padding: 2px 8px;
+      padding: 2px 8px; flex-shrink: 0;
     }
     .card-date { font-size: 10px; }
     .card-label { font-size: 14px; }
@@ -91,14 +102,26 @@
 
     .card-session {
       background: #e0e0e0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact;
-      padding: 1px 8px; font-size: 10px;
+      padding: 1px 8px; font-size: 10px; flex-shrink: 0;
     }
 
-    .card-body { padding: 2px 8px; }
+    .card-body {
+      padding: 2px 8px; flex: 1; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .card-body .field { flex: 1; min-height: 0; }
+    .card-body .field-row { flex: 1; min-height: 0; }
     .field { margin-bottom: 1px; }
     .field-label { font-size: 9px; padding-bottom: 0; margin-bottom: 0; }
     .field-value { font-size: 10px; padding: 0; min-height: auto; line-height: 1.3; }
     .field-row { gap: 8px; }
+
+    /* 1-2個のとき文字を大きく */
+    .count-1 .field-label, .count-2 .field-label { font-size: 11px; }
+    .count-1 .field-value, .count-2 .field-value { font-size: 13px; line-height: 1.5; }
+    .count-1 .card-label, .count-2 .card-label { font-size: 18px; }
+    .count-1 .card-date, .count-2 .card-date { font-size: 13px; }
+    .count-1 .card-session, .count-2 .card-session { font-size: 12px; }
   }
 </style>
 </head>
@@ -435,6 +458,8 @@ function render() {
   }
 
   out.innerHTML = html;
+  // 授業数クラスを設定（印刷時の高さ調整用）
+  out.className = "container count-" + Math.min(myLessons.length, 5);
 }
 
 function esc(s) {
