@@ -413,6 +413,7 @@ function render() {
     const pr = prev ? (prev.report || "") : "";
     const pa = prev ? (prev.absence || "") : "";
     const pcp = prev ? String(prev.curriculumProgress ?? "") : "";
+    const pn = prev ? (prev.note || "") : "";
 
     html += `
     <div class="lesson-card">
@@ -425,23 +426,27 @@ function render() {
       </div>
       ${sessionText.length ? '<div class="card-session">' + sessionText.join("　") + '</div>' : ''}
       <div class="card-body">
-        <div class="field">
-          <div class="field-label">前回の授業内容</div>
-          <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
-        </div>
-        <div class="field">
-          <div class="field-label">前回指導したページ</div>
-          <div class="field-value${pp ? '' : ' empty'}">${esc(pp) || "ー"}</div>
-        </div>
-        <div class="field">
-          <div class="field-label">宿題</div>
-          <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
-        </div>
         <div class="field-row">
           <div class="field">
-            <div class="field-label">記録</div>
-            <div class="field-value${pr ? '' : ' empty'}">${esc(pr) || "ー"}</div>
+            <div class="field-label">前回の授業内容</div>
+            <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
           </div>
+          <div class="field">
+            <div class="field-label">前回指導したページ</div>
+            <div class="field-value${pp ? '' : ' empty'}">${esc(pp) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">宿題</div>
+            <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-label">記録</div>
+          <div class="field-value${pr ? '' : ' empty'}">${esc(pr) || "ー"}</div>
+        </div>
+        <div class="field">
+          <div class="field-label">備考</div>
+          <div class="field-value${pn ? '' : ' empty'}">${esc(pn) || "ー"}</div>
         </div>
         <div class="field-row">
           <div class="field">
