@@ -718,14 +718,14 @@
   function renderJournalRow(it) {
     const ek = buildEventKeyFromLesson(it);
     const entry = journalEntries[ek] || { content:"", page:"", homework:[], recordingUrl:"" };
-    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">（未入力）</span>`;
-    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">（未入力）</span>`;
+    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">ー</span>`;
+    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">ー</span>`;
 
     const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
-    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">（未入力）</span>`;
+    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">ー</span>`;
 
     const url = String(entry.recordingUrl || "").trim();
-    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">（未入力）</span>`;
+    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">ー</span>`;
 
     return `
       <tr class="journal-row">
