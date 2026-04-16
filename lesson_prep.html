@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>授業準備シート</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Kaku Gothic ProN","Meiryo","sans-serif"; background: #f5f5f5; color: #333; }
+
+  /* --- コントロールバー --- */
+  .controls {
+    position: sticky; top: 0; z-index: 100;
+    background: #fff; border-bottom: 2px solid #1976d2;
+    padding: 12px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .controls label { font-weight: bold; font-size: 14px; }
+  .controls select, .controls input[type="date"] {
+    font-size: 16px; padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px;
+  }
+  .controls button {
+    font-size: 15px; padding: 8px 20px; background: #1976d2; color: #fff;
+    border: none; border-radius: 4px; cursor: pointer;
+  }
+  .controls button:hover { background: #1565c0; }
+  .btn-print { background: #388e3c !important; }
+  .btn-print:hover { background: #2e7d32 !important; }
+
+  /* --- メインコンテンツ --- */
+  .container { max-width: 800px; margin: 20px auto; padding: 0 16px; }
+  .no-data { text-align: center; padding: 40px; color: #888; font-size: 18px; }
+
+  /* --- 授業カード --- */
+  .lesson-card {
+    background: #fff; border: 2px solid #333; border-radius: 6px;
+    margin-bottom: 24px;
+  }
+  .card-header {
+    background: #1976d2; color: #fff; padding: 8px 14px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+  }
+  .card-date { font-size: 16px; font-weight: bold; }
+  .card-label { font-size: 20px; font-weight: bold; }
+  .card-meta { font-size: 13px; opacity: 0.9; }
+  .card-session {
+    background: #e3f2fd; padding: 5px 14px; border-bottom: 1px solid #ccc;
+    font-size: 14px; color: #1565c0; font-weight: bold;
+  }
+  .card-body { padding: 8px 14px; }
+
+  .field { margin-bottom: 6px; }
+  .field-label {
+    font-size: 12px; font-weight: bold; color: #666;
+    border-bottom: 1px solid #e0e0e0; padding-bottom: 1px; margin-bottom: 2px;
+  }
+  .field-value {
+    font-size: 14px; padding: 2px 0; min-height: 18px;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .field-value.empty { color: #bbb; }
+
+  .field-row {
+    display: flex; gap: 12px;
+  }
+  .field-row .field { flex: 1; }
+
+  /* --- 印刷用 (B5: 176mm x 250mm, 全授業を1枚に) --- */
+  @media print {
+    body { background: #fff; margin: 0; padding: 0; }
+    .controls { display: none !important; }
+    .container { max-width: 100%; margin: 0; padding: 0; }
+
+    @page {
+      size: B5 portrait;
+      margin: 6mm 6mm;
+    }
+
+    .lesson-card {
+      border: 1pt solid #000; border-radius: 0;
+      margin-bottom: 2mm;
+      page-break-inside: avoid; break-inside: avoid;
+    }
+
+    .card-header {
+      background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      padding: 2px 8px;
+    }
+    .card-date { font-size: 10px; }
+    .card-label { font-size: 14px; }
+    .card-meta { font-size: 9px; }
+
+    .card-session {
+      background: #e0e0e0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      padding: 1px 8px; font-size: 10px;
+    }
+
+    .card-body { padding: 2px 8px; }
+    .field { margin-bottom: 1px; }
+    .field-label { font-size: 9px; padding-bottom: 0; margin-bottom: 0; }
+    .field-value { font-size: 10px; padding: 0; min-height: auto; line-height: 1.3; }
+    .field-row { gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <label>日付
+    <input type="date" id="datePicker">
+  </label>
+  <label>先生
+    <select id="teacherSelect"><option value="">読み込み中...</option></select>
+  </label>
+  <button onclick="render()">表示</button>
+  <button class="btn-print" onclick="window.print()">印刷</button>
+</div>
+
+<div class="container" id="output">
+  <div class="no-data">日付と先生を選択してください</div>
+</div>
+
+<script>
+/* ====== データ ====== */
+let scheduleData = [];
+let journalData  = {};   // { entries: { key: {...} } }
+let journalMap   = {};   // { slots: { groupKey: [key, ...] } }
+let prevMonthJournal = null; // 前月分
+
+const WDAY = ["日","月","火","水","木","金","土"];
+
+const SUBJ_SHORT = {
+  arith:"算数", math:"数学", eng:"英語", jp:"国語", sci:"理科", soc:"社会"
+};
+const GRADE_SHORT = {
+  e4:"4", e5:"5", e6:"6", j1:"1", j2:"2", j3:"3"
+};
+
+/* ====== JSON読み込み ====== */
+async function loadJSON(url) {
+  try {
+    const r = await fetch(url + "?_=" + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function init() {
+  const dp = document.getElementById("datePicker");
+  const today = new Date();
+  dp.value = today.toISOString().slice(0, 10);
+
+  // 今月を判定
+  const mm = dp.value.slice(0, 7);
+
+  // 並列読み込み
+  const [sched, jrnl, jmap] = await Promise.all([
+    loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
+    loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
+    loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
+  ]);
+
+  scheduleData = sched || [];
+  journalData  = jrnl  || {};
+  journalMap   = jmap  || {};
+
+  // 前月のjournal読み込み
+  const [py, pm] = prevMonth(mm);
+  prevMonthJournal = await loadJSON("journal_" + py + "-" + String(pm).padStart(2,"0") + ".json");
+
+  buildTeacherList();
+}
+
+function prevMonth(ym) {
+  const [y, m] = ym.split("-").map(Number);
+  return m === 1 ? [y - 1, 12] : [y, m - 1];
+}
+
+/* ====== 先生リスト構築 ====== */
+function buildTeacherList() {
+  const entries = (journalData && journalData.entries) || {};
+  const teachers = new Set();
+  for (const v of Object.values(entries)) {
+    const t = (v.teacher || "").trim();
+    if (t) teachers.add(t);
+  }
+  const sel = document.getElementById("teacherSelect");
+  sel.innerHTML = '<option value="">-- 選択 --</option>';
+  for (const t of [...teachers].sort()) {
+    const o = document.createElement("option");
+    o.value = t; o.textContent = t;
+    sel.appendChild(o);
+  }
+}
+
+/* ====== 日付変更時 ====== */
+document.getElementById("datePicker").addEventListener("change", async function() {
+  const mm = this.value.slice(0, 7);
+  const currentMM = (journalData && journalData.month) || "";
+  if (mm !== currentMM) {
+    // 月が変わったら再読み込み
+    const [sched, jrnl, jmap] = await Promise.all([
+      loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
+      loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
+      loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
+    ]);
+    scheduleData = sched || [];
+    journalData  = jrnl  || {};
+    journalMap   = jmap  || {};
+    const [py, pm] = prevMonth(mm);
+    prevMonthJournal = await loadJSON("journal_" + py + "-" + String(pm).padStart(2,"0") + ".json");
+    buildTeacherList();
+  }
+});
+
+/* ====== エントリキー生成 ====== */
+function makeKey(ev) {
+  return [ev.date, (ev.time||"").replace(/~/g,"～").trim(), ev.campus, ev.groupKey, ev.room].join("|");
+}
+
+/* ====== 前回スロットの検索 ====== */
+function findPrevEntryForGroupKey(gk, todayDate) {
+  const entries = (journalData && journalData.entries) || {};
+  const slots   = (journalMap && journalMap.slots) || {};
+  const slotList = slots[gk] || [];
+
+  // 今日以前の最後のスロットを探す
+  let prevKey = null;
+  for (const key of slotList) {
+    const keyDate = key.split("|")[0];
+    if (keyDate < todayDate) prevKey = key;
+  }
+  if (prevKey) {
+    const entry = entries[prevKey];
+    if (entry && entryHasData(entry)) return entry;
+  }
+
+  // 同月内になし → 前月を探す
+  if (!prevMonthJournal || !prevMonthJournal.entries) return null;
+  const prevEntries = prevMonthJournal.entries;
+  let last = null;
+  for (const [k, v] of Object.entries(prevEntries)) {
+    if (k.includes("|" + gk + "|")) {
+      if (!last || k > last.key) {
+        last = { key: k, data: v };
+      }
+    }
+  }
+  return last ? last.data : null;
+}
+
+function entryHasData(e) {
+  return !!(e.content || e.page || e.report || (e.homework && e.homework.length));
+}
+
+function findPrevEntry(ev) {
+  const groupKeys = ev._pairGroupKeys || [ev.groupKey];
+  for (const gk of groupKeys) {
+    const result = findPrevEntryForGroupKey(gk, ev.date);
+    if (result && entryHasData(result)) return result;
+  }
+  // データなしでも何か返す（空のペアの片方）
+  for (const gk of groupKeys) {
+    const result = findPrevEntryForGroupKey(gk, ev.date);
+    if (result) return result;
+  }
+  return null;
+}
+
+/* ====== オンラインペア重複排除 ====== */
+function pairKey(ev) {
+  return [ev.date, ev.time, ev.grade, ev.class, ev.subject].join("|");
+}
+
+function deduplicatePairs(lessons) {
+  const groups = {};
+  for (const ev of lessons) {
+    const pk = pairKey(ev);
+    if (!groups[pk]) groups[pk] = [];
+    groups[pk].push(ev);
+  }
+  const result = [];
+  for (const [pk, evs] of Object.entries(groups)) {
+    if (evs.length >= 2) {
+      // 本校・南教室の両方にある → ペア授業
+      const honEv = evs.find(e => e.campus === "hon");
+      const minEv = evs.find(e => e.campus === "minami");
+      if (honEv && minEv && !honEv.faceToFace && !minEv.faceToFace) {
+        // ペア → 1つにまとめる。代表を hon 側にし、ペア相手の情報も持たせる
+        honEv._pairGroupKeys = [honEv.groupKey, minEv.groupKey];
+        result.push(honEv);
+        continue;
+      }
+    }
+    // ペアでない → そのまま全部追加
+    result.push(...evs);
+  }
+  return result;
+}
+
+/* ====== 短縮ラベル生成 ====== */
+function shortLabel(ev) {
+  const g = GRADE_SHORT[ev.grade] || ev.grade;
+  const cls = ev.class || "";
+  const sub = SUBJ_SHORT[ev.subject] || ev.subject;
+  return g + cls + " " + sub;
+}
+
+/* ====== 日付フォーマット ====== */
+function formatDate(dateStr) {
+  const d = new Date(dateStr + "T00:00:00");
+  const m = d.getMonth() + 1;
+  const day = d.getDate();
+  const w = WDAY[d.getDay()];
+  return m + "月" + day + "日（" + w + "）";
+}
+
+/* ====== 今日のエントリ取得（ペア対応） ====== */
+function findTodayEntry(ev, entries) {
+  // まず自分のキーで探す
+  const key = makeKey(ev);
+  const entry = entries[key];
+  if (entry && entry.sessionNumber) return entry;
+  // ペアの場合、相手側も探す
+  if (ev._pairGroupKeys) {
+    for (const gk of ev._pairGroupKeys) {
+      for (const [k, v] of Object.entries(entries)) {
+        if (k.startsWith(ev.date + "|") && k.includes("|" + gk + "|") && v.sessionNumber) return v;
+      }
+    }
+  }
+  return entry || {};
+}
+
+/* ====== 表示 ====== */
+function render() {
+  const dateVal = document.getElementById("datePicker").value;
+  const teacher = document.getElementById("teacherSelect").value;
+  const out = document.getElementById("output");
+
+  if (!dateVal || !teacher) {
+    out.innerHTML = '<div class="no-data">日付と先生を選択してください</div>';
+    return;
+  }
+
+  const entries = (journalData && journalData.entries) || {};
+
+  // 今日のスケジュールを取得
+  const todayLessons = scheduleData.filter(ev => ev.date === dateVal);
+
+  // 先生が担当する授業をフィルタ
+  const myLessonsRaw = todayLessons.filter(ev => {
+    const key = makeKey(ev);
+    const entry = entries[key];
+    return entry && (entry.teacher || "").trim() === teacher;
+  });
+
+  // オンラインペア重複排除: 同じ(date,time,grade,class,subject)で
+  // 本校・南教室の両方にあり両方faceToFace=falseなら1つにまとめる
+  const myLessons = deduplicatePairs(myLessonsRaw);
+
+  if (myLessons.length === 0) {
+    out.innerHTML = '<div class="no-data">' + formatDate(dateVal) + '<br>' + teacher + '先生の授業はありません</div>';
+    return;
+  }
+
+  // 時間順にソート
+  myLessons.sort((a, b) => (a.time || "").localeCompare(b.time || ""));
+
+  let html = "";
+  const dateLabel = formatDate(dateVal);
+
+  for (const ev of myLessons) {
+    // ペアの場合、両方のキーからセッション情報を探す
+    const todayEntry = findTodayEntry(ev, entries);
+    const prev = findPrevEntry(ev);
+
+    // セッション情報
+    const sessionNum = todayEntry.sessionNumber || "";
+    const monthNum   = todayEntry.monthNum || "";
+    const weekNum    = todayEntry.weekNum || "";
+    const sessionText = [];
+    if (sessionNum) sessionText.push("第" + sessionNum + "回");
+    if (monthNum && weekNum) sessionText.push(monthNum + "月" + weekNum + "週");
+    else if (monthNum) sessionText.push(monthNum + "月");
+
+    // 前回データ
+    const pc = prev ? (prev.content || "") : "";
+    const pp = prev ? (prev.page || "") : "";
+    const phw = prev ? (prev.homework || []) : [];
+    const pr = prev ? (prev.report || "") : "";
+    const pa = prev ? (prev.absence || "") : "";
+    const pcp = prev ? String(prev.curriculumProgress ?? "") : "";
+
+    html += `
+    <div class="lesson-card">
+      <div class="card-header">
+        <div>
+          <div class="card-date">${dateLabel}</div>
+          <div class="card-meta">${ev.time || ""} ｜ ${ev.campus === "minami" ? "南教室" : "本校"}</div>
+        </div>
+        <div class="card-label">${shortLabel(ev)}</div>
+      </div>
+      ${sessionText.length ? '<div class="card-session">' + sessionText.join("　") + '</div>' : ''}
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">前回の授業内容</div>
+          <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
+        </div>
+        <div class="field">
+          <div class="field-label">前回指導したページ</div>
+          <div class="field-value${pp ? '' : ' empty'}">${esc(pp) || "ー"}</div>
+        </div>
+        <div class="field">
+          <div class="field-label">宿題</div>
+          <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <div class="field-label">記録</div>
+            <div class="field-value${pr ? '' : ' empty'}">${esc(pr) || "ー"}</div>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <div class="field-label">欠席</div>
+            <div class="field-value${pa ? '' : ' empty'}">${esc(pa) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">カリキュラム進捗</div>
+            <div class="field-value${pcp ? '' : ' empty'}">${esc(pcp) || "ー"}</div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  out.innerHTML = html;
+}
+
+function esc(s) {
+  if (!s) return "";
+  const d = document.createElement("div");
+  d.textContent = String(s);
+  return d.innerHTML;
+}
+
+/* ====== 起動 ====== */
+init();
+</script>
+</body>
+</html>
