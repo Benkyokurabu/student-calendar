@@ -147,7 +147,8 @@
 let scheduleData = [];
 let journalData  = {};   // { entries: { key: {...} } }
 let journalMap   = {};   // { slots: { groupKey: [key, ...] } }
-let prevMonthJournal = null; // 前月分
+let prevMonthJournal    = null; // 前月分
+let prevMonthJournalMap = null; // 前月分のjournal_map
 
 const WDAY = ["日","月","火","水","木","金","土"];
 
@@ -186,9 +187,15 @@ async function init() {
   journalData  = jrnl  || {};
   journalMap   = jmap  || {};
 
-  // 前月のjournal読み込み
+  // 前月のjournal + journal_map読み込み
   const [py, pm] = prevMonth(mm);
-  prevMonthJournal = await loadJSON("journal_" + py + "-" + String(pm).padStart(2,"0") + ".json");
+  const prevYm = py + "-" + String(pm).padStart(2,"0");
+  const [prevJ, prevM] = await Promise.all([
+    loadJSON("journal_" + prevYm + ".json"),
+    loadJSON("journal_map_" + prevYm + ".json"),
+  ]);
+  prevMonthJournal    = prevJ;
+  prevMonthJournalMap = prevM;
 
   buildTeacherList();
 }
@@ -230,7 +237,13 @@ document.getElementById("datePicker").addEventListener("change", async function(
     journalData  = jrnl  || {};
     journalMap   = jmap  || {};
     const [py, pm] = prevMonth(mm);
-    prevMonthJournal = await loadJSON("journal_" + py + "-" + String(pm).padStart(2,"0") + ".json");
+    const prevYm = py + "-" + String(pm).padStart(2,"0");
+    const [prevJ, prevM] = await Promise.all([
+      loadJSON("journal_" + prevYm + ".json"),
+      loadJSON("journal_map_" + prevYm + ".json"),
+    ]);
+    prevMonthJournal    = prevJ;
+    prevMonthJournalMap = prevM;
     buildTeacherList();
   }
 });
@@ -260,6 +273,19 @@ function findPrevEntryForGroupKey(gk, todayDate) {
   // 同月内になし → 前月を探す
   if (!prevMonthJournal || !prevMonthJournal.entries) return null;
   const prevEntries = prevMonthJournal.entries;
+
+  // 前月のjournal_mapがあればスロットベースで検索（最後のスロット）
+  const prevSlots = (prevMonthJournalMap && prevMonthJournalMap.slots) || {};
+  const prevSlotList = prevSlots[gk] || [];
+  if (prevSlotList.length) {
+    // 最後のスロット（＝前月最後の授業）から遡って探す
+    for (let i = prevSlotList.length - 1; i >= 0; i--) {
+      const entry = prevEntries[prevSlotList[i]];
+      if (entry && entryHasData(entry)) return entry;
+    }
+  }
+
+  // journal_mapがない場合はキースキャンでフォールバック
   let last = null;
   for (const [k, v] of Object.entries(prevEntries)) {
     if (k.includes("|" + gk + "|")) {
@@ -354,6 +380,28 @@ function findTodayEntry(ev, entries) {
   return entry || {};
 }
 
+/* ====== 次回授業の検索 ====== */
+function findNextLesson(ev) {
+  const groupKeys = ev._pairGroupKeys || [ev.groupKey];
+  const entries = (journalData && journalData.entries) || {};
+  let best = null;
+  for (const sch of scheduleData) {
+    if (sch.date <= ev.date) continue;
+    if (!groupKeys.includes(sch.groupKey)) continue;
+    if (!best || sch.date < best.date) {
+      best = sch;
+    }
+  }
+  if (!best) return { date: "", time: "", teacher: "" };
+  const key = makeKey(best);
+  const entry = entries[key] || {};
+  return {
+    date: formatDate(best.date),
+    time: best.time || "",
+    teacher: (entry.teacher || "").trim()
+  };
+}
+
 /* ====== 表示 ====== */
 function render() {
   const dateVal = document.getElementById("datePicker").value;
@@ -415,6 +463,9 @@ function render() {
     const pcp = prev ? String(prev.curriculumProgress ?? "") : "";
     const pn = prev ? (prev.note || "") : "";
 
+    // 次回授業情報
+    const next = findNextLesson(ev);
+
     html += `
     <div class="lesson-card">
       <div class="card-header">
@@ -438,6 +489,18 @@ function render() {
           <div class="field">
             <div class="field-label">宿題</div>
             <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">次回の授業日</div>
+            <div class="field-value${next.date ? '' : ' empty'}">${esc(next.date) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">時間帯</div>
+            <div class="field-value${next.time ? '' : ' empty'}">${esc(next.time) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">担当の先生</div>
+            <div class="field-value${next.teacher ? '' : ' empty'}">${esc(next.teacher) || "ー"}</div>
           </div>
         </div>
         <div class="field">
