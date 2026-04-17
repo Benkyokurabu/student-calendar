@@ -63,6 +63,7 @@
     display: flex; gap: 12px;
   }
   .field-row .field { flex: 1; }
+  .field.divider-left { border-left: 1px solid #999; padding-left: 12px; }
 
   /* --- 印刷用 (B5: 176mm x 250mm, 全授業を1枚に) --- */
   /* B5印刷領域 = 250 - 12(余白) = 238mm。カード間隔2mm。 */
@@ -115,6 +116,7 @@
     .field-label { font-size: 9px; padding-bottom: 0; margin-bottom: 0; }
     .field-value { font-size: 10px; padding: 0; min-height: auto; line-height: 1.3; }
     .field-row { gap: 8px; }
+    .field.divider-left { border-left: 0.5pt solid #000; padding-left: 6px; }
 
     /* 1-2個のとき文字を大きく */
     .count-1 .field-label, .count-2 .field-label { font-size: 11px; }
@@ -490,7 +492,7 @@ function render() {
             <div class="field-label">宿題</div>
             <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
           </div>
-          <div class="field">
+          <div class="field divider-left">
             <div class="field-label">次回の授業日</div>
             <div class="field-value${next.date ? '' : ' empty'}">${esc(next.date) || "ー"}</div>
           </div>
