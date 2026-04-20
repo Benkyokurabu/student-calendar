@@ -215,6 +215,13 @@ function buildTeacherList() {
     const t = (v.teacher || "").trim();
     if (t) teachers.add(t);
   }
+  // 特殊授業（英検対策・補講など）の先生も追加
+  for (const ev of scheduleData) {
+    if (ev.isSpecialLesson) {
+      const t = (ev.teacher || "").trim();
+      if (t) teachers.add(t);
+    }
+  }
   const sel = document.getElementById("teacherSelect");
   sel.innerHTML = '<option value="">-- 選択 --</option>';
   for (const t of [...teachers].sort()) {
@@ -324,7 +331,13 @@ function pairKey(ev) {
 
 function deduplicatePairs(lessons) {
   const groups = {};
+  const specials = [];
   for (const ev of lessons) {
+    if (ev.isSpecialLesson) {
+      // 特殊授業はペア化しない（原文通り個別に表示）
+      specials.push(ev);
+      continue;
+    }
     const pk = pairKey(ev);
     if (!groups[pk]) groups[pk] = [];
     groups[pk].push(ev);
@@ -345,11 +358,15 @@ function deduplicatePairs(lessons) {
     // ペアでない → そのまま全部追加
     result.push(...evs);
   }
-  return result;
+  return result.concat(specials);
 }
 
 /* ====== 短縮ラベル生成 ====== */
 function shortLabel(ev) {
+  if (ev.isSpecialLesson) {
+    // 特殊授業は原文ラベル（例: "英検対策②"）をそのまま表示
+    return ev.label || ev.displayTitle || "";
+  }
   const g = GRADE_SHORT[ev.grade] || ev.grade;
   const cls = ev.class || "";
   const sub = SUBJ_SHORT[ev.subject] || ev.subject;
@@ -395,12 +412,19 @@ function findNextLesson(ev) {
     }
   }
   if (!best) return { date: "", time: "", teacher: "" };
-  const key = makeKey(best);
-  const entry = entries[key] || {};
+  let teacher = "";
+  if (best.isSpecialLesson) {
+    // 特殊授業はスケジュール側の teacher を直接使う
+    teacher = (best.teacher || "").trim();
+  } else {
+    const key = makeKey(best);
+    const entry = entries[key] || {};
+    teacher = (entry.teacher || "").trim();
+  }
   return {
     date: formatDate(best.date),
     time: best.time || "",
-    teacher: (entry.teacher || "").trim()
+    teacher: teacher
   };
 }
 
@@ -422,6 +446,10 @@ function render() {
 
   // 先生が担当する授業をフィルタ
   const myLessonsRaw = todayLessons.filter(ev => {
+    if (ev.isSpecialLesson) {
+      // 特殊授業はスケジュール側の teacher を見る
+      return (ev.teacher || "").trim() === teacher;
+    }
     const key = makeKey(ev);
     const entry = entries[key];
     return entry && (entry.teacher || "").trim() === teacher;
