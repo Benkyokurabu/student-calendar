@@ -743,23 +743,38 @@
 
   // ====== 初期読み込み ======
   async function loadInitialMonth() {
+    const todayYM = currentYM;  // 今月（初期値）
     ymPill.textContent = ymToLabel(currentYM);
     statusArea.innerHTML = "";
     hintArea.textContent = "読み込み中…";
     monthGrid.innerHTML = "";
     dayDetailArea.innerHTML = "";
 
+    // まず今月のデータを読み込む
+    try {
+      const todayData = await fetchJsonForMonth(todayYM);
+      const todayNorm = normalizeLessons(todayData);
+      if (todayNorm.length > 0) {
+        // 今月のデータがある → 今月を表示
+        cachedLatestRaw = todayData;
+        cachedLatestYM = todayYM;
+        currentYM = todayYM;
+        allLessons = todayNorm;
+        hintArea.textContent = "";
+        await loadJournalSafe(currentYM);
+        rebuildUI();
+        renderAll();
+        return;
+      }
+    } catch (_) {}
+
+    // 今月のデータがない → latestにフォールバック
     try {
       const data = await fetchLatestJson();
       const normalized = normalizeLessons(data);
-
       cachedLatestRaw = data;
       cachedLatestYM = inferYMFromLessons(normalized);
-
-      if (cachedLatestYM) {
-        currentYM = cachedLatestYM;
-      }
-
+      if (cachedLatestYM) currentYM = cachedLatestYM;
       allLessons = normalized;
       hintArea.textContent = "";
       await loadJournalSafe(currentYM);
