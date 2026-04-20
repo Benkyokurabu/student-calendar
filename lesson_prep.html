@@ -215,12 +215,10 @@ function buildTeacherList() {
     const t = (v.teacher || "").trim();
     if (t) teachers.add(t);
   }
-  // 特殊授業（英検対策・補講など）の先生も追加
+  // スケジュール側にteacherがある場合も追加（特殊授業・日誌未作成分）
   for (const ev of scheduleData) {
-    if (ev.isSpecialLesson) {
-      const t = (ev.teacher || "").trim();
-      if (t) teachers.add(t);
-    }
+    const t = (ev.teacher || "").trim();
+    if (t) teachers.add(t);
   }
   const sel = document.getElementById("teacherSelect");
   sel.innerHTML = '<option value="">-- 選択 --</option>';
@@ -452,7 +450,10 @@ function render() {
     }
     const key = makeKey(ev);
     const entry = entries[key];
-    return entry && (entry.teacher || "").trim() === teacher;
+    if (entry && (entry.teacher || "").trim() === teacher) return true;
+    // journalエントリがない場合、schedule側のteacherでもマッチ
+    if (!entry && (ev.teacher || "").trim() === teacher) return true;
+    return false;
   });
 
   // オンラインペア重複排除: 同じ(date,time,grade,class,subject)で
