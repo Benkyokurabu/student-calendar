@@ -342,7 +342,7 @@ def main() -> None:
 
     for campus, sname, sh in targets:
         print(f"[INFO] 対象シート: {campus} / {sname}")
-        events = collect_events(sh, month, campus, year, month)
+        events = collect_events(sh, month)
         process_campus(journal_dir, campus, events, year, month)
 
     print("[INFO] 完了しました。本文セルは変更していません。")

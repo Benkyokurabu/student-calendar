@@ -40,7 +40,7 @@ echo [OK] フォルダを確認しました: %TARGET_DIR%
 echo これから全てのサブフォルダ内のエクセルを検索し、JSONを更新します。
 echo ---------------------------------------------------
 
-python update_journal.py --journal-dir "%TARGET_DIR%" --mode manual --no-git
+python update_journal.py --journal-dir "%TARGET_DIR%"
 
 echo ---------------------------------------------------
 echo 処理が終わりました。内容を確認してください。
