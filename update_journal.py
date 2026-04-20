@@ -153,12 +153,17 @@ def build_buckets(events) -> Dict[Tuple[str, str, str], list]:
     return dd
 
 
+SKIP_DIRS = {"_backup", "退避", "__pycache__"}
+
+
 def find_workbook(journal_dir: Path, filename: str) -> Optional[Path]:
     p = journal_dir / filename
     if p.exists():
         return p
     for candidate in journal_dir.rglob(filename):
         if candidate.is_file():
+            if SKIP_DIRS & {part for part in candidate.relative_to(journal_dir).parts}:
+                continue
             return candidate
     return None
 
