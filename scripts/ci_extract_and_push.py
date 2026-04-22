@@ -87,13 +87,15 @@ def main():
         sync_script = script_dir / "sync_journal_across_campus.py"
         if sync_script.exists():
             run([sys.executable, str(sync_script), "--month", m,
-                 "--journal-dir", str(journal_dir)])
+                 "--journal-dir", str(journal_dir),
+                 "--repo-dir", str(repo_dir)])
         print()
 
         # 授業日誌JSON抽出
         print(f"[3/3] 授業日誌Excelから JSON を抽出中... ({m})")
         run([sys.executable, str(script_dir / "extract_journal_to_json.py"),
-             "--month", m, "--journal-dir", str(journal_dir)])
+             "--month", m, "--journal-dir", str(journal_dir),
+             "--repo-dir", str(repo_dir)])
         print()
 
     # --- マージ ---
