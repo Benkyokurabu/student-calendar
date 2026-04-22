@@ -2,8 +2,8 @@ name: Update Schedule & Journal
 
 on:
   schedule:
-    # 毎日 16:30 UTC = 01:30 JST（南教室タスクスケジューラと同じ時刻）
-    - cron: '30 16 * * *'
+    # 毎日 16:45 UTC = 01:45 JST
+    - cron: '45 16 * * *'
   workflow_dispatch:  # 手動実行も可能
 
 permissions:
