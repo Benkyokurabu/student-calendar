@@ -1,0 +1,89 @@
+name: Update Schedule & Journal
+
+on:
+  schedule:
+    # 毎日 16:30 UTC = 01:30 JST（南教室タスクスケジューラと同じ時刻）
+    - cron: '30 16 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install openpyxl
+
+      - name: Install rclone
+        run: |
+          curl -fsSL https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+
+      - name: Download schedule Excel from OneDrive
+        run: |
+          mkdir -p scripts/_schedule
+          rclone copy "onedrive:●勉強クラブ共有/09　授業日誌/_backup/スケジュール表/" scripts/_schedule/ --include "*.xlsm"
+          echo "--- Schedule files ---"
+          ls -la scripts/_schedule/
+
+      - name: Download journal Excel from OneDrive
+        run: |
+          rclone sync "onedrive:●勉強クラブ共有/09　授業日誌" scripts/_cloud_journal/ \
+            --exclude "_backup/**" --exclude "退避/**" \
+            --transfers 8 --checkers 16 --fast-list
+          echo "--- Journal files ---"
+          find scripts/_cloud_journal -name "*.xlsx" | wc -l
+
+      - name: Copy schedule Excel to scripts folder
+        run: |
+          cp scripts/_schedule/*.xlsm scripts/ 2>/dev/null || echo "No schedule xlsm found"
+          ls scripts/*.xlsm 2>/dev/null || true
+
+      - name: Run pipeline
+        run: |
+          cd scripts
+          python ci_extract_and_push.py
+        env:
+          CI: true
+
+      - name: Upload modified Excel back to OneDrive
+        run: |
+          rclone copy scripts/_cloud_journal/ "onedrive:●勉強クラブ共有/09　授業日誌" \
+            --transfers 8 --checkers 16 --update
+          echo "Upload complete"
+
+      - name: Commit and push JSON files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Copy generated JSON to repo root
+          for f in scripts/schedule_*.json scripts/journal_*.json scripts/journal_map_*.json; do
+            [ -f "$f" ] && cp "$f" .
+          done
+
+          git add schedule_*.json journal_*.json journal_map_*.json 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update schedule & journal JSON (GitHub Actions)"
+            git pull --rebase origin main
+            git push
+          fi
