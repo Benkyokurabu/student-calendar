@@ -31,9 +31,11 @@ jobs:
           curl -fsSL https://rclone.org/install.sh | sudo bash
 
       - name: Configure rclone
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
         run: |
           mkdir -p ~/.config/rclone
-          echo "${{ secrets.RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+          printf '%s\n' "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
 
       - name: Download schedule Excel from OneDrive
         run: |
