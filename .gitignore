@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+scripts/_cloud_journal/
+scripts/_schedule/
+~$*.xlsx
+~$*.xlsm
