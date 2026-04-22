@@ -67,10 +67,11 @@ jobs:
           CI: true
 
       - name: Upload modified Excel back to OneDrive
+        continue-on-error: true
         run: |
           rclone copy scripts/_cloud_journal/ "onedrive:●勉強クラブ共有/09　授業日誌" \
-            --transfers 8 --checkers 16 --update
-          echo "Upload complete"
+            --transfers 8 --checkers 16 --update --ignore-errors
+          echo "Upload step done (some files may be locked)"
 
       - name: Commit and push JSON files
         run: |
