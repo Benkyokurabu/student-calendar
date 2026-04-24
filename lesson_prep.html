@@ -175,36 +175,40 @@ async function init() {
   const today = new Date();
   dp.value = today.toISOString().slice(0, 10);
 
-  // 今月を判定
-  const mm = dp.value.slice(0, 7);
+  await loadMonth(dp.value.slice(0, 7));
+  buildTeacherList();
+}
 
-  // 並列読み込み
-  const [sched, jrnl, jmap] = await Promise.all([
-    loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
-    loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
-    loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
-  ]);
-
-  scheduleData = sched || [];
-  journalData  = jrnl  || {};
-  journalMap   = jmap  || {};
-
-  // 前月のjournal + journal_map読み込み
+async function loadMonth(mm) {
   const [py, pm] = prevMonth(mm);
   const prevYm = py + "-" + String(pm).padStart(2,"0");
-  const [prevJ, prevM] = await Promise.all([
+  const [ny, nm] = nextMonth(mm);
+  const nextYm = ny + "-" + String(nm).padStart(2,"0");
+
+  const [sched, nextSched, jrnl, jmap, prevJ, prevM] = await Promise.all([
+    loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
+    loadJSON("schedule_" + nextYm + ".json"),
+    loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
+    loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
     loadJSON("journal_" + prevYm + ".json"),
     loadJSON("journal_map_" + prevYm + ".json"),
   ]);
+
+  scheduleData        = (sched || []).concat(nextSched || []);
+  journalData         = jrnl  || {};
+  journalMap          = jmap  || {};
   prevMonthJournal    = prevJ;
   prevMonthJournalMap = prevM;
-
-  buildTeacherList();
 }
 
 function prevMonth(ym) {
   const [y, m] = ym.split("-").map(Number);
   return m === 1 ? [y - 1, 12] : [y, m - 1];
+}
+
+function nextMonth(ym) {
+  const [y, m] = ym.split("-").map(Number);
+  return m === 12 ? [y + 1, 1] : [y, m + 1];
 }
 
 /* ====== 先生リスト構築 ====== */
@@ -234,23 +238,7 @@ document.getElementById("datePicker").addEventListener("change", async function(
   const mm = this.value.slice(0, 7);
   const currentMM = (journalData && journalData.month) || "";
   if (mm !== currentMM) {
-    // 月が変わったら再読み込み
-    const [sched, jrnl, jmap] = await Promise.all([
-      loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
-      loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
-      loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
-    ]);
-    scheduleData = sched || [];
-    journalData  = jrnl  || {};
-    journalMap   = jmap  || {};
-    const [py, pm] = prevMonth(mm);
-    const prevYm = py + "-" + String(pm).padStart(2,"0");
-    const [prevJ, prevM] = await Promise.all([
-      loadJSON("journal_" + prevYm + ".json"),
-      loadJSON("journal_map_" + prevYm + ".json"),
-    ]);
-    prevMonthJournal    = prevJ;
-    prevMonthJournalMap = prevM;
+    await loadMonth(mm);
     buildTeacherList();
   }
 });
