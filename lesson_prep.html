@@ -124,6 +124,9 @@
     .count-1 .card-label, .count-2 .card-label { font-size: 18px; }
     .count-1 .card-date, .count-2 .card-date { font-size: 13px; }
     .count-1 .card-session, .count-2 .card-session { font-size: 12px; }
+
+    /* 南教室モード: 白黒印刷 */
+    body.campus-minami { filter: grayscale(100%); -webkit-filter: grayscale(100%); }
   }
 </style>
 </head>
@@ -405,7 +408,8 @@ function findNextLesson(ev) {
   } else {
     const key = makeKey(best);
     const entry = entries[key] || {};
-    teacher = (entry.teacher || "").trim();
+    // 日誌にteacherがあればそれを優先（当月は日誌が正、翌月はスケジュールにフォールバック）
+    teacher = (entry.teacher || "").trim() || (best.teacher || "").trim();
   }
   return {
     date: formatDate(best.date),
@@ -555,6 +559,17 @@ function esc(s) {
   d.textContent = String(s);
   return d.innerHTML;
 }
+
+/* ====== 南教室モード判定（白黒印刷） ====== */
+(function applyCampusMode() {
+  const params = new URLSearchParams(location.search);
+  if (params.get("campus") === "minami") {
+    localStorage.setItem("lesson_prep_campus", "minami");
+  }
+  if (localStorage.getItem("lesson_prep_campus") === "minami") {
+    document.body.classList.add("campus-minami");
+  }
+})();
 
 /* ====== 起動 ====== */
 init();
