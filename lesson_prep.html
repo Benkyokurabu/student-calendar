@@ -68,7 +68,7 @@
   /* --- 印刷用 (B5: 176mm x 250mm, 全授業を1枚に) --- */
   /* B5印刷領域 = 250 - 12(余白) = 238mm。カード間隔2mm。 */
   @media print {
-    body { background: #fff; margin: 0; padding: 0; }
+    body { background: #fff; margin: 0; padding: 0; filter: grayscale(100%); -webkit-filter: grayscale(100%); }
     .controls { display: none !important; }
     .container { max-width: 100%; margin: 0; padding: 0; }
 
@@ -125,8 +125,6 @@
     .count-1 .card-date, .count-2 .card-date { font-size: 13px; }
     .count-1 .card-session, .count-2 .card-session { font-size: 12px; }
 
-    /* 南教室モード: 白黒印刷 */
-    body.campus-minami { filter: grayscale(100%); -webkit-filter: grayscale(100%); }
   }
 </style>
 </head>
