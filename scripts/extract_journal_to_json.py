@@ -103,6 +103,13 @@ def read_merged_text(ws, row: int, col: int) -> str:
     return "" if v is None else str(v).strip()
 
 
+def safe_write_json(path: Path, data: dict) -> None:
+    """一時ファイルに書いてからリネームする安全な書き込み"""
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.replace(path)
+
+
 def normalize_time(s: str) -> str:
     return str(s or "").replace("~", "～").strip()
 
@@ -505,8 +512,8 @@ def main() -> None:
 
     latest_path = repo_dir / "journal_latest.json"
     month_path = repo_dir / f"journal_{target_month}.json"
-    latest_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    month_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    safe_write_json(latest_path, output)
+    safe_write_json(month_path, output)
 
     print(f"[OK] 出力: {latest_path}")
     print(f"[OK] 出力: {month_path}")

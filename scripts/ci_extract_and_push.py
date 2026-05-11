@@ -164,13 +164,14 @@ def main():
                 print(f"  {m}: OK（{updated_count}件更新）")
 
             new_data["entries"] = merged_entries
-            repo_journal.write_text(
-                json.dumps(new_data, ensure_ascii=False, indent=2), encoding="utf-8"
-            )
+            _text = json.dumps(new_data, ensure_ascii=False, indent=2)
+            _tmp = repo_journal.with_suffix(".json.tmp")
+            _tmp.write_text(_text, encoding="utf-8")
+            _tmp.replace(repo_journal)
             latest = repo_dir / "journal_latest.json"
-            latest.write_text(
-                json.dumps(new_data, ensure_ascii=False, indent=2), encoding="utf-8"
-            )
+            _tmp2 = latest.with_suffix(".json.tmp")
+            _tmp2.write_text(_text, encoding="utf-8")
+            _tmp2.replace(latest)
         except Exception as e:
             print(f"[WARNING] マージ中にエラー: {e}")
     print()
