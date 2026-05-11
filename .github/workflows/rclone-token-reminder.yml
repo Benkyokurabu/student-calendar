@@ -6,6 +6,9 @@ on:
     - cron: '0 20 * * *'
   workflow_dispatch:
 
+permissions:
+  issues: write
+
 jobs:
   check-token:
     runs-on: ubuntu-latest
@@ -28,32 +31,38 @@ jobs:
             echo "send=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Send reminder email
+      - name: Create reminder issue
         if: steps.check.outputs.send == 'true'
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "【要対応】rcloneトークンの更新が必要です（${{ steps.check.outputs.days }}日経過）"
-          to: kudo.k.bk@gmail.com
-          from: ${{ secrets.MAIL_USERNAME }}
-          body: |
-            rcloneのOneDriveトークンが ${{ steps.check.outputs.days }} 日経過しています。
-            前回更新: ${{ steps.check.outputs.updated }}
-            90日で失効するため、早めに更新してください。
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # 既に同じタイトルのオープンIssueがあればスキップ
+          existing=$(gh issue list --state open --search "rcloneトークンの更新" --json number --jq 'length')
+          if [ "$existing" -gt "0" ]; then
+            echo "Reminder issue already exists, skipping"
+            exit 0
+          fi
 
-            ■ 更新手順
-            1. PCでコマンドプロンプトを開く
-            2. 以下を実行:
-               rclone config reconnect onedrive:
-            3. ブラウザが開くのでMicrosoftアカウントでログイン
-            4. 認証完了後、以下を実行してBase64を取得:
-               powershell -Command "[Convert]::ToBase64String([IO.File]::ReadAllBytes((Join-Path $env:APPDATA 'rclone\rclone.conf')))"
-            5. GitHub の Secrets を更新:
-               https://github.com/Benkyokurabu/student-calendar/settings/secrets/actions
-               → RCLONE_CONF_B64 を上記の出力で上書き
-            6. リポの rclone_token_updated.txt を今日の日付に更新してcommit & push
+          gh issue create \
+            --title "【要対応】rcloneトークンの更新が必要です（${{ steps.check.outputs.days }}日経過）" \
+            --body "$(cat <<'BODY'
+          rcloneのOneDriveトークンが **${{ steps.check.outputs.days }}日** 経過しています。
+          前回更新: ${{ steps.check.outputs.updated }}
+          90日で失効するため、早めに更新してください。
 
-            このメールはトークン更新まで毎日届きます。
+          ## 更新手順
+          1. PCでコマンドプロンプトを開く
+          2. 以下を実行:
+             ```
+             rclone config reconnect onedrive:
+             ```
+          3. ブラウザが開くのでMicrosoftアカウントでログイン
+          4. 認証完了後、以下を実行してBase64を取得:
+             ```
+             powershell -Command "[Convert]::ToBase64String([IO.File]::ReadAllBytes((Join-Path $env:APPDATA 'rclone\rclone.conf')))"
+             ```
+          5. [GitHub Secrets](https://github.com/Benkyokurabu/student-calendar/settings/secrets/actions) を開き、`RCLONE_CONF_B64` を上記の出力で上書き
+          6. リポの `rclone_token_updated.txt` を今日の日付に更新して commit & push
+          7. このIssueをクローズ
+          BODY
+          )"
