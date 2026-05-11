@@ -157,6 +157,66 @@ def find_month_sheet(wb: openpyxl.Workbook, year: int, month: int):
     return None
 
 
+def _day_from_date(ev: dict) -> int:
+    """イベントの日付文字列から日を整数で返す（比較用）"""
+    d = str(ev.get("date", ""))
+    if len(d) >= 10:
+        dd = d[8:10]
+        return int(dd) if dd.isdigit() else 0
+    return 0
+
+
+def _build_merged_slots_for_extract(classes: Dict[str, List[dict]], order: List[str]) -> List[dict]:
+    """export_by_grade_subject._build_merged_slots と同じロジック。
+    特スロットを正しい位置に挿入し、Excelのカラム配置を再現する。"""
+    specials: Dict[str, List[dict]] = {}
+    regulars: Dict[str, List[dict]] = {}
+    for k in order:
+        specials[k] = [e for e in classes.get(k, []) if e.get("special", False)]
+        regulars[k] = [e for e in classes.get(k, []) if not e.get("special", False)]
+
+    max_regular = max((len(regulars[k]) for k in order), default=0)
+
+    # 特イベントの挿入位置を決定
+    insert_items: List[Tuple[int, int, str, dict]] = []
+    for k in order:
+        for ev in specials[k]:
+            day_val = _day_from_date(ev)
+            insert_before = len(regulars[k])
+            for ri, reg_ev in enumerate(regulars[k]):
+                if day_val < _day_from_date(reg_ev):
+                    insert_before = ri
+                    break
+            insert_items.append((insert_before, day_val, k, ev))
+    insert_items.sort(key=lambda x: (x[0], x[1]))
+
+    # 通常スロット列に特スロットを挿入
+    merged: List[dict] = []
+    sp_idx = 0
+    for ri in range(max_regular):
+        while sp_idx < len(insert_items) and insert_items[sp_idx][0] == ri:
+            _, _, k, ev = insert_items[sp_idx]
+            sp_slot: dict = {"_special": True}
+            for kk in order:
+                sp_slot[kk] = ev if kk == k else None
+            merged.append(sp_slot)
+            sp_idx += 1
+        reg_slot: dict = {"_special": False}
+        for k in order:
+            reg_slot[k] = regulars[k][ri] if ri < len(regulars[k]) else None
+        merged.append(reg_slot)
+
+    while sp_idx < len(insert_items):
+        _, _, k, ev = insert_items[sp_idx]
+        sp_slot = {"_special": True}
+        for kk in order:
+            sp_slot[kk] = ev if kk == k else None
+        merged.append(sp_slot)
+        sp_idx += 1
+
+    return merged
+
+
 def build_group_slot_map(events: List[dict], slots_map: Optional[dict]) -> Dict[str, int]:
     result: Dict[str, int] = {}
 
@@ -172,19 +232,41 @@ def build_group_slot_map(events: List[dict], slots_map: Optional[dict]) -> Dict[
             except Exception:
                 pass
 
-    # 2) fallback: schedule_latest.json 内の出現順で groupKey ごとに連番
-    counters: Dict[str, int] = defaultdict(int)
-    seen: Dict[Tuple[str, str], int] = {}
+    # 2) fallback: _build_merged_slots と同じロジックでExcelカラム位置を再現
+    # (campus, grade, subject) = 1つのExcelワークブックに対応
+    wb_groups: Dict[Tuple[str, str, str], Dict[str, List[dict]]] = defaultdict(lambda: defaultdict(list))
     for ev in events:
-        gk = str(ev.get("groupKey", ""))
         key = make_entry_key(ev)
-        pair = (gk, key)
-        if pair in seen:
-            result[key] = seen[pair]
+        if key in result:
+            continue  # journal_map で既に決定済み
+        campus = str(ev.get("campus", ""))
+        grade = str(ev.get("grade", ""))
+        subject = str(ev.get("subject", ""))
+        klass = str(ev.get("class", "") or "")
+        if not campus or not grade or not subject or not klass:
             continue
-        counters[gk] += 1
-        seen[pair] = counters[gk]
-        result[key] = counters[gk]
+        wb_groups[(campus, grade, subject)][klass].append(ev)
+
+    for wb_key, classes in wb_groups.items():
+        if "X" in classes:
+            # X クラス: 単純な連番（fill_sheet_x と同じ）
+            for i, ev in enumerate(classes["X"]):
+                key = make_entry_key(ev)
+                if key not in result:
+                    result[key] = i + 1
+
+        # S/A/B: 特スロット挿入を含むマージ済みスロットで位置を決定
+        order = ["S", "A", "B"]
+        if not any(classes.get(k) for k in order):
+            continue
+        merged = _build_merged_slots_for_extract(classes, order)
+        for si, slot in enumerate(merged):
+            for k in order:
+                ev = slot.get(k)
+                if ev is not None:
+                    key = make_entry_key(ev)
+                    if key not in result:
+                        result[key] = si + 1
 
     return result
 
