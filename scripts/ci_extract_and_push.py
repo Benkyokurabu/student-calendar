@@ -175,6 +175,25 @@ def main():
             print(f"[WARNING] マージ中にエラー: {e}")
     print()
 
+    # --- 18か月より古い journal/schedule JSON を削除 ---
+    import re as _re2
+    _today = date.today()
+    _cutoff_y, _cutoff_m = _today.year, _today.month - 18
+    while _cutoff_m <= 0:
+        _cutoff_y -= 1
+        _cutoff_m += 12
+    cutoff = f"{_cutoff_y:04d}-{_cutoff_m:02d}"
+    removed = []
+    for pat in ["journal_2*-*.json", "schedule_2*-*.json", "journal_map_2*-*.json"]:
+        for f in repo_dir.glob(pat):
+            m = _re2.search(r"(\d{4}-\d{2})", f.name)
+            if m and m.group(1) < cutoff:
+                f.unlink()
+                removed.append(f.name)
+    if removed:
+        print(f"[CLEAN] 18か月超の古いJSONを削除: {', '.join(removed)}")
+    print()
+
     print("=" * 48)
     print("  CI パイプライン完了（JSON生成済み）")
     print("=" * 48)

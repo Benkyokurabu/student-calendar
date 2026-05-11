@@ -228,6 +228,19 @@ def main():
     print("=" * 48)
     print()
 
+    # --- 0a. リモートの最新データを取得（GitHub Actionsの成果を反映） ---
+    print("[pre] git pull --rebase でリモート最新を取得中...")
+    pull_pre = subprocess.run(
+        ["git", "pull", "--rebase", "origin", "main"],
+        cwd=repo_dir,
+        capture_output=True, text=True
+    )
+    if pull_pre.returncode == 0:
+        print("  → 最新に同期しました。")
+    else:
+        print(f"  [WARN] git pull 失敗（続行）: {pull_pre.stderr.strip()}")
+    print()
+
     # --- 0. rclone でクラウドから日誌Excelをダウンロード ---
     cloud_journal_dir = None
     try:
@@ -424,6 +437,27 @@ def main():
             )
         except Exception as e:
             print(f"[WARNING] マージ中にエラー: {e}")
+    print()
+
+    # --- 3.9. 18か月より古い journal/schedule JSON を削除 ---
+    import re as _re2
+    _today = date.today()
+    _cutoff_y, _cutoff_m = _today.year, _today.month - 18
+    while _cutoff_m <= 0:
+        _cutoff_y -= 1
+        _cutoff_m += 12
+    cutoff = f"{_cutoff_y:04d}-{_cutoff_m:02d}"
+    removed = []
+    for pat in ["journal_2*-*.json", "schedule_2*-*.json", "journal_map_2*-*.json"]:
+        for f in repo_dir.glob(pat):
+            # ファイル名から YYYY-MM を抽出（例: journal_2024-11.json → 2024-11）
+            m = _re2.search(r"(\d{4}-\d{2})", f.name)
+            if m and m.group(1) < cutoff:
+                f.unlink()
+                removed.append(f.name)
+    if removed:
+        print(f"[CLEAN] 18か月超の古いJSONを削除: {', '.join(removed)}")
+        subprocess.run(["git", "add", "-A"], cwd=repo_dir)
     print()
 
     # --- 4. git add & commit ---
