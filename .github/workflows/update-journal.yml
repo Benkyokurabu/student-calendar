@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -92,3 +93,29 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Create issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --state open --search "パイプライン失敗" --json number --jq 'length')
+          if [ "$existing" -gt "0" ]; then
+            echo "Failure issue already exists, skipping"
+            exit 0
+          fi
+          gh issue create \
+            --title "【要確認】日誌パイプラインが失敗しました（$(date -u -d '+9 hours' '+%Y-%m-%d')）" \
+            --body "$(cat <<'BODY'
+          GitHub Actionsの日誌更新パイプラインが失敗しました。
+          日誌JSONが更新されていない可能性があります。
+
+          ## 確認手順
+          1. [Actions ログ](https://github.com/Benkyokurabu/student-calendar/actions) でエラー内容を確認
+          2. よくある原因:
+             - **rcloneトークン失効** → `rclone config reconnect onedrive:` で再認証
+             - **Excelファイルの破損** → OneDriveで該当ファイルを確認
+             - **一時的なネットワークエラー** → Actions画面から手動で再実行
+          3. 解決したらこのIssueをクローズ
+          BODY
+          )"
