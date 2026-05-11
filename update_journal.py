@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import shutil
 import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
@@ -139,6 +140,15 @@ def count_slots_in_sheet(ws) -> int:
     return max(1, min(30, (maxcol - FIRST_BLOCK_COL) // BLOCK_WIDTH + 1))
 
 
+def backup_before_save(path: Path) -> None:
+    """上書き前に .bak を1世代だけ残す"""
+    bak = path.with_suffix(path.suffix + ".bak")
+    try:
+        shutil.copy2(path, bak)
+    except Exception as e:
+        print(f"[WARN] バックアップ失敗: {path.name} / {e}")
+
+
 def open_wb(path: Path) -> Optional[openpyxl.Workbook]:
     try:
         return openpyxl.load_workbook(path)
@@ -223,6 +233,7 @@ def update_main_workbook(path: Path, year: int, month: int, s_list: list, a_list
             if ev is not None:
                 write_update_fields(ws, top, col_left, month, ev.day, ev.wday, ev.teacher or "")
 
+    backup_before_save(path)
     wb.save(path)
     wb.close()
     print(f"[OK] 更新: {path.name} / {ws.title}")
@@ -248,6 +259,7 @@ def update_x_workbook(path: Path, year: int, month: int, x_list: list) -> bool:
             ev = x_list[slot]
             write_update_fields(ws, BASE_TOP_X, col_left, month, ev.day, ev.wday, ev.teacher or "")
 
+    backup_before_save(path)
     wb.save(path)
     wb.close()
     print(f"[OK] 更新: {path.name} / {ws.title}")
@@ -274,6 +286,7 @@ def update_hojyu_workbook(path: Path, year: int, month: int, hits: list) -> bool
             ev = hits[slot]
             write_update_fields(ws, BASE_TOP_MAIN, col_left, month, ev.day, ev.wday, ev.teacher or "")
 
+    backup_before_save(path)
     wb.save(path)
     wb.close()
     print(f"[OK] 更新: {path.name} / {ws.title}")
