@@ -441,8 +441,8 @@ function render() {
     const key = makeKey(ev);
     const entry = entries[key];
     if (entry && (entry.teacher || "").trim() === teacher) return true;
-    // journalエントリがない場合、schedule側のteacherでもマッチ
-    if (!entry && (ev.teacher || "").trim() === teacher) return true;
+    // journalエントリがない、またはteacherが空の場合、schedule側のteacherでもマッチ
+    if ((!entry || !(entry.teacher || "").trim()) && (ev.teacher || "").trim() === teacher) return true;
     return false;
   });
 
