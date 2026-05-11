@@ -1,0 +1,59 @@
+name: Rclone Token Expiry Reminder
+
+on:
+  schedule:
+    # 毎日 20:00 UTC = 05:00 JST（パイプラインの後）
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check token age
+        id: check
+        run: |
+          updated=$(cat rclone_token_updated.txt 2>/dev/null || echo "2026-04-22")
+          updated_epoch=$(date -d "$updated" +%s)
+          now_epoch=$(date +%s)
+          days=$(( (now_epoch - updated_epoch) / 86400 ))
+          echo "Token updated: $updated ($days days ago)"
+          echo "days=$days" >> "$GITHUB_OUTPUT"
+          echo "updated=$updated" >> "$GITHUB_OUTPUT"
+          if [ "$days" -ge 75 ]; then
+            echo "send=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "send=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Send reminder email
+        if: steps.check.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "【要対応】rcloneトークンの更新が必要です（${{ steps.check.outputs.days }}日経過）"
+          to: kudo.k.bk@gmail.com
+          from: ${{ secrets.MAIL_USERNAME }}
+          body: |
+            rcloneのOneDriveトークンが ${{ steps.check.outputs.days }} 日経過しています。
+            前回更新: ${{ steps.check.outputs.updated }}
+            90日で失効するため、早めに更新してください。
+
+            ■ 更新手順
+            1. PCでコマンドプロンプトを開く
+            2. 以下を実行:
+               rclone config reconnect onedrive:
+            3. ブラウザが開くのでMicrosoftアカウントでログイン
+            4. 認証完了後、以下を実行してBase64を取得:
+               powershell -Command "[Convert]::ToBase64String([IO.File]::ReadAllBytes((Join-Path $env:APPDATA 'rclone\rclone.conf')))"
+            5. GitHub の Secrets を更新:
+               https://github.com/Benkyokurabu/student-calendar/settings/secrets/actions
+               → RCLONE_CONF_B64 を上記の出力で上書き
+            6. リポの rclone_token_updated.txt を今日の日付に更新してcommit & push
+
+            このメールはトークン更新まで毎日届きます。
