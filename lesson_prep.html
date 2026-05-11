@@ -434,16 +434,8 @@ function render() {
 
   // 先生が担当する授業をフィルタ
   const myLessonsRaw = todayLessons.filter(ev => {
-    if (ev.isSpecialLesson) {
-      // 特殊授業はスケジュール側の teacher を見る
-      return (ev.teacher || "").trim() === teacher;
-    }
-    const key = makeKey(ev);
-    const entry = entries[key];
-    if (entry && (entry.teacher || "").trim() === teacher) return true;
-    // journalエントリがない、またはteacherが空の場合、schedule側のteacherでもマッチ
-    if ((!entry || !(entry.teacher || "").trim()) && (ev.teacher || "").trim() === teacher) return true;
-    return false;
+    // スケジュールJSON の teacher で常にマッチ（正確な割当データ）
+    return (ev.teacher || "").trim() === teacher;
   });
 
   // オンラインペア重複排除: 同じ(date,time,grade,class,subject)で
