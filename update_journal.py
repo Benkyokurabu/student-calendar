@@ -53,6 +53,9 @@ from export_by_grade_subject import (  # type: ignore
     choose_target_sheets,
     collect_events,
     pick_schedule_in_same_folder,
+    _build_merged_slots,
+    mark_special_counters,
+    write_class_label,
 )
 
 ROW_STEP = 20
@@ -180,34 +183,45 @@ def update_main_workbook(path: Path, year: int, month: int, s_list: list, a_list
         return False
 
     total_slots = count_slots_in_sheet(ws)
-    lens = {"S": len(s_list), "A": len(a_list), "B": len(b_list)}
     classes = {"S": s_list, "A": a_list, "B": b_list}
 
-    for slot in range(total_slots):
-        col_left = FIRST_BLOCK_COL + BLOCK_WIDTH * slot
+    # _build_merged_slots で特スロット挿入を含む正しいスロット順を取得
+    merged_slots = _build_merged_slots(classes, CLASS_ORDER)
+
+    for si in range(total_slots):
+        col_left = FIRST_BLOCK_COL + BLOCK_WIDTH * si
 
         # まず更新対象だけ全消し（本文は消さない）
         for klass in CLASS_ORDER:
             top = BASE_TOP_MAIN + ROW_STEP * CLASS_INDEX[klass]
             clear_update_fields(ws, top, col_left)
+            # ラベルもクリア
+            safe_write(ws, top + 1, col_left, "")
 
-        slot_events = {}
-        has_special = False
-        for klass in CLASS_ORDER:
-            if slot < lens[klass]:
-                ev = classes[klass][slot]
-                slot_events[klass] = ev
-                if getattr(ev, "special", False):
-                    has_special = True
+        if si >= len(merged_slots):
+            continue
+
+        slot = merged_slots[si]
+        is_special = slot["_special"]
+
+        if is_special:
+            mark_special_counters(ws, col_left)
 
         for klass in CLASS_ORDER:
-            if slot >= lens[klass]:
-                continue
-            ev = slot_events[klass]
-            if has_special and not getattr(ev, "special", False):
-                continue
             top = BASE_TOP_MAIN + ROW_STEP * CLASS_INDEX[klass]
-            write_update_fields(ws, top, col_left, month, ev.day, ev.wday, ev.teacher or "")
+            ev = slot.get(klass)
+
+            # ラベル書き込み
+            if ev is None:
+                label = ""
+            elif is_special:
+                label = "特"
+            else:
+                label = klass
+            write_class_label(ws, top, col_left, label)
+
+            if ev is not None:
+                write_update_fields(ws, top, col_left, month, ev.day, ev.wday, ev.teacher or "")
 
     wb.save(path)
     wb.close()
@@ -347,7 +361,7 @@ def main() -> None:
 
     for campus, sname, sh in targets:
         print(f"[INFO] 対象シート: {campus} / {sname}")
-        events = collect_events(sh, month)
+        events = collect_events(sh, month, campus, year, month)
         process_campus(journal_dir, campus, events, year, month)
 
     print("[INFO] 完了しました。本文セルは変更していません。")
