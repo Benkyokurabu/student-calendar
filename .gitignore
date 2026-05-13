@@ -8,16 +8,8 @@ __pycache__/
 ~$*.xlsx
 ~$*.xlsm
 
-# Journal JSON (contains personal data)
-journal_*.json
-journal_map_*.json
-journal_latest.json
+# Internal reports
 journal_reports/
-
-# Schedule JSON
-schedule_*.json
-schedule_latest.json
-teacher_schedule_*.json
 
 # Cloud journal / internal
 scripts/_cloud_journal/
