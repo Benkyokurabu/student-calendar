@@ -1,6 +1,28 @@
 __pycache__/
 *.pyc
-scripts/_cloud_journal/
-scripts/_schedule/
+*.py[cod]
+
+# Excel data
+*.xlsx
+*.xlsm
 ~$*.xlsx
 ~$*.xlsm
+
+# Journal JSON (contains personal data)
+journal_*.json
+journal_map_*.json
+journal_latest.json
+journal_reports/
+
+# Schedule JSON
+schedule_*.json
+schedule_latest.json
+teacher_schedule_*.json
+
+# Cloud journal / internal
+scripts/_cloud_journal/
+scripts/_schedule/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
