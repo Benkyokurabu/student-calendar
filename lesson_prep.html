@@ -48,10 +48,10 @@
   }
   .card-body { padding: 8px 14px; }
 
-  .field { margin-bottom: 6px; }
+  .field { margin-bottom: 4px; padding-bottom: 3px; border-bottom: 1px solid #e0e0e0; }
   .field-label {
     font-size: 12px; font-weight: bold; color: #666;
-    border-bottom: 1px solid #e0e0e0; padding-bottom: 1px; margin-bottom: 2px;
+    padding-bottom: 0; margin-bottom: 2px;
   }
   .field-value {
     font-size: 14px; padding: 2px 0; min-height: 18px;
@@ -61,9 +61,33 @@
 
   .field-row {
     display: flex; gap: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 3px; margin-bottom: 4px;
   }
-  .field-row .field { flex: 1; }
+  .field-row .field { flex: 1; border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
   .field.divider-left { border-left: 1px solid #999; padding-left: 12px; }
+
+  /* セクション見出し（前回/今回/次回）。線はセクション境界として見出しの上に置く */
+  .section-header {
+    font-size: 13px; font-weight: bold; color: #1565c0;
+    padding: 6px 0 2px; margin-top: 4px;
+    border-top: 1.5px solid #1976d2;
+  }
+  .section-header:first-child {
+    margin-top: 0; padding-top: 0; border-top: 0;
+  }
+  /* セクション末尾の行は灰色線を消す（直後のsection-header上線で代替） */
+  .field-row:has(+ .section-header) { border-bottom: 0; padding-bottom: 0; }
+  .field:has(+ .section-header) { border-bottom: 0; padding-bottom: 0; }
+
+  /* 手書き欄（今回） */
+  .handwrite-section .field { border-bottom: 0; padding-bottom: 0; }
+  .handwrite-area { display: flex; flex-direction: column; }
+  .handwrite-line {
+    border-bottom: 1px dotted #aaa;
+    height: 22px;
+    margin-bottom: 2px;
+  }
 
   /* --- 印刷用 (B5: 176mm x 250mm, 全授業を1枚に) --- */
   /* B5印刷領域 = 250 - 12(余白) = 238mm。カード間隔2mm。 */
@@ -112,11 +136,38 @@
     }
     .card-body .field { flex: 1; min-height: 0; }
     .card-body .field-row { flex: 1; min-height: 0; }
-    .field { margin-bottom: 1px; }
+    .field { margin-bottom: 1px; padding-bottom: 1px; border-bottom: 0.3pt solid #888; }
     .field-label { font-size: 9px; padding-bottom: 0; margin-bottom: 0; }
     .field-value { font-size: 10px; padding: 0; min-height: auto; line-height: 1.3; }
-    .field-row { gap: 8px; }
+    .field-row {
+      gap: 8px;
+      border-bottom: 0.3pt solid #888;
+      padding-bottom: 1px; margin-bottom: 1px;
+    }
+    .field-row .field { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
     .field.divider-left { border-left: 0.5pt solid #000; padding-left: 6px; }
+
+    .section-header {
+      font-size: 10px; padding: 0.6mm 0 0.3mm; margin-top: 0.5mm;
+      border-top: 0.5pt solid #000; color: #000;
+      flex-shrink: 0;
+    }
+    .section-header:first-child {
+      margin-top: 0; padding-top: 0; border-top: 0;
+    }
+    .field-row:has(+ .section-header) { border-bottom: 0; padding-bottom: 0; }
+    .field:has(+ .section-header) { border-bottom: 0; padding-bottom: 0; }
+
+    /* 手書きエリアは余ったスペースを全部使う */
+    .handwrite-section { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+    .handwrite-section .field { border-bottom: 0; padding-bottom: 0; flex: 1; min-height: 0; display: flex; flex-direction: column; }
+    .handwrite-section .handwrite-area { flex: 1; min-height: 0; }
+    .handwrite-line {
+      border-bottom: 0.4pt dotted #444;
+      flex: 1; min-height: 3mm;
+      height: auto;
+      margin-bottom: 0;
+    }
 
     /* 1-2個のとき文字を大きく */
     .count-1 .field-label, .count-2 .field-label { font-size: 11px; }
@@ -161,6 +212,12 @@ const SUBJ_SHORT = {
 const GRADE_SHORT = {
   e4:"4", e5:"5", e6:"6", j1:"1", j2:"2", j3:"3"
 };
+const CIRCLED = ["", "①","②","③","④","⑤","⑥","⑦","⑧","⑨"];
+function roomLabel(room) {
+  const n = parseInt(room, 10);
+  if (n >= 1 && n <= 9) return "第" + CIRCLED[n] + "教室";
+  return room ? "教室" + room : "";
+}
 
 /* ====== JSON読み込み ====== */
 async function loadJSON(url) {
@@ -250,6 +307,7 @@ function makeKey(ev) {
 }
 
 /* ====== 前回スロットの検索 ====== */
+/* 返り値: { entry, date } または null。date は ISO形式 "YYYY-MM-DD" */
 function findPrevEntryForGroupKey(gk, todayDate) {
   const entries = (journalData && journalData.entries) || {};
   const slots   = (journalMap && journalMap.slots) || {};
@@ -263,7 +321,7 @@ function findPrevEntryForGroupKey(gk, todayDate) {
   }
   if (prevKey) {
     const entry = entries[prevKey];
-    if (entry && entryHasData(entry)) return entry;
+    if (entry && entryHasData(entry)) return { entry: entry, date: prevKey.split("|")[0] };
   }
 
   // 同月内になし → 前月を探す
@@ -276,8 +334,9 @@ function findPrevEntryForGroupKey(gk, todayDate) {
   if (prevSlotList.length) {
     // 最後のスロット（＝前月最後の授業）から遡って探す
     for (let i = prevSlotList.length - 1; i >= 0; i--) {
-      const entry = prevEntries[prevSlotList[i]];
-      if (entry && entryHasData(entry)) return entry;
+      const k = prevSlotList[i];
+      const entry = prevEntries[k];
+      if (entry && entryHasData(entry)) return { entry: entry, date: k.split("|")[0] };
     }
   }
 
@@ -290,7 +349,7 @@ function findPrevEntryForGroupKey(gk, todayDate) {
       }
     }
   }
-  return last ? last.data : null;
+  return last ? { entry: last.data, date: last.key.split("|")[0] } : null;
 }
 
 function entryHasData(e) {
@@ -301,7 +360,7 @@ function findPrevEntry(ev) {
   const groupKeys = ev._pairGroupKeys || [ev.groupKey];
   for (const gk of groupKeys) {
     const result = findPrevEntryForGroupKey(gk, ev.date);
-    if (result && entryHasData(result)) return result;
+    if (result && entryHasData(result.entry)) return result;
   }
   // データなしでも何か返す（空のペアの片方）
   for (const gk of groupKeys) {
@@ -456,7 +515,10 @@ function render() {
   for (const ev of myLessons) {
     // ペアの場合、両方のキーからセッション情報を探す
     const todayEntry = findTodayEntry(ev, entries);
-    const prev = findPrevEntry(ev);
+    const prevResult = findPrevEntry(ev);
+    const prev = prevResult ? prevResult.entry : null;
+    const prevDate = prevResult ? prevResult.date : "";
+    const prevDateLabel = prevDate ? formatDate(prevDate) : "";
 
     // セッション情報
     const sessionNum = todayEntry.sessionNumber || "";
@@ -468,43 +530,88 @@ function render() {
     else if (monthNum) sessionText.push(monthNum + "月");
 
     // 前回データ
+    const pt = prev ? (prev.teacher || "") : "";
     const pc = prev ? (prev.content || "") : "";
     const pp = prev ? (prev.page || "") : "";
     const phw = prev ? (prev.homework || []) : [];
     const pr = prev ? (prev.report || "") : "";
     const pa = prev ? (prev.absence || "") : "";
-    const pcp = prev ? String(prev.curriculumProgress ?? "") : "";
     const pn = prev ? (prev.note || "") : "";
 
     // 次回授業情報
     const next = findNextLesson(ev);
+
+    // 校舎・教室表記
+    const campusName = ev.campus === "minami" ? "南教室" : "本校";
+    const roomStr = roomLabel(ev.room);
+    const campusLabel = roomStr ? (campusName + "・" + roomStr) : campusName;
 
     html += `
     <div class="lesson-card">
       <div class="card-header">
         <div>
           <div class="card-date">${dateLabel}</div>
-          <div class="card-meta">${ev.time || ""} ｜ ${ev.campus === "minami" ? "南教室" : "本校"}</div>
+          <div class="card-meta">${ev.time || ""} ｜ ${campusLabel}</div>
         </div>
         <div class="card-label">${shortLabel(ev)}</div>
       </div>
       ${sessionText.length ? '<div class="card-session">' + sessionText.join("　") + '</div>' : ''}
       <div class="card-body">
+        <div class="section-header">前回</div>
         <div class="field-row">
           <div class="field">
-            <div class="field-label">前回の授業内容</div>
-            <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
+            <div class="field-label">日付</div>
+            <div class="field-value${prevDateLabel ? '' : ' empty'}">${esc(prevDateLabel) || "ー"}</div>
           </div>
           <div class="field">
-            <div class="field-label">前回指導したページ</div>
+            <div class="field-label">担当の先生</div>
+            <div class="field-value${pt ? '' : ' empty'}">${esc(pt) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">授業内容</div>
+            <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <div class="field-label">指導ページ</div>
             <div class="field-value${pp ? '' : ' empty'}">${esc(pp) || "ー"}</div>
           </div>
           <div class="field">
             <div class="field-label">宿題</div>
             <div class="field-value${phw.length ? '' : ' empty'}">${phw.length ? phw.map(esc).join("<br>") : "ー"}</div>
           </div>
-          <div class="field divider-left">
-            <div class="field-label">次回の授業日</div>
+          <div class="field">
+            <div class="field-label">欠席</div>
+            <div class="field-value${pa ? '' : ' empty'}">${esc(pa) || "ー"}</div>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <div class="field-label">記録</div>
+            <div class="field-value${pr ? '' : ' empty'}">${esc(pr) || "ー"}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">備考</div>
+            <div class="field-value${pn ? '' : ' empty'}">${esc(pn) || "ー"}</div>
+          </div>
+        </div>
+        <div class="section-header">今回</div>
+        <div class="handwrite-section">
+          <div class="field">
+            <div class="field-label">宿題・メモなど</div>
+            <div class="handwrite-area">
+              <div class="handwrite-line"></div>
+              <div class="handwrite-line"></div>
+              <div class="handwrite-line"></div>
+              <div class="handwrite-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">次回</div>
+        <div class="field-row">
+          <div class="field">
+            <div class="field-label">日付</div>
             <div class="field-value${next.date ? '' : ' empty'}">${esc(next.date) || "ー"}</div>
           </div>
           <div class="field">
@@ -514,24 +621,6 @@ function render() {
           <div class="field">
             <div class="field-label">担当の先生</div>
             <div class="field-value${next.teacher ? '' : ' empty'}">${esc(next.teacher) || "ー"}</div>
-          </div>
-        </div>
-        <div class="field">
-          <div class="field-label">記録</div>
-          <div class="field-value${pr ? '' : ' empty'}">${esc(pr) || "ー"}</div>
-        </div>
-        <div class="field">
-          <div class="field-label">備考</div>
-          <div class="field-value${pn ? '' : ' empty'}">${esc(pn) || "ー"}</div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <div class="field-label">欠席</div>
-            <div class="field-value${pa ? '' : ' empty'}">${esc(pa) || "ー"}</div>
-          </div>
-          <div class="field">
-            <div class="field-label">カリキュラム進捗</div>
-            <div class="field-value${pcp ? '' : ' empty'}">${esc(pcp) || "ー"}</div>
           </div>
         </div>
       </div>
