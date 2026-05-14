@@ -705,7 +705,48 @@ def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int):
         pass
     return ws
 
-def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month: int):
+def count_regular_slots_in_sheet(ws) -> int:
+    """月シート内の通常（非特）使用済みスロット数をカウントする。"""
+    total_slots = count_slots_in_template(ws)
+    regular_count = 0
+    for slot in range(total_slots):
+        col_left = 2 + 10 * slot
+        day_val = ws.cell(row=11, column=col_left).value
+        if day_val is None or str(day_val).strip() == "":
+            continue
+        annual_val = ws.cell(row=2, column=col_left + 4).value
+        if isinstance(annual_val, str) and annual_val.strip() == "特":
+            continue
+        regular_count += 1
+    return regular_count
+
+
+def compute_annual_start(wb, year: int, month: int) -> int:
+    """前月シートから年間通し回数の開始値を算出する。"""
+    if month == 1:
+        prev_name = f"{year - 1:04d}-12"
+    else:
+        prev_name = f"{year:04d}-{month - 1:02d}"
+
+    if prev_name not in wb.sheetnames:
+        return 1
+
+    prev_ws = wb[prev_name]
+    prev_f2 = prev_ws["F2"].value
+    if isinstance(prev_f2, str) and prev_f2.strip() == "特":
+        prev_f2 = prev_ws["FG2"].value
+    if not isinstance(prev_f2, (int, float)):
+        prev_year = year - 1 if month == 1 else year
+        prev_month = 12 if month == 1 else month - 1
+        prev_f2 = compute_annual_start(wb, prev_year, prev_month)
+
+    prev_start = int(prev_f2)
+    regular_count = count_regular_slots_in_sheet(prev_ws)
+    return prev_start + regular_count
+
+
+def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month: int,
+                     *, wb=None, year: int = None):
     def set_if_not_formula(addr: str, value: Any):
         v = ws[addr].value
         if isinstance(v, str) and v.startswith("="):
@@ -716,6 +757,12 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
     set_if_not_formula("I2", grade_label)
     set_if_not_formula("I3", subject_name)
     set_if_not_formula("E3", month)
+
+    if wb is not None and year is not None:
+        new_f2 = compute_annual_start(wb, year, month)
+        ws["F2"].value = new_f2
+
+    ws["G3"].value = 1
 
     f2 = ws["F2"].value
     g3 = ws["G3"].value
@@ -845,7 +892,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
                 if ws_out is None:
                     print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
                 else:
-                    set_header_cells(ws_out, campus, grade_j, subj_j, month)
+                    set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
                     fill_sheet_main(ws_out, month, {"S": s_list, "A": a_list, "B": b_list}, teacher_blank=False)
                     save_year_workbook(wb, out_path)
                     print(f"[OK] {out_path.name} + {ws_out.title}")
@@ -861,7 +908,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
                 if ws_out is None:
                     print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
                 else:
-                    set_header_cells(ws_out, campus, grade_j, subj_j, month)
+                    set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
                     fill_sheet_x(ws_out, month, x_list, teacher_blank=False)
                     save_year_workbook(wb, out_path)
                     print(f"[OK] {out_path.name} + {ws_out.title}")
@@ -882,7 +929,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
         if ws_out is None:
             print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
         else:
-            set_header_cells(ws_out, campus, "", title, month)
+            set_header_cells(ws_out, campus, "", title, month, wb=wb, year=year)
             fill_sheet_main(ws_out, month, {"S": hits, "A": [], "B": []}, teacher_blank=True)
             save_year_workbook(wb, out_path)
             print(f"[OK] {out_path.name} + {ws_out.title}")
