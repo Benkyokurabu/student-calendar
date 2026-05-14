@@ -141,8 +141,14 @@ def count_slots_in_sheet(ws) -> int:
 
 
 def backup_before_save(path: Path) -> None:
-    """上書き前に .bak を1世代だけ残す"""
-    bak = path.with_suffix(path.suffix + ".bak")
+    """上書き前に .bak を _backup サブフォルダに1世代だけ残す"""
+    backup_dir = path.parent / "_backup"
+    try:
+        backup_dir.mkdir(exist_ok=True)
+    except Exception as e:
+        print(f"[WARN] _backupフォルダ作成失敗: {backup_dir.name} / {e}")
+        return
+    bak = backup_dir / (path.name + ".bak")
     try:
         shutil.copy2(path, bak)
     except Exception as e:
