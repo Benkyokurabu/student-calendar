@@ -67,6 +67,20 @@
   .field-row .field { flex: 1; border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
   .field.divider-left { border-left: 1px solid #999; padding-left: 12px; }
 
+  /* ラベルと値を同一行に並べるインライン版（前回1行目／次回） */
+  .field.field-inline { display: flex; align-items: baseline; gap: 6px; }
+  .field.field-inline .field-label {
+    flex: 0 0 auto; white-space: nowrap;
+    padding: 0; margin: 0;
+  }
+  .field.field-inline .field-value {
+    flex: 1; padding: 0; min-height: 0;
+  }
+
+  /* field-row 内の列幅比率 (col-1 = 1/4, col-2 = 1/2 等) */
+  .field-row .field.col-1 { flex: 1 1 0; }
+  .field-row .field.col-2 { flex: 2 1 0; }
+
   /* セクション見出し（前回/今回/次回）。線はセクション境界として見出しの上に置く */
   .section-header {
     font-size: 13px; font-weight: bold; color: #1565c0;
@@ -146,6 +160,12 @@
     }
     .field-row .field { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
     .field.divider-left { border-left: 0.5pt solid #000; padding-left: 6px; }
+
+    .field.field-inline { display: flex; align-items: baseline; gap: 3px; }
+    .field.field-inline .field-label { flex: 0 0 auto; white-space: nowrap; padding: 0; margin: 0; }
+    .field.field-inline .field-value { flex: 1; padding: 0; min-height: 0; }
+    .field-row .field.col-1 { flex: 1 1 0; }
+    .field-row .field.col-2 { flex: 2 1 0; }
 
     .section-header {
       font-size: 10px; padding: 0.6mm 0 0.3mm; margin-top: 0.5mm;
@@ -559,15 +579,15 @@ function render() {
       <div class="card-body">
         <div class="section-header">前回</div>
         <div class="field-row">
-          <div class="field">
+          <div class="field field-inline col-1">
             <div class="field-label">日付</div>
             <div class="field-value${prevDateLabel ? '' : ' empty'}">${esc(prevDateLabel) || "ー"}</div>
           </div>
-          <div class="field">
+          <div class="field field-inline col-1">
             <div class="field-label">担当の先生</div>
             <div class="field-value${pt ? '' : ' empty'}">${esc(pt) || "ー"}</div>
           </div>
-          <div class="field">
+          <div class="field field-inline col-2">
             <div class="field-label">授業内容</div>
             <div class="field-value${pc ? '' : ' empty'}">${esc(pc) || "ー"}</div>
           </div>
@@ -610,15 +630,15 @@ function render() {
         </div>
         <div class="section-header">次回</div>
         <div class="field-row">
-          <div class="field">
+          <div class="field field-inline col-1">
             <div class="field-label">日付</div>
             <div class="field-value${next.date ? '' : ' empty'}">${esc(next.date) || "ー"}</div>
           </div>
-          <div class="field">
+          <div class="field field-inline col-2">
             <div class="field-label">時間帯</div>
             <div class="field-value${next.time ? '' : ' empty'}">${esc(next.time) || "ー"}</div>
           </div>
-          <div class="field">
+          <div class="field field-inline col-1">
             <div class="field-label">担当の先生</div>
             <div class="field-value${next.teacher ? '' : ' empty'}">${esc(next.teacher) || "ー"}</div>
           </div>
