@@ -12,7 +12,7 @@
   - E11  記録           -> report
   - D17  録画URL        -> recordingUrl
   - B14  担当講師       -> teacher
-  - C18  欠席           -> absence
+  - C18:C19 欠席       -> absence (2行を改行連結)
   - I20  カリキュラム進捗 -> curriculumProgress
   - ヘッダー: 第○回 / ○月○週  -> sessionNumber / monthNum / weekNum
 
@@ -301,7 +301,9 @@ def read_block(ws, top_row: int, left_col: int) -> dict:
     report = read_merged_text(ws, top_row + 5, left_col + 3)        # E11
     recording_url = read_merged_text(ws, top_row + 11, left_col + 2)  # D17
     teacher = read_merged_text(ws, top_row + 8, left_col)            # B14 (担当)
-    absence = read_merged_text(ws, top_row + 12, left_col + 1)      # C18 (欠席)
+    abs1 = read_merged_text(ws, top_row + 12, left_col + 1)         # C18 (欠席1行目)
+    abs2 = read_merged_text(ws, top_row + 13, left_col + 1)         # C19 (欠席2行目)
+    absence = "\n".join([x for x in [abs1, abs2] if x])
     curriculum_sign = read_merged_text(ws, top_row + 14, left_col + 6)  # H20 (進捗符号: +/-/±)
     curriculum_val = read_merged_text(ws, top_row + 14, left_col + 7)   # I20 (進捗数値)
     curriculum = (curriculum_sign + curriculum_val) if (curriculum_sign or curriculum_val) else ""
