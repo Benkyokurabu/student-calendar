@@ -515,16 +515,10 @@ function findNextLesson(ev) {
     }
   }
   if (!best) return { date: "", time: "", teacher: "" };
-  let teacher = "";
-  if (best.isSpecialLesson) {
-    // 特殊授業はスケジュール側の teacher を直接使う
-    teacher = (best.teacher || "").trim();
-  } else {
-    const key = makeKey(best);
-    const entry = entries[key] || {};
-    // 日誌にteacherがあればそれを優先（当月は日誌が正、翌月はスケジュールにフォールバック）
-    teacher = (entry.teacher || "").trim() || (best.teacher || "").trim();
-  }
+  // 次回授業はまだ未実施のため、スケジュール（割当表）の teacher を常に使う。
+  // 日誌側の teacher は実績値であり、未実施スロットではテンプレートの値が
+  // 残っている場合があるため信用しない。
+  let teacher = (best.teacher || "").trim();
   return {
     date: formatDate(best.date),
     time: best.time || "",
