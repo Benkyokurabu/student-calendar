@@ -227,25 +227,13 @@ def _build_merged_slots_for_extract(classes: Dict[str, List[dict]], order: List[
 def build_group_slot_map(events: List[dict], slots_map: Optional[dict]) -> Dict[str, int]:
     result: Dict[str, int] = {}
 
-    # 1) map がある場合はそれを優先
-    if slots_map and isinstance(slots_map, dict) and isinstance(slots_map.get("slots"), dict):
-        for ev in events:
-            gk = str(ev.get("groupKey", ""))
-            key = make_entry_key(ev)
-            lst = slots_map.get("slots", {}).get(gk, [])
-            try:
-                result[key] = lst.index(key) + 1
-                continue
-            except Exception:
-                pass
-
-    # 2) fallback: _build_merged_slots と同じロジックでExcelカラム位置を再現
+    # Excelカラム位置を再現するため、_build_merged_slots と同じロジックで
+    # S/A/B 全クラスをまとめてマージスロットを構築する。
+    # ※ journal_map の per-groupKey インデックスは、他クラスの特スロット挿入を
+    #   考慮できずズレるため使用しない。
     # (campus, grade, subject) = 1つのExcelワークブックに対応
     wb_groups: Dict[Tuple[str, str, str], Dict[str, List[dict]]] = defaultdict(lambda: defaultdict(list))
     for ev in events:
-        key = make_entry_key(ev)
-        if key in result:
-            continue  # journal_map で既に決定済み
         campus = str(ev.get("campus", ""))
         grade = str(ev.get("grade", ""))
         subject = str(ev.get("subject", ""))
