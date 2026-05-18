@@ -11,7 +11,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-01",
@@ -25,7 +26,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-01",
@@ -39,7 +41,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-01",
@@ -53,7 +56,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-01",
@@ -67,7 +71,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-01",
@@ -81,7 +86,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-01",
@@ -95,7 +101,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-01",
@@ -109,7 +116,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-01",
@@ -123,7 +131,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-01",
@@ -137,7 +146,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-01",
@@ -151,7 +161,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-01",
@@ -165,7 +176,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-01",
@@ -179,7 +191,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-01",
@@ -193,7 +206,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-01",
@@ -207,7 +221,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-01",
@@ -221,7 +236,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-01",
@@ -235,7 +251,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-01",
@@ -249,7 +266,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-01",
@@ -263,7 +281,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-02",
@@ -277,7 +296,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-02",
@@ -291,7 +311,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-02",
@@ -305,7 +326,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-02",
@@ -319,7 +341,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-02",
@@ -333,7 +356,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-02",
@@ -347,7 +371,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-02",
@@ -361,7 +386,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-02",
@@ -375,7 +401,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-02",
@@ -389,7 +416,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-02",
@@ -403,7 +431,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-02",
@@ -417,7 +446,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-02",
@@ -431,7 +461,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-02",
@@ -445,7 +476,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-02",
@@ -459,7 +491,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-02",
@@ -473,7 +506,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-02",
@@ -487,7 +521,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-02",
@@ -501,7 +536,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-02",
@@ -515,7 +551,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-02",
@@ -529,7 +566,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-02",
@@ -543,7 +581,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-02",
@@ -573,7 +612,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-03",
@@ -587,7 +627,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-03",
@@ -601,7 +642,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-03",
@@ -615,7 +657,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": true,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-03",
@@ -629,7 +672,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": true,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-03",
@@ -643,7 +687,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-03",
@@ -657,7 +702,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-03",
@@ -671,7 +717,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-03",
@@ -685,7 +732,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-03",
@@ -699,7 +747,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-03",
@@ -713,7 +762,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-03",
@@ -727,7 +777,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-03",
@@ -741,7 +792,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-03",
@@ -755,7 +807,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-03",
@@ -769,7 +822,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-03",
@@ -783,7 +837,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-03",
@@ -797,7 +852,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-03",
@@ -811,7 +867,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-03",
@@ -825,7 +882,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-03",
@@ -839,7 +897,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-03",
@@ -853,7 +912,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-03",
@@ -867,7 +927,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-03",
@@ -881,7 +942,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-03",
@@ -895,7 +957,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-03",
@@ -925,7 +988,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-04",
@@ -939,7 +1003,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-04",
@@ -953,7 +1018,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-04",
@@ -967,7 +1033,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-04",
@@ -997,7 +1064,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-04",
@@ -1011,7 +1079,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-04",
@@ -1025,7 +1094,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-04",
@@ -1039,7 +1109,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-04",
@@ -1053,7 +1124,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-04",
@@ -1067,7 +1139,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-04",
@@ -1081,7 +1154,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-04",
@@ -1095,7 +1169,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-04",
@@ -1109,7 +1184,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-04",
@@ -1123,7 +1199,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-04",
@@ -1137,7 +1214,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-04",
@@ -1151,7 +1229,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-04",
@@ -1197,7 +1276,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-06",
@@ -1211,7 +1291,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-06",
@@ -1241,7 +1322,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-06",
@@ -1255,7 +1337,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-06",
@@ -1269,7 +1352,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-06",
@@ -1283,7 +1367,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-06",
@@ -1297,7 +1382,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-06",
@@ -1311,7 +1397,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-06",
@@ -1325,7 +1412,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-06",
@@ -1339,7 +1427,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-06",
@@ -1353,7 +1442,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-06",
@@ -1367,7 +1457,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-06",
@@ -1381,7 +1472,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-06",
@@ -1395,7 +1487,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-06",
@@ -1409,7 +1502,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-06",
@@ -1423,7 +1517,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-07",
@@ -1437,7 +1532,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": true,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-07",
@@ -1451,7 +1547,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": true,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-07",
@@ -1465,7 +1562,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-07",
@@ -1479,7 +1577,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-07",
@@ -1493,7 +1592,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-07",
@@ -1507,7 +1607,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-07",
@@ -1521,7 +1622,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-07",
@@ -1535,7 +1637,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-07",
@@ -1549,7 +1652,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-07",
@@ -1563,7 +1667,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-07",
@@ -1577,7 +1682,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-07",
@@ -1591,7 +1697,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-07",
@@ -1605,7 +1712,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-07",
@@ -1619,7 +1727,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-07",
@@ -1633,7 +1742,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-07",
@@ -1647,7 +1757,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-07",
@@ -1661,7 +1772,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-07",
@@ -1675,7 +1787,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-07",
@@ -1689,7 +1802,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-07",
@@ -1703,7 +1817,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-07",
@@ -1717,7 +1832,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-08",
@@ -1731,7 +1847,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-08",
@@ -1745,7 +1862,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-08",
@@ -1759,7 +1877,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-08",
@@ -1773,7 +1892,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-08",
@@ -1787,7 +1907,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-08",
@@ -1801,7 +1922,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-08",
@@ -1815,7 +1937,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-08",
@@ -1829,7 +1952,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-08",
@@ -1843,7 +1967,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-08",
@@ -1857,7 +1982,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-08",
@@ -1871,7 +1997,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-08",
@@ -1885,7 +2012,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-08",
@@ -1899,7 +2027,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-08",
@@ -1913,7 +2042,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-08",
@@ -1927,7 +2057,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-08",
@@ -1941,7 +2072,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-08",
@@ -1955,7 +2087,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-08",
@@ -1969,7 +2102,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-09",
@@ -1983,7 +2117,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-09",
@@ -1997,7 +2132,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-09",
@@ -2011,7 +2147,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-09",
@@ -2025,7 +2162,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-09",
@@ -2039,7 +2177,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-09",
@@ -2053,7 +2192,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-09",
@@ -2067,7 +2207,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-09",
@@ -2081,7 +2222,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-09",
@@ -2095,7 +2237,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-09",
@@ -2109,7 +2252,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-09",
@@ -2123,7 +2267,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-09",
@@ -2137,7 +2282,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-09",
@@ -2151,7 +2297,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-09",
@@ -2181,7 +2328,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-09",
@@ -2195,7 +2343,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-09",
@@ -2209,7 +2358,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-09",
@@ -2223,7 +2373,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-09",
@@ -2237,7 +2388,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-10",
@@ -2251,7 +2403,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-10",
@@ -2265,7 +2418,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-10",
@@ -2279,7 +2433,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-10",
@@ -2293,7 +2448,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-10",
@@ -2307,7 +2463,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-10",
@@ -2321,7 +2478,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-10",
@@ -2335,7 +2493,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-10",
@@ -2349,7 +2508,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-10",
@@ -2363,7 +2523,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-10",
@@ -2377,7 +2538,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-10",
@@ -2391,7 +2553,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-10",
@@ -2421,7 +2584,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-10",
@@ -2435,7 +2599,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-10",
@@ -2449,7 +2614,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-10",
@@ -2463,7 +2629,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-10",
@@ -2477,7 +2644,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-10",
@@ -2491,7 +2659,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-11",
@@ -2505,7 +2674,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-11",
@@ -2551,7 +2721,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-11",
@@ -2565,7 +2736,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-11",
@@ -2579,7 +2751,8 @@
     "label": "中３A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A国対面"
+    "displayTitle": "3A国対面",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-11",
@@ -2593,7 +2766,8 @@
     "label": "中３A 社会",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A社対面"
+    "displayTitle": "3A社対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-11",
@@ -2607,7 +2781,8 @@
     "label": "中３S 理科",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S理対面"
+    "displayTitle": "3S理対面",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-11",
@@ -2621,7 +2796,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-11",
@@ -2635,7 +2811,8 @@
     "label": "中３A 理科",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A理対面"
+    "displayTitle": "3A理対面",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-11",
@@ -2649,7 +2826,8 @@
     "label": "中３S 社会",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S社対面"
+    "displayTitle": "3S社対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-11",
@@ -2684,7 +2862,7 @@
     "isSpecialLesson": true
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-13",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "X",
@@ -2699,7 +2877,7 @@
     "teacher": "工藤"
   },
   {
-    "date": "2026-04-20",
+    "date": "2026-04-13",
     "time": "4:55～6:15",
     "grade": "e4",
     "class": "X",
@@ -2725,7 +2903,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-13",
@@ -2739,7 +2918,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-13",
@@ -2753,7 +2933,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-13",
@@ -2767,7 +2948,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-13",
@@ -2781,7 +2963,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-13",
@@ -2795,7 +2978,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-13",
@@ -2809,7 +2993,8 @@
     "label": "中３A 社会",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A社対面"
+    "displayTitle": "3A社対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-13",
@@ -2823,7 +3008,8 @@
     "label": "中３S 理科",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S理対面"
+    "displayTitle": "3S理対面",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-13",
@@ -2837,7 +3023,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-13",
@@ -2851,7 +3038,8 @@
     "label": "中３A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A国対面"
+    "displayTitle": "3A国対面",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-13",
@@ -2865,7 +3053,8 @@
     "label": "中３A 理科",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3A理対面"
+    "displayTitle": "3A理対面",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-13",
@@ -2879,7 +3068,8 @@
     "label": "中３S 社会",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S社対面"
+    "displayTitle": "3S社対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-14",
@@ -2893,7 +3083,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-14",
@@ -2907,7 +3098,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-14",
@@ -2921,7 +3113,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-14",
@@ -2935,7 +3128,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-14",
@@ -2949,7 +3143,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-14",
@@ -2963,7 +3158,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-14",
@@ -2977,7 +3173,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-14",
@@ -2991,7 +3188,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-14",
@@ -3005,7 +3203,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-14",
@@ -3019,7 +3218,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-14",
@@ -3033,7 +3233,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-14",
@@ -3047,7 +3248,8 @@
     "label": "中３S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S国対面"
+    "displayTitle": "3S国対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-14",
@@ -3061,7 +3263,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-14",
@@ -3075,7 +3278,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-14",
@@ -3089,7 +3293,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-14",
@@ -3103,7 +3308,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-14",
@@ -3117,7 +3323,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-14",
@@ -3131,7 +3338,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-15",
@@ -3145,7 +3353,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-15",
@@ -3159,7 +3368,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-15",
@@ -3173,7 +3383,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-15",
@@ -3187,7 +3398,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-15",
@@ -3201,7 +3413,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-15",
@@ -3215,7 +3428,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-15",
@@ -3229,7 +3443,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-15",
@@ -3243,7 +3458,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-15",
@@ -3257,7 +3473,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-15",
@@ -3271,7 +3488,8 @@
     "label": "中３S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "3S国対面"
+    "displayTitle": "3S国対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-15",
@@ -3285,7 +3503,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-15",
@@ -3299,7 +3518,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-15",
@@ -3313,7 +3533,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-15",
@@ -3327,7 +3548,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-15",
@@ -3341,7 +3563,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-15",
@@ -3355,7 +3578,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-15",
@@ -3385,7 +3609,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-16",
@@ -3399,7 +3624,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-16",
@@ -3413,7 +3639,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-16",
@@ -3427,7 +3654,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-16",
@@ -3441,7 +3669,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-16",
@@ -3455,7 +3684,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-16",
@@ -3469,7 +3699,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-16",
@@ -3483,7 +3714,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-16",
@@ -3497,7 +3729,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-16",
@@ -3511,7 +3744,8 @@
     "label": "中２X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-16",
@@ -3525,7 +3759,8 @@
     "label": "中２X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-16",
@@ -3539,7 +3774,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-16",
@@ -3553,7 +3789,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-16",
@@ -3567,7 +3804,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-16",
@@ -3581,7 +3819,8 @@
     "label": "中３X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-16",
@@ -3595,7 +3834,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-16",
@@ -3609,7 +3849,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-16",
@@ -3623,7 +3864,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-16",
@@ -3637,7 +3879,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-16",
@@ -3651,7 +3894,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-17",
@@ -3665,7 +3909,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-17",
@@ -3679,7 +3924,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-17",
@@ -3693,7 +3939,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-17",
@@ -3707,7 +3954,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-17",
@@ -3721,7 +3969,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-17",
@@ -3735,7 +3984,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-17",
@@ -3749,7 +3999,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-17",
@@ -3763,7 +4014,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-17",
@@ -3777,7 +4029,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-17",
@@ -3791,7 +4044,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-17",
@@ -3805,7 +4059,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-17",
@@ -3819,7 +4074,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-17",
@@ -3833,7 +4089,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-17",
@@ -3863,7 +4120,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-17",
@@ -3877,7 +4135,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-17",
@@ -3891,7 +4150,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-17",
@@ -3905,7 +4165,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-17",
@@ -3935,7 +4196,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-18",
@@ -3949,7 +4211,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-18",
@@ -3963,7 +4226,8 @@
     "label": "小５X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-18",
@@ -3977,7 +4241,8 @@
     "label": "小５X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-18",
@@ -4007,7 +4272,8 @@
     "label": "中１S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "1S国対面"
+    "displayTitle": "1S国対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-18",
@@ -4021,7 +4287,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-18",
@@ -4035,7 +4302,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-18",
@@ -4049,7 +4317,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-18",
@@ -4079,7 +4348,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-18",
@@ -4093,7 +4363,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-18",
@@ -4139,7 +4410,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-20",
@@ -4153,7 +4425,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-20",
@@ -4167,7 +4440,8 @@
     "label": "小６X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-20",
@@ -4181,7 +4455,8 @@
     "label": "小６X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-20",
@@ -4195,7 +4470,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-20",
@@ -4209,7 +4485,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-20",
@@ -4223,7 +4500,8 @@
     "label": "中２S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "2S国対面"
+    "displayTitle": "2S国対面",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-20",
@@ -4237,7 +4515,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-20",
@@ -4251,7 +4530,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-20",
@@ -4265,7 +4545,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-20",
@@ -4279,7 +4560,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-20",
@@ -4293,7 +4575,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-20",
@@ -4307,7 +4590,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-20",
@@ -4321,7 +4605,8 @@
     "label": "中２X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-20",
@@ -4335,7 +4620,8 @@
     "label": "中２X 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-20",
@@ -4349,7 +4635,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-20",
@@ -4363,7 +4650,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-20",
@@ -4377,7 +4665,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-20",
@@ -4391,7 +4680,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-21",
@@ -4405,7 +4695,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-21",
@@ -4419,7 +4710,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-21",
@@ -4433,7 +4725,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-21",
@@ -4447,7 +4740,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-21",
@@ -4461,7 +4755,8 @@
     "label": "中１A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "1A国対面"
+    "displayTitle": "1A国対面",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-21",
@@ -4475,7 +4770,8 @@
     "label": "中１A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "1A国対面"
+    "displayTitle": "1A国対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-21",
@@ -4489,7 +4785,8 @@
     "label": "中１S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "1S国対面"
+    "displayTitle": "1S国対面",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-21",
@@ -4503,7 +4800,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-21",
@@ -4517,7 +4815,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-21",
@@ -4531,7 +4830,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-21",
@@ -4545,7 +4845,8 @@
     "label": "中２A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "2A国対面"
+    "displayTitle": "2A国対面",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-21",
@@ -4559,7 +4860,8 @@
     "label": "中２A 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "2A国対面"
+    "displayTitle": "2A国対面",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-21",
@@ -4573,7 +4875,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-21",
@@ -4587,7 +4890,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-21",
@@ -4601,7 +4905,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-22",
@@ -4615,7 +4920,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-22",
@@ -4629,7 +4935,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-22",
@@ -4643,7 +4950,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-22",
@@ -4657,7 +4965,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-22",
@@ -4671,7 +4980,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-22",
@@ -4685,7 +4995,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-22",
@@ -4699,7 +5010,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-22",
@@ -4713,7 +5025,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-22",
@@ -4727,7 +5040,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-22",
@@ -4741,7 +5055,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-22",
@@ -4755,7 +5070,8 @@
     "label": "中３X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-22",
@@ -4769,7 +5085,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-22",
@@ -4783,7 +5100,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-22",
@@ -4797,7 +5115,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-22",
@@ -4811,7 +5130,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-22",
@@ -4825,7 +5145,8 @@
     "label": "中３A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-22",
@@ -4839,7 +5160,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-22",
@@ -4853,7 +5175,8 @@
     "label": "中３X 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-23",
@@ -4867,7 +5190,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-23",
@@ -4881,7 +5205,8 @@
     "label": "小４A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-23",
@@ -4895,7 +5220,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-23",
@@ -4909,7 +5235,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-23",
@@ -4923,7 +5250,8 @@
     "label": "小６A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-23",
@@ -4937,7 +5265,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-23",
@@ -4951,7 +5280,8 @@
     "label": "中１B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-23",
@@ -4965,7 +5295,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-23",
@@ -4979,7 +5310,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-23",
@@ -4993,7 +5325,8 @@
     "label": "中２S 国語",
     "faceToFace": true,
     "special": false,
-    "displayTitle": "2S国対面"
+    "displayTitle": "2S国対面",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-23",
@@ -5007,7 +5340,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-23",
@@ -5021,7 +5355,8 @@
     "label": "中３B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-23",
@@ -5035,7 +5370,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "森松"
   },
   {
     "date": "2026-04-23",
@@ -5049,7 +5385,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-23",
@@ -5063,7 +5400,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-23",
@@ -5077,7 +5415,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-23",
@@ -5091,7 +5430,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-23",
@@ -5121,7 +5461,8 @@
     "label": "小４X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-24",
@@ -5135,7 +5476,8 @@
     "label": "小４X 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-24",
@@ -5149,7 +5491,8 @@
     "label": "小５A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-24",
@@ -5163,7 +5506,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-24",
@@ -5177,7 +5521,8 @@
     "label": "小６A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-24",
@@ -5191,7 +5536,8 @@
     "label": "小６A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-24",
@@ -5205,7 +5551,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-24",
@@ -5219,7 +5566,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-24",
@@ -5233,7 +5581,8 @@
     "label": "中１A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-24",
@@ -5247,7 +5596,8 @@
     "label": "中１A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-24",
@@ -5261,7 +5611,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "高山"
   },
   {
     "date": "2026-04-24",
@@ -5275,7 +5626,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-24",
@@ -5289,7 +5641,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-24",
@@ -5303,7 +5656,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-24",
@@ -5317,7 +5671,8 @@
     "label": "中３S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-24",
@@ -5331,7 +5686,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-24",
@@ -5345,7 +5701,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-24",
@@ -5359,7 +5716,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-24",
@@ -5373,7 +5731,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-24",
@@ -5387,7 +5746,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-25",
@@ -5401,7 +5761,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-25",
@@ -5431,7 +5792,8 @@
     "label": "中２S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-25",
@@ -5445,7 +5807,8 @@
     "label": "中３A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-25",
@@ -5459,7 +5822,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-25",
@@ -5473,7 +5837,8 @@
     "label": "中３S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-25",
@@ -5487,7 +5852,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-25",
@@ -5501,7 +5867,8 @@
     "label": "中２B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-25",
@@ -5515,7 +5882,8 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-25",
@@ -5545,7 +5913,8 @@
     "label": "小５A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-27",
@@ -5559,7 +5928,8 @@
     "label": "小５S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-27",
@@ -5573,7 +5943,8 @@
     "label": "中１S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-27",
@@ -5587,7 +5958,8 @@
     "label": "中１S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-27",
@@ -5601,7 +5973,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-27",
@@ -5615,7 +5988,8 @@
     "label": "中３A 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-27",
@@ -5629,7 +6003,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-27",
@@ -5643,7 +6018,8 @@
     "label": "中３S 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-27",
@@ -5657,7 +6033,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "工藤"
   },
   {
     "date": "2026-04-27",
@@ -5671,7 +6048,8 @@
     "label": "中２A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "真下"
   },
   {
     "date": "2026-04-27",
@@ -5685,7 +6063,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-27",
@@ -5699,7 +6078,8 @@
     "label": "中３A 理科",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-27",
@@ -5713,7 +6093,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-27",
@@ -5727,7 +6108,8 @@
     "label": "中３S 社会",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-28",
@@ -5741,7 +6123,8 @@
     "label": "小４A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-28",
@@ -5755,7 +6138,8 @@
     "label": "小５A 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-28",
@@ -5769,7 +6153,8 @@
     "label": "小６S 算数",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-28",
@@ -5783,7 +6168,8 @@
     "label": "小６S 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-28",
@@ -5797,7 +6183,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-28",
@@ -5811,7 +6198,8 @@
     "label": "中１A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-28",
@@ -5825,7 +6213,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-28",
@@ -5839,7 +6228,8 @@
     "label": "中１S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-28",
@@ -5853,7 +6243,8 @@
     "label": "中２A 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-28",
@@ -5867,7 +6258,8 @@
     "label": "中２B 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-28",
@@ -5881,7 +6273,8 @@
     "label": "中２S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   },
   {
     "date": "2026-04-28",
@@ -5895,7 +6288,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-28",
@@ -5909,7 +6303,8 @@
     "label": "中２A 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "岩本"
   },
   {
     "date": "2026-04-28",
@@ -5923,7 +6318,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-28",
@@ -5937,7 +6333,8 @@
     "label": "中２S 国語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金城"
   },
   {
     "date": "2026-04-28",
@@ -5951,7 +6348,8 @@
     "label": "中３A 英語",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "金子"
   },
   {
     "date": "2026-04-28",
@@ -5965,7 +6363,8 @@
     "label": "中３B 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "治彦"
   },
   {
     "date": "2026-04-28",
@@ -5979,6 +6378,7 @@
     "label": "中３S 数学",
     "faceToFace": false,
     "special": false,
-    "displayTitle": ""
+    "displayTitle": "",
+    "teacher": "鈴木"
   }
 ]
