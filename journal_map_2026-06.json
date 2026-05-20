@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "generatedAt": "2026-05-18T15:53:22",
+  "generatedAt": "2026-05-20T16:31:41",
   "slots": {
     "hon_j3_A_soc": [
       "2026-06-01|4:45～6:15|hon|hon_j3_A_soc|4",
@@ -279,7 +279,8 @@
       "2026-06-22|4:55～6:15|hon|hon_e4_X_arith|6"
     ],
     "hon_e5_X_jp": [
-      "2026-06-23|4:55～6:15|hon|hon_e5_X_jp|6"
+      "2026-06-23|4:55～6:15|hon|hon_e5_X_jp|6",
+      "2026-06-27|4:55～6:15|hon|hon_e5_X_jp|6"
     ],
     "minami_j3_A_soc": [
       "2026-06-01|4:45～6:15|minami|minami_j3_A_soc|5",
@@ -557,7 +558,8 @@
       "2026-06-22|4:55～6:15|minami|minami_e4_X_arith|4"
     ],
     "minami_e5_X_jp": [
-      "2026-06-23|4:55～6:15|minami|minami_e5_X_jp|4"
+      "2026-06-23|4:55～6:15|minami|minami_e5_X_jp|4",
+      "2026-06-27|4:55～6:15|minami|minami_e5_X_jp|4"
     ]
   }
 }
