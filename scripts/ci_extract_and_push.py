@@ -117,6 +117,9 @@ def main():
         new_hw = new_entry.get("homework", [])
         old_hw = old_entry.get("homework", [])
         merged["homework"] = new_hw if new_hw else old_hw
+        # prevEntry はマージ対象外（常に新しい方を採用）
+        if "prevEntry" in new_entry:
+            merged["prevEntry"] = new_entry["prevEntry"]
         return merged
 
     print("[MERGE] 日誌データのマージ中...")
