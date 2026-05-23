@@ -367,7 +367,39 @@ def _slot_has_day(ws, col_left: int) -> bool:
     return False
 
 
-def _compute_slot_session(ws, target_left_col: int) -> tuple:
+def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
+    """前月シートの最終回 + 1 を計算する（export_by_grade_subject.compute_annual_start と同等）"""
+    if month == 1:
+        prev_year, prev_month = year - 1, 12
+    else:
+        prev_year, prev_month = year, month - 1
+    prev_name = f"{prev_year:04d}-{prev_month:02d}"
+    if prev_name not in wb.sheetnames:
+        return 1
+    prev_ws = wb[prev_name]
+    # 前月のF2から最終回を計算
+    prev_f2 = prev_ws["F2"].value
+    if isinstance(prev_f2, str) and prev_f2.strip() == "特":
+        prev_f2 = prev_ws.cell(row=2, column=163).value
+    if not isinstance(prev_f2, (int, float)):
+        return _compute_annual_start_from_wb(wb, prev_year, prev_month)
+    current = int(prev_f2)
+    found_first = False
+    for slot in range(17):
+        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+        if not _slot_has_day(prev_ws, col):
+            continue
+        ann = prev_ws.cell(row=2, column=col + 4).value
+        if isinstance(ann, str) and ann.strip() == "特":
+            continue
+        if not found_first:
+            found_first = True
+        else:
+            current += 1
+    return (current + 1) if found_first else 1
+
+
+def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, month: int = 0) -> tuple:
     """F2の値とスロット位置から年回数・月回数を計算する。
     Excelの数式と同じロジック: F2から開始し、通常スロットごとに+1、「特」はスキップ。
     Returns (sessionNumber, monthNum, weekNum)
@@ -375,7 +407,16 @@ def _compute_slot_session(ws, target_left_col: int) -> tuple:
     f2 = ws["F2"].value
     if isinstance(f2, str) and f2.strip() == "特":
         # FG2 (col 163) にバックアップ値がある
-        f2 = ws.cell(row=2, column=163).value
+        fg2 = ws.cell(row=2, column=163).value
+        # FG2がテンプレートのデフォルト値の可能性があるため、前月から再計算して検証
+        if wb is not None and year and month:
+            computed = _compute_annual_start_from_wb(wb, year, month)
+            if computed is not None:
+                f2 = computed
+            elif isinstance(fg2, (int, float)):
+                f2 = fg2
+        elif isinstance(fg2, (int, float)):
+            f2 = fg2
     if not isinstance(f2, (int, float)):
         return ("", "", "")
 
@@ -417,7 +458,7 @@ def _compute_slot_session(ws, target_left_col: int) -> tuple:
     return ("", "", "")
 
 
-def read_slot_header(ws, left_col: int) -> dict:
+def read_slot_header(ws, left_col: int, *, wb=None, year: int = 0, month: int = 0) -> dict:
     """スロットヘッダー情報を読み取る（第○回、○月○週）
     セルに値があればそれを使い、数式未キャッシュ(None)の場合はF2から計算する。
     """
@@ -425,15 +466,19 @@ def read_slot_header(ws, left_col: int) -> dict:
     month_n = read_merged_text(ws, 3, left_col + 3)    # E3 相当
     week_n = read_merged_text(ws, 3, left_col + 5)     # G3 相当
 
-    # 数式未キャッシュで空の項目があれば、F2から計算して補完
-    if not session or not month_n or not week_n:
-        calc_s, calc_m, calc_w = _compute_slot_session(ws, left_col)
-        if not session:
-            session = calc_s
-        if not month_n:
-            month_n = calc_m
-        if not week_n:
-            week_n = calc_w
+    # F2が「特」の場合、FG2のキャッシュ値が不正な可能性があるため常に再計算
+    f2_raw = ws["F2"].value
+    force_recalc = isinstance(f2_raw, str) and f2_raw.strip() == "特" and wb is not None
+
+    # 数式未キャッシュで空の項目があるか、F2=特で再計算が必要な場合
+    if not session or not month_n or not week_n or force_recalc:
+        calc_s, calc_m, calc_w = _compute_slot_session(ws, left_col, wb=wb, year=year, month=month)
+        if not session or force_recalc:
+            session = calc_s or session
+        if not month_n or force_recalc:
+            month_n = calc_m or month_n
+        if not week_n or force_recalc:
+            week_n = calc_w or week_n
 
     return {
         "sessionNumber": session,
@@ -483,7 +528,7 @@ def _read_prev_entry(wb, ws, year: int, month: int, slot_index: int,
         if _slot_has_day(ws, col):
             block = read_block(ws, top_row, col)
             if _block_has_data(block):
-                block.update(read_slot_header(ws, col))
+                block.update(read_slot_header(ws, col, wb=wb, year=year, month=month))
                 block["date"] = _read_slot_date(ws, top_row, col, year)
                 return block
         col -= BLOCK_WIDTH
@@ -507,7 +552,7 @@ def _read_prev_entry(wb, ws, year: int, month: int, slot_index: int,
         if _slot_has_day(prev_ws, col):
             block = read_block(prev_ws, top_row, col)
             if _block_has_data(block):
-                block.update(read_slot_header(prev_ws, col))
+                block.update(read_slot_header(prev_ws, col, wb=wb, year=prev_year, month=prev_month))
                 block["date"] = _read_slot_date(prev_ws, top_row, col, prev_year)
                 return block
         col -= BLOCK_WIDTH
@@ -549,7 +594,7 @@ def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) 
             return empty
 
     block = read_block(ws, top_row, left_col)
-    block.update(read_slot_header(ws, left_col))
+    block.update(read_slot_header(ws, left_col, wb=wb, year=year, month=month))
 
     # 前回データをExcelから直接読み取り
     prev = _read_prev_entry(wb, ws, year, month, slot_index, klass, top_row)
