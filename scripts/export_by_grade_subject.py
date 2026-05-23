@@ -51,6 +51,7 @@ from copy import copy
 import openpyxl
 from openpyxl.utils import column_index_from_string, get_column_letter
 from openpyxl.cell.cell import MergedCell
+from openpyxl.styles import PatternFill
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -382,6 +383,30 @@ def clear_one_block(ws, top: int, left: int):
                     continue
                 safe_write(ws, rr, cc, "")
 
+GRAY_FILL = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")
+NO_FILL = PatternFill(fill_type=None)
+
+
+def gray_out_block(ws, top: int, left: int):
+    """使わないスロットのブロックをグレーで塗りつぶす"""
+    for drow, dcs, dce, height in CLEAR_RANGES_REL:
+        for rr in range(top + drow, top + drow + height):
+            for cc in range(left + dcs, left + dce + 1):
+                cell = ws.cell(row=rr, column=cc)
+                if not isinstance(cell, MergedCell):
+                    cell.fill = GRAY_FILL
+
+
+def clear_gray_block(ws, top: int, left: int):
+    """グレー塗りを解除する（月が変わって使うようになった場合）"""
+    for drow, dcs, dce, height in CLEAR_RANGES_REL:
+        for rr in range(top + drow, top + drow + height):
+            for cc in range(left + dcs, left + dce + 1):
+                cell = ws.cell(row=rr, column=cc)
+                if not isinstance(cell, MergedCell) and cell.fill and cell.fill.start_color and cell.fill.start_color.rgb == "00D9D9D9":
+                    cell.fill = NO_FILL
+
+
 # ===== スロット数 =====
 def count_slots_in_template(ws) -> int:
     start = 2
@@ -500,13 +525,23 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
                 safe_write(ws_out, top + 6, col_left, ev.wday or "")
                 safe_write(ws_out, top + 8, col_left, "" if teacher_blank else (ev.teacher or ""))
 
-    # 残りの空スロットをクリア
+    # 使用スロットのグレー解除（前月より増えた場合）
+    for si in range(len(merged_slots)):
+        if si >= total_slots:
+            break
+        col_left = 2 + 10 * si
+        for k in order:
+            top = base_top + ROW_STEP * idx[k]
+            clear_gray_block(ws_out, top, col_left)
+
+    # 残りの空スロットをクリア＋グレー塗り
     for si in range(len(merged_slots), total_slots):
         col_left = 2 + 10 * si
         for k in order:
             top = base_top + ROW_STEP * idx[k]
             clear_one_block(ws_out, top, col_left)
             write_class_label(ws_out, top, col_left, "")
+            gray_out_block(ws_out, top, col_left)
 
 # ===== 出力（X） =====
 def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_blank: bool = False):
@@ -523,9 +558,11 @@ def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_bl
             label = "特" if getattr(ev, "special", False) else "X"
             if getattr(ev, "special", False):
                 mark_special_counters(ws_out, col_left)
+            clear_gray_block(ws_out, base_top, col_left)
         else:
             ev = None
             label = ""
+            gray_out_block(ws_out, base_top, col_left)
 
         write_class_label(ws_out, base_top, col_left, label)
 
@@ -547,7 +584,7 @@ def _chain_formula(prev_cells: List[str], base_cell_abs: str) -> str:
         return f"=IF({base_cell_abs}=\"\",\"\",{base_cell_abs})"
     prev = prev_cells[-1]
     chain = f"IF({base_cell_abs}=\"\",\"\",{base_cell_abs})"
-    for cell in reversed(prev_cells):
+    for cell in prev_cells:
         chain = f"IF(ISNUMBER({cell}),{cell}+1,{chain})"
     return f"=IF({prev}=\"\",\"\",IF({prev}=\"特\",{chain},{prev}+1))"
 
@@ -555,14 +592,29 @@ def patch_counter_formulas(ws):
     total_slots = count_slots_in_template(ws)
     annual_cells = []
     week_cells = []
+    special_annual = set()  # 「特」が入っているセル
+    special_week = set()
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
-        annual_cells.append(ws.cell(row=2, column=col_left + 4).coordinate)
-        week_cells.append(ws.cell(row=3, column=col_left + 5).coordinate)
+        a_coord = ws.cell(row=2, column=col_left + 4).coordinate
+        w_coord = ws.cell(row=3, column=col_left + 5).coordinate
+        annual_cells.append(a_coord)
+        week_cells.append(w_coord)
+        # 「特」のセルを記録
+        a_val = ws[a_coord].value
+        if isinstance(a_val, str) and a_val.strip() == "特":
+            special_annual.add(i := slot)
+        w_val = ws[w_coord].value
+        if isinstance(w_val, str) and w_val.strip() == "特":
+            special_week.add(slot)
 
     for i in range(1, len(annual_cells)):
+        if i in special_annual:
+            continue  # 手動で入れた「特」を保持
         ws[annual_cells[i]].value = _chain_formula(annual_cells[:i], "$FG$2")
     for i in range(1, len(week_cells)):
+        if i in special_week:
+            continue
         ws[week_cells[i]].value = _chain_formula(week_cells[:i], "$FG$3")
 
 # ===== シートコピー安全版（StyleProxy対策） =====
@@ -705,44 +757,100 @@ def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int):
         pass
     return ws
 
-def count_regular_slots_in_sheet(ws) -> int:
-    """月シート内の通常（非特）使用済みスロット数をカウントする。"""
+_DAY_ROWS = [11, 31, 51]  # S(row 11), A(row 31), B(row 51) の日付行
+
+
+def _slot_has_day(ws, col_left: int) -> bool:
+    """スロットに日付があるか（S/A/Bいずれかの日付行をチェック）"""
+    for row in _DAY_ROWS:
+        v = ws.cell(row=row, column=col_left).value
+        if v is not None and str(v).strip() != "":
+            return True
+    return False
+
+
+def count_regular_slots_in_sheet(ws, sheet_month: int = None) -> int:
+    """月シート内の通常（非特）使用済みスロット数をカウントする。
+    sheet_month が指定された場合、スロットの月番号(E3相当)がシートの月と
+    異なるスロットはカウントしない（例: 6月最終回が7月1週扱いのケース）。
+    """
     total_slots = count_slots_in_template(ws)
     regular_count = 0
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
-        day_val = ws.cell(row=11, column=col_left).value
-        if day_val is None or str(day_val).strip() == "":
+        if not _slot_has_day(ws, col_left):
             continue
         annual_val = ws.cell(row=2, column=col_left + 4).value
         if isinstance(annual_val, str) and annual_val.strip() == "特":
             continue
+        # 月番号がシートの月と異なるスロットは除外（手動で翌月扱いにされたケース）
+        if sheet_month is not None:
+            slot_month_val = ws.cell(row=3, column=col_left + 3).value  # E3相当
+            if slot_month_val is not None:
+                try:
+                    if int(slot_month_val) != sheet_month:
+                        continue
+                except (ValueError, TypeError):
+                    pass
         regular_count += 1
     return regular_count
 
 
+def get_last_session_number(ws, sheet_month: int) -> int | None:
+    """月シート内の最終回（通常スロット）の授業回数を返す。
+    F2(開始値)からスロットを順に歩いて数式の結果を再現する。
+    """
+    total_slots = count_slots_in_template(ws)
+    f2 = ws["F2"].value
+    if isinstance(f2, str) and f2.strip() == "特":
+        f2 = ws["FG2"].value
+    if not isinstance(f2, (int, float)):
+        return None
+
+    current = int(f2)
+    found_first = False
+
+    for slot in range(total_slots):
+        col_left = 2 + 10 * slot
+        if not _slot_has_day(ws, col_left):
+            continue
+        annual_val = ws.cell(row=2, column=col_left + 4).value
+        if isinstance(annual_val, str) and annual_val.strip() == "特":
+            continue
+        # 月番号がシートの月と異なるスロットは除外
+        slot_month_val = ws.cell(row=3, column=col_left + 3).value
+        if slot_month_val is not None:
+            try:
+                if int(slot_month_val) != sheet_month:
+                    continue
+            except (ValueError, TypeError):
+                pass
+        if not found_first:
+            found_first = True  # 最初の通常スロット = F2の値
+        else:
+            current += 1
+
+    return current if found_first else None
+
+
 def compute_annual_start(wb, year: int, month: int) -> int:
-    """前月シートから年間通し回数の開始値を算出する。"""
+    """前月シートの最終回 + 1 を新しい月の開始回数とする。"""
     if month == 1:
-        prev_name = f"{year - 1:04d}-12"
+        prev_year, prev_month = year - 1, 12
     else:
-        prev_name = f"{year:04d}-{month - 1:02d}"
+        prev_year, prev_month = year, month - 1
+    prev_name = f"{prev_year:04d}-{prev_month:02d}"
 
     if prev_name not in wb.sheetnames:
         return 1
 
     prev_ws = wb[prev_name]
-    prev_f2 = prev_ws["F2"].value
-    if isinstance(prev_f2, str) and prev_f2.strip() == "特":
-        prev_f2 = prev_ws["FG2"].value
-    if not isinstance(prev_f2, (int, float)):
-        prev_year = year - 1 if month == 1 else year
-        prev_month = 12 if month == 1 else month - 1
-        prev_f2 = compute_annual_start(wb, prev_year, prev_month)
+    last = get_last_session_number(prev_ws, prev_month)
+    if last is not None:
+        return last + 1
 
-    prev_start = int(prev_f2)
-    regular_count = count_regular_slots_in_sheet(prev_ws)
-    return prev_start + regular_count
+    # 前月シートから読めない場合はさらに前の月から再帰
+    return compute_annual_start(wb, prev_year, prev_month)
 
 
 def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month: int,
