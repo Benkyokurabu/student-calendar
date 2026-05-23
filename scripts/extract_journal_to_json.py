@@ -368,7 +368,9 @@ def _slot_has_day(ws, col_left: int) -> bool:
 
 
 def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
-    """前月シートの最終回 + 1 を計算する（export_by_grade_subject.compute_annual_start と同等）"""
+    """前月シートの最終回 + 1 を再帰的に計算する。
+    F2の値を信頼せず、3月(年度開始)から再帰的に正しい開始回数を求める。
+    """
     if month == 1:
         prev_year, prev_month = year - 1, 12
     else:
@@ -377,14 +379,14 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
     if prev_name not in wb.sheetnames:
         return 1
     prev_ws = wb[prev_name]
-    # 前月のF2から最終回を計算
-    prev_f2 = prev_ws["F2"].value
-    if isinstance(prev_f2, str) and prev_f2.strip() == "特":
-        prev_f2 = prev_ws.cell(row=2, column=163).value
-    if not isinstance(prev_f2, (int, float)):
-        return _compute_annual_start_from_wb(wb, prev_year, prev_month)
-    current = int(prev_f2)
-    found_first = False
+
+    # 前月の開始回数を再帰的に計算
+    prev_start = _compute_annual_start_from_wb(wb, prev_year, prev_month)
+    if prev_start is None:
+        prev_start = 1
+
+    # 前月の通常スロット数をカウント
+    regular_count = 0
     for slot in range(17):
         col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
         if not _slot_has_day(prev_ws, col):
@@ -392,11 +394,9 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
         ann = prev_ws.cell(row=2, column=col + 4).value
         if isinstance(ann, str) and ann.strip() == "特":
             continue
-        if not found_first:
-            found_first = True
-        else:
-            current += 1
-    return (current + 1) if found_first else 1
+        regular_count += 1
+
+    return prev_start + regular_count if regular_count > 0 else prev_start
 
 
 def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, month: int = 0) -> tuple:
@@ -408,15 +408,18 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
     if isinstance(f2, str) and f2.strip() == "特":
         # FG2 (col 163) にバックアップ値がある
         fg2 = ws.cell(row=2, column=163).value
-        # FG2がテンプレートのデフォルト値の可能性があるため、前月から再計算して検証
-        if wb is not None and year and month:
-            computed = _compute_annual_start_from_wb(wb, year, month)
-            if computed is not None:
-                f2 = computed
-            elif isinstance(fg2, (int, float)):
-                f2 = fg2
-        elif isinstance(fg2, (int, float)):
+        if isinstance(fg2, (int, float)):
             f2 = fg2
+        else:
+            f2 = None
+
+    # wb が渡された場合は常に前月から再計算して正しい値を使う
+    # （F2/FG2がテンプレートのデフォルト値や不正な値の場合があるため）
+    if wb is not None and year and month:
+        computed = _compute_annual_start_from_wb(wb, year, month)
+        if computed is not None:
+            f2 = computed
+
     if not isinstance(f2, (int, float)):
         return ("", "", "")
 
@@ -466,11 +469,10 @@ def read_slot_header(ws, left_col: int, *, wb=None, year: int = 0, month: int = 
     month_n = read_merged_text(ws, 3, left_col + 3)    # E3 相当
     week_n = read_merged_text(ws, 3, left_col + 5)     # G3 相当
 
-    # F2が「特」の場合、FG2のキャッシュ値が不正な可能性があるため常に再計算
-    f2_raw = ws["F2"].value
-    force_recalc = isinstance(f2_raw, str) and f2_raw.strip() == "特" and wb is not None
+    # wbが渡された場合は常に前月から再計算（F2/FG2が不正な場合があるため）
+    force_recalc = wb is not None
 
-    # 数式未キャッシュで空の項目があるか、F2=特で再計算が必要な場合
+    # 数式未キャッシュで空の項目があるか、再計算が必要な場合
     if not session or not month_n or not week_n or force_recalc:
         calc_s, calc_m, calc_w = _compute_slot_session(ws, left_col, wb=wb, year=year, month=month)
         if not session or force_recalc:
