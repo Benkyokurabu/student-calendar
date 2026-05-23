@@ -387,24 +387,39 @@ GRAY_FILL = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="sol
 NO_FILL = PatternFill(fill_type=None)
 
 
+def _merged_top_left(ws, row: int, col: int):
+    """結合セルの左上セルを返す。結合されていなければそのセル自体を返す。"""
+    for mr in ws.merged_cells.ranges:
+        if mr.min_row <= row <= mr.max_row and mr.min_col <= col <= mr.max_col:
+            return ws.cell(mr.min_row, mr.min_col)
+    return ws.cell(row, col)
+
+
 def gray_out_block(ws, top: int, left: int):
     """使わないスロットのブロックをグレーで塗りつぶす"""
+    done = set()
     for drow, dcs, dce, height in CLEAR_RANGES_REL:
         for rr in range(top + drow, top + drow + height):
             for cc in range(left + dcs, left + dce + 1):
-                cell = ws.cell(row=rr, column=cc)
-                if not isinstance(cell, MergedCell):
+                cell = _merged_top_left(ws, rr, cc)
+                key = (cell.row, cell.column)
+                if key not in done:
                     cell.fill = GRAY_FILL
+                    done.add(key)
 
 
 def clear_gray_block(ws, top: int, left: int):
     """グレー塗りを解除する（月が変わって使うようになった場合）"""
+    done = set()
     for drow, dcs, dce, height in CLEAR_RANGES_REL:
         for rr in range(top + drow, top + drow + height):
             for cc in range(left + dcs, left + dce + 1):
-                cell = ws.cell(row=rr, column=cc)
-                if not isinstance(cell, MergedCell) and cell.fill and cell.fill.start_color and cell.fill.start_color.rgb == "00D9D9D9":
-                    cell.fill = NO_FILL
+                cell = _merged_top_left(ws, rr, cc)
+                key = (cell.row, cell.column)
+                if key not in done:
+                    if cell.fill and cell.fill.start_color and cell.fill.start_color.rgb == "00D9D9D9":
+                        cell.fill = NO_FILL
+                    done.add(key)
 
 
 # ===== スロット数 =====
