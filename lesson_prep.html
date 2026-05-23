@@ -566,11 +566,18 @@ function render() {
   for (const ev of myLessons) {
     // ペアの場合、両方のキーからセッション情報を探す
     const todayEntry = findTodayEntry(ev, entries);
-    const prevResult = findPrevEntry(ev);
-    const prev = prevResult ? prevResult.entry : null;
-    const prevDate = prevResult ? prevResult.date : "";
-    const prevDateLabel = prevDate ? formatDate(prevDate) : "";
-    const prevTime = prevResult ? prevResult.time : "";
+    // 前回データ: JSONに埋め込まれたprevEntryを優先、なければ従来のfindPrevEntryにフォールバック
+    let prev, prevDateLabel, prevTime;
+    if (todayEntry.prevEntry) {
+      prev = todayEntry.prevEntry;
+      prevDateLabel = prev.date ? formatDate(prev.date) : "";
+      prevTime = "";
+    } else {
+      const prevResult = findPrevEntry(ev);
+      prev = prevResult ? prevResult.entry : null;
+      prevDateLabel = prevResult ? formatDate(prevResult.date) : "";
+      prevTime = prevResult ? prevResult.time : "";
+    }
 
     // セッション情報
     const sessionNum = todayEntry.sessionNumber || "";

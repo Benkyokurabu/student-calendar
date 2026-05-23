@@ -263,9 +263,22 @@ def find_schedule_file(schedule_arg: Optional[str] = None) -> Tuple[int, int, Pa
         return ym_files[0]
 
     if len(ym_files) >= 2:
-        msg = "年月が判定できる .xlsm が複数あります。--schedule で1つ指定してください。\n候補:\n"
-        msg += "\n".join([f"- {p.name}" for (_, _, p) in ym_files])
-        raise RuntimeError(msg)
+        # 当月を優先、なければ最も近い未来月を選ぶ
+        from datetime import date
+        today = date.today()
+        cur_ym = (today.year, today.month)
+        # 当月があればそれを使う
+        for y, m, p in ym_files:
+            if (y, m) == cur_ym:
+                return y, m, p
+        # なければ当月以降で最も近い月
+        future = [(y, m, p) for y, m, p in ym_files if (y, m) >= cur_ym]
+        if future:
+            future.sort()
+            return future[0]
+        # すべて過去なら最新月
+        ym_files.sort()
+        return ym_files[-1]
 
     if len(unknown_files) == 1:
         raise ValueError(

@@ -355,16 +355,164 @@ class WorkbookCache:
                     pass
 
 
+_DAY_ROWS = [11, 31, 51]  # S(row 11), A(row 31), B(row 51) の日付行
+
+
+def _slot_has_day(ws, col_left: int) -> bool:
+    """スロットに日付があるか（S/A/Bいずれかの日付行をチェック）"""
+    for row in _DAY_ROWS:
+        v = ws.cell(row=row, column=col_left).value
+        if v is not None and str(v).strip() != "":
+            return True
+    return False
+
+
+def _compute_slot_session(ws, target_left_col: int) -> tuple:
+    """F2の値とスロット位置から年回数・月回数を計算する。
+    Excelの数式と同じロジック: F2から開始し、通常スロットごとに+1、「特」はスキップ。
+    Returns (sessionNumber, monthNum, weekNum)
+    """
+    f2 = ws["F2"].value
+    if isinstance(f2, str) and f2.strip() == "特":
+        # FG2 (col 163) にバックアップ値がある
+        f2 = ws.cell(row=2, column=163).value
+    if not isinstance(f2, (int, float)):
+        return ("", "", "")
+
+    # E3 = 月番号, G3 = 月内カウンタ開始(常に1)
+    month_n_raw = ws.cell(row=3, column=5).value  # E3
+    if month_n_raw is None:
+        return ("", "", "")
+    month_n = str(int(month_n_raw)) if isinstance(month_n_raw, (int, float)) else str(month_n_raw).strip()
+
+    current_annual = int(f2)
+    current_monthly = 1
+    sheet_month = int(month_n_raw) if isinstance(month_n_raw, (int, float)) else None
+
+    for slot in range(17):  # 最大17スロット
+        col_left = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+        if not _slot_has_day(ws, col_left):
+            continue
+        # 「特」スロットかチェック (row 2, col_left + 4)
+        annual_val = ws.cell(row=2, column=col_left + 4).value
+        if isinstance(annual_val, str) and annual_val.strip() == "特":
+            if col_left == target_left_col:
+                return ("特", "", "特")
+            continue
+        # 月番号がシートの月と異なるスロットは除外
+        slot_month_val = ws.cell(row=3, column=col_left + 3).value
+        if slot_month_val is not None:
+            try:
+                if int(slot_month_val) != sheet_month:
+                    continue
+            except (ValueError, TypeError):
+                pass
+
+        if col_left == target_left_col:
+            return (str(current_annual), month_n, str(current_monthly))
+
+        current_annual += 1
+        current_monthly += 1
+
+    return ("", "", "")
+
+
 def read_slot_header(ws, left_col: int) -> dict:
-    """スロットヘッダー情報を読み取る（第○回、○月○週）"""
+    """スロットヘッダー情報を読み取る（第○回、○月○週）
+    セルに値があればそれを使い、数式未キャッシュ(None)の場合はF2から計算する。
+    """
     session = read_merged_text(ws, 2, left_col + 4)   # F2 相当
     month_n = read_merged_text(ws, 3, left_col + 3)    # E3 相当
     week_n = read_merged_text(ws, 3, left_col + 5)     # G3 相当
+
+    # 数式未キャッシュで空の項目があれば、F2から計算して補完
+    if not session or not month_n or not week_n:
+        calc_s, calc_m, calc_w = _compute_slot_session(ws, left_col)
+        if not session:
+            session = calc_s
+        if not month_n:
+            month_n = calc_m
+        if not week_n:
+            week_n = calc_w
+
     return {
         "sessionNumber": session,
         "monthNum": month_n,
         "weekNum": week_n,
     }
+
+
+def _block_has_data(block: dict) -> bool:
+    """ブロックに実質的なデータがあるか"""
+    return bool(block.get("content") or block.get("page") or
+                block.get("report") or block.get("homework"))
+
+
+def _find_last_slot_col(ws) -> int | None:
+    """シート内の最後のスロット（日付あり）の left_col を返す"""
+    last_col = None
+    for slot in range(17):
+        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+        if _slot_has_day(ws, col):
+            last_col = col
+    return last_col
+
+
+def _read_slot_date(ws, top_row: int, left_col: int, year: int) -> str:
+    """スロットの日付を YYYY-MM-DD 形式で読み取る"""
+    m_val = read_merged_text(ws, top_row + 4, left_col)
+    d_val = read_merged_text(ws, top_row + 5, left_col)
+    if not m_val or not d_val:
+        return ""
+    try:
+        return f"{year}-{int(m_val):02d}-{int(d_val):02d}"
+    except (ValueError, TypeError):
+        return ""
+
+
+def _read_prev_entry(wb, ws, year: int, month: int, slot_index: int,
+                     klass: str, top_row: int) -> dict | None:
+    """前回スロットのデータをExcelから直接読み取る。
+    同月シート内で前のスロットを遡り、なければ前月シートの最後のスロットを探す。
+    """
+    current_left_col = FIRST_BLOCK_COL + (max(1, slot_index) - 1) * BLOCK_WIDTH
+
+    # --- 同月内で前のスロットを探す ---
+    col = current_left_col - BLOCK_WIDTH
+    while col >= FIRST_BLOCK_COL:
+        if _slot_has_day(ws, col):
+            block = read_block(ws, top_row, col)
+            if _block_has_data(block):
+                block.update(read_slot_header(ws, col))
+                block["date"] = _read_slot_date(ws, top_row, col, year)
+                return block
+        col -= BLOCK_WIDTH
+
+    # --- 前月シートを探す ---
+    if month == 1:
+        prev_year, prev_month = year - 1, 12
+    else:
+        prev_year, prev_month = year, month - 1
+
+    prev_ws = find_month_sheet(wb, prev_year, prev_month)
+    if prev_ws is None:
+        return None
+
+    last_col = _find_last_slot_col(prev_ws)
+    if last_col is None:
+        return None
+
+    col = last_col
+    while col >= FIRST_BLOCK_COL:
+        if _slot_has_day(prev_ws, col):
+            block = read_block(prev_ws, top_row, col)
+            if _block_has_data(block):
+                block.update(read_slot_header(prev_ws, col))
+                block["date"] = _read_slot_date(prev_ws, top_row, col, prev_year)
+                return block
+        col -= BLOCK_WIDTH
+
+    return None
 
 
 def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) -> dict:
@@ -402,6 +550,12 @@ def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) 
 
     block = read_block(ws, top_row, left_col)
     block.update(read_slot_header(ws, left_col))
+
+    # 前回データをExcelから直接読み取り
+    prev = _read_prev_entry(wb, ws, year, month, slot_index, klass, top_row)
+    if prev:
+        block["prevEntry"] = prev
+
     return block
 
 
@@ -471,13 +625,13 @@ def main() -> None:
     schedule_path, target_month = find_schedule_json(repo_dir, args.month)
     events = load_json(schedule_path)
 
-    map_latest = repo_dir / "journal_map_latest.json"
     map_month = repo_dir / f"journal_map_{target_month}.json"
+    map_latest = repo_dir / "journal_map_latest.json"
     slots_map = None
-    if map_latest.exists():
-        slots_map = load_json(map_latest)
-    elif map_month.exists():
+    if map_month.exists():
         slots_map = load_json(map_month)
+    elif map_latest.exists():
+        slots_map = load_json(map_latest)
 
     slot_map = build_group_slot_map(events, slots_map)
 
