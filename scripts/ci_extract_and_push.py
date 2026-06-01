@@ -16,19 +16,45 @@ from pathlib import Path
 import shutil
 
 
-def get_months_to_process(month_arg=None):
+def get_months_to_process(month_arg=None, *, script_dir=None):
     if month_arg:
         return [month_arg]
     today = date.today()
     last_day = calendar.monthrange(today.year, today.month)[1]
     current_month = f"{today.year}-{today.month:02d}"
+
+    months = []
+
     if today.day > last_day - 5:
         if today.month == 1:
             prev_month = f"{today.year - 1}-12"
         else:
             prev_month = f"{today.year}-{today.month - 1:02d}"
-        return [prev_month, current_month]
-    return [current_month]
+        months.append(prev_month)
+
+    months.append(current_month)
+
+    # 来月のスケジュールExcelが存在すれば来月も処理対象に含める
+    if today.month == 12:
+        next_year, next_month = today.year + 1, 1
+    else:
+        next_year, next_month = today.year, today.month + 1
+    next_month_str = f"{next_year}-{next_month:02d}"
+    if next_month_str not in months and script_dir:
+        import re as _re
+        # CI環境: _backup/スケジュール表/ にスケジュールExcelがある
+        backup_dir = script_dir / "_cloud_journal" / "_backup" / "スケジュール表"
+        if backup_dir.exists():
+            pattern = _re.compile(rf"^{next_year}年0?{next_month}月スケジュール\.xlsm$")
+            if any(pattern.match(f.name) for f in backup_dir.iterdir() if f.is_file()):
+                months.append(next_month_str)
+        # フォールバック: script_dir直下も確認
+        if next_month_str not in months:
+            pattern = _re.compile(rf"^{next_year}年0?{next_month}月スケジュール\.xlsm$")
+            if any(pattern.match(f.name) for f in script_dir.iterdir() if f.is_file()):
+                months.append(next_month_str)
+
+    return months
 
 
 def run(args, **kwargs):
@@ -44,7 +70,7 @@ def main():
     script_dir = Path(__file__).parent.resolve()
     repo_dir = script_dir.parent  # リポのルート
     month_arg = sys.argv[1] if len(sys.argv) > 1 else None
-    months = get_months_to_process(month_arg)
+    months = get_months_to_process(month_arg, script_dir=script_dir)
 
     journal_dir = script_dir / "_cloud_journal"
     if not journal_dir.exists():
