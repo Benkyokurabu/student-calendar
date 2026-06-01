@@ -97,6 +97,31 @@ def main():
         print("[SKIP] export_schedule_json.py が見つかりません")
     print()
 
+    # --- 1.1. journal_map 再生成 ---
+    print("[1.1] journal_map を生成中...")
+    build_map_script = script_dir / "build_journal_map.py"
+    if build_map_script.exists():
+        for m in months:
+            month_num = m.split("-")[1]
+            result = subprocess.run(
+                [sys.executable, str(build_map_script), "--prefer", month_num],
+                cwd=str(script_dir),
+                capture_output=True, text=True, encoding="utf-8", errors="replace"
+            )
+            if result.stdout:
+                for line in result.stdout.strip().split("\n"):
+                    print(f"  {line}")
+            if result.returncode != 0:
+                print(f"  [WARN] journal_map 生成失敗 ({m}): {result.stderr.strip()}")
+        # 生成されたjournal_mapをリポにコピー
+        for f in script_dir.glob("journal_map_*.json"):
+            dst = repo_dir / f.name
+            shutil.copy2(f, dst)
+            print(f"  → {dst.name}")
+    else:
+        print("[SKIP] build_journal_map.py が見つかりません。")
+    print()
+
     # --- 2. 日誌キャンパス間コピー + JSON抽出 ---
     # 日誌JSON退避（マージ用）
     old_jsons = {}
