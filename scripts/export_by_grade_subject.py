@@ -40,6 +40,7 @@ python export_by_grade_subject.py
 
 import sys
 import re
+import json
 import argparse
 import math
 import zipfile
@@ -76,7 +77,14 @@ ALLOW_NEAR_RGB = False  # 近傍RGBも使わない（誤判定防止）
 
 RGB_NEAR_THRESH = 24
 
-Event = namedtuple("Event", "month day wday time classroom grade klass subj text teacher special r c")
+Event = namedtuple("Event", "month day wday time classroom grade klass subj text teacher special carry_next r c")
+
+# 「翌月へ繰り越し」のマーカー（スケジュールのセルに付ける文字）
+CARRY_NEXT_MARK = "翌"
+# 繰り越し記録ファイル（当月生成時に書き、翌月生成時に読む）
+CARRYOVER_JSON = Path("_carryover.json")
+# 「翌月から繰り越されたクラスの空き」を表す灰色プレースホルダ用センチネル
+_GRAY_PLACEHOLDER = object()
 
 # ===== スケジュール自動選択 =====
 RE_SCHEDULE = re.compile(r"^(\d{4})年0?(\d{1,2})月スケジュール\.xlsm$", re.ASCII)
@@ -122,6 +130,9 @@ def parse_class_token(txt: str):
     s = normalize_digits(txt).replace(" ", "").replace("\u3000", "")
     if any(x in s for x in ("休講", "休み", "休校", "休", "テスト", "模試")):
         return None
+    # 「翌月へ繰り越し」マーカー（例: 「１Ｓ数(翌)」）。判定後は本文から除いて誤認を防ぐ。
+    carry_next = CARRY_NEXT_MARK in s
+    s = s.replace(CARRY_NEXT_MARK, "")
     m = re.search(r"([1-6])\s*([SABXＳＡＢＸ])?(特)?\s*([数算国英理社])", s)
     if not m:
         return None
@@ -130,7 +141,7 @@ def parse_class_token(txt: str):
     special = bool(m.group(3))
     subj = m.group(4)
     subj_norm = "数" if subj in ("数", "算") else subj
-    return grade, klass, subj_norm, special
+    return grade, klass, subj_norm, special, carry_next
 
 def safe_write(ws, row, col, val):
     for rng in ws.merged_cells.ranges:
@@ -444,18 +455,27 @@ def _day_int(ev) -> int:
     return int(d) if d.isdigit() else 0
 
 
-def _build_merged_slots(classes: dict, order: List[str]) -> List[dict]:
+def _build_merged_slots(classes: dict, order: List[str],
+                        prepend_gray: Optional[Dict[str, int]] = None) -> List[dict]:
     """
     特と通常を分離し、通常は授業回数でS/A/B横並び、
     特は時系列上の正しい位置に専用スロットとして挿入する。
 
-    戻り値: [{クラス名: Event or None, "_special": bool}, ...]
+    prepend_gray: {クラス名: 件数} — そのクラスの通常スロット列の先頭に
+      灰色プレースホルダ（_GRAY_PLACEHOLDER）をその件数ぶん挿入する。
+      前月から授業を繰り越した（= 当月1週ぶんを前月に前倒しした）クラスを
+      1つ後ろにずらし、先頭スロットを灰色で空けるために使う。
+
+    戻り値: [{クラス名: Event or _GRAY_PLACEHOLDER or None, "_special": bool}, ...]
     """
+    prepend_gray = prepend_gray or {}
     specials: Dict[str, List[Event]] = {}
-    regulars: Dict[str, List[Event]] = {}
+    regulars: Dict[str, List[Any]] = {}
     for k in order:
         specials[k] = [e for e in classes.get(k, []) if getattr(e, "special", False)]
-        regulars[k] = [e for e in classes.get(k, []) if not getattr(e, "special", False)]
+        base = [e for e in classes.get(k, []) if not getattr(e, "special", False)]
+        cnt = prepend_gray.get(k, 0)
+        regulars[k] = [_GRAY_PLACEHOLDER] * cnt + base
 
     # 通常イベントを授業回数でペアリング
     max_regular = max((len(regulars[k]) for k in order), default=0)
@@ -473,6 +493,8 @@ def _build_merged_slots(classes: dict, order: List[str]) -> List[dict]:
             day_val = _day_int(ev)
             insert_before = len(regulars[k])
             for ri, reg_ev in enumerate(regulars[k]):
+                if reg_ev is _GRAY_PLACEHOLDER:
+                    continue
                 if day_val < _day_int(reg_ev):
                     insert_before = ri
                     break
@@ -504,13 +526,14 @@ def _build_merged_slots(classes: dict, order: List[str]) -> List[dict]:
     return merged
 
 
-def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: bool = False):
+def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: bool = False,
+                    prepend_gray: Optional[Dict[str, int]] = None):
     base_top = 6
     order = ["S", "A", "B"]
     idx = {k: i for i, k in enumerate(order)}
     total_slots = count_slots_in_template(ws_out)
 
-    merged_slots = _build_merged_slots(classes, order)
+    merged_slots = _build_merged_slots(classes, order, prepend_gray=prepend_gray)
 
     for si, slot in enumerate(merged_slots):
         if si >= total_slots:
@@ -521,33 +544,53 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
         if is_special:
             mark_special_counters(ws_out, col_left)
 
+        # このスロットに「翌月へ繰り越し」イベントがあるか。あれば、空きクラスは
+        # 単なる空欄ではなく灰色で塗る（Sだけ実施・A/Bは灰色 のケース）。
+        carry_here = any(
+            isinstance(slot.get(k), Event) and getattr(slot.get(k), "carry_next", False)
+            for k in order
+        )
+
         for k in order:
             top = base_top + ROW_STEP * idx[k]
             clear_one_block(ws_out, top, col_left)
 
             ev = slot.get(k)
+
+            # 前月繰り越しで空けた灰色プレースホルダ
+            if ev is _GRAY_PLACEHOLDER:
+                write_class_label(ws_out, top, col_left, "")
+                gray_out_block(ws_out, top, col_left)
+                continue
+
             if ev is None:
-                label = ""
-            elif is_special:
-                label = "特"
-            else:
-                label = k
-            write_class_label(ws_out, top, col_left, label)
+                write_class_label(ws_out, top, col_left, "")
+                # 特スロット（他クラスは授業なし）と繰り越しスロットの空きは灰色にする
+                if carry_here or is_special:
+                    gray_out_block(ws_out, top, col_left)
+                else:
+                    clear_gray_block(ws_out, top, col_left)
+                continue
 
-            if ev is not None:
-                safe_write(ws_out, top + 4, col_left, str(target_month) if target_month else "")
-                safe_write(ws_out, top + 5, col_left, str(ev.day) if ev.day != "" else "")
-                safe_write(ws_out, top + 6, col_left, ev.wday or "")
-                safe_write(ws_out, top + 8, col_left, "" if teacher_blank else (ev.teacher or ""))
-
-    # 使用スロットのグレー解除（前月より増えた場合）
-    for si in range(len(merged_slots)):
-        if si >= total_slots:
-            break
-        col_left = 2 + 10 * si
-        for k in order:
-            top = base_top + ROW_STEP * idx[k]
+            # 実イベント
             clear_gray_block(ws_out, top, col_left)
+            label = "特" if is_special else k
+            write_class_label(ws_out, top, col_left, label)
+            safe_write(ws_out, top + 4, col_left, str(target_month) if target_month else "")
+            safe_write(ws_out, top + 5, col_left, str(ev.day) if ev.day != "" else "")
+            safe_write(ws_out, top + 6, col_left, ev.wday or "")
+            safe_write(ws_out, top + 8, col_left, "" if teacher_blank else (ev.teacher or ""))
+
+        # 繰り越しスロットは「翌月1週」として扱う:
+        #   月セル(E3相当)=翌月、週セル=1 を直接書き込む。
+        #   - 月を翌月にすることで、当月の年通算回数カウントから除外される
+        #     （get_last_session_number / count_regular_slots_in_sheet が月不一致を除外）。
+        #   - これにより 6/29(S) は翌月の開始回数と同じ「第N回/翌月1週」となり、
+        #     翌月先頭の A/B(7/1) と回数・週がピタリ揃う（番号飛びが無くなる）。
+        if carry_here and target_month:
+            next_month = target_month % 12 + 1
+            safe_write(ws_out, 3, col_left + 3, next_month)  # E3相当（月マーカー）
+            safe_write(ws_out, 3, col_left + 5, 1)            # G3相当（月内週カウンタ）
 
     # 残りの空スロットをクリア＋グレー塗り
     for si in range(len(merged_slots), total_slots):
@@ -920,7 +963,7 @@ def collect_events(sh, target_month: int, campus: str, year: int, month: int) ->
             if day is None or w is None:
                 day, w = parse_day_week_from_row(sh, r, allow_prev_row=True)
 
-            g, k, subj, special = tok
+            g, k, subj, special, carry_next = tok
 
             teacher = resolve_teacher_strict(sh, legend, r, c)
             if teacher == "":
@@ -932,7 +975,7 @@ def collect_events(sh, target_month: int, campus: str, year: int, month: int) ->
             time = find_timeband_above(sh, r, c, grade=g)
             classroom = merged_value_text(sh, room_row, c) if room_row else ""
 
-            ev = Event(target_month, day or "", w or "", time, classroom, g, k, subj, txt, teacher, special, r, c)
+            ev = Event(target_month, day or "", w or "", time, classroom, g, k, subj, txt, teacher, special, carry_next, r, c)
 
             key = (ev.day, ev.wday, ev.time, ev.classroom, ev.grade, ev.klass, ev.subj, ev.text, ev.teacher, ev.special)
             if key in seen:
@@ -982,10 +1025,73 @@ def collision_check(events: List[Event], campus: str, year: int, month: int):
             f.write("\n")
     print(f"[WARN] 重複割当の可能性: {fname} を確認してください。")
 
+# ===== 翌月繰り越しの記録（当月で書き、翌月で読む） =====
+def _next_month_str(year: int, month: int) -> str:
+    if month == 12:
+        return f"{year + 1:04d}-01"
+    return f"{year:04d}-{month + 1:02d}"
+
+
+def load_carryover() -> Dict[str, List[dict]]:
+    if not CARRYOVER_JSON.exists():
+        return {}
+    try:
+        return json.loads(CARRYOVER_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def save_carryover(data: Dict[str, List[dict]]) -> None:
+    CARRYOVER_JSON.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+def record_carryovers(events: List[Event], campus: str, year: int, month: int) -> None:
+    """当月の (翌) マーカー付きイベントを「翌月の繰り越し」として記録する。
+    翌月の生成時に、そのクラスを1スロット後ろにずらす（先頭を灰色で空ける）ために使う。
+    """
+    seen: Set[Tuple[str, str, str]] = set()
+    entries: List[dict] = []
+    for e in events:
+        if not getattr(e, "carry_next", False) or getattr(e, "special", False):
+            continue
+        key = (e.grade, e.subj, e.klass)
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append({"campus": campus, "grade": e.grade, "subj": e.subj, "klass": e.klass})
+    if not entries:
+        return
+    data = load_carryover()
+    nm = _next_month_str(year, month)
+    lst = data.setdefault(nm, [])
+    for en in entries:
+        if en not in lst:
+            lst.append(en)
+    save_carryover(data)
+
+
+def get_prepend_gray(campus: str, year: int, month: int) -> Dict[Tuple[str, str], Dict[str, int]]:
+    """当月に適用すべき「先頭灰色プレースホルダ」を (grade, subj) -> {klass: 件数} で返す。"""
+    data = load_carryover()
+    cm = f"{year:04d}-{month:02d}"
+    res: Dict[Tuple[str, str], Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for en in data.get(cm, []):
+        if en.get("campus") != campus:
+            continue
+        res[(en["grade"], en["subj"])][en["klass"]] += 1
+    return {k: dict(v) for k, v in res.items()}
+
+
 # ===== 校舎単位の出力 =====
 def export_one_campus(ws_schedule, campus: str, year: int, month: int):
     all_events = collect_events(ws_schedule, month, campus, year, month)
     collision_check(all_events, campus, year, month)
+
+    # (翌) マーカーを翌月の繰り越しとして記録し、当月に適用すべき繰り越しを読む
+    record_carryovers(all_events, campus, year, month)
+    prepend_map = get_prepend_gray(campus, year, month)
 
     # 本体（学年×科目）は補講を除外
     buckets = defaultdict(list)
@@ -1016,7 +1122,9 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
                     print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
                 else:
                     set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
-                    fill_sheet_main(ws_out, month, {"S": s_list, "A": a_list, "B": b_list}, teacher_blank=False)
+                    fill_sheet_main(ws_out, month, {"S": s_list, "A": a_list, "B": b_list},
+                                    teacher_blank=False,
+                                    prepend_gray=prepend_map.get((grade, subj), {}))
                     save_year_workbook(wb, out_path)
                     print(f"[OK] {out_path.name} + {ws_out.title}")
 

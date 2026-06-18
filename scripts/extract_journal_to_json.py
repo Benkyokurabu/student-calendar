@@ -367,6 +367,29 @@ def _slot_has_day(ws, col_left: int) -> bool:
     return False
 
 
+def _find_block_col(ws, top_row: int, day: int, want_special: Optional[bool] = None) -> Optional[int]:
+    """指定クラス(top_row)の中で、日付セルが day と一致する列(left_col)を返す。
+    スケジュールから計算した列位置ではなく、Excel上の実際の日付で照合するため、
+    繰り越し等でレイアウトがズレても正しい列を読める。
+    同じ日が複数あれば（特＋通常など）want_special で絞り込む。
+    """
+    matches: List[Tuple[int, bool]] = []
+    for slot in range(17):
+        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+        d = read_merged_text(ws, top_row + 5, col)  # 日付セル
+        if d and d.strip() == str(day):
+            ann = ws.cell(row=2, column=col + 4).value
+            is_sp = isinstance(ann, str) and ann.strip() == "特"
+            matches.append((col, is_sp))
+    if not matches:
+        return None
+    if want_special is not None:
+        for col, is_sp in matches:
+            if is_sp == want_special:
+                return col
+    return matches[0][0]
+
+
 def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
     """前月シートの最終回 + 1 を再帰的に計算する。
     F2の値を信頼せず、3月(年度開始)から再帰的に正しい開始回数を求める。
@@ -385,7 +408,7 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
     if prev_start is None:
         prev_start = 1
 
-    # 前月の通常スロット数をカウント
+    # 前月の通常スロット数をカウント（特スロットと、翌月へ繰り越したスロットは除外）
     regular_count = 0
     for slot in range(17):
         col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
@@ -394,6 +417,14 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
         ann = prev_ws.cell(row=2, column=col + 4).value
         if isinstance(ann, str) and ann.strip() == "特":
             continue
+        # 月番号が前月シートの月と異なる = 翌月へ繰り越し → 前月の回数には含めない
+        slot_month_val = prev_ws.cell(row=3, column=col + 3).value
+        if slot_month_val is not None:
+            try:
+                if int(slot_month_val) != prev_month:
+                    continue
+            except (ValueError, TypeError):
+                pass
         regular_count += 1
 
     return prev_start + regular_count if regular_count > 0 else prev_start
@@ -443,14 +474,21 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
             if col_left == target_left_col:
                 return ("特", "", "特")
             continue
-        # 月番号がシートの月と異なるスロットは除外
+        # 月番号がシートの月と異なるスロット = 翌月へ繰り越し（例: 6/29が7月1週扱い）。
+        # 当月の通算カウントには含めないが、そのスロット自体が対象なら
+        # 「年通算=現在値・月=繰り越し先・週=1」を返す（翌月先頭と回数・週が揃う）。
         slot_month_val = ws.cell(row=3, column=col_left + 3).value
         if slot_month_val is not None:
             try:
-                if int(slot_month_val) != sheet_month:
-                    continue
+                sm = int(slot_month_val)
             except (ValueError, TypeError):
-                pass
+                sm = None
+            if sm is not None and sm != sheet_month:
+                if col_left == target_left_col:
+                    week_val = ws.cell(row=3, column=col_left + 5).value
+                    wk = str(int(week_val)) if isinstance(week_val, (int, float)) else "1"
+                    return (str(current_annual), str(sm), wk)
+                continue
 
         if col_left == target_left_col:
             return (str(current_annual), month_n, str(current_monthly))
@@ -594,6 +632,15 @@ def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) 
         top_row = BASE_TOP_MAIN.get(klass)
         if top_row is None:
             return empty
+
+    # Excel上の実際の日付で列を特定し直す（繰り越し等のレイアウトズレに強い）。
+    # 見つからない場合のみ slot_index からの計算値を使う。
+    day = int(m.group(3))
+    want_special = bool(ev.get("special", False))
+    found_col = _find_block_col(ws, top_row, day, want_special)
+    if found_col is not None:
+        left_col = found_col
+        slot_index = (found_col - FIRST_BLOCK_COL) // BLOCK_WIDTH + 1
 
     block = read_block(ws, top_row, left_col)
     block.update(read_slot_header(ws, left_col, wb=wb, year=year, month=month))
