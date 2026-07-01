@@ -267,6 +267,132 @@ def main():
         print("  → 新しいシートはありません（既に作成済み）")
     print()
 
+    # --- 1.55. 既存シートの連鎖数式を修復 ---
+    print("[1.55] 授業回数の連鎖数式を検証・修復中...")
+    try:
+        sys.path.insert(0, str(script_dir))
+        from export_by_grade_subject import (count_slots_in_template, patch_counter_formulas,
+            mark_special_counters, gray_out_block, clear_gray_block, _slot_has_day)
+        import openpyxl as _openpyxl
+        import re as _re_sheet
+        _RE_MONTH_SHEET = _re_sheet.compile(r"^(\d{4})-(\d{2})$")
+
+        formula_repair_count = 0
+        special_restore_count = 0
+        for xlsx_path in sorted(journal_dir.rglob("*.xlsx")):
+            if SKIP_DIRS & {p for p in xlsx_path.relative_to(journal_dir).parts}:
+                continue
+            if xlsx_path.name.startswith("~"):
+                continue
+            try:
+                wb = _openpyxl.load_workbook(xlsx_path)
+            except Exception:
+                continue
+
+            month_sheets = []
+            for sn in wb.sheetnames:
+                _m = _RE_MONTH_SHEET.match(sn)
+                if _m:
+                    month_sheets.append((int(_m.group(1)), int(_m.group(2)), sn))
+            month_sheets.sort()
+
+            changed = False
+            for _y, _mo, sn in month_sheets:
+                ws = wb[sn]
+
+                _total = count_slots_in_template(ws)
+                for _si in range(_total):
+                    _cl = 2 + 10 * _si
+                    _labels = [ws.cell(row=r, column=_cl).value for r in (7, 27, 47)]
+                    if any(isinstance(lb, str) and lb.strip() == "特" for lb in _labels):
+                        _f2_val = ws.cell(row=2, column=_cl + 4).value
+                        if not (isinstance(_f2_val, str) and _f2_val.strip() == "特"):
+                            mark_special_counters(ws, _cl)
+                            changed = True
+                            special_restore_count += 1
+
+                patch_counter_formulas(ws)
+                changed = True
+                formula_repair_count += 1
+
+                is_x = any(
+                    isinstance(ws.cell(row=7, column=2 + 10 * s).value, str)
+                    and ws.cell(row=7, column=2 + 10 * s).value.strip() == "X"
+                    for s in range(_total) if _slot_has_day(ws, 2 + 10 * s)
+                )
+                last_used = -1
+                for s in range(_total):
+                    if _slot_has_day(ws, 2 + 10 * s):
+                        last_used = s
+                if is_x:
+                    base_top = 6
+                    for s in range(_total):
+                        cl = 2 + 10 * s
+                        if s <= last_used:
+                            clear_gray_block(ws, base_top, cl)
+                        else:
+                            gray_out_block(ws, base_top, cl)
+                else:
+                    order_tops = [6, 26, 46]
+                    for s in range(_total):
+                        cl = 2 + 10 * s
+                        for top in order_tops:
+                            if s <= last_used:
+                                clear_gray_block(ws, top, cl)
+                            else:
+                                gray_out_block(ws, top, cl)
+
+            if changed:
+                wb.save(xlsx_path)
+            wb.close()
+
+        if special_restore_count > 0:
+            print(f"  → 特マーク復元: {special_restore_count} 個")
+        print(f"  → 連鎖数式再適用: {formula_repair_count} 個のシート")
+        if special_restore_count == 0 and formula_repair_count == 0:
+            print("  → すべて正常です")
+    except Exception as e:
+        print(f"  [ERROR] 回数修復中にエラー: {e}")
+        import traceback
+        traceback.print_exc()
+    print()
+
+    # --- 1.6. 既存シートの日付・講師を最新スケジュールに同期 ---
+    print("[1.6] 既存シートの日付・講師をスケジュールに同期中...")
+    import re as _re_sch
+    _RE_SCH = _re_sch.compile(r"^(\d{4})年0?(\d{1,2})月スケジュール\.xlsm$")
+    update_journal_py = repo_dir / "update_journal.py"
+    if update_journal_py.exists():
+        for m in months:
+            month_num = int(m.split("-")[1])
+            sch_path = None
+            for p in script_dir.iterdir():
+                _mm = _RE_SCH.match(p.name)
+                if _mm and int(_mm.group(2)) == month_num:
+                    sch_path = p
+                    break
+            if sch_path is None:
+                print(f"  [SKIP] {month_num}月のスケジュールが見つかりません")
+                continue
+            print(f"  → {m} ({sch_path.name})")
+            _result = subprocess.run(
+                [sys.executable, str(update_journal_py),
+                 "--schedule", str(sch_path.resolve()),
+                 "--journal-dir", str(journal_dir)],
+                cwd=str(repo_dir),
+                capture_output=True, text=True, encoding="utf-8", errors="replace"
+            )
+            if _result.stdout:
+                for line in _result.stdout.strip().split("\n"):
+                    print(f"    {line}")
+            if _result.returncode != 0:
+                print(f"  [WARN] update_journal 失敗 (exit {_result.returncode})")
+                if _result.stderr:
+                    print(f"    {_result.stderr.strip()}")
+    else:
+        print("  [SKIP] update_journal.py が見つかりません")
+    print()
+
     # --- 2. 日誌キャンパス間コピー + JSON抽出 ---
     # 日誌JSON退避（マージ用）
     old_jsons = {}
