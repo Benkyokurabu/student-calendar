@@ -57,6 +57,142 @@ def get_months_to_process(month_arg=None, *, script_dir=None):
     return months
 
 
+SKIP_DIRS = {"_backup", "退避", "__pycache__"}
+
+
+def find_workbook_in_journal(journal_dir: Path, filename: str):
+    p = journal_dir / filename
+    if p.exists():
+        return p
+    for candidate in journal_dir.rglob(filename):
+        if candidate.is_file():
+            if SKIP_DIRS & {part for part in candidate.relative_to(journal_dir).parts}:
+                continue
+            return candidate
+    return None
+
+
+def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
+    """スケジュールExcelを読み、日誌ファイルに新しい月シートを追加する"""
+    old_cwd = os.getcwd()
+    try:
+        sys.path.insert(0, str(script_dir))
+        os.chdir(str(script_dir))
+
+        from export_by_grade_subject import (
+            GRADES, SUBJS, GRADE_LABEL, _display_subj_name,
+            pick_schedule_in_same_folder, choose_target_sheets, collect_events,
+            create_month_sheet, set_header_cells,
+            fill_sheet_main, fill_sheet_x, save_year_workbook,
+            open_or_create_year_workbook, ensure_hidden_template_sheet,
+            TEMPLATE_MAIN, TEMPLATE_X,
+        )
+        from collections import defaultdict
+        import openpyxl
+
+        created_count = 0
+
+        for month_str in months:
+            year, month = int(month_str.split("-")[0]), int(month_str.split("-")[1])
+
+            try:
+                y, m, sch = pick_schedule_in_same_folder([month])
+            except FileNotFoundError:
+                print(f"  [SKIP] {month}月のスケジュールが見つかりません")
+                continue
+
+            if m != month:
+                print(f"  [SKIP] {month}月のスケジュールが見つかりません（{m}月のみ）")
+                continue
+
+            wb_s = openpyxl.load_workbook(sch, data_only=True, keep_vba=True)
+            targets = choose_target_sheets(wb_s)
+            if not targets:
+                print(f"  [SKIP] 教務部用シートが見つかりません")
+                continue
+
+            for campus, sname, sh in targets:
+                all_events = collect_events(sh, month, campus, year, month)
+                buckets = defaultdict(list)
+                for e in all_events:
+                    if ("英語補講" in e.text) or ("数学補講" in e.text):
+                        continue
+                    buckets[(e.grade, e.subj, e.klass)].append(e)
+
+                for grade in GRADES:
+                    for subj in SUBJS:
+                        s_list = buckets.get((grade, subj, "S"), [])
+                        a_list = buckets.get((grade, subj, "A"), [])
+                        b_list = buckets.get((grade, subj, "B"), [])
+                        x_list = buckets.get((grade, subj, "X"), [])
+
+                        subj_j = _display_subj_name(grade, subj)
+                        grade_j = GRADE_LABEL[grade]
+
+                        if any([s_list, a_list, b_list]):
+                            fname = f"{campus}{grade_j}{subj_j}_{year}.xlsx"
+                            wb_path = find_workbook_in_journal(journal_dir, fname)
+                            if wb_path is None:
+                                continue
+                            wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
+                            tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
+                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            if ws_out is None:
+                                continue
+                            set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
+                            fill_sheet_main(ws_out, month, {"S": s_list, "A": a_list, "B": b_list}, teacher_blank=False)
+                            save_year_workbook(wb, wb_path)
+                            print(f"  [NEW] {fname} + {ws_out.title}")
+                            created_count += 1
+
+                        if x_list:
+                            fname = f"{campus}{grade_j}X{subj_j}_{year}.xlsx"
+                            wb_path = find_workbook_in_journal(journal_dir, fname)
+                            if wb_path is None:
+                                continue
+                            wb = open_or_create_year_workbook(wb_path, TEMPLATE_X, "__TEMPLATE_X__")
+                            tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_X, "__TEMPLATE_X__")
+                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            if ws_out is None:
+                                continue
+                            set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
+                            fill_sheet_x(ws_out, month, x_list, teacher_blank=False)
+                            save_year_workbook(wb, wb_path)
+                            print(f"  [NEW] {fname} + {ws_out.title}")
+                            created_count += 1
+
+                for keyword, title in [("英語補講", "英語補講"), ("数学補講", "数学補講")]:
+                    hits = [e for e in all_events if keyword in e.text]
+                    if not hits:
+                        continue
+                    fname = f"{campus}{title}_{year}.xlsx"
+                    wb_path = find_workbook_in_journal(journal_dir, fname)
+                    if wb_path is None:
+                        continue
+                    wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
+                    tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
+                    ws_out = create_month_sheet(wb, tmpl, year, month)
+                    if ws_out is None:
+                        continue
+                    set_header_cells(ws_out, campus, "", title, month, wb=wb, year=year)
+                    fill_sheet_main(ws_out, month, {"S": hits, "A": [], "B": []}, teacher_blank=True)
+                    save_year_workbook(wb, wb_path)
+                    print(f"  [NEW] {fname} + {ws_out.title}")
+                    created_count += 1
+
+            wb_s.close()
+
+        os.chdir(old_cwd)
+        return created_count
+
+    except Exception as e:
+        os.chdir(old_cwd)
+        print(f"  [ERROR] 月シート作成中にエラー: {e}")
+        import traceback
+        traceback.print_exc()
+        return 0
+
+
 def run(args, **kwargs):
     print(f"  > {' '.join(str(a) for a in args)}")
     result = subprocess.run(args, **kwargs)
@@ -120,6 +256,15 @@ def main():
             print(f"  → {dst.name}")
     else:
         print("[SKIP] build_journal_map.py が見つかりません。")
+    print()
+
+    # --- 1.5. 月シート作成（必要な場合） ---
+    print("[1.5] 授業日誌Excelに新しい月シートを追加中...")
+    created = create_month_sheets(script_dir, months, journal_dir)
+    if created > 0:
+        print(f"  → {created} 個のシートを作成しました")
+    else:
+        print("  → 新しいシートはありません（既に作成済み）")
     print()
 
     # --- 2. 日誌キャンパス間コピー + JSON抽出 ---
