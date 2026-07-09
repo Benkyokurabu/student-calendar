@@ -43,7 +43,7 @@ jobs:
       - name: Download schedule Excel from OneDrive
         run: |
           mkdir -p scripts/_schedule
-          rclone copy "onedrive:●勉強クラブ共有/09　授業日誌/_backup/スケジュール表/" scripts/_schedule/ --include "*.xlsm"
+          rclone copy "onedrive:デスクトップ/【完成版】授業日誌システム/" scripts/_schedule/ --include "*.xlsm" --max-depth 1
           echo "--- Schedule files ---"
           ls -la scripts/_schedule/
 

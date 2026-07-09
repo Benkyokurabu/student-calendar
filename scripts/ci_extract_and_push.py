@@ -224,7 +224,23 @@ def main():
     print("[1/3] スケジュールExcelから JSON を生成中...")
     export_script = script_dir / "export_schedule_json.py"
     if export_script.exists():
-        run([sys.executable, str(export_script)], cwd=str(script_dir))
+        # months に含まれる月ごとに該当スケジュールファイルを明示指定して生成する
+        # （引数なし実行だと今月優先で1ファイルしか処理されず、来月分が生成されないため）
+        import re as _re_exp
+        _RE_SCH_EXP = _re_exp.compile(r"^(\d{4})年0?(\d{1,2})月スケジュール\.xlsm$")
+        for m in months:
+            month_num = int(m.split("-")[1])
+            sch_path = None
+            for p in script_dir.iterdir():
+                mm = _RE_SCH_EXP.match(p.name)
+                if mm and int(mm.group(2)) == month_num:
+                    sch_path = p
+                    break
+            if sch_path is None:
+                print(f"  [SKIP] {m}のスケジュールが見つかりません")
+                continue
+            run([sys.executable, str(export_script), "--schedule", str(sch_path.resolve())],
+                cwd=str(script_dir))
         for f in script_dir.glob("schedule_*.json"):
             dst = repo_dir / f.name
             shutil.copy2(f, dst)
