@@ -13,7 +13,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -95,7 +95,7 @@ jobs:
           fi
 
       - name: Create issue on failure
-        if: failure()
+        if: failure() || cancelled()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -107,12 +107,13 @@ jobs:
           gh issue create \
             --title "【要確認】日誌パイプラインが失敗しました（$(date -u -d '+9 hours' '+%Y-%m-%d')）" \
             --body "$(cat <<'BODY'
-          GitHub Actionsの日誌更新パイプラインが失敗しました。
+          GitHub Actionsの日誌更新パイプラインが失敗（またはタイムアウトでキャンセル）しました。
           日誌JSONが更新されていない可能性があります。
 
           ## 確認手順
           1. [Actions ログ](https://github.com/Benkyokurabu/student-calendar/actions) でエラー内容を確認
           2. よくある原因:
+             - **タイムアウト（60分超過）** → 月初の月シート作成が重い場合など。Actions画面から手動で再実行
              - **rcloneトークン失効** → `rclone config reconnect onedrive:` で再認証
              - **Excelファイルの破損** → OneDriveで該当ファイルを確認
              - **一時的なネットワークエラー** → Actions画面から手動で再実行
