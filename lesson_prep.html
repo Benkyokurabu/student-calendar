@@ -41,6 +41,13 @@
   }
   .card-date { font-size: 16px; font-weight: bold; }
   .card-label { font-size: 20px; font-weight: bold; }
+  .card-tools { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .btn-copy-recording {
+    font-size: 13px; padding: 5px 10px; background: #fff3cd; color: #333;
+    border: 1px solid #f0c36d; border-radius: 4px; cursor: pointer;
+  }
+  .btn-copy-recording:hover { background: #ffe8a1; }
+  .btn-copy-recording.copied { background: #2e7d32; border-color: #2e7d32; color: #fff; }
   .card-meta { font-size: 13px; opacity: 0.9; }
   .card-session {
     background: #e3f2fd; padding: 5px 14px; border-bottom: 1px solid #ccc;
@@ -123,6 +130,7 @@
   @media print {
     body { background: #fff; margin: 0; padding: 0; filter: grayscale(100%); -webkit-filter: grayscale(100%); }
     .controls { display: none !important; }
+    .btn-copy-recording { display: none !important; }
     .container { max-width: 100%; margin: 0; padding: 0; }
 
     @page {
@@ -248,6 +256,7 @@
 let scheduleData = [];
 let journalData  = {};   // { entries: { key: {...} } }
 let journalMap   = {};   // { slots: { groupKey: [key, ...] } }
+let zoomRecordingData = {}; // { entries: { key: { url: "..." } } }
 let prevMonthJournal    = null; // 前月分
 let prevMonthJournalMap = null; // 前月分のjournal_map
 
@@ -290,11 +299,12 @@ async function loadMonth(mm) {
   const [ny, nm] = nextMonth(mm);
   const nextYm = ny + "-" + String(nm).padStart(2,"0");
 
-  const [sched, nextSched, jrnl, jmap, prevJ, prevM] = await Promise.all([
+  const [sched, nextSched, jrnl, jmap, zoomUrls, prevJ, prevM] = await Promise.all([
     loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
     loadJSON("schedule_" + nextYm + ".json"),
     loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
     loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
+    loadJSON("zoom_recording_urls_" + mm + ".json").then(d => d || loadJSON("zoom_recording_urls_latest.json")),
     loadJSON("journal_" + prevYm + ".json"),
     loadJSON("journal_map_" + prevYm + ".json"),
   ]);
@@ -302,6 +312,7 @@ async function loadMonth(mm) {
   scheduleData        = (sched || []).concat(nextSched || []);
   journalData         = jrnl  || {};
   journalMap          = jmap  || {};
+  zoomRecordingData   = zoomUrls || {};
   prevMonthJournal    = prevJ;
   prevMonthJournalMap = prevM;
 }
@@ -351,6 +362,19 @@ document.getElementById("datePicker").addEventListener("change", async function(
 /* ====== エントリキー生成 ====== */
 function makeKey(ev) {
   return [ev.date, (ev.time||"").replace(/~/g,"～").trim(), ev.campus, ev.groupKey, ev.room].join("|");
+}
+
+function findRecordingForLesson(ev) {
+  const entries = (zoomRecordingData && zoomRecordingData.entries) || {};
+  const direct = entries[makeKey(ev)];
+  if (direct && direct.url) return direct;
+  const groupKeys = ev._pairGroupKeys || [];
+  for (const gk of groupKeys) {
+    for (const [key, rec] of Object.entries(entries)) {
+      if (key.startsWith(ev.date + "|") && key.includes("|" + gk + "|") && rec && rec.url) return rec;
+    }
+  }
+  return null;
 }
 
 /* ====== 前回スロットの検索 ====== */
@@ -616,6 +640,8 @@ function render() {
     const campusName = ev.campus === "minami" ? "南教室" : "本校";
     const roomStr = roomLabel(ev.room);
     const campusLabel = roomStr ? (campusName + "・" + roomStr) : campusName;
+    const recording = findRecordingForLesson(ev);
+    const recordingButton = recording ? `<button type="button" class="btn-copy-recording" data-url="${escAttr(recording.url)}">録画URLをコピー</button>` : "";
 
     html += `
     <div class="lesson-card">
@@ -624,7 +650,10 @@ function render() {
           <div class="card-date">${dateLabel}</div>
           <div class="card-meta">${ev.time || ""} ｜ ${campusLabel}</div>
         </div>
-        <div class="card-label">${shortLabel(ev)}</div>
+        <div class="card-tools">
+          <div class="card-label">${shortLabel(ev)}</div>
+          ${recordingButton}
+        </div>
       </div>
       ${sessionText.length ? '<div class="card-session">' + sessionText.join("　") + '</div>' : ''}
       <div class="card-body">
@@ -691,6 +720,37 @@ function esc(s) {
   d.textContent = String(s);
   return d.innerHTML;
 }
+
+function escAttr(s) {
+  return esc(s).replace(/"/g, "&quot;");
+}
+
+document.addEventListener("click", async function(e) {
+  const btn = e.target.closest(".btn-copy-recording");
+  if (!btn) return;
+  const url = btn.dataset.url || "";
+  if (!url) return;
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = url;
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    document.execCommand("copy");
+    ta.remove();
+  }
+  const original = btn.textContent;
+  btn.textContent = "コピー済み";
+  btn.classList.add("copied");
+  setTimeout(function() {
+    btn.textContent = original;
+    btn.classList.remove("copied");
+  }, 1600);
+});
 
 /* ====== 南教室モード判定（白黒印刷） ====== */
 (function applyCampusMode() {
