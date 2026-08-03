@@ -1,11 +1,11 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-03T22:10:06.992994+09:00",
-  "matched": 18,
-  "missing": 466,
+  "generatedAt": "2026-08-03T22:15:12.114461+09:00",
+  "matched": 21,
+  "missing": 463,
   "entries": {
     "2026-08-03|2:55～4:25|minami|minami_j1_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/CaOFFl5kSCKeWATNpsQDEae2WUQ3wldowN5lq_cKgmJFp9PURHEArH230ZiuPh8MzDRKTlvD3QkYj-cP.vjHXiCnI9JfrIZtc",
+      "url": "https://us06web.zoom.us/rec/play/c-9xhA8LxSqmD68b55wN7y3_bRz_YjkGtRv1sqkPfiF5R5DUbWZLrIUQivmfIwuzJtU2gd7E-dZFBUcc.AqkGmPJu4qnFhN5P",
       "recordingStart": "2026-08-03T14:50:47+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -23,7 +23,7 @@
       "recordingRoom": "2"
     },
     "2026-08-03|2:55～4:25|hon|hon_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/l2mjWhqHZD5SYmznpeMpT6lAD9N3Dznbw0R02ihgAOf2TLpQQa4vxDg0G6LSxTv5KSM85DjJlNWaiVYN.YspNsz9cIvvJFHQW",
+      "url": "https://us06web.zoom.us/rec/play/fKJPeyMPigUmyu2q-oAa0rCIxIuJ1vSvB--6zwC-mG1QD1J094qWC8TNG7_-l7XsTzO-H87T4hSgjdHV.WoxZfgOWP7oOV-Gf",
       "recordingStart": "2026-08-03T14:52:40+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -41,7 +41,7 @@
       "recordingRoom": "1"
     },
     "2026-08-03|6:35～8:05|minami|minami_j1_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/2h5zamPD8HXOB-y-3lIPN0papdUixIerM7p4ZiqC_DUT7BtVvpe3__Tczt7tGzHyoSV_Y8u6NcSa4UQR.PI4itozTpqWvdyEQ",
+      "url": "https://us06web.zoom.us/rec/play/HkRjXUdDFrSRSnYbIquvZKyMiYWZ1bo9LQDNmADG4UPebkx35cN9ZGJld4ebjm-BJNJHKufC0AJusOc5.E2fP3FLVfAxYnlBA",
       "recordingStart": "2026-08-03T18:33:51+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -59,7 +59,7 @@
       "recordingRoom": "1"
     },
     "2026-08-03|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/gL2YPSmCX_nzlX9S3DXQxL5pGxIh6163apuGAj4z7H1SxD4jJFabfLuD1S7qu9qdlEaB1d-jefogVxTl.1CeEbCWalUaFl5wB",
+      "url": "https://us06web.zoom.us/rec/play/_b3d6JSPg7LSTOrvgfra-twxLrZy5xCbNj6Zub6JOvmpfcaYf6eKZ-ogLMEU0HnVEN7fg4_rniRAQIKo.QzHUzRgoP34rC15v",
       "recordingStart": "2026-08-03T18:33:04+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -76,8 +76,44 @@
       "recordingCampus": "hon",
       "recordingRoom": "1"
     },
+    "2026-08-03|6:35～8:05|hon|hon_j2_S_jp|3": {
+      "url": "https://us06web.zoom.us/rec/play/U95hV2oNo37Aout8cppNa1Fh9qO8jcOeea1fpeI_RJU8YrricpUUGXybFupSBI20j6NBdrURHGR_P0E_.AV18xS9OSGoUVPYZ",
+      "recordingStart": "2026-08-03T18:03:06+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j2",
+      "class": "S",
+      "subject": "jp",
+      "label": "中２S 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j2|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
+    },
+    "2026-08-03|6:35～8:05|minami|minami_j2_S_jp|6": {
+      "url": "https://us06web.zoom.us/rec/play/U95hV2oNo37Aout8cppNa1Fh9qO8jcOeea1fpeI_RJU8YrricpUUGXybFupSBI20j6NBdrURHGR_P0E_.AV18xS9OSGoUVPYZ",
+      "recordingStart": "2026-08-03T18:03:06+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "6",
+      "grade": "j2",
+      "class": "S",
+      "subject": "jp",
+      "label": "中２S 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j2|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
+    },
     "2026-08-03|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/mZ_tJlZ3YKvuP5Ny0fJSL1Z67Gln9_Mix_hpeeO8JTaZknAF8AK5alD8b7MYtZ_RBraYksPUzh-Grs4.saZkIJrsjb4j7DVY",
+      "url": "https://us06web.zoom.us/rec/play/zXrh3deSOA3yvCNIlPdziCikd76y4yFi8FGzooiHUFeOo9_hZgDjVlCqUD83Ma0TUO-wgvlQ06hwUxY.8ngJBgp-jvqZ-dVf",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -95,7 +131,7 @@
       "recordingRoom": "4"
     },
     "2026-08-03|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/mZ_tJlZ3YKvuP5Ny0fJSL1Z67Gln9_Mix_hpeeO8JTaZknAF8AK5alD8b7MYtZ_RBraYksPUzh-Grs4.saZkIJrsjb4j7DVY",
+      "url": "https://us06web.zoom.us/rec/play/zXrh3deSOA3yvCNIlPdziCikd76y4yFi8FGzooiHUFeOo9_hZgDjVlCqUD83Ma0TUO-wgvlQ06hwUxY.8ngJBgp-jvqZ-dVf",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -113,7 +149,7 @@
       "recordingRoom": "4"
     },
     "2026-08-03|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/pLwWmb1OuZK1w53E247paMaWyBlZ7Ht2OOfO_I-HyP7la2Yc3OEb4CQe6kZeYy2rW5hu-XVLkFaQcTYW.s7MITcjEkfvTMzrB",
+      "url": "https://us06web.zoom.us/rec/play/rY2-wPlDo7LRTXi-muaaxttShDQoFuR0XxTTOOtmj5CiH0i5Dwdz2mx3UDDmT9JXHjy0Ec4fNF4NhQGx.7GGfceT5AC-LwsEk",
       "recordingStart": "2026-08-03T18:24:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -131,7 +167,7 @@
       "recordingRoom": "7"
     },
     "2026-08-03|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/pLwWmb1OuZK1w53E247paMaWyBlZ7Ht2OOfO_I-HyP7la2Yc3OEb4CQe6kZeYy2rW5hu-XVLkFaQcTYW.s7MITcjEkfvTMzrB",
+      "url": "https://us06web.zoom.us/rec/play/rY2-wPlDo7LRTXi-muaaxttShDQoFuR0XxTTOOtmj5CiH0i5Dwdz2mx3UDDmT9JXHjy0Ec4fNF4NhQGx.7GGfceT5AC-LwsEk",
       "recordingStart": "2026-08-03T18:24:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -148,8 +184,26 @@
       "recordingCampus": "hon",
       "recordingRoom": "7"
     },
+    "2026-08-03|8:25～9:55|minami|minami_j2_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/HkRjXUdDFrSRSnYbIquvZKyMiYWZ1bo9LQDNmADG4UPebkx35cN9ZGJld4ebjm-BJNJHKufC0AJusOc5.E2fP3FLVfAxYnlBA",
+      "recordingStart": "2026-08-03T18:33:51+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "8:25～9:55",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j2",
+      "class": "A",
+      "subject": "math",
+      "label": "中２A 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-08-03|8:25～9:55|j2|A|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1"
+    },
     "2026-08-03|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/ApJoRyeDLwTGf2qQVTTw1Lca9CjAwET9jkE4NwGGJ4CZ_SEAdHnoUCfWqDjlbvnkl7gunTFX3pmbQs14.2OcsRPbdpwySCTqP",
+      "url": "https://us06web.zoom.us/rec/play/u2nOhKhqlvEM_7mpGaa6LY5BE-68SRWRrXCb2udGSsM5TDTfxD6ViGQvacgdV9dVp6qmEpv8kA2pV0xT.SbGLX-sOfNHruF5e",
       "recordingStart": "2026-08-03T20:21:54+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -167,7 +221,7 @@
       "recordingRoom": "1"
     },
     "2026-08-03|8:25～9:55|hon|hon_j2_X_eng|3": {
-      "url": "https://us06web.zoom.us/rec/play/Q-jrT3f6wX4LVT0tG8Ivl1ABULwD0VkaW6QabUVqeBu2qtTfYbfEw_tVTM02e0jqYtwRcZXyj0H6T7aA.8xHcvdhKrx5mEVB5",
+      "url": "https://us06web.zoom.us/rec/play/NSCB5BtweybiZb30NFI93MRscR0B5zKL8dVU-95QK8eo7fNvfqr1uPMsTfqYNdLK2rzxOuVWvP8WKCpS.GGYoLJ0dfOw8_6u3",
       "recordingStart": "2026-08-03T20:07:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -185,7 +239,7 @@
       "recordingRoom": "3"
     },
     "2026-08-03|8:25～9:55|minami|minami_j2_X_eng|6": {
-      "url": "https://us06web.zoom.us/rec/play/Q-jrT3f6wX4LVT0tG8Ivl1ABULwD0VkaW6QabUVqeBu2qtTfYbfEw_tVTM02e0jqYtwRcZXyj0H6T7aA.8xHcvdhKrx5mEVB5",
+      "url": "https://us06web.zoom.us/rec/play/NSCB5BtweybiZb30NFI93MRscR0B5zKL8dVU-95QK8eo7fNvfqr1uPMsTfqYNdLK2rzxOuVWvP8WKCpS.GGYoLJ0dfOw8_6u3",
       "recordingStart": "2026-08-03T20:07:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -203,7 +257,7 @@
       "recordingRoom": "3"
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/x58UvO8gfEcli2s7jy_hIaEXn7AL8TDYDPVGkmuXGbT4TrdeXSqwR_xx3SBlv0PeA7PQBwbAoLtBjNAT.1uRWQav4VX2vmqqm",
+      "url": "https://us06web.zoom.us/rec/play/qKljUFY2NoEgCJ0_P7PCsoeVVut6QzgroUhYBH4tIRgSiWcNU4a8ZysuZ-C8vabUiVF6N49AFluVmLna.dAbFBn6SLnclszpN",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -221,7 +275,7 @@
       "recordingRoom": "7"
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/x58UvO8gfEcli2s7jy_hIaEXn7AL8TDYDPVGkmuXGbT4TrdeXSqwR_xx3SBlv0PeA7PQBwbAoLtBjNAT.1uRWQav4VX2vmqqm",
+      "url": "https://us06web.zoom.us/rec/play/qKljUFY2NoEgCJ0_P7PCsoeVVut6QzgroUhYBH4tIRgSiWcNU4a8ZysuZ-C8vabUiVF6N49AFluVmLna.dAbFBn6SLnclszpN",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -239,7 +293,7 @@
       "recordingRoom": "7"
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/share/7DCtYnlLlZ1vENVQfheXQmO12FV0oMw2Zvn_sfnHGZ2QwNSgAuTZAXMerZSTKMYx.NKFMvHoZTylvo-5D?pwd=DH5QCnDW9drlYpGYRwAAIAAAAMdUDk-uAjAyF-SChvTtdG1a2IDQc7mVfoGNxiCm9MSMxuHmlUu5_kNmzRozlhY-PzAwMDAwNA",
+      "url": "https://us06web.zoom.us/rec/play/mynZlh6UxF5b85xpggmofOqwR4i50i6PJqWmyYkdsYp4YqsEz7qi8rEq_GHsSuRSmJfAIqDmVMUaLuRc.Hmgz6ksxLwmEyo9r",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -257,7 +311,7 @@
       "recordingRoom": "4"
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "url": "https://us06web.zoom.us/rec/share/7DCtYnlLlZ1vENVQfheXQmO12FV0oMw2Zvn_sfnHGZ2QwNSgAuTZAXMerZSTKMYx.NKFMvHoZTylvo-5D?pwd=DH5QCnDW9drlYpGYRwAAIAAAAMdUDk-uAjAyF-SChvTtdG1a2IDQc7mVfoGNxiCm9MSMxuHmlUu5_kNmzRozlhY-PzAwMDAwNA",
+      "url": "https://us06web.zoom.us/rec/play/mynZlh6UxF5b85xpggmofOqwR4i50i6PJqWmyYkdsYp4YqsEz7qi8rEq_GHsSuRSmJfAIqDmVMUaLuRc.Hmgz6ksxLwmEyo9r",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -275,7 +329,7 @@
       "recordingRoom": "4"
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e4_X_arith|6": {
-      "url": "https://us06web.zoom.us/rec/play/25uRMqNkkspCEzR6tW38q_6mo4eA4sCNo-lboY6-M2tp9KhxScyKwB2xUuR6xE3DInkSvVhGOtanN60A.dPSSLXHW0w4w9see",
+      "url": "https://us06web.zoom.us/rec/play/lCmUIrcDuFJsy1v2U3OPnFbDFok7LGZAhvVD2neR2CnD_Fd7A9jBvWn8wvtnE9aU6rDmbQntm03zhkAG.rc8GXgH5rJ-pp0OJ",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -293,7 +347,7 @@
       "recordingRoom": "6"
     },
     "2026-08-03|４:４５～６:１５|minami|minami_e4_X_arith|4": {
-      "url": "https://us06web.zoom.us/rec/play/25uRMqNkkspCEzR6tW38q_6mo4eA4sCNo-lboY6-M2tp9KhxScyKwB2xUuR6xE3DInkSvVhGOtanN60A.dPSSLXHW0w4w9see",
+      "url": "https://us06web.zoom.us/rec/play/lCmUIrcDuFJsy1v2U3OPnFbDFok7LGZAhvVD2neR2CnD_Fd7A9jBvWn8wvtnE9aU6rDmbQntm03zhkAG.rc8GXgH5rJ-pp0OJ",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -311,7 +365,7 @@
       "recordingRoom": "6"
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e6_A_jp|1": {
-      "url": "https://us06web.zoom.us/rec/play/tQCXV2LtsoxN57AbcSyypw3DqWASUcDwacRcQ7NUUNYY5auoLNtsvCQVXSJfEnFnbtxlad8_t173CAJs.mibOQJabOdDhXt8V",
+      "url": "https://us06web.zoom.us/rec/play/Nv8gm3xGxkRkBiGxTbkeKptq90pWbuQ6KuU0KLiKfEcN7NfUPu-DGiu8DfjPnk8OF8Z4G1jmXAVrrpbW.shsZQM-5B2a88n_K",
       "recordingStart": "2026-08-03T16:40:09+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
