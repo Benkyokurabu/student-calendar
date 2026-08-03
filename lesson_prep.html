@@ -374,6 +374,14 @@ function findRecordingForLesson(ev) {
       if (key.startsWith(ev.date + "|") && key.includes("|" + gk + "|") && rec && rec.url) return rec;
     }
   }
+  // Online lessons can be scheduled for both campuses while the recording is
+  // created only at the campus that actually hosted the class.
+  const lessonKey = pairKey(ev);
+  for (const rec of Object.values(entries)) {
+    if (!rec || !rec.url) continue;
+    const recKey = rec.onlineLessonKey || [rec.date, rec.time, rec.grade, rec.class, rec.subject].join("|");
+    if (recKey === lessonKey) return rec;
+  }
   return null;
 }
 
