@@ -122,6 +122,14 @@ def make_entry_key(ev: dict) -> str:
 SKIP_DIRS = {"_backup", "退避", "__pycache__"}
 
 
+def is_excluded_journal_path(path: Path, root: Path) -> bool:
+    parts = path.relative_to(root).parts
+    return any(
+        part in SKIP_DIRS or part.startswith("_backup") or part.startswith("退避")
+        for part in parts[:-1]
+    )
+
+
 def find_workbook(journal_dir: Path, filename: str) -> Optional[Path]:
     p = journal_dir / filename
     if p.exists():
@@ -129,7 +137,7 @@ def find_workbook(journal_dir: Path, filename: str) -> Optional[Path]:
     for candidate in journal_dir.rglob(filename):
         if candidate.is_file():
             # _backup / 退避 など除外
-            if SKIP_DIRS & {part for part in candidate.relative_to(journal_dir).parts}:
+            if is_excluded_journal_path(candidate, journal_dir):
                 continue
             return candidate
     return None
