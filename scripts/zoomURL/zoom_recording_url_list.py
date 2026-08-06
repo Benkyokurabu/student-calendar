@@ -53,11 +53,12 @@ def recording_distance_seconds(ev: dict, rec: z.RecordingCandidate) -> float:
 
 def repo_dir() -> Optional[Path]:
     candidates = [
+        SYSTEM_DIR.parent,
         SYSTEM_DIR.parent / "生徒スケジュール表",
         Path.home() / "OneDrive" / "デスクトップ" / "生徒スケジュール表",
     ]
     for p in candidates:
-        if p.exists():
+        if (p / ".git").exists():
             return p
     return None
 
@@ -165,5 +166,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
-

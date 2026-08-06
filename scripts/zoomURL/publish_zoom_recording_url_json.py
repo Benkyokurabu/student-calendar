@@ -9,6 +9,7 @@ JSON files used by lesson_prep.html and pushes those files to GitHub.
 from __future__ import annotations
 
 import argparse
+import atexit
 import json
 import shutil
 import subprocess
@@ -19,6 +20,11 @@ import zoom_recording_url_list as url_list
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+SYSTEM_DIR = SCRIPT_DIR.parent
+if str(SYSTEM_DIR) not in sys.path:
+    sys.path.insert(0, str(SYSTEM_DIR))
+
+from publish_lock import PublishLock
 
 def comparable_payload(payload: dict) -> dict:
     data = dict(payload)
@@ -56,7 +62,15 @@ def run(args: list[str], cwd: Path, *, check: bool = True) -> subprocess.Complet
 def main() -> int:
     ap = argparse.ArgumentParser(description="Publish Zoom recording URL JSON for lesson_prep.html.")
     ap.add_argument("--month", help="Target month, e.g. 2026-08. Defaults to latest schedule month.")
+    ap.add_argument("--dry-run", action="store_true", help="Fetch Zoom data and report whether JSON would change, but do not write, commit, or push.")
     args = ap.parse_args()
+
+    publish_lock = PublishLock(
+        SYSTEM_DIR / "logs" / "student_calendar_publish.lock",
+        purpose="Zoom録画URL公開",
+    )
+    publish_lock.acquire()
+    atexit.register(publish_lock.release)
 
     month = args.month or url_list.z.determine_latest_schedule_month()
     print(f"[publish] target month: {month}")
@@ -73,6 +87,10 @@ def main() -> int:
     existing = load_existing_payload(repo / out.name) or load_existing_payload(out)
     if existing and comparable_payload(existing) == comparable_payload(payload):
         print(f"[publish] no recording URL changes matched={payload['matched']} missing={payload['missing']}")
+        return 0
+
+    if args.dry_run:
+        print(f"[dry-run] recording URL JSON would change matched={payload['matched']} missing={payload['missing']}")
         return 0
 
     text = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -107,8 +125,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
-
-
-
-
