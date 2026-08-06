@@ -304,6 +304,7 @@ async function forceRefresh(button) {
       teacherSelect.value = selectedTeacher;
     }
     render();
+    await refreshZoomRecordingsIfChanged();
     button.textContent = "更新しました";
   } catch (error) {
     console.error(error);
@@ -325,6 +326,55 @@ async function init() {
   buildTeacherList();
 }
 
+function mergeRecordingDataForMonth(mm, monthly, latest) {
+  if (!monthly) return latest || {};
+  if (!latest) return monthly || {};
+  const latestMonth = latest.month || inferMonthFromRecordingEntries(latest);
+  if (latestMonth !== mm) return monthly;
+  const monthlyTime = Date.parse(monthly.generatedAt || "") || 0;
+  const latestTime = Date.parse(latest.generatedAt || "") || 0;
+  const older = latestTime > monthlyTime ? monthly : latest;
+  const newer = latestTime > monthlyTime ? latest : monthly;
+  return {
+    ...older,
+    ...newer,
+    entries: {
+      ...((older && older.entries) || {}),
+      ...((newer && newer.entries) || {}),
+    }
+  };
+}
+
+function inferMonthFromRecordingEntries(data) {
+  const entries = (data && data.entries) || {};
+  for (const rec of Object.values(entries)) {
+    const date = rec && rec.date;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(date || ""))) return String(date).slice(0, 7);
+  }
+  return "";
+}
+
+async function loadZoomRecordings(mm) {
+  const [monthly, latest] = await Promise.all([
+    loadJSON("zoom_recording_urls_" + mm + ".json"),
+    loadJSON("zoom_recording_urls_latest.json"),
+  ]);
+  return mergeRecordingDataForMonth(mm, monthly, latest);
+}
+
+async function refreshZoomRecordingsIfChanged() {
+  const datePicker = document.getElementById("datePicker");
+  if (!datePicker || !datePicker.value) return false;
+  const mm = datePicker.value.slice(0, 7);
+  const nextData = await loadZoomRecordings(mm);
+  const before = JSON.stringify((zoomRecordingData && zoomRecordingData.entries) || {});
+  const after = JSON.stringify((nextData && nextData.entries) || {});
+  if (before === after) return false;
+  zoomRecordingData = nextData || {};
+  render();
+  return true;
+}
+
 async function loadMonth(mm) {
   const [py, pm] = prevMonth(mm);
   const prevYm = py + "-" + String(pm).padStart(2,"0");
@@ -336,7 +386,7 @@ async function loadMonth(mm) {
     loadJSON("schedule_" + nextYm + ".json"),
     loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
     loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
-    loadJSON("zoom_recording_urls_" + mm + ".json").then(d => d || loadJSON("zoom_recording_urls_latest.json")),
+    loadZoomRecordings(mm),
     loadJSON("journal_" + prevYm + ".json"),
     loadJSON("journal_map_" + prevYm + ".json"),
   ]);
@@ -816,6 +866,7 @@ document.addEventListener("click", async function(e) {
 
 /* ====== 起動 ====== */
 init();
+setInterval(refreshZoomRecordingsIfChanged, 30000);
 </script>
 </body>
 </html>
