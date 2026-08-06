@@ -1,3 +1,5 @@
 {
-  "entries": {}
+  "使い方": "全月共通の緊急差し替え用です。通常は月別の zoom_recording_overrides_YYYY-MM.json を使います。overridesに { date, time, campus, grade, class, subject, room, url } を追加します。",
+  "overrides": [],
+  "entries": []
 }

@@ -708,13 +708,27 @@
 
   function normalizeRecordingEntries(data) {
     if (!data) return {};
-    const source = data.entries && typeof data.entries === "object" ? data.entries : data;
+    const source = Array.isArray(data)
+      ? data
+      : (Array.isArray(data.overrides)
+        ? data.overrides
+        : (data.entries && typeof data.entries === "object" ? data.entries : data));
     const out = {};
+    if (Array.isArray(source)) {
+      source.forEach((value, index) => {
+        if (typeof value === "string") {
+          out[`manual-${index}`] = { url: value };
+        } else if (value && typeof value === "object") {
+          out[value.key || value.eventKey || value.onlineLessonKey || `manual-${index}`] = value;
+        }
+      });
+      return out;
+    }
     for (const [key, value] of Object.entries(source || {})) {
       if (typeof value === "string") {
         out[key] = { url: value };
       } else if (value && typeof value === "object") {
-        out[key] = value;
+        out[key] = { ...value, key: value.key || value.eventKey || key };
       }
     }
     return out;
@@ -729,8 +743,8 @@
       fetchJsonAny([`zoom_recording_overrides_${ym}.json`, `recording_overrides_${ym}.json`]),
     ]);
     zoomRecordingEntries = {
-      ...normalizeRecordingEntries(monthly),
       ...normalizeRecordingEntries(latest),
+      ...normalizeRecordingEntries(monthly),
     };
     recordingOverrides = {
       ...normalizeRecordingEntries(overrideLatest),
@@ -769,8 +783,18 @@
     const lessonKey = pairKeyFromLesson(it);
     for (const [key, rec] of Object.entries(source || {})) {
       if (rec && typeof rec === "object") {
+        const recKey = String(rec.key || rec.eventKey || key || "");
+        if (recKey === fullKey || recKey === lessonKey) return rec;
         const recLessonKey = rec.onlineLessonKey || [rec.date, rec.time, rec.grade, rec.class, rec.subject].join("|");
         if (recLessonKey === lessonKey) return rec;
+        const recGroupKey = String(rec.groupKey || "").trim();
+        if (recGroupKey && recGroupKey === String(it.groupKey || "").trim()
+            && String(rec.date || "").trim() === String(it.date || "").trim()
+            && String(rec.time || "").replace(/~/g, "～").trim() === String(it.time || "").replace(/~/g, "～").trim()) {
+          const recRoom = String(rec.room || "").trim();
+          const lessonRoom = String(it.room || "").trim();
+          if (!recRoom || recRoom === lessonRoom) return rec;
+        }
       }
       if (key.startsWith(`${it.date}|`) && key.includes(`|${it.groupKey}|`)) return rec;
     }

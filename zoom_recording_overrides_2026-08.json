@@ -1,4 +1,6 @@
 {
   "month": "2026-08",
-  "entries": {}
+  "使い方": "overridesに { date, time, campus, grade, class, subject, room, url } を追加すると、自動取得URLや授業日誌ExcelのURLより優先されます。urlを空文字にすると、その授業の録画リンクを非表示にできます。campusは hon/minami、gradeは e4/e5/e6/j1/j2/j3、subjectは arith/eng/jp/math/sci/soc です。",
+  "overrides": [],
+  "entries": []
 }
