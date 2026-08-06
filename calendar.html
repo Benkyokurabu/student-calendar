@@ -500,6 +500,9 @@
   let allLessons = [];
   let journalEntries = {};
   let journalLoadedYM = null;
+  let zoomRecordingEntries = {};
+  let recordingOverrides = {};
+  let recordingsLoadedYM = null;
 
   gradeSelect.addEventListener("change", () => {
     state.grade = gradeSelect.value;
@@ -703,6 +706,39 @@
     journalLoadedYM = ym;
   }
 
+  function normalizeRecordingEntries(data) {
+    if (!data) return {};
+    const source = data.entries && typeof data.entries === "object" ? data.entries : data;
+    const out = {};
+    for (const [key, value] of Object.entries(source || {})) {
+      if (typeof value === "string") {
+        out[key] = { url: value };
+      } else if (value && typeof value === "object") {
+        out[key] = value;
+      }
+    }
+    return out;
+  }
+
+  async function loadRecordingsSafe(ym) {
+    if (recordingsLoadedYM === ym) return;
+    const [monthly, latest, overrideLatest, overrideMonthly] = await Promise.all([
+      fetchJsonAny([`zoom_recording_urls_${ym}.json`]),
+      fetchJsonAny(["zoom_recording_urls_latest.json"]),
+      fetchJsonAny(["zoom_recording_overrides_latest.json", "recording_overrides_latest.json"]),
+      fetchJsonAny([`zoom_recording_overrides_${ym}.json`, `recording_overrides_${ym}.json`]),
+    ]);
+    zoomRecordingEntries = {
+      ...normalizeRecordingEntries(monthly),
+      ...normalizeRecordingEntries(latest),
+    };
+    recordingOverrides = {
+      ...normalizeRecordingEntries(overrideLatest),
+      ...normalizeRecordingEntries(overrideMonthly),
+    };
+    recordingsLoadedYM = ym;
+  }
+
   function buildEventKeyFromLesson(it) {
     const date = String(it?.date ?? "").trim();
     const time = String(it?.time ?? "").replace(/~/g, "\uff5e").trim();
@@ -710,6 +746,43 @@
     const gk = String(it?.groupKey ?? "").trim();
     const room = String(it?.room ?? "").trim();
     return `${date}|${time}|${campus}|${gk}|${room}`;
+  }
+
+  function pairKeyFromLesson(it) {
+    const date = String(it?.date ?? "").trim();
+    const time = String(it?.time ?? "").replace(/~/g, "\uff5e").trim();
+    const grade = String(it?.grade ?? "").trim();
+    const klass = String(it?.class ?? "").trim();
+    const subject = String(it?.subject ?? "").trim();
+    return `${date}|${time}|${grade}|${klass}|${subject}`;
+  }
+
+  function recordingUrlFromRecord(record) {
+    if (typeof record === "string") return record.trim();
+    if (!record || typeof record !== "object") return "";
+    return String(record.url || record.recordingUrl || "").trim();
+  }
+
+  function findRecordingRecordForLesson(it, source) {
+    const fullKey = buildEventKeyFromLesson(it);
+    if (Object.prototype.hasOwnProperty.call(source, fullKey)) return source[fullKey];
+    const lessonKey = pairKeyFromLesson(it);
+    for (const [key, rec] of Object.entries(source || {})) {
+      if (rec && typeof rec === "object") {
+        const recLessonKey = rec.onlineLessonKey || [rec.date, rec.time, rec.grade, rec.class, rec.subject].join("|");
+        if (recLessonKey === lessonKey) return rec;
+      }
+      if (key.startsWith(`${it.date}|`) && key.includes(`|${it.groupKey}|`)) return rec;
+    }
+    return null;
+  }
+
+  function findRecordingUrlForLesson(it, entry) {
+    const override = findRecordingRecordForLesson(it, recordingOverrides);
+    if (override !== null) return recordingUrlFromRecord(override);
+    const journalUrl = String(entry?.recordingUrl || "").trim();
+    if (journalUrl) return journalUrl;
+    return recordingUrlFromRecord(findRecordingRecordForLesson(it, zoomRecordingEntries));
   }
 
   function formatMultiline(text) {
@@ -727,7 +800,7 @@
     const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
     const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">－</span>`;
 
-    const url = String(entry.recordingUrl || "").trim();
+    const url = findRecordingUrlForLesson(it, entry);
     const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">－</span>`;
 
     return `
@@ -765,6 +838,7 @@
         allLessons = todayNorm;
         hintArea.textContent = "";
         await loadJournalSafe(currentYM);
+        await loadRecordingsSafe(currentYM);
         rebuildUI();
         renderAll();
         return;
@@ -781,6 +855,7 @@
       allLessons = normalized;
       hintArea.textContent = "";
       await loadJournalSafe(currentYM);
+      await loadRecordingsSafe(currentYM);
       rebuildUI();
       renderAll();
     } catch (_) {
@@ -800,6 +875,7 @@
       allLessons = normalizeLessons(data);
       hintArea.textContent = "";
       await loadJournalSafe(ym);
+      await loadRecordingsSafe(ym);
       rebuildUI();
       renderAll();
     } catch (e) {
