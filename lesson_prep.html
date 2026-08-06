@@ -647,9 +647,17 @@ function render() {
     }
 
     // セッション情報
-    const sessionNum = todayEntry.sessionNumber || "";
+    const coreSubject = /_(math|eng|jp|arith)$/.test(ev.groupKey || "");
+    const augustTestOffset = coreSubject && (ev.date || "").startsWith("2026-08") ? 1 : 0;
+    function addOffsetIfNumber(value, offset) {
+      const s = String(value || "").trim();
+      if (!s) return "";
+      const n = Number(s);
+      return Number.isFinite(n) ? String(n + offset) : s;
+    }
+    const sessionNum = addOffsetIfNumber(todayEntry.sessionNumber, augustTestOffset);
     const monthNum   = todayEntry.monthNum || "";
-    const weekNum    = todayEntry.weekNum || "";
+    const weekNum    = addOffsetIfNumber(todayEntry.weekNum, augustTestOffset);
     const sessionText = [];
     if (sessionNum) sessionText.push("第" + sessionNum + "回");
     if (monthNum && weekNum) sessionText.push(monthNum + "月" + weekNum + "週");
