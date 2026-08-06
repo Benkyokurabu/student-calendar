@@ -539,6 +539,8 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
         if si >= total_slots:
             break
         col_left = 2 + 10 * si
+        if target_month:
+            safe_write(ws_out, 3, col_left + 3, target_month)
         is_special = slot["_special"]
 
         if is_special:
@@ -589,12 +591,13 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
         #     翌月先頭の A/B(7/1) と回数・週がピタリ揃う（番号飛びが無くなる）。
         if carry_here and target_month:
             next_month = target_month % 12 + 1
-            safe_write(ws_out, 3, col_left + 3, next_month)  # E3相当（月マーカー）
-            safe_write(ws_out, 3, col_left + 5, 1)            # G3相当（月内週カウンタ）
-
+            safe_write(ws_out, 3, col_left + 3, next_month)
+            safe_write(ws_out, 3, col_left + 5, 1)
     # 残りの空スロットをクリア＋グレー塗り
     for si in range(len(merged_slots), total_slots):
         col_left = 2 + 10 * si
+        if target_month:
+            safe_write(ws_out, 3, col_left + 3, target_month)
         for k in order:
             top = base_top + ROW_STEP * idx[k]
             clear_one_block(ws_out, top, col_left)
@@ -609,6 +612,8 @@ def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_bl
 
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
+        if target_month:
+            safe_write(ws_out, 3, col_left + 3, target_month)
         clear_one_block(ws_out, base_top, col_left)
 
         if slot < n:
@@ -926,9 +931,15 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
 
     if wb is not None and year is not None:
         new_f2 = compute_annual_start(wb, year, month)
+        # 2026年8月の第1回は別日程の実力テストとして年間回数に含める。
+        if year == 2026 and month == 8 and subject_name in {"英語", "数学", "国語", "算数"}:
+            new_f2 += 1
         ws["F2"].value = new_f2
 
-    ws["G3"].value = 1
+    # 2026年8月の第1週は別日程の「実力テスト」として扱うため、
+    # 英語・数学・国語・算数の通常授業は第2週から開始する。
+    start_week = 2 if year == 2026 and month == 8 and subject_name in {"英語", "数学", "国語", "算数"} else 1
+    ws["G3"].value = start_week
 
     f2 = ws["F2"].value
     g3 = ws["G3"].value
