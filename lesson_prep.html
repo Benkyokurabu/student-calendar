@@ -630,16 +630,19 @@ function render() {
   for (const ev of myLessons) {
     // ペアの場合、両方のキーからセッション情報を探す
     const todayEntry = findTodayEntry(ev, entries);
-    // 前回データ: JSONに埋め込まれたprevEntryを優先、なければ従来のfindPrevEntryにフォールバック
+    // 前回データ: 埋め込みprevEntryとjournal_map検索のうち、日付が新しい方を使う
+    const prevResult = findPrevEntry(ev);
+    const embeddedPrev = todayEntry.prevEntry || null;
+    const embeddedDate = embeddedPrev ? (embeddedPrev.date || "") : "";
+    const mappedDate = prevResult ? (prevResult.date || "") : "";
     let prev, prevDateLabel, prevTime;
-    if (todayEntry.prevEntry) {
-      prev = todayEntry.prevEntry;
-      prevDateLabel = prev.date ? formatDate(prev.date) : "";
+    if (embeddedPrev && (!mappedDate || embeddedDate >= mappedDate)) {
+      prev = embeddedPrev;
+      prevDateLabel = embeddedDate ? formatDate(embeddedDate) : "";
       prevTime = "";
     } else {
-      const prevResult = findPrevEntry(ev);
       prev = prevResult ? prevResult.entry : null;
-      prevDateLabel = prevResult ? formatDate(prevResult.date) : "";
+      prevDateLabel = mappedDate ? formatDate(mappedDate) : "";
       prevTime = prevResult ? prevResult.time : "";
     }
 
