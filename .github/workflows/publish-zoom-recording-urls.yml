@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Run mode. Keep dry-run until Windows and cloud results are confirmed.'
+        description: 'Run mode. Scheduled runs publish automatically.'
         required: true
         default: 'dry-run'
         type: choice
@@ -90,8 +90,8 @@ jobs:
             args+=(--month "$DISPATCH_MONTH")
           fi
 
-          # Scheduled runs are intentionally dry-run until cloud and Windows results match.
-          if [ "${GITHUB_EVENT_NAME}" != "workflow_dispatch" ] || [ "$DISPATCH_MODE" != "publish" ]; then
+          # Scheduled runs publish automatically. Manual runs stay dry-run unless publish is selected.
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ] && [ "$DISPATCH_MODE" != "publish" ]; then
             args+=(--dry-run)
           fi
 
@@ -110,3 +110,4 @@ jobs:
           gh issue create \
             --title "【要確認】Zoom録画URLクラウド公開失敗（$(date -u -d '+9 hours' '+%Y-%m-%d %H:%M')）" \
             --body "GitHub ActionsでZoom録画URL JSONの生成または公開に失敗しました。Actionsログを確認してください。現行Windowsタスクは止めていないため、PC側の自動公開は継続しています。"
+
