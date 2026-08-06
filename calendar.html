@@ -647,9 +647,12 @@
   }
 
   // 日誌JSON用（配列でなくオブジェクト）
+  const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/main/";
+
   async function fetchJsonAny(candidates) {
     for (const base of candidates) {
-      const url = `${base}?ts=${Date.now()}`;
+      const separator = base.includes("?") ? "&" : "?";
+      const url = `${base}${separator}ts=${Date.now()}`;
       try {
         const res = await fetch(url, { cache: "no-store" });
         if (!res.ok) continue;
@@ -657,6 +660,23 @@
       } catch (_) {}
     }
     return null;
+  }
+
+  function rawJsonUrl(fileName) {
+    return RAW_JSON_BASE + fileName;
+  }
+
+  function newestJson(items) {
+    return items.filter(Boolean).sort((a, b) => {
+      const at = Date.parse(a.generatedAt || "") || 0;
+      const bt = Date.parse(b.generatedAt || "") || 0;
+      return bt - at;
+    })[0] || null;
+  }
+
+  async function fetchNewestJsonAny(candidates) {
+    const results = await Promise.all(candidates.map(item => fetchJsonAny([item])));
+    return newestJson(results);
   }
 
   async function fetchLatestJson() {
@@ -736,11 +756,17 @@
 
   async function loadRecordingsSafe(ym) {
     if (recordingsLoadedYM === ym) return;
+    const monthlyFile = `zoom_recording_urls_${ym}.json`;
+    const latestFile = "zoom_recording_urls_latest.json";
+    const overrideLatestFile = "zoom_recording_overrides_latest.json";
+    const legacyOverrideLatestFile = "recording_overrides_latest.json";
+    const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
+    const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
     const [monthly, latest, overrideLatest, overrideMonthly] = await Promise.all([
-      fetchJsonAny([`zoom_recording_urls_${ym}.json`]),
-      fetchJsonAny(["zoom_recording_urls_latest.json"]),
-      fetchJsonAny(["zoom_recording_overrides_latest.json", "recording_overrides_latest.json"]),
-      fetchJsonAny([`zoom_recording_overrides_${ym}.json`, `recording_overrides_${ym}.json`]),
+      fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
+      fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),
+      fetchNewestJsonAny([overrideLatestFile, rawJsonUrl(overrideLatestFile), legacyOverrideLatestFile, rawJsonUrl(legacyOverrideLatestFile)]),
+      fetchNewestJsonAny([overrideMonthlyFile, rawJsonUrl(overrideMonthlyFile), legacyOverrideMonthlyFile, rawJsonUrl(legacyOverrideMonthlyFile)]),
     ]);
     zoomRecordingEntries = {
       ...normalizeRecordingEntries(latest),
@@ -1340,3 +1366,4 @@
 </script>
 </body>
 </html>
+

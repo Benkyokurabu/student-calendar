@@ -280,12 +280,32 @@ function roomLabel(room) {
 }
 
 /* ====== JSON読み込み ====== */
+const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/main/";
+
 async function loadJSON(url) {
   try {
-    const r = await fetch(url + "?_=" + Date.now(), { cache: "no-store" });
+    const separator = url.includes("?") ? "&" : "?";
+    const r = await fetch(url + separator + "_=" + Date.now(), { cache: "no-store" });
     if (!r.ok) return null;
     return await r.json();
   } catch { return null; }
+}
+
+function rawJsonUrl(fileName) {
+  return RAW_JSON_BASE + fileName;
+}
+
+function newestJson(items) {
+  return items.filter(Boolean).sort((a, b) => {
+    const at = Date.parse(a.generatedAt || "") || 0;
+    const bt = Date.parse(b.generatedAt || "") || 0;
+    return bt - at;
+  })[0] || null;
+}
+
+async function loadNewestJSON(candidates) {
+  const results = await Promise.all(candidates.map(loadJSON));
+  return newestJson(results);
 }
 
 async function forceRefresh(button) {
@@ -355,9 +375,11 @@ function inferMonthFromRecordingEntries(data) {
 }
 
 async function loadZoomRecordings(mm) {
+  const monthlyFile = "zoom_recording_urls_" + mm + ".json";
+  const latestFile = "zoom_recording_urls_latest.json";
   const [monthly, latest] = await Promise.all([
-    loadJSON("zoom_recording_urls_" + mm + ".json"),
-    loadJSON("zoom_recording_urls_latest.json"),
+    loadNewestJSON([monthlyFile, rawJsonUrl(monthlyFile)]),
+    loadNewestJSON([latestFile, rawJsonUrl(latestFile)]),
   ]);
   return mergeRecordingDataForMonth(mm, monthly, latest);
 }
@@ -870,3 +892,4 @@ setInterval(refreshZoomRecordingsIfChanged, 30000);
 </script>
 </body>
 </html>
+
