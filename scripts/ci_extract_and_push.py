@@ -14,6 +14,7 @@ import os
 from datetime import date
 from pathlib import Path
 import shutil
+from copy import copy
 
 
 def warn_about_empty_past_content(repo_dir: Path, month: str):
@@ -102,6 +103,106 @@ def find_workbook_in_journal(journal_dir: Path, filename: str):
                 continue
             return candidate
     return None
+
+
+def _validation_signature(ws):
+    return sorted(
+        (
+            str(dv.sqref),
+            str(dv.type or ""),
+            str(dv.formula1 or ""),
+            str(dv.formula2 or ""),
+            bool(dv.allow_blank),
+            bool(dv.showErrorMessage),
+            bool(dv.showInputMessage),
+        )
+        for dv in (ws.data_validations.dataValidation or [])
+    )
+
+
+def _single_validation_signature(dv):
+    return (
+        str(dv.sqref),
+        str(dv.type or ""),
+        str(dv.formula1 or ""),
+        str(dv.formula2 or ""),
+        bool(dv.allow_blank),
+        bool(dv.showErrorMessage),
+        bool(dv.showInputMessage),
+    )
+
+
+def _sync_canonical_validations(dst, src):
+    """Restore canonical rules by range while preserving unrelated custom rules."""
+    changed = False
+    for src_dv in src.data_validations.dataValidation:
+        src_ref = str(src_dv.sqref)
+        existing = [dv for dv in dst.data_validations.dataValidation if str(dv.sqref) == src_ref]
+        if len(existing) == 1 and _single_validation_signature(existing[0]) == _single_validation_signature(src_dv):
+            continue
+        dst.data_validations.dataValidation = [
+            dv for dv in dst.data_validations.dataValidation if str(dv.sqref) != src_ref
+        ]
+        dst.add_data_validation(copy(src_dv))
+        changed = True
+    return changed
+
+
+def repair_hidden_template_validations(script_dir: Path, journal_dir: Path):
+    """Restore hidden-sheet dropdowns from the canonical template workbooks."""
+    import openpyxl
+
+    template_specs = [
+        ("__TEMPLATE_MAIN__", script_dir / "TEMPLATE_MAIN.xlsx"),
+        ("__TEMPLATE_X__", script_dir / "TEMPLATE_X.xlsx"),
+    ]
+    canonical = {}
+    for hidden_name, template_path in template_specs:
+        if not template_path.exists():
+            raise FileNotFoundError(f"正規テンプレートがありません: {template_path}")
+        template_wb = openpyxl.load_workbook(template_path)
+        canonical[hidden_name] = (template_wb, template_wb[template_wb.sheetnames[0]])
+
+    repaired_files = 0
+    try:
+        for xlsx_path in sorted(journal_dir.rglob("*.xlsx")):
+            if SKIP_DIRS & set(xlsx_path.relative_to(journal_dir).parts):
+                continue
+            if xlsx_path.name.startswith("~$"):
+                continue
+            try:
+                wb = openpyxl.load_workbook(xlsx_path)
+            except Exception as exc:
+                print(f"  [WARN] テンプレート入力規則を確認できません: {xlsx_path.name}: {exc}")
+                continue
+
+            changed = False
+            repaired_names = []
+            for hidden_name, _template_path in template_specs:
+                if hidden_name not in wb.sheetnames:
+                    continue
+                dst = wb[hidden_name]
+                src = canonical[hidden_name][1]
+                if _validation_signature(dst) != _validation_signature(src):
+                    if _sync_canonical_validations(dst, src):
+                        changed = True
+                        repaired_names.append(hidden_name)
+
+            if changed:
+                tmp_path = xlsx_path.with_name(xlsx_path.stem + ".template-repair.tmp.xlsx")
+                wb.save(tmp_path)
+                wb.close()
+                tmp_path.replace(xlsx_path)
+                repaired_files += 1
+                print(f"  [REPAIR] {xlsx_path.name}: {', '.join(repaired_names)} の入力規則を復元")
+            else:
+                wb.close()
+    finally:
+        for template_wb, _src in canonical.values():
+            template_wb.close()
+
+    print(f"  → 入力規則を復元したファイル: {repaired_files} 件")
+    return repaired_files
 
 
 def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
@@ -304,6 +405,11 @@ def main():
             print(f"  → {dst.name}")
     else:
         print("[SKIP] build_journal_map.py が見つかりません。")
+    print()
+
+    # --- 1.45. 非表示テンプレートの入力規則を正規版から復元 ---
+    print("[1.45] 非表示テンプレートの入力規則を検証・復元中...")
+    repair_hidden_template_validations(script_dir, journal_dir)
     print()
 
     # --- 1.5. 月シート作成（必要な場合） ---
