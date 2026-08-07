@@ -16,6 +16,38 @@ from pathlib import Path
 import shutil
 
 
+def warn_about_empty_past_content(repo_dir: Path, month: str):
+    """Log suspiciously empty entries before the old JSON merge masks them."""
+    journal_path = repo_dir / f"journal_{month}.json"
+    if not journal_path.exists():
+        return
+    try:
+        data = json.loads(journal_path.read_text(encoding="utf-8"))
+        today = date.today()
+        empty = []
+        for key, entry in data.get("entries", {}).items():
+            if not isinstance(entry, dict) or entry.get("content"):
+                continue
+            date_text = entry.get("date") or str(key).split("|", 1)[0]
+            try:
+                event_date = date.fromisoformat(date_text)
+            except (TypeError, ValueError):
+                continue
+            if event_date <= today:
+                empty.append((key, date_text))
+
+        threshold = int(os.environ.get("JOURNAL_EMPTY_CONTENT_WARN_THRESHOLD", "3"))
+        if empty:
+            level = "WARN" if len(empty) < threshold else "ALERT"
+            print(f"[CONTENT_CHECK][{level}] {month}: {len(empty)} past entries have empty content")
+            for key, date_text in empty[:10]:
+                print(f"  - {date_text}: {key}")
+            if len(empty) >= threshold:
+                print("[CONTENT_CHECK] This may indicate a stale Excel download; inspect the freshness log.")
+    except Exception as exc:
+        print(f"[CONTENT_CHECK][WARN] Could not inspect {journal_path.name}: {exc}")
+
+
 def get_months_to_process(month_arg=None, *, script_dir=None):
     if month_arg:
         return [month_arg]
@@ -434,6 +466,7 @@ def main():
         run([sys.executable, str(script_dir / "extract_journal_to_json.py"),
              "--month", m, "--journal-dir", str(journal_dir),
              "--repo-dir", str(repo_dir)])
+        warn_about_empty_past_content(repo_dir, m)
         print()
 
     # --- マージ ---

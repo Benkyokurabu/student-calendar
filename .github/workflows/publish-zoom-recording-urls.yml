@@ -54,6 +54,15 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Verify both schedule pages use the shared Zoom JSON
+        run: |
+          for page in lesson_prep.html calendar.html; do
+            if ! grep -q 'zoom_recording_urls_' "$page"; then
+              echo "::error::$page does not reference the shared Zoom recording JSON"
+              exit 1
+            fi
+          done
+
       - name: Install Python dependencies
         run: python -m pip install openpyxl
 
@@ -109,5 +118,5 @@ jobs:
           fi
           gh issue create \
             --title "【要確認】Zoom録画URLクラウド公開失敗（$(date -u -d '+9 hours' '+%Y-%m-%d %H:%M')）" \
-            --body "GitHub ActionsでZoom録画URL JSONの生成または公開に失敗しました。Actionsログを確認してください。現行Windowsタスクは止めていないため、PC側の自動公開は継続しています。"
+            --body "GitHub ActionsでZoom録画URL JSONの生成または公開に失敗しました。Actionsログを確認してください。公開元はGitHub Actionsです。PC側タスクはクラウド経路の動作確認後に停止します。"
 

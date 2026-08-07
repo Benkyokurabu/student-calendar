@@ -14,6 +14,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import zoom_recording_url_list as url_list
@@ -41,15 +42,23 @@ def load_existing_payload(path: Path) -> dict | None:
         return None
 
 
-def run(args: list[str], cwd: Path, *, check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(
-        args,
-        cwd=str(cwd),
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
+def run(args: list[str], cwd: Path, *, check: bool = True, timeout: int = 60) -> subprocess.CompletedProcess[str]:
+    print(f"[run] {' '.join(args)}", flush=True)
+    try:
+        result = subprocess.run(
+            args,
+            cwd=str(cwd),
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=timeout,
+        )
+    except subprocess.TimeoutExpired:
+        print(f"[ERROR] command timed out after {timeout}s: {' '.join(args)}", flush=True)
+        if check:
+            raise SystemExit(124)
+        return subprocess.CompletedProcess(args, 124, "", "timeout")
     if check and result.returncode != 0:
         if result.stdout:
             print(result.stdout.strip())
@@ -57,6 +66,25 @@ def run(args: list[str], cwd: Path, *, check: bool = True) -> subprocess.Complet
             print(result.stderr.strip())
         raise SystemExit(result.returncode)
     return result
+
+
+def push_pending_commits(repo: Path) -> bool:
+    """Recover a commit left locally after a previous push interruption."""
+    fetched = run(["git", "fetch", "origin", "main"], cwd=repo, check=False, timeout=45)
+    if fetched.returncode != 0:
+        return False
+    pending = run(["git", "rev-list", "--count", "origin/main..HEAD"], cwd=repo, check=False, timeout=20)
+    if pending.returncode != 0 or not pending.stdout.strip() or int(pending.stdout.strip()) == 0:
+        return False
+    print(f"[publish] recovering {pending.stdout.strip()} unpushed commit(s)", flush=True)
+    for attempt in range(1, 4):
+        pushed = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
+        if pushed.returncode == 0:
+            return True
+        if attempt < 3:
+            run(["git", "pull", "--rebase", "origin", "main"], cwd=repo, timeout=60)
+            time.sleep(5 * attempt)
+    raise RuntimeError("未pushコミットのpushに3回失敗しました")
 
 
 def main() -> int:
@@ -84,9 +112,14 @@ def main() -> int:
         print("[ERROR] student-calendar repo was not found.")
         return 1
 
+    pending_pushed = push_pending_commits(repo)
+
     existing = load_existing_payload(repo / out.name) or load_existing_payload(out)
     if existing and comparable_payload(existing) == comparable_payload(payload):
-        print(f"[publish] no recording URL changes matched={payload['matched']} missing={payload['missing']}")
+        if pending_pushed:
+            print("[publish] pending commit recovered; no new payload changes")
+        else:
+            print(f"[publish] no recording URL changes matched={payload['matched']} missing={payload['missing']}")
         return 0
 
     if args.dry_run:
@@ -103,22 +136,26 @@ def main() -> int:
         shutil.copy2(src, dst)
         print(f"[copy] {dst.name}")
 
-    run(["git", "pull", "--rebase", "origin", "main"], cwd=repo, check=False)
-    run(["git", "add", f"zoom_recording_urls_{month}.json", "zoom_recording_urls_latest.json"], cwd=repo)
+    run(["git", "pull", "--rebase", "origin", "main"], cwd=repo, check=False, timeout=60)
+    run(["git", "add", f"zoom_recording_urls_{month}.json", "zoom_recording_urls_latest.json"], cwd=repo, timeout=20)
 
-    diff = run(["git", "diff", "--cached", "--quiet"], cwd=repo, check=False)
+    diff = run(["git", "diff", "--cached", "--quiet"], cwd=repo, check=False, timeout=20)
     if diff.returncode == 0:
         print("[publish] no changes")
         return 0
 
-    run(["git", "commit", "-m", f"Update Zoom recording URLs {month}"], cwd=repo)
-    push = run(["git", "push"], cwd=repo, check=False)
+    run(["git", "commit", "-m", f"Update Zoom recording URLs {month}"], cwd=repo, timeout=60)
+    push = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
     if push.returncode != 0:
         print("[WARN] initial push failed; retrying after rebase")
-        if push.stderr:
-            print(push.stderr.strip())
-        run(["git", "pull", "--rebase", "origin", "main"], cwd=repo)
-        run(["git", "push"], cwd=repo)
+        for attempt in range(2, 4):
+            run(["git", "pull", "--rebase", "origin", "main"], cwd=repo, timeout=60)
+            time.sleep(5 * (attempt - 1))
+            push = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
+            if push.returncode == 0:
+                break
+    if push.returncode != 0:
+        raise RuntimeError("Zoom URLコミットのpushに3回失敗しました")
     print("[publish] pushed")
     return 0
 

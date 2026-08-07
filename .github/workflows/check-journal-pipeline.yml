@@ -1,0 +1,43 @@
+name: Check Journal Pipeline Freshness
+
+on:
+  schedule:
+    # 毎日 17:00 JST（UTC 08:00）
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check latest successful update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          latest=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/update-journal.yml/runs?status=success&per_page=1" --jq '.workflow_runs[0].updated_at // empty')
+          now=$(date -u +%s)
+          if [ -z "$latest" ]; then
+            age_hours=999999
+          else
+            latest_epoch=$(date -u -d "$latest" +%s)
+            age_hours=$(( (now - latest_epoch) / 3600 ))
+          fi
+          echo "Latest successful update: ${latest:-none} (${age_hours} hours old)"
+
+          if [ "$age_hours" -le 24 ]; then
+            exit 0
+          fi
+
+          existing=$(gh issue list --state open --search "日誌パイプライン未実行" --json number --jq 'length')
+          if [ "$existing" -gt 0 ]; then
+            echo "Open monitoring issue already exists"
+            exit 0
+          fi
+          gh issue create \
+            --title "【要確認】日誌パイプラインが24時間以上成功していません（$(date -u -d '+9 hours' '+%Y-%m-%d')）" \
+            --body "日誌更新workflowの最新成功実行が24時間以上前です。Actions履歴を確認し、必要なら update-journal.yml を手動実行してください。\n\n最新成功日時（UTC）: ${latest:-なし}"
