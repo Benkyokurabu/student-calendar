@@ -262,15 +262,24 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
+def schedule_json_path(filename: str) -> Path:
+    """Locate schedule JSON in both local and repository layouts."""
+    candidates = [SYSTEM_DIR / filename, SYSTEM_DIR.parent / filename]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
 def load_schedule(month: str) -> List[dict]:
-    path = SYSTEM_DIR / f"schedule_{month}.json"
+    path = schedule_json_path(f"schedule_{month}.json")
     if not path.exists():
-        path = SYSTEM_DIR / "schedule_latest.json"
+        path = schedule_json_path("schedule_latest.json")
     return load_json(path)
 
 
 def determine_latest_schedule_month() -> str:
-    events = load_json(SYSTEM_DIR / "schedule_latest.json")
+    events = load_json(schedule_json_path("schedule_latest.json"))
     months = sorted({str(ev.get("date", ""))[:7] for ev in events if str(ev.get("date", ""))[:7]})
     if not months:
         return datetime.now(JST).strftime("%Y-%m")
