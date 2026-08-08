@@ -1,6 +1,13 @@
 name: Update Schedule & Journal
 
 on:
+  push:
+    paths:
+      - '.github/workflows/update-journal.yml'
+      - 'scripts/check_journal_freshness.py'
+      - 'scripts/check_journal_publish_age.py'
+      - 'scripts/ci_extract_and_push.py'
+      - 'scripts/extract_journal_to_json.py'
   schedule:
     # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて4回冗長化。
     # JST 04:17 / 07:17 / 16:17 / 22:37
