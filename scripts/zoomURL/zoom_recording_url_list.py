@@ -127,6 +127,7 @@ def make_recording_json(month: str) -> Dict[str, Any]:
             "onlineLessonKey": online_lesson_key(ev),
             "recordingCampus": source_ev.get("campus", ""),
             "recordingRoom": source_ev.get("room", ""),
+            **z.recording_match_audit(source_ev, rec),
         }
 
     return {

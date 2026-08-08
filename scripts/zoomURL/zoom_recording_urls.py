@@ -210,6 +210,18 @@ def recording_url(meeting: dict) -> str:
 
 SUPPLEMENT_RE = re.compile(r"(英語|数学)\s*補講")
 
+# 教室の固定ミーティングIDは授業以外にも使われ得るため、時刻が近いだけでは
+# 授業録画とみなさない。誤公開より未掲載を優先する保守的な判定にする。
+NON_LESSON_TOPIC_RE = re.compile(
+    r"面談|三者面談|保護者面談|個人面談|進路相談|学習相談|カウンセリング|相談会",
+    re.IGNORECASE,
+)
+MAX_EARLY_START_MINUTES = 30
+MAX_LATE_START_MINUTES = 20
+MIN_LESSON_OVERLAP_MINUTES = 60
+MIN_RECORDING_DURATION_MINUTES = 60
+MATCH_POLICY_VERSION = "lesson-only-v1"
+
 
 def supplement_title(ev: dict) -> Optional[str]:
     text = " ".join([
@@ -346,22 +358,51 @@ def match_recording(ev: dict, recordings: List[RecordingCandidate], tolerance_be
     if window is None:
         return None
     lesson_start, lesson_end = window
-    search_start = lesson_start - timedelta(minutes=tolerance_before)
-    search_end = lesson_start + timedelta(minutes=tolerance_after)
-    candidates = [
-        recording
-        for recording in recordings
-        if search_start <= recording.start_time <= search_end
-        or (
-            recording.end_time is not None
-            and recording.start_time <= lesson_start
-            and recording.end_time >= lesson_start
-        )
-    ]
+    # 呼び出し側が以前の広い許容値を渡しても、授業専用の上限を超えさせない。
+    before = min(tolerance_before, MAX_EARLY_START_MINUTES)
+    after = min(tolerance_after, MAX_LATE_START_MINUTES)
+    search_start = lesson_start - timedelta(minutes=before)
+    search_end = lesson_start + timedelta(minutes=after)
+    candidates = []
+    for recording in recordings:
+        if NON_LESSON_TOPIC_RE.search(recording.topic):
+            continue
+        if not (search_start <= recording.start_time <= search_end):
+            continue
+        if recording.end_time is None:
+            # 終了時刻が分からず授業との重なりを証明できない録画は公開しない。
+            continue
+        duration_minutes = (recording.end_time - recording.start_time).total_seconds() / 60
+        overlap_start = max(recording.start_time, lesson_start)
+        overlap_end = min(recording.end_time, lesson_end)
+        overlap_minutes = max(0.0, (overlap_end - overlap_start).total_seconds() / 60)
+        if duration_minutes < MIN_RECORDING_DURATION_MINUTES:
+            continue
+        if overlap_minutes < MIN_LESSON_OVERLAP_MINUTES:
+            continue
+        candidates.append(recording)
     if not candidates:
         return None
     candidates.sort(key=lambda r: abs((r.start_time - lesson_start).total_seconds()))
     return candidates[0]
+
+
+def recording_match_audit(ev: dict, rec: RecordingCandidate) -> dict:
+    """公開JSONへ残す、秘密情報を含まない照合根拠。"""
+    window = parse_lesson_window(ev)
+    if window is None or rec.end_time is None:
+        return {"matchPolicy": MATCH_POLICY_VERSION}
+    lesson_start, lesson_end = window
+    overlap_start = max(rec.start_time, lesson_start)
+    overlap_end = min(rec.end_time, lesson_end)
+    overlap_minutes = max(0.0, (overlap_end - overlap_start).total_seconds() / 60)
+    duration_minutes = (rec.end_time - rec.start_time).total_seconds() / 60
+    return {
+        "matchPolicy": MATCH_POLICY_VERSION,
+        "startOffsetMinutes": round((rec.start_time - lesson_start).total_seconds() / 60, 1),
+        "recordingDurationMinutes": round(duration_minutes, 1),
+        "lessonOverlapMinutes": round(overlap_minutes, 1),
+    }
 
 
 def import_extract_helpers():
