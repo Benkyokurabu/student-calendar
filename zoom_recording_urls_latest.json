@@ -1,11 +1,11 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-08T15:01:17.185478+09:00",
-  "matched": 84,
-  "missing": 400,
+  "generatedAt": "2026-08-08T17:03:23.593160+09:00",
+  "matched": 107,
+  "missing": 377,
   "entries": {
     "2026-08-03|2:55～4:25|minami|minami_j1_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/JXZgXpfzg7llz_vZMOmi8D4IXiao6iJZF1xJPjPgA1buz6THaAciqrFPHxpqzwqTaXRIDZBpNEHE7tOZ.cn-M_ak4nPhap_Cz",
+      "url": "https://us06web.zoom.us/rec/play/UTTRf8JTX0gWkCR5xJKg18mjJs6TXBbCyznv1tCsnhZKoc2BRmo8Hudsc4DsDXPGPi069FzK-5iMtZBH.iYk3cHs64N7BbmjH",
       "recordingStart": "2026-08-03T14:50:47+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -20,14 +20,28 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-03|2:55～4:25|j1|B|math",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.2,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 78.8
+      "recordingRoom": "2"
+    },
+    "2026-08-03|2:55～4:25|hon|hon_j3_B_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/v4y5QqWLauNu4H0yFQC8JWQ1rlD8uPmRRok8uWLlD6h6HDACRM-wVNUjigCh0aps4BhW8iawgjDBrN4X.8nLsJejqOP0lyXHl",
+      "recordingStart": "2026-08-03T14:52:40+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "2:55～4:25",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "eng",
+      "label": "中３B 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|2:55～4:25|j3|B|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1"
     },
     "2026-08-03|6:35～8:05|minami|minami_j1_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/IPE4IJ0vqRhr3pDmkzxw_iR-WEhqtoAHSTbPuB2xYQe6yFiX2mlVuocCOhLQUt2yUxMztiTuemgfRkEb.DftEfGJcbbO-QhLc",
+      "url": "https://us06web.zoom.us/rec/play/KIZEEyJA4R2AtTIhq_Ht-sTDaHgeueCaGOFExFjoJwiyWm7CQmTePdJsrkTI0T5UDTZSP6UDruj_9R_-.B726UueAnRmJECOT",
       "recordingStart": "2026-08-03T18:33:51+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -42,14 +56,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-03|6:35～8:05|j1|S|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.1,
-      "recordingDurationMinutes": 175.0,
-      "lessonOverlapMinutes": 90.0
+      "recordingRoom": "1"
     },
     "2026-08-03|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/v1z_dxahv69GE2BoVTOySYMe9sot_jbz_QDWMABRpGyNgeYnDVcw4rJhOK04gM9Ruew-hIl5Ov8a7sbF.ddzYZu450qTj3fNN",
+      "url": "https://us06web.zoom.us/rec/play/1KqVEU7eLAzC0Bn3ge5snzM861kSwe2bo8iR4QCsdBed-JVTske9ttwAzX4480km3cwTr9NgUH5RtTbD.aeaVmHo_5HgijaFu",
       "recordingStart": "2026-08-03T18:33:04+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -64,14 +74,46 @@
       "teacher": "真下",
       "onlineLessonKey": "2026-08-03|6:35～8:05|j1|S|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.9,
-      "recordingDurationMinutes": 87.0,
-      "lessonOverlapMinutes": 85.1
+      "recordingRoom": "1"
+    },
+    "2026-08-03|6:35～8:05|hon|hon_j2_S_jp|3": {
+      "url": "https://us06web.zoom.us/rec/play/AY9vBX3H8R_7MLZ01PSwsvYZMYwHHRqpcfnvsAEccaC4PY2TiZpajPQ3pMeo-l5ihL7GX_Yxv11PrLVR.6HN363Bq1f-iEZv7",
+      "recordingStart": "2026-08-03T18:03:06+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j2",
+      "class": "S",
+      "subject": "jp",
+      "label": "中２S 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j2|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
+    },
+    "2026-08-03|6:35～8:05|minami|minami_j2_S_jp|6": {
+      "url": "https://us06web.zoom.us/rec/play/AY9vBX3H8R_7MLZ01PSwsvYZMYwHHRqpcfnvsAEccaC4PY2TiZpajPQ3pMeo-l5ihL7GX_Yxv11PrLVR.6HN363Bq1f-iEZv7",
+      "recordingStart": "2026-08-03T18:03:06+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "6",
+      "grade": "j2",
+      "class": "S",
+      "subject": "jp",
+      "label": "中２S 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j2|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
     },
     "2026-08-03|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/LtXLBplYh_7CeNT0_JO4oXdE3Q1BUklqBkU_k6FM_rUV3gDrYHSFJsc4RBz-bulgTbHE35vXs5ZFo7Y.2MiwCXMnj4XToOvj",
+      "url": "https://us06web.zoom.us/rec/play/yqXfFuwyjiQXpzh-occz7EAU1mvkwm_fWiMGQthH5vJB356I2vxgxd1gd0sjXhS0nM81qymOKgLWzMQ.598KJ-rAofAoQgEk",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -86,14 +128,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-03|6:35～8:05|j3|A|soc",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -5.7,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 80.3
+      "recordingRoom": "4"
     },
     "2026-08-03|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/LtXLBplYh_7CeNT0_JO4oXdE3Q1BUklqBkU_k6FM_rUV3gDrYHSFJsc4RBz-bulgTbHE35vXs5ZFo7Y.2MiwCXMnj4XToOvj",
+      "url": "https://us06web.zoom.us/rec/play/yqXfFuwyjiQXpzh-occz7EAU1mvkwm_fWiMGQthH5vJB356I2vxgxd1gd0sjXhS0nM81qymOKgLWzMQ.598KJ-rAofAoQgEk",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -108,14 +146,64 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-03|6:35～8:05|j3|A|soc",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -5.7,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 80.3
+      "recordingRoom": "4"
+    },
+    "2026-08-03|6:35～8:05|hon|hon_j3_S_sci|7": {
+      "url": "https://us06web.zoom.us/rec/play/YwNDDGGQekouCfFXDrwS9bTyOvrul4I6fEhJdoecD9I8JERcFAMzze8rJMzvP6M_-ll7Lvmp7OkUaWs_.8_9l1fzlGfBGy0t5",
+      "recordingStart": "2026-08-03T18:24:16+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "7",
+      "grade": "j3",
+      "class": "S",
+      "subject": "sci",
+      "label": "中３S 理科",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j3|S|sci",
+      "recordingCampus": "hon",
+      "recordingRoom": "7"
+    },
+    "2026-08-03|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "url": "https://us06web.zoom.us/rec/play/YwNDDGGQekouCfFXDrwS9bTyOvrul4I6fEhJdoecD9I8JERcFAMzze8rJMzvP6M_-ll7Lvmp7OkUaWs_.8_9l1fzlGfBGy0t5",
+      "recordingStart": "2026-08-03T18:24:16+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j3",
+      "class": "S",
+      "subject": "sci",
+      "label": "中３S 理科",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-03|6:35～8:05|j3|S|sci",
+      "recordingCampus": "hon",
+      "recordingRoom": "7"
+    },
+    "2026-08-03|8:25～9:55|minami|minami_j2_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/KIZEEyJA4R2AtTIhq_Ht-sTDaHgeueCaGOFExFjoJwiyWm7CQmTePdJsrkTI0T5UDTZSP6UDruj_9R_-.B726UueAnRmJECOT",
+      "recordingStart": "2026-08-03T18:33:51+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "8:25～9:55",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j2",
+      "class": "A",
+      "subject": "math",
+      "label": "中２A 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-08-03|8:25～9:55|j2|A|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1"
     },
     "2026-08-03|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/wsndIkb89CYbOlFGjTJ-e35HasvpiAsUePXqEYMIlZCoozGFk50hUpiR6i3HJAES2H8T1PgwXuwlKjbF.W1VY8_9Kty_58XH8",
+      "url": "https://us06web.zoom.us/rec/play/piltNaKe9XSRBLvhMpuchGO4waUfBoL7Nc0Vxn3V3xGXGfbDNNGTn4xxQfrczt9WmF3ISVx7vhFbmPFx.2JU1kAZji8-rjXCa",
       "recordingStart": "2026-08-03T20:21:54+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -130,14 +218,46 @@
       "teacher": "真下",
       "onlineLessonKey": "2026-08-03|8:25～9:55|j2|A|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.1,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 82.9
+      "recordingRoom": "1"
+    },
+    "2026-08-03|8:25～9:55|hon|hon_j2_X_eng|3": {
+      "url": "https://us06web.zoom.us/rec/play/fukwKXkhyXdCrCgKS53lK2BhCSRvGyVmL1HV6gzoJT7VPKBTgl4lDcwX9-NLaFjenYtkmIaDXJEhtNQt.Ijhu82-CmWYia5vf",
+      "recordingStart": "2026-08-03T20:07:52+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j2",
+      "class": "X",
+      "subject": "eng",
+      "label": "中２X 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|8:25～9:55|j2|X|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
+    },
+    "2026-08-03|8:25～9:55|minami|minami_j2_X_eng|6": {
+      "url": "https://us06web.zoom.us/rec/play/fukwKXkhyXdCrCgKS53lK2BhCSRvGyVmL1HV6gzoJT7VPKBTgl4lDcwX9-NLaFjenYtkmIaDXJEhtNQt.Ijhu82-CmWYia5vf",
+      "recordingStart": "2026-08-03T20:07:52+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-03",
+      "time": "8:25～9:55",
+      "campus": "minami",
+      "room": "6",
+      "grade": "j2",
+      "class": "X",
+      "subject": "eng",
+      "label": "中２X 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-03|8:25～9:55|j2|X|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "3"
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/d1YEXNAZ53h9-6vYJwhGEOunodNjfPUbmiXB2FcSDjhj9VpBp2vBhjzxVb1S-g9EpSf3vxI_qxEFQ9Sv.1-8Lt1UugwzTPsyL",
+      "url": "https://us06web.zoom.us/rec/play/iDnTXL4KEHzXy_bhzYp392zI7C6aVPyCEiapvCe9Hke53lXAK9g9r3b4oU3I0FFiQsgyn0A7BfyoSwLr.jO_53_0UuRZducef",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -152,14 +272,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-03|8:25～9:55|j3|A|sci",
       "recordingCampus": "hon",
-      "recordingRoom": "7",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.7,
-      "recordingDurationMinutes": 81.0,
-      "lessonOverlapMinutes": 77.3
+      "recordingRoom": "7"
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/d1YEXNAZ53h9-6vYJwhGEOunodNjfPUbmiXB2FcSDjhj9VpBp2vBhjzxVb1S-g9EpSf3vxI_qxEFQ9Sv.1-8Lt1UugwzTPsyL",
+      "url": "https://us06web.zoom.us/rec/play/iDnTXL4KEHzXy_bhzYp392zI7C6aVPyCEiapvCe9Hke53lXAK9g9r3b4oU3I0FFiQsgyn0A7BfyoSwLr.jO_53_0UuRZducef",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -174,14 +290,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-03|8:25～9:55|j3|A|sci",
       "recordingCampus": "hon",
-      "recordingRoom": "7",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.7,
-      "recordingDurationMinutes": 81.0,
-      "lessonOverlapMinutes": 77.3
+      "recordingRoom": "7"
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/NRwDh1vYPGMBwQ2aXY5OUyQ8pz2TZIJ5LkG5XlZu5Yw6xRRXJ7UWcd7U2nvoIpwFjaaIJzvdpQ-7gXUJ.o5mODsBU7UYu8PTN",
+      "url": "https://us06web.zoom.us/rec/play/b4UPEdjUnuVLjvRW1IC-cmaRb7uHcXzhhk4O2W7xY8PZxyTNdYSuRvaPvZG6ERbwObRln4FCF7-OKpnf.eqvoMUJXp3laZG6s",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -196,14 +308,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-03|8:25～9:55|j3|S|soc",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -7.3,
-      "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 77.7
+      "recordingRoom": "4"
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/NRwDh1vYPGMBwQ2aXY5OUyQ8pz2TZIJ5LkG5XlZu5Yw6xRRXJ7UWcd7U2nvoIpwFjaaIJzvdpQ-7gXUJ.o5mODsBU7UYu8PTN",
+      "url": "https://us06web.zoom.us/rec/play/b4UPEdjUnuVLjvRW1IC-cmaRb7uHcXzhhk4O2W7xY8PZxyTNdYSuRvaPvZG6ERbwObRln4FCF7-OKpnf.eqvoMUJXp3laZG6s",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -218,14 +326,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-03|8:25～9:55|j3|S|soc",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -7.3,
-      "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 77.7
+      "recordingRoom": "4"
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e4_X_arith|6": {
-      "url": "https://us06web.zoom.us/rec/play/QZLpV79v63YW2ar8cHb5tjVT1dbLjvVgb7SOfCWJKcn4xQIHup9ENH0qEYxXlNF6Z1OxMQSDXXl6hWi7.LmJu9gMfg9rnZEH-",
+      "url": "https://us06web.zoom.us/rec/play/os9MQvYiNhCzEngBtnFgTw8nWRgN9SRoi-stQP85RGY14Z5zV6xNpI922biN1Ym1w52GXFw_Gi9mKx7W.lUtAIuajOO50DWyL",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -240,14 +344,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-03|４:４５～６:１５|e4|X|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "6",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.2,
-      "recordingDurationMinutes": 72.0,
-      "lessonOverlapMinutes": 71.8
+      "recordingRoom": "6"
     },
     "2026-08-03|４:４５～６:１５|minami|minami_e4_X_arith|4": {
-      "url": "https://us06web.zoom.us/rec/play/QZLpV79v63YW2ar8cHb5tjVT1dbLjvVgb7SOfCWJKcn4xQIHup9ENH0qEYxXlNF6Z1OxMQSDXXl6hWi7.LmJu9gMfg9rnZEH-",
+      "url": "https://us06web.zoom.us/rec/play/os9MQvYiNhCzEngBtnFgTw8nWRgN9SRoi-stQP85RGY14Z5zV6xNpI922biN1Ym1w52GXFw_Gi9mKx7W.lUtAIuajOO50DWyL",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -262,14 +362,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-03|４:４５～６:１５|e4|X|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "6",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.2,
-      "recordingDurationMinutes": 72.0,
-      "lessonOverlapMinutes": 71.8
+      "recordingRoom": "6"
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e6_A_jp|1": {
-      "url": "https://us06web.zoom.us/rec/play/oVX-Ahup3D0uTWZos3ZZpDpQyRpXrkV3x0KBEKuFZAu89WCIh_u4BCWcCnodRM8GsIT7btgXHMrMHOdh.Ag28yvAB9NmS9_jL",
+      "url": "https://us06web.zoom.us/rec/play/cB_K-UnPeDwMsUsV9mJlsewNQ7L88QFiZeL-9kLpXG2gJH7ul2kayVTBBaTfRBHyXkcOyAKKS7Qs2f5U._4aG4H-nnTTrZPkl",
       "recordingStart": "2026-08-03T16:40:09+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -284,14 +380,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-03|４:４５～６:１５|e6|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.8,
-      "recordingDurationMinutes": 81.0,
-      "lessonOverlapMinutes": 76.2
+      "recordingRoom": "1"
     },
     "2026-08-04|2:55～4:25|minami|minami_j1_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/AdNM6HYP-jfC--C9mhGLfxtVJwrs8bujdEdZHdi5BdxfFDlKkAZCUKNfGoEXIooXt60JVRztqcKDi-iq.Ge9cAd-fhLuRLSaW",
+      "url": "https://us06web.zoom.us/rec/play/V_9NMbU7bGS5o3hYsqRaRivAck1R7tTQ-llh_gnjG5NlE9c_5mvhT6ZeEcQ7cu8zxHKlJ3JHPzXVXgGJ.D4eB_XhHmYBOw65q",
       "recordingStart": "2026-08-04T14:55:15+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -306,14 +398,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-04|2:55～4:25|j1|B|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 0.2,
-      "recordingDurationMinutes": 77.0,
-      "lessonOverlapMinutes": 77.0
+      "recordingRoom": "1"
     },
     "2026-08-04|2:55～4:25|hon|hon_j2_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/6U0eRFDJLrknm7zDacA_ZPpXRXEbyAB2FhHtpsF2Jg70UIKnZlxSFptyFr_9OTyAwvoHAuw3P0-hJjxQ.XHeW2YqaaSajrpo-",
+      "url": "https://us06web.zoom.us/rec/play/9i0RsfBQVhLbAEOKnIqRrNZDJEiEsj4PM_LI6n0b-UrCHJc_ozqWgW8hBidAMWkTPmdLP0mROXFu75sZ.rlwbEQkzvG3e4jzY",
       "recordingStart": "2026-08-04T14:53:27+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -328,14 +416,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-04|2:55～4:25|j2|S|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.6,
-      "recordingDurationMinutes": 68.0,
-      "lessonOverlapMinutes": 66.5
+      "recordingRoom": "2"
     },
     "2026-08-04|2:55～4:25|minami|minami_e6_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/XS4KX9CcCKft43GX3NUTNbNsu_28IKTB8RyC0jEMeGqdU9ySe79vIuuET4xsmu075uUOs4-G49SXse2_.nUhsYDBS0O4M0NxN",
+      "url": "https://us06web.zoom.us/rec/play/xlyjFGQ-eNS_e70uTr3zrD-Qe7_xAUYSikea3QllGFcxzS5-oTHWvsyKI7utcnzsHxZB3AxQAx2RaNkC.yl0rrYQ9vgYAcfnM",
       "recordingStart": "2026-08-04T14:53:41+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -350,14 +434,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-04|2:55～4:25|e6|A|jp",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.3,
-      "recordingDurationMinutes": 81.0,
-      "lessonOverlapMinutes": 79.7
+      "recordingRoom": "2"
     },
     "2026-08-04|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/ke4UqU3sPXg4o_lU0L4_NLPdAD37xqt1gQGl6qZM45R566LHpIvudXCJVMKk0-MgGJ2HhIGxPHzOKMnJ.wbs1MU43oARSpYrr",
+      "url": "https://us06web.zoom.us/rec/play/aiHny8OdRQWW2dezkjeqqDh1dKAUjyrq_IeBRnxrtfpyO28yY-JGc-X-8CNQneQ7ABPTqXywzgZgtzX3.nhl6bqXYR7fv4hkM",
       "recordingStart": "2026-08-04T18:32:45+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -372,14 +452,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j1|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.2,
-      "recordingDurationMinutes": 72.0,
-      "lessonOverlapMinutes": 69.8
+      "recordingRoom": "3"
     },
     "2026-08-04|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/ke4UqU3sPXg4o_lU0L4_NLPdAD37xqt1gQGl6qZM45R566LHpIvudXCJVMKk0-MgGJ2HhIGxPHzOKMnJ.wbs1MU43oARSpYrr",
+      "url": "https://us06web.zoom.us/rec/play/aiHny8OdRQWW2dezkjeqqDh1dKAUjyrq_IeBRnxrtfpyO28yY-JGc-X-8CNQneQ7ABPTqXywzgZgtzX3.nhl6bqXYR7fv4hkM",
       "recordingStart": "2026-08-04T18:32:45+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -394,14 +470,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j1|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.2,
-      "recordingDurationMinutes": 72.0,
-      "lessonOverlapMinutes": 69.8
+      "recordingRoom": "3"
     },
     "2026-08-04|6:35～8:05|hon|hon_j1_S_jp|4": {
-      "url": "https://us06web.zoom.us/rec/play/vffTF2JZ6SLbOsEFIVOtv567KWkwN2iham1MielY6kUtEzNhZ5aWntQbBZgXZxROU-DCWWCdBu0s_Rz4.Po0b7AeuFn3r9kqJ",
+      "url": "https://us06web.zoom.us/rec/play/-FR-t58GuYbVd1ssOtd2wdJ3NNdupKE6qvRxoSjX8s3wybQd1HQwvUmhv6jlSTVEizHt2RDLPwMt8idA.RW6e7fIz3Uf6jWw2",
       "recordingStart": "2026-08-04T18:31:25+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -416,14 +488,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j1|S|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.6,
-      "recordingDurationMinutes": 71.0,
-      "lessonOverlapMinutes": 67.4
+      "recordingRoom": "4"
     },
     "2026-08-04|6:35～8:05|minami|minami_j1_S_jp|5": {
-      "url": "https://us06web.zoom.us/rec/play/vffTF2JZ6SLbOsEFIVOtv567KWkwN2iham1MielY6kUtEzNhZ5aWntQbBZgXZxROU-DCWWCdBu0s_Rz4.Po0b7AeuFn3r9kqJ",
+      "url": "https://us06web.zoom.us/rec/play/-FR-t58GuYbVd1ssOtd2wdJ3NNdupKE6qvRxoSjX8s3wybQd1HQwvUmhv6jlSTVEizHt2RDLPwMt8idA.RW6e7fIz3Uf6jWw2",
       "recordingStart": "2026-08-04T18:31:25+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -438,14 +506,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j1|S|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.6,
-      "recordingDurationMinutes": 71.0,
-      "lessonOverlapMinutes": 67.4
+      "recordingRoom": "4"
     },
     "2026-08-04|6:35～8:05|minami|minami_j2_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/4bU9d-E054sVKiEDV4FMEPe9LoR1l0-HDFN0bjNaLJwR-gAoA_vTLtXTQ3cdoSa6B5Aphw-sSQHNZgTJ.nz4zGIlAbKhPCctM",
+      "url": "https://us06web.zoom.us/rec/play/x3KrIhT5ETxpOj07y7ZxL75smgyRl_p49L5lQzllOp9mgzO4AYJk-XJNTRm4u7ImrxLgk90b08ZCfDLt.Fu3QKwB1c7_7jejL",
       "recordingStart": "2026-08-04T18:37:07+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -460,14 +524,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j2|A|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 2.1,
-      "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 82.0
+      "recordingRoom": "1"
     },
     "2026-08-04|6:35～8:05|hon|hon_j2_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/truyxR0fB46bPedimixlnTVFrI1JUXVUAx0zQhn5T4vLw4DQrXezIBycW28UFBanKTFri7IO9sqawkEC.qBiazaQtZIUcJ0oR",
+      "url": "https://us06web.zoom.us/rec/play/iMdLz32lqLkf4C4O_bzUt5gtNuqfx-CbfLLGXmpAscT3Z1LaDjcJLwQuJAy7C5qZXkGTWvTlzEXze57D.TNkyh3KO-bxg2ROH",
       "recordingStart": "2026-08-04T18:33:32+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -482,14 +542,28 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j2|B|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.5,
-      "recordingDurationMinutes": 74.0,
-      "lessonOverlapMinutes": 72.5
+      "recordingRoom": "1"
+    },
+    "2026-08-04|6:35～8:05|minami|minami_j2_S_math|3": {
+      "url": "https://us06web.zoom.us/rec/play/heaEK4zaVso8B6IPBoN88ehv99gZ-lBAbnSUNG_EF0BvsN6_clfuyg20mMIMghHwLnQEVm25ijfpleao.37AEpqNqzqasQnps",
+      "recordingStart": "2026-08-04T18:37:21+09:00",
+      "meetingId": "3721287174",
+      "topic": "南校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-04",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "3",
+      "grade": "j2",
+      "class": "S",
+      "subject": "math",
+      "label": "中２S 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-04|6:35～8:05|j2|S|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "3"
     },
     "2026-08-04|6:35～8:05|minami|minami_j3_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/L62SUFPWQ6evZdNpyZAT284hVS81m__1qDaPdq2lcmUdVgWJs_QGDbXhYUaxmNx5f6zxewrDusVIPBMY.zZzjr6v69jEeIcEb",
+      "url": "https://us06web.zoom.us/rec/play/xH_XoXoEwrtXyzDBlwf90bb02P-WZ-QoKEmDleHCFzqBtOsLUm24yu9wlt3ufrtVJhWVTUVMPfIHfgBI.I8svbpgVi5f4jRua",
       "recordingStart": "2026-08-04T18:36:30+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -504,14 +578,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-04|6:35～8:05|j3|A|jp",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 1.5,
-      "recordingDurationMinutes": 68.0,
-      "lessonOverlapMinutes": 68.0
+      "recordingRoom": "2"
     },
     "2026-08-04|8:25～9:55|hon|hon_j2_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/-dr_VuaVjMcNPNsq6Nn9UXclfP9Maspw0lAm4Wl-tCa2JyQwHY2cObMAM6NUWECrzHsO0F1g12JhJ9w.MsyzZuOxgBL4CxVY",
+      "url": "https://us06web.zoom.us/rec/play/BSEj3k1HESCg-RfVIiXxXgt8C_G6tP7jdCWk_7DUkkdVIIQ4ipRf1Y0bpSeJZZtHBzJDMuFiUwAbCGE.80bqO69JHQbFVi53",
       "recordingStart": "2026-08-04T20:21:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -526,14 +596,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-04|8:25～9:55|j2|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.1,
-      "recordingDurationMinutes": 80.0,
-      "lessonOverlapMinutes": 76.9
+      "recordingRoom": "3"
     },
     "2026-08-04|8:25～9:55|minami|minami_j2_A_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/-dr_VuaVjMcNPNsq6Nn9UXclfP9Maspw0lAm4Wl-tCa2JyQwHY2cObMAM6NUWECrzHsO0F1g12JhJ9w.MsyzZuOxgBL4CxVY",
+      "url": "https://us06web.zoom.us/rec/play/BSEj3k1HESCg-RfVIiXxXgt8C_G6tP7jdCWk_7DUkkdVIIQ4ipRf1Y0bpSeJZZtHBzJDMuFiUwAbCGE.80bqO69JHQbFVi53",
       "recordingStart": "2026-08-04T20:21:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -548,14 +614,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-04|8:25～9:55|j2|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.1,
-      "recordingDurationMinutes": 80.0,
-      "lessonOverlapMinutes": 76.9
+      "recordingRoom": "3"
     },
     "2026-08-04|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/S0hrukpyl488u5mpXv_arbGV25TK_L0li4n0nvbnGduZPZa9m4woquVwcdzcd0hvCs5WaaAvtU3KhVdW.sstdrtGwICs3CLCN",
+      "url": "https://us06web.zoom.us/rec/play/lHpdg1PD21-kcBhjRD1DhHnGLFJ9Frl1DvxEip0P4MOi99LKcfha93k791VjlqDt4tWqWYpiXMzP3Hz7.OQMB06scT2khTnAC",
       "recordingStart": "2026-08-04T20:23:58+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -570,14 +632,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-04|8:25～9:55|j3|A|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.0,
-      "recordingDurationMinutes": 80.0,
-      "lessonOverlapMinutes": 79.0
+      "recordingRoom": "1"
     },
     "2026-08-04|8:25～9:55|minami|minami_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/OWaz53ncu-pOYRqXDMcMn3vZxBa9JhR_YYHsQQqRYDyIaFbOOelKW4KkS0LK0LpZJv6ie4yLte4mSQJg.MM1jSUoLoXDnDqQo",
+      "url": "https://us06web.zoom.us/rec/play/VsQD9cVGVLzJ72Hsv21vR06LIJjoaUhDC7AJMujVfP4k3ErvgB0oB0T1h16sgxEFWHF-iiDReG_d5up6.UBUh6zYrJWjz5IxZ",
       "recordingStart": "2026-08-04T20:20:53+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -592,14 +650,64 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-04|8:25～9:55|j3|B|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.1,
-      "recordingDurationMinutes": 87.0,
-      "lessonOverlapMinutes": 82.9
+      "recordingRoom": "1"
+    },
+    "2026-08-04|４:４５～６:１５|hon|hon_j3_B_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/79G7OMx5-GJ7wGvDipMliFkecYH9Jhlx_qBOt7IEaKKVsqM_WkWjIcBQdq8uudQalNdNhTfEmyyaOYlv._hF-NPKAKeFmBRlu",
+      "recordingStart": "2026-08-04T16:42:06+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-04",
+      "time": "４:４５～６:１５",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "eng",
+      "label": "中３B 英語",
+      "teacher": "岩本",
+      "onlineLessonKey": "2026-08-04|４:４５～６:１５|j3|B|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1"
+    },
+    "2026-08-04|４:４５～６:１５|hon|hon_j3_S_jp|6": {
+      "url": "https://us06web.zoom.us/rec/play/3o7-Ebk9LQrGcPVc3GNqiDQVMNgd62R_9r2EK28FsAEEeDvN3qAxSgovL1k2wPOwVbVqz4zIVy870Odn.Mp3l0aZXv5WO7Wzn",
+      "recordingStart": "2026-08-04T16:35:52+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-08-04",
+      "time": "４:４５～６:１５",
+      "campus": "hon",
+      "room": "6",
+      "grade": "j3",
+      "class": "S",
+      "subject": "jp",
+      "label": "中３S 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-08-04|４:４５～６:１５|j3|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "6"
+    },
+    "2026-08-04|４:４５～６:１５|minami|minami_j3_S_jp|4": {
+      "url": "https://us06web.zoom.us/rec/play/3o7-Ebk9LQrGcPVc3GNqiDQVMNgd62R_9r2EK28FsAEEeDvN3qAxSgovL1k2wPOwVbVqz4zIVy870Odn.Mp3l0aZXv5WO7Wzn",
+      "recordingStart": "2026-08-04T16:35:52+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-08-04",
+      "time": "４:４５～６:１５",
+      "campus": "minami",
+      "room": "4",
+      "grade": "j3",
+      "class": "S",
+      "subject": "jp",
+      "label": "中３S 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-08-04|４:４５～６:１５|j3|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "6"
     },
     "2026-08-04|４:４５～６:１５|minami|minami_e5_A_arith|1": {
-      "url": "https://us06web.zoom.us/rec/play/qoJmcgw8qb9kYAKWMd6jWYlpdeRsVu44B3mttyCV0rxbXeNPpzdenMY4z_zOI6yY_qZOw9R1mA7XtjBk.vS2epBPnLTo0fT7I",
+      "url": "https://us06web.zoom.us/rec/play/DSolMs47MsGdSkcSI3AePPHdyD4EngKzA6Ny9xChKp5XMf24UCBOMIACOfBXMNuI0CY8FH0tHkoDvIHm.OZV0OiQMWpMx37fj",
       "recordingStart": "2026-08-04T16:41:15+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -614,14 +722,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-04|４:４５～６:１５|e5|A|arith",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.8,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 82.2
+      "recordingRoom": "1"
     },
     "2026-08-04|４:４５～６:１５|minami|minami_e6_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/7G7H3KujXEjopcDfiIZln8RzYXudJ1Pz405kQbcbL2qsrq9fAQ-2TxgZWKxgV2KJeQffEJN_Q9ZXLygf.vhTE86Twk4igCTrG",
+      "url": "https://us06web.zoom.us/rec/play/ENJBRuRPOK8cOY2ZNCqRtMPMJVhWQUrg9u8rzEhjDAzKJrxqYyvjETKwysjHROl44oMn_UEr8YW_PPE8.Qvdj26xVbtom5yGB",
       "recordingStart": "2026-08-04T16:39:17+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -636,14 +740,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-04|４:４５～６:１５|e6|S|arith",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -5.7,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 77.3
+      "recordingRoom": "2"
     },
     "2026-08-05|2:55～4:25|minami|minami_j1_S_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/foRzTQNLwIa01jnsb0hxyiM7eL9CtySZ9JMCiPwcbugqFDu4jaP23EpBes4lH9rV3F-h-_EWMy-ixLq7.WSJjhnDITnE3jTkr",
+      "url": "https://us06web.zoom.us/rec/play/1Vz3ZNcp8kaLAoW0gR5pwq9_dIdYOG3all5QAlIYu0AkzmjDZOH4mkPavtbwwS8BYtSGlVRZvQNsU04x.6wAMsJRJNuQkvTdS",
       "recordingStart": "2026-08-05T14:50:08+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -658,14 +758,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-05|2:55～4:25|j1|S|math",
       "recordingCampus": "minami",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.9,
-      "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 80.1
+      "recordingRoom": "3"
     },
     "2026-08-05|2:55～4:25|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/xI4RlBHHDEurU_10OrKzrUDdK1Ulk__jncGyvgk1TFc4u2OhzkA5WrJLSpXX8pEqwkwD3M-ZrxIYyvPC.rwzM5b0Fgc2KzQ29",
+      "url": "https://us06web.zoom.us/rec/play/xObRehdZLn4eoEXjkdK2I2dHJs8PLSFjmqhycvZYuDwulSmJ2O2Q7Im27CrZEVB5MQaeGup_uSMHXmkE.MePVymWyDK4jKhWc",
       "recordingStart": "2026-08-05T14:50:36+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -680,14 +776,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-05|2:55～4:25|j2|A|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.4,
-      "recordingDurationMinutes": 80.0,
-      "lessonOverlapMinutes": 75.6
+      "recordingRoom": "1"
     },
     "2026-08-05|2:55～4:25|hon|hon_j2_B_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/dbrI7K8fG9-ykEX-UnU3H46el9XSdFZs84uTA4WtIw50oTeY86K1xXXitfseHRwyOQyDj7M2tw19RH1-.XknTmtaxk4UO2oKh",
+      "url": "https://us06web.zoom.us/rec/play/zKoTAGYN3lHD3OCJMtxOA2i5HlceoUcJvHGBiy_Km_DV0w8_zAdWcbjgm9VPBntyYkJS_v3ldbFQRWi0.Odp_6tx5UKgyTUSF",
       "recordingStart": "2026-08-05T14:53:00+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -702,14 +794,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-05|2:55～4:25|j2|B|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.0,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 76.0
+      "recordingRoom": "2"
     },
     "2026-08-05|2:55～4:25|minami|minami_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/fM0lt4TabaoigzfSB5kd0OP_Wj6TfzfFyNdH6bgiQ50ZSdfDLRf6c_UdryNh_5JkCkBR7ZZdpWnkDW8u.spHesTLtXuMsBIcQ",
+      "url": "https://us06web.zoom.us/rec/play/ElTYjRtzEceDX3LcgSSG-YFWstmrpLR9uUYA8QcCD8H2qsf4D9XwMUyANH_y-UQ0kzurSZQ-WxdsLSuN.ffAWWSy2ruek9e9z",
       "recordingStart": "2026-08-05T14:54:29+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -724,14 +812,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-05|2:55～4:25|j3|B|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.5,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 77.5
+      "recordingRoom": "1"
     },
     "2026-08-05|2:55～4:25|minami|minami_j3_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/1x30QfpnmN2frnmXWX81HL1vJXq74zoMce0G7FgNBr27_trEcPMB9MvW6AWdcFyCAX7KMf7NxypJiHOF.78Bmstw0l6dowsrh",
+      "url": "https://us06web.zoom.us/rec/play/_vxpziMrxX10cI-zEp8-NVxPYk5o9xf0cmlCycMCIZ_4QFK99gEVx99DpIc8vmP8hXHtpJw_h7dX-EOS.UBuPgQjxCq8pDkI0",
       "recordingStart": "2026-08-05T14:50:50+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -746,14 +830,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-05|2:55～4:25|j3|S|math",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -4.2,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 81.8
+      "recordingRoom": "2"
     },
     "2026-08-05|6:35～8:05|minami|minami_j1_A_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/zjQrW5Xj-U6ksv04uytI_1xi0J38JU7rRtmS7SvB3VBzD5MjRoAFHVA8ZYd-y6XG3ZgMhCepihPPuCmj.w1FWjpsSneiUOwMA",
+      "url": "https://us06web.zoom.us/rec/play/Kd8j_jlzbCwqJ5GUc_PQvApYDO4f8REzBNEOZJetl-m2Sf2YVGQLmw9TCnH7KvZbS4U8o7xc1qDbvavf.-GH7cSYrYpxq0Jdu",
       "recordingStart": "2026-08-05T18:43:45+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -768,14 +848,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-05|6:35～8:05|j1|A|math",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 8.8,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 78.0
+      "recordingRoom": "2"
     },
     "2026-08-05|6:35～8:05|hon|hon_j1_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/cwN_ZIRhIwP-NPl66v-NQD58sv-YbvGxyWHW2K4xT4jd6RMJeDJuQmiAORzlyAHnw3numDVFvuyKTXyv.DaI_p8yO4z8AMzwq",
+      "url": "https://us06web.zoom.us/rec/play/0O0S518UKq1JlnrgC5HzqvaIhA70vY1K1XIpXeQxPAYz7OQCflAGFeZcUdJbJ3SvQ-2GT-8KC0VFdhLb.R4x7tRYgyQtuZWiY",
       "recordingStart": "2026-08-05T18:31:07+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -790,14 +866,28 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-05|6:35～8:05|j1|A|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.9,
-      "recordingDurationMinutes": 76.0,
-      "lessonOverlapMinutes": 72.1
+      "recordingRoom": "2"
+    },
+    "2026-08-05|6:35～8:05|minami|minami_j1_B_math|3": {
+      "url": "https://us06web.zoom.us/rec/play/wB5iGJzWvn4rC59D5Q4QRQ6IFIM0JIWRWTcnogggyOivmsSDyV5zrIzEUI6WkpeRvQm_YdiZzzjmpF0o.Wbqh5PSACiJ02lI7",
+      "recordingStart": "2026-08-05T16:46:19+09:00",
+      "meetingId": "3721287174",
+      "topic": "南校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-05",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "3",
+      "grade": "j1",
+      "class": "B",
+      "subject": "math",
+      "label": "中１B 数学",
+      "teacher": "森松",
+      "onlineLessonKey": "2026-08-05|6:35～8:05|j1|B|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "3"
     },
     "2026-08-05|6:35～8:05|minami|minami_j3_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/xEjCyZ2Vdyfe306V7qbUvPzW_RczkkZvJQzpicx_fUCWxfrBaSoxcWeXH05gTiHj3_bcObLDubXGpk50.A8F19lRDbE5ZgdE8",
+      "url": "https://us06web.zoom.us/rec/play/CrBFlxK3LIWSu-pTSSMwp7ZlqcK6eWNAW70gVm_QJEi-GhAHw-QmhED70To4C41etShYxAEnG4HHEIp4.90ZRryp_bTp7rFRQ",
       "recordingStart": "2026-08-05T18:33:35+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -812,14 +902,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-05|6:35～8:05|j3|A|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.4,
-      "recordingDurationMinutes": 77.0,
-      "lessonOverlapMinutes": 75.6
+      "recordingRoom": "1"
     },
     "2026-08-05|6:35～8:05|hon|hon_j3_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/m1i70Fr_hBadqBk62HZuwK9LCRO4_p41bYMhjKtxWqocYJjrkZPLXb1fEnSBzt5febgBzFcVZfXXxSk4.eaEK1uVSLIs50H6D",
+      "url": "https://us06web.zoom.us/rec/play/2Rhdl42KrRy6Qj1-fyRWkNy1OEngW3S8DIi5174e1yJQ0cav2s9cRoB5fc1tn6vgG6C1FMa6z2fK7Bg5.23-NkOD65zCeBGLe",
       "recordingStart": "2026-08-05T18:28:59+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -834,14 +920,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-05|6:35～8:05|j3|A|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -6.0,
-      "recordingDurationMinutes": 77.0,
-      "lessonOverlapMinutes": 71.0
+      "recordingRoom": "1"
     },
     "2026-08-05|8:25～9:55|minami|minami_j2_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/bMUzjAHWrDy2jd-0CygsIiYtlNB2S0B3gpGgGz8c6ozAiEnBE9S9MYCDIPm9NOTpTSAA-Pu9pm_h_g9e.PYQceK79wKgpQWM9",
+      "url": "https://us06web.zoom.us/rec/play/ApJPxsM3SC1OfWZD5j4AlS-i_safjKtlwc7nWi2qAKH4XVAcfou9UGsQvinP8EQsvv_o6fXvu30ff7F0.I64lfCXwvPlCSIX7",
       "recordingStart": "2026-08-05T20:24:51+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -856,14 +938,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-05|8:25～9:55|j2|B|math",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.1,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 87.8
+      "recordingRoom": "1"
     },
     "2026-08-05|8:25～9:55|minami|minami_j2_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/Hfb3_pFLceQa1zPOWICA6HTrzY8-Jv9_yyvnyZ0euvpiXRZ5TSMUT837zc1N8hvwB5tYE8MgDJtH5q7o.2tnf9DhqJYFlfOv-",
+      "url": "https://us06web.zoom.us/rec/play/c873X5kGVv_GUICCr69oxMBGIf6xq_XcqDXCgJkkkR3PpDeMCmMBCME4GkvZl6LuXOhbBMK84I6eEMJb.fFLH0ZLHpJ3W2fUn",
       "recordingStart": "2026-08-05T20:25:02+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -878,14 +956,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-05|8:25～9:55|j2|S|math",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 0.0,
-      "recordingDurationMinutes": 73.0,
-      "lessonOverlapMinutes": 73.0
+      "recordingRoom": "2"
     },
     "2026-08-05|8:25～9:55|hon|hon_j2_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/w0lAPF9dtAaSMG5dm6NkwZQm2kehmhsICTedQq9_qL9rSrK_nK58L4o-tRp0fJ0Z_7Xo_6DPCkPu84fV.rpZkLdhu_Zn_1RmF",
+      "url": "https://us06web.zoom.us/rec/play/l42wWhS6vKlviU-QZ5ZkwhYGJdAGubl-S1bhECCw4r3Oh9BldHd8fk6Gz-pz7VCroPvBxczpmVRvF2Un.rfFo5sBY8laZo2OX",
       "recordingStart": "2026-08-05T20:21:50+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -900,14 +974,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-05|8:25～9:55|j2|S|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.2,
-      "recordingDurationMinutes": 75.0,
-      "lessonOverlapMinutes": 71.8
+      "recordingRoom": "2"
     },
     "2026-08-05|8:25～9:55|hon|hon_j3_A_jp|1": {
-      "url": "https://us06web.zoom.us/rec/play/cp5q4bpVgDLaivCqPKLREhyUP6CNJLz8u9YZXIPnrSrylnXJMwTNHOk0qT5rB0GQMPje5l95onZP-fE.qL8-AFk6_Al7wueC",
+      "url": "https://us06web.zoom.us/rec/play/JT38rSeteDNtytOYr0XJTtrYnhe0qAUNs1GkZzNi-kEBQBPg4QncfnTXBPBhYORJBuVbLI128Llb4qQ.dM1-0D5TURaeKkM6",
       "recordingStart": "2026-08-05T20:22:21+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -922,14 +992,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-05|8:25～9:55|j3|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.6,
-      "recordingDurationMinutes": 74.0,
-      "lessonOverlapMinutes": 71.3
+      "recordingRoom": "1"
     },
     "2026-08-05|４:４５～６:１５|hon|hon_j1_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/EIfqqY47ATIOtvEjYiLP4N9lp7N7JhRqXqNnSbiEPjWqIj1h_eJTOLafJf3XyPn746FYXsIJ-kBcsL6D.UJRvZJiUxmwfyfxn",
+      "url": "https://us06web.zoom.us/rec/play/l-723o1L3Qf8W1_XDt9hBNxhrMNsqRk9GIkNQp7J1GgrGepbqqkjob89N0PfZUH7pjNiHtTJMZMtRBw3.3V9lFmdrRHVegrll",
       "recordingStart": "2026-08-05T16:43:11+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -944,14 +1010,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-05|４:４５～６:１５|j1|B|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.8,
-      "recordingDurationMinutes": 73.0,
-      "lessonOverlapMinutes": 71.2
+      "recordingRoom": "1"
     },
     "2026-08-05|４:４５～６:１５|minami|minami_e4_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/DmzR4HlBrjWjNFlgl7Rk88xvKNrggOy0RSTPfeUKOq9MnzvB5rhIv2ho9ZK0KIT6vFL7O7Q9uRMo6x__.cPdm2h-mns93vi3-",
+      "url": "https://us06web.zoom.us/rec/play/wB5iGJzWvn4rC59D5Q4QRQ6IFIM0JIWRWTcnogggyOivmsSDyV5zrIzEUI6WkpeRvQm_YdiZzzjmpF0o.Wbqh5PSACiJ02lI7",
       "recordingStart": "2026-08-05T16:46:19+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -966,14 +1028,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-05|４:４５～６:１５|e4|A|arith",
       "recordingCampus": "minami",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 1.3,
-      "recordingDurationMinutes": 162.0,
-      "lessonOverlapMinutes": 88.7
+      "recordingRoom": "3"
     },
     "2026-08-05|４:４５～６:１５|hon|hon_e5_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/W0GrfsAN_M18lhKeUXWRZaZ0oZSgzydlxJGFGmm4Ny486U-CHIRpGOEIjbpqfqEoscNLI9U4a1rvHlW7.C-AX5fkobg-7MbhV",
+      "url": "https://us06web.zoom.us/rec/play/Nw5pH0HMhoQ12vrgSOh38cmIOp-hsjRN2LxaDO3sDJv8xz1Q3suTWFBe3FaQsEMKUJ41q59ldUpw9S2j.hxaKMshXjA7NsCCu",
       "recordingStart": "2026-08-05T16:42:35+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -988,14 +1046,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-05|４:４５～６:１５|e5|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.4,
-      "recordingDurationMinutes": 80.0,
-      "lessonOverlapMinutes": 77.6
+      "recordingRoom": "3"
     },
     "2026-08-05|４:４５～６:１５|hon|hon_e6_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/NVLRhRKDOh3mwqKzR3SKQDeBSPhQa2mQFmQH9yrNwg_0NcWRVLBObF3-muVmXP-P117N-9QODZ2NTas.O3TPQTimjBX3pthM",
+      "url": "https://us06web.zoom.us/rec/play/3j3VmjBVyIgaRrJG_wcXvLj2VnfkB2yMvsavlkuQgA5ieAJnLEPEc03DLCxjutrzlMhHXR-BkYh9sNQ.0KwVZn1sEGEUA4lJ",
       "recordingStart": "2026-08-05T16:42:43+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1010,14 +1064,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-05|４:４５～６:１５|e6|A|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.3,
-      "recordingDurationMinutes": 87.0,
-      "lessonOverlapMinutes": 84.7
+      "recordingRoom": "2"
     },
     "2026-08-05|４:４５～６:１５|minami|minami_e6_A_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/s0WOHDC5HGpT02RC_kYxOmnG7nZdD0NHVYpKi2WRtzu6hM7rZnRChAm3Y4T2oqzvroU40OMpy46dETY.80QpvrrjYhiDkdTH",
+      "url": "https://us06web.zoom.us/rec/play/AmvOTtNCi-dWa6QincKucuD9oWWLNlCTYx5HNOMZp0p2nI8DqIVT_lp0921K3VYMC1FRWnrO1IIKSjw.KzmTAJrxR1nvRvJA",
       "recordingStart": "2026-08-05T16:40:03+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1032,14 +1082,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-05|４:４５～６:１５|e6|A|arith",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -5.0,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 78.0
+      "recordingRoom": "2"
     },
     "2026-08-06|2:55～4:25|hon|hon_j1_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/X-9x5p3XZ2J9LfEvSUicRpXAZqRFNEumgF28hYlpqmE_feZysvSlAGTqIpRr0n8gR0y8H2-iKntG6jjZ.Mda415Tr20_t0Wtw",
+      "url": "https://us06web.zoom.us/rec/play/Oi_ibesbYhVyuHEJ5RJtgtm2ddztXyahFVPwFD8_mrhUrxyAvhhCyUdviFlMQSWAdD84Sh7RWPvuW-hF.nV9thmKSd2-AsaS1",
       "recordingStart": "2026-08-06T14:53:45+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1054,14 +1100,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-06|2:55～4:25|j1|A|math",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.2,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 81.8
+      "recordingRoom": "1"
     },
     "2026-08-06|2:55～4:25|minami|minami_j1_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/ofzf5ubrwihiFI0IQcFDLrs5J28GR751B1Zoi0LM7C2to1p-LxAoG7YHftsL51x-rY5vG_RtzxllB9j5.QNjvJxu_sFLDV7a-",
+      "url": "https://us06web.zoom.us/rec/play/NYVru9Gk0ra0cP8SQcwOlwiBaaaVYUu8rkHKEHT-xqtOQwSp-VeINDubmJKWccXwDdi4Jp1PGDqernh3.bvVfvzwUU0oLudiZ",
       "recordingStart": "2026-08-06T14:54:52+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1076,14 +1118,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-06|2:55～4:25|j1|A|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.1,
-      "recordingDurationMinutes": 94.0,
-      "lessonOverlapMinutes": 90.0
+      "recordingRoom": "1"
     },
     "2026-08-06|2:55～4:25|hon|hon_e6_A_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/oxPgsrBhKnVK0ZC05RU_su1DyKWOU1E63K_GmalT3GnbHc5xU5tk-IjrtHJPWOu06JHgVxyvBmvXooHY.O4Cl6YyPm5Qe2BfM",
+      "url": "https://us06web.zoom.us/rec/play/jWPlDx4kjR4wvK4qJ2chzqRfzJ-s_tse-xCGhqGoSg8arCS3saVRGHtuu3XfL2lX1RoJdiZfSFomk9zO.XUKeANG5Hp2YiVyn",
       "recordingStart": "2026-08-06T14:54:54+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1098,14 +1136,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-06|2:55～4:25|e6|A|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.1,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 87.9
+      "recordingRoom": "2"
     },
     "2026-08-06|2:55～4:25|minami|minami_e6_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/utpz8qC_hrw2dfHyMU-oy2GFrR4vzl_FE2N6MuH_2BOK6ECo4mwpzVipQkTj1maQUEXrggxMJtpss6U.b0PX5dmwjOZxnqeg",
+      "url": "https://us06web.zoom.us/rec/play/FQLRex0mJNG-ke-sg-mjO3lN7sd-Rzw98t0kEDwy0LsqlMzURhifNSizkg7Lk3ZRV4luX4cM5mYdM38.0OdaoW3JbUacFEhw",
       "recordingStart": "2026-08-06T15:00:43+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1120,14 +1154,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-06|2:55～4:25|e6|A|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 5.7,
-      "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 82.0
+      "recordingRoom": "2"
     },
     "2026-08-06|2:55～4:25|minami|minami_e6_S_eng|3": {
-      "url": "https://us06web.zoom.us/rec/play/bp7hdIF06jxLXoNhvruT0W1P8ZrDESRRu4nU8jm6eqH9PsztpEiIeED7zDYqkZZf_u6O93zkl9WELUtk.oIdYfSJTJAtD2tud",
+      "url": "https://us06web.zoom.us/rec/play/1H7GXL2Top4uaXLn1pMydl9xC1S3pkMkJYdqGTp0ijgT8YqZVszFMY_f-6wlJyEfI0gIpVmZW5M4HIIL.yrk9-qwyFysixRIv",
       "recordingStart": "2026-08-06T14:54:00+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -1142,14 +1172,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-06|2:55～4:25|e6|S|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.0,
-      "recordingDurationMinutes": 81.0,
-      "lessonOverlapMinutes": 80.0
+      "recordingRoom": "3"
     },
     "2026-08-06|6:35～8:05|hon|hon_j1_B_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/NIKZr1NATv_8dcabzNG_hq0ELS2bnjsWnNetswTb9AGrvWZk7rWTv64ri302P2wlkXgLeQDlpGvXieH7.kcdaW_CP4ZGj6yRM",
+      "url": "https://us06web.zoom.us/rec/play/rTtlH1DeOb_fHqUbBcC-Xjf6j595H58_ySi1c6Npq8Xf8USKInM2RjxHwfkvdTxZc_H6fIB4EbYQabNg.3mz5MDE7jXebU5QY",
       "recordingStart": "2026-08-06T18:32:12+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1164,14 +1190,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j1|B|math",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.8,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 83.2
+      "recordingRoom": "3"
     },
     "2026-08-06|6:35～8:05|hon|hon_j1_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/ZFe0RYB1_sRadv6Df8X5dhyKbFKmCIIRluhN3PXdgHqqy9rViaxPp6r5f0zpSUxX81P6DKLTIEoFI-K9.sQsmfv4tq7CgC_N3",
+      "url": "https://us06web.zoom.us/rec/play/XVodusZ18eRfPT0zJF_jvStB2ap-MdPy7Re-WUWGcBn-7RdTAulpbKUy9akH8qNxl7PuE91ACE3u5vue.eSWbWpYIfWoXNz2A",
       "recordingStart": "2026-08-06T18:32:55+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1186,14 +1208,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j1|S|math",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.1,
-      "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 79.9
+      "recordingRoom": "2"
     },
     "2026-08-06|6:35～8:05|minami|minami_j1_S_eng|3": {
-      "url": "https://us06web.zoom.us/rec/play/yt5ephrFgVV534aKKiaf21Tmnq7UsyHhCZp4-SjZlrw0gdnW2OTqrzyPJNiStxUYC3xMAI9WoyGYBOcR.zQFpp5jj_tHe50-l",
+      "url": "https://us06web.zoom.us/rec/play/qPX4p7OOCFECWd9f8LiKFpNknEowSQpPbLgO3aDgU-2KO-BLlAKYBQsjeeI7sq21z-Y7_n18xSDnhXbA.yYcUc3eGejQpYhfP",
       "recordingStart": "2026-08-06T18:31:28+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -1208,14 +1226,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j1|S|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -3.5,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 74.5
+      "recordingRoom": "3"
     },
     "2026-08-06|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/cvol2y7PvXErv1lUwM7p3H16spr7uD2USTusEoyDRDknnj4RwWPDaEl8c4yKgMIUbLqQLHQz2rJIyiRO.qHyurQO3suOtFsgb",
+      "url": "https://us06web.zoom.us/rec/play/qVrWyoYZ_7WB4b3n-cVLzU_kGJu3q7IEo3l4xUF8vKVuBDVhxo81BMUvqD8d6oDgoPalMqStPXlr1zRG.GgIquPM0ADdw8xgK",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1230,14 +1244,10 @@
       "teacher": "真下",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j3|B|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.2,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 85.8
+      "recordingRoom": "1"
     },
     "2026-08-06|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/cvol2y7PvXErv1lUwM7p3H16spr7uD2USTusEoyDRDknnj4RwWPDaEl8c4yKgMIUbLqQLHQz2rJIyiRO.qHyurQO3suOtFsgb",
+      "url": "https://us06web.zoom.us/rec/play/qVrWyoYZ_7WB4b3n-cVLzU_kGJu3q7IEo3l4xUF8vKVuBDVhxo81BMUvqD8d6oDgoPalMqStPXlr1zRG.GgIquPM0ADdw8xgK",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "2921151272",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1252,14 +1262,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j3|B|eng",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.2,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 85.8
+      "recordingRoom": "1"
     },
     "2026-08-06|6:35～8:05|minami|minami_j3_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/awvA-IF2qsxUIii4ma4DOFJOQ624HtcLqYlQdO6i5pdPBw-qppvv02z3OoKf8aLNrs6bXBm33MpICDsk.BPM53MNs71GfGYJC",
+      "url": "https://us06web.zoom.us/rec/play/RZrIM3kFkJeSIuOfFC51PuA_Gh1BXmjj1Gcys6w_M0uWu25AWWwYIo8gtEZI0i_em-14vftTd9fYxJ4S.I3MQbNJr5jzE5GTC",
       "recordingStart": "2026-08-06T18:28:57+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1274,14 +1280,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-06|6:35～8:05|j3|S|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -6.0,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 80.0
+      "recordingRoom": "2"
     },
     "2026-08-06|6:35～8:05|hon|hon_special_数学　補講①|1": {
-      "url": "https://us06web.zoom.us/rec/play/cvol2y7PvXErv1lUwM7p3H16spr7uD2USTusEoyDRDknnj4RwWPDaEl8c4yKgMIUbLqQLHQz2rJIyiRO.qHyurQO3suOtFsgb",
+      "url": "https://us06web.zoom.us/rec/play/qVrWyoYZ_7WB4b3n-cVLzU_kGJu3q7IEo3l4xUF8vKVuBDVhxo81BMUvqD8d6oDgoPalMqStPXlr1zRG.GgIquPM0ADdw8xgK",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1296,14 +1298,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-06|6:35～8:05|||",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.2,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 85.8
+      "recordingRoom": "1"
     },
     "2026-08-06|8:25～9:55|hon|hon_j2_A_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/KHbMIJTTjxDwi3Q6e0lFd97W7vOc50nk3x-Wyoh4EZSZV_N1RsYfHflWKJzc3du_EFIOeuILAoLrTfG-.NDeP40vvRhBAiLx3",
+      "url": "https://us06web.zoom.us/rec/play/YtZc3LsOVD3HxJuduoKRLgZUMmen-3JMKuUnaW-6X072eh7hOnJlNVjC4nx33rKxxkge8hRDuMp6OquZ.Q2V65u1umEHwp--_",
       "recordingStart": "2026-08-06T20:22:53+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1318,14 +1316,10 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-06|8:25～9:55|j2|A|math",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.1,
-      "recordingDurationMinutes": 89.0,
-      "lessonOverlapMinutes": 86.9
+      "recordingRoom": "2"
     },
     "2026-08-06|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/Ve0JHdRvqhr7b3rG0wL5-uQefUyd6ckLY1w0GlB2QSIlijN4BKRzoijv7qKrzwlPCwMHYgj24XLDiuPP.5C-dZVSsMAKNTPXg",
+      "url": "https://us06web.zoom.us/rec/play/ggRAdH_-eWN-qBs9Tae8hobNQnfbzUtrux3VPnghTYVLbt1Ij5Y36_8ciXsVmb5NaLjj3NKYYTLNtNKg.rs2ZTwGFpxvcsvjB",
       "recordingStart": "2026-08-06T20:23:05+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1340,14 +1334,10 @@
       "teacher": "岩本",
       "onlineLessonKey": "2026-08-06|8:25～9:55|j2|B|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.9,
-      "recordingDurationMinutes": 89.0,
-      "lessonOverlapMinutes": 87.1
+      "recordingRoom": "2"
     },
     "2026-08-06|8:25～9:55|hon|hon_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/SQuXQlDwteCnurDTAstgSoM65-JqMDjz2ShCOLSqQRUXaQNptpDPSM27nBYdljFB_znztI2vab7Uk3Ep.mImHgquAiQITFY98",
+      "url": "https://us06web.zoom.us/rec/play/MV6wLtwIsyeOOUOG4m4E8fPiSwyAExPzsc1wyCLZY8HavuNj4iP-IG2qJEofPe7tks_n6dboIL1ahUOj.XL3ueAKAbT9Ty9kx",
       "recordingStart": "2026-08-06T20:23:56+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1362,14 +1352,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-06|8:25～9:55|j3|B|math",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.1,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 81.9
+      "recordingRoom": "1"
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e4_A_arith|4": {
-      "url": "https://us06web.zoom.us/rec/play/EAT0V1x3vma1X0aDhhetiVDRkfk9IF2mr5VPTJaM8FAg526WbJPEbqzMFQZm_zuP3RzahgoxVp6wS7oI.125_l6Qq5zMUpWJQ",
+      "url": "https://us06web.zoom.us/rec/play/Yv8oeu0e7Q8ldEaxP01ROTyhnBFVZvej0vrbduk-vM-9LyFBvIkvqx2P8aImwghVoPh8WsIM1ks8--D8.EhGojmDsbjNfjjK0",
       "recordingStart": "2026-08-06T16:52:26+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -1384,14 +1370,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-06|４:４５～６:１５|e4|A|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "4",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 7.4,
-      "recordingDurationMinutes": 72.0,
-      "lessonOverlapMinutes": 72.0
+      "recordingRoom": "4"
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e5_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/Tz8T4SgqRlb1mmasoTABS5Tj-2-7Mw86D8Nvblby_ZWDryr-k-an6Ram-BIsr7EZr3kL4AbGQpbwteYV.kTukSeUjlGv6dBJN",
+      "url": "https://us06web.zoom.us/rec/play/UmW6F3ydvxaronMhrymAvqa3Jq6nGFDxqk1ERuuKz18ZEgE2HjXfbayto5OsSeHFioReGgJRHdkrGPfB.iu7-HiYtqZZ_mN4t",
       "recordingStart": "2026-08-06T16:38:11+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1406,14 +1388,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-06|４:４５～６:１５|e5|A|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -6.8,
-      "recordingDurationMinutes": 84.0,
-      "lessonOverlapMinutes": 77.2
+      "recordingRoom": "3"
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e5_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/jjQcA8-xXgTM0sYNiCyb7sTjgJgUBSN1d9bA7f7NtAsBDMXkwYSh1OSRuTrAacBmIosFaDSth37_rdpy.HoIID-9odyxkTWF-",
+      "url": "https://us06web.zoom.us/rec/play/2C75R7uvXAin5-ZJ-V6ar3eK0FuKRBiQ23o0myOQMde7FET6DIt3EQ51w6I0BX8SnNXeyskYDWOPrM_p.oYKdxwuAnaYS4wAw",
       "recordingStart": "2026-08-06T16:49:01+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1428,14 +1406,28 @@
       "teacher": "森松",
       "onlineLessonKey": "2026-08-06|４:４５～６:１５|e5|S|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 4.0,
-      "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 85.0
+      "recordingRoom": "2"
+    },
+    "2026-08-07|2:55～4:25|minami|minami_j3_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/VJ606EsqDqGKsr4SInWv8Txtyat0KBuYSicv1KvJ5FNL0DNfbu0PsBxGqeq1BRYJNAauOE67KjtvsIYz.e0EpueEOYE6F--rI",
+      "recordingStart": "2026-08-07T14:56:32+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-07",
+      "time": "2:55～4:25",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "eng",
+      "label": "中３A 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-07|2:55～4:25|j3|A|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "1"
     },
     "2026-08-07|2:55～4:25|hon|hon_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/hkQ0LTnGZu7WidhnaMZ1Ku7sKym3pdfdxgWa2SOEvPYrg1ZnDuU8-ONiNJCPUf4SkYiUqdT4pqvlldtO.opl4HKgzaLBwFRun",
+      "url": "https://us06web.zoom.us/rec/play/oCnSJHKMEwRo3tdLCDlCdZ2_kog_f8En4nyZKTgnkN9Lm9PtYeHE08f4iUlmG7wOKbiRkvK1iA6l_WgL.DI0qgb-lphBWqras",
       "recordingStart": "2026-08-07T14:54:23+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1450,14 +1442,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-07|2:55～4:25|j3|B|math",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.6,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 87.4
+      "recordingRoom": "1"
     },
     "2026-08-07|2:55～4:25|hon|hon_e4_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/oOqSOQwYoxM0wyfL_KeMKDeMOOWg9sf7aLqbQ5GX72axbnmbJFMp0h9AmjgyjJgQBGtMqC4Sh0Qhv7ef.oyzrX3uWEYKQWm6-",
+      "url": "https://us06web.zoom.us/rec/play/_ZJOHqQxr3-ceysnw2jtyqVpKaldGK08uJpQ6fSu9qv-Uyis0heiUCF44z45maF9JJfgGfzlOmc2b4_m.8INcox65y8i-5lgf",
       "recordingStart": "2026-08-07T14:55:33+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1472,14 +1460,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-07|2:55～4:25|e4|A|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 0.6,
-      "recordingDurationMinutes": 74.0,
-      "lessonOverlapMinutes": 74.0
+      "recordingRoom": "3"
     },
     "2026-08-07|2:55～4:25|hon|hon_e5_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/nMZ5ZI6i_Ky67j1Y92dZoUiMw4hPgMrEwKxOpiYDeaEwUcT48pKdr6HqgaVGU8Gr75GbLw8pS6La6F_v.8QxGOul-o5eFZV2h",
+      "url": "https://us06web.zoom.us/rec/play/V47W9o88MDUI9lVudzVFkGudTHmuBC81U-Hvv-H_5sFzIE4FVDlNDmPmUACHvnz1pGeKL8IbHqjPld_3.yKAM1Cwt_35eMnI8",
       "recordingStart": "2026-08-07T14:54:00+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1494,14 +1478,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-07|2:55～4:25|e5|S|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.0,
-      "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 81.0
+      "recordingRoom": "2"
     },
     "2026-08-07|6:35～8:05|hon|hon_j1_A_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/Z3oVVw8vNx9usCyW5tqGbe0fdK8e_kvCCtZyoz7BwVrvXbo30CdK5vlc3InbFJtDKz7piUGQrNrTUIJu._L9XTn5ZZLRypN2D",
+      "url": "https://us06web.zoom.us/rec/play/6Yb5dFha6tsobxPX1TFXubXzM1dXTk4ciGtQ6PeSoJAPItyNHOxo9tM9unX5zsPHvatYP3OLCdDa59td.i5xRIrgSaoa37kmK",
       "recordingStart": "2026-08-07T18:35:12+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1516,14 +1496,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j1|A|math",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 0.2,
-      "recordingDurationMinutes": 87.0,
-      "lessonOverlapMinutes": 87.0
+      "recordingRoom": "3"
     },
     "2026-08-07|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/wZqKHSBIgcc8mQGlMp1WZfAJcLMDzJPXAA8LNBXQQK6baKFEpl8XWPHA61Zst6SAuXsdqGmq3Lrk2Tzt.l6ubb3XJcny1styw",
+      "url": "https://us06web.zoom.us/rec/play/-rtDZN1KXYUyGyUXja577xFx0ACGXcCuMY_qTke-EqLy0aGHLnaH27oOEPol-oJO_U7GzuN8aP3UZP0N._EMYc1W4ERSTH1ul",
       "recordingStart": "2026-08-07T18:33:38+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1538,14 +1514,10 @@
       "teacher": "真下",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j1|A|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.4,
-      "recordingDurationMinutes": 89.0,
-      "lessonOverlapMinutes": 87.6
+      "recordingRoom": "2"
     },
     "2026-08-07|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/227Hjxe5oyahKNhy0OtqfK4ktO415xG8kJgAWZ9CuT4hIRpoJK75x1LdnUdGKetfCp0jBuN0bkjEirq7.YxXWtAzQV6K3Ays-",
+      "url": "https://us06web.zoom.us/rec/play/y7gksi0bQo-aMVbe2Us6xJZ9dmCAAItM8God1qINDV60x7nUJG5K57KvgGA72Hg4Nh166Rqjp8WvtJKH.KBJKUZuZSMLSkExa",
       "recordingStart": "2026-08-07T18:33:48+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1560,14 +1532,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j2|A|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.2,
-      "recordingDurationMinutes": 69.0,
-      "lessonOverlapMinutes": 67.8
+      "recordingRoom": "1"
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/7N_FUZmte598QUVvhdm2n94IREMyrII9qlSLxLbQP5JSQyCarSlCRz7ALXfoUYPsof9f2H3A3kOiR_yj.c6V5vT7ei6CpshUw",
+      "url": "https://us06web.zoom.us/rec/play/fwomJNdqVZd_squf-BDW50B1h_LBDXQcDRsFYeNT0WeQbZZYmcA99xgJ9OM8yv8T7yONp0y7PKkeUPq1.WLW0EGsRCz6GdwTF",
       "recordingStart": "2026-08-07T18:35:50+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1582,14 +1550,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j2|B|math",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 0.8,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 86.0
+      "recordingRoom": "2"
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/MPenw_uvWOqAtGS0hPZ6EmHEZkxTS-MLKhQTdIJuUM-Au9mHMLYtt4mYTXCCGtS4jvGiGK-GFgJlxWEe.xsQfY0saCHGlun6Q",
+      "url": "https://us06web.zoom.us/rec/play/ir8UctUweU7GVAJaxp3wn-jYiu6n10Jbpni6DZtbtKr1HKQAj4ecmS6EbtYg0eDbbI7oT652DrvdLA1q.aEKCULuyJVsSvGWi",
       "recordingStart": "2026-08-07T18:32:42+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1604,14 +1568,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j2|S|math",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -2.3,
-      "recordingDurationMinutes": 89.0,
-      "lessonOverlapMinutes": 86.7
+      "recordingRoom": "1"
     },
     "2026-08-07|6:35～8:05|hon|hon_j3_S_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/ck1LdHTioWXNM-N2FuLWb1fQQxxbwznWIfZJOJZ-gn_na-PpZ10uxJHGe-17_s73umY56QZJPR72l7Al.wLJViuco97f4ZQG6",
+      "url": "https://us06web.zoom.us/rec/play/n8YQD0uQcnQbs7lSORcRm5N-XKSPxEh15mpTKZUDuT0ZnyaLcRV95gSLJ5gGv5k4qOM1rlckdkbn2ohV.rW8_SyudVInj_DBv",
       "recordingStart": "2026-08-07T18:33:26+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -1626,14 +1586,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j3|S|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "6",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.6,
-      "recordingDurationMinutes": 74.0,
-      "lessonOverlapMinutes": 72.4
+      "recordingRoom": "6"
     },
     "2026-08-07|6:35～8:05|minami|minami_j3_S_jp|4": {
-      "url": "https://us06web.zoom.us/rec/play/ck1LdHTioWXNM-N2FuLWb1fQQxxbwznWIfZJOJZ-gn_na-PpZ10uxJHGe-17_s73umY56QZJPR72l7Al.wLJViuco97f4ZQG6",
+      "url": "https://us06web.zoom.us/rec/play/n8YQD0uQcnQbs7lSORcRm5N-XKSPxEh15mpTKZUDuT0ZnyaLcRV95gSLJ5gGv5k4qOM1rlckdkbn2ohV.rW8_SyudVInj_DBv",
       "recordingStart": "2026-08-07T18:33:26+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -1648,14 +1604,10 @@
       "teacher": "金城",
       "onlineLessonKey": "2026-08-07|6:35～8:05|j3|S|jp",
       "recordingCampus": "hon",
-      "recordingRoom": "6",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.6,
-      "recordingDurationMinutes": 74.0,
-      "lessonOverlapMinutes": 72.4
+      "recordingRoom": "6"
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/zOZRjyJgEZrfhZcmzuvRQOWyTeF3v2U3z2rP_haM4nfc0eecOKYnptVu7o-ybbNnOZ8cgWdJyWH4f34.6rv9w7xIfBwbwULC",
+      "url": "https://us06web.zoom.us/rec/play/udvOuo3qXfpRf7TTTMsSzBG5u6Tb6myGRZvz6XK3VYu0vCYusa0VyFhTeCgeD59HzJ_cZtGLw_k9Tf4.fp69ASkIPyHh2JeA",
       "recordingStart": "2026-08-07T20:30:32+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1670,14 +1622,10 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-07|8:25～9:55|j3|A|math",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 5.5,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 83.0
+      "recordingRoom": "1"
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/1_wlshc_AMpwTbmTdfbMVuWDEomRvmSYy2ZK5-qpoct2jrgS97zqCFf_H9G8ilJQgTFsdEgi0InXMK0s.GyRpYgQ_aEIc3pME",
+      "url": "https://us06web.zoom.us/rec/play/MyoVizJtSxOv50GNzE2FPcdsm7ZtOKEKm7vIIfKR8Qktm1wN6xK7wgVx76CPpu9Jtpk8dTlZCfsSa2Vk.tTY2WXVR5NXqphXA",
       "recordingStart": "2026-08-07T20:24:02+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1692,14 +1640,10 @@
       "teacher": "高山",
       "onlineLessonKey": "2026-08-07|8:25～9:55|j3|B|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.0,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 77.0
+      "recordingRoom": "1"
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/5bsN4zW1NEImqsCvY--i4WZboNtaNWe20ZVqtX2usivBCJv7HiV7ZIgvGLwniqKrmcXEhP7Xyev__tBo.FThsNOvDqTdHe1Y0",
+      "url": "https://us06web.zoom.us/rec/play/4K8BsHxU3svRcT5NW_xlbxrqD9ekz_IK64XADgzwwHpvmsqvlBnLu5P9i6SZiX08w4wbLPyoZY0Mw6Ey.FHvUuvtbAxCMD3Qn",
       "recordingStart": "2026-08-07T20:24:25+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1714,14 +1658,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-07|8:25～9:55|j3|S|math",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.6,
-      "recordingDurationMinutes": 88.0,
-      "lessonOverlapMinutes": 87.4
+      "recordingRoom": "2"
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/4P3bmMhonKkt2odJd3rssiRLBHHbCfGgCLj8KxQvMqGXeemUbq8oufpFhR5ZoBI_HHOwUWUOfuEfQ9Fk.Cie9Ii8OZsSKPzQW",
+      "url": "https://us06web.zoom.us/rec/play/f71mvyYPFGiZFg0uq91H48b1FP1UMKm_XyKGbOAMeehH69FPLRFb7vMflmFAMq0DCkDhQbgo86aPtN7u.JrSF09TUugzojPp3",
       "recordingStart": "2026-08-07T20:23:15+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1736,14 +1676,10 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-07|8:25～9:55|j3|S|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.8,
-      "recordingDurationMinutes": 87.0,
-      "lessonOverlapMinutes": 85.2
+      "recordingRoom": "2"
     },
     "2026-08-07|４:４５～６:１５|hon|hon_j1_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/iO29G-r4SFgYjuZfBQHANJ7BHmLCh82zXUcbEAt3zwDxgX96KdHUMgMnDEGzrbORd6kCxX3S7UT2NKqg.mhkmea5f2rebrnF5",
+      "url": "https://us06web.zoom.us/rec/play/ESRToKPpxdWVlnrtBLgWTwwObqH5RSd5Li-wVo6p1ZZbm8RRA8MUxgDJSDWVuKN42Pkn6D7heV876pBm.t1NWraStzR8vKprN",
       "recordingStart": "2026-08-07T16:46:07+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1758,14 +1694,46 @@
       "teacher": "鈴木",
       "onlineLessonKey": "2026-08-07|４:４５～６:１５|j1|B|math",
       "recordingCampus": "hon",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": 1.1,
-      "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 82.0
+      "recordingRoom": "2"
+    },
+    "2026-08-07|４:４５～６:１５|hon|hon_j3_A_jp|6": {
+      "url": "https://us06web.zoom.us/rec/play/sBlrKGvYlRjnH6r_PfRIVZXi4NTsi0be2zXQ94cJQgTVncnmC5PvAAAZS5LD95SyfNOYgaPMAF21ECQM.DudOTYP-0bi0SMaV",
+      "recordingStart": "2026-08-07T16:36:43+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-08-07",
+      "time": "４:４５～６:１５",
+      "campus": "hon",
+      "room": "6",
+      "grade": "j3",
+      "class": "A",
+      "subject": "jp",
+      "label": "中３A 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-08-07|４:４５～６:１５|j3|A|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "6"
+    },
+    "2026-08-07|４:４５～６:１５|minami|minami_j3_A_jp|4": {
+      "url": "https://us06web.zoom.us/rec/play/sBlrKGvYlRjnH6r_PfRIVZXi4NTsi0be2zXQ94cJQgTVncnmC5PvAAAZS5LD95SyfNOYgaPMAF21ECQM.DudOTYP-0bi0SMaV",
+      "recordingStart": "2026-08-07T16:36:43+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-08-07",
+      "time": "４:４５～６:１５",
+      "campus": "minami",
+      "room": "4",
+      "grade": "j3",
+      "class": "A",
+      "subject": "jp",
+      "label": "中３A 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-08-07|４:４５～６:１５|j3|A|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "6"
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_A_arith|1": {
-      "url": "https://us06web.zoom.us/rec/play/-5QE02PWZqLaCr9V7vC3bZp_eoSNiztwmtafear1iP6zb4Bef3NXiyEbnzsUcMpmofB0ggdN9HEE4zYe.nR2C62fbUHZ0-jIl",
+      "url": "https://us06web.zoom.us/rec/play/BfcwKgxxsfQX4cVydJFDVvmK2CnkDH4324VmQ-nkj60pUbAcv0q3rmUAfB7GwmqaghUa5MUMZ2WAcFVr.mMkUnOT-bVriQdwC",
       "recordingStart": "2026-08-07T16:44:47+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1780,14 +1748,10 @@
       "teacher": "工藤",
       "onlineLessonKey": "2026-08-07|４:４５～６:１５|e6|A|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -0.2,
-      "recordingDurationMinutes": 83.0,
-      "lessonOverlapMinutes": 82.8
+      "recordingRoom": "1"
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/6ZGaSjW4FOcOV4dL1hlT8qnYjC8u0q5Aau3jjgIWJQ73VM9ldM-0Mns-gqC9TnGFvQAfA7SoI6ioBbmk.rXASooA1FB786W3y",
+      "url": "https://us06web.zoom.us/rec/play/EQtTUZvwxvDp4zCJHMWl1qRiCJ5l7e1XWSvGSeUJyq5BURFbMilS0w4JFsIn1PnyHgLjLzj9GWK5IKxz.-XhXnlT_htJYkP_Y",
       "recordingStart": "2026-08-07T16:32:17+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1802,14 +1766,10 @@
       "teacher": "真下",
       "onlineLessonKey": "2026-08-07|４:４５～６:１５|e6|A|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "2",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -12.7,
-      "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 72.3
+      "recordingRoom": "2"
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_S_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/Jkdwo_LWVnZPr9R9NhLPWElsqxyInzt5Jbksbyh-C3ZMCnPD3dwkElVMqyNYLG0cdm1r3mIwP2A7e3wh.4nT6ddjK0P4duUmO",
+      "url": "https://us06web.zoom.us/rec/play/gs9209IfZxPllu2mvQgexE3p2l--csi89BLk3bYVvQN3unVS4n_MjEXM1fEJ-aGKPinXBpRQw0rUwSiT.7PNirpZCr-exbqMv",
       "recordingStart": "2026-08-07T16:43:48+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1824,14 +1784,10 @@
       "teacher": "治彦",
       "onlineLessonKey": "2026-08-07|４:４５～６:１５|e6|S|arith",
       "recordingCampus": "hon",
-      "recordingRoom": "3",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.2,
-      "recordingDurationMinutes": 86.0,
-      "lessonOverlapMinutes": 84.8
+      "recordingRoom": "3"
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/2-OeKawfA12lHQuUbFheLyway9b7FquPuII2WrVkZHvIRgm7e28_orA1cFLjPYJwICauAjyKOLMGceay.ZzgE77mfaafAycNG",
+      "url": "https://us06web.zoom.us/rec/play/O8CAJ11_9NOTz6JiLM8lJK5xzPjVmbrqimtkcYn5VgT9T78S2cwa4jMAXxrHyZwqBU40fSowf11jRn8B.m9mZIzPoFoqvRaUa",
       "recordingStart": "2026-08-07T16:43:38+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1846,11 +1802,133 @@
       "teacher": "金子",
       "onlineLessonKey": "2026-08-07|４:４５～６:１５|e6|S|eng",
       "recordingCampus": "minami",
-      "recordingRoom": "1",
-      "matchPolicy": "lesson-only-v1",
-      "startOffsetMinutes": -1.4,
-      "recordingDurationMinutes": 78.0,
-      "lessonOverlapMinutes": 76.6
+      "recordingRoom": "1"
+    },
+    "2026-08-08|2:55～4:25|minami|minami_j1_B_eng|2": {
+      "url": "https://us06web.zoom.us/rec/play/3gUlWrSzqOhnqJi8-HT_m0A07vqDoq1ZRZMvdjjbnllH55_ijo17XhaIOlDLJXkoOoTo7euZ_iK26Xk0.fy1oreZsdnNcdzlu",
+      "recordingStart": "2026-08-08T14:59:02+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "2:55～4:25",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j1",
+      "class": "B",
+      "subject": "eng",
+      "label": "中１B 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-08|2:55～4:25|j1|B|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "2"
+    },
+    "2026-08-08|2:55～4:25|hon|hon_j3_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/DfFqMcsbgpQIicZCckR5TddMktoJhs-VcL4sYvWrpixbsytTbBbGmFdqFkDChjhxlvS0UxuE3lCwTcCi.T7l_LIPSmUSOsaHn",
+      "recordingStart": "2026-08-08T14:53:52+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "2:55～4:25",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "math",
+      "label": "中３A 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-08-08|2:55～4:25|j3|A|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1"
+    },
+    "2026-08-08|2:55～4:25|minami|minami_j3_B_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/Jl14F_Vw36NytskLdYIAPCONsnyEBlm1_MQH7hXM_8MYzhZb6z6S8FCfehvxq0z5iO5VeGXs35QhZNg4.uLfW2HpJ2UmLHkzK",
+      "recordingStart": "2026-08-08T14:54:32+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "2:55～4:25",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "math",
+      "label": "中３B 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-08|2:55～4:25|j3|B|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1"
+    },
+    "2026-08-08|2:55～4:25|hon|hon_e6_S_arith|2": {
+      "url": "https://us06web.zoom.us/rec/play/WqtzV9Dp9_NFYjnE3qnjXiqzSE5SYGsGpWPbJx-4BlVZ4wwVQbM4I-KUwhvxz2otLN0ot-4aOSUmqLYT.9VFSnuFiRDc51uuB",
+      "recordingStart": "2026-08-08T14:48:46+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "2:55～4:25",
+      "campus": "hon",
+      "room": "2",
+      "grade": "e6",
+      "class": "S",
+      "subject": "arith",
+      "label": "小６S 算数",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-08-08|2:55～4:25|e6|S|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "2"
+    },
+    "2026-08-08|４:４５～６:１５|minami|minami_j1_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/share/cQCMUiCyqImkkMqU8eWDLx0UK3SM_MM9zzGeau81opGgbhwKwJ10ETWgs3NFVDf5.rF4ziPILdHjvCDnD",
+      "recordingStart": "2026-08-08T16:40:08+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "４:４５～６:１５",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j1",
+      "class": "A",
+      "subject": "math",
+      "label": "中１A 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-08|４:４５～６:１５|j1|A|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1"
+    },
+    "2026-08-08|４:４５～６:１５|hon|hon_j3_S_math|1": {
+      "url": "https://us06web.zoom.us/rec/share/a8srwCyDJzNc7fEKccyJ24Tw8VXflh8QTMKl0tCya-nC5O2n7ZES_hgae7QhWRf5.D2zkXY2UuczTw-6A",
+      "recordingStart": "2026-08-08T16:45:29+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "４:４５～６:１５",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "S",
+      "subject": "math",
+      "label": "中３S 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-08-08|４:４５～６:１５|j3|S|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1"
+    },
+    "2026-08-08|４:４５～６:１５|hon|hon_e5_A_arith|2": {
+      "url": "https://us06web.zoom.us/rec/share/4p-vLKljC6x1gg_GRMKQMmIJRQ5npepwsaUEs62vvo0NN4zkSmb7Xak259fXwDMX.HhpEHfDUvSUKnb03",
+      "recordingStart": "2026-08-08T16:48:35+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-08-08",
+      "time": "４:４５～６:１５",
+      "campus": "hon",
+      "room": "2",
+      "grade": "e5",
+      "class": "A",
+      "subject": "arith",
+      "label": "小５A 算数",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-08-08|４:４５～６:１５|e5|A|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "2"
     }
   }
 }
