@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-08T12:56:22",
+  "generatedAt": "2026-08-08T22:25:22",
   "entries": {
     "2026-08-17|４:４５～６:１５|minami|minami_e4_A_arith|3": {
       "content": "",
@@ -610,9 +610,9 @@
       }
     },
     "2026-08-08|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
+      "content": "入試実践ｐ220-223-４まで",
       "page": "",
-      "report": "",
+      "report": "入試実践の化学のところ。明日も授業があるので宿題はなし。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -621,7 +621,9 @@
       "sessionNumber": "27",
       "monthNum": "8",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "入試実践ｐ218-219",
         "page": "",
@@ -2401,18 +2403,20 @@
       "homework": []
     },
     "2026-08-08|6:35～8:05|minami|minami_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三単現②",
+      "page": "#15",
+      "report": "二極化が起きている印象。下位層の大門・小原・伊藤と上位の差が厳しいかも。米倉は速いが、精度に欠ける。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "宿題確認後、does,doesn'tの導入をお願いします。／金子",
       "sessionNumber": "27",
       "monthNum": "8",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "#16/P13確認テスト"
+      ],
       "prevEntry": {
         "content": "三単現①",
         "page": "L４　＃８まで",
@@ -5433,18 +5437,20 @@
       }
     },
     "2026-08-08|8:25～9:55|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
+      "content": "不定詞・副詞的用法",
+      "page": "#13まで",
       "report": "",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "水上・佐々木・山本",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "28",
       "monthNum": "8",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "#20/31/43/44"
+      ],
       "prevEntry": {
         "content": "不定詞・名詞的用法",
         "page": "#8②まで",
@@ -6613,18 +6619,20 @@
       }
     },
     "2026-08-08|４:４５～６:１５|minami|minami_j1_A_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "比例反比例の演習",
+      "page": "ｐ30□３",
+      "report": "比例のグラフ・式を求めるところを練習。全体的にはよくできているが、やはり園田が不調。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "髙橋",
+      "curriculumProgress": "＋0.5",
       "note": "",
       "sessionNumber": "27",
       "monthNum": "8",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ｐ30□４～ｐ32"
+      ],
       "prevEntry": {
         "content": "比例反比例・要点9",
         "page": "ｐ22",
@@ -7416,18 +7424,21 @@
       }
     },
     "2026-08-08|４:４５～６:１５|minami|minami_j3_S_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "演習",
+      "page": "＃３の６行目まで",
+      "report": "長文演習へ入った。速読法を伝え、演習へ。挿入句の扱いなども伝えた。金子・永田以外はやや厳しそう。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.5",
       "note": "新テキストを柴田、粕川に渡してください。／金子",
       "sessionNumber": "31",
       "monthNum": "8",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "緑＃１",
+        "黄＃２２・２３"
+      ],
       "prevEntry": {
         "content": "仮定法／杉原千畝",
         "page": "新テキストP1",
@@ -12566,18 +12577,20 @@
       }
     },
     "2026-08-08|6:35～8:05|hon|hon_j1_B_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三単現①",
+      "page": "＃６まで",
+      "report": "新テキストを配布し三単現の導入。「単数のとき」「Iとyouは仲間外れ」という２つのルールを説明し、問題演習へ。渡辺とグエンがはじめ少しミスをしてしまったが、後半は持ち直した。逆に宮田澪、戸部が後半になって混乱してしまった。何にせよゆっくり進めないと定着は難しそう。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－1",
       "note": "新テキスト配布すること。／金子",
       "sessionNumber": "27",
       "monthNum": "8",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "＃７、９、10"
+      ],
       "prevEntry": {
         "content": "not very～",
         "page": "#60まで",
@@ -13729,18 +13742,21 @@
       }
     },
     "2026-08-08|2:55～4:25|minami|minami_j1_B_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三単現②",
+      "page": "#13②まで",
+      "report": "疑問文・否定文を扱う。出席者全員、文保操作はＯＫ。柴は集中力がなく、落ち着きがない。困ったものだ。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "佐藤",
+      "curriculumProgress": "－0.3",
       "note": "宿題確認後、does,doesn'tの導入をお願いします。／金子",
       "sessionNumber": "27",
       "monthNum": "8",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "#10/#13③～⑥",
+        "#14-16"
+      ],
       "prevEntry": {
         "content": "三単現①",
         "page": "Ｌ４　＃７まで",
