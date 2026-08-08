@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-07T14:23:31",
+  "generatedAt": "2026-08-08T13:21:52",
   "entries": {
     "2026-08-18|6:35～8:05|hon|hon_j1_A_jp|3": {
       "content": "",
@@ -1522,18 +1522,21 @@
       }
     },
     "2026-08-07|４:４５～６:１５|hon|hon_j3_A_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "北辰過去問【２】",
+      "page": "別冊テキストp22～",
+      "report": "北辰の過去問演習に入った。埼玉・千葉効率いずれにせよ、まずは手の動く問題から解こうとアドバイス。勉強の仕方を伝えながら、【２】をゆっくり指導した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Z4anXOSyiqlu_7_o8uSEyVIVjeqqEA4-rRgo26T_H1SxWA8jwoB0wg6HFw6q610.wd0h9YpxfJusp-on",
       "teacher": "金城",
-      "absence": "",
+      "absence": "戸部、藤田",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "28",
+      "sessionNumber": "29",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "漢字p160-163",
+        "別冊テキストp73,74千葉作文"
+      ],
       "prevEntry": {
         "content": "作文指導",
         "page": "別冊テキストp13～",
@@ -1547,9 +1550,9 @@
         "absence": "戸部",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-05"
       }
     },
@@ -1934,18 +1937,20 @@
       }
     },
     "2026-08-07|2:55～4:25|hon|hon_e5_S_arith|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "新小問、整数～倍数算",
+      "page": "p１６２－□１まで",
+      "report": "公約数公倍数～倍数算のところへ。次回も続きをお願いします。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/ZW8CVhtwr3x963WqbsrG25xq47zWo7HfN5EYf-k2bFVk2HeHu2p_eHVVpQQsOOtV.ovhmV6n24iQwcfs_?startTime=1786082335000",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.2",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "算数ドリルp122-124"
+      ],
       "prevEntry": {
         "content": "整数の性質まで",
         "page": "新中学問題集p411⃣まで",
@@ -1958,9 +1963,9 @@
         "absence": "なし",
         "curriculumProgress": "＋0.2",
         "note": "次回授業が翌日なので宿題は減らしてあります。次回授業後の宿題にホープドリルp44～47を追加してください。",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -2270,18 +2275,21 @@
       }
     },
     "2026-08-07|2:55～4:25|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "分詞",
+      "page": "#12",
+      "report": "二分一文を中心に進めた。サンド型、分詞の生み出しまで行った。ブイ・遠藤の理解がなく、できない。注視する。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "30",
+      "sessionNumber": "31",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "緑#10/11/p10-14",
+        "黄色p112"
+      ],
       "prevEntry": {
         "content": "分詞の後置修飾",
         "page": "導入まで",
@@ -2295,9 +2303,9 @@
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -3215,18 +3223,20 @@
       }
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "1・２年の復習、関数",
+      "page": "ｐ47まで",
+      "report": "証明の宿題の解答後、一次関数に入った。比例・反比例・一次関数の途中まで。明日も授業があるので、宿題は少なめにした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/UwdvCqsfkX2lCRLerl9rhc4XE84cvAp6ypSP-OE1MT419uisKPa_03K3GFUnnzzL.cGku5JwFoWkB46IF?startTime=1786102306000",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "宮田あやか",
+      "curriculumProgress": "－0.5",
       "note": "",
-      "sessionNumber": "29",
+      "sessionNumber": "30",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "ｐ48.ｐ49"
+      ],
       "prevEntry": {
         "content": "1.2年の復習",
         "page": "ｐ31まで",
@@ -3344,18 +3354,21 @@
       }
     },
     "2026-08-07|6:35～8:05|hon|hon_j3_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "北辰過去問【４】【１】",
+      "page": "別冊テキストp22～",
+      "report": "別冊テキストの北辰過去問を進めた。古文は終了し、【１】を進めた。問４問５は残っているので宿題とした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/umHYR0YIOFPz7-EmYQhJhwyTkZ89fHWH_fBY9WXsoooQkLe8H-NYpz95PIiMhwZL.I8sAMjtDscLD5BYv",
       "teacher": "金城",
-      "absence": "",
+      "absence": "柴田、小出",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "28",
+      "sessionNumber": "29",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "漢字p170-173",
+        "別冊テキスト千葉作文、別テキ北辰過去問【１】残り"
+      ],
       "prevEntry": {
         "content": "北辰過去問【２】【４】",
         "page": "別冊テキストp22-",
@@ -3369,9 +3382,9 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-04"
       }
     },
@@ -3963,18 +3976,20 @@
       }
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "要点21　２元一次方程式のグラフ",
+      "page": "ｐ52",
+      "report": "一次関数の２元一次方程式とグラフまで。菅原ができない。授業中のフォローもかなり必要。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/ims6PNlWh8yfhsUSTKJmYMevAxBGBwahWx9pRMgtnJ5C8Acy4YAH1fkLvFj8h0jk.rTe0gB_p-8MfqDkt?startTime=1786095596000",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "藤郷",
+      "curriculumProgress": "＋0.5",
       "note": "",
-      "sessionNumber": "27",
+      "sessionNumber": "28",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "ｐ54（ｐ55）"
+      ],
       "prevEntry": {
         "content": "要点19１次関数を求める",
         "page": "ｐ44",
@@ -4280,18 +4295,21 @@
       }
     },
     "2026-08-07|8:25～9:55|minami|minami_j2_S_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "羽生ゆづる",
+      "page": "p128#3A3の２文目まで",
+      "report": "宿題個所の不定詞部分はテキストを伏せて答えさせた。その後p39確テ。用法を確認しながら進めた。そのあとの部分は宿題にして、HWG羽生へ。接続詞when/becauseや不定詞に注意させた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
-      "sessionNumber": "28",
+      "sessionNumber": "29",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "通常テキスト#41,42,p45確テ",
+        "HereWeGop128からの#3,4"
+      ],
       "prevEntry": {
         "content": "Why/Because／リスニング演習",
         "page": "#38まで",
@@ -4305,9 +4323,9 @@
         "absence": "川島",
         "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -4693,18 +4711,21 @@
       }
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "円の面積",
+      "page": "P54まで",
+      "report": "円の面積に入った。最後はおうぎ形の面積の求め方を、式を作るところまでは全員できるようになった。欠席の上萬が心配。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "上萬",
+      "curriculumProgress": "＋0.5",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "ドリル88～93，52",
+        "計算P42～44"
+      ],
       "prevEntry": {
         "content": "度数分布表と柱状グラフまで",
         "page": "p93まで",
@@ -4717,9 +4738,9 @@
         "absence": "方波見五月",
         "curriculumProgress": "±0",
         "note": "次回授業が翌日なので宿題は減らしています。次回授業後の宿題にホープドリルp88～91を追加で出してください。",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -5275,18 +5296,20 @@
       }
     },
     "2026-08-07|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "不定詞・名詞的用法",
+      "page": "#8②まで",
+      "report": "前回の続きから行う。名詞的用法と動名詞の用法のちがいなどを行った。二度目ということもあり、飲み込みは早かった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/ihSvo6YjYLv6R-T4h77LBxL7zYmiHG4XCsrl4hsf_Q1zrExvVeklNZFtRPa_N6P9.gtykIt6kmXr5D-jR?startTime=1786095747000",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "水上・相良・佐々木",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "27",
+      "sessionNumber": "28",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "#10"
+      ],
       "prevEntry": {
         "content": "不定詞の復習",
         "page": "L4:#2",
@@ -6198,18 +6221,21 @@
       }
     },
     "2026-08-07|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "式を求める",
+      "page": "P19まで",
+      "report": "式を求めるところまではいることができたので、そこまでを宿題とした。お盆休みでちょうど良かったかも。全体的によくできている。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "佐々木・田口・島",
+      "curriculumProgress": "＋0.6",
       "note": "",
-      "sessionNumber": "26",
+      "sessionNumber": "27",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "P14,17",
+        "＃21～30"
+      ],
       "prevEntry": {
         "content": "座標",
         "page": "＃12まで",
@@ -6222,9 +6248,9 @@
         "absence": "佐々木・石川・島",
         "curriculumProgress": "＋0.3",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -6731,18 +6757,21 @@
       }
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_S_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "円・おうぎ形①②③",
+      "page": "ｐ64～66",
+      "report": "中村がなかなかよくできていた。篠田も遅れがちだが基本的なところは大丈夫そう。次回は明日なので本日は少しペースを上げ、明日、もう一度確認しながら進めていく。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/cirpdzQcBZ6mOL7-syg8hD_pVHCV5dO5lpdZYDRQp5FC1-vdVEkLSDXC2TaRGHop.oamVspVI19bacEga?startTime=1786088775000",
       "teacher": "治彦",
       "absence": "",
-      "curriculumProgress": "",
+      "curriculumProgress": "＋0.5",
       "note": "",
-      "sessionNumber": "22",
+      "sessionNumber": "23",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "計算ｐ85～88",
+        "ｐ671⃣2⃣"
+      ],
       "prevEntry": {
         "content": "まとめ",
         "page": "錬成⑲",
@@ -6763,18 +6792,21 @@
       }
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "Unit6～していた",
+      "page": "travelp34の1段/緑p60まで",
+      "report": "Unit5のワーク大問５，６でwas/wereを確認。その後、現在進行形の復習を入れ、Unit6過去進行形に。緑のp67に現在進行形と過去進行形の文を書かせ、比較しながら導入した。was/wereの選択はみな大丈夫そう。語彙はwriteからcookを指導、Let'sPはAをやり終了。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/bBpvK4ADDsoH1zKftW-c2dvhqO2edgohZoeaI9gIO9OP_z_fOML_03tMDY9yhu1X.SKAIo8DXvGnTeuuN?startTime=1786088759000",
       "teacher": "真下",
-      "absence": "",
+      "absence": "高野",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "緑p61#88から91",
+        "travelp34の１段目暗唱"
+      ],
       "prevEntry": {
         "content": "デジタルレッスン・韓国",
         "page": "P94-96",
@@ -6787,9 +6819,9 @@
         "absence": "高野",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -7359,18 +7391,21 @@
       }
     },
     "2026-08-07|6:35～8:05|minami|minami_j1_B_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三単現①",
+      "page": "Ｌ４　＃７まで",
+      "report": "宿題は全員OK。新テキストを配布し、三単現の導入。あまり難しい用語には触れず「単数」「Iとyou以外」という2つのルールのみ徹底させたが、途中で名詞の複数と混同してしまうことがあったが、後半は少し持ち直せていた。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "26",
+      "sessionNumber": "27",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "#9",
+        "明日も授業があります。"
+      ],
       "prevEntry": {
         "content": "not very～",
         "page": "#63まで",
@@ -7715,9 +7750,9 @@
       "absence": "",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "28",
+      "sessionNumber": "29",
       "monthNum": "8",
-      "weekNum": "2",
+      "weekNum": "3",
       "homework": [],
       "prevEntry": {
         "content": "北辰過去問【２】【４】",
@@ -7732,9 +7767,9 @@
         "absence": "小出、嶺井",
         "curriculumProgress": "",
         "note": "篠田、西原参加",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-04"
       }
     },
@@ -8951,18 +8986,20 @@
       }
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e5_A_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "四字熟語",
+      "page": "漢字帳P96-98",
+      "report": "漢字帳で四字熟語について知識を共有。演習問題では、岡崎が調べる力がかなり弱い。高橋・関根が強い。差が広がるばかりで、やりずらくなってきた。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "原澤",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "22",
+      "sessionNumber": "23",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "漢字帳P96-100"
+      ],
       "prevEntry": {
         "content": "漢和辞典の使い方",
         "page": "P82-83",
@@ -9288,18 +9325,21 @@
       }
     },
     "2026-08-07|2:55～4:25|hon|hon_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "確率・資料",
+      "page": "p22～26",
+      "report": "確率は意外とみな樹形図はかけていたが、並び方と選び方の区別は曖昧だった。堀切は数字を見つけたりは相変わらず弱い。そして中村が方程式の解き方がやや怪しい。関数はたぶん全くできないだろう。東江は証明以外はわりと今のところ普通。なので論理的な思考が身につけばもっと伸びるかもしれない。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/U-qCwJmOy2Vxqa3xm7HlTfXYJWkEIajXT2iVcbLyDzAlD6noAPPkkL8XrRfPWBug.5P3yTXCLTgtvSvCW?startTime=1786082189000",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "平居　宝満　戸部",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "30",
+      "sessionNumber": "31",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "p27～32",
+        "解き直しｐ1～26まで"
+      ],
       "prevEntry": {
         "content": "復習・作図・証明",
         "page": "～ｐ21",
@@ -9312,9 +9352,9 @@
         "absence": "平居　宝満　戸部",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -9776,18 +9816,20 @@
       }
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_S_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "発展演習",
+      "page": "P82まで",
+      "report": "発展演習を解き進めていったがやはり２ページ分が残った。次回が明日なので１１日までの宿題とした。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.4",
       "note": "",
-      "sessionNumber": "29",
+      "sessionNumber": "30",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "P83,84（１１日まで）"
+      ],
       "prevEntry": {
         "content": "直線の直交条件",
         "page": "P76まで",
@@ -9964,18 +10006,20 @@
       }
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "I'll　help my mother.",
+      "page": "TravelP42～44",
+      "report": "未来形の基本文は皆OK。本日は主語を人に変えて発音練習。短縮形や疑問文も紹介しながら発音練習。How will the weather be～の表現は発音練習のみ行った。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/GR_sjs45WXhhVFpQcVmrj_W1uASm0szJEhHWV_7_ja2R6U429PftVTlMTSAsMlwZ.bjJ6TK1adQO2RZ1Y?startTime=1786088781000",
       "teacher": "金子",
       "absence": "山本",
-      "curriculumProgress": "",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "#133～136"
+      ],
       "prevEntry": {
         "content": "It will be～／Will it be～？",
         "page": "Travel　P42～44",
@@ -9989,9 +10033,9 @@
         "absence": "山本",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -10495,18 +10539,20 @@
       }
     },
     "2026-08-07|４:４５～６:１５|hon|hon_j1_B_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "要点７比例のグラフ",
+      "page": "ｐ13",
+      "report": "座標・比例のグラフ（比例定数が整数・分数のもの）まで終了。宮田れいも問題なく進んでいた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/KJjwyIY201EbGNe7bA3qlof7_zpZL9NBCd2L-Vjqj4rooeSfickzO0TKxsYbkK-7.pb8J2Ux4VFmRx4QK",
       "teacher": "鈴木",
-      "absence": "",
+      "absence": "狩野えいと、戸部・小松",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "26",
+      "sessionNumber": "27",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "ｐ9□４、ｐ14"
+      ],
       "prevEntry": {
         "content": "要点３変域まで",
         "page": "p5まで",
@@ -10520,9 +10566,9 @@
         "absence": "狩野えいと",
         "curriculumProgress": "±0",
         "note": "休みの間の宿題はプリントを４枚渡してあります。",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -10844,18 +10890,19 @@
       }
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_B_eng|1": {
-      "content": "",
+      "content": "分詞",
       "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "report": "次回まで時間が空くので、二文を一文にすることを行った。はじめはなかなかできていなかったが、徐々に古田・小尾も含めてできるようになっていた。雰囲気は良い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/oqWmwPkvkWbQCVXjf4JCpiR4PChQJZbEjcdSpwhtp6apN3gWhKIF7ji8PBYJ6DfB.w6ChL4UbEITyqPHY?startTime=1786102235000",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "宮原・田中・韮塚",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "30",
+      "sessionNumber": "31",
       "monthNum": "8",
-      "weekNum": "2",
+      "weekNum": "3",
       "homework": [
+        "緑p10-14",
         "お盆明けまで連語帳ｐ８６まで"
       ],
       "prevEntry": {
@@ -10871,9 +10918,9 @@
         "absence": "田中、宮原",
         "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -11419,19 +11466,20 @@
       }
     },
     "2026-08-07|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三人称単数/動詞にs",
+      "page": "L4#7⑥まで",
+      "report": "今回から三人称単数に。冒頭で中１の山場の一つだから心してかかれと伝えた。新井が前回欠席で、今回もオンラインだったので、新しいテキストを渡せず、画像を送りそれを見ながらやってもらった。最初古山が演習でミスをしていたが、後半はOK。また新井も最後のほうはできていた。棒人間の絵をかきながら進めた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
-      "note": "高山先生と進度を確認して、演習の続きを行ったため、マイナスになってしまいました。申し訳ございません。岩本",
-      "sessionNumber": "27",
+      "note": "新井には念のためL4p15まで画像を送った",
+      "sessionNumber": "28",
       "monthNum": "8",
-      "weekNum": "2",
+      "weekNum": "3",
       "homework": [
-        "８／２０まで#６４～６９"
+        "L4#7から10",
+        "L3#64から69"
       ],
       "prevEntry": {
         "content": "まとめの演習",
@@ -11446,9 +11494,9 @@
         "absence": "髙橋、新井、狩野（７０分遅刻）",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -11550,18 +11598,21 @@
       }
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_S_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "仮定法／杉原千畝",
+      "page": "新テキストP1",
+      "report": "仮定法の問題演習を終え、杉原千畝に入った。遅れ気味であったので、和訳をどんどん進めていき、何とか一時間で終わり、新テキストを配布。明日は、＃１の長文読解を実施してください。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "柴田",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "30",
+      "sessionNumber": "31",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "連語＃21",
+        "明日も授業があります。"
+      ],
       "prevEntry": {
         "content": "仮定法",
         "page": "導入まで",
@@ -11575,9 +11626,9 @@
         "absence": "柴田・粕川",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -11902,18 +11953,21 @@
       }
     },
     "2026-08-07|2:55～4:25|minami|minami_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "You like,We like～",
+      "page": "Travel P36～38",
+      "report": "昨日に引き続きlike, have, playを使い主語を変えて発音、スペル練習を行った。単語８個の覚えはいつもに比べ良かった。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "科目の単語",
+        "８コ"
+      ],
       "prevEntry": {
         "content": "I like～／I don't like～",
         "page": "Travel P36～38",
@@ -11926,9 +11980,9 @@
         "absence": "なし",
         "curriculumProgress": "±",
         "note": "",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -11996,18 +12050,21 @@
       }
     },
     "2026-08-07|2:55～4:25|hon|hon_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "式と計算",
+      "page": "P47まで",
+      "report": "りょうへいがずば抜けていてどんどん先に進むことができていた。他との調整のために過去の単元の、猫が３匹の難しい問題に取り組ませた。今後もこの調整方法で良いかも。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "新井",
+      "curriculumProgress": "＋0.5",
       "note": "",
-      "sessionNumber": "23",
+      "sessionNumber": "24",
       "monthNum": "8",
-      "weekNum": "2",
-      "homework": [],
+      "weekNum": "3",
+      "homework": [
+        "計算P29～３１",
+        "ドリルP４４，４５"
+      ],
       "prevEntry": {
         "content": "式と計算②",
         "page": "P44途中まで",
@@ -12021,9 +12078,9 @@
         "absence": "なし",
         "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "22",
+        "sessionNumber": "23",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-06"
       }
     },
@@ -13101,9 +13158,9 @@
       "absence": "",
       "curriculumProgress": "",
       "note": "",
-      "sessionNumber": "28",
+      "sessionNumber": "29",
       "monthNum": "8",
-      "weekNum": "2",
+      "weekNum": "3",
       "homework": [],
       "prevEntry": {
         "content": "作文指導",
@@ -13118,9 +13175,9 @@
         "absence": "針谷",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "8",
-        "weekNum": "1",
+        "weekNum": "2",
         "date": "2026-08-04"
       }
     },
@@ -13251,18 +13308,21 @@
       }
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "㉛～㉝",
+      "page": "p85～88，92",
+      "report": "疋田はオンラインが続いている。宿題の出来も大熊と同程度。かわって菅原がかなり解いてくるようになった。篠田もよくできていた。本日は村佐もいたので等積変形を中心に進めた。宿題は休みが空くので少し多めで次回のカリキュラムを先取りしてあるので、わからない点等を拾いつつ次回進める。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/OgtQ-lIp_pVR1dUgQlh303PQCZv22MiHC4llnCc4lHw54PqR5LXBw49SlF9n0JVE.MLFFXUPamyGe85nM",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "清宮",
+      "curriculumProgress": "±0",
       "note": "",
-      "sessionNumber": "27",
+      "sessionNumber": "28",
       "monthNum": "8",
-      "weekNum": "1",
-      "homework": [],
+      "weekNum": "2",
+      "homework": [
+        "ｐ87、88（再）",
+        "ｐ92～95"
+      ],
       "prevEntry": {
         "content": "㉗～㉛",
         "page": "ｐ72～",
