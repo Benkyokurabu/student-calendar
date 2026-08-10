@@ -1,11 +1,11 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-09T22:52:27.240948+09:00",
-  "matched": 111,
-  "missing": 373,
+  "generatedAt": "2026-08-10T16:25:07.766115+09:00",
+  "matched": 113,
+  "missing": 371,
   "entries": {
     "2026-08-03|2:55～4:25|minami|minami_j1_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/siLOru_aW07F5TjG-vU3g22Kg7TXN6XxBeDMqWhXzmVWldOXv5PUeLMPtctYj8H4u9oXEj3kzkFeFwqq.CvmMR-xoQeW7vpqV",
+      "url": "https://us06web.zoom.us/rec/play/PVyJLTpltWVgQKEwXCvGVq3T_cbfX5IAYNpZDWcwBWulPkibT2Te-2__dp5LTBgbviaw704h-HgUqbvQ.mP80lSKOS6gUO1Rr",
       "recordingStart": "2026-08-03T14:50:47+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -27,7 +27,7 @@
       "lessonOverlapMinutes": 78.8
     },
     "2026-08-03|6:35～8:05|minami|minami_j1_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/-JHT7Df-msngUGpmRrJ1LHIcmHgMCeIv3_8RyUCvasoSOgCNraWGQ6cVOIq4cdOptycrGk5bL2A_779t.kvYMz_Lb2MaVqO_1",
+      "url": "https://us06web.zoom.us/rec/play/UTsN953kyLgSXqb368WPlHOdhxyWnIEfQIiqOmHq1wVxGa-q9QY8X-q_hthS9jcmNDCAMB1AL1fI5Lxo.shuB5V3PCVwjibO2",
       "recordingStart": "2026-08-03T18:33:51+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -49,7 +49,7 @@
       "lessonOverlapMinutes": 90.0
     },
     "2026-08-03|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/TYgZ6JaHSyB9TainXl4uxZ4xngvE1KubzhLFyBBaYFBXVF8qbdIkq5EpwLzZUSLs5kEHTPxu87Gut9SD.z3FckxRT5t0Oj_p7",
+      "url": "https://us06web.zoom.us/rec/play/sz1lNhoPUrk7RT12aEBDcCzOAT9ikjNb_8DzASgDlvHG3AYK4hYGCq1jjlSDdtdJ-roPl7QIUWE3UHOz.uOckoX05CH618if2",
       "recordingStart": "2026-08-03T18:33:04+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -71,7 +71,7 @@
       "lessonOverlapMinutes": 85.1
     },
     "2026-08-03|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/DD98Ni6348bxvP5IpSLocuPmI8Q2_Ce0dr_HD3tcMBjXUqfniKDtEoayk9aYgsYx769bCcfCijo68m8.KmZmcT6S_oZtXT4H",
+      "url": "https://us06web.zoom.us/rec/play/lbQzvaB6bMm7FPv64J7xsZPQekQo5Mb1DyjX7jWvntPcrhuebrkCwacOm4UMZfd_X6HZ2x7_6snoWIo.kX6hqLBWD7zSkXmQ",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -93,7 +93,7 @@
       "lessonOverlapMinutes": 80.3
     },
     "2026-08-03|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/DD98Ni6348bxvP5IpSLocuPmI8Q2_Ce0dr_HD3tcMBjXUqfniKDtEoayk9aYgsYx769bCcfCijo68m8.KmZmcT6S_oZtXT4H",
+      "url": "https://us06web.zoom.us/rec/play/lbQzvaB6bMm7FPv64J7xsZPQekQo5Mb1DyjX7jWvntPcrhuebrkCwacOm4UMZfd_X6HZ2x7_6snoWIo.kX6hqLBWD7zSkXmQ",
       "recordingStart": "2026-08-03T18:29:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -115,7 +115,7 @@
       "lessonOverlapMinutes": 80.3
     },
     "2026-08-03|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/rq5XPS5Wli35n8uIU70-BObTc2mpCF0MvB6E-HRdF08hDSRJ951pZ7Wmg89LgcbLTRE0v-AtlNeqeajr.sKci00usFmQYfMlE",
+      "url": "https://us06web.zoom.us/rec/play/c2PMaTGQgday8KH6E2N-exqEdhxmfD7poQoj0fsytXTRd7vmJSDBseVRgjU0dCPNzmjaMi0NzWMjlwh1.U8i197VEHoWr8cje",
       "recordingStart": "2026-08-03T20:21:54+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -137,7 +137,7 @@
       "lessonOverlapMinutes": 82.9
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/OyrhfZec29OueCDDNa_fykdgM7YwQj9UYGWQmvrsObqpWcR0aeQUsyIsT8A4wkVAgJ_89JYQLsxO6Iw8.4OOlKI7FukqXc56T",
+      "url": "https://us06web.zoom.us/rec/play/YSgOMwDQ1TtY6KrSGjYKW7TcYQHCYAntZ8et9HqTXpU8jXGDY57hOZt_UWtnMHC8yWnTkVJ_Ep5Isu50.Zskbzkngnj4rbWHI",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -159,7 +159,7 @@
       "lessonOverlapMinutes": 77.3
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/OyrhfZec29OueCDDNa_fykdgM7YwQj9UYGWQmvrsObqpWcR0aeQUsyIsT8A4wkVAgJ_89JYQLsxO6Iw8.4OOlKI7FukqXc56T",
+      "url": "https://us06web.zoom.us/rec/play/YSgOMwDQ1TtY6KrSGjYKW7TcYQHCYAntZ8et9HqTXpU8jXGDY57hOZt_UWtnMHC8yWnTkVJ_Ep5Isu50.Zskbzkngnj4rbWHI",
       "recordingStart": "2026-08-03T20:21:16+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -181,7 +181,7 @@
       "lessonOverlapMinutes": 77.3
     },
     "2026-08-03|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/VjwctvwI630Ol4jF5lCv5BLV_-HKJovtuFP0-fSApnWgbeEIUMJ0pwUwSgaVPQuXidagMbmS0fUWyDxr.SkixPDGvFWz8DKj1",
+      "url": "https://us06web.zoom.us/rec/play/EdHldT5vAY2xOTIXze1-wFfQky-FCRBVosmKC3joeOgM_hTeNRvjb_Ynd44MVO-nkPuUkIiSCjTjvvDx.hHUeMhYXBq8Z8hz1",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -203,7 +203,7 @@
       "lessonOverlapMinutes": 77.7
     },
     "2026-08-03|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/VjwctvwI630Ol4jF5lCv5BLV_-HKJovtuFP0-fSApnWgbeEIUMJ0pwUwSgaVPQuXidagMbmS0fUWyDxr.SkixPDGvFWz8DKj1",
+      "url": "https://us06web.zoom.us/rec/play/EdHldT5vAY2xOTIXze1-wFfQky-FCRBVosmKC3joeOgM_hTeNRvjb_Ynd44MVO-nkPuUkIiSCjTjvvDx.hHUeMhYXBq8Z8hz1",
       "recordingStart": "2026-08-03T20:17:39+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -225,7 +225,7 @@
       "lessonOverlapMinutes": 77.7
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e4_X_arith|6": {
-      "url": "https://us06web.zoom.us/rec/play/FCUMIZjl9a6NFEkWp3jvdwyfgNjyILGsxok6zZsReboa_kTjKW5u2S7PGLyja2oTuXFzOkbAy8JXJk5J.cuDDcddDiF-Lb3j-",
+      "url": "https://us06web.zoom.us/rec/play/uN8P1w2Up_IJadGRjcPVo26-GV6LJlUGXiIaqoxWrPvPnS3RaJT80S_l6XJPWFx7SzW7RQU-JTIwsbWj.OKLYdNAvBLfwMWGv",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -247,7 +247,7 @@
       "lessonOverlapMinutes": 71.8
     },
     "2026-08-03|４:４５～６:１５|minami|minami_e4_X_arith|4": {
-      "url": "https://us06web.zoom.us/rec/play/FCUMIZjl9a6NFEkWp3jvdwyfgNjyILGsxok6zZsReboa_kTjKW5u2S7PGLyja2oTuXFzOkbAy8JXJk5J.cuDDcddDiF-Lb3j-",
+      "url": "https://us06web.zoom.us/rec/play/uN8P1w2Up_IJadGRjcPVo26-GV6LJlUGXiIaqoxWrPvPnS3RaJT80S_l6XJPWFx7SzW7RQU-JTIwsbWj.OKLYdNAvBLfwMWGv",
       "recordingStart": "2026-08-03T16:44:50+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -269,7 +269,7 @@
       "lessonOverlapMinutes": 71.8
     },
     "2026-08-03|４:４５～６:１５|hon|hon_e6_A_jp|1": {
-      "url": "https://us06web.zoom.us/rec/play/k_lG9xy1Zm0T9hq0DJafeZwLkc0dHIV34vVFiXz_ZfLA_ht3UJ7dlGgl9VZ0QHfCYyYvA1fQfmN_LG9w.EqZZzphUrrMZzo9z",
+      "url": "https://us06web.zoom.us/rec/play/Jfjrk-N7mtngwtypAwGqvDSopaMWEc_U3DlJrfu8n4S8lkGMeZpFS0Wk8gv6HMUJ7UqzNXh5wnnZlQMy.VjKOZ7KJZyhTPGHZ",
       "recordingStart": "2026-08-03T16:40:09+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -291,7 +291,7 @@
       "lessonOverlapMinutes": 76.2
     },
     "2026-08-04|2:55～4:25|minami|minami_j1_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/y_oVhBB8TRGW-OcHLxEOuLo7TCQqJhKw8IBWGKsv01yV_bxPmq56x3x1x0HalR-MsNdU-uBnk4FVuWI1.RCPrwtJOydjrpjnb",
+      "url": "https://us06web.zoom.us/rec/play/4JS2vFZObSa9zrVxK2e1WXtr2pvwXOQNW7ApW0WdvrYeZ2bGfSXiNOEi6aUdUeKi18Etuww_j7KkRAKW.nFoB2owcwA0s9yA3",
       "recordingStart": "2026-08-04T14:55:15+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -313,7 +313,7 @@
       "lessonOverlapMinutes": 77.0
     },
     "2026-08-04|2:55～4:25|hon|hon_j2_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/zai9zuA6-Y3WrZ_Y9tdbmssFtUMqwsTNWqBK_oXV4SS57_KJm7MMUDsx2BlOfbBixx0vZEy4oJ0MMc-Q.5jknScleibYlSfOs",
+      "url": "https://us06web.zoom.us/rec/play/onSKKNrX2vnzZFxn-UmI_8Rmf_1c9SA36pf_g1yOwKDDdj-NibMuhaSvUPtCkA8GgLOyUn-W4p-NXCjr.eDJB9ecYPwShlBu3",
       "recordingStart": "2026-08-04T14:53:27+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -335,7 +335,7 @@
       "lessonOverlapMinutes": 66.5
     },
     "2026-08-04|2:55～4:25|minami|minami_e6_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/ijCywrHoRm71-N3QQvjh6r0jMVh5NR6BD65gRoLlzKPSUZi_ZaY08kY9HflXhTX0CrL096tlXGjJHvsw.xd3SfkfpzK9VAx78",
+      "url": "https://us06web.zoom.us/rec/play/ijSsYv_GMgKvbfiT55kq24Lr2LT11x4HXJPZnAE3tCo_iPp1kNrxDfl_Z_SSVIJDI5IoJNoF9QqiemYz.9cXQVzpdZzc95RA3",
       "recordingStart": "2026-08-04T14:53:41+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -357,7 +357,7 @@
       "lessonOverlapMinutes": 79.7
     },
     "2026-08-04|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/EApv82V6oidC1Q-b5sCcDtoYMomNA-NsjrATj3IaOd8jBKWH4Lf_pZFYJIEDEz1fOqVIaHFN88XpDkhW.UBBKqSUZQFmf7-YN",
+      "url": "https://us06web.zoom.us/rec/play/03wYVnx9zyH-Ix8aLXXYLU4eF1NfAKu6jQJksBdk1_XWy4cgmEHMyQ1R32cBo8yn4ij9il9giLbWncA9.Efy5Qg8U7taQ1Fwg",
       "recordingStart": "2026-08-04T18:32:45+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -379,7 +379,7 @@
       "lessonOverlapMinutes": 69.8
     },
     "2026-08-04|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/EApv82V6oidC1Q-b5sCcDtoYMomNA-NsjrATj3IaOd8jBKWH4Lf_pZFYJIEDEz1fOqVIaHFN88XpDkhW.UBBKqSUZQFmf7-YN",
+      "url": "https://us06web.zoom.us/rec/play/03wYVnx9zyH-Ix8aLXXYLU4eF1NfAKu6jQJksBdk1_XWy4cgmEHMyQ1R32cBo8yn4ij9il9giLbWncA9.Efy5Qg8U7taQ1Fwg",
       "recordingStart": "2026-08-04T18:32:45+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -401,7 +401,7 @@
       "lessonOverlapMinutes": 69.8
     },
     "2026-08-04|6:35～8:05|hon|hon_j1_S_jp|4": {
-      "url": "https://us06web.zoom.us/rec/play/vl2FHzlRUWM6bAxQWCb-2_v-b9NBRScE_y1YTJyMOL6WAcq6hOgQDlJgSeWtPLvl1883Bi8T_6IA6_x9.M1_PKf7t91SFolcu",
+      "url": "https://us06web.zoom.us/rec/play/578UzDsaaAdLGB3OahXMGdb9T0UCyN7u3AQa7n2ZOFDjRof3a4NTQ3Lwq3rxy7Im83NacuQ53dEjQqUc.EasYcMFOegv34qK2",
       "recordingStart": "2026-08-04T18:31:25+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -423,7 +423,7 @@
       "lessonOverlapMinutes": 67.4
     },
     "2026-08-04|6:35～8:05|minami|minami_j1_S_jp|5": {
-      "url": "https://us06web.zoom.us/rec/play/vl2FHzlRUWM6bAxQWCb-2_v-b9NBRScE_y1YTJyMOL6WAcq6hOgQDlJgSeWtPLvl1883Bi8T_6IA6_x9.M1_PKf7t91SFolcu",
+      "url": "https://us06web.zoom.us/rec/play/578UzDsaaAdLGB3OahXMGdb9T0UCyN7u3AQa7n2ZOFDjRof3a4NTQ3Lwq3rxy7Im83NacuQ53dEjQqUc.EasYcMFOegv34qK2",
       "recordingStart": "2026-08-04T18:31:25+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -445,7 +445,7 @@
       "lessonOverlapMinutes": 67.4
     },
     "2026-08-04|6:35～8:05|minami|minami_j2_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/FlMJWIc9Z-uqmzbif6fJxkYctkEsBz9PmBCK6IGst9Dg8FTG3E5Ps9SqQz9AHNLAoJB66Pnar__8QSbw.uzPY5PdHiKYS201s",
+      "url": "https://us06web.zoom.us/rec/play/jq3OVz9i2j7kcH4Fda3w6M048GPb_ZnUKhGFIpX4zX9KMXug3np2DRn9M7ljvqeMCkaTbCzxaN25M-dP.NWrdav88Q1Q9H5F-",
       "recordingStart": "2026-08-04T18:37:07+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -467,7 +467,7 @@
       "lessonOverlapMinutes": 82.0
     },
     "2026-08-04|6:35～8:05|hon|hon_j2_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/Davkh2a1g3KH4idb1mnyU-3TpohpYhTai9uB-dJ8MaPX628B5BY4vUlfhjOxFp2N_94HVyuwIEcml_0p.GlI_L3JZCBFDrHx6",
+      "url": "https://us06web.zoom.us/rec/play/B7etNDDA4hlCow-KrkfIJXcw8gOZbY-tbj1WFmoSipykALUCOuJZdZHElN04aHLrQx33h7eMDPJ7yGZU.vy1HCUx-DwgcjL0L",
       "recordingStart": "2026-08-04T18:33:32+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -489,7 +489,7 @@
       "lessonOverlapMinutes": 72.5
     },
     "2026-08-04|6:35～8:05|minami|minami_j3_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/Re81EHXdwDwQgQPwVRKmiO3xZGMShmmIUn5uSuxXMJ7Z-zBvr69dxNf3DZWXXX8xsftVP8qfZxLrGpVa._qb2yPKDk9xn-mmA",
+      "url": "https://us06web.zoom.us/rec/play/cHcrg2QAR1R4On--Soh_8GD5WEl2E4gmvAp6i9hap7LHItsh1b72SvyyNZuTFNuY-QvvgItg6UGiHGTY.deGhYvpMssmkdnMZ",
       "recordingStart": "2026-08-04T18:36:30+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -511,7 +511,7 @@
       "lessonOverlapMinutes": 68.0
     },
     "2026-08-04|8:25～9:55|hon|hon_j2_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/XfiejH58m49xAeXOGs4zTTHmNgwepB78XKZaDdxhDenq0dGaap8YL0ri1jeRjtK7jEEe9aURh6bGBug.trjbnVHqZBEHIET7",
+      "url": "https://us06web.zoom.us/rec/play/23p8meU00e0baKHWbFkikNx8fzYRPgj2Ls-uWQ8UVRaqCsW5YtrG2swxMKMKVKUG90oAx5Na6N7nB8U.Y1g0XYjCkuqsK9mf",
       "recordingStart": "2026-08-04T20:21:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -533,7 +533,7 @@
       "lessonOverlapMinutes": 76.9
     },
     "2026-08-04|8:25～9:55|minami|minami_j2_A_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/XfiejH58m49xAeXOGs4zTTHmNgwepB78XKZaDdxhDenq0dGaap8YL0ri1jeRjtK7jEEe9aURh6bGBug.trjbnVHqZBEHIET7",
+      "url": "https://us06web.zoom.us/rec/play/23p8meU00e0baKHWbFkikNx8fzYRPgj2Ls-uWQ8UVRaqCsW5YtrG2swxMKMKVKUG90oAx5Na6N7nB8U.Y1g0XYjCkuqsK9mf",
       "recordingStart": "2026-08-04T20:21:52+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -555,7 +555,7 @@
       "lessonOverlapMinutes": 76.9
     },
     "2026-08-04|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/YbuhJ0u_PozNWx_6T2xg_Fpc0TMVCOwY5Np3RlDiSPfGy1hB7O7SHPxpQdMcN6A3B_6buOVTY_usbn-8.gtmvZr6M6w54jPvE",
+      "url": "https://us06web.zoom.us/rec/play/JFPWPp1P43v6BeYJRbkoog4q3OT77EUTCD8kKfmUoaPgeA6S4JF1V6bAt-EjNIAD-gjF_eYOkNTLQUlL.XtBqfO3eNmHF7Mg6",
       "recordingStart": "2026-08-04T20:23:58+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -577,7 +577,7 @@
       "lessonOverlapMinutes": 79.0
     },
     "2026-08-04|8:25～9:55|minami|minami_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/b7tTWjLkOX3t9XvCZRhUbq51Mm9oqhVTDrttkR7_gcvE4_kC9QNWMv3Rgutjfndm4fMB5-d_td9QwyF5.lqEnUT9eLOuSV6TJ",
+      "url": "https://us06web.zoom.us/rec/play/kgTN0PeoVs4aP0efD1Mba78vEh9UN8oEFGQ9Hxu49FC_bAy1-NqYfR0KTqjm29cB44HaJyxNCpBBpFk-.-sP8XovWc_gHyX4c",
       "recordingStart": "2026-08-04T20:20:53+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -599,7 +599,7 @@
       "lessonOverlapMinutes": 82.9
     },
     "2026-08-04|４:４５～６:１５|minami|minami_e5_A_arith|1": {
-      "url": "https://us06web.zoom.us/rec/play/G_Tvu22vOT5yZ88K7CBTlrwuHC3HoQPA_nwKsgPXgCTQxZ5QBEhUKAty73TfSHzyp7H0RAQ4eY9DFgIp.gyw5u1dz9ejsdiXY",
+      "url": "https://us06web.zoom.us/rec/play/F8uXueM-WWKF-oH0lOZuUokDdOPHIG0qHPUjPQrrAL99PR_9EzFGgP5C6wVBrlhlZM5Cvowch6aow2Kl.QxSrZEXL_2HIiab5",
       "recordingStart": "2026-08-04T16:41:15+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -621,7 +621,7 @@
       "lessonOverlapMinutes": 82.2
     },
     "2026-08-04|４:４５～６:１５|minami|minami_e6_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/gXFuSGAiafttIPMCe8K6Cy5uBaEdJZEov0MsrYjakMsjOAhG0v43W2pU3unJgRfQwerbeVIF47MCq2ck.h1jOWaCrStcKwuuG",
+      "url": "https://us06web.zoom.us/rec/play/42C5gEU1VCJm5SoGgfOwKH18o32MqbA3c1Gq3c6S7qDCkcAcNPGiV6bWoUMrX7zAoHJYpd1ZBYQJklbq.AKRCX5tN-8OTdE9V",
       "recordingStart": "2026-08-04T16:39:17+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -643,7 +643,7 @@
       "lessonOverlapMinutes": 77.3
     },
     "2026-08-05|2:55～4:25|minami|minami_j1_S_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/uRIQ0iVDa_ra2i4Dg531v9GyriW4pm3cp4dWwEM3gv0cCQNyRT5X4GM2ghLz9_zviPDVugIhwSy582QG.v3Kh8K-F5k2i1eqC",
+      "url": "https://us06web.zoom.us/rec/play/5PaKUXgRJyb5R2rMKkhVbwZLWl-oMY3-JgZZijDV1Ue1B8ky4GUDg8OKUkAEhUKpCi9Qe-U_HRzqtPn1.b1mmJN_Z0p9yTP60",
       "recordingStart": "2026-08-05T14:50:08+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -665,7 +665,7 @@
       "lessonOverlapMinutes": 80.1
     },
     "2026-08-05|2:55～4:25|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/7G5v1DAm3ISwVLXwcHWmYv7gTlnI3meSUZ3IAPXxt3bFQNEn5gNzRH1Zz8_1z9eGwri9LPTuxEOXVwxK.Q0em_8PtEHwC-zRS",
+      "url": "https://us06web.zoom.us/rec/play/CArOJoB3rcNQZn7fc5gTJWqM-qcrRpXH2QonGG9S3zi6xX822Jk_AcCOtnlZj6RYZ9ZUxXjWhNPbJ07o.VEzojeSBd_R4WEwP",
       "recordingStart": "2026-08-05T14:50:36+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -687,7 +687,7 @@
       "lessonOverlapMinutes": 75.6
     },
     "2026-08-05|2:55～4:25|hon|hon_j2_B_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/CZA1RZOB9hvH_jeS6g0vPlISsvERige4whglsf2CRwhr4Vt58QRfWUxmwAjDuomby86rwgppS_yJ1ADU.2e3UUz6GD72I0ReO",
+      "url": "https://us06web.zoom.us/rec/play/P3L9w42dNJA6Rm5sEu1ODbJgL5p2TRlrzfMVgbVlI8aZLv_95EGWhqHmNTitB3N82R3Kk1UofG2Hs6kc.Lj4JKo4eSgU-0AYa",
       "recordingStart": "2026-08-05T14:53:00+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -709,7 +709,7 @@
       "lessonOverlapMinutes": 76.0
     },
     "2026-08-05|2:55～4:25|minami|minami_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/HDvGb8EIUlP3rNmFMft_MUqourAdl-sMmWbmuTNcL38nyz0Li5vcsTboKfXeS0QWrQZBUfZrvcLpikAK.LqPYFYgCTeTPh3po",
+      "url": "https://us06web.zoom.us/rec/play/ZaIknqLGuo5QK8GAOFSos37RKHqoTCfZKWfxgdDLMtTXdLfM0rTHgjV4d7hDul9RoR-Wwjy38kg5c4GB.UpeWP5LyoyJW-j0w",
       "recordingStart": "2026-08-05T14:54:29+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -731,7 +731,7 @@
       "lessonOverlapMinutes": 77.5
     },
     "2026-08-05|2:55～4:25|minami|minami_j3_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/VJR_aBRNOkj8y27kU_1njnGeB3XvsZ93w-_pO6yjARgRdcgeR9F6RzH_U3Ovp32lDFJCoIlJ1Hw8UZ3l.MfgUIBMHZX_s017y",
+      "url": "https://us06web.zoom.us/rec/play/jaWV3YekKbTpz42zTLMGc_pSvtRXPlGv_C29KTvhUUWlayLM74j7K4vAQCXJRnvbnmHtY3X2Yvvhfu_K.4T57Lb2jNsoHmqY7",
       "recordingStart": "2026-08-05T14:50:50+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -753,7 +753,7 @@
       "lessonOverlapMinutes": 81.8
     },
     "2026-08-05|6:35～8:05|minami|minami_j1_A_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/Mi_IXaULrJf12cFFUAsf65SMGeeDt-gUXUpjsTfWyMZPDEMrifdWE8qw4FZ7C0m53eHyP2KQ4fOHWNOh.TgKcZZtiYAI3y7Im",
+      "url": "https://us06web.zoom.us/rec/play/zmisWwbHSIe-Kv1e0CYpxkZhXXyha0am7PRcQNieFGSAZi48ZzFByfkql9GhZ0xvI69XTLAwArgGNkoV.fJbm9urrCp8ae0Ns",
       "recordingStart": "2026-08-05T18:43:45+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -775,7 +775,7 @@
       "lessonOverlapMinutes": 78.0
     },
     "2026-08-05|6:35～8:05|hon|hon_j1_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/q9K5yTa17IDATQfGlps8Hypbb_HPr-h5wd-GVy3IneKW6RLPNRrA9HapukecEPNwSCwcLB6M2gdezjG_.9JI4vCw1KRUWYIOE",
+      "url": "https://us06web.zoom.us/rec/play/74xHKlrBnmyE_LgVDwbugRXR_MSHdu8A86oKg0hPO9-G1VLuKE8wKQlsju_zpewYZR3DET6njoq7TXHN.G-yrbO7hdWgnAseh",
       "recordingStart": "2026-08-05T18:31:07+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -797,7 +797,7 @@
       "lessonOverlapMinutes": 72.1
     },
     "2026-08-05|6:35～8:05|minami|minami_j3_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/-2Fp7EoFyyyM5Wa01qqZ7OzPDXIMQIXq2RqBKB32QBHyrQ__ZGvpvj6LsGwa_l0xw5oLAs3iCnoKG1ZT.zylzqtaq2EWjt5pr",
+      "url": "https://us06web.zoom.us/rec/play/SFOLqKHDD23ve_BOC4aORuh5j6VfdWZgbcFYrxEJybYa6GpflV-2lktdaZ3ZrosiSjdYDhwfQdQ1Zgc3.PK2OwAnb8vtxU3OY",
       "recordingStart": "2026-08-05T18:33:35+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -819,7 +819,7 @@
       "lessonOverlapMinutes": 75.6
     },
     "2026-08-05|6:35～8:05|hon|hon_j3_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/koBHoI-NDXNO3MBiWBaHyVftZbvmo48vrtADW9QNu5PJiE1e1181Ma9SfOay3Oi-68sdAIAobhbj7nnH.ZyEdlhw7J1wXtLfl",
+      "url": "https://us06web.zoom.us/rec/play/zc30u1MjzalsvDVD6Fze_jA5qcE3uU8ZBVq1DbmXe9BZkVAtl4bLGEnP4gnpJtNF7sBbrql89BGTR6Ma.qErSatHPKqvfqaXn",
       "recordingStart": "2026-08-05T18:28:59+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -841,7 +841,7 @@
       "lessonOverlapMinutes": 71.0
     },
     "2026-08-05|8:25～9:55|minami|minami_j2_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/YE5eYUzy2JxBR0EoCTL6wmYz_lsvHtU2VpJhDunY4tyVo23tQtm3D5B0xPoZNm77SlbOPU76hjBtlHMS.XojIoSvRFoQigOOx",
+      "url": "https://us06web.zoom.us/rec/play/Feg31eE7ZzWjhLfzCMoekWSFaX7MJXPXRqXE9ZSCOKwP8fwXXilCdZJEOuOQ9aIXzL-tS0xOo6MinCPg.PvOM2RpxJQADT5WJ",
       "recordingStart": "2026-08-05T20:24:51+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -863,7 +863,7 @@
       "lessonOverlapMinutes": 87.8
     },
     "2026-08-05|8:25～9:55|minami|minami_j2_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/StTrxs0lFcd9HkJ3WII4DYAdn7ue60hJ4zRNjnqcbHulMBtPT29uafFP1rw0y0teBZIkI46ZqGBPY_Z_.cXj_Nu4_X9_99BNX",
+      "url": "https://us06web.zoom.us/rec/play/kq-7Je4grPCHoaw0hWCZ95V0lHxvLFzFtyVwVZa-XH_WtjvwYZJ9zv3gZT1SB_VNWzlBV9AG7S6cbbe_.H3oF7MlshK0SE5zu",
       "recordingStart": "2026-08-05T20:25:02+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -885,7 +885,7 @@
       "lessonOverlapMinutes": 73.0
     },
     "2026-08-05|8:25～9:55|hon|hon_j2_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/uXfKXgUOJ8Tgrszu2gsG8y6AoeCe51NU2OsP1BN5vaMbssiVZrXwu4seMTfBCuBCjbgbDAsCRtxitX25.pqMkfQS6wwr3Fhhk",
+      "url": "https://us06web.zoom.us/rec/play/QWlFoKQlW0ywgV6DM-7BMJHWKpftaPbjE51rpMkmWgjXf42PZhtxIss02ZDuz0x00DvrAhgSxJZTL0Ot._fZqq_hgvvk9PScM",
       "recordingStart": "2026-08-05T20:21:50+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -907,7 +907,7 @@
       "lessonOverlapMinutes": 71.8
     },
     "2026-08-05|8:25～9:55|hon|hon_j3_A_jp|1": {
-      "url": "https://us06web.zoom.us/rec/play/AhhPgoFQinxuReS2Bq7NBG2eRxEFCD0kDFp3gv5t-U7D2NigJwkkxHGmtWeUuCtiZxZGyO9ccf_yAEI._tedvUlH92yomh_-",
+      "url": "https://us06web.zoom.us/rec/play/N3Mz_B4nUPf5p78PNH_Jjo4blhdXv_ylr2027NZGASTtdPj5AdUql0Utd0mmHFadsgfI0fI1nifWOlg.Cdt_JePwVSGsP3XO",
       "recordingStart": "2026-08-05T20:22:21+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -929,7 +929,7 @@
       "lessonOverlapMinutes": 71.3
     },
     "2026-08-05|４:４５～６:１５|hon|hon_j1_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/ahFkhrTdwiwwNp0AKsNSrRccF8Vn2ycQyBKxDF9zwAz7tgctFZR4_GWW6YEsu70hjtedPFv2SB5sAYMB.xp9D9EUU9AIyKmkM",
+      "url": "https://us06web.zoom.us/rec/play/dkvMpJaAGvpmuQ5PaYS4T7WezH06BVp6-p0Ju1Rtq99qJGLwhx8Aho6rClm0i56gB4Yy8Txe3fnkoP2n.lT0yIXJOFfbpHA1Y",
       "recordingStart": "2026-08-05T16:43:11+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -951,7 +951,7 @@
       "lessonOverlapMinutes": 71.2
     },
     "2026-08-05|４:４５～６:１５|minami|minami_e4_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/-9R5BydvVda5Ythfocz6b74tURiJtS531sMnkm-zEzAIjBhEsSRuTt9EwAiCLNluNVMhmD_Jk6KgTMuz.0IeRWwaj7cUNTMMP",
+      "url": "https://us06web.zoom.us/rec/play/OQHaEU9gEq92SM-g4xGk2jfVXk4cAp2nv1qt0qx_TRkLQIUKu-EsH125c5NbS6tCqWGZR87_qqi3aM-a.eg7YO7hC0WyKBgEX",
       "recordingStart": "2026-08-05T16:46:19+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -973,7 +973,7 @@
       "lessonOverlapMinutes": 88.7
     },
     "2026-08-05|４:４５～６:１５|hon|hon_e5_A_jp|3": {
-      "url": "https://us06web.zoom.us/rec/play/eiG9H63kWForsK-oM8fEsqFQvdiv-HLMHJjVvibPQM8Ma42K-yDxHTuL6Mq7g5TH4Rk2w7eJxWnS2xjX.QEcOXZ5fh2F8mSX8",
+      "url": "https://us06web.zoom.us/rec/play/goTZqh7f1_rucSoUqWc5-tCWxwSKXBYG7mrWeHslE9oxnAuauDtbB0PfQU8F89YU4Jmh17OWN3mcXg9G.LY4xx5tB1SoLeUa9",
       "recordingStart": "2026-08-05T16:42:35+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -995,7 +995,7 @@
       "lessonOverlapMinutes": 77.6
     },
     "2026-08-05|４:４５～６:１５|hon|hon_e6_A_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/rSX92Ngr8mD-Vuk8lx-toCTL3a2bDa3JWwAvYo8pQOOOuYTyHNC0woGvoIXZlZhmCNUsvVkYc5pH7IU.ZbI6-0TRU67TaIvI",
+      "url": "https://us06web.zoom.us/rec/play/J-odogiBTOwLnt24M_QPExh2o66qW9C6quckQCVD76Nz7n_3OvxP359oSogloL9jGrxUBHcTroE3Xxc.qF2-3dbvsZ0P-0Rm",
       "recordingStart": "2026-08-05T16:42:43+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1017,7 +1017,7 @@
       "lessonOverlapMinutes": 84.7
     },
     "2026-08-05|４:４５～６:１５|minami|minami_e6_A_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/QvNdzveJ7PFh4qjqdHe_TLiUPZ6YMNu190JWG99g0VyWIIkFwmkjetAlS0LzFWz1eUxrdkM5V0sccXE.eUz-tR4XXLB_1njQ",
+      "url": "https://us06web.zoom.us/rec/play/Y5wB2xRWDtuU2R3MZ5ijdaMSMNI6_WqOEAW8SVknf9DPP8uz4GJIaaxJaToyq97NCFY3YtG4b4Ys8PU.K1MrND9a4lpROMQD",
       "recordingStart": "2026-08-05T16:40:03+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1039,7 +1039,7 @@
       "lessonOverlapMinutes": 78.0
     },
     "2026-08-06|2:55～4:25|hon|hon_j1_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/cN9QUwpMQCbSENdVoEFCqUiO20WVBmw8FaLMG24SXhxkf4JMYmH-7WMawnbWBnyaQCGLkjrTeyKldbUO.Au6D4bRFLPpkzM2z",
+      "url": "https://us06web.zoom.us/rec/play/8ChhL394f1IsoXOv4hpfA63qc-WWxP64DtObo55i2SoqSgsIuy_A4EfqGwwkLroji_z7Fh9lZAKPmHwL.mjqk5gmQ0EbCSN_S",
       "recordingStart": "2026-08-06T14:53:45+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1061,7 +1061,7 @@
       "lessonOverlapMinutes": 81.8
     },
     "2026-08-06|2:55～4:25|minami|minami_j1_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/i8e7UkccvhKz5HBiCvOhajvBrjPXo2aANtBzblF7wPky078J7FiszuAgZGO1AIqeFZCrkI4p6_4CjSZ-.xIllrhX1YNqmWGIy",
+      "url": "https://us06web.zoom.us/rec/play/X8z-b3B-2jRRCe117jSNtF52mZ5T70E-v6-znTrSKMFzf0am9R6TswpkwD_H-eRNybxXxaWtpeBrrWih.yrPbhhe0B65EiwWS",
       "recordingStart": "2026-08-06T14:54:52+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1083,7 +1083,7 @@
       "lessonOverlapMinutes": 90.0
     },
     "2026-08-06|2:55～4:25|hon|hon_e6_A_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/qXImrYgI-EofBYWELRXkUMQoYj7Aj5dryAR4hbbHUt1vtcVX7siJsh0fX7TtLOhb4-erItbvT8W21slk.052ZwBbp_xxK2i1V",
+      "url": "https://us06web.zoom.us/rec/play/_fu1Z1mNOJXGzQ374vYV9P54F_Kv4pLMdK43ucvDvGDNqhLlt9Ogp2RNPOI9AE2ek5YGl7WdvzyHgVtM.rDAbhP-IwypIm-FK",
       "recordingStart": "2026-08-06T14:54:54+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1105,7 +1105,7 @@
       "lessonOverlapMinutes": 87.9
     },
     "2026-08-06|2:55～4:25|minami|minami_e6_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/5-BNaBfD0pi5iwrQQLFI6zwnsZrIdldDsi8xWUJq4oPjGoQJrskLgMxD0Z8I-RAxt_z2ypSDqTfUAX4.CsApppOTx794qaFg",
+      "url": "https://us06web.zoom.us/rec/play/uwCVTn3mBDZ-WrhMdqvDPApzLdOP3ZV2XbM2OgYi0bSEucIBzBWIXQvvrtEYiOqyXpGNjsDIR-PM1DY.08v5HICYJM0mxvLl",
       "recordingStart": "2026-08-06T15:00:43+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1127,7 +1127,7 @@
       "lessonOverlapMinutes": 82.0
     },
     "2026-08-06|2:55～4:25|minami|minami_e6_S_eng|3": {
-      "url": "https://us06web.zoom.us/rec/play/tWyV7zRlFo2eEsnzxiMR1ay04Zic3d4QZg_1ApkCgabt2twKkavg2NSDWrdy4H9Sn6Wsigtf5IFjSpP1.gtvqxAQp0ATXusaJ",
+      "url": "https://us06web.zoom.us/rec/play/Eo12l2PRMvzhQYg4jqq4VkciXy6Q_VyfSCdZ1ZUbqZurYrxsb4EObeyngvwXucknu9JsPo1qXC6ecemN.ak_4uscJCfLHYBrE",
       "recordingStart": "2026-08-06T14:54:00+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -1149,7 +1149,7 @@
       "lessonOverlapMinutes": 80.0
     },
     "2026-08-06|6:35～8:05|hon|hon_j1_B_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/IEWCxbtu6b8CVTBXwh7vPbYu_60ZVbO918LMSeMBx6kDbcGz5nRfaKGIesQUfLnDDuB3uzvoJwj9VnY7.DVMQpD-85eBnuf-U",
+      "url": "https://us06web.zoom.us/rec/play/azlWYv7cV6HJ1wjIi5Vy-7OeJXKMcU7ymHzzvuet3-RZQjIu_4JvVWRvdxp8T2jik6XDr9CZYaWC4tu6.zvBMLzYfCq4VXnL7",
       "recordingStart": "2026-08-06T18:32:12+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1171,7 +1171,7 @@
       "lessonOverlapMinutes": 83.2
     },
     "2026-08-06|6:35～8:05|hon|hon_j1_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/rR6bdxriFsVCYvLK9G9m9ci39-j01n8EGItVxxo3GlFSpZvcX0gH7KRSzLEHZaq95KDo66NuF7GcYsCo.zj2EG9yvcL9J-ycs",
+      "url": "https://us06web.zoom.us/rec/play/DkFlw4mp8i673JHCTFraKfkmFPZ098FRqcjmE5hgsFbG1xDF0FTtiH9oDh8OrBn7UqmRNPoLUfKBvcr7.e4X2cD8JdxZQBGIZ",
       "recordingStart": "2026-08-06T18:32:55+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1193,7 +1193,7 @@
       "lessonOverlapMinutes": 79.9
     },
     "2026-08-06|6:35～8:05|minami|minami_j1_S_eng|3": {
-      "url": "https://us06web.zoom.us/rec/play/IvHZZweEwPHIeSuW1AFyDOSvS9-vEyrKhjM8z2cq1tQcviJkJxcbwf0c0KEPjrqd27ZgFe_kRb3oe8mo.ER18q3rzVFskcViH",
+      "url": "https://us06web.zoom.us/rec/play/MiQ83BFMoL1w2autnnQj1jDAs9YVLEcC87DsKKtOzk6m3Up_I0fJ0f6oDiLnjZaJeNxCmur76sb6cnkC.yg6nk_Rgzvm9Ujcm",
       "recordingStart": "2026-08-06T18:31:28+09:00",
       "meetingId": "3721287174",
       "topic": "南校　第３教室のパーソナルミーティングルーム",
@@ -1215,7 +1215,7 @@
       "lessonOverlapMinutes": 74.5
     },
     "2026-08-06|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/MZTdYeEf-R4HGy8v4zoqXozdXJDAZuU2O_yF7zZlDR8qwyQ-hViFuXfxOgfUzHqmTi-YeX8-rQYsBWhi.-pFTAtC6kxumSyQC",
+      "url": "https://us06web.zoom.us/rec/play/hfnFIRFzu6zqQAtBl94svLu7T4dg2V0zuepppCaq9cz5Hki2uAckXpZ0XhnS-vDmLfzQtyHuzhuCpM1P.nKU5Ed-TJVXqAcfP",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1237,7 +1237,7 @@
       "lessonOverlapMinutes": 85.8
     },
     "2026-08-06|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/MZTdYeEf-R4HGy8v4zoqXozdXJDAZuU2O_yF7zZlDR8qwyQ-hViFuXfxOgfUzHqmTi-YeX8-rQYsBWhi.-pFTAtC6kxumSyQC",
+      "url": "https://us06web.zoom.us/rec/play/hfnFIRFzu6zqQAtBl94svLu7T4dg2V0zuepppCaq9cz5Hki2uAckXpZ0XhnS-vDmLfzQtyHuzhuCpM1P.nKU5Ed-TJVXqAcfP",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "2921151272",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1259,7 +1259,7 @@
       "lessonOverlapMinutes": 85.8
     },
     "2026-08-06|6:35～8:05|minami|minami_j3_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/cO8T8HjZng60iSh5zIKyZOUFmbq4oDPwEjHraXMvzctSVoAlDXYpD1Dvjags0RbtuRs2m3ebJNlu9Rox.TwA8LwxK4zfBRwAs",
+      "url": "https://us06web.zoom.us/rec/play/LZCBoDVv8RtVksNKTX-v--d6loiURYxqDyTkZBeVpL42HrcbSXsPqU-pIakPzkLuOMwbxqW2SmeZWsza.q2jrzcWChL-lrj6f",
       "recordingStart": "2026-08-06T18:28:57+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1281,7 +1281,7 @@
       "lessonOverlapMinutes": 80.0
     },
     "2026-08-06|6:35～8:05|hon|hon_special_数学　補講①|1": {
-      "url": "https://us06web.zoom.us/rec/play/MZTdYeEf-R4HGy8v4zoqXozdXJDAZuU2O_yF7zZlDR8qwyQ-hViFuXfxOgfUzHqmTi-YeX8-rQYsBWhi.-pFTAtC6kxumSyQC",
+      "url": "https://us06web.zoom.us/rec/play/hfnFIRFzu6zqQAtBl94svLu7T4dg2V0zuepppCaq9cz5Hki2uAckXpZ0XhnS-vDmLfzQtyHuzhuCpM1P.nKU5Ed-TJVXqAcfP",
       "recordingStart": "2026-08-06T18:32:46+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1303,7 +1303,7 @@
       "lessonOverlapMinutes": 85.8
     },
     "2026-08-06|8:25～9:55|hon|hon_j2_A_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/vDGkjcrk7MRzNmEUq4lC9aTcuD4FV6uQMdRZVFevnmt8DCks_Vox9FXB9SF5CiihB0NfrPnmRTCoBQaH.p1vn1dUTeYyO43Dc",
+      "url": "https://us06web.zoom.us/rec/play/6GkrXxOw2r80TZUTf3TGtWB0TmBxf8YF_czwpg4rOfYXqZtsOSG5iskt4kt2Kz6_9VP5ubgK1EYP7fvH.duKUckL0_uoG8A31",
       "recordingStart": "2026-08-06T20:22:53+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1325,7 +1325,7 @@
       "lessonOverlapMinutes": 86.9
     },
     "2026-08-06|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/ow4lNavd0LfoQLdz-sh_hCUq4ll8bDAZrC339mwmuk2n1aUYtwn2FaEvU1eWQ4IGizREKx3k4Qv2By9h.Sygjdz15qyfkdBbs",
+      "url": "https://us06web.zoom.us/rec/play/2K4gZr4uN8ykwGztGKbb37uVTcImhjDc7t5KRP4Gz18KiY1kBf1zAF-pdnbJMXyj1SXX2Pik_B7LEV51.7dPJy5XU05cAQba7",
       "recordingStart": "2026-08-06T20:23:05+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1347,7 +1347,7 @@
       "lessonOverlapMinutes": 87.1
     },
     "2026-08-06|8:25～9:55|hon|hon_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/AL8auMM-jSmq5mrcs4YK8wd3h5DTDNhSuDcYRUk-RB9sq6HUoKbw3yUEJdkoTE8nGjWmHQX6uvLMWF4c.QknA_1uqWVkcJqIO",
+      "url": "https://us06web.zoom.us/rec/play/UHZJ_A8EdvhdHEg-k5gpzGaBO8-cu9KpaDcjz-0kk62IwkNUtCPs7R2p2bBHCBkebqJzSsBS_LqoLHGF.OtFu04iSkhi_cVXu",
       "recordingStart": "2026-08-06T20:23:56+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1369,7 +1369,7 @@
       "lessonOverlapMinutes": 81.9
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e4_A_arith|4": {
-      "url": "https://us06web.zoom.us/rec/play/i75Jp7N8ezYO_2LiptMFBB-EzQKzZOyMz_UThMdgVRVnXDyrcDOhZniK9ADSarHbn6h5DEe3r8AKtxHg.HwqThfqh7ljAhc7m",
+      "url": "https://us06web.zoom.us/rec/play/p1mPvqZe-FG-tdVPQUn4iQNdRp0_HExikDyCcgywD9aDfZZL-FHLtKWSg_1JEPFmgRac4xpJX4dRy1-I.Ekc0hWrvAwDhCpyg",
       "recordingStart": "2026-08-06T16:52:26+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -1391,7 +1391,7 @@
       "lessonOverlapMinutes": 72.0
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e5_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/hhLdY5afkg9yEAHv2p7IN7kgD9HbfiTlJDDV-u_diPENCZWfvwagZ7OPM_cORsm6MCx4W-Vpgx8yRf6q.4zQCZ6oyxtd2WZEb",
+      "url": "https://us06web.zoom.us/rec/play/w2wtEegH6290NW_HH9kfaY_Votlq3j9h6utXP_ocr3jFjxu6Jo4mbixjd5ScqXx2i4F1mNaO_dhFDcxc.a-0PFmnq01If-xo9",
       "recordingStart": "2026-08-06T16:38:11+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1413,7 +1413,7 @@
       "lessonOverlapMinutes": 77.2
     },
     "2026-08-06|４:４５～６:１５|hon|hon_e5_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/j_67UyWPzAtoTmugQI9yktMQSVYsVf2o1fyPkaxX4o72hI3XERX6qHovUyCj7p4NnwZWO94V9HlH8IDb.q6oxlwHkZKlcZ1WR",
+      "url": "https://us06web.zoom.us/rec/play/L8FOUta6zAY1rl_JztbtsFcMs6MwItDfvrImQ2tQEuIvSRNoFUaSpitCcu-r1oW7lWjIbHlQkKsLq_Xs.Q7pkcaPvivz7n061",
       "recordingStart": "2026-08-06T16:49:01+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1435,7 +1435,7 @@
       "lessonOverlapMinutes": 85.0
     },
     "2026-08-07|2:55～4:25|hon|hon_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/C3X5VvaSigkXTZUY8H0TpDhAPu4dfQGacsn6Dh0RE9cXGEU4CI5lZzb7n3FP8IIiBQYDkT0ghqswKGwr.cjUXtY2rAgmqMZZE",
+      "url": "https://us06web.zoom.us/rec/play/kMpIPQAn7rgrg-77Lmj8WEJXo7jE18ypBRXvyU0zUApqvj5o0mDgjHpcFNt1gCoD3hP-PA8UOzx_-Nzp.v9Bc_K5UF2sZ2-p4",
       "recordingStart": "2026-08-07T14:54:23+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1457,7 +1457,7 @@
       "lessonOverlapMinutes": 87.4
     },
     "2026-08-07|2:55～4:25|hon|hon_e4_A_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/qKyYuG4H-OXlAkPYgFu244ih4NxuDSeiwHv-t_VNyYmMo9Q7E9iR9xLy1quvDgHTnqArMtLEDWU0doD5.5KQcCh_mfUJp0boj",
+      "url": "https://us06web.zoom.us/rec/play/3CkG5nwb4yANW7vxl8C8zau9euS13_54fEIK71ZHCsPUq6BB0q-8rOUepcAUCdGPpEfn76auiLOIIGnn.fMxsqUZpivODfHO8",
       "recordingStart": "2026-08-07T14:55:33+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1479,7 +1479,7 @@
       "lessonOverlapMinutes": 74.0
     },
     "2026-08-07|2:55～4:25|hon|hon_e5_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/U7no9ZiNg8e2r8UkDYtbeC4OR727iyWOcwBi5j7xMwZWJa-Wu3D3fXgO1DYgiI_7e1u91jTEp7Rh5Ki1.LQpwrJN3bVxEs7tZ",
+      "url": "https://us06web.zoom.us/rec/play/9mZfxjBwYuNuou_Jf-iAVALnKXiHJHWxPmyM7K0iwoS3HOmIOI0u4yEiYGsjiIrTP1qr4VV-tyYQthiE.e795c3CfnJu9A1eD",
       "recordingStart": "2026-08-07T14:54:00+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1501,7 +1501,7 @@
       "lessonOverlapMinutes": 81.0
     },
     "2026-08-07|6:35～8:05|hon|hon_j1_A_math|3": {
-      "url": "https://us06web.zoom.us/rec/play/p7jw54AeylpvZhXNoxaoxOr6lFnKzH_FOOYL1Gw8Mbm1LeqDnf868sOaElnb79rL9ejijM3uZAs3TgE_.WoaNq0g5jbi_nJEI",
+      "url": "https://us06web.zoom.us/rec/play/1r0s4Und0NQ5ZF8Z0EZGlXR7TaFlJFIcBaARTXFMV0zfD_SE6dWMD35FZiQSk2fHoT81vcwSYfU9pUmB.Dp0wCm-ZO3wvaDfu",
       "recordingStart": "2026-08-07T18:35:12+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1523,7 +1523,7 @@
       "lessonOverlapMinutes": 87.0
     },
     "2026-08-07|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/EBR3V16SK5ZhZ6Mtu9DtGCVXB80foZb5NygEvlPJE1ZqmhU_mqUmqx-kbb0I1ghdE8H85E5hw-xJ2l86.KGGuUuGehlXJCuCA",
+      "url": "https://us06web.zoom.us/rec/play/ldbu8LHleOQW1Z9_fQlv-kEUNDfSfmvv7_fGDGpD66ezNfOMLwW3S4IKPsOo0z5-HF4YqTMjAGIhJzgt.iyvUFtZIumUS2mQx",
       "recordingStart": "2026-08-07T18:33:38+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1545,7 +1545,7 @@
       "lessonOverlapMinutes": 87.6
     },
     "2026-08-07|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/kL6PfyP11XYjtsVwUfWZCxojPLhB-nWHuzTxonhgJo0S26y085F8CjXHXpI9VIVOfv0OWg5hBCE4U2fW.MTtBF7tfmUzYv5mr",
+      "url": "https://us06web.zoom.us/rec/play/i4zgZN42Yug6AR6jFtvlEQnIxp2dA16C7IaEm5t3vQIAEF_K87N7KW8QdanpCijDuff0KMmXgdZCY-rL.4EAaeBLs0sciCQjz",
       "recordingStart": "2026-08-07T18:33:48+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1567,7 +1567,7 @@
       "lessonOverlapMinutes": 67.8
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/S3dnwm8LaHigm_PtvhfccOqN_cihuhGIOdh9d6dtFOdh_vYuLGUauq5OAzIowKcatUxU5oW0pckpOvG2.xL5a_sUgao8YyHzG",
+      "url": "https://us06web.zoom.us/rec/play/3uBGHDLiHUBC85FrFL6BY7XVaqodlvr610G9BMBJ1ZDnuWTtprZn2Lgy4Xh4jE8syA4I6p-FQQWNeByb.ig-pKe0xDzzEOp59",
       "recordingStart": "2026-08-07T18:35:50+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1589,7 +1589,7 @@
       "lessonOverlapMinutes": 86.0
     },
     "2026-08-07|6:35～8:05|hon|hon_j2_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/BV0UJSpBMdD_0IlyN9dDg6n45dt3M-ZGJljqrSYJVSU_lnZOizs98KS782Hf5wSwGvh2F-w1K4HtntQt.3DyIXOQPoKQp6DBT",
+      "url": "https://us06web.zoom.us/rec/play/NvsDyfXj-tc_TyhMqIeGyw7oqhrW8ucSHLIFxpap86azz5E_yVeqXZ26V0FmbQBA8-vqgE1C-gM0s8AI.4aPDNYX-wAS3sPrU",
       "recordingStart": "2026-08-07T18:32:42+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1611,7 +1611,7 @@
       "lessonOverlapMinutes": 86.7
     },
     "2026-08-07|6:35～8:05|hon|hon_j3_S_jp|6": {
-      "url": "https://us06web.zoom.us/rec/play/G7SSFxh-uHhPOJnZfBYveCnIoXb-36CSoG3U-e8GFRqygP27ir-BziQaCtD8_TxZrCcl1ojh9O60haJS.bbpmiW1c8BTb3IfU",
+      "url": "https://us06web.zoom.us/rec/play/bgG3XD_B0OwPaMQArYQPEVAeysJFc9UgcpxnmbUjpU5PsyLtZ0sW2d3e_dDxuAdhFJI72MEQufikQ7Hs.4PYQWcgjYI-ekKFh",
       "recordingStart": "2026-08-07T18:33:26+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -1633,7 +1633,7 @@
       "lessonOverlapMinutes": 72.4
     },
     "2026-08-07|6:35～8:05|minami|minami_j3_S_jp|4": {
-      "url": "https://us06web.zoom.us/rec/play/G7SSFxh-uHhPOJnZfBYveCnIoXb-36CSoG3U-e8GFRqygP27ir-BziQaCtD8_TxZrCcl1ojh9O60haJS.bbpmiW1c8BTb3IfU",
+      "url": "https://us06web.zoom.us/rec/play/bgG3XD_B0OwPaMQArYQPEVAeysJFc9UgcpxnmbUjpU5PsyLtZ0sW2d3e_dDxuAdhFJI72MEQufikQ7Hs.4PYQWcgjYI-ekKFh",
       "recordingStart": "2026-08-07T18:33:26+09:00",
       "meetingId": "2501632659",
       "topic": "南校　第４教室のパーソナルミーティングルーム",
@@ -1655,7 +1655,7 @@
       "lessonOverlapMinutes": 72.4
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/IY6kzoeksLhZQ_QZlvWkKVArGXXwESDNzfaU41C4abLRgVGXlon9eQWRbCXnU0ToUDgwwL3Ll79enSM.3iGhmIzOgSUaYuqh",
+      "url": "https://us06web.zoom.us/rec/play/64q2fI1M2mqd2IqcyGolr2D_8abKaPhz6zO_hlptClQObYLz2wgE6tw04fLgugirgh6L1EWDejX8G6s.mAXc8Tg2bgynNsJn",
       "recordingStart": "2026-08-07T20:30:32+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1677,7 +1677,7 @@
       "lessonOverlapMinutes": 83.0
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_B_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/fHqw9NsYU8p7HxM-2OJu60GZ6zUOmKsYBj2q94nWJ9m574jGpvZRUjeQm9rK0xO_YrNQLPzvQh7S0VDe.vLJcc4HqpLuB9-pH",
+      "url": "https://us06web.zoom.us/rec/play/AqKmZYd4BeiNQ9qAvtCb8u2AfNTjmptc5g2WGwRVaMc3ubu_moFD1Y8eBT4oq2YOBPlRaWhVZ88v1CAl.aOJxcs0zJTrJhPPr",
       "recordingStart": "2026-08-07T20:24:02+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1699,7 +1699,7 @@
       "lessonOverlapMinutes": 77.0
     },
     "2026-08-07|8:25～9:55|hon|hon_j3_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/IyAhwbXFyMZHxhmP7hvv4Kfkiv13BFCDmt5TW23agLtsa-ewW8PFvympoJ27uHQlagbfCGLXsaVO_R9O.9YApZoIMZjIHnREN",
+      "url": "https://us06web.zoom.us/rec/play/MHwmXWo9RazXq99zxrRWrDhKEhUldDTzG880ervEVHfF4-W5w1bB0Riw34ILIPBMh6JvBAi7EhpmRGpt.ca_LsRVKXxN6Odkc",
       "recordingStart": "2026-08-07T20:24:25+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1721,7 +1721,7 @@
       "lessonOverlapMinutes": 87.4
     },
     "2026-08-07|8:25～9:55|minami|minami_j3_S_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/8JkOMxdya-vzHyYINiwRh0KRL9cc8c3cXN_XfXZZ5fJxnnDgAhk9aP0RGOba1w9ryL9WfmJ_L-fa5rtB.udHC2pN3rZcWl5eC",
+      "url": "https://us06web.zoom.us/rec/play/WjcV4TKAf1I6YDmLtUrSGYdIPRE4DqV-XqMmJ0wSor51I7Yn7U-iTQDUtVF-LqFhnnCqhlmMUiRpKvJ0.FMamnZzqgMCtayVk",
       "recordingStart": "2026-08-07T20:23:15+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1743,7 +1743,7 @@
       "lessonOverlapMinutes": 85.2
     },
     "2026-08-07|４:４５～６:１５|hon|hon_j1_B_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/iEGykNMTkiCG83gbINlVHkzaP-QUl3Md0V_hk0NMcMmTo8lC4C9vD-IeJU3DBBqOOLh8NXMQnJNKURIO.IjV3jbTTsKTSatVM",
+      "url": "https://us06web.zoom.us/rec/play/cwuu9el64mzMeg3S7SaU7w2RpgjHtD-NGYKZwJQ91NFhBG8qStNGvbJA3MhNSmgLW6oFTmradCEzBQbL.E5BK64-PtSMDWGBD",
       "recordingStart": "2026-08-07T16:46:07+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1765,7 +1765,7 @@
       "lessonOverlapMinutes": 82.0
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_A_arith|1": {
-      "url": "https://us06web.zoom.us/rec/play/07B53IJj6p6CUC-LrDFCj13yTRDs9SCTFWW5vze3l0gpr4GTadVjCkDNQ1p6a6J4gy1CpHNDAGf52R4v.TqyViuN3gonxMH9u",
+      "url": "https://us06web.zoom.us/rec/play/mGonCjOHUJJTlQoY_GJWED96wzP66nRowx7JU8uNJpLjzL9ROpUq8X6j64oUvI7AAVrL5Btb9U2e_HJZ.CeGPy9agj7g4Rs1i",
       "recordingStart": "2026-08-07T16:44:47+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1787,7 +1787,7 @@
       "lessonOverlapMinutes": 82.8
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_A_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/gM4dv_hAnvXIP1B6Enxer_NWjKTGMRzlTNx2Cl8Vk13g77o3WAp6hKVF5LhfksWv9FsL3U1xZ7wHwfa9.J66zwD0feW6QiSc5",
+      "url": "https://us06web.zoom.us/rec/play/c6jHVhpRl6s8A5Z3VBdH_woTRZhzqFsUgf4eW8yj205O0K_P6PF1LFdU5frbZQUMZafOVCYoFZ8es6Yh.YjvMnirrzitPSReY",
       "recordingStart": "2026-08-07T16:32:17+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1809,7 +1809,7 @@
       "lessonOverlapMinutes": 72.3
     },
     "2026-08-07|４:４５～６:１５|hon|hon_e6_S_arith|3": {
-      "url": "https://us06web.zoom.us/rec/play/3NyMTkZxlDIE7NouZwQFO1iODKeUqQHYzUkvsaLqRBkh1uEwydsZrAI-VrUJM1kSAt9eFnKJCLKZCbdo.8RutxpZ50zO88cEf",
+      "url": "https://us06web.zoom.us/rec/play/tkbA0Kqi695492YPMX5zMNm_2V6LkHiucOmWH-ib9hsn87JAp8GcTAEpoUewHlVIZEi7bTHc5tsLwdtP.7X3yDMuGr2Mu9-Vb",
       "recordingStart": "2026-08-07T16:43:48+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -1831,7 +1831,7 @@
       "lessonOverlapMinutes": 84.8
     },
     "2026-08-07|４:４５～６:１５|minami|minami_e6_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/s39VuuDXeKVE2zVtxgUJn7KE9rXnoPq8TRVeoeyBHtv4IT2mTJhXMk3Y0D0I5gPxeeQZKjMMndKpLLYp.328hAM4kLIhoXICx",
+      "url": "https://us06web.zoom.us/rec/play/DZ4S6CbnyXR3tO6_zEUgVi3RJy3BZSkN_3rNEcekS6fSu1TLreCHxofwy5t-svdiO6yYGhuqTOrJjnWi.OhWrPQaKiga5PpYz",
       "recordingStart": "2026-08-07T16:43:38+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1853,7 +1853,7 @@
       "lessonOverlapMinutes": 76.6
     },
     "2026-08-08|2:55～4:25|minami|minami_j1_B_eng|2": {
-      "url": "https://us06web.zoom.us/rec/play/MiAv9yCKaD__zuo9Qe2gb_tevd2sEmQ2Bdu4PR3hURleD9eYzlUmGOdnhOHppekthxbnW2U-g5GRxHIG.uQ5MU7Ukq5_wgbYi",
+      "url": "https://us06web.zoom.us/rec/play/bA-eHEi58LU29Ti1uQ4AFBCsqlX4Cw-ynC4Dn3eOTP8GENw_7JPjYM3MuFwzCxRQ7ftBrCgnNL33L7Vs.9lqHP4ReZ7DK8Rt-",
       "recordingStart": "2026-08-08T14:59:02+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -1875,7 +1875,7 @@
       "lessonOverlapMinutes": 86.0
     },
     "2026-08-08|2:55～4:25|hon|hon_j3_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/G8MQk69DFVezRENRb9wv7ibmW3eja_mq9Bzp6nHKE5HYCHFkK0lRdTJtfQD9-xF-OAgUfLv6b-Eq7If0.vbge3L2JzUnpjz1r",
+      "url": "https://us06web.zoom.us/rec/play/PaXHf6zp12XYPaKWK883IM8gW4cdEs9H9QtJlB9Q7rqMUZX10A-oQ5BG_4tJycVPUha-JgBWKUkGxOIg.qpDqx1CJP5vMMJE5",
       "recordingStart": "2026-08-08T14:53:52+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -1897,7 +1897,7 @@
       "lessonOverlapMinutes": 78.9
     },
     "2026-08-08|2:55～4:25|minami|minami_j3_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/dbpI4LH73X0r9wkanakoNe2h0pa09xlnascnBLzPcFHt26aixS4GYrLJu5mcWLFMblZKcYczgJs-trpA.xbee-TvqBuIxnqlC",
+      "url": "https://us06web.zoom.us/rec/play/Q-fKNnwzQwAioLJugWV9ZQ7X3exjA-FdqxlP7fhwKZO50o0e5hCQ08MwabWv6rxQhim0I4Kch7e85Vna.d6E103Hewv8Ee1be",
       "recordingStart": "2026-08-08T14:54:32+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1919,7 +1919,7 @@
       "lessonOverlapMinutes": 77.5
     },
     "2026-08-08|2:55～4:25|hon|hon_e6_S_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/UUlyu2QYTEcDfOUqxiX_T85i4xx0HqAV-FZ_WkpmwPAKNjrn5UbxHl5pCkaMn7CHr37qQ6Ww93BP0ezI.FsGEDlv7C8MFmCDQ",
+      "url": "https://us06web.zoom.us/rec/play/aSMFNiRIU8zX6v1mefM8Pez216qYpadXjn-C9tgpMEfyz4StpELVNA6deWrKXgBsBv15Db9o0D6AfQcR.Kte_zmbvHBYRW8Nn",
       "recordingStart": "2026-08-08T14:48:46+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1941,7 +1941,7 @@
       "lessonOverlapMinutes": 76.8
     },
     "2026-08-08|6:35～8:05|hon|hon_j1_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/WmhR82AxUNa-ZqfcxYHHQK7DYi6x_NhbQZrM4xw6h0ALDigbqplzBkpee5OdA8Wil9kLzpXHZSkdZWgY.26hH_0MGz12ApR0H",
+      "url": "https://us06web.zoom.us/rec/play/TvVmTGpG0le681cRduc-St_MYmnLPxvDGEjIEhqm5muNDx6oVE8Z1KZeq5YqU7ZZckV3-_V9heydquG5.LXNmHxBTOYMP_TVa",
       "recordingStart": "2026-08-08T18:35:00+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -1963,7 +1963,7 @@
       "lessonOverlapMinutes": 82.0
     },
     "2026-08-08|6:35～8:05|minami|minami_j1_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/bE2OeGSA5mOlUXC3P2NVj32o2N9PtglNHLzziTmwyoTvJNZ8ebKZBynakvTAL4wJzslvwrIogrLnXhsz.Jgb0AOP_m6RXG57g",
+      "url": "https://us06web.zoom.us/rec/play/nVJPYghT-Cj2prxUSXhQPjhApO178AuZz4zj4FMVpsC40YQlsL98Df9sn2nKfBMhrC2iTBDByTwi2l1u.uxkU8hZP9FlQQzuq",
       "recordingStart": "2026-08-08T18:34:26+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -1985,7 +1985,7 @@
       "lessonOverlapMinutes": 75.4
     },
     "2026-08-08|6:35～8:05|hon|hon_j2_B_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/QlZhEsM_LpizRJSIVhElwVVtEWYmf7ZifsWRX6MxiYAGO6UB9ZLrjoBlameJ93nJX_7WvU7B9ubkN5MI._eR2TxqrJxlZ1I8H",
+      "url": "https://us06web.zoom.us/rec/play/8Rmr3ekheuu2Bl_enyRc6szImCMHvl8CTK94knrJvK4nHd2wod3mlSmNTJV_fWjKsOaSX-evix5vslfh.amwc251pqTQwpft4",
       "recordingStart": "2026-08-08T18:34:54+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -2007,7 +2007,7 @@
       "lessonOverlapMinutes": 75.9
     },
     "2026-08-08|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/LncwGy84iuq6ish1e1vULs-sI9jsrwx-UoFoH2R0ot1FwQGfw7MSGMAsxz-wIZ5KqIsokIJ-wvp6Sqym.E2Nx18ltbpko-BET",
+      "url": "https://us06web.zoom.us/rec/play/0PhCliztwQewjxEvUroo7Aa0RLjYTbnjnT4nhdJDgQjqdNviajkbx6y0NubQtvnQFMCDCm73E_Tf1YQz.9Q9v-IuN9PLYmXo9",
       "recordingStart": "2026-08-08T18:27:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2029,7 +2029,7 @@
       "lessonOverlapMinutes": 75.3
     },
     "2026-08-08|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/LncwGy84iuq6ish1e1vULs-sI9jsrwx-UoFoH2R0ot1FwQGfw7MSGMAsxz-wIZ5KqIsokIJ-wvp6Sqym.E2Nx18ltbpko-BET",
+      "url": "https://us06web.zoom.us/rec/play/0PhCliztwQewjxEvUroo7Aa0RLjYTbnjnT4nhdJDgQjqdNviajkbx6y0NubQtvnQFMCDCm73E_Tf1YQz.9Q9v-IuN9PLYmXo9",
       "recordingStart": "2026-08-08T18:27:18+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2051,7 +2051,7 @@
       "lessonOverlapMinutes": 75.3
     },
     "2026-08-08|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/V_T5UTV6diPAMQL1HxXkbR6inMdzlLOYcVcUvinvGyHDUNUkxjMCvcbyA81moxOleTmxz9oNiTdeGbN7.I0w4gMADyPLTV1sI",
+      "url": "https://us06web.zoom.us/rec/play/slndiW5N9xVpoD8pBHGh88dwmYfnJiizzN4IeBdExD2dqkGOrimW_rQALA8sWN587Ow33Xd3hOU6yr1H.p6VWdT9QEQw_0btR",
       "recordingStart": "2026-08-08T18:34:04+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -2073,7 +2073,7 @@
       "lessonOverlapMinutes": 80.1
     },
     "2026-08-08|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/V_T5UTV6diPAMQL1HxXkbR6inMdzlLOYcVcUvinvGyHDUNUkxjMCvcbyA81moxOleTmxz9oNiTdeGbN7.I0w4gMADyPLTV1sI",
+      "url": "https://us06web.zoom.us/rec/play/slndiW5N9xVpoD8pBHGh88dwmYfnJiizzN4IeBdExD2dqkGOrimW_rQALA8sWN587Ow33Xd3hOU6yr1H.p6VWdT9QEQw_0btR",
       "recordingStart": "2026-08-08T18:34:04+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -2095,7 +2095,7 @@
       "lessonOverlapMinutes": 80.1
     },
     "2026-08-08|8:25～9:55|hon|hon_j2_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/w3-L72v4eRq1GjkTI8kVdvCrLtJw0kZMMKbH38TVBMdb6C91X0kztotAT8iVN4en7q-Cpif2212XqAxO.y04VnRp7O5lZ22jr",
+      "url": "https://us06web.zoom.us/rec/play/jzf_iuwU-7pp1ADoeA41GCWRHATP8vn5451EYEdTWZw8dbczbQXLDzgJ98N4-6JKm9IX6YLseIsT175y.5t62f05SKOM97zRI",
       "recordingStart": "2026-08-08T20:22:58+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -2117,7 +2117,7 @@
       "lessonOverlapMinutes": 80.0
     },
     "2026-08-08|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "url": "https://us06web.zoom.us/rec/play/c-TUNZaCKBkaTNSL2YdqPHSK05NQNMycbpuvulhzOE2HgKstcbxARADSDxdXbXPDRlHaBVK-Mwy9LcMi.n8M2Fq-VkuvLMDCA",
+      "url": "https://us06web.zoom.us/rec/play/oURHF5Cz8XjJPsvdLdXt14wN59I0YC65-mnf6Bneuq4GXyt1evo09gnvDODnwOlgAH23SPE9jdwTxRQw.CSCZOAGcQnq8YdZn",
       "recordingStart": "2026-08-08T20:23:50+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -2139,7 +2139,7 @@
       "lessonOverlapMinutes": 82.8
     },
     "2026-08-08|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/c-TUNZaCKBkaTNSL2YdqPHSK05NQNMycbpuvulhzOE2HgKstcbxARADSDxdXbXPDRlHaBVK-Mwy9LcMi.n8M2Fq-VkuvLMDCA",
+      "url": "https://us06web.zoom.us/rec/play/oURHF5Cz8XjJPsvdLdXt14wN59I0YC65-mnf6Bneuq4GXyt1evo09gnvDODnwOlgAH23SPE9jdwTxRQw.CSCZOAGcQnq8YdZn",
       "recordingStart": "2026-08-08T20:23:50+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -2161,7 +2161,7 @@
       "lessonOverlapMinutes": 82.8
     },
     "2026-08-08|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/l6OvJtaFVJMmovtLwImSpY2rjtbaMr7JG81fcUjMHT5xA7E9Vp_s-jI2TY5cu-X_e_AUljoUAp2JFUY.xmSFLx2bTEgs16fX",
+      "url": "https://us06web.zoom.us/rec/play/_kH9TEo_32MbfaLmVsj6L4Qyu-dycQPhzFVFS5cDrb1aNtsFz-LQqQo-r0STOvoRy-9jRpmayvh42pg.d-qAo2UvdSXNE9LG",
       "recordingStart": "2026-08-08T20:20:11+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2183,7 +2183,7 @@
       "lessonOverlapMinutes": 79.2
     },
     "2026-08-08|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/l6OvJtaFVJMmovtLwImSpY2rjtbaMr7JG81fcUjMHT5xA7E9Vp_s-jI2TY5cu-X_e_AUljoUAp2JFUY.xmSFLx2bTEgs16fX",
+      "url": "https://us06web.zoom.us/rec/play/_kH9TEo_32MbfaLmVsj6L4Qyu-dycQPhzFVFS5cDrb1aNtsFz-LQqQo-r0STOvoRy-9jRpmayvh42pg.d-qAo2UvdSXNE9LG",
       "recordingStart": "2026-08-08T20:20:11+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2205,7 +2205,7 @@
       "lessonOverlapMinutes": 79.2
     },
     "2026-08-08|４:４５～６:１５|minami|minami_j1_A_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/lmrhA7lhLr0Z9-gRn1d9Gpl333ozS48Zr52ScxjASk57GKFg34ZMXTrwdMw4fSh9TD7o91Xo9hWw_w.sbDzqTviQsctDPNt",
+      "url": "https://us06web.zoom.us/rec/play/zysSa4EL-HA17W75QW2tNpw2AJEW5TPbZdPIEH3wqul5RXL5Su902I_oG3A2u_7nJTyd7S8Aijhxuw.-TWCJQrDfdU63GCA",
       "recordingStart": "2026-08-08T16:40:08+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -2227,7 +2227,7 @@
       "lessonOverlapMinutes": 79.1
     },
     "2026-08-08|４:４５～６:１５|hon|hon_j3_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/RnAvpMaVXy8sqydMtHjzzUW0WrJgugt1oyBRCdLfMNg0BrmUAM5Ore4wn-eeB2uRiLg_jIls_xoWX-aC.e-Iy1BwjDhwu7xHF",
+      "url": "https://us06web.zoom.us/rec/play/Kui_1ATdP9AXkICx8HifwgxlzjJ4dHR-qStOruWePsjdgc3mPKMmzz0Ft4WRPMh-lfnWQaKrGYpP-l4N.srqHz3szyJo_jn-1",
       "recordingStart": "2026-08-08T16:45:29+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -2249,7 +2249,7 @@
       "lessonOverlapMinutes": 87.0
     },
     "2026-08-08|４:４５～６:１５|hon|hon_e5_A_arith|2": {
-      "url": "https://us06web.zoom.us/rec/play/svD_tFEcuhTgb3gdPjYp1t4L7__8gKIBke7rt6-VPQ98Ipb7WghhzAmBYzpHn_O7V751gc1fGHG9CMAS.5fpT6vUvnXA3FAXj",
+      "url": "https://us06web.zoom.us/rec/play/Pg6Gvk8h2-6Xvw-5W5KjHvVOdGNcUy-x_3FFTnmrpySL8XkI20ZhSV17q32BOjPhwjo55938bPeFd8tU.-I1bbtFdGXqn7T7A",
       "recordingStart": "2026-08-08T16:48:35+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -2271,7 +2271,7 @@
       "lessonOverlapMinutes": 84.0
     },
     "2026-08-09|6:35～8:05|hon|hon_j3_A_sci|3": {
-      "url": "https://us06web.zoom.us/rec/play/R_-1qJ3iuxGF0VnvwKXn-W77whJQQBSgARiaPrZltnkBXkRxkuEWwnPpQrHcKsrhgWUaxOFmNvsRsPdt.z8XhwFtp82x2aD_D",
+      "url": "https://us06web.zoom.us/rec/play/FtFfp623v-7iEQ5S7S1KYdwtnWa65EkCCVXPMPvpvwld0MbzcmaD0qL5ZLp6lg8b0G5ZnBCYkMsyuqAc.SkHyjBYUT2xuCpng",
       "recordingStart": "2026-08-09T18:33:19+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -2293,7 +2293,7 @@
       "lessonOverlapMinutes": 80.3
     },
     "2026-08-09|6:35～8:05|minami|minami_j3_A_sci|6": {
-      "url": "https://us06web.zoom.us/rec/play/R_-1qJ3iuxGF0VnvwKXn-W77whJQQBSgARiaPrZltnkBXkRxkuEWwnPpQrHcKsrhgWUaxOFmNvsRsPdt.z8XhwFtp82x2aD_D",
+      "url": "https://us06web.zoom.us/rec/play/FtFfp623v-7iEQ5S7S1KYdwtnWa65EkCCVXPMPvpvwld0MbzcmaD0qL5ZLp6lg8b0G5ZnBCYkMsyuqAc.SkHyjBYUT2xuCpng",
       "recordingStart": "2026-08-09T18:33:19+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -2315,7 +2315,7 @@
       "lessonOverlapMinutes": 80.3
     },
     "2026-08-09|6:35～8:05|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/1KPey8zlYYBtpCz4rgMB28DyHF3hkbh_2t2qjZy9kQP28r1sb3JFpw-olclwrsyNuZmilKF2oEnv9UUa.p0_9rqzBjdEmQlC3",
+      "url": "https://us06web.zoom.us/rec/play/SUK2LJOa-SCQDeeD5dTU57IFjFjYFOjeaKVhthBWQhqdOiJLExccNc4pNZiWZKhgNAZvLWXNviyl4Xtx.nnUjqP1X3xHabkRb",
       "recordingStart": "2026-08-09T18:18:13+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2337,7 +2337,7 @@
       "lessonOverlapMinutes": 67.2
     },
     "2026-08-09|6:35～8:05|minami|minami_j3_S_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/1KPey8zlYYBtpCz4rgMB28DyHF3hkbh_2t2qjZy9kQP28r1sb3JFpw-olclwrsyNuZmilKF2oEnv9UUa.p0_9rqzBjdEmQlC3",
+      "url": "https://us06web.zoom.us/rec/play/SUK2LJOa-SCQDeeD5dTU57IFjFjYFOjeaKVhthBWQhqdOiJLExccNc4pNZiWZKhgNAZvLWXNviyl4Xtx.nnUjqP1X3xHabkRb",
       "recordingStart": "2026-08-09T18:18:13+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2359,7 +2359,7 @@
       "lessonOverlapMinutes": 67.2
     },
     "2026-08-09|４:４５～６:１５|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/y31E-TVlwIs8nvHTKJWo8SnI4-Qn8IX5znJh_0SaTLjfRDBMKRn71yYqVapWlY60YnsWICmgRpp0Q_0K.QiAd53nbWjj3Q4HE",
+      "url": "https://us06web.zoom.us/rec/play/EAXNY0s81V9hG0Elq1-4fbDhMGVIQwVxQO_bzJpRiUmMvAJb2n9L1XkjYc5flSDOpk973WeE2NZLsavz.AsrV0XtHSDYHWtv0",
       "recordingStart": "2026-08-09T16:38:19+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2381,7 +2381,7 @@
       "lessonOverlapMinutes": 77.3
     },
     "2026-08-09|４:４５～６:１５|minami|minami_j3_A_soc|5": {
-      "url": "https://us06web.zoom.us/rec/play/y31E-TVlwIs8nvHTKJWo8SnI4-Qn8IX5znJh_0SaTLjfRDBMKRn71yYqVapWlY60YnsWICmgRpp0Q_0K.QiAd53nbWjj3Q4HE",
+      "url": "https://us06web.zoom.us/rec/play/EAXNY0s81V9hG0Elq1-4fbDhMGVIQwVxQO_bzJpRiUmMvAJb2n9L1XkjYc5flSDOpk973WeE2NZLsavz.AsrV0XtHSDYHWtv0",
       "recordingStart": "2026-08-09T16:38:19+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -2403,7 +2403,7 @@
       "lessonOverlapMinutes": 77.3
     },
     "2026-08-09|４:４５～６:１５|hon|hon_j3_S_sci|3": {
-      "url": "https://us06web.zoom.us/rec/play/POoDFFgS-XKxwd88zbuFm1La_i4XLQpnf95M5oL5GkwlLZsc_3RrvIturSQUNEd7tB4MEWFPiNeRbPN7.uhOdYk44X1A01hUg",
+      "url": "https://us06web.zoom.us/rec/play/lcpbQRXFOdDyM8TrSb23qaj3n1zYBJUcZL_7QeSTtjroty-kczS1Q_v0MpPbDkHrlFANXA4RoOkii6Bm.NQ5kDlF5dVbXxGUF",
       "recordingStart": "2026-08-09T16:37:04+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -2425,7 +2425,7 @@
       "lessonOverlapMinutes": 74.1
     },
     "2026-08-09|４:４５～６:１５|minami|minami_j3_S_sci|6": {
-      "url": "https://us06web.zoom.us/rec/play/POoDFFgS-XKxwd88zbuFm1La_i4XLQpnf95M5oL5GkwlLZsc_3RrvIturSQUNEd7tB4MEWFPiNeRbPN7.uhOdYk44X1A01hUg",
+      "url": "https://us06web.zoom.us/rec/play/lcpbQRXFOdDyM8TrSb23qaj3n1zYBJUcZL_7QeSTtjroty-kczS1Q_v0MpPbDkHrlFANXA4RoOkii6Bm.NQ5kDlF5dVbXxGUF",
       "recordingStart": "2026-08-09T16:37:04+09:00",
       "meetingId": "5883099324",
       "topic": "本校　第３教室のパーソナルミーティングルーム",
@@ -2445,6 +2445,50 @@
       "startOffsetMinutes": -7.9,
       "recordingDurationMinutes": 82.0,
       "lessonOverlapMinutes": 74.1
+    },
+    "2026-08-10|2:55～4:25|minami|minami_j3_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/share/5csPKaL_1s8UC-oc1ETX5DOl7xkI6h-ppTNDPmmgqw1lMmegrewKTQwkoL0UsIM4.Mz8i3454qub0TKA8",
+      "recordingStart": "2026-08-10T14:53:02+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-10",
+      "time": "2:55～4:25",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "math",
+      "label": "中３A 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-08-10|2:55～4:25|j3|A|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1",
+      "matchPolicy": "lesson-only-v1",
+      "startOffsetMinutes": -2.0,
+      "recordingDurationMinutes": 89.0,
+      "lessonOverlapMinutes": 87.0
+    },
+    "2026-08-10|2:55～4:25|hon|hon_j3_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/share/p1b35Ps-6ylXrAVQnT5x-fZqff91nuAZjgChFymcMcM8jRdIhex-RyIr5bFjwOMP.Cl5s8Kx4TQFeKyDy",
+      "recordingStart": "2026-08-10T14:53:45+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-10",
+      "time": "2:55～4:25",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "eng",
+      "label": "中３A 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-10|2:55～4:25|j3|A|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "lesson-only-v1",
+      "startOffsetMinutes": -1.2,
+      "recordingDurationMinutes": 90.0,
+      "lessonOverlapMinutes": 88.8
     }
   }
 }
