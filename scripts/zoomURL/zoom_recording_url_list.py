@@ -70,9 +70,7 @@ def make_recording_json(month: str) -> Dict[str, Any]:
     recordings_by_id = z.fetch_recordings_for_events(client, events, meeting_ids, month)
 
     local_matches: Dict[str, tuple[dict, z.RecordingCandidate]] = {}
-    online_groups: Dict[str, list[dict]] = {}
     for ev in events:
-        online_groups.setdefault(online_lesson_key(ev), []).append(ev)
         meeting_id = z.meeting_id_for_event(ev, meeting_ids)
         rec = z.match_recording(
             ev,
@@ -83,20 +81,9 @@ def make_recording_json(month: str) -> Dict[str, Any]:
         if rec is not None:
             local_matches[event_key(ev)] = (ev, rec)
 
-    # An online lesson is represented by both campuses in the schedule. Use the
-    # recording found at either physical campus for every event in that pair.
+    # Never copy a recording between campuses.  Even when grade/class/subject
+    # match, each physical classroom has its own teacher and Zoom recording.
     resolved_matches = dict(local_matches)
-    for grouped_events in online_groups.values():
-        campuses = {str(ev.get("campus") or "") for ev in grouped_events}
-        is_online_pair = len(campuses) >= 2 and all(not bool(ev.get("faceToFace")) for ev in grouped_events)
-        if not is_online_pair:
-            continue
-        candidates = [local_matches[event_key(ev)] for ev in grouped_events if event_key(ev) in local_matches]
-        if not candidates:
-            continue
-        source_ev, selected = min(candidates, key=lambda pair: recording_distance_seconds(pair[0], pair[1]))
-        for ev in grouped_events:
-            resolved_matches[event_key(ev)] = (source_ev, selected)
 
     entries: Dict[str, dict] = {}
     matched = 0

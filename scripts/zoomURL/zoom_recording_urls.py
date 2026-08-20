@@ -182,7 +182,7 @@ def parse_zoom_time(value: str) -> Optional[datetime]:
     return dt.astimezone(JST)
 
 
-def recording_url(meeting: dict) -> str:
+def preferred_recording_file(meeting: dict) -> Optional[dict]:
     files = meeting.get("recording_files") or []
     preferred = [
         "shared_screen_with_speaker_view",
@@ -195,10 +195,17 @@ def recording_url(meeting: dict) -> str:
             if str(f.get("status", "")).lower() != "completed":
                 continue
             if f.get("recording_type") == recording_type and f.get("play_url"):
-                return str(f["play_url"])
+                return f
     for f in files:
         if str(f.get("status", "")).lower() == "completed" and f.get("play_url"):
-            return str(f["play_url"])
+            return f
+    return None
+
+
+def recording_url(meeting: dict) -> str:
+    selected = preferred_recording_file(meeting)
+    if selected is not None:
+        return str(selected["play_url"])
 
     url = str(meeting.get("share_url") or "")
     passcode = str(meeting.get("recording_play_passcode") or "")
@@ -217,10 +224,12 @@ NON_LESSON_TOPIC_RE = re.compile(
     re.IGNORECASE,
 )
 MAX_EARLY_START_MINUTES = 30
-MAX_LATE_START_MINUTES = 20
-MIN_LESSON_OVERLAP_MINUTES = 60
-MIN_RECORDING_DURATION_MINUTES = 60
-MATCH_POLICY_VERSION = "lesson-only-v1"
+MAX_LATE_START_MINUTES = 30
+MIN_LESSON_OVERLAP_MINUTES = 45
+MIN_RECORDING_DURATION_MINUTES = 45
+MAX_EARLY_END_MINUTES = 30
+MAX_LATE_END_MINUTES = 30
+MATCH_POLICY_VERSION = "campus-room-file-overlap-v2"
 
 
 def supplement_title(ev: dict) -> Optional[str]:
@@ -233,6 +242,37 @@ def supplement_title(ev: dict) -> Optional[str]:
     if not match:
         return None
     return f"{match.group(1)}補講"
+
+
+def is_supplement_event(ev: dict) -> bool:
+    text = " ".join([
+        str(ev.get("label") or ""),
+        str(ev.get("displayTitle") or ""),
+        str(ev.get("groupKey") or ""),
+    ])
+    return "補講" in text or "_special_" in str(ev.get("groupKey") or "")
+
+
+def event_slot_key(ev: dict) -> tuple[str, str, str, str]:
+    return (
+        str(ev.get("date") or ""),
+        normalize_digits(str(ev.get("time") or "")).replace("~", "～").strip(),
+        str(ev.get("campus") or ""),
+        str(ev.get("room") or ""),
+    )
+
+
+def recording_topic_matches_event(ev: dict, topic: str) -> bool:
+    normalized = re.sub(r"\s+", "", normalize_digits(topic))
+    campus = str(ev.get("campus") or "")
+    room = normalize_digits(str(ev.get("room") or "")).strip()
+    if campus == "hon":
+        campus_matches = "本校" in normalized
+    elif campus == "minami":
+        campus_matches = "南校" in normalized or "南教室" in normalized
+    else:
+        return False
+    return campus_matches and bool(room) and f"第{room}教室" in normalized
 
 
 @dataclass
@@ -251,11 +291,14 @@ def flatten_recordings(meeting_id: str, payload: dict) -> List[RecordingCandidat
         meetings = [payload]
     result: List[RecordingCandidate] = []
     for meeting in meetings:
-        start = parse_zoom_time(str(meeting.get("start_time", "")))
+        selected_file = preferred_recording_file(meeting)
+        start = parse_zoom_time(str((selected_file or {}).get("recording_start") or meeting.get("start_time", "")))
         if start is None:
             continue
-        duration = meeting.get("duration")
-        end = start + timedelta(minutes=int(duration)) if isinstance(duration, int) else None
+        end = parse_zoom_time(str((selected_file or {}).get("recording_end") or ""))
+        if end is None:
+            duration = meeting.get("duration")
+            end = start + timedelta(minutes=int(duration)) if isinstance(duration, int) else None
         url = recording_url(meeting)
         if not url:
             continue
@@ -309,13 +352,22 @@ def meeting_id_for_event(ev: dict, meeting_ids: Dict[str, Dict[str, str]]) -> Op
 
 
 def relevant_events(events: Iterable[dict], month: str, meeting_ids: Dict[str, Dict[str, str]]) -> List[dict]:
-    result = []
+    candidates = []
     for ev in events:
         if str(ev.get("date", ""))[:7] != month:
             continue
+        if is_supplement_event(ev):
+            continue
         if meeting_id_for_event(ev, meeting_ids):
-            result.append(ev)
-    return result
+            candidates.append(ev)
+
+    # A physical classroom and time slot must identify exactly one lesson.
+    # Publishing nothing is safer than guessing when the schedule overlaps.
+    slot_counts: Dict[tuple[str, str, str, str], int] = {}
+    for ev in candidates:
+        slot = event_slot_key(ev)
+        slot_counts[slot] = slot_counts.get(slot, 0) + 1
+    return [ev for ev in candidates if slot_counts[event_slot_key(ev)] == 1]
 
 
 def month_date_range(month: str) -> Tuple[date, date]:
@@ -367,6 +419,8 @@ def match_recording(ev: dict, recordings: List[RecordingCandidate], tolerance_be
     for recording in recordings:
         if NON_LESSON_TOPIC_RE.search(recording.topic):
             continue
+        if not recording_topic_matches_event(ev, recording.topic):
+            continue
         if not (search_start <= recording.start_time <= search_end):
             continue
         if recording.end_time is None:
@@ -380,10 +434,16 @@ def match_recording(ev: dict, recordings: List[RecordingCandidate], tolerance_be
             continue
         if overlap_minutes < MIN_LESSON_OVERLAP_MINUTES:
             continue
+        if recording.end_time < lesson_end - timedelta(minutes=MAX_EARLY_END_MINUTES):
+            continue
+        if recording.end_time > lesson_end + timedelta(minutes=MAX_LATE_END_MINUTES):
+            continue
         candidates.append(recording)
     if not candidates:
         return None
     candidates.sort(key=lambda r: abs((r.start_time - lesson_start).total_seconds()))
+    if len(candidates) != 1:
+        return None
     return candidates[0]
 
 
