@@ -89,6 +89,56 @@ class LessonOnlyRecordingTests(unittest.TestCase):
         self.assertEqual("18:59", candidate.start_time.strftime("%H:%M"))
         self.assertEqual("19:57", candidate.end_time.strftime("%H:%M"))
 
+    def test_flatten_keeps_recording_restart_segments_separate(self):
+        payload = {
+            "start_time": "2026-08-11T05:55:32Z",
+            "duration": 163,
+            "topic": "本校 第1教室",
+            "recording_files": [
+                {
+                    "id": "audio-2",
+                    "recording_type": "audio_only",
+                    "status": "completed",
+                    "recording_start": "2026-08-11T07:50:26Z",
+                    "recording_end": "2026-08-11T09:12:49Z",
+                    "play_url": "https://example.test/audio-2",
+                },
+                {
+                    "id": "video-1",
+                    "recording_type": "shared_screen_with_speaker_view",
+                    "status": "completed",
+                    "recording_start": "2026-08-11T06:01:12Z",
+                    "recording_end": "2026-08-11T07:22:06Z",
+                    "play_url": "https://example.test/video-1",
+                },
+                {
+                    "id": "video-2",
+                    "recording_type": "shared_screen_with_speaker_view",
+                    "status": "completed",
+                    "recording_start": "2026-08-11T07:50:26Z",
+                    "recording_end": "2026-08-11T09:12:49Z",
+                    "play_url": "https://example.test/video-2",
+                },
+                {
+                    "id": "audio-1",
+                    "recording_type": "audio_only",
+                    "status": "completed",
+                    "recording_start": "2026-08-11T06:01:12Z",
+                    "recording_end": "2026-08-11T07:22:06Z",
+                    "play_url": "https://example.test/audio-1",
+                },
+            ],
+        }
+
+        candidates = z.flatten_recordings("1", payload)
+
+        self.assertEqual(2, len(candidates))
+        self.assertEqual(["15:01", "16:50"], [c.start_time.strftime("%H:%M") for c in candidates])
+        self.assertEqual(
+            ["https://example.test/video-1", "https://example.test/video-2"],
+            [c.url for c in candidates],
+        )
+
     @patch.object(url_list.z, "ZoomClient")
     @patch.object(url_list.z, "fetch_recordings_for_events")
     @patch.object(url_list.z, "load_schedule")

@@ -182,24 +182,51 @@ def parse_zoom_time(value: str) -> Optional[datetime]:
     return dt.astimezone(JST)
 
 
-def preferred_recording_file(meeting: dict) -> Optional[dict]:
-    files = meeting.get("recording_files") or []
+def preferred_recording_files(meeting: dict) -> List[dict]:
+    """Return one preferred playable file for every stop/restart segment.
+
+    Zoom keeps multiple recording segments under one meeting occurrence when
+    the host stops cloud recording and starts it again without ending Zoom.
+    Audio/video variants from the same segment share ``recording_start``; pick
+    one video file per start time instead of collapsing the whole meeting to a
+    single file.
+    """
+    files = [
+        file
+        for file in meeting.get("recording_files") or []
+        if str(file.get("status", "")).lower() == "completed" and file.get("play_url")
+    ]
     preferred = [
         "shared_screen_with_speaker_view",
         "shared_screen_with_gallery_view",
         "active_speaker",
         "gallery_view",
     ]
-    for recording_type in preferred:
-        for f in files:
-            if str(f.get("status", "")).lower() != "completed":
-                continue
-            if f.get("recording_type") == recording_type and f.get("play_url"):
-                return f
-    for f in files:
-        if str(f.get("status", "")).lower() == "completed" and f.get("play_url"):
-            return f
-    return None
+    priority = {recording_type: index for index, recording_type in enumerate(preferred)}
+    grouped: Dict[str, List[dict]] = {}
+    for index, file in enumerate(files):
+        start = str(file.get("recording_start") or meeting.get("start_time") or "")
+        group_key = start or f"file-{index}"
+        grouped.setdefault(group_key, []).append(file)
+
+    selected = [
+        min(
+            group,
+            key=lambda file: (
+                priority.get(str(file.get("recording_type") or ""), len(preferred)),
+                str(file.get("id") or ""),
+            ),
+        )
+        for group in grouped.values()
+    ]
+    selected.sort(key=lambda file: str(file.get("recording_start") or ""))
+    return selected
+
+
+def preferred_recording_file(meeting: dict) -> Optional[dict]:
+    """Backward-compatible first segment helper."""
+    files = preferred_recording_files(meeting)
+    return files[0] if files else None
 
 
 def recording_url(meeting: dict) -> str:
@@ -291,25 +318,28 @@ def flatten_recordings(meeting_id: str, payload: dict) -> List[RecordingCandidat
         meetings = [payload]
     result: List[RecordingCandidate] = []
     for meeting in meetings:
-        selected_file = preferred_recording_file(meeting)
-        start = parse_zoom_time(str((selected_file or {}).get("recording_start") or meeting.get("start_time", "")))
-        if start is None:
-            continue
-        end = parse_zoom_time(str((selected_file or {}).get("recording_end") or ""))
-        if end is None:
-            duration = meeting.get("duration")
-            end = start + timedelta(minutes=int(duration)) if isinstance(duration, int) else None
-        url = recording_url(meeting)
-        if not url:
-            continue
-        result.append(RecordingCandidate(
-            meeting_id=meeting_id,
-            start_time=start,
-            end_time=end,
-            topic=str(meeting.get("topic") or ""),
-            url=url,
-            raw=meeting,
-        ))
+        selected_files = preferred_recording_files(meeting)
+        # Preserve the legacy share-URL fallback for old recordings that have
+        # no playable file metadata at all.
+        for selected_file in selected_files or [None]:
+            start = parse_zoom_time(str((selected_file or {}).get("recording_start") or meeting.get("start_time", "")))
+            if start is None:
+                continue
+            end = parse_zoom_time(str((selected_file or {}).get("recording_end") or ""))
+            if end is None:
+                duration = meeting.get("duration")
+                end = start + timedelta(minutes=int(duration)) if isinstance(duration, int) else None
+            url = str((selected_file or {}).get("play_url") or "") or recording_url(meeting)
+            if not url:
+                continue
+            result.append(RecordingCandidate(
+                meeting_id=meeting_id,
+                start_time=start,
+                end_time=end,
+                topic=str(meeting.get("topic") or ""),
+                url=url,
+                raw=meeting,
+            ))
     return result
 
 
