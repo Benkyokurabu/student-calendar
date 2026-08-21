@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '.github/workflows/publish-zoom-recording-urls.yml'
+      - 'calendar.html'
+      - 'lesson_prep.html'
       - 'scripts/zoomURL/zoom_recording_urls.py'
       - 'scripts/zoomURL/zoom_recording_url_list.py'
       - 'scripts/zoomURL/publish_zoom_recording_url_json.py'

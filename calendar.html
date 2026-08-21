@@ -803,6 +803,19 @@
     return String(record.url || record.recordingUrl || "").trim();
   }
 
+  function sameLessonTime(left, right) {
+    return String(left || "").replace(/~/g, "～").trim()
+      === String(right || "").replace(/~/g, "～").trim();
+  }
+
+  function eventKeyMatchesLessonGroup(key, it) {
+    const parts = String(key || "").split("|");
+    return parts.length >= 5
+      && parts[0] === String(it.date || "")
+      && sameLessonTime(parts[1], it.time)
+      && parts[3] === String(it.groupKey || "");
+  }
+
   function findRecordingRecordForLesson(it, source) {
     const fullKey = buildEventKeyFromLesson(it);
     if (Object.prototype.hasOwnProperty.call(source, fullKey)) return source[fullKey];
@@ -822,7 +835,7 @@
           if (!recRoom || recRoom === lessonRoom) return rec;
         }
       }
-      if (key.startsWith(`${it.date}|`) && key.includes(`|${it.groupKey}|`)) return rec;
+      if (eventKeyMatchesLessonGroup(key, it)) return rec;
     }
     return null;
   }

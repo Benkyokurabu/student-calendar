@@ -9,6 +9,9 @@ import zoom_recording_urls as z
 import zoom_recording_url_list as url_list
 
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
 def lesson(start="18:35", campus="hon", room="1"):
     return {"date": "2026-08-08", "time": f"{start}～20:05", "campus": campus, "room": room}
 
@@ -119,6 +122,17 @@ class LessonOnlyRecordingTests(unittest.TestCase):
         candidate = recording(0, 90)
         candidate.end_time = None
         self.assertIsNone(self.match(candidate))
+
+    def test_schedule_pages_require_same_time_for_group_fallback(self):
+        unsafe_patterns = {
+            "lesson_prep.html": 'key.startsWith(ev.date + "|") && key.includes("|" + gk + "|")',
+            "calendar.html": 'key.startsWith(`${it.date}|`) && key.includes(`|${it.groupKey}|`)',
+        }
+        for filename, unsafe_pattern in unsafe_patterns.items():
+            page = (REPO_ROOT / filename).read_text(encoding="utf-8")
+            self.assertNotIn(unsafe_pattern, page, filename)
+            self.assertIn("eventKeyMatchesLessonGroup", page, filename)
+            self.assertIn("sameLessonTime(parts[1]", page, filename)
 
 
 class ScheduleMonthSelectionTests(unittest.TestCase):

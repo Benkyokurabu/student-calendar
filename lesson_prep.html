@@ -468,6 +468,19 @@ function makeKey(ev) {
   return [ev.date, (ev.time||"").replace(/~/g,"～").trim(), ev.campus, ev.groupKey, ev.room].join("|");
 }
 
+function sameLessonTime(left, right) {
+  return String(left || "").replace(/~/g, "～").trim()
+    === String(right || "").replace(/~/g, "～").trim();
+}
+
+function eventKeyMatchesLessonGroup(key, ev, groupKey) {
+  const parts = String(key || "").split("|");
+  return parts.length >= 5
+    && parts[0] === String(ev.date || "")
+    && sameLessonTime(parts[1], ev.time)
+    && parts[3] === String(groupKey || "");
+}
+
 function findRecordingForLesson(ev) {
   const entries = (zoomRecordingData && zoomRecordingData.entries) || {};
   const direct = entries[makeKey(ev)];
@@ -475,7 +488,7 @@ function findRecordingForLesson(ev) {
   const groupKeys = ev._pairGroupKeys || [];
   for (const gk of groupKeys) {
     for (const [key, rec] of Object.entries(entries)) {
-      if (key.startsWith(ev.date + "|") && key.includes("|" + gk + "|") && rec && rec.url) return rec;
+      if (eventKeyMatchesLessonGroup(key, ev, gk) && rec && rec.url) return rec;
     }
   }
   // Online lessons can be scheduled for both campuses while the recording is
