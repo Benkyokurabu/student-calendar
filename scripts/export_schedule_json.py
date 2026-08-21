@@ -372,6 +372,19 @@ def _is_special_text(text: str) -> bool:
     return any(kw in s for kw in SPECIAL_KEYWORDS)
 
 
+def special_event_room(sh, room_row: Optional[int], column: int) -> str:
+    """Return the physical room from the sheet header.
+
+    Circled numbers in labels such as ``数学 補講④`` identify the supplement
+    sequence, not the classroom.  Only the classroom header above the event is
+    authoritative for the JSON ``room`` field.
+    """
+    if not room_row:
+        return ""
+    room_raw = legacy.merged_value_text(sh, room_row, column)
+    return normalize_room(room_raw)
+
+
 def collect_special_events_from_sheet(
     sh,
     campus_label: str,
@@ -423,15 +436,8 @@ def collect_special_events_from_sheet(
             ]
             display_title = lines[0] if lines else ""
 
-            # 教室番号: ①〜⑨ がラベル内にあれば優先、なければ教室行から
-            room = ""
-            for k, v in ROOM_MAP.items():
-                if k in display_title:
-                    room = v
-                    break
-            if not room and room_row:
-                room_raw = legacy.merged_value_text(sh, room_row, c)
-                room = normalize_room(room_raw)
+            # 補講①〜④の丸数字は回数。実際の教室は列上部の見出しから取得する。
+            room = special_event_room(sh, room_row, c)
 
             teacher = legacy.resolve_teacher_strict(sh, legend, r, c)
             time = legacy.find_timeband_above(sh, r, c, grade=None)

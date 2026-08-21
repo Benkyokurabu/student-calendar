@@ -329,15 +329,23 @@ def schedule_json_path(filename: str) -> Path:
 def load_schedule(month: str) -> List[dict]:
     path = schedule_json_path(f"schedule_{month}.json")
     if not path.exists():
-        path = schedule_json_path("schedule_latest.json")
+        raise FileNotFoundError(
+            f"対象月のスケジュールがありません: {path.name}。"
+            "schedule_latest.jsonへの自動フォールバックは月取り違え防止のため行いません。"
+        )
     return load_json(path)
 
 
 def determine_latest_schedule_month() -> str:
+    # 翌月スケジュールを先に公開しても、当月の授業録画は月末まで更新する。
+    current_month = datetime.now(JST).strftime("%Y-%m")
+    if schedule_json_path(f"schedule_{current_month}.json").exists():
+        return current_month
+
     events = load_json(schedule_json_path("schedule_latest.json"))
     months = sorted({str(ev.get("date", ""))[:7] for ev in events if str(ev.get("date", ""))[:7]})
     if not months:
-        return datetime.now(JST).strftime("%Y-%m")
+        return current_month
     return months[-1]
 
 

@@ -1,5 +1,8 @@
+import json
+import tempfile
 import unittest
 from datetime import datetime, timedelta
+from pathlib import Path
 from unittest.mock import patch
 
 import zoom_recording_urls as z
@@ -116,6 +119,37 @@ class LessonOnlyRecordingTests(unittest.TestCase):
         candidate = recording(0, 90)
         candidate.end_time = None
         self.assertIsNone(self.match(candidate))
+
+
+class ScheduleMonthSelectionTests(unittest.TestCase):
+    class FixedDateTime(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            return cls(2026, 8, 21, 17, 0, tzinfo=tz)
+
+    def test_current_month_wins_when_latest_schedule_is_next_month(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            (root / "schedule_2026-08.json").write_text("[]", encoding="utf-8")
+            (root / "schedule_latest.json").write_text(
+                json.dumps([{"date": "2026-09-07"}]), encoding="utf-8"
+            )
+            with patch.object(z, "SYSTEM_DIR", scripts), patch.object(z, "datetime", self.FixedDateTime):
+                self.assertEqual("2026-08", z.determine_latest_schedule_month())
+
+    def test_missing_requested_month_never_falls_back_to_latest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            (root / "schedule_latest.json").write_text(
+                json.dumps([{"date": "2026-09-07"}]), encoding="utf-8"
+            )
+            with patch.object(z, "SYSTEM_DIR", scripts):
+                with self.assertRaises(FileNotFoundError):
+                    z.load_schedule("2026-08")
 
 
 if __name__ == "__main__":
