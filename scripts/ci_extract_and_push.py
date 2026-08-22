@@ -656,6 +656,47 @@ def main():
             print(f"[WARNING] マージ中にエラー: {e}")
     print()
 
+    # --- 公開前バリデーション ---
+    print("[VALIDATE] マージ済み日誌JSONを検査中...")
+    from validate_journal_publish import validate
+    validation_failed = False
+    for m in months:
+        merged_journal = repo_dir / f"journal_{m}.json"
+        schedule_json = repo_dir / f"schedule_{m}.json"
+        if not merged_journal.exists() or not schedule_json.exists():
+            continue
+        baseline_path = None
+        if m in old_jsons:
+            # old_jsonsは辞書なので一時ファイルに書き出してvalidateに渡す
+            baseline_path = merged_journal.with_suffix(".baseline.tmp")
+            baseline_path.write_text(
+                json.dumps(old_jsons[m], ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+        try:
+            errors = validate(merged_journal, schedule_json, baseline_path)
+            if errors:
+                print(f"  [BLOCK] {m}: 公開前検査に失敗しました")
+                for err in errors:
+                    print(f"    - {err}")
+                # マージ前のデータに復元
+                if m in old_jsons:
+                    restored_text = json.dumps(old_jsons[m], ensure_ascii=False, indent=2)
+                    merged_journal.write_text(restored_text, encoding="utf-8")
+                    latest = repo_dir / "journal_latest.json"
+                    if latest.exists() and m == months[-1]:
+                        latest.write_text(restored_text, encoding="utf-8")
+                    print(f"  [ROLLBACK] {m}: マージ前のデータに復元しました")
+                validation_failed = True
+            else:
+                print(f"  [OK] {m}: 検査合格")
+        finally:
+            if baseline_path and baseline_path.exists():
+                baseline_path.unlink()
+    if validation_failed:
+        print("[WARN] 一部の月で検査に失敗しました。該当月はマージ前のデータを維持します。")
+    print()
+
     # --- 18か月より古い journal/schedule JSON を削除 ---
     import re as _re2
     _today = date.today()
