@@ -561,15 +561,38 @@
       }
     } catch (e) {}
 
-    if (state.campus === "all") {
-      for (const k of Object.keys(state.selected)) {
-        const s = state.selected[k];
-        if (!(s instanceof Set)) continue;
-        for (const token of Array.from(s)) {
-          if (!String(token).includes(":")) s.delete(token);
-        }
+  }
+
+  // v3以前は「B」のように校舎なしで保存していた。v4で校舎込みトークンへ
+  // 移行した際に単純削除すると、既存利用者の授業が突然すべて非表示になる。
+  // 月データ読込後、その月に実在する校舎付きトークンへ安全に展開する。
+  function migrateLegacySelectionsForLoadedMonth() {
+    if (state.campus !== "all") return false;
+    let changed = false;
+
+    for (const subj of Object.keys(state.selected)) {
+      const selected = state.selected[subj];
+      if (!(selected instanceof Set)) continue;
+
+      const legacy = Array.from(selected).filter(token => !String(token).includes(":"));
+      for (const oldToken of legacy) {
+        const cls = String(oldToken || "").trim();
+        if (!cls) continue;
+        const replacements = new Set(
+          allLessons
+            .filter(l => l.grade === state.grade && l.subject === subj && String(l.class || "").trim() === cls)
+            .map(l => makeClassToken("all", l.campus, cls))
+            .filter(Boolean)
+        );
+        if (replacements.size === 0) continue;
+        selected.delete(oldToken);
+        replacements.forEach(token => selected.add(token));
+        changed = true;
       }
     }
+
+    if (changed) saveState();
+    return changed;
   }
 
   function saveState() {
@@ -759,6 +782,7 @@
         cachedLatestYM = todayYM;
         currentYM = todayYM;
         allLessons = todayNorm;
+        migrateLegacySelectionsForLoadedMonth();
         hintArea.textContent = "";
         await loadJournalSafe(currentYM);
         rebuildUI();
@@ -775,6 +799,7 @@
       cachedLatestYM = inferYMFromLessons(normalized);
       if (cachedLatestYM) currentYM = cachedLatestYM;
       allLessons = normalized;
+      migrateLegacySelectionsForLoadedMonth();
       hintArea.textContent = "";
       await loadJournalSafe(currentYM);
       rebuildUI();
@@ -794,6 +819,7 @@
     try {
       const data = await fetchJsonForMonth(ym);
       allLessons = normalizeLessons(data);
+      migrateLegacySelectionsForLoadedMonth();
       hintArea.textContent = "";
       await loadJournalSafe(ym);
       rebuildUI();

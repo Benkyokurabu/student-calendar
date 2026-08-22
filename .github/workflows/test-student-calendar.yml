@@ -1,0 +1,30 @@
+name: Test student calendar
+
+on:
+  push:
+    paths:
+      - "calendar.html"
+      - "calendar_journal.html"
+      - "schedule_*.json"
+      - "scripts/test_calendar_state_migration.mjs"
+      - ".github/workflows/test-student-calendar.yml"
+  pull_request:
+    paths:
+      - "calendar.html"
+      - "calendar_journal.html"
+      - "schedule_*.json"
+      - "scripts/test_calendar_state_migration.mjs"
+      - ".github/workflows/test-student-calendar.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  calendar-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/test_calendar_state_migration.mjs
