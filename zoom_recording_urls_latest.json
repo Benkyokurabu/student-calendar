@@ -1,8 +1,8 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-24T21:58:04.167525+09:00",
-  "matched": 237,
-  "missing": 231,
+  "generatedAt": "2026-08-24T22:06:26.702593+09:00",
+  "matched": 238,
+  "missing": 230,
   "entries": {
     "2026-08-03|2:55～4:25|minami|minami_j1_B_math|2": {
       "url": "https://us06web.zoom.us/rec/play/3YCBQH8i1qTAjDJKLJ2Zb2KTg9S848ouTzxghlcYPh2u_Zf6EduVzM7IZaxGbb4DDM_hEjdRc6_ky46F.Gz6h6i7r20pFhoLV",
@@ -3281,6 +3281,28 @@
       "startOffsetMinutes": 2.9,
       "recordingDurationMinutes": 86.3,
       "lessonOverlapMinutes": 86.3
+    },
+    "2026-08-18|6:35～8:05|minami|minami_j2_S_math|2": {
+      "url": "https://us06web.zoom.us/rec/share/CJQCrBPx8lzUeYnClOWc0VUTT7cFkiKlvoE_n8F8WxIQcTGXdrQXHy8DwIA_0sJ9.eXzSkkNFtUJhiE_h?startTime=1787046114000",
+      "recordingStart": "2026-08-18T18:41:54+09:00",
+      "meetingId": "7707757842",
+      "topic": "verified override minami room 2",
+      "date": "2026-08-18",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j2",
+      "class": "S",
+      "subject": "math",
+      "label": "中２S 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-08-18|6:35～8:05|j2|S|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 6.9,
+      "recordingDurationMinutes": 83.1,
+      "lessonOverlapMinutes": 83.1
     },
     "2026-08-18|8:25～9:55|hon|hon_j2_A_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/gnjRJfDGNAgFOR2LAdbVKvVTl4JgZ9nNJ_FvIEYOJJqD56K1WVx9lcrENwCkvWXdlJtrT3XI1SqZsWw.UdgyYy9ixxBqZIWJ",
