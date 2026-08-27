@@ -1,8 +1,8 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-27T16:45:05.398158+09:00",
-  "matched": 283,
-  "missing": 185,
+  "generatedAt": "2026-08-27T18:20:05.578489+09:00",
+  "matched": 284,
+  "missing": 184,
   "entries": {
     "2026-08-03|2:55～4:25|minami|minami_j1_B_math|2": {
       "url": "https://us06web.zoom.us/rec/play/VV4rV37JEkTB5xJfAQVt-JUgsENweGzGtU2K4QAHzzXKG9oCpFGjiy83tIYk29dAt5YspTVfEw1BH_Z1.lY6tCwNjw4iDcO42",
@@ -6229,6 +6229,28 @@
       "startOffsetMinutes": 2.0,
       "recordingDurationMinutes": 87.6,
       "lessonOverlapMinutes": 87.6
+    },
+    "2026-08-27|４:４５～６:１５|minami|minami_e4_A_jp|3": {
+      "url": "https://us06web.zoom.us/rec/play/52UbJPkVwiwNUbEbiUL1tHHcJh9Yvcl9njl8GSSJ-ICRqK8dpKYObkcJnTUEkHfIA5bcCgYwf0qFP9qA.amG__LXrHfh95qWv",
+      "recordingStart": "2026-08-27T16:56:37+09:00",
+      "meetingId": "3721287174",
+      "topic": "南校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-08-27",
+      "time": "４:４５～６:１５",
+      "campus": "minami",
+      "room": "3",
+      "grade": "e4",
+      "class": "A",
+      "subject": "jp",
+      "label": "小４A 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-08-27|４:４５～６:１５|e4|A|jp",
+      "recordingCampus": "minami",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 11.6,
+      "recordingDurationMinutes": 74.3,
+      "lessonOverlapMinutes": 74.3
     }
   }
 }
