@@ -1,8 +1,8 @@
 {
   "month": "2026-08",
-  "generatedAt": "2026-08-28T20:20:05.095861+09:00",
-  "matched": 307,
-  "missing": 161,
+  "generatedAt": "2026-08-28T20:25:05.053646+09:00",
+  "matched": 308,
+  "missing": 160,
   "entries": {
     "2026-08-05|2:55～4:25|minami|minami_j1_S_math|3": {
       "url": "https://us06web.zoom.us/rec/play/x2JH8dY0IZBoEAZYkFUDETHw7mS0Ca9R3mnzVgwb4fivYjhSq-BHJpETkWU1eDHj4t7s-C7LGnNAcnoa.vrYU9YgjxP6VT4JL",
@@ -6009,6 +6009,28 @@
       "startOffsetMinutes": 18.1,
       "recordingDurationMinutes": 73.8,
       "lessonOverlapMinutes": 71.9
+    },
+    "2026-08-28|6:35～8:05|hon|hon_j2_S_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/e_OwhuQnllb0Vu9p3Jimhv4bW_ccnghcoTeraH2Q1L-Swu_yHRfAbTRZ1vJtvwPmWSN9BcFSZQ-0h42j.Dqucwq3ACLtVfC5T",
+      "recordingStart": "2026-08-28T18:34:47+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-08-28",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j2",
+      "class": "S",
+      "subject": "math",
+      "label": "中２S 数学",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-08-28|6:35～8:05|j2|S|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": -0.2,
+      "recordingDurationMinutes": 90.4,
+      "lessonOverlapMinutes": 90.0
     },
     "2026-08-28|４:４５～６:１５|minami|minami_j3_S_jp|4": {
       "url": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
