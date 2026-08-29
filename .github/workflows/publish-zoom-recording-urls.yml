@@ -132,6 +132,44 @@ jobs:
 
           python scripts/zoomURL/publish_zoom_recording_url_json.py "${args[@]}"
 
+      - name: Record recovery on open incident
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          issue_number=$(gh issue list \
+            --state open \
+            --search '"Zoom録画URLクラウド公開失敗" in:title' \
+            --json number \
+            --jq '.[0].number // empty')
+
+          if [ -z "$issue_number" ]; then
+            echo "No open Zoom publishing incident"
+            exit 0
+          fi
+
+          latest_state=$(gh issue view "$issue_number" \
+            --json body,comments \
+            --jq '[.body, (.comments[].body)] | last')
+
+          if ! grep -q 'zoom-recording-publish-incident' <<<"$latest_state"; then
+            echo "Recovery is already recorded for issue #$issue_number"
+            exit 0
+          fi
+
+          recovered_at=$(date -u -d '+9 hours' '+%Y-%m-%d %H:%M JST')
+          gh issue comment "$issue_number" --body "$(cat <<EOF
+          <!-- zoom-recording-publish-recovery -->
+          後続のクラウド公開が成功しました。
+
+          - 復旧確認時刻: ${recovered_at}
+          - 成功した実行: ${RUN_URL}
+
+          障害内容の確認が終わるまで、このIssueは開いたまま保持します。
+          EOF
+          )"
+
       - name: Create issue on failure
         if: failure() || cancelled()
         env:
