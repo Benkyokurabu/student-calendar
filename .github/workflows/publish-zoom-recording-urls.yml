@@ -64,6 +64,7 @@ jobs:
           fetch-depth: 0
 
       - name: Simulate failure for cloud alert verification
+        # The push marker lets maintainers verify alerts without changing secrets or published JSON.
         if: >-
           (github.event_name == 'workflow_dispatch' && inputs.simulate_failure) ||
           (github.event_name == 'push' && contains(github.event.head_commit.message, '[test-zoom-cloud-alert]'))
