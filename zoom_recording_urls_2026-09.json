@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-07T20:15:04.420644+09:00",
-  "matched": 3,
-  "missing": 318,
+  "generatedAt": "2026-09-07T20:21:29.801647+09:00",
+  "matched": 4,
+  "missing": 317,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/K4Qpx8cjpfyMkg8QZIiBsJzL4up5aGGtUuVyqNVAeODFbBkR9TgmpRyb63bazufMgYX8FMEYBwNWw0-o.h0XVsAbbbj0zBlTw",
@@ -47,6 +47,28 @@
       "startOffsetMinutes": 2.4,
       "recordingDurationMinutes": 89.9,
       "lessonOverlapMinutes": 87.7
+    },
+    "2026-09-07|6:35～8:05|hon|hon_j2_S_jp|2": {
+      "url": "https://us06web.zoom.us/rec/play/zMVxwgp3AhgvZm21yAi-OH_EliSaXLx8bcF2ciw1wlp4Y9d0u9ityaefdlXDHtbkZfh_zzmLIBscDz5y.YgpuGrMDXGaS_4YP",
+      "recordingStart": "2026-09-07T18:41:22+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-09-07",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "2",
+      "grade": "j2",
+      "class": "S",
+      "subject": "jp",
+      "label": "中２S 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-09-07|6:35～8:05|j2|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 6.4,
+      "recordingDurationMinutes": 84.6,
+      "lessonOverlapMinutes": 83.6
     },
     "2026-09-07|6:35～8:05|minami|minami_j3_S_sci|2": {
       "url": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
