@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-07T20:06:05.423610+09:00",
-  "matched": 1,
-  "missing": 320,
+  "generatedAt": "2026-09-07T20:11:06.545712+09:00",
+  "matched": 2,
+  "missing": 319,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/K4Qpx8cjpfyMkg8QZIiBsJzL4up5aGGtUuVyqNVAeODFbBkR9TgmpRyb63bazufMgYX8FMEYBwNWw0-o.h0XVsAbbbj0zBlTw",
@@ -25,6 +25,28 @@
       "startOffsetMinutes": 0.5,
       "recordingDurationMinutes": 85.2,
       "lessonOverlapMinutes": 85.2
+    },
+    "2026-09-07|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "url": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
+      "recordingStart": "2026-09-07T18:43:09+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-09-07",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j3",
+      "class": "S",
+      "subject": "sci",
+      "label": "中３S 理科",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-09-07|6:35～8:05|j3|S|sci",
+      "recordingCampus": "minami",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 8.2,
+      "recordingDurationMinutes": 75.7,
+      "lessonOverlapMinutes": 75.7
     }
   }
 }
