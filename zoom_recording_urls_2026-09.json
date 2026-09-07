@@ -1,11 +1,11 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-07T22:20:12.497952+09:00",
+  "generatedAt": "2026-09-07T22:32:58.791316+09:00",
   "matched": 8,
   "missing": 313,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/K4Qpx8cjpfyMkg8QZIiBsJzL4up5aGGtUuVyqNVAeODFbBkR9TgmpRyb63bazufMgYX8FMEYBwNWw0-o.h0XVsAbbbj0zBlTw",
+      "url": "https://us06web.zoom.us/rec/play/_Zc-4RiSod1-PuKNNGaHq-hHSFu2f9m8zdBuSN1kvtZuq0txNeKqqB2FAe1u_sk4qQGgU7TNUMM5Ft8g.94LJj2Qij7fly474",
       "recordingStart": "2026-09-07T18:35:30+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -21,13 +21,13 @@
       "onlineLessonKey": "2026-09-07|6:35～8:05|j1|S|math",
       "recordingCampus": "minami",
       "recordingRoom": "1",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 0.5,
       "recordingDurationMinutes": 85.2,
       "lessonOverlapMinutes": 85.2
     },
     "2026-09-07|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/F_kD3Rm0MzcT-XYlKb8xUsIinFhyke2-J7VFNuZSgcFTo-eh3s0B3r_ON4B95S7K4PJ9uI3LZ3CQjvsA.AGndyf5WpNJPlXjs",
+      "url": "https://us06web.zoom.us/rec/play/MMusxyOyjkJmn8cgSNRY4ut3u01SrUBVrdB0xNhDNsASw2OtHAeTsRmZ1kZdm52uwXOLZDWTlMf9CS74.ZQf-T04s_jGpKT21",
       "recordingStart": "2026-09-07T18:37:21+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -43,13 +43,13 @@
       "onlineLessonKey": "2026-09-07|6:35～8:05|j1|S|eng",
       "recordingCampus": "hon",
       "recordingRoom": "1",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 2.4,
       "recordingDurationMinutes": 89.9,
       "lessonOverlapMinutes": 87.7
     },
     "2026-09-07|6:35～8:05|hon|hon_j2_S_jp|2": {
-      "url": "https://us06web.zoom.us/rec/play/zMVxwgp3AhgvZm21yAi-OH_EliSaXLx8bcF2ciw1wlp4Y9d0u9ityaefdlXDHtbkZfh_zzmLIBscDz5y.YgpuGrMDXGaS_4YP",
+      "url": "https://us06web.zoom.us/rec/play/87qePit5GMjzvhVvt89lnuWMRWnwampNCdx3mFPBC3ECzU1XDX37wdUoYv-_AWEhB0cU0qYbQpo9qbKp.gYstD5wYJ5g1cw8H",
       "recordingStart": "2026-09-07T18:41:22+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -65,13 +65,13 @@
       "onlineLessonKey": "2026-09-07|6:35～8:05|j2|S|jp",
       "recordingCampus": "hon",
       "recordingRoom": "2",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 6.4,
       "recordingDurationMinutes": 84.6,
       "lessonOverlapMinutes": 83.6
     },
     "2026-09-07|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/DM4ER2EuZdUZayZvQq_gAYUFlk8M8l6xBaIgO45OS610aoJ48GhJU-JJ2nK-hq-_RhikA9EN6BD-PdZo.Y96n7dX_1OvQRY87",
+      "url": "https://us06web.zoom.us/rec/play/RUswvE703o6Lxe8WrKDfkYI00zaZyIj55pAAZIuUwJg-Uv9TJmbsBnLypQuWEjVOX955v8B0piDsnQgE.zLZNP-njyM58njsW",
       "recordingStart": "2026-09-07T18:39:26+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -87,13 +87,13 @@
       "onlineLessonKey": "2026-09-07|6:35～8:05|j3|A|soc",
       "recordingCampus": "hon",
       "recordingRoom": "4",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 4.4,
       "recordingDurationMinutes": 86.1,
       "lessonOverlapMinutes": 85.6
     },
     "2026-09-07|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
+      "url": "https://us06web.zoom.us/rec/play/ujX9tBF7mOlZHkStJ7A4wqi8NazUN0JAhR7Tbf4EN5MNm_BiKJhzk1WOqmz6Xrb0qL_aO24lDIDXcuYY.fvmXY2ovU0pb1s3Z",
       "recordingStart": "2026-09-07T18:43:09+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -109,13 +109,13 @@
       "onlineLessonKey": "2026-09-07|6:35～8:05|j3|S|sci",
       "recordingCampus": "minami",
       "recordingRoom": "2",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 8.2,
       "recordingDurationMinutes": 75.7,
       "lessonOverlapMinutes": 75.7
     },
     "2026-09-07|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "url": "https://us06web.zoom.us/rec/play/lb60hX7sPihMjnkkXQP0DkAodvFzRaMoO9YsUvv0UB-U9O9kejlU4jDI1_cXHf4JHaXFZyegU34XHsY.ijBwZHODFjwr_kwD",
+      "url": "https://us06web.zoom.us/rec/play/PaUqe1kcgDPL4HCGypn-bEMP_4dmK_xC4aTs4JUl5L2vB3BXMJJKd3y2fFcWYo3Vi4e3M68ygJ8qRQ0.5PAD7pErNQgASRuw",
       "recordingStart": "2026-09-07T20:34:51+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -131,13 +131,13 @@
       "onlineLessonKey": "2026-09-07|8:25～9:55|j2|A|eng",
       "recordingCampus": "hon",
       "recordingRoom": "1",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 9.8,
       "recordingDurationMinutes": 87.5,
       "lessonOverlapMinutes": 80.2
     },
     "2026-09-07|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "url": "https://us06web.zoom.us/rec/play/Vk3JLnvvKdvyhVMksQ8-7N5NoySswOdTYuVcOMcZMlsslpP5hJ2BauxksLgR_Cnkc4Sn1-0THDm4Kusd.oeiqYDkaUg2PPqHY",
+      "url": "https://us06web.zoom.us/rec/play/urPsYPiP6OcUpn9FDYToxfArmLykDkXBk2zst77LId0c2vBXlx9bpgEkSa27vs62dsP3LEsjfn_8dOMl.vFI7ThsuBM-5_NVm",
       "recordingStart": "2026-09-07T20:31:21+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -153,13 +153,13 @@
       "onlineLessonKey": "2026-09-07|8:25～9:55|j3|A|sci",
       "recordingCampus": "minami",
       "recordingRoom": "2",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 6.3,
       "recordingDurationMinutes": 81.1,
       "lessonOverlapMinutes": 81.1
     },
     "2026-09-07|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "url": "https://us06web.zoom.us/rec/play/6fJ-DzlPthK14wv07ssrrEypZVyJTB9uz_PrmLi5dvdQh5Ax_CEhjNqp4cg5oeZZIaeDFjekK_p5zuxx.LhKDRPY6cGTFZN63",
+      "url": "https://us06web.zoom.us/rec/play/xOyofq_ZnxHEIllk8nVq_0IaRBmBYz07sYtDMNYeCL5B9QYtOE61JaxyVU0kfonOADS-QsnyEfinXiqM.isRbtj5N_bI-do3c",
       "recordingStart": "2026-09-07T20:35:12+09:00",
       "meetingId": "3067983739",
       "topic": "本校　第４教室のパーソナルミーティングルーム",
@@ -175,7 +175,7 @@
       "onlineLessonKey": "2026-09-07|8:25～9:55|j3|S|soc",
       "recordingCampus": "hon",
       "recordingRoom": "4",
-      "matchPolicy": "campus-room-segment-overlap-v4",
+      "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 10.2,
       "recordingDurationMinutes": 80.5,
       "lessonOverlapMinutes": 79.8
