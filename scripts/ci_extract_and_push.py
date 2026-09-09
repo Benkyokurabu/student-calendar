@@ -17,6 +17,24 @@ import shutil
 from copy import copy
 
 
+def merge_entry_keys(old_entries: dict, new_entries: dict) -> list[str]:
+    """Only current extraction slots are publishable; old data fills those slots.
+
+    Do not resurrect removed/renamed schedule keys. Missing or unexpected keys
+    in the new extraction must remain visible to the publish validator.
+    Historical entries remain available in Git, not in the current schedule.
+    """
+    retired = set(old_entries) - set(new_entries)
+    if retired:
+        print(f"  [MERGE] Retired {len(retired)} previous schedule slots")
+    return sorted(new_entries)
+
+
+def require_valid_publication(validation_failed: bool) -> None:
+    if validation_failed:
+        raise RuntimeError("Journal validation failed; old data restored, publication stopped")
+
+
 def warn_about_empty_past_content(repo_dir: Path, month: str):
     """Log suspiciously empty entries before the old JSON merge masks them."""
     journal_path = repo_dir / f"journal_{month}.json"
@@ -614,7 +632,7 @@ def main():
             old_entries = old_data.get("entries", {})
 
             merged_entries = {}
-            all_keys = set(list(old_entries.keys()) + list(new_entries.keys()))
+            all_keys = merge_entry_keys(old_entries, new_entries)
             kept_count = 0
             updated_count = 0
 
@@ -653,7 +671,7 @@ def main():
             _tmp2.write_text(_text, encoding="utf-8")
             _tmp2.replace(latest)
         except Exception as e:
-            print(f"[WARNING] マージ中にエラー: {e}")
+            raise RuntimeError(f"{m}: 日誌マージに失敗しました") from e
     print()
 
     # --- 公開前バリデーション ---
@@ -664,7 +682,7 @@ def main():
         merged_journal = repo_dir / f"journal_{m}.json"
         schedule_json = repo_dir / f"schedule_{m}.json"
         if not merged_journal.exists() or not schedule_json.exists():
-            continue
+            raise FileNotFoundError(f"{m}: 公開前検査に必要な日誌またはスケジュールがありません")
         baseline_path = None
         if m in old_jsons:
             # old_jsonsは辞書なので一時ファイルに書き出してvalidateに渡す
@@ -693,8 +711,7 @@ def main():
         finally:
             if baseline_path and baseline_path.exists():
                 baseline_path.unlink()
-    if validation_failed:
-        print("[WARN] 一部の月で検査に失敗しました。該当月はマージ前のデータを維持します。")
+    require_valid_publication(validation_failed)
     print()
 
     # --- 18か月より古い journal/schedule JSON を削除 ---
