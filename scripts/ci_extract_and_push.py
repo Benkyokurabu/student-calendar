@@ -152,18 +152,8 @@ def _single_validation_signature(dv):
 
 def _sync_canonical_validations(dst, src):
     """Restore canonical rules by range while preserving unrelated custom rules."""
-    changed = False
-    for src_dv in src.data_validations.dataValidation:
-        src_ref = str(src_dv.sqref)
-        existing = [dv for dv in dst.data_validations.dataValidation if str(dv.sqref) == src_ref]
-        if len(existing) == 1 and _single_validation_signature(existing[0]) == _single_validation_signature(src_dv):
-            continue
-        dst.data_validations.dataValidation = [
-            dv for dv in dst.data_validations.dataValidation if str(dv.sqref) != src_ref
-        ]
-        dst.add_data_validation(copy(src_dv))
-        changed = True
-    return changed
+    from journal_input_controls import ensure_controls
+    return bool(ensure_controls(dst, src))
 
 
 def repair_hidden_template_validations(script_dir: Path, journal_dir: Path):
@@ -180,6 +170,8 @@ def repair_hidden_template_validations(script_dir: Path, journal_dir: Path):
             raise FileNotFoundError(f"正規テンプレートがありません: {template_path}")
         template_wb = openpyxl.load_workbook(template_path)
         canonical[hidden_name] = (template_wb, template_wb[template_wb.sheetnames[0]])
+        from journal_input_controls import assert_template_controls
+        assert_template_controls(canonical[hidden_name][1])
 
     repaired_files = 0
     try:

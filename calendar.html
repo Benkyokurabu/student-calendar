@@ -866,9 +866,11 @@
   function findRecordingUrlForLesson(it, entry) {
     const override = findRecordingRecordForLesson(it, recordingOverrides);
     if (override !== null) return recordingUrlFromRecord(override);
-    const journalUrl = String(entry?.recordingUrl || "").trim();
-    if (journalUrl) return journalUrl;
-    return recordingUrlFromRecord(findRecordingRecordForLesson(it, zoomRecordingEntries));
+    // Exact date/time/campus/class/room match takes priority over stale journal links.
+    const matched = zoomRecordingEntries[buildEventKeyFromLesson(it)];
+    const recordingUrl = recordingUrlFromRecord(matched);
+    if (recordingUrl) return recordingUrl;
+    return String(entry?.recordingUrl || "").trim();
   }
 
   function formatMultiline(text) {

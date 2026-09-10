@@ -496,6 +496,7 @@
 
   let allLessons = [];
   let journalEntries = {};
+  let zoomRecordingEntries = {};
   let journalLoadedYM = null;
 
   gradeSelect.addEventListener("change", () => {
@@ -719,6 +720,14 @@
     const merged = {};
     if (monthly && monthly.entries) Object.assign(merged, monthly.entries);
     if (latest && latest.entries) Object.assign(merged, latest.entries);
+    const recordings = await Promise.all([
+      fetchJsonAny([`zoom_recording_urls_${ym}.json`]),
+      fetchJsonAny(["zoom_recording_urls_latest.json"]),
+    ]);
+    zoomRecordingEntries = {};
+    recordings.filter(data => data?.month === ym && data.entries)
+      .sort((a, b) => String(a.generatedAt || "").localeCompare(String(b.generatedAt || "")))
+      .forEach(data => Object.assign(zoomRecordingEntries, data.entries));
     journalEntries = merged;
     journalLoadedYM = ym;
   }
@@ -730,6 +739,11 @@
     const gk = String(it?.groupKey ?? "").trim();
     const room = String(it?.room ?? "").trim();
     return `${date}|${time}|${campus}|${gk}|${room}`;
+  }
+
+  function findRecordingUrlForLesson(it, entry) {
+    const matched = zoomRecordingEntries[buildEventKeyFromLesson(it)];
+    return String(matched?.url || entry?.recordingUrl || "").trim();
   }
 
   function formatMultiline(text) {
@@ -747,7 +761,7 @@
     const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
     const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">ー</span>`;
 
-    const url = String(entry.recordingUrl || "").trim();
+    const url = findRecordingUrlForLesson(it, entry);
     const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">ー</span>`;
 
     return `

@@ -7,6 +7,7 @@ on:
       - "calendar_journal.html"
       - "schedule_*.json"
       - "scripts/test_calendar_state_migration.mjs"
+      - "scripts/test_recording_link_priority.mjs"
       - ".github/workflows/test-student-calendar.yml"
   pull_request:
     paths:
@@ -14,6 +15,7 @@ on:
       - "calendar_journal.html"
       - "schedule_*.json"
       - "scripts/test_calendar_state_migration.mjs"
+      - "scripts/test_recording_link_priority.mjs"
       - ".github/workflows/test-student-calendar.yml"
 
 permissions:
@@ -28,3 +30,4 @@ jobs:
         with:
           node-version: "22"
       - run: node scripts/test_calendar_state_migration.mjs
+      - run: node scripts/test_recording_link_priority.mjs

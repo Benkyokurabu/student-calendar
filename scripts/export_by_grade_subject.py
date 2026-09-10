@@ -49,6 +49,7 @@ from collections import defaultdict, namedtuple
 from typing import Optional, Dict, Tuple, Set, List, Any
 from copy import copy
 
+from journal_input_controls import ensure_controls, is_unused_gray
 import openpyxl
 from openpyxl.utils import column_index_from_string, get_column_letter
 from openpyxl.cell.cell import MergedCell
@@ -428,7 +429,7 @@ def clear_gray_block(ws, top: int, left: int):
                 cell = _merged_top_left(ws, rr, cc)
                 key = (cell.row, cell.column)
                 if key not in done:
-                    if cell.fill and cell.fill.start_color and cell.fill.start_color.rgb == "00D9D9D9":
+                    if is_unused_gray(cell.fill):
                         cell.fill = NO_FILL
                     done.add(key)
 
@@ -774,6 +775,11 @@ def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hid
     if hidden_name in wb.sheetnames:
         ws = wb[hidden_name]
         ws.sheet_state = "hidden"
+        reference = openpyxl.load_workbook(template_path)
+        try:
+            ensure_controls(ws, reference.worksheets[0])
+        finally:
+            reference.close()
         patch_counter_formulas(ws)
         return ws
 
@@ -781,6 +787,8 @@ def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hid
     src = t_wb[t_wb.sheetnames[0]]
     ws = wb.create_sheet(hidden_name)
     copy_worksheet_contents_safe(src, ws)
+    ensure_controls(ws, src)
+    t_wb.close()
     ws.sheet_state = "hidden"
     patch_counter_formulas(ws)
     return ws
@@ -792,6 +800,8 @@ def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int):
     if base in wb.sheetnames:
         return None
 
+    # Validate and extend controls before copying a new month.
+    ensure_controls(hidden_ws)
     # hidden template から複製
     ws = wb.copy_worksheet(hidden_ws)
     ws.title = base
