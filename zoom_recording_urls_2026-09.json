@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-10T18:19:03.199626+09:00",
-  "matched": 26,
-  "missing": 295,
+  "generatedAt": "2026-09-10T18:24:03.334520+09:00",
+  "matched": 27,
+  "missing": 294,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/j2I30njqlUcexIOQq6TsFbVdCe0D2Ic_NOldIqxDpUUqLoy3gAMpyD7hM-g5tYS0rucHhgJVB8QOeBT0.PK51UaIhHIlwg_nu",
@@ -553,6 +553,28 @@
       "startOffsetMinutes": 32.5,
       "recordingDurationMinutes": 54.1,
       "lessonOverlapMinutes": 54.1
+    },
+    "2026-09-10|4:55～6:15|hon|hon_e4_A_arith|3": {
+      "url": "https://us06web.zoom.us/rec/play/S7oOKPlNk4iopdNGoBq6Drgj_YitkwWu3ltqFtqnjU0njw3P25rXHTk2dEuRucuhpPnXuBNK_ddblwcU.1DRWrJK4ggLXhVwE",
+      "recordingStart": "2026-09-10T17:00:42+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-09-10",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "3",
+      "grade": "e4",
+      "class": "A",
+      "subject": "arith",
+      "label": "小４A 算数",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-09-10|4:55～6:15|e4|A|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 5.7,
+      "recordingDurationMinutes": 70.7,
+      "lessonOverlapMinutes": 70.7
     },
     "2026-09-10|4:55～6:15|hon|hon_e5_S_arith|2": {
       "url": "https://us06web.zoom.us/rec/play/e93OR2MbIBNomII_fxu_DXBvTXAZMv6FQ7CdrFu9altc7FjAStxWSllK__FuxqY0N1WCltuGgIxCNI7y.vQYRjm7gqYkhinCL",
