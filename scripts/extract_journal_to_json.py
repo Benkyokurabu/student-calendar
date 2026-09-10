@@ -444,27 +444,22 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
         else:
             f2 = None
 
-    # wb が渡された場合は常に前月から再計算して正しい値を使う
-    # （F2/FG2がテンプレートのデフォルト値や不正な値の場合があるため）
-    if wb is not None and year and month:
-        computed = _compute_annual_start_from_wb(wb, year, month)
-        if computed is not None:
-            f2 = computed
-
     if not isinstance(f2, (int, float)):
         return ("", "", "")
 
-    # E3 = 月番号, G3 = 月内カウンタ開始(常に1)
+    # E3 = 月番号, G3 = 月内カウンタ開始。
+    # 実力テスト週などの運用調整でF2/G3を手動変更するため、実セル値を正とする。
     month_n_raw = ws.cell(row=3, column=5).value  # E3
     if month_n_raw is None:
         return ("", "", "")
     month_n = str(int(month_n_raw)) if isinstance(month_n_raw, (int, float)) else str(month_n_raw).strip()
 
     current_annual = int(f2)
-    current_monthly = 1
+    g3 = ws["G3"].value
+    current_monthly = int(g3) if isinstance(g3, (int, float)) else 1
     sheet_month = int(month_n_raw) if isinstance(month_n_raw, (int, float)) else None
 
-    for slot in range(17):  # 最大17スロット
+    for slot in range(17):
         col_left = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
         if not _slot_has_day(ws, col_left):
             continue
@@ -507,17 +502,14 @@ def read_slot_header(ws, left_col: int, *, wb=None, year: int = 0, month: int = 
     month_n = read_merged_text(ws, 3, left_col + 3)    # E3 相当
     week_n = read_merged_text(ws, 3, left_col + 5)     # G3 相当
 
-    # wbが渡された場合は常に前月から再計算（F2/FG2が不正な場合があるため）
-    force_recalc = wb is not None
-
-    # 数式未キャッシュで空の項目があるか、再計算が必要な場合
-    if not session or not month_n or not week_n or force_recalc:
+    # 後続列の数式が未キャッシュで空の場合だけ、F2/G3の実セル値から計算する。
+    if not session or not month_n or not week_n:
         calc_s, calc_m, calc_w = _compute_slot_session(ws, left_col, wb=wb, year=year, month=month)
-        if not session or force_recalc:
+        if not session:
             session = calc_s or session
-        if not month_n or force_recalc:
+        if not month_n:
             month_n = calc_m or month_n
-        if not week_n or force_recalc:
+        if not week_n:
             week_n = calc_w or week_n
 
     return {
