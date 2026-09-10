@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-10T22:03:03.342562+09:00",
-  "matched": 35,
-  "missing": 286,
+  "generatedAt": "2026-09-10T22:10:03.728191+09:00",
+  "matched": 36,
+  "missing": 285,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/x3fFMffni7YlgYj9ZM-Q1f2bUG3dxioAUJ5hFfchRo8d-x6chv-cnF3GdkNtV_4zrZ3kA89Z2Wp2-vTo.s11XbDYaxgIWbNET",
@@ -773,6 +773,28 @@
       "startOffsetMinutes": 11.8,
       "recordingDurationMinutes": 76.3,
       "lessonOverlapMinutes": 76.3
+    },
+    "2026-09-10|8:25～9:55|hon|hon_j3_B_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/buq27NHAYFgaxgrm8Z_KPBXwDTmMmFmG88Vwxhe-tmz6mtPgVqbp6KqpoKOkRzedHyS5_NGw9HvBtEw.5V9pR-gqV2f73Z4V",
+      "recordingStart": "2026-09-10T20:26:25+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-09-10",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "math",
+      "label": "中３B 数学",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-09-10|8:25～9:55|j3|B|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 1.4,
+      "recordingDurationMinutes": 87.8,
+      "lessonOverlapMinutes": 87.8
     }
   }
 }
