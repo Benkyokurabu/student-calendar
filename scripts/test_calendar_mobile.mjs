@@ -7,7 +7,7 @@ import {chromium} from 'playwright';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const key = 'benkyo_calendar_mobile_view_v1';
-const pages = ['calendar.html', 'calendar_journal.html', 'teacher_calendar.html'];
+const pages = ['calendar.html', 'teacher_calendar.html'];
 const latest = JSON.parse(await fs.readFile(path.join(root, 'schedule_latest.json'), 'utf8'));
 const currentDate = latest.find(e => e.date)?.date;
 assert(currentDate);

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 function extract(source,name){const start=source.indexOf(`function ${name}(`);assert(start>=0);let n=0;for(let i=source.indexOf('{',start);i<source.length;i++){if(source[i]==='{')n++;if(source[i]==='}'&&--n===0)return source.slice(start,i+1);}throw Error(name);}
 const key='2026-09-10|6:35～8:05|hon|hon_j3_B_eng|1';
-for(const page of ['calendar.html','calendar_journal.html']){
+for(const page of ['calendar.html']){
  const html=fs.readFileSync(new URL('../'+page,import.meta.url),'utf8');
  const ctx={zoomRecordingEntries:{[key]:{url:'https://zoom.us/today-hon'}},recordingOverrides:{},override:null,buildEventKeyFromLesson:it=>it.key,findRecordingRecordForLesson:()=>ctx.override,recordingUrlFromRecord:r=>r?.url||''};vm.createContext(ctx);vm.runInContext(extract(html,'findRecordingUrlForLesson'),ctx);
  const resolve=(key,old='https://zoom.us/stale-july')=>ctx.findRecordingUrlForLesson({key},{recordingUrl:old});

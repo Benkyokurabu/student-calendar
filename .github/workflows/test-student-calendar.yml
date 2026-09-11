@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "calendar.html"
-      - "calendar_journal.html"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"
@@ -17,7 +16,6 @@ on:
   pull_request:
     paths:
       - "calendar.html"
-      - "calendar_journal.html"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"

@@ -17,7 +17,7 @@ function extractFunction(source, name) {
   throw new Error(`${name} has an unterminated body`);
 }
 
-for (const page of ["calendar.html", "calendar_journal.html"]) {
+for (const page of ["calendar.html"]) {
   const html = fs.readFileSync(new URL(`../${page}`, import.meta.url), "utf8");
   const migration = extractFunction(html, "migrateLegacySelectionsForLoadedMonth");
   const context = { saveCount: 0 };
