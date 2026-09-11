@@ -30,6 +30,10 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: journal-cloud-write
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -78,6 +82,9 @@ jobs:
       - name: Verify 21 lesson slots and preservation
         run: python -m unittest discover -s scripts -p test_journal_slots.py -v
 
+      - name: Verify deferred migration safety
+        run: python -m unittest discover -s scripts -p test_retry_deferred_journal_slots.py -v
+
       - name: Install rclone
         run: |
           curl -fsSL https://rclone.org/install.sh | sudo bash
@@ -90,6 +97,12 @@ jobs:
           echo "$RCLONE_CONF_B64" | base64 -d > ~/.config/rclone/rclone.conf
           echo "rclone config check:"
           rclone listremotes
+
+      # First eligible scheduled run: 2026-09-12 04:17 JST. The script also
+      # enforces an absolute expiry and skips files already expanded.
+      - name: Retry three deferred 21-slot workbooks in the authorized window
+        if: github.event_name == 'schedule'
+        run: python scripts/retry_deferred_journal_slots.py
 
       - name: Download schedule Excel from OneDrive
         run: |

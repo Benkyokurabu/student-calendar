@@ -5,6 +5,8 @@ on:
       - 'scripts/journal_slots.py'
       - 'scripts/journal_slot_patch.py'
       - 'scripts/test_journal_slots.py'
+      - 'scripts/retry_deferred_journal_slots.py'
+      - 'scripts/test_retry_deferred_journal_slots.py'
       - 'scripts/export_by_grade_subject.py'
       - 'scripts/extract_journal_to_json.py'
       - 'scripts/TEMPLATE_*.xlsx'
@@ -28,3 +30,4 @@ jobs:
       - run: python -m unittest discover -s scripts -p test_journal_input_controls.py -v
       - run: python -m unittest discover -s scripts -p test_journal_counter_headers.py -v
       - run: python -m unittest discover -s scripts -p test_worksheet_order.py -v
+      - run: python -m unittest discover -s scripts -p test_retry_deferred_journal_slots.py -v
