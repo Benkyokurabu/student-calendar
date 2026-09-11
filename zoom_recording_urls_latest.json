@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-11T01:56:21.308517+09:00",
-  "matched": 35,
-  "missing": 286,
+  "generatedAt": "2026-09-11T16:25:03.563672+09:00",
+  "matched": 37,
+  "missing": 284,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/iKOn_2cfxyD9Yntlh1_G6BhIm8-8pRON_gtO5ezcWVWQpIPvjdHAWjoSxpoPaVdpA_ckRoCpz6SpUk0k.fscVSeheWo1p9cyX",
@@ -532,6 +532,28 @@
       "recordingDurationMinutes": 72.2,
       "lessonOverlapMinutes": 71.0
     },
+    "2026-09-09|8:25～9:55|minami|minami_j3_X_math|4": {
+      "url": "https://us06web.zoom.us/rec/play/U1nqE6dn3GDcmjICqNTR4CpA7wju9lQQbZcUaRRykoUiiIkWLzh2eCaC12JGwSqli_QBh81VAn94bf-m.MSRrMwx3sHkw7mvX",
+      "recordingStart": "2026-09-09T20:57:30+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-09-09",
+      "time": "8:25～9:55",
+      "campus": "minami",
+      "room": "4",
+      "grade": "j3",
+      "class": "X",
+      "subject": "math",
+      "label": "中３X 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-09-09|8:25～9:55|j3|X|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "4",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 32.5,
+      "recordingDurationMinutes": 54.1,
+      "lessonOverlapMinutes": 54.1
+    },
     "2026-09-10|4:55～6:15|hon|hon_e4_A_arith|3": {
       "url": "https://us06web.zoom.us/rec/play/fQER2O87QswZxHMtj3koXbECfExtVBk_E0iEEB4CWi4CSJVdabqWFBHySWSs0oUW1SUlCPW-8Udr65pX.aZO6amO95dT8Y9gu",
       "recordingStart": "2026-09-10T17:00:42+09:00",
@@ -685,6 +707,28 @@
       "startOffsetMinutes": 17.4,
       "recordingDurationMinutes": 71.2,
       "lessonOverlapMinutes": 71.2
+    },
+    "2026-09-10|6:35～8:05|minami|minami_j3_X_eng|4": {
+      "url": "https://us06web.zoom.us/rec/play/ugM0mIT4pr9NNsT0EdEWbOmGSA8l4R7C52XI1FNbB73EXZxUhb1c0BYB2DIR4uOif1tX8lYrzerwasyv.csHLYw6orB7JSWCO",
+      "recordingStart": "2026-09-10T18:37:28+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-09-10",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "4",
+      "grade": "j3",
+      "class": "X",
+      "subject": "eng",
+      "label": "中３X 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-09-10|6:35～8:05|j3|X|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "4",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 2.5,
+      "recordingDurationMinutes": 49.2,
+      "lessonOverlapMinutes": 49.2
     },
     "2026-09-10|8:25～9:55|hon|hon_j2_A_math|2": {
       "url": "https://us06web.zoom.us/rec/play/pw6uSf_3cNJDmhWZOQaM7LGH-d70Kf86Ox1d0YoI95D9KHDndwdwLAqWm0fCYcy1Uv07p94mEW7FeZJR.kHPuHG7Y5QPg6Vck",
