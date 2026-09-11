@@ -62,5 +62,3 @@ for plan_index,plan in enumerate(json.loads(plan_file.read_text(encoding='utf8')
   reports.append({'input':plan['input'],'output':plan['output'],'changed_parts':list(patches),'sha256':hashlib.sha256(pathlib.Path(plan['output']).read_bytes()).hexdigest(),'unchanged_content_and_formula_xml':True})
 (root/'preservation.json').write_text(json.dumps(reports,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps(reports,ensure_ascii=False,indent=2))
-
-
