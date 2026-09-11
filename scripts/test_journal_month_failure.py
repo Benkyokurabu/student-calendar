@@ -41,7 +41,7 @@ class MonthFailureTests(unittest.TestCase):
                  patch.object(generator, 'choose_target_sheets', return_value=[('本校', 'sheet', object())]), \
                  patch.object(generator, 'collect_events', return_value=events), \
                  contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
-                if count > 21 and not existing:
+                if count > 21:
                     with self.assertRaisesRegex(RuntimeError, '授業枠不足') as raised:
                         pipeline.create_month_sheets(scripts, ['2026-10'], root)
                     self.assertIsInstance(raised.exception.__cause__, ValueError)
@@ -73,7 +73,15 @@ class MonthFailureTests(unittest.TestCase):
         self.exercise(21, 'X')
 
     def test_existing_month_remains_a_successful_noop(self):
+        self.exercise(21, existing=True)
+
+    def test_existing_month_also_stops_when_schedule_exceeds_capacity(self):
         self.exercise(22, existing=True)
+
+    def test_parallel_classes_are_not_counted_as_63_columns(self):
+        events = [generator.Event(10, i + 1, '月', '18:00', '1', '3', 'S',
+                  '英', '3S英', '講師', False, False, i, 1) for i in range(21)]
+        pipeline.require_month_capacity(classes={k: events for k in ['S', 'A', 'B']})
 
     def test_pipeline_does_not_extract_after_month_failure(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -215,9 +215,20 @@ def repair_hidden_template_validations(script_dir: Path, journal_dir: Path):
     return repaired_files
 
 
+def require_month_capacity(*, classes=None, x_events=None):
+    """Check scheduled capacity even when a month sheet already exists."""
+    from export_by_grade_subject import _build_merged_slots
+    from journal_slots import MIN_LESSON_SLOTS
+    required = len(x_events) if x_events is not None else len(
+        _build_merged_slots(classes or {}, ["S", "A", "B"]))
+    if required > MIN_LESSON_SLOTS:
+        raise ValueError(f"授業枠不足: {required}件 / {MIN_LESSON_SLOTS}枠。切り捨てず処理を停止します")
+
+
 def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
     """スケジュールExcelを読み、日誌ファイルに新しい月シートを追加する"""
     old_cwd = os.getcwd()
+    wb_s = None
     try:
         sys.path.insert(0, str(script_dir))
         os.chdir(str(script_dir))
@@ -273,6 +284,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                         grade_j = GRADE_LABEL[grade]
 
                         if any([s_list, a_list, b_list]):
+                            require_month_capacity(classes={"S": s_list, "A": a_list, "B": b_list})
                             fname = f"{campus}{grade_j}{subj_j}_{year}.xlsx"
                             wb_path = find_workbook_in_journal(journal_dir, fname)
                             if wb_path is None:
@@ -289,6 +301,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                             created_count += 1
 
                         if x_list:
+                            require_month_capacity(x_events=x_list)
                             fname = f"{campus}{grade_j}X{subj_j}_{year}.xlsx"
                             wb_path = find_workbook_in_journal(journal_dir, fname)
                             if wb_path is None:
@@ -308,6 +321,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                     hits = [e for e in all_events if keyword in e.text]
                     if not hits:
                         continue
+                    require_month_capacity(classes={"S": hits, "A": [], "B": []})
                     fname = f"{campus}{title}_{year}.xlsx"
                     wb_path = find_workbook_in_journal(journal_dir, fname)
                     if wb_path is None:
@@ -324,18 +338,25 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                     created_count += 1
 
             wb_s.close()
+            if wb_s.vba_archive is not None:
+                wb_s.vba_archive.close()
+            wb_s = None
 
-        os.chdir(old_cwd)
         return created_count
 
     except Exception as e:
-        os.chdir(old_cwd)
         print(f"  [ERROR] 月シート作成中にエラー: {e}")
         import traceback
         traceback.print_exc()
         # Zero means "all requested sheets already exist", never generation failure.
         # Propagate failures so the workflow skips Excel upload and JSON publication.
         raise RuntimeError(f"月シート作成に失敗したため、公開を停止します: {e}") from e
+    finally:
+        if wb_s is not None:
+            wb_s.close()
+            if wb_s.vba_archive is not None:
+                wb_s.vba_archive.close()
+        os.chdir(old_cwd)
 
 
 def run(args, **kwargs):
