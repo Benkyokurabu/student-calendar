@@ -333,7 +333,9 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
         print(f"  [ERROR] 月シート作成中にエラー: {e}")
         import traceback
         traceback.print_exc()
-        return 0
+        # Zero means "all requested sheets already exist", never generation failure.
+        # Propagate failures so the workflow skips Excel upload and JSON publication.
+        raise RuntimeError(f"月シート作成に失敗したため、公開を停止します: {e}") from e
 
 
 def run(args, **kwargs):
