@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-11T11:06:57",
+  "generatedAt": "2026-09-11T13:00:47",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -1405,7 +1405,7 @@
     "2026-09-09|8:25～9:55|hon|hon_j3_A_jp|4": {
       "content": "敬語",
       "page": "要対p34-35",
-      "report": "",
+      "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "なし",
@@ -2372,18 +2372,20 @@
       }
     },
     "2026-09-11|4:55～6:15|minami|minami_e5_A_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "和語・漢語・外来語",
+      "page": "テキストP1582⃣⑷まで",
+      "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字帳P122-125"
+      ],
       "prevEntry": {
         "content": "ことばの知識",
         "page": "P116-119",
@@ -2469,18 +2471,20 @@
       }
     },
     "2026-09-11|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "１７比例と反比例のグラフ",
+      "page": "P60まで",
+      "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "32",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P61,64,65"
+      ],
       "prevEntry": {
         "content": "３比例と反比例の利用",
         "page": "ｐ56＃79まで",
@@ -2531,18 +2535,20 @@
       }
     },
     "2026-09-11|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "⑪～⑭",
+      "page": "～ｐ43まで",
+      "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "村佐　菅原　鈴木　大熊",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "p44、51～53"
+      ],
       "prevEntry": {
         "content": "⑨～⑩三角形の合同条件",
         "page": "～ｐ36",
@@ -2563,18 +2569,20 @@
       }
     },
     "2026-09-11|6:35～8:05|hon|hon_j3_S_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "敬語",
+      "page": "要対p34-37",
+      "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
       "teacher": "金城",
-      "absence": "",
+      "absence": "三上、北面、沼倉",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字p204-208"
+      ],
       "prevEntry": {
         "content": "小説、古文",
         "page": "要対p154-155",
@@ -2594,18 +2602,21 @@
       }
     },
     "2026-09-11|6:35～8:05|minami|minami_j1_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "whose",
+      "page": "#34③まで",
+      "report": "宿題にしていたプリントの小テは園田が綴りミスした以外は完璧だった。一方宿題の#29英作文は時間がかかってしまった。ここはスキップするべきだったか。後半はwhoseに入り、進めた。藤井がwhoseの意味をつかみ切れていない感じがある。次回も要注意。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "新井",
       "curriculumProgress": "",
-      "note": "",
+      "note": "伊藤さんにはp24から33までコピーを渡した。",
       "sessionNumber": "32",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "通常テキスト#34残り,35,37,38",
+        "HereWeGoのp40からの#1～4,8～11"
+      ],
       "prevEntry": {
         "content": "独立所有格",
         "page": "#31まで",
@@ -2688,10 +2699,10 @@
       }
     },
     "2026-09-11|6:35～8:05|minami|minami_j3_S_jp|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "敬語",
+      "page": "要対p34-37",
+      "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -2699,7 +2710,9 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字p204-208"
+      ],
       "prevEntry": {
         "content": "小説、古文",
         "page": "要対p154-155",
@@ -3820,21 +3833,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "",
+        "absence": "三上、北面、沼倉",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-15|4:45～6:15|minami|minami_j3_S_jp|4": {
@@ -3851,21 +3864,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "近藤、野澤、具志堅、小出",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-15|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -4583,21 +4596,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "",
+        "absence": "三上、北面、沼倉",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-16|6:35～8:05|minami|minami_j1_A_math|2": {
@@ -4744,7 +4757,7 @@
         "homework": [
           "漢字p198-202"
         ],
-        "report": "",
+        "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "なし",
@@ -5546,21 +5559,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "ことばの知識",
-        "page": "P116-119",
+        "content": "和語・漢語・外来語",
+        "page": "テキストP1582⃣⑷まで",
         "homework": [
-          "漢字帳P117-120"
+          "漢字帳P122-125"
         ],
-        "report": "ことばの知識を扱う。本日はみな楽しそうに行う。秋元さんの出来も良かった。長澤は幼さが目立ったが、前向きに取り組んでいた。",
+        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -5640,21 +5653,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "３比例と反比例の利用",
-        "page": "ｐ56＃79まで",
+        "content": "１７比例と反比例のグラフ",
+        "page": "P60まで",
         "homework": [
-          "ｐ23-ｐ24"
+          "P61,64,65"
         ],
-        "report": "比例・反比例の利用のところ。14身の周りの問題まで終了。",
+        "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "姜山",
+        "teacher": "工藤",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -5702,22 +5715,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "⑨～⑩三角形の合同条件",
-        "page": "～ｐ36",
+        "content": "⑪～⑭",
+        "page": "～ｐ43まで",
         "homework": [
-          "p50と前回の宿題",
-          "合同条件、対頂角など角の名前を覚えておくこと"
+          "p44、51～53"
         ],
-        "report": "鈴木と正田は宿題をすべて終わらせられたらしい。しかもよくできていた。本日から証明へ。菅原、大熊が引っ掛かりやすいので条件の使い方を丁寧目に進めた。玉水は錯角などよく見極められていた。",
-        "recordingUrl": "",
+        "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
         "teacher": "治彦",
-        "absence": "篠田",
+        "absence": "村佐　菅原　鈴木　大熊",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-29"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -5728,28 +5740,28 @@
       "teacher": "真下",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "先にHWGUnit4に入る",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "独立所有格",
-        "page": "#31まで",
+        "content": "whose",
+        "page": "#34③まで",
         "homework": [
-          "#24,25,27②から30,35,37",
-          "プリントを完璧に"
+          "通常テキスト#34残り,35,37,38",
+          "HereWeGoのp40からの#1～4,8～11"
         ],
-        "report": "P9の例文暗唱小テはあまり出来が良くなかった。次回も同じものをやるので完璧にして来い、ミスがあったら補講と脅し、再度プリントを宿題化した。代名詞表暗唱は新井だけが苦戦。ゆえに後半の独立所有格もいれた表も暗唱に苦戦していた。whoseまでは入れず。",
+        "report": "宿題にしていたプリントの小テは園田が綴りミスした以外は完璧だった。一方宿題の#29英作文は時間がかかってしまった。ここはスキップするべきだったか。後半はwhoseに入り、進めた。藤井がwhoseの意味をつかみ切れていない感じがある。次回も要注意。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "－1.5",
-        "note": "新井には新テキストもわたっている",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "absence": "新井",
+        "curriculumProgress": "",
+        "note": "伊藤さんにはp24から33までコピーを渡した。",
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|6:35～8:05|minami|minami_j1_B_eng|3": {
@@ -6033,21 +6045,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "３比例と反比例の利用",
-        "page": "ｐ56＃79まで",
+        "content": "１７比例と反比例のグラフ",
+        "page": "P60まで",
         "homework": [
-          "ｐ23-ｐ24"
+          "P61,64,65"
         ],
-        "report": "比例・反比例の利用のところ。14身の周りの問題まで終了。",
+        "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "姜山",
+        "teacher": "工藤",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-19|6:35～8:05|hon|hon_j1_S_math|2": {
@@ -6141,22 +6153,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "⑨～⑩三角形の合同条件",
-        "page": "～ｐ36",
+        "content": "⑪～⑭",
+        "page": "～ｐ43まで",
         "homework": [
-          "p50と前回の宿題",
-          "合同条件、対頂角など角の名前を覚えておくこと"
+          "p44、51～53"
         ],
-        "report": "鈴木と正田は宿題をすべて終わらせられたらしい。しかもよくできていた。本日から証明へ。菅原、大熊が引っ掛かりやすいので条件の使い方を丁寧目に進めた。玉水は錯角などよく見極められていた。",
-        "recordingUrl": "",
+        "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
         "teacher": "治彦",
-        "absence": "篠田",
+        "absence": "村佐　菅原　鈴木　大熊",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-29"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-19|8:25～9:55|minami|minami_special_英語　　補講③|2": {
@@ -6595,21 +6606,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "近藤、野澤、具志堅、小出",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-22|4:45～6:15|minami|minami_j3_S_math|1": {
@@ -7298,7 +7309,7 @@
         "homework": [
           "漢字p198-202"
         ],
-        "report": "",
+        "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "なし",
@@ -8145,21 +8156,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "ことばの知識",
-        "page": "P116-119",
+        "content": "和語・漢語・外来語",
+        "page": "テキストP1582⃣⑷まで",
         "homework": [
-          "漢字帳P117-120"
+          "漢字帳P122-125"
         ],
-        "report": "ことばの知識を扱う。本日はみな楽しそうに行う。秋元さんの出来も良かった。長澤は幼さが目立ったが、前向きに取り組んでいた。",
+        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -8239,21 +8250,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "３比例と反比例の利用",
-        "page": "ｐ56＃79まで",
+        "content": "１７比例と反比例のグラフ",
+        "page": "P60まで",
         "homework": [
-          "ｐ23-ｐ24"
+          "P61,64,65"
         ],
-        "report": "比例・反比例の利用のところ。14身の周りの問題まで終了。",
+        "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "姜山",
+        "teacher": "工藤",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -8301,22 +8312,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "⑨～⑩三角形の合同条件",
-        "page": "～ｐ36",
+        "content": "⑪～⑭",
+        "page": "～ｐ43まで",
         "homework": [
-          "p50と前回の宿題",
-          "合同条件、対頂角など角の名前を覚えておくこと"
+          "p44、51～53"
         ],
-        "report": "鈴木と正田は宿題をすべて終わらせられたらしい。しかもよくできていた。本日から証明へ。菅原、大熊が引っ掛かりやすいので条件の使い方を丁寧目に進めた。玉水は錯角などよく見極められていた。",
-        "recordingUrl": "",
+        "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
         "teacher": "治彦",
-        "absence": "篠田",
+        "absence": "村佐　菅原　鈴木　大熊",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-29"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j3_S_jp|4": {
@@ -8333,21 +8343,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "",
+        "absence": "三上、北面、沼倉",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -8364,22 +8374,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "独立所有格",
-        "page": "#31まで",
+        "content": "whose",
+        "page": "#34③まで",
         "homework": [
-          "#24,25,27②から30,35,37",
-          "プリントを完璧に"
+          "通常テキスト#34残り,35,37,38",
+          "HereWeGoのp40からの#1～4,8～11"
         ],
-        "report": "P9の例文暗唱小テはあまり出来が良くなかった。次回も同じものをやるので完璧にして来い、ミスがあったら補講と脅し、再度プリントを宿題化した。代名詞表暗唱は新井だけが苦戦。ゆえに後半の独立所有格もいれた表も暗唱に苦戦していた。whoseまでは入れず。",
+        "report": "宿題にしていたプリントの小テは園田が綴りミスした以外は完璧だった。一方宿題の#29英作文は時間がかかってしまった。ここはスキップするべきだったか。後半はwhoseに入り、進めた。藤井がwhoseの意味をつかみ切れていない感じがある。次回も要注意。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "－1.5",
-        "note": "新井には新テキストもわたっている",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "absence": "新井",
+        "curriculumProgress": "",
+        "note": "伊藤さんにはp24から33までコピーを渡した。",
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|6:35～8:05|minami|minami_j1_B_eng|3": {
@@ -8458,21 +8468,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "小説、古文",
-        "page": "要対p154-155",
+        "content": "敬語",
+        "page": "要対p34-37",
         "homework": [
-          "漢字p192-202"
+          "漢字p204-208"
         ],
-        "report": "カリキュラムに１回余裕があったので、要対の【入試予想対策】のページを扱った。作文の添削は、あとは個々にラインで返す。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ane5G-gKz-ZFUiIuZpfSwEfXZBcuA_FpOJNnNd833Ja1ZUFWW5xfcVmexo8jVqIL2Dpw0kkGMGNAQ9Zo._7FR2hupjvTgLEXq",
+        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
         "teacher": "金城",
-        "absence": "近藤、野澤、具志堅、小出",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "8",
-        "weekNum": "7",
-        "date": "2026-08-28"
+        "sessionNumber": "34",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|8:25～9:55|hon|hon_j3_A_math|1": {
@@ -8773,22 +8783,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "独立所有格",
-        "page": "#31まで",
+        "content": "whose",
+        "page": "#34③まで",
         "homework": [
-          "#24,25,27②から30,35,37",
-          "プリントを完璧に"
+          "通常テキスト#34残り,35,37,38",
+          "HereWeGoのp40からの#1～4,8～11"
         ],
-        "report": "P9の例文暗唱小テはあまり出来が良くなかった。次回も同じものをやるので完璧にして来い、ミスがあったら補講と脅し、再度プリントを宿題化した。代名詞表暗唱は新井だけが苦戦。ゆえに後半の独立所有格もいれた表も暗唱に苦戦していた。whoseまでは入れず。",
+        "report": "宿題にしていたプリントの小テは園田が綴りミスした以外は完璧だった。一方宿題の#29英作文は時間がかかってしまった。ここはスキップするべきだったか。後半はwhoseに入り、進めた。藤井がwhoseの意味をつかみ切れていない感じがある。次回も要注意。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "－1.5",
-        "note": "新井には新テキストもわたっている",
-        "sessionNumber": "31",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "absence": "新井",
+        "curriculumProgress": "",
+        "note": "伊藤さんにはp24から33までコピーを渡した。",
+        "sessionNumber": "32",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-26|6:35～8:05|minami|minami_j1_B_eng|2": {
@@ -10195,7 +10205,7 @@
         "homework": [
           "漢字p198-202"
         ],
-        "report": "",
+        "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "なし",
