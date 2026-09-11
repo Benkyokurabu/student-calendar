@@ -13,6 +13,7 @@ on:
       - "scripts/test_calendar_state_migration.mjs"
       - "scripts/test_recording_link_priority.mjs"
       - ".github/workflows/test-student-calendar.yml"
+      - ".github/workflows/publish-zoom-recording-urls.yml"
   pull_request:
     paths:
       - "calendar.html"
@@ -25,6 +26,7 @@ on:
       - "scripts/test_calendar_state_migration.mjs"
       - "scripts/test_recording_link_priority.mjs"
       - ".github/workflows/test-student-calendar.yml"
+      - ".github/workflows/publish-zoom-recording-urls.yml"
 
 permissions:
   contents: read
