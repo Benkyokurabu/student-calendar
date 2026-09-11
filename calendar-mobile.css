@@ -1,0 +1,43 @@
+.calendar-mode-toggle { display: none; }
+.calendar-scroll { min-width: 0; }
+.calendar-scroll-hint { display: none; }
+
+@media (max-width: 600px) {
+  #dayDetailCard { overflow-x: auto; }
+  .calendar-mode-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .calendar-mode-toggle button {
+    min-height: 44px;
+    min-width: 0;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .calendar-mode-toggle button[aria-pressed="true"] {
+    background: #eff6ff;
+    border-color: #2563eb;
+    color: #1d4ed8;
+  }
+  .calendar-scroll { width: 100%; overflow-x: auto; }
+  .calendar-scroll .grid,
+  .calendar-scroll .dow { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .calendar-scroll:not([data-view="scroll"]) .grid { gap: 4px; }
+  .calendar-scroll:not([data-view="scroll"]) .dow { gap: 4px; padding: 0; }
+  .calendar-scroll:not([data-view="scroll"]) .cell {
+    min-width: 0;
+    min-height: 62px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+  .calendar-scroll:not([data-view="scroll"]) .date-row { flex-wrap: wrap; gap: 2px; }
+  .calendar-scroll:not([data-view="scroll"]) .cell .lesson-list,
+  .calendar-scroll:not([data-view="scroll"]) .cell .more-indicator { display: none; }
+  .calendar-scroll:not([data-view="scroll"]) .date-row .pill,
+  .calendar-scroll:not([data-view="scroll"]) .date-row .badge { font-size: 10px; padding: 1px 3px; margin-left: 0; }
+  .calendar-scroll[data-view="scroll"] .cal-wrap { min-width: 840px; }
+  .calendar-scroll-hint[data-visible="true"] { display: block; margin: 0 0 8px; }
+  .calendar-scroll:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+}

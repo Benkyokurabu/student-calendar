@@ -5,6 +5,10 @@ on:
     paths:
       - "calendar.html"
       - "calendar_journal.html"
+      - "teacher_calendar.html"
+      - "calendar-mobile.css"
+      - "calendar-mobile.js"
+      - "scripts/test_calendar_mobile.mjs"
       - "schedule_*.json"
       - "scripts/test_calendar_state_migration.mjs"
       - "scripts/test_recording_link_priority.mjs"
@@ -13,6 +17,10 @@ on:
     paths:
       - "calendar.html"
       - "calendar_journal.html"
+      - "teacher_calendar.html"
+      - "calendar-mobile.css"
+      - "calendar-mobile.js"
+      - "scripts/test_calendar_mobile.mjs"
       - "schedule_*.json"
       - "scripts/test_calendar_state_migration.mjs"
       - "scripts/test_recording_link_priority.mjs"
@@ -31,3 +39,6 @@ jobs:
           node-version: "22"
       - run: node scripts/test_calendar_state_migration.mjs
       - run: node scripts/test_recording_link_priority.mjs
+      - run: npm install --no-save --package-lock=false playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test_calendar_mobile.mjs

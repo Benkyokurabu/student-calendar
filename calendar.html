@@ -335,6 +335,8 @@
     }
     .j-link:hover{ background:#f3f4f6; }
   </style>
+<link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
+<script src="calendar-mobile.js?v=20260911-1" defer></script>
 </head>
 <body>
 
@@ -382,11 +384,18 @@
       <div class="cal-head-note muted">※ 日付をクリックすると、その日の授業の内容・宿題・録画のURLが下に表示されます。<br/>
         <span class="update-note">※ 更新は深夜に行われます。</span></div>
     </div>
+    <div class="calendar-mode-toggle" role="group" aria-label="カレンダーの表示方法">
+      <button type="button" data-view="compact" aria-pressed="true" aria-controls="calendarScroll">コンパクト表示</button>
+      <button type="button" data-view="scroll" aria-pressed="false" aria-controls="calendarScroll">横スクロール表示</button>
+    </div>
+    <p class="calendar-scroll-hint muted" data-visible="false">左右に動かすと、時間・科目まで確認できます。</p>
+    <div id="calendarScroll" class="calendar-scroll" data-view="compact" role="region" aria-label="月間カレンダー">
     <div class="cal-wrap">
       <div class="dow">
         <div class="sun">日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div class="sat">土</div>
       </div>
       <div id="monthGrid" class="grid"></div>
+    </div>
     </div>
   </div>
 
