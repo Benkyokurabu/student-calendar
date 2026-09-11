@@ -1,0 +1,25 @@
+name: Test worksheet XML repair
+on:
+  push:
+    paths:
+      - 'scripts/worksheet_order.py'
+      - 'scripts/repair_journal_controls_preserving_xml.py'
+      - 'scripts/test_worksheet_order.py'
+      - '.github/workflows/test-worksheet-order.yml'
+  pull_request:
+    paths:
+      - 'scripts/worksheet_order.py'
+      - 'scripts/repair_journal_controls_preserving_xml.py'
+      - 'scripts/test_worksheet_order.py'
+      - '.github/workflows/test-worksheet-order.yml'
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m unittest discover -s scripts -p test_worksheet_order.py -v
