@@ -1,0 +1,30 @@
+name: Test journal capacity
+on:
+  push:
+    paths:
+      - 'scripts/journal_slots.py'
+      - 'scripts/journal_slot_patch.py'
+      - 'scripts/test_journal_slots.py'
+      - 'scripts/export_by_grade_subject.py'
+      - 'scripts/extract_journal_to_json.py'
+      - 'scripts/TEMPLATE_*.xlsx'
+      - '.github/workflows/test-journal-capacity.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/test-journal-capacity.yml'
+permissions:
+  contents: read
+jobs:
+  capacity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python -m unittest discover -s scripts -p test_journal_slots.py -v
+      - run: python -m unittest discover -s scripts -p test_journal_input_controls.py -v
+      - run: python -m unittest discover -s scripts -p test_journal_counter_headers.py -v
+      - run: python -m unittest discover -s scripts -p test_worksheet_order.py -v

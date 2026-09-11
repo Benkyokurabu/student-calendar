@@ -50,6 +50,7 @@ from typing import Optional, Dict, Tuple, Set, List, Any
 from copy import copy
 
 from journal_input_controls import ensure_controls, is_unused_gray
+from journal_slots import ensure_lesson_capacity, slot_columns, counter_address
 import openpyxl
 from openpyxl.utils import column_index_from_string, get_column_letter
 from openpyxl.cell.cell import MergedCell
@@ -436,10 +437,7 @@ def clear_gray_block(ws, top: int, left: int):
 
 # ===== スロット数 =====
 def count_slots_in_template(ws) -> int:
-    start = 2
-    step  = 10
-    maxcol = ws.max_column
-    return max(1, min(30, (maxcol - start) // step + 1))
+    return len(slot_columns(ws))
 
 # ===== ラベル＆特回数セル =====
 def write_class_label(ws, top: int, left: int, label: Optional[str]):
@@ -536,6 +534,9 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
 
     merged_slots = _build_merged_slots(classes, order, prepend_gray=prepend_gray)
 
+    if len(merged_slots) > total_slots:
+        raise ValueError(f"授業枠不足: {len(merged_slots)}件 / {total_slots}枠。切り捨てず処理を停止します")
+
     for si, slot in enumerate(merged_slots):
         if si >= total_slots:
             break
@@ -610,6 +611,8 @@ def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_bl
     base_top = 6
     total_slots = count_slots_in_template(ws_out)
     n = len(x_events)
+    if n > total_slots:
+        raise ValueError(f"授業枠不足: {n}件 / {total_slots}枠。切り捨てず処理を停止します")
 
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
@@ -675,11 +678,11 @@ def patch_counter_formulas(ws):
     for i in range(1, len(annual_cells)):
         if i in special_annual:
             continue  # 手動で入れた「特」を保持
-        ws[annual_cells[i]].value = _chain_formula(annual_cells[:i], "$FG$2")
+        ws[annual_cells[i]].value = _chain_formula(annual_cells[:i], "$" + counter_address(ws, 2).replace("2", "$2"))
     for i in range(1, len(week_cells)):
         if i in special_week:
             continue
-        ws[week_cells[i]].value = _chain_formula(week_cells[:i], "$FG$3")
+        ws[week_cells[i]].value = _chain_formula(week_cells[:i], "$" + counter_address(ws, 3).replace("3", "$3"))
 
 # ===== シートコピー安全版（StyleProxy対策） =====
 def copy_worksheet_contents_safe(src, dst):
@@ -777,7 +780,7 @@ def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hid
         ws.sheet_state = "hidden"
         reference = openpyxl.load_workbook(template_path)
         try:
-            ensure_controls(ws, reference.worksheets[0])
+            ensure_lesson_capacity(ws, reference.worksheets[0])
         finally:
             reference.close()
         patch_counter_formulas(ws)
@@ -787,7 +790,7 @@ def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hid
     src = t_wb[t_wb.sheetnames[0]]
     ws = wb.create_sheet(hidden_name)
     copy_worksheet_contents_safe(src, ws)
-    ensure_controls(ws, src)
+    ensure_lesson_capacity(ws, src)
     t_wb.close()
     ws.sheet_state = "hidden"
     patch_counter_formulas(ws)
@@ -801,7 +804,7 @@ def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int):
         return None
 
     # Validate and extend controls before copying a new month.
-    ensure_controls(hidden_ws)
+    ensure_lesson_capacity(hidden_ws)
     # hidden template から複製
     ws = wb.copy_worksheet(hidden_ws)
     ws.title = base
@@ -876,7 +879,7 @@ def get_last_session_number(ws, sheet_month: int) -> int | None:
     total_slots = count_slots_in_template(ws)
     f2 = ws["F2"].value
     if isinstance(f2, str) and f2.strip() == "特":
-        f2 = ws["FG2"].value
+        f2 = ws[counter_address(ws, 2)].value
     if not isinstance(f2, (int, float)):
         return None
 
@@ -953,8 +956,8 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
 
     f2 = ws["F2"].value
     g3 = ws["G3"].value
-    ws["FG2"].value = f2 if isinstance(f2, (int, float)) else ""
-    ws["FG3"].value = g3 if isinstance(g3, (int, float)) else ""
+    ws[counter_address(ws, 2)].value = f2 if isinstance(f2, (int, float)) else ""
+    ws[counter_address(ws, 3)].value = g3 if isinstance(g3, (int, float)) else ""
 
 def save_year_workbook(wb: openpyxl.Workbook, out_path: Path):
     if all(wb[sn].sheet_state != "visible" for sn in wb.sheetnames):

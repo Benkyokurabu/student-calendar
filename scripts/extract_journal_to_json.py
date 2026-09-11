@@ -27,6 +27,7 @@
 
 from __future__ import annotations
 
+from journal_slots import read_slot_columns as slot_columns, counter_value
 import argparse
 import json
 import re
@@ -374,8 +375,7 @@ def _find_block_col(ws, top_row: int, day: int, want_special: Optional[bool] = N
     同じ日が複数あれば（特＋通常など）want_special で絞り込む。
     """
     matches: List[Tuple[int, bool]] = []
-    for slot in range(17):
-        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+    for col in slot_columns(ws):
         d = read_merged_text(ws, top_row + 5, col)  # 日付セル
         if d and d.strip() == str(day):
             ann = ws.cell(row=2, column=col + 4).value
@@ -410,8 +410,7 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
 
     # 前月の通常スロット数をカウント（特スロットと、翌月へ繰り越したスロットは除外）
     regular_count = 0
-    for slot in range(17):
-        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+    for col in slot_columns(prev_ws):
         if not _slot_has_day(prev_ws, col):
             continue
         ann = prev_ws.cell(row=2, column=col + 4).value
@@ -437,8 +436,8 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
     """
     f2 = ws["F2"].value
     if isinstance(f2, str) and f2.strip() == "特":
-        # FG2 (col 163) にバックアップ値がある
-        fg2 = ws.cell(row=2, column=163).value
+        # 21枠は授業欄外のHD2、旧ファイルはFG2の控えを読む
+        fg2 = counter_value(ws, 2)
         if isinstance(fg2, (int, float)):
             f2 = fg2
         else:
@@ -459,8 +458,7 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
     current_monthly = int(g3) if isinstance(g3, (int, float)) else 1
     sheet_month = int(month_n_raw) if isinstance(month_n_raw, (int, float)) else None
 
-    for slot in range(17):
-        col_left = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+    for col_left in slot_columns(ws):
         if not _slot_has_day(ws, col_left):
             continue
         # 「特」スロットかチェック (row 2, col_left + 4)
@@ -528,8 +526,7 @@ def _block_has_data(block: dict) -> bool:
 def _find_last_slot_col(ws) -> int | None:
     """シート内の最後のスロット（日付あり）の left_col を返す"""
     last_col = None
-    for slot in range(17):
-        col = FIRST_BLOCK_COL + slot * BLOCK_WIDTH
+    for col in slot_columns(ws):
         if _slot_has_day(ws, col):
             last_col = col
     return last_col

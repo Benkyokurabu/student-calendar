@@ -30,7 +30,8 @@ class JournalInputControlsTests(unittest.TestCase):
   self.assertEqual([d.formula1 for d in s.data_validations.dataValidation if 'B14' in d.sqref],['"担当A,担当B"'])
   self.assertEqual(ensure_controls(s,self.reference()),0)
  def test_next_month_preserves_controls(self):
-  w=openpyxl.Workbook();s=w.active;s.title='__TEMPLATE_MAIN__';s['B6']='クラス';s['GT6']='クラス'
+  w=openpyxl.Workbook();s=w.active;s.title='__TEMPLATE_MAIN__'
+  for col in range(2,203,10):s.cell(6,col,'クラス')
   ensure_controls(s,self.reference());new=create_month_sheet(w,s,2026,10)
   assert_template_controls(new)
   self.assertTrue(any('GZ20' in d.sqref for d in new.data_validations.dataValidation))
