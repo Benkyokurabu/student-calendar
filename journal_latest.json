@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-11T08:00:24",
+  "generatedAt": "2026-09-11T11:06:57",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -2267,18 +2267,21 @@
       }
     },
     "2026-09-11|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "6分数の足し引き算③④途中",
+      "page": "ｐ57□１（６）まで",
+      "report": "分数の足し算引き算の練習をした。人数も少なく、基礎を何度も確認した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/foy9fd9wG2CSGv9LBoOo9L8pgO5UDNPUAyvgaE5z4t68W0J1roupE9D9JOrCNYOsfbZiw6DhL_CQikrP.ENbzj9-H2j0kA3Zw",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "金城",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ドリルｐ52-53",
+        "計算ｐ45-46"
+      ],
       "prevEntry": {
         "content": "６分数の足し引き②③途中",
         "page": "ｐ55□２（６）まで",
@@ -2299,18 +2302,21 @@
       }
     },
     "2026-09-11|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "比例",
+      "page": "P73",
+      "report": "比例に入った。新しいクラス。月は余裕がありそうではある。今日の内容に関しては皆大丈夫そうだった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "上島",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "計算P54～56",
+        "ドリルP68～71"
+      ],
       "prevEntry": {
         "content": "まとめ",
         "page": "P62",
@@ -2332,17 +2338,20 @@
     },
     "2026-09-11|4:55～6:15|hon|hon_e6_S_arith|1": {
       "content": "直方体と立方体に関する問題",
-      "page": "",
-      "report": "",
+      "page": "ｐ74～77",
+      "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
       "recordingUrl": "",
       "teacher": "治彦",
       "absence": "",
-      "curriculumProgress": "",
+      "curriculumProgress": "±0",
       "note": "小金井さんの名前が座席表に入っていないそうですので、座席を入れてください。／金子←オッケーです・佐藤",
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "p74～77残り・解き直し",
+        "計算ｐ105～108"
+      ],
       "prevEntry": {
         "content": "資料まとめＡ・Ｂ",
         "page": "ｐ136",
@@ -2394,18 +2403,21 @@
       }
     },
     "2026-09-11|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit7",
+      "page": "緑p70/Travelp38の3段まで",
+      "report": "今回から山本くん参加。新たに緑テキストを渡し、TravelはUnit7をコピーで渡した。宿題個所のワークは、過去進行形を復習しつつ進め、その後Unit7へ。is/am/areの使い分けも振り返りつつ進めた。最後緑p70は駆け足になった。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "本村\n山本45分間で早退",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "緑p71",
+        "Travelp38の３段目暗唱できるようにする"
+      ],
       "prevEntry": {
         "content": "Unit7",
         "page": "Travelp38の2段/緑p68まで",
@@ -5438,22 +5450,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "６分数の足し引き②③途中",
-        "page": "ｐ55□２（６）まで",
+        "content": "6分数の足し引き算③④途中",
+        "page": "ｐ57□１（６）まで",
         "homework": [
-          "計算ｐ41、42",
-          "ドリルｐ50、51"
+          "ドリルｐ52-53",
+          "計算ｐ45-46"
         ],
-        "report": "異分母の計算。通分・約分から足し引き算まで。若林兄弟もなんとかできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Qi4LTUCk3Cv5aXjMgKNk0d1wFTbTZ2KcgP2I-LJHcjsx8FYQvgIawtpQ0D9HRqfE3TmIz9yVnPg6sTM.MvAgsXMeQrqP1eqn",
+        "report": "分数の足し算引き算の練習をした。人数も少なく、基礎を何度も確認した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/foy9fd9wG2CSGv9LBoOo9L8pgO5UDNPUAyvgaE5z4t68W0J1roupE9D9JOrCNYOsfbZiw6DhL_CQikrP.ENbzj9-H2j0kA3Zw",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "金城",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|4:55～6:15|hon|hon_e6_A_arith|2": {
@@ -5470,22 +5482,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
-        "page": "P62",
+        "content": "比例",
+        "page": "P73",
         "homework": [
-          "ドリルP56，60",
-          "計算P51～53"
+          "計算P54～56",
+          "ドリルP68～71"
         ],
-        "report": "まとめの回。円柱の体積と表面積でかなり時間がかかった。そのあとの表面積でも時間がかかり、BOOKのP58はできなかった",
+        "report": "比例に入った。新しいクラス。月は余裕がありそうではある。今日の内容に関しては皆大丈夫そうだった。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "上萬",
+        "absence": "上島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|4:55～6:15|hon|hon_e6_S_arith|1": {
@@ -5503,13 +5515,16 @@
       "homework": [],
       "prevEntry": {
         "content": "直方体と立方体に関する問題",
-        "page": "",
-        "homework": [],
-        "report": "",
+        "page": "ｐ74～77",
+        "homework": [
+          "p74～77残り・解き直し",
+          "計算ｐ105～108"
+        ],
+        "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
         "recordingUrl": "",
         "teacher": "治彦",
         "absence": "",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "小金井さんの名前が座席表に入っていないそうですので、座席を入れてください。／金子←オッケーです・佐藤",
         "sessionNumber": "28",
         "monthNum": "9",
@@ -5563,21 +5578,21 @@
       "homework": [],
       "prevEntry": {
         "content": "Unit7",
-        "page": "Travelp38の2段/緑p68まで",
+        "page": "緑p70/Travelp38の3段まで",
         "homework": [
-          "ワークp19からの大問２から６",
-          "緑p69/Travelp38の1,2段目暗唱"
+          "緑p71",
+          "Travelp38の３段目暗唱できるようにする"
         ],
-        "report": "宿題個所はテキストを伏せて答えさせ、その後Unit7へ。ノートにKana/We//I/You主語のbe going to visitの文を書かせ解説ののち本文へ。暗唱させつつ、皆に予定を聞いていろいろ文を作らせた。本村がbe going toの意味をよくわかっていない場面が多くあり、次回も注視。",
+        "report": "今回から山本くん参加。新たに緑テキストを渡し、TravelはUnit7をコピーで渡した。宿題個所のワークは、過去進行形を復習しつつ進め、その後Unit7へ。is/am/areの使い分けも振り返りつつ進めた。最後緑p70は駆け足になった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
+        "absence": "本村\n山本45分間で早退",
         "curriculumProgress": "±0",
-        "note": "デジタル韓国は済",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "note": "",
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-18|4:55～6:15|minami|minami_e6_S_eng|1": {
@@ -8018,22 +8033,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "６分数の足し引き②③途中",
-        "page": "ｐ55□２（６）まで",
+        "content": "6分数の足し引き算③④途中",
+        "page": "ｐ57□１（６）まで",
         "homework": [
-          "計算ｐ41、42",
-          "ドリルｐ50、51"
+          "ドリルｐ52-53",
+          "計算ｐ45-46"
         ],
-        "report": "異分母の計算。通分・約分から足し引き算まで。若林兄弟もなんとかできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Qi4LTUCk3Cv5aXjMgKNk0d1wFTbTZ2KcgP2I-LJHcjsx8FYQvgIawtpQ0D9HRqfE3TmIz9yVnPg6sTM.MvAgsXMeQrqP1eqn",
+        "report": "分数の足し算引き算の練習をした。人数も少なく、基礎を何度も確認した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/foy9fd9wG2CSGv9LBoOo9L8pgO5UDNPUAyvgaE5z4t68W0J1roupE9D9JOrCNYOsfbZiw6DhL_CQikrP.ENbzj9-H2j0kA3Zw",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "金城",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|4:55～6:15|hon|hon_e6_A_arith|2": {
@@ -8050,22 +8065,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
-        "page": "P62",
+        "content": "比例",
+        "page": "P73",
         "homework": [
-          "ドリルP56，60",
-          "計算P51～53"
+          "計算P54～56",
+          "ドリルP68～71"
         ],
-        "report": "まとめの回。円柱の体積と表面積でかなり時間がかかった。そのあとの表面積でも時間がかかり、BOOKのP58はできなかった",
+        "report": "比例に入った。新しいクラス。月は余裕がありそうではある。今日の内容に関しては皆大丈夫そうだった。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "上萬",
+        "absence": "上島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|4:55～6:15|hon|hon_e6_S_arith|1": {
@@ -8083,13 +8098,16 @@
       "homework": [],
       "prevEntry": {
         "content": "直方体と立方体に関する問題",
-        "page": "",
-        "homework": [],
-        "report": "",
+        "page": "ｐ74～77",
+        "homework": [
+          "p74～77残り・解き直し",
+          "計算ｐ105～108"
+        ],
+        "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
         "recordingUrl": "",
         "teacher": "治彦",
         "absence": "",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "小金井さんの名前が座席表に入っていないそうですので、座席を入れてください。／金子←オッケーです・佐藤",
         "sessionNumber": "28",
         "monthNum": "9",
@@ -8159,21 +8177,21 @@
       "homework": [],
       "prevEntry": {
         "content": "Unit7",
-        "page": "Travelp38の2段/緑p68まで",
+        "page": "緑p70/Travelp38の3段まで",
         "homework": [
-          "ワークp19からの大問２から６",
-          "緑p69/Travelp38の1,2段目暗唱"
+          "緑p71",
+          "Travelp38の３段目暗唱できるようにする"
         ],
-        "report": "宿題個所はテキストを伏せて答えさせ、その後Unit7へ。ノートにKana/We//I/You主語のbe going to visitの文を書かせ解説ののち本文へ。暗唱させつつ、皆に予定を聞いていろいろ文を作らせた。本村がbe going toの意味をよくわかっていない場面が多くあり、次回も注視。",
+        "report": "今回から山本くん参加。新たに緑テキストを渡し、TravelはUnit7をコピーで渡した。宿題個所のワークは、過去進行形を復習しつつ進め、その後Unit7へ。is/am/areの使い分けも振り返りつつ進めた。最後緑p70は駆け足になった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
+        "absence": "本村\n山本45分間で早退",
         "curriculumProgress": "±0",
-        "note": "デジタル韓国は済",
-        "sessionNumber": "27",
-        "monthNum": "8",
-        "weekNum": "6",
-        "date": "2026-08-28"
+        "note": "",
+        "sessionNumber": "28",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-11"
       }
     },
     "2026-09-25|4:55～6:15|minami|minami_e6_S_eng|1": {
