@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-12T16:25:05.094444+09:00",
-  "matched": 53,
-  "missing": 268,
+  "generatedAt": "2026-09-12T20:20:03.878134+09:00",
+  "matched": 55,
+  "missing": 266,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/CgUvnJb0hGkxVN_UQWJ4soz5DEyt-oCyW1kFP21vZ35E3p2H1Awlpup-Z8Z95w1LBgp5z8axE1QelURd.EulxV3l-WHfzPXax",
@@ -1169,6 +1169,50 @@
       "startOffsetMinutes": 2.9,
       "recordingDurationMinutes": 87.0,
       "lessonOverlapMinutes": 87.0
+    },
+    "2026-09-12|6:35～8:05|hon|hon_j3_B_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/u3PKcqGrN7tvfBEoT-NAvc4SWOSQ4Gq5N5UD6yCvJTChB71qKD4SLmTPpEKx0kRsiV8677oYXe_oCkwp.p91rDUfPSnU3bdfX",
+      "recordingStart": "2026-09-12T18:36:57+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-09-12",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "math",
+      "label": "中３B 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-09-12|6:35～8:05|j3|B|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 1.9,
+      "recordingDurationMinutes": 88.5,
+      "lessonOverlapMinutes": 88.0
+    },
+    "2026-09-12|6:35～8:05|hon|hon_j3_S_math|2": {
+      "url": "https://us06web.zoom.us/rec/play/voDJu5Bp555G7qV_7CdIABlzPtIq9K0-wnSWySeaVSxQd8KGUB3pZ0xpaZcSo2YxIKZRLxPRTGI6Lkcn.ryoiwbemxsPQW0Np",
+      "recordingStart": "2026-09-12T18:36:26+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-09-12",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "2",
+      "grade": "j3",
+      "class": "S",
+      "subject": "math",
+      "label": "中３S 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-09-12|6:35～8:05|j3|S|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 1.4,
+      "recordingDurationMinutes": 88.9,
+      "lessonOverlapMinutes": 88.6
     }
   }
 }
