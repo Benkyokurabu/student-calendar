@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-14T01:02:05",
+  "generatedAt": "2026-09-14T14:52:07",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -3195,9 +3195,9 @@
       }
     },
     "2026-09-14|4:55～6:15|hon|hon_e4_X_arith|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "計算のきまり",
+      "page": "P28",
+      "report": "ふく面算までできた。やはり基本的なことはいつもほぼ完ぺきにできる。",
       "recordingUrl": "",
       "teacher": "工藤",
       "absence": "",
@@ -3206,7 +3206,9 @@
       "sessionNumber": "8",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "わり算",
         "page": "P19",
@@ -3226,18 +3228,21 @@
       }
     },
     "2026-09-14|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit7/デジタルレッスン中部地方",
+      "page": "Travelp43/プリント左ページ",
+      "report": "Unit7のリスニング関係から。ここでSaturdayが出てきたが、高田がわかっていなかった。ゆえに、リスの後再度日曜から土曜を指導しつつ、つづり練習も。少しずつ区切って見ずに書かせたが、次回すべてテストすると宣言した。終盤20分でデジタルレッスン中部地方へ。２回聞かせ、左ページに集中させた。次回は右の穴埋めと、ここまでのテスト前まとめ。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "齊藤",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "日曜から土曜を",
+        "英語で書けるようにする"
+      ],
       "prevEntry": {
         "content": "Unit7",
         "page": "Travelp40/ワークすべて",
@@ -3271,18 +3276,20 @@
       "homework": []
     },
     "2026-09-14|4:55～6:15|minami|minami_e4_X_arith|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "計算のきまり",
+      "page": "P28",
+      "report": "ふく面算までできた。やはり基本的なことはいつもほぼ完ぺきにできる。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "8",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "わり算",
         "page": "P19",
@@ -3330,18 +3337,21 @@
       "homework": []
     },
     "2026-09-14|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "HereWeGoUnit4",
+      "page": "HWGp48#15まで",
+      "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "星、齋藤",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "HWGUnit4の",
+        "#5～7,12～14,16～18"
+      ],
       "prevEntry": {
         "content": "L4まとめ",
         "page": "#46までと#52リス",
@@ -3361,18 +3371,21 @@
       }
     },
     "2026-09-14|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "平家物語",
+      "page": "漢字帳P121",
+      "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
       "teacher": "高山",
-      "absence": "",
+      "absence": "清宮・疋田・林・茂呂・柳下",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "26",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳P126-129",
+        "漢字帳P121冒頭の暗唱"
+      ],
       "prevEntry": {
         "content": "敬語",
         "page": "漢字帳P114-115",
@@ -3392,18 +3405,21 @@
       }
     },
     "2026-09-14|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "地理終了、公民：現代の日本社会",
+      "page": "マイクリアp122-",
+      "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp571⃣2⃣〇付け込み",
+        "ドリルp42-43〇付け込み"
+      ],
       "prevEntry": {
         "content": "関東・東北終了",
         "page": "マイクリアp54～",
@@ -3423,18 +3439,20 @@
       }
     },
     "2026-09-14|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "３生物の種類の多様性",
+      "page": "p134-２まで",
+      "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.5",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ドリルｐ72-73"
+      ],
       "prevEntry": {
         "content": "１無性生殖と有性生殖",
         "page": "ｐ127まで",
@@ -3454,18 +3472,21 @@
       }
     },
     "2026-09-14|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "２３歯車",
+      "page": "P82",
+      "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "P79＃101、P80,81",
+        "P83,84"
+      ],
       "prevEntry": {
         "content": "２０比例と反比例のグラフ",
         "page": "P75",
@@ -3486,10 +3507,10 @@
       }
     },
     "2026-09-14|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "平家物語",
+      "page": "漢字帳P121",
+      "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
       "teacher": "高山",
       "absence": "",
       "curriculumProgress": "",
@@ -3497,7 +3518,10 @@
       "sessionNumber": "26",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳P126-129",
+        "漢字帳P121冒頭の暗唱"
+      ],
       "prevEntry": {
         "content": "敬語",
         "page": "漢字帳p114-115",
@@ -3517,10 +3541,10 @@
       }
     },
     "2026-09-14|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "地理終了、公民：現代の日本社会",
+      "page": "マイクリアp122-",
+      "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -3528,7 +3552,10 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp571⃣2⃣〇付け込み",
+        "ドリルp42-43〇付け込み"
+      ],
       "prevEntry": {
         "content": "関東・東北終了",
         "page": "マイクリアp54～",
@@ -3548,10 +3575,10 @@
       }
     },
     "2026-09-14|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "３生物の種類の多様性",
+      "page": "p134-２まで",
+      "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
@@ -3559,7 +3586,9 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ドリルｐ72-73"
+      ],
       "prevEntry": {
         "content": "１無性生殖と有性生殖",
         "page": "ｐ127まで",
@@ -3579,18 +3608,21 @@
       }
     },
     "2026-09-14|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit4とUnit5",
+      "page": "HereWeGoのp84吹き出しまで",
+      "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "齊藤",
+      "curriculumProgress": "－0.7",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "HereWeGoUnit4の#23,24,p81確テ",
+        "単語プリントすべて(次回テストします)"
+      ],
       "prevEntry": {
         "content": "HereWeGoUnit4",
         "page": "HWGテキストUnit4#18まで",
@@ -3610,18 +3642,21 @@
       }
     },
     "2026-09-14|8:25～9:55|hon|hon_j2_X_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "長文読解",
+      "page": "P210 ９行目まで",
+      "report": "本日は９行しか進めず。時・場所が文頭にある理由などテクニックを中心に指導。斎藤・野尻・玉水は問題ないが伊藤はかなり厳しい。野尻はテクニックを行うときは生き生きとしている。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/svo_yFPyDUAb7AUq5Iyy47KMfkh8nN_yDAfHDh9VzStruSi5d19RkYD9TxolgvyPLrM5H6Gvko8n1umF.Jttce2-suCwByPyZ",
       "teacher": "高山",
-      "absence": "",
+      "absence": "茂呂",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "8",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "中間テスト勉強",
+        "P218-219"
+      ],
       "prevEntry": {
         "content": "長文",
         "page": "P206-207",
@@ -3641,18 +3676,20 @@
       }
     },
     "2026-09-14|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "３生物の種類の多様性",
+      "page": "p133",
+      "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
       "teacher": "鈴木",
-      "absence": "",
+      "absence": "大嶋",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ドリルｐ70（71）"
+      ],
       "prevEntry": {
         "content": "１無性生殖と有性生殖",
         "page": "ｐ127-4",
@@ -3673,10 +3710,10 @@
       }
     },
     "2026-09-14|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "地理終了、公民：現代の日本社会",
+      "page": "マイクリアp122-",
+      "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -3684,7 +3721,10 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイクリアp127〇こみ",
+        "ドリルp88〇こみ"
+      ],
       "prevEntry": {
         "content": "公民：現代の日本社会",
         "page": "マイクリアp122～",
@@ -3705,10 +3745,10 @@
       }
     },
     "2026-09-14|8:25～9:55|minami|minami_j2_X_eng|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "長文読解",
+      "page": "P210 ９行目まで",
+      "report": "本日は９行しか進めず。時・場所が文頭にある理由などテクニックを中心に指導。斎藤・野尻・玉水は問題ないが伊藤はかなり厳しい。野尻はテクニックを行うときは生き生きとしている。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/svo_yFPyDUAb7AUq5Iyy47KMfkh8nN_yDAfHDh9VzStruSi5d19RkYD9TxolgvyPLrM5H6Gvko8n1umF.Jttce2-suCwByPyZ",
       "teacher": "高山",
       "absence": "",
       "curriculumProgress": "",
@@ -3716,7 +3756,10 @@
       "sessionNumber": "8",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "中間テスト勉強",
+        "P218-219"
+      ],
       "prevEntry": {
         "content": "長文",
         "page": "P206-207",
@@ -3736,10 +3779,10 @@
       }
     },
     "2026-09-14|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "３生物の種類の多様性",
+      "page": "p133",
+      "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
@@ -3747,7 +3790,9 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ドリルｐ70（71）"
+      ],
       "prevEntry": {
         "content": "１無性生殖と有性生殖",
         "page": "ｐ127-4",
@@ -3768,10 +3813,10 @@
       }
     },
     "2026-09-14|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "地理終了、公民：現代の日本社会",
+      "page": "マイクリアp122-",
+      "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -3779,7 +3824,10 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイクリアp127〇こみ",
+        "ドリルp88〇こみ"
+      ],
       "prevEntry": {
         "content": "公民：現代の日本社会",
         "page": "マイクリアp122～",
@@ -6195,21 +6243,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "L4まとめ",
-        "page": "#46までと#52リス",
+        "content": "HereWeGoUnit4",
+        "page": "HWGp48#15まで",
         "homework": [
-          "#47から51,53,54"
+          "HWGUnit4の",
+          "#5～7,12～14,16～18"
         ],
-        "report": "まとめPを進めた。一般動詞とbe動詞、三人称単数などまとめながら。リスニング#52を先にやり、演習部分は宿題化。次回はそのあとHWGへ。新加入の高橋由乃はdoesの読み方がわかっていなかったが、能力は十分そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/F_kD3Rm0MzcT-XYlKb8xUsIinFhyke2-J7VFNuZSgcFTo-eh3s0B3r_ON4B95S7K4PJ9uI3LZ3CQjvsA.AGndyf5WpNJPlXjs",
+        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、平岡",
-        "curriculumProgress": "－0.5",
+        "absence": "星、齋藤",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -6226,21 +6275,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "漢字帳P114-115",
+        "content": "平家物語",
+        "page": "漢字帳P121",
         "homework": [
-          "漢字帳P116-119"
+          "漢字帳P126-129",
+          "漢字帳P121冒頭の暗唱"
         ],
-        "report": "漢字帳は相吉澤が未完。今回は正直に名乗りだしたので、許した。尊敬語・謙譲語・丁寧語の違いを伝えたあと、演習へ。主語から見抜くことを強調して指導。プリントも用意して行ったが出来はみなよかったが覚えていられるか。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/NkP6vaav7yR3mSDINPlRPhBpGMMp9PNJTrDwPaaqaIvs89QPBFG-Yti__aRzvuNR.s6QfXXBsp8oFWOMr?startTime=1788774082000",
+        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
         "teacher": "高山",
-        "absence": "齋藤",
+        "absence": "清宮・疋田・林・茂呂・柳下",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -6257,21 +6307,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "関東・東北終了",
-        "page": "マイクリアp54～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "ドリルp38～41〇付けこみ"
+          "マイp571⃣2⃣〇付け込み",
+          "ドリルp42-43〇付け込み"
         ],
-        "report": "前回学習した関東地方の復習として、まずは文章を読んで内容を確認した。その後、東北地方のまとめの文章について指導・確認を行った。次回は北海道地方を指導し、その後、即刻講義に入る予定。地形図についてはスクーリングで扱う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Rn2o1UzpAHrfZZgj6Iv6Szvt3NFpi1smWy0u9W1OuPXdVA-SnNf6DeSM8jGce97htJ2gwDXDHVnazGyP.luSZZHrT7SRhW00v",
+        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
         "teacher": "金城",
-        "absence": "平居",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -6288,21 +6339,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127まで",
+        "content": "３生物の種類の多様性",
+        "page": "p134-２まで",
         "homework": [
-          "ドリルｐ66-69"
+          "ドリルｐ72-73"
         ],
-        "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
+        "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "±0",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|minami|minami_j1_S_math|1": {
@@ -6319,22 +6370,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "２０比例と反比例のグラフ",
-        "page": "P75",
+        "content": "２３歯車",
+        "page": "P82",
         "homework": [
-          "P66,70,74②",
-          "P75＃９５"
+          "P79＃101、P80,81",
+          "P83,84"
         ],
-        "report": "後半少し急いだ。あと２回ですべてを終わらせるとなると少し急ぐ必要がある。カリキュラム改定が必要かも。",
+        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -6351,21 +6402,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "漢字帳p114-115",
+        "content": "平家物語",
+        "page": "漢字帳P121",
         "homework": [
-          "漢字p116-119"
+          "漢字帳P126-129",
+          "漢字帳P121冒頭の暗唱"
         ],
-        "report": "鹿内、本日からＳ出席。本日の段階では問題なし。漢字帳に載っている以外の敬語も、今後のためにと紹介した。浅賀、本日は集中力があって良し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/S9N_dePtKtmqx5QzAuJf5sdPskYfv46dU9_JRhHF_IyIZPQMQVfWwDtdr5DTdOsJ.XbCiEL6BVzKDMYYM",
-        "teacher": "金城",
-        "absence": "林、柳下",
+        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-12"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -6382,21 +6434,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "関東・東北終了",
-        "page": "マイクリアp54～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "ドリルp38～41〇付けこみ"
+          "マイp571⃣2⃣〇付け込み",
+          "ドリルp42-43〇付け込み"
         ],
-        "report": "前回学習した関東地方の復習として、まずは文章を読んで内容を確認した。その後、東北地方のまとめの文章について指導・確認を行った。次回は北海道地方を指導し、その後、即刻講義に入る予定。地形図についてはスクーリングで扱う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Rn2o1UzpAHrfZZgj6Iv6Szvt3NFpi1smWy0u9W1OuPXdVA-SnNf6DeSM8jGce97htJ2gwDXDHVnazGyP.luSZZHrT7SRhW00v",
+        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -6413,21 +6466,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127まで",
+        "content": "３生物の種類の多様性",
+        "page": "p134-２まで",
         "homework": [
-          "ドリルｐ66-69"
+          "ドリルｐ72-73"
         ],
-        "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-        "recordingUrl": "",
+        "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -6438,27 +6491,28 @@
       "teacher": "真下",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "席替えをしたので教室も確認すること",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGテキストUnit4#18まで",
+        "content": "Unit4とUnit5",
+        "page": "HereWeGoのp84吹き出しまで",
         "homework": [
-          "#5から7,12から14,19から21"
+          "HereWeGoUnit4の#23,24,p81確テ",
+          "単語プリントすべて(次回テストします)"
         ],
-        "report": "Unit4を進めた。Bクラスから来たものや、南から来た加藤のために、もう一度初めから。there構文、SVOO、不定詞をまとめつつ進めていった。マーライオンやモスク、gardens by the bayは写真も見せた。中野が集中力を欠き、叱ったがその最中も態度が悪かったのでどなった。またクラス全体にも注意喚起した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/lb60hX7sPihMjnkkXQP0DkAodvFzRaMoO9YsUvv0UB-U9O9kejlU4jDI1_cXHf4JHaXFZyegU34XHsY.ijBwZHODFjwr_kwD",
+        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "",
+        "absence": "齊藤",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -6475,22 +6529,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127-4",
+        "content": "３生物の種類の多様性",
+        "page": "p133",
         "homework": [
-          "ドリルｐ66（67）",
-          "ｐ68（69）"
+          "ドリルｐ70（71）"
         ],
-        "report": "細胞の分裂や有性・無性生殖などについて説明をした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Vk3JLnvvKdvyhVMksQ8-7N5NoySswOdTYuVcOMcZMlsslpP5hJ2BauxksLgR_Cnkc4Sn1-0THDm4Kusd.oeiqYDkaUg2PPqHY",
+        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "大嶋",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|8:25～9:55|hon|hon_j3_S_soc|4": {
@@ -6507,22 +6560,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "公民：現代の日本社会",
-        "page": "マイクリアp122～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "マイクリアp123-125〇つけこみ",
-          "ドリrp86-87〇付けこみ"
+          "マイクリアp127〇こみ",
+          "ドリルp88〇こみ"
         ],
-        "report": "本日から公民の指導に入った。今回は公民の導入ということもあり、内容としてはやや単調になりやすい部分だったため、できるだけ生徒を飽きさせないよう、問いかけや説明の仕方を工夫しながら授業を進めた。次回から本格的な公民分野の指導に入る。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DcmgpN05z3Z2vcH6Izc7bB8aND6r5AEx8x_lh174ZwveEDMNrQ1wgXd8Go3TN2INSy7Hq1J2NZaJiko4.vjG1tLxUc74aWh7Y",
+        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -6539,22 +6592,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127-4",
+        "content": "３生物の種類の多様性",
+        "page": "p133",
         "homework": [
-          "ドリルｐ66（67）",
-          "ｐ68（69）"
+          "ドリルｐ70（71）"
         ],
-        "report": "細胞の分裂や有性・無性生殖などについて説明をした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Vk3JLnvvKdvyhVMksQ8-7N5NoySswOdTYuVcOMcZMlsslpP5hJ2BauxksLgR_Cnkc4Sn1-0THDm4Kusd.oeiqYDkaUg2PPqHY",
+        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-21|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -6571,22 +6623,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "公民：現代の日本社会",
-        "page": "マイクリアp122～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "マイクリアp123-125〇つけこみ",
-          "ドリrp86-87〇付けこみ"
+          "マイクリアp127〇こみ",
+          "ドリルp88〇こみ"
         ],
-        "report": "本日から公民の指導に入った。今回は公民の導入ということもあり、内容としてはやや単調になりやすい部分だったため、できるだけ生徒を飽きさせないよう、問いかけや説明の仕方を工夫しながら授業を進めた。次回から本格的な公民分野の指導に入る。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DcmgpN05z3Z2vcH6Izc7bB8aND6r5AEx8x_lh174ZwveEDMNrQ1wgXd8Go3TN2INSy7Hq1J2NZaJiko4.vjG1tLxUc74aWh7Y",
+        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-22|2:55～4:25|minami|minami_j3_S_jp|1": {
@@ -8720,21 +8772,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "関東・東北終了",
-        "page": "マイクリアp54～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "ドリルp38～41〇付けこみ"
+          "マイp571⃣2⃣〇付け込み",
+          "ドリルp42-43〇付け込み"
         ],
-        "report": "前回学習した関東地方の復習として、まずは文章を読んで内容を確認した。その後、東北地方のまとめの文章について指導・確認を行った。次回は北海道地方を指導し、その後、即刻講義に入る予定。地形図についてはスクーリングで扱う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Rn2o1UzpAHrfZZgj6Iv6Szvt3NFpi1smWy0u9W1OuPXdVA-SnNf6DeSM8jGce97htJ2gwDXDHVnazGyP.luSZZHrT7SRhW00v",
+        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
         "teacher": "金城",
-        "absence": "平居",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-26|6:35～8:05|hon|hon_j3_S_sci|1": {
@@ -8749,23 +8802,25 @@
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "重要事項の確認"
+      ],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127まで",
+        "content": "３生物の種類の多様性",
+        "page": "p134-２まで",
         "homework": [
-          "ドリルｐ66-69"
+          "ドリルｐ72-73"
         ],
-        "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
+        "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "±0",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-26|6:35～8:05|minami|minami_j1_A_eng|1": {
@@ -8847,7 +8902,7 @@
       "weekNum": ""
     },
     "2026-09-26|8:25～9:55|hon|hon_j3_A_sci|2": {
-      "content": "",
+      "content": "スクーリング",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -8860,22 +8915,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127-4",
+        "content": "３生物の種類の多様性",
+        "page": "p133",
         "homework": [
-          "ドリルｐ66（67）",
-          "ｐ68（69）"
+          "ドリルｐ70（71）"
         ],
-        "report": "細胞の分裂や有性・無性生殖などについて説明をした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Vk3JLnvvKdvyhVMksQ8-7N5NoySswOdTYuVcOMcZMlsslpP5hJ2BauxksLgR_Cnkc4Sn1-0THDm4Kusd.oeiqYDkaUg2PPqHY",
+        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "大嶋",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-26|8:25～9:55|hon|hon_j3_S_soc|1": {
@@ -8892,22 +8946,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "公民：現代の日本社会",
-        "page": "マイクリアp122～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "マイクリアp123-125〇つけこみ",
-          "ドリrp86-87〇付けこみ"
+          "マイクリアp127〇こみ",
+          "ドリルp88〇こみ"
         ],
-        "report": "本日から公民の指導に入った。今回は公民の導入ということもあり、内容としてはやや単調になりやすい部分だったため、できるだけ生徒を飽きさせないよう、問いかけや説明の仕方を工夫しながら授業を進めた。次回から本格的な公民分野の指導に入る。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DcmgpN05z3Z2vcH6Izc7bB8aND6r5AEx8x_lh174ZwveEDMNrQ1wgXd8Go3TN2INSy7Hq1J2NZaJiko4.vjG1tLxUc74aWh7Y",
+        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-26|8:25～9:55|minami|minami_j2_A_eng|1": {
@@ -8970,21 +9024,53 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "Unit7",
-        "page": "Travelp40/ワークすべて",
+        "content": "Unit7/デジタルレッスン中部地方",
+        "page": "Travelp43/プリント左ページ",
         "homework": [
-          "Travelp42のジュースからクッキーまで書けるように"
+          "日曜から土曜を",
+          "英語で書けるようにする"
         ],
-        "report": "宿題個所の単語は大竹と高田ができていなかった。この二人がどうしてもつづりで苦戦する。次回分は一緒に練習しつつ、授業内でも見ずに書かせたが、ここでは高田と市川にミスがあり、次回本番テストと伝えた。Unit7の残りを行い、ワークを進めた。Let'sPのCとLet'sLは未。",
+        "report": "Unit7のリスニング関係から。ここでSaturdayが出てきたが、高田がわかっていなかった。ゆえに、リスの後再度日曜から土曜を指導しつつ、つづり練習も。少しずつ区切って見ずに書かせたが、次回すべてテストすると宣言した。終盤20分でデジタルレッスン中部地方へ。２回聞かせ、左ページに集中させた。次回は右の穴埋めと、ここまでのテスト前まとめ。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "＋2",
-        "note": "U7のあとはデジタル",
-        "sessionNumber": "28",
+        "absence": "齊藤",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
+      }
+    },
+    "2026-09-28|4:55～6:15|hon|hon_e5_X_jp|6": {
+      "content": "",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "teacher": "金城",
+      "absence": "",
+      "curriculumProgress": "",
+      "note": "",
+      "sessionNumber": "10",
+      "monthNum": "9",
+      "weekNum": "1",
+      "homework": [],
+      "prevEntry": {
+        "content": "地球がわかる50話／手紙文",
+        "page": "p52-54、p190-191",
+        "homework": [
+          "なし"
+        ],
+        "report": "本日は理科の知識がふんだんに盛り込まれた文章。音読が非常にたとたどしいが、考える力はきっちりある。今日は絶好調でよく解けていたし、泣きもしなかった。",
+        "recordingUrl": "",
+        "teacher": "金城",
+        "absence": "なし",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "8",
+        "monthNum": "8",
+        "weekNum": "2",
+        "date": "2026-08-08"
       }
     },
     "2026-09-28|4:55～6:15|minami|minami_e5_S_arith|1": {
@@ -9001,6 +9087,20 @@
       "weekNum": "3",
       "homework": []
     },
+    "2026-09-28|4:55～6:15|minami|minami_e5_X_jp|4": {
+      "content": "",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "teacher": "金城",
+      "absence": "",
+      "curriculumProgress": "",
+      "note": "",
+      "sessionNumber": "10",
+      "monthNum": "9",
+      "weekNum": "1",
+      "homework": []
+    },
     "2026-09-28|6:35～8:05|hon|hon_j1_S_eng|1": {
       "content": "",
       "page": "",
@@ -9015,21 +9115,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "L4まとめ",
-        "page": "#46までと#52リス",
+        "content": "HereWeGoUnit4",
+        "page": "HWGp48#15まで",
         "homework": [
-          "#47から51,53,54"
+          "HWGUnit4の",
+          "#5～7,12～14,16～18"
         ],
-        "report": "まとめPを進めた。一般動詞とbe動詞、三人称単数などまとめながら。リスニング#52を先にやり、演習部分は宿題化。次回はそのあとHWGへ。新加入の高橋由乃はdoesの読み方がわかっていなかったが、能力は十分そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/F_kD3Rm0MzcT-XYlKb8xUsIinFhyke2-J7VFNuZSgcFTo-eh3s0B3r_ON4B95S7K4PJ9uI3LZ3CQjvsA.AGndyf5WpNJPlXjs",
+        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、平岡",
-        "curriculumProgress": "－0.5",
+        "absence": "星、齋藤",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -9046,21 +9147,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "漢字帳P114-115",
+        "content": "平家物語",
+        "page": "漢字帳P121",
         "homework": [
-          "漢字帳P116-119"
+          "漢字帳P126-129",
+          "漢字帳P121冒頭の暗唱"
         ],
-        "report": "漢字帳は相吉澤が未完。今回は正直に名乗りだしたので、許した。尊敬語・謙譲語・丁寧語の違いを伝えたあと、演習へ。主語から見抜くことを強調して指導。プリントも用意して行ったが出来はみなよかったが覚えていられるか。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/NkP6vaav7yR3mSDINPlRPhBpGMMp9PNJTrDwPaaqaIvs89QPBFG-Yti__aRzvuNR.s6QfXXBsp8oFWOMr?startTime=1788774082000",
+        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
         "teacher": "高山",
-        "absence": "齋藤",
+        "absence": "清宮・疋田・林・茂呂・柳下",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j1_S_math|3": {
@@ -9077,22 +9179,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "２０比例と反比例のグラフ",
-        "page": "P75",
+        "content": "２３歯車",
+        "page": "P82",
         "homework": [
-          "P66,70,74②",
-          "P75＃９５"
+          "P79＃101、P80,81",
+          "P83,84"
         ],
-        "report": "後半少し急いだ。あと２回ですべてを終わらせるとなると少し急ぐ必要がある。カリキュラム改定が必要かも。",
+        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -9109,21 +9211,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "漢字帳p114-115",
+        "content": "平家物語",
+        "page": "漢字帳P121",
         "homework": [
-          "漢字p116-119"
+          "漢字帳P126-129",
+          "漢字帳P121冒頭の暗唱"
         ],
-        "report": "鹿内、本日からＳ出席。本日の段階では問題なし。漢字帳に載っている以外の敬語も、今後のためにと紹介した。浅賀、本日は集中力があって良し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/S9N_dePtKtmqx5QzAuJf5sdPskYfv46dU9_JRhHF_IyIZPQMQVfWwDtdr5DTdOsJ.XbCiEL6BVzKDMYYM",
-        "teacher": "金城",
-        "absence": "林、柳下",
+        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-12"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j3_A_soc|2": {
@@ -9140,26 +9243,27 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "関東・東北終了",
-        "page": "マイクリアp54～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "ドリルp38～41〇付けこみ"
+          "マイp571⃣2⃣〇付け込み",
+          "ドリルp42-43〇付け込み"
         ],
-        "report": "前回学習した関東地方の復習として、まずは文章を読んで内容を確認した。その後、東北地方のまとめの文章について指導・確認を行った。次回は北海道地方を指導し、その後、即刻講義に入る予定。地形図についてはスクーリングで扱う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Rn2o1UzpAHrfZZgj6Iv6Szvt3NFpi1smWy0u9W1OuPXdVA-SnNf6DeSM8jGce97htJ2gwDXDHVnazGyP.luSZZHrT7SRhW00v",
+        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j3_S_sci|1": {
       "content": "スクーリング",
-      "page": "",
+      "page": "重要事項の確認",
       "report": "",
       "recordingUrl": "",
       "teacher": "鈴木",
@@ -9171,21 +9275,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127まで",
+        "content": "３生物の種類の多様性",
+        "page": "p134-２まで",
         "homework": [
-          "ドリルｐ66-69"
+          "ドリルｐ72-73"
         ],
-        "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-        "recordingUrl": "",
+        "report": "生物の進化や器官の名称など。動物と植物について学習した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -9202,21 +9306,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGテキストUnit4#18まで",
+        "content": "Unit4とUnit5",
+        "page": "HereWeGoのp84吹き出しまで",
         "homework": [
-          "#5から7,12から14,19から21"
+          "HereWeGoUnit4の#23,24,p81確テ",
+          "単語プリントすべて(次回テストします)"
         ],
-        "report": "Unit4を進めた。Bクラスから来たものや、南から来た加藤のために、もう一度初めから。there構文、SVOO、不定詞をまとめつつ進めていった。マーライオンやモスク、gardens by the bayは写真も見せた。中野が集中力を欠き、叱ったがその最中も態度が悪かったのでどなった。またクラス全体にも注意喚起した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/lb60hX7sPihMjnkkXQP0DkAodvFzRaMoO9YsUvv0UB-U9O9kejlU4jDI1_cXHf4JHaXFZyegU34XHsY.ijBwZHODFjwr_kwD",
+        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "",
+        "absence": "齊藤",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|8:25～9:55|hon|hon_j3_B_eng|2": {
@@ -9265,22 +9370,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "１無性生殖と有性生殖",
-        "page": "ｐ127-4",
+        "content": "３生物の種類の多様性",
+        "page": "p133",
         "homework": [
-          "ドリルｐ66（67）",
-          "ｐ68（69）"
+          "ドリルｐ70（71）"
         ],
-        "report": "細胞の分裂や有性・無性生殖などについて説明をした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Vk3JLnvvKdvyhVMksQ8-7N5NoySswOdTYuVcOMcZMlsslpP5hJ2BauxksLgR_Cnkc4Sn1-0THDm4Kusd.oeiqYDkaUg2PPqHY",
+        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-28|8:25～9:55|minami|minami_j3_S_soc|1": {
@@ -9297,22 +9401,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "公民：現代の日本社会",
-        "page": "マイクリアp122～",
+        "content": "地理終了、公民：現代の日本社会",
+        "page": "マイクリアp122-",
         "homework": [
-          "マイクリアp123-125〇つけこみ",
-          "ドリrp86-87〇付けこみ"
+          "マイクリアp127〇こみ",
+          "ドリルp88〇こみ"
         ],
-        "report": "本日から公民の指導に入った。今回は公民の導入ということもあり、内容としてはやや単調になりやすい部分だったため、できるだけ生徒を飽きさせないよう、問いかけや説明の仕方を工夫しながら授業を進めた。次回から本格的な公民分野の指導に入る。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DcmgpN05z3Z2vcH6Izc7bB8aND6r5AEx8x_lh174ZwveEDMNrQ1wgXd8Go3TN2INSy7Hq1J2NZaJiko4.vjG1tLxUc74aWh7Y",
+        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-07"
+        "weekNum": "2",
+        "date": "2026-09-14"
       }
     },
     "2026-09-29|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -10357,51 +10461,6 @@
         "weekNum": "1",
         "date": "2026-09-09"
       }
-    },
-    "2026-09-28|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "teacher": "金城",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
-      "sessionNumber": "10",
-      "monthNum": "9",
-      "weekNum": "1",
-      "homework": [],
-      "prevEntry": {
-        "content": "地球がわかる50話／手紙文",
-        "page": "p52-54、p190-191",
-        "homework": [
-          "なし"
-        ],
-        "report": "本日は理科の知識がふんだんに盛り込まれた文章。音読が非常にたとたどしいが、考える力はきっちりある。今日は絶好調でよく解けていたし、泣きもしなかった。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
-        "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "8",
-        "monthNum": "8",
-        "weekNum": "2",
-        "date": "2026-08-08"
-      }
-    },
-    "2026-09-28|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "teacher": "金城",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
-      "sessionNumber": "10",
-      "monthNum": "9",
-      "weekNum": "1",
-      "homework": []
     }
   }
 }
