@@ -2879,51 +2879,6 @@
         "date": "2026-08-28"
       }
     },
-    "2026-09-12|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "teacher": "金城",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
-      "sessionNumber": "10",
-      "monthNum": "9",
-      "weekNum": "1",
-      "homework": [],
-      "prevEntry": {
-        "content": "地球がわかる50話／手紙文",
-        "page": "p52-54、p190-191",
-        "homework": [
-          "なし"
-        ],
-        "report": "本日は理科の知識がふんだんに盛り込まれた文章。音読が非常にたとたどしいが、考える力はきっちりある。今日は絶好調でよく解けていたし、泣きもしなかった。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
-        "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "8",
-        "monthNum": "8",
-        "weekNum": "2",
-        "date": "2026-08-08"
-      }
-    },
-    "2026-09-12|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
-      "teacher": "金城",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
-      "sessionNumber": "10",
-      "monthNum": "9",
-      "weekNum": "1",
-      "homework": []
-    },
     "2026-09-12|4:55～6:15|minami|minami_special_英語　　補講①|1": {
       "content": "",
       "page": "",
@@ -10402,6 +10357,51 @@
         "weekNum": "1",
         "date": "2026-09-09"
       }
+    },
+    "2026-09-28|4:55～6:15|hon|hon_e5_X_jp|6": {
+      "content": "",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "teacher": "金城",
+      "absence": "",
+      "curriculumProgress": "",
+      "note": "",
+      "sessionNumber": "10",
+      "monthNum": "9",
+      "weekNum": "1",
+      "homework": [],
+      "prevEntry": {
+        "content": "地球がわかる50話／手紙文",
+        "page": "p52-54、p190-191",
+        "homework": [
+          "なし"
+        ],
+        "report": "本日は理科の知識がふんだんに盛り込まれた文章。音読が非常にたとたどしいが、考える力はきっちりある。今日は絶好調でよく解けていたし、泣きもしなかった。",
+        "recordingUrl": "",
+        "teacher": "金城",
+        "absence": "なし",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "8",
+        "monthNum": "8",
+        "weekNum": "2",
+        "date": "2026-08-08"
+      }
+    },
+    "2026-09-28|4:55～6:15|minami|minami_e5_X_jp|4": {
+      "content": "",
+      "page": "",
+      "report": "",
+      "recordingUrl": "",
+      "teacher": "金城",
+      "absence": "",
+      "curriculumProgress": "",
+      "note": "",
+      "sessionNumber": "10",
+      "monthNum": "9",
+      "weekNum": "1",
+      "homework": []
     }
   }
 }
