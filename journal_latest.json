@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-15T01:25:51",
+  "generatedAt": "2026-09-15T13:30:04",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -764,7 +764,7 @@
     },
     "2026-09-08|6:35～8:05|minami|minami_j2_A_math|1": {
       "content": "まとめ・合同①",
-      "page": "",
+      "page": "p21、28～29",
       "report": "川村は基本的な知識がなさそう。今のところＡでも下の方という印象。図形はちゃんと見えている様子なのでこちらがリードすればある程度は大丈夫そう。何人かＳへ異動したので現状はＢの上からＡの中間くらいの学習能力にまとまったように思う。応用はあまりせず、基本的なところの理解を中心にコンパクトに説明していく必要が多そう。中間対策を後にずらしたので、次回の合同条件を少し進めた。",
       "recordingUrl": "",
       "teacher": "治彦",
@@ -3862,10 +3862,10 @@
       "weekNum": ""
     },
     "2026-09-15|4:45～6:15|hon|hon_j3_S_jp|6": {
-      "content": "",
+      "content": "まぎらわしい品詞",
       "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -3873,7 +3873,9 @@
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字p210-213"
+      ],
       "prevEntry": {
         "content": "敬語",
         "page": "要対p34-37",
@@ -3893,18 +3895,20 @@
       }
     },
     "2026-09-15|4:45～6:15|minami|minami_j3_S_jp|4": {
-      "content": "",
+      "content": "まぎらわしい品詞",
       "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
       "teacher": "金城",
-      "absence": "",
+      "absence": "中村",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字p210-213"
+      ],
       "prevEntry": {
         "content": "敬語",
         "page": "要対p34-37",
@@ -3986,18 +3990,21 @@
       }
     },
     "2026-09-15|4:55～6:15|minami|minami_e5_A_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "分数の足し引き③④",
+      "page": "ｐ55、57",
+      "report": "秋野が一人で進められてしまうのと岡崎が基本何もできないのとのコントラストが際立った。岡崎は二けたの足し算、特に繰り上がりができないので、倍数、とくに二桁の場合は基本的に無理な様子。長澤、高橋、月森が一応できてはいる、という具合だが、回数を重ねるごとに秋野のみひとり抜きんでていくという状況になった。",
       "recordingUrl": "",
       "teacher": "治彦",
       "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "curriculumProgress": "±0",
+      "note": "来週はお休み",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "プリント（裏表、テキスト倍数・約数、通分、）",
+        "計算ｐ47、48、ドリルｐ54、55"
+      ],
       "prevEntry": {
         "content": "分数の足し算②③",
         "page": "ｐ53、55",
@@ -4018,18 +4025,20 @@
       }
     },
     "2026-09-15|4:55～6:15|minami|minami_e6_S_arith|2": {
-      "content": "",
+      "content": "24体積と表面積まとめA",
       "page": "",
-      "report": "",
+      "report": "体積・表面積のまとめ問題の練習。皆真面目に頑張っていた。細野が宿題がいい加減なところあり。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "計算ｐ69-70"
+      ],
       "prevEntry": {
         "content": "22角柱と円柱",
         "page": "p８１‐□２",
@@ -4049,18 +4058,20 @@
       }
     },
     "2026-09-15|6:35～8:05|hon|hon_j1_A_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "小説文",
+      "page": "新中学問題集ｐ８８～８９",
+      "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "島、髙橋羅、宮田、狩野",
+      "curriculumProgress": "±0",
       "note": "次回確認テストの丸付けから",
       "sessionNumber": "26",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳ｐ１１～１１２"
+      ],
       "prevEntry": {
         "content": "論説文",
         "page": "新中学問題集ｐ１０６～１０７",
@@ -4142,9 +4153,9 @@
       }
     },
     "2026-09-15|6:35～8:05|minami|minami_j1_A_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "小説文",
+      "page": "新中学問題集ｐ８８～８９",
+      "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
       "recordingUrl": "",
       "teacher": "岩本",
       "absence": "",
@@ -4153,7 +4164,9 @@
       "sessionNumber": "26",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳ｐ１１～１１２"
+      ],
       "prevEntry": {
         "content": "論説文",
         "page": "新中学問題集ｐ１０６～１０７",
@@ -4205,20 +4218,23 @@
     },
     "2026-09-15|6:35～8:05|minami|minami_j2_A_math|1": {
       "content": "合同②",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "page": "ｐ31～35",
+      "report": "合同条件に入る。ゆっくり目にすすめたが、よく分かっていない者も多そう。かんで思ったことと根拠があって思ったことが頭の中で引っ付いているっぽいので、見た目で同じといえそう→根拠がないから他、という反復を少し繰り返した。とりあえず、石田などは筋がよさそう。合同条件についてはとにかく覚えてくれないと話にならなそうなので、図形ごと暗記してくるように厳しめに伝えた。（覚えてこなかったら補講です、くらい）覚えてきてくれているだろうか。次回確認する。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/FZkkG8JqHd12X98APv2C4bB8sVc9-fD5BaQUuE4iy0QCzCBG15WSHefNl3y0a1oK.P-EopX5B0cLjhptL?startTime=1789464830000",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "川村",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ｐ36、50",
+        "合同条件図形ごと暗記"
+      ],
       "prevEntry": {
         "content": "まとめ・合同①",
-        "page": "",
+        "page": "p21、28～29",
         "homework": [
           "ｐ25、30"
         ],
@@ -4235,18 +4251,21 @@
       }
     },
     "2026-09-15|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "要点12三角形の合同",
+      "page": "ｐ40ポイントまで",
+      "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
       "teacher": "鈴木",
-      "absence": "",
+      "absence": "進藤・茂呂・鹿内・鍔田",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ｐ40＃47.＃48",
+        "ｐ50□３まで"
+      ],
       "prevEntry": {
         "content": "三角形の合同条件",
         "page": "ｐ33",
@@ -4373,9 +4392,9 @@
       }
     },
     "2026-09-15|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "⑨動点・二次方程式（文章）の復習",
+      "page": "ｐ50",
+      "report": "変域が読めないのでその復習をしつつ動点へ。長山、室伏、ブイ、根本などは大丈夫そうだが、金子、堀口などはあまり理解できているとはいいがたい。秋吉が意外と大丈夫そうで、狩野、針谷もそこそこといった感じ。田中、小尾、が要注意。",
       "recordingUrl": "",
       "teacher": "治彦",
       "absence": "",
@@ -4638,21 +4657,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "要対p34-37",
+        "content": "まぎらわしい品詞",
+        "page": "",
         "homework": [
-          "漢字p204-208"
+          "漢字p210-213"
         ],
-        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
+        "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
         "teacher": "金城",
-        "absence": "三上、北面、沼倉",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-16|6:35～8:05|minami|minami_j1_A_math|2": {
@@ -6655,21 +6674,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "要対p34-37",
+        "content": "まぎらわしい品詞",
+        "page": "",
         "homework": [
-          "漢字p204-208"
+          "漢字p210-213"
         ],
-        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
+        "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
         "teacher": "金城",
-        "absence": "",
+        "absence": "中村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-22|4:45～6:15|minami|minami_j3_S_math|1": {
@@ -6712,27 +6731,27 @@
       "teacher": "岩本",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "次回ｐ１０２の丸付けから",
       "sessionNumber": "27",
       "monthNum": "9",
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "論説文",
-        "page": "新中学問題集ｐ１０６～１０７",
+        "content": "小説文",
+        "page": "新中学問題集ｐ８８～８９",
         "homework": [
-          "漢字帳ｐ１０３～１０７"
+          "漢字帳ｐ１１～１１２"
         ],
-        "report": "今回は論説文を扱った。本文の言葉が難しいと途端に自分たちでは内容理解が出来なくなる傾向がある。言葉をかみ砕きながら解説を行うとかなり時間がかかってしまう。",
+        "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "島、戸部",
+        "absence": "島、髙橋羅、宮田、狩野",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "25",
+        "note": "次回確認テストの丸付けから",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-22|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -6811,21 +6830,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "論説文",
-        "page": "新中学問題集ｐ１０６～１０７",
+        "content": "小説文",
+        "page": "新中学問題集ｐ８８～８９",
         "homework": [
-          "漢字帳ｐ１０３～１０７"
+          "漢字帳ｐ１１～１１２"
         ],
-        "report": "今回は論説文を扱った。本文の言葉が難しいと途端に自分たちでは内容理解が出来なくなる傾向がある。言葉をかみ砕きながら解説を行うとかなり時間がかかってしまう。",
+        "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
         "recordingUrl": "",
         "teacher": "岩本",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-22|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -6860,7 +6879,7 @@
       }
     },
     "2026-09-22|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "中間対策",
+      "content": "中間対策（と、合同条件の確認）",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -6874,13 +6893,16 @@
       "homework": [],
       "prevEntry": {
         "content": "合同②",
-        "page": "",
-        "homework": [],
-        "report": "",
-        "recordingUrl": "",
+        "page": "ｐ31～35",
+        "homework": [
+          "ｐ36、50",
+          "合同条件図形ごと暗記"
+        ],
+        "report": "合同条件に入る。ゆっくり目にすすめたが、よく分かっていない者も多そう。かんで思ったことと根拠があって思ったことが頭の中で引っ付いているっぽいので、見た目で同じといえそう→根拠がないから他、という反復を少し繰り返した。とりあえず、石田などは筋がよさそう。合同条件についてはとにかく覚えてくれないと話にならなそうなので、図形ごと暗記してくるように厳しめに伝えた。（覚えてこなかったら補講です、くらい）覚えてきてくれているだろうか。次回確認する。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/FZkkG8JqHd12X98APv2C4bB8sVc9-fD5BaQUuE4iy0QCzCBG15WSHefNl3y0a1oK.P-EopX5B0cLjhptL?startTime=1789464830000",
         "teacher": "治彦",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "川村",
+        "curriculumProgress": "±0",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -6902,21 +6924,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "三角形の合同条件",
-        "page": "ｐ33",
+        "content": "要点12三角形の合同",
+        "page": "ｐ40ポイントまで",
         "homework": [
-          "ｐ22-25.ｐ27□22"
+          "ｐ40＃47.＃48",
+          "ｐ50□３まで"
         ],
-        "report": "角度の計算の宿題から、三角形の合同条件まで進んだ。Aクラス組が数名Ｓクラスに出席していた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/cRmwjEq-OHpcbY_ZdmQy3L6W_ocPHfXiPYGpwgxHRaa02CECOtW7U-MRQVCKkXp4WW3nxrBajJKGvaGo.gbRNDt1peg2tWDNt",
+        "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
         "teacher": "鈴木",
-        "absence": "進藤",
-        "curriculumProgress": "－0.5",
+        "absence": "進藤・茂呂・鹿内・鍔田",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-22|8:25～9:55|hon|hon_j2_A_jp|2": {
@@ -7026,21 +7049,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "いろいろな関数⑦⑧",
-        "page": "",
-        "homework": [
-          "52～55□12まで"
-        ],
-        "report": "小尾は宿題を忘れてきた。田中は録画を見ることすら忘れてきた。相も変わらず成長の兆しはなさそう。Aに異動の生徒は宿題は比較的できていたが佐藤が自信過剰で間違いが多いのが心配。長山と堀口は仲がいいのか少しうるさくなりやすい。注意しても直らないなら無言で席を移してしまおうかと思う。一応カリキュラム通りに進んだが、金子、韮塚などはオンラインだったのでほぼ理解してないのではないかと思う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/Ts62C6zXQlnll5A39vbzJxROVeXeO6kVet8L-Fc2Hz91TPApzg2zTYvCJYeL_pc5.xkzS55_KKYl61Bgg",
+        "content": "⑨動点・二次方程式（文章）の復習",
+        "page": "ｐ50",
+        "homework": [],
+        "report": "変域が読めないのでその復習をしつつ動点へ。長山、室伏、ブイ、根本などは大丈夫そうだが、金子、堀口などはあまり理解できているとはいいがたい。秋吉が意外と大丈夫そうで、狩野、針谷もそこそこといった感じ。田中、小尾、が要注意。",
+        "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "室伏",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
+        "sessionNumber": "38",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-23|4:45～6:15|minami|minami_j1_B_math|3": {
@@ -8395,21 +8416,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "要対p34-37",
+        "content": "まぎらわしい品詞",
+        "page": "",
         "homework": [
-          "漢字p204-208"
+          "漢字p210-213"
         ],
-        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
+        "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
         "teacher": "金城",
-        "absence": "三上、北面、沼倉",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-25|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -8522,21 +8543,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "敬語",
-        "page": "要対p34-37",
+        "content": "まぎらわしい品詞",
+        "page": "",
         "homework": [
-          "漢字p204-208"
+          "漢字p210-213"
         ],
-        "report": "過去問が届いていないので、カリキュラムを変更して敬語の指導。宮川が問題文を適切に読めておらず失点したりと、国語での苦戦が顕著に見られた。板谷はクラスが上がったがまぁ大丈夫そう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/9f-qtkvM5OwyBKSmiMgUrxxAcB2xyu0szZ8O2lWU8rYI0MChX2Tnmmfam-WPsmG8Ur0A54h7iIBTtPA3.RyPmMRj9BkzB4eHx",
+        "report": "過去問がまだ届いていないため、カリキュラムを変更して品詞の指導を行った。p.32の「でも」まで終了。Sクラスのため、細かな文法事項まで含めて丁寧に指導しているが、宮川はやや理解に苦戦している様子。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/H_o6m1VA5jxJVstEmbBpCqOVlofZA5uanYBI9zJ1celvfUNj7q1KKKnwkl0Q42F_.gx1MDoEjxvtIlvO5",
         "teacher": "金城",
-        "absence": "",
+        "absence": "中村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-25|8:25～9:55|hon|hon_j3_A_math|1": {
@@ -9495,22 +9516,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "分数の足し算②③",
-        "page": "ｐ53、55",
+        "content": "分数の足し引き③④",
+        "page": "ｐ55、57",
         "homework": [
-          "ｐ53、55解きなおしプリント",
-          "計算ｐ45、46、ドリルｐ52、53"
+          "プリント（裏表、テキスト倍数・約数、通分、）",
+          "計算ｐ47、48、ドリルｐ54、55"
         ],
-        "report": "岡﨑が二桁のかけ算と公倍数らしきもへの理解がないのでひとりではできない状況。それ以外は一応大丈夫そう。秋野さんは自信はなさげだが世の中的には平均といった実力。著しく計算ができないなどはなさそうなので、テキストの計算の内容は問題なさそう。",
+        "report": "秋野が一人で進められてしまうのと岡崎が基本何もできないのとのコントラストが際立った。岡崎は二けたの足し算、特に繰り上がりができないので、倍数、とくに二桁の場合は基本的に無理な様子。長澤、高橋、月森が一応できてはいる、という具合だが、回数を重ねるごとに秋野のみひとり抜きんでていくという状況になった。",
         "recordingUrl": "",
         "teacher": "治彦",
         "absence": "",
-        "curriculumProgress": "－0.2",
-        "note": "",
-        "sessionNumber": "28",
+        "curriculumProgress": "±0",
+        "note": "来週はお休み",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|4:55～6:15|minami|minami_e6_S_arith|2": {
@@ -9527,21 +9548,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "22角柱と円柱",
-        "page": "p８１‐□２",
+        "content": "24体積と表面積まとめA",
+        "page": "",
         "homework": [
-          "ｐ81□３～"
+          "計算ｐ69-70"
         ],
-        "report": "角柱円柱の体積と表面積まで終了・井上・沼田・香月はオンラインで参加。",
+        "report": "体積・表面積のまとめ問題の練習。皆真面目に頑張っていた。細野が宿題がいい加減なところあり。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
         "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|6:35～8:05|hon|hon_j1_A_jp|2": {
@@ -9558,21 +9579,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "論説文",
-        "page": "新中学問題集ｐ１０６～１０７",
+        "content": "小説文",
+        "page": "新中学問題集ｐ８８～８９",
         "homework": [
-          "漢字帳ｐ１０３～１０７"
+          "漢字帳ｐ１１～１１２"
         ],
-        "report": "今回は論説文を扱った。本文の言葉が難しいと途端に自分たちでは内容理解が出来なくなる傾向がある。言葉をかみ砕きながら解説を行うとかなり時間がかかってしまう。",
+        "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "島、戸部",
+        "absence": "島、髙橋羅、宮田、狩野",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "25",
+        "note": "次回確認テストの丸付けから",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -9651,21 +9672,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "論説文",
-        "page": "新中学問題集ｐ１０６～１０７",
+        "content": "小説文",
+        "page": "新中学問題集ｐ８８～８９",
         "homework": [
-          "漢字帳ｐ１０３～１０７"
+          "漢字帳ｐ１１～１１２"
         ],
-        "report": "今回は論説文を扱った。本文の言葉が難しいと途端に自分たちでは内容理解が出来なくなる傾向がある。言葉をかみ砕きながら解説を行うとかなり時間がかかってしまう。",
+        "report": "今回は小説文を扱った。内容が比較的容易だったが、岩本、柴辺りは読解力が特になく、かなり苦戦していた。逆に池田、大宮、大木、横関辺りは内容理解はよくできている印象。",
         "recordingUrl": "",
         "teacher": "岩本",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "25",
+        "sessionNumber": "26",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -9713,7 +9734,7 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "中間対策（と、合同条件の確認）",
         "page": "",
         "homework": [],
         "report": "",
@@ -9742,21 +9763,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "三角形の合同条件",
-        "page": "ｐ33",
+        "content": "要点12三角形の合同",
+        "page": "ｐ40ポイントまで",
         "homework": [
-          "ｐ22-25.ｐ27□22"
+          "ｐ40＃47.＃48",
+          "ｐ50□３まで"
         ],
-        "report": "角度の計算の宿題から、三角形の合同条件まで進んだ。Aクラス組が数名Ｓクラスに出席していた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/cRmwjEq-OHpcbY_ZdmQy3L6W_ocPHfXiPYGpwgxHRaa02CECOtW7U-MRQVCKkXp4WW3nxrBajJKGvaGo.gbRNDt1peg2tWDNt",
+        "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
         "teacher": "鈴木",
-        "absence": "進藤",
-        "curriculumProgress": "－0.5",
+        "absence": "進藤・茂呂・鹿内・鍔田",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -9866,21 +9888,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "いろいろな関数⑦⑧",
-        "page": "",
-        "homework": [
-          "52～55□12まで"
-        ],
-        "report": "小尾は宿題を忘れてきた。田中は録画を見ることすら忘れてきた。相も変わらず成長の兆しはなさそう。Aに異動の生徒は宿題は比較的できていたが佐藤が自信過剰で間違いが多いのが心配。長山と堀口は仲がいいのか少しうるさくなりやすい。注意しても直らないなら無言で席を移してしまおうかと思う。一応カリキュラム通りに進んだが、金子、韮塚などはオンラインだったのでほぼ理解してないのではないかと思う。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/Ts62C6zXQlnll5A39vbzJxROVeXeO6kVet8L-Fc2Hz91TPApzg2zTYvCJYeL_pc5.xkzS55_KKYl61Bgg",
+        "content": "⑨動点・二次方程式（文章）の復習",
+        "page": "ｐ50",
+        "homework": [],
+        "report": "変域が読めないのでその復習をしつつ動点へ。長山、室伏、ブイ、根本などは大丈夫そうだが、金子、堀口などはあまり理解できているとはいいがたい。秋吉が意外と大丈夫そうで、狩野、針谷もそこそこといった感じ。田中、小尾、が要注意。",
+        "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "室伏",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
+        "sessionNumber": "38",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-08"
+        "weekNum": "2",
+        "date": "2026-09-15"
       }
     },
     "2026-09-29|8:25～9:55|minami|minami_j3_S_math|2": {
