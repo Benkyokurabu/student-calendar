@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-16T18:22:04.420093+09:00",
-  "matched": 83,
-  "missing": 238,
+  "generatedAt": "2026-09-16T18:30:06.871885+09:00",
+  "matched": 84,
+  "missing": 237,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/6rVDiS4SSzIxNzwAfLxb3VpChYO8dckkD1z_3j38PC5ensKV9SzSXhzYS529jo1Jne8CF0uoy28xApGJ.3aWMVF1qrm2iXAPi",
@@ -1807,6 +1807,28 @@
       "startOffsetMinutes": 8.4,
       "recordingDurationMinutes": 66.9,
       "lessonOverlapMinutes": 66.9
+    },
+    "2026-09-16|4:55～6:15|hon|hon_e6_A_jp|1": {
+      "url": "https://us06web.zoom.us/rec/play/tbV3rd-5BeoceCOy1fhmDzbUVj72oKLgtBX694vVCDoQItEr1n9eSQsOhoaSOgM_FfYdt-R8IIMybG4H.jnDbzhXIf1w9AFa9",
+      "recordingStart": "2026-09-16T16:58:45+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-09-16",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "1",
+      "grade": "e6",
+      "class": "A",
+      "subject": "jp",
+      "label": "小６A 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-09-16|4:55～6:15|e6|A|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 3.8,
+      "recordingDurationMinutes": 75.3,
+      "lessonOverlapMinutes": 75.3
     },
     "2026-09-16|4:55～6:15|minami|minami_e6_A_arith|1": {
       "url": "https://us06web.zoom.us/rec/play/0tRUxN5E9gscsEz-Eb7V55-zTFruHD0wuMeDG8zvjwrQKbbpNoOySfyhZ-RGp3PYC96l0lF8aQol9y_a.V0h5u3yACl-FbLY1",
