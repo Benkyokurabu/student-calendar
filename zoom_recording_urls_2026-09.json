@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-16T16:25:05.305237+09:00",
-  "matched": 81,
-  "missing": 240,
+  "generatedAt": "2026-09-16T18:22:04.420093+09:00",
+  "matched": 83,
+  "missing": 238,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/6rVDiS4SSzIxNzwAfLxb3VpChYO8dckkD1z_3j38PC5ensKV9SzSXhzYS529jo1Jne8CF0uoy28xApGJ.3aWMVF1qrm2iXAPi",
@@ -1785,6 +1785,50 @@
       "startOffsetMinutes": 22.5,
       "recordingDurationMinutes": 67.8,
       "lessonOverlapMinutes": 67.5
+    },
+    "2026-09-16|4:55～6:15|minami|minami_e4_A_arith|3": {
+      "url": "https://us06web.zoom.us/rec/play/rwRrylVtpEos9ND5PpGGIiJCePHTSOetkiKfNT4PxLakzi0Ae_hf70sJGSkAOVppnK0GRID13ael82HZ.pbkiFVL96g2__yEU",
+      "recordingStart": "2026-09-16T17:03:27+09:00",
+      "meetingId": "3721287174",
+      "topic": "南校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-09-16",
+      "time": "4:55～6:15",
+      "campus": "minami",
+      "room": "3",
+      "grade": "e4",
+      "class": "A",
+      "subject": "arith",
+      "label": "小４A 算数",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-09-16|4:55～6:15|e4|A|arith",
+      "recordingCampus": "minami",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 8.4,
+      "recordingDurationMinutes": 66.9,
+      "lessonOverlapMinutes": 66.9
+    },
+    "2026-09-16|4:55～6:15|minami|minami_e6_A_arith|1": {
+      "url": "https://us06web.zoom.us/rec/play/0tRUxN5E9gscsEz-Eb7V55-zTFruHD0wuMeDG8zvjwrQKbbpNoOySfyhZ-RGp3PYC96l0lF8aQol9y_a.V0h5u3yACl-FbLY1",
+      "recordingStart": "2026-09-16T16:55:01+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-09-16",
+      "time": "4:55～6:15",
+      "campus": "minami",
+      "room": "1",
+      "grade": "e6",
+      "class": "A",
+      "subject": "arith",
+      "label": "小６A 算数",
+      "teacher": "森松",
+      "onlineLessonKey": "2026-09-16|4:55～6:15|e6|A|arith",
+      "recordingCampus": "minami",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 0.0,
+      "recordingDurationMinutes": 78.7,
+      "lessonOverlapMinutes": 78.7
     }
   }
 }
