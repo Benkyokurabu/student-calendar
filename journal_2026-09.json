@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-16T01:09:37",
+  "generatedAt": "2026-09-16T13:24:25",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -4542,18 +4542,21 @@
       }
     },
     "2026-09-16|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "四角形",
+      "page": "P107□３",
+      "report": "四角形の、ひし形を描くところまで。ななとがオンラインだったが、指示が通らないことも多かった。ただこれは対面でも同じ。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "菅原",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "計算P44～46",
+        "ドリルP102～105□３"
+      ],
       "prevEntry": {
         "content": "垂直と平行③",
         "page": "P101",
@@ -4574,18 +4577,21 @@
       }
     },
     "2026-09-16|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "反比例①まで",
+      "page": "p77まで",
+      "report": "表を埋めたり、グラフを書いたりするのはできているが反比例になるとxとyの関係式を作るのができないことが多かった。嶋田のんさんは長方形の周りの長さ、などと言われたときにどういう計算をするべきかよくわかっていない。",
       "recordingUrl": "",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "平田千尋",
+      "curriculumProgress": "＋1",
+      "note": "山本朝陽君は前回分の計算ドリルも確認。嶋田のんさんは前回分のホープドリルも確認。p68～71",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ホープドリルp72～75",
+        "計算ドリルp57～59"
+      ],
       "prevEntry": {
         "content": "比例①②",
         "page": "p73まで",
@@ -4700,18 +4706,20 @@
       }
     },
     "2026-09-16|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "４章のまとめ",
+      "page": "ｐ73まで",
+      "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ｐ74-ｐ76"
+      ],
       "prevEntry": {
         "content": "要点18三角形の面積",
         "page": "ｐ63＃88",
@@ -4731,18 +4739,20 @@
       }
     },
     "2026-09-16|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "要点１５速さのグラフまで",
+      "page": "p57",
+      "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
       "recordingUrl": "",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
+      "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "p64、66"
+      ],
       "prevEntry": {
         "content": "要点１４身の回りの問題",
         "page": "p55まで",
@@ -7108,22 +7118,21 @@
       "weekNum": "特",
       "homework": [],
       "prevEntry": {
-        "content": "要点１４身の回りの問題",
-        "page": "p55まで",
+        "content": "要点１５速さのグラフまで",
+        "page": "p57",
         "homework": [
-          "p55～56★以外",
-          "p68～71"
+          "p64、66"
         ],
-        "report": "宿題をやってこない者が多い。やってきた者もグラフの書き方がまだ少し定着していなかった。斉藤陽茉さんは分数のかけざんができない。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/rLt-z-vwzJS7bKF_jc2Xx-PU9ZExpD8Ef_j6nExnhjzzdt3cf8tUTu_OAvqLYoaajR9UhqqeGgxFTP3y.lZAI85lkK1Ukxjld",
+        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
+        "recordingUrl": "",
         "teacher": "森松",
         "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "32",
+        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-23|4:55～6:15|minami|minami_special_数学　補講③|1": {
@@ -7248,21 +7257,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点18三角形の面積",
-        "page": "ｐ63＃88",
+        "content": "４章のまとめ",
+        "page": "ｐ73まで",
         "homework": [
-          "ｐ65□５、ｐ66"
+          "ｐ74-ｐ76"
         ],
-        "report": "三角形の面積のところまで進んだ。比例反比例の式を求める練習も少しした。",
+        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "＋0.8",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-23|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -7279,22 +7288,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点１４身の回りの問題",
-        "page": "p55まで",
+        "content": "要点１５速さのグラフまで",
+        "page": "p57",
         "homework": [
-          "p55～56★以外",
-          "p68～71"
+          "p64、66"
         ],
-        "report": "宿題をやってこない者が多い。やってきた者もグラフの書き方がまだ少し定着していなかった。斉藤陽茉さんは分数のかけざんができない。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/rLt-z-vwzJS7bKF_jc2Xx-PU9ZExpD8Ef_j6nExnhjzzdt3cf8tUTu_OAvqLYoaajR9UhqqeGgxFTP3y.lZAI85lkK1Ukxjld",
+        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
+        "recordingUrl": "",
         "teacher": "森松",
         "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "32",
+        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-23|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -10047,22 +10055,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "垂直と平行③",
-        "page": "P101",
+        "content": "四角形",
+        "page": "P107□３",
         "homework": [
-          "計算P41～43",
-          "ドリルP96～99"
+          "計算P44～46",
+          "ドリルP102～105□３"
         ],
-        "report": "垂直と平行の最後のところ。図形を折る問題は七斗、はるたあたりはきつそうだった。あおやもやはり意外とできがよろしくない部分があるかも。",
+        "report": "四角形の、ひし形を描くところまで。ななとがオンラインだったが、指示が通らないことも多かった。ただこれは対面でも同じ。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
+        "absence": "菅原",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-30|4:55～6:15|minami|minami_e6_A_arith|1": {
@@ -10079,22 +10087,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "比例①②",
-        "page": "p73まで",
+        "content": "反比例①まで",
+        "page": "p77まで",
         "homework": [
-          "ホープドリルp68～71",
-          "計算ドリルp49～53"
+          "ホープドリルp72～75",
+          "計算ドリルp57～59"
         ],
-        "report": "比例の関係自体は表を与えられると数字を埋めることはできている。文章から意味をつかむことが全員できていない。図形も速さも、イメージに結びついていない。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/tyf6ZFZilg32n87prFrPnDSwS5033ia_-d8TvF89Jh2eQ-uSpTT_SQAO7z6OaHO_SQK6Pw6sV3RosPm0.kL90m9SMGSQYW3eV",
+        "report": "表を埋めたり、グラフを書いたりするのはできているが反比例になるとxとyの関係式を作るのができないことが多かった。嶋田のんさんは長方形の周りの長さ、などと言われたときにどういう計算をするべきかよくわかっていない。",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "なし",
-        "curriculumProgress": "±0",
-        "note": "山本朝陽君、嶋田のんさんの二人は前回分の計算ドリルも確認する",
-        "sessionNumber": "28",
+        "absence": "平田千尋",
+        "curriculumProgress": "＋1",
+        "note": "山本朝陽君は前回分の計算ドリルも確認。嶋田のんさんは前回分のホープドリルも確認。p68～71",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-30|6:35～8:05|hon|hon_j1_A_eng|1": {
@@ -10205,21 +10213,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点18三角形の面積",
-        "page": "ｐ63＃88",
+        "content": "４章のまとめ",
+        "page": "ｐ73まで",
         "homework": [
-          "ｐ65□５、ｐ66"
+          "ｐ74-ｐ76"
         ],
-        "report": "三角形の面積のところまで進んだ。比例反比例の式を求める練習も少しした。",
+        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "＋0.8",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-30|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -10236,22 +10244,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点１４身の回りの問題",
-        "page": "p55まで",
+        "content": "要点１５速さのグラフまで",
+        "page": "p57",
         "homework": [
-          "p55～56★以外",
-          "p68～71"
+          "p64、66"
         ],
-        "report": "宿題をやってこない者が多い。やってきた者もグラフの書き方がまだ少し定着していなかった。斉藤陽茉さんは分数のかけざんができない。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/rLt-z-vwzJS7bKF_jc2Xx-PU9ZExpD8Ef_j6nExnhjzzdt3cf8tUTu_OAvqLYoaajR9UhqqeGgxFTP3y.lZAI85lkK1Ukxjld",
+        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
+        "recordingUrl": "",
         "teacher": "森松",
         "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "32",
+        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-09"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-30|6:35～8:05|minami|minami_j3_A_math|1": {
