@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-17T20:09:03.670162+09:00",
-  "matched": 96,
-  "missing": 225,
+  "generatedAt": "2026-09-17T20:20:03.156236+09:00",
+  "matched": 98,
+  "missing": 223,
   "entries": {
     "2026-09-07|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/m4d_8daHEhL3kj5VXywFNWJv2V8luSwwpVY-UtVP6_SnMgG7TQskuVNuKPuzJMrPktM3XQXhH2xQg336.JH-UHqOOuAHZtIGn",
@@ -2115,6 +2115,50 @@
       "startOffsetMinutes": 0.7,
       "recordingDurationMinutes": 87.9,
       "lessonOverlapMinutes": 87.9
+    },
+    "2026-09-17|6:35～8:05|hon|hon_j1_S_math|2": {
+      "url": "https://us06web.zoom.us/rec/play/l-OGc7ukxWEnfqILn9Kh_2bSZmw8NWjaS5RygDmH0wro5uHGnTyewsSEgisgIkDj3YVJYx8QLR6TrTvP.1r1ivE7hlM5l9jU9",
+      "recordingStart": "2026-09-17T18:36:08+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-09-17",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "2",
+      "grade": "j1",
+      "class": "S",
+      "subject": "math",
+      "label": "中１S 数学",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-09-17|6:35～8:05|j1|S|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 1.1,
+      "recordingDurationMinutes": 87.8,
+      "lessonOverlapMinutes": 87.8
+    },
+    "2026-09-17|6:35～8:05|minami|minami_j1_S_eng|2": {
+      "url": "https://us06web.zoom.us/rec/play/yoXR90oxSWWcNG5hYcGCTR5p41RjxcWxzNzvAAF8LwF2t3XO-o_tmvY3coz1q4iaqwSS-fb5hMeSs5hX.Uqg96eopkv_ybJ4Q",
+      "recordingStart": "2026-09-17T18:36:56+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-09-17",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j1",
+      "class": "S",
+      "subject": "eng",
+      "label": "中１S 英語",
+      "teacher": "金子",
+      "onlineLessonKey": "2026-09-17|6:35～8:05|j1|S|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 1.9,
+      "recordingDurationMinutes": 86.7,
+      "lessonOverlapMinutes": 86.7
     }
   }
 }
