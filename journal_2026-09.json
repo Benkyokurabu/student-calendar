@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-18T07:26:15",
+  "generatedAt": "2026-09-18T11:05:14",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -258,7 +258,7 @@
       "content": "１無性生殖と有性生殖",
       "page": "ｐ127まで",
       "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
       "teacher": "鈴木",
       "absence": "なし",
       "curriculumProgress": "",
@@ -1506,7 +1506,7 @@
     "2026-09-09|8:25～9:55|minami|minami_j3_A_jp|5": {
       "content": "敬語",
       "page": "要対p34-35",
-      "report": "",
+      "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "",
@@ -2339,7 +2339,7 @@
     "2026-09-11|4:55～6:15|hon|hon_e6_S_arith|1": {
       "content": "直方体と立方体に関する問題",
       "page": "ｐ74～77",
-      "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
+      "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学のとき見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
       "recordingUrl": "",
       "teacher": "治彦",
       "absence": "",
@@ -3031,7 +3031,7 @@
         "homework": [
           "漢字p198-202"
         ],
-        "report": "",
+        "report": "授業日誌を書いたつもりが書けていなかったので再掲。過去問が塾にまだ届いていないため、カリキュラムを変更し敬語の指導に入った。p35のラストの問題は終えていないので、次回はそこから。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
@@ -3596,7 +3596,7 @@
           "ドリルｐ66-69"
         ],
         "report": "生殖・無性。有性生殖などや子のでき方などを練習した。",
-        "recordingUrl": "",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/yrsRHxXe_ReGpYn-PArRvpV8tt04Y-KPloW96-UmdYIysfy_7ykYFFxi7UfYU_oL87iDEycs2HnL1StK.v_y13dVv0aT-tcEf",
         "teacher": "鈴木",
         "absence": "なし",
         "curriculumProgress": "",
@@ -5607,18 +5607,21 @@
       }
     },
     "2026-09-18|4:55～6:15|hon|hon_e5_A_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "6分数の足し引き算",
+      "page": "ｐ57",
+      "report": "帯分数の足し引き算の練習をした。比較的みなよくできているが國立が不調",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/CTLQ38V4A_dOwVJ7Pw0ijKp6ly4F9X78AR7uZcjnSW8pVKHcwOrw0cErgw7qmMwQ.NzR1QKE7F8TFIueb?startTime=1789718303000",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "若林２名",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "ドリルｐ54-55",
+        "計算ｐ47-48"
+      ],
       "prevEntry": {
         "content": "6分数の足し引き算③④途中",
         "page": "ｐ57□１（６）まで",
@@ -5639,18 +5642,21 @@
       }
     },
     "2026-09-18|4:55～6:15|hon|hon_e6_A_arith|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "反比例",
+      "page": "P77□１（１）",
+      "report": "少し進みが良かったので、反比例に少しだけ入った。ここまでのところは全体的に大丈夫そうだが、そらは単純な問題でのミスもある様子。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.2",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "計算P57～59",
+        "ドリルP72，73"
+      ],
       "prevEntry": {
         "content": "比例",
         "page": "P73",
@@ -5671,18 +5677,21 @@
       }
     },
     "2026-09-18|4:55～6:15|hon|hon_e6_S_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "角柱と円柱①②",
+      "page": "ｐ78、79",
+      "report": "小金井は数学的な文（操作や思考を伴いながらの読解）が弱いようす。図形を見たり、考えの枠組みなどには一定の理解力はある様子。図形に関しては野尻が割としっかりしていて、小金井も問題はなさそう。山名根には少し悪いがペースはゆっくりとさせてもらった。",
       "recordingUrl": "",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "中村",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "p811⃣、2⃣（体積についてのみ）",
+        "計算ｐ69、70"
+      ],
       "prevEntry": {
         "content": "直方体と立方体に関する問題",
         "page": "ｐ74～77",
@@ -5690,7 +5699,7 @@
           "p74～77残り・解き直し",
           "計算ｐ105～108"
         ],
-        "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
+        "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学のとき見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
         "recordingUrl": "",
         "teacher": "治彦",
         "absence": "",
@@ -5734,18 +5743,21 @@
       }
     },
     "2026-09-18|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit7",
+      "page": "緑p72/Travelp41大問１まで",
+      "report": "宿題個所と前回の暗唱は欠席だった本村も含め良好。Let'sPと４段目、単語、緑での練習、Let'sLと進めた。次回はreview。テスト前のまとめを行う。香月からテスト前はどういう勉強をすればいいかを聞かれたので、緑テキストの英文や単語を言えるか、書けるかをやるように伝えた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "緑p73",
+        "Travelp38の４段目暗唱"
+      ],
       "prevEntry": {
         "content": "Unit7",
         "page": "緑p70/Travelp38の3段まで",
@@ -5860,7 +5872,7 @@
       }
     },
     "2026-09-18|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
+      "content": "⑮⑯共通な角",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -6309,21 +6321,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "⑪～⑭",
-        "page": "～ｐ43まで",
-        "homework": [
-          "p44、51～53"
-        ],
-        "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
+        "content": "⑮⑯共通な角",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "村佐　菅原　鈴木　大熊",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-19|8:25～9:55|minami|minami_special_英語　　補講③|2": {
@@ -8209,22 +8219,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "6分数の足し引き算③④途中",
-        "page": "ｐ57□１（６）まで",
+        "content": "6分数の足し引き算",
+        "page": "ｐ57",
         "homework": [
-          "ドリルｐ52-53",
-          "計算ｐ45-46"
+          "ドリルｐ54-55",
+          "計算ｐ47-48"
         ],
-        "report": "分数の足し算引き算の練習をした。人数も少なく、基礎を何度も確認した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/foy9fd9wG2CSGv9LBoOo9L8pgO5UDNPUAyvgaE5z4t68W0J1roupE9D9JOrCNYOsfbZiw6DhL_CQikrP.ENbzj9-H2j0kA3Zw",
+        "report": "帯分数の足し引き算の練習をした。比較的みなよくできているが國立が不調",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/CTLQ38V4A_dOwVJ7Pw0ijKp6ly4F9X78AR7uZcjnSW8pVKHcwOrw0cErgw7qmMwQ.NzR1QKE7F8TFIueb?startTime=1789718303000",
         "teacher": "鈴木",
-        "absence": "金城",
+        "absence": "若林２名",
         "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-25|4:55～6:15|hon|hon_e6_A_arith|2": {
@@ -8241,22 +8251,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "比例",
-        "page": "P73",
+        "content": "反比例",
+        "page": "P77□１（１）",
         "homework": [
-          "計算P54～56",
-          "ドリルP68～71"
+          "計算P57～59",
+          "ドリルP72，73"
         ],
-        "report": "比例に入った。新しいクラス。月は余裕がありそうではある。今日の内容に関しては皆大丈夫そうだった。",
+        "report": "少し進みが良かったので、反比例に少しだけ入った。ここまでのところは全体的に大丈夫そうだが、そらは単純な問題でのミスもある様子。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "上島",
-        "curriculumProgress": "±0",
+        "absence": "なし",
+        "curriculumProgress": "＋0.2",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-25|4:55～6:15|hon|hon_e6_S_arith|1": {
@@ -8273,22 +8283,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "直方体と立方体に関する問題",
-        "page": "ｐ74～77",
+        "content": "角柱と円柱①②",
+        "page": "ｐ78、79",
         "homework": [
-          "p74～77残り・解き直し",
-          "計算ｐ105～108"
+          "p811⃣、2⃣（体積についてのみ）",
+          "計算ｐ69、70"
         ],
-        "report": "伊原は以前よりは図形が読めるようになっていたので褒めた。中村、山根は大丈夫そうだが、山根はオンラインが続いている。初参加の野尻は計算は問題は少なそうだが、図形の読み取りなどは気を付ける必要があるかもしれない。小金井も同様だが、オンライン参加ったので正直まだよくわからない。しかし見学の解き見た印象とあまりかわらないので、適度に負荷を落とす必要がある。",
+        "report": "小金井は数学的な文（操作や思考を伴いながらの読解）が弱いようす。図形を見たり、考えの枠組みなどには一定の理解力はある様子。図形に関しては野尻が割としっかりしていて、小金井も問題はなさそう。山名根には少し悪いがペースはゆっくりとさせてもらった。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "",
+        "absence": "中村",
         "curriculumProgress": "±0",
-        "note": "小金井さんの名前が座席表に入っていないそうですので、座席を入れてください。／金子←オッケーです・佐藤",
-        "sessionNumber": "28",
+        "note": "",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-25|4:55～6:15|minami|minami_e4_X_jp|5": {
@@ -8353,21 +8363,21 @@
       "homework": [],
       "prevEntry": {
         "content": "Unit7",
-        "page": "緑p70/Travelp38の3段まで",
+        "page": "緑p72/Travelp41大問１まで",
         "homework": [
-          "緑p71",
-          "Travelp38の３段目暗唱できるようにする"
+          "緑p73",
+          "Travelp38の４段目暗唱"
         ],
-        "report": "今回から山本くん参加。新たに緑テキストを渡し、TravelはUnit7をコピーで渡した。宿題個所のワークは、過去進行形を復習しつつ進め、その後Unit7へ。is/am/areの使い分けも振り返りつつ進めた。最後緑p70は駆け足になった。",
+        "report": "宿題個所と前回の暗唱は欠席だった本村も含め良好。Let'sPと４段目、単語、緑での練習、Let'sLと進めた。次回はreview。テスト前のまとめを行う。香月からテスト前はどういう勉強をすればいいかを聞かれたので、緑テキストの英文や単語を言えるか、書けるかをやるように伝えた。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "本村\n山本45分間で早退",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-25|4:55～6:15|minami|minami_e6_S_eng|1": {
@@ -8478,21 +8488,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "⑪～⑭",
-        "page": "～ｐ43まで",
-        "homework": [
-          "p44、51～53"
-        ],
-        "report": "本日初参加の山田は合同条件を覚えてきてくれていたし、ペースに戸惑いながらも不明点をしっかり質問してくれたのでそれに答えることもできた。今後もこの調子で力をつけていってもらいたい。本日オンライン参加が多く、証明に関してはやや不安が残るが、一応、基本的な内容等は疋田もできていた。次回、宿題にさりげなく平行を示すものを忍ばせたのでもしできている人がいればほめたたえたい。それにしてもＳはペースがきつい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/rcJEOyqydSZvhBH-LprAGH7uvAZqD13v4RxC3Nj2RPKyk2RW114codzYGPx14I90.rSl1w7wqiytRega8",
+        "content": "⑮⑯共通な角",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "村佐　菅原　鈴木　大熊",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j3_S_jp|4": {
