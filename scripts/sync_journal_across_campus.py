@@ -6,7 +6,8 @@
 仕様:
 - ONLINE_PAIR_CLASSES に定義された授業だけが対象
 - 対面（faceToFace=true）の回はコピーしない
-- 片方にだけ内容がある場合にコピー。両方に内容がある場合は上書きしない
+- 各項目ごとに、片方にだけ内容がある場合にコピーする
+- 同じ項目が両方で異なる場合は上書きせず、競合として表示する
 - 書き込み前にバックアップを取る
 - data_only=False でExcelを開き、数式を保持したまま保存
 
@@ -196,6 +197,27 @@ def write_block(ws, top_row: int, left_col: int, block: dict):
         value = block.get(field_name, "")
         if value:
             write_cell(ws, top_row + row_off, left_col + col_off, value)
+
+
+def compare_block_fields(hon_block: dict, min_block: dict) -> Tuple[dict, dict, List[str]]:
+    """項目単位で相互補完する差分を返す。
+
+    戻り値は (本校に書く項目, 南教室に書く項目, 競合項目)。
+    両方に異なる値がある項目は自動上書きしない。
+    """
+    to_hon = {}
+    to_min = {}
+    conflicts = []
+    for field_name in FIELD_OFFSETS:
+        hon_value = hon_block.get(field_name, "")
+        min_value = min_block.get(field_name, "")
+        if hon_value and not min_value:
+            to_min[field_name] = hon_value
+        elif min_value and not hon_value:
+            to_hon[field_name] = min_value
+        elif hon_value and min_value and hon_value != min_value:
+            conflicts.append(field_name)
+    return to_hon, to_min, conflicts
 
 
 def get_top_row(klass: str) -> Optional[int]:
@@ -481,28 +503,29 @@ def sync_journals(
             hon_block = read_block(hon_ws, top_row, hon_left)
             min_block = read_block(min_ws, top_row, min_left)
 
-            hon_has = block_has_content(hon_block)
-            min_has = block_has_content(min_block)
-
             label = f"{GRADE_JP.get(grade,'')}{klass} {SUBJECT_JP.get(subject,'')} {date}"
 
-            if hon_has and not min_has:
-                print(f"  [copy] {label}: 本校 → 南教室")
+            to_hon, to_min, conflicts = compare_block_fields(hon_block, min_block)
+
+            if to_min:
+                fields = ", ".join(to_min)
+                print(f"  [copy] {label}: 本校 → 南教室 ({fields})")
                 if not dry_run:
-                    write_block(min_ws, top_row, min_left, hon_block)
+                    write_block(min_ws, top_row, min_left, to_min)
                     wb_cache.mark_modified(min_filename)
                 copy_count += 1
 
-            elif min_has and not hon_has:
-                print(f"  [copy] {label}: 南教室 → 本校")
+            if to_hon:
+                fields = ", ".join(to_hon)
+                print(f"  [copy] {label}: 南教室 → 本校 ({fields})")
                 if not dry_run:
-                    write_block(hon_ws, top_row, hon_left, min_block)
+                    write_block(hon_ws, top_row, hon_left, to_hon)
                     wb_cache.mark_modified(hon_filename)
                 copy_count += 1
 
-            elif hon_has and min_has:
-                # 両方記入済み → 上書きしない
-                pass
+            if conflicts:
+                fields = ", ".join(conflicts)
+                print(f"  [conflict] {label}: 両校の値が異なるため保持 ({fields})")
 
         # 3. 保存（バックアップ付き）
         if copy_count > 0:

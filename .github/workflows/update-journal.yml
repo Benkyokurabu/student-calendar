@@ -8,6 +8,8 @@ on:
       - 'scripts/check_journal_freshness.py'
       - 'scripts/check_journal_publish_age.py'
       - 'scripts/ci_extract_and_push.py'
+      - 'scripts/sync_journal_across_campus.py'
+      - 'scripts/test_sync_journal_across_campus.py'
       - 'scripts/test_journal_month_failure.py'
       - 'scripts/extract_journal_to_json.py'
       - 'scripts/test_journal_counter_headers.py'
@@ -90,6 +92,9 @@ jobs:
 
       - name: Verify month generation failures stop publication
         run: python -m unittest discover -s scripts -p test_journal_month_failure.py -v
+
+      - name: Verify cross-campus journal field synchronization
+        run: python -m unittest discover -s scripts -p test_sync_journal_across_campus.py -v
 
       - name: Install rclone
         run: |
