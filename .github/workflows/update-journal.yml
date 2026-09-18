@@ -19,11 +19,10 @@ on:
       - 'scripts/TEMPLATE_MAIN.xlsx'
       - 'scripts/TEMPLATE_X.xlsx'
   schedule:
-    # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて4回冗長化。
-    # JST 04:17 / 07:17 / 16:17 / 22:37
+    # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて3回冗長化。
+    # JST 04:17 / 07:17 / 22:37
     - cron: '17 19 * * *'
     - cron: '17 22 * * *'
-    - cron: '17 7 * * *'
     - cron: '37 13 * * *'
   workflow_dispatch:  # 手動実行も可能
 
