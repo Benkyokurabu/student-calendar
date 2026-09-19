@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-19T15:11:59",
+  "generatedAt": "2026-09-19T17:38:21",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -6188,18 +6188,21 @@
       }
     },
     "2026-09-19|4:45～6:15|hon|hon_j1_B_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "平面図形６対称移動させた図形をかく",
+      "page": "P6",
+      "report": "なんとかぎりぎりP6まで終わらせました。宇田川は図形が苦手そうでした。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "新井・グエン・田口・戸部\n宮田（わ）・横関・狩野",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "＃5②～⑥",
+        "＃7"
+      ],
       "prevEntry": {
         "content": "要点15速さの問題まで",
         "page": "p57まで",
@@ -6233,49 +6236,53 @@
       "weekNum": ""
     },
     "2026-09-19|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
+      "content": "まとめ",
       "page": "",
-      "report": "",
+      "report": "今日で比例反比例が終了。次々回までに定期テスト対策の箇所を宿題とした。時間があまったので質問を受け付けることもできた",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "國府田・島・高橋",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "次々回までに定期テスト対策P14～18"
+      ],
       "prevEntry": {
-        "content": "１７比例と反比例のグラフ",
-        "page": "P60まで",
+        "content": "18三角形の面積",
+        "page": "P62まで",
         "homework": [
-          "P61,64,65"
+          "＃87，89，P66"
         ],
-        "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
+        "report": "最後は少し急ぐ形となってしまった。一応三角形の話はできた。次回が明日だが宿題とした。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
+        "absence": "戸部",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-09-19|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "要点23歯車",
+      "page": "ｐ85♯１１２",
+      "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "岡田・斎藤・佐々木・星",
+      "curriculumProgress": "±",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "＃113.＃114"
+      ],
       "prevEntry": {
         "content": "⑰⑲⑳㉑㉒",
         "page": "ｐ63、74～78",
@@ -6309,10 +6316,10 @@
       "weekNum": ""
     },
     "2026-09-19|8:25～9:55|hon|hon_j2_B_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "合同の証明",
+      "page": "ｐ41＃42まで",
+      "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
+      "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
@@ -6320,7 +6327,9 @@
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ｐ38"
+      ],
       "prevEntry": {
         "content": "三角形の合同条件",
         "page": "ｐ34",
@@ -6340,18 +6349,21 @@
       }
     },
     "2026-09-19|8:25～9:55|hon|hon_j2_S_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "21角の二等分線と角",
+      "page": "P63",
+      "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "清宮・村佐・山田",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "P57,58",
+        "＃69～74"
+      ],
       "prevEntry": {
         "content": "⑮⑯共通な角",
         "page": "～ｐ49まで",
@@ -7812,21 +7824,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点15速さの問題まで",
-        "page": "p57まで",
+        "content": "平面図形６対称移動させた図形をかく",
+        "page": "P6",
         "homework": [
-          "p64、66"
+          "＃5②～⑥",
+          "＃7"
         ],
-        "report": "横関亮太君が少しグラフの読み取り方で誤解があった。その他は説明を受けるとある程度はよくできていたようだった。今井花音さんが途中少し細かい見落としがあったくらい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/pxxY1uoMc4xUWs-gpFvhKgZ52fF-k_GTSQwTprNnJ0nonzezPZwKAuTkCRcb8Mzl78YQ-8ZRExvRjADJ.nYYqrNH9mDfO7CBO",
-        "teacher": "森松",
-        "absence": "新井しおり、グエンユミ、\n戸部海晴、宮田澪",
+        "report": "なんとかぎりぎりP6まで終わらせました。宇田川は図形が苦手そうでした。",
+        "recordingUrl": "",
+        "teacher": "工藤",
+        "absence": "新井・グエン・田口・戸部\n宮田（わ）・横関・狩野",
         "curriculumProgress": "±0",
-        "note": "次回平面図形の導入、９月４週と１０月１週で中間テスト対策をする予定です。",
-        "sessionNumber": "33",
+        "note": "",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-17"
+        "weekNum": "3",
+        "date": "2026-09-19"
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j1_S_math|2": {
@@ -7843,21 +7856,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "⑰⑲⑳㉑㉒",
-        "page": "ｐ63、74～78",
+        "content": "要点23歯車",
+        "page": "ｐ85♯１１２",
         "homework": [
-          "ｐ77、79、80"
+          "＃113.＃114"
         ],
-        "report": "髙橋あ、はしっかり座標の読み方を復習してきた模様。しかし本日の距離となるとやや躓きを見せていた。平岡、大宮、佐々木、大木は、一応授業内では座標など情報の整理を行っていたが身につくまでは長そう。文字の扱いについては普通に進めることができたが、身につくかというと不安はある。次回宿題の答え合わせをしてカリキュラム・要点㉓を進めつつ、演習を丁寧に進めることにする。ちなみに学校は一次方程式の解き方に入ったあたりらしい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/IH2uLqhEzVNX98oxFAuWQMoQhLwKKisQeKmJNs9-gvNjcXaV6PJCSc4ggZgHgK5Qvx2wt_PMvEHJAILv.5O1TFM71W4k9B4cU",
-        "teacher": "治彦",
-        "absence": "野口",
-        "curriculumProgress": "＋0.5",
+        "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
+        "recordingUrl": "",
+        "teacher": "鈴木",
+        "absence": "岡田・斎藤・佐々木・星",
+        "curriculumProgress": "±",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-17"
+        "weekNum": "3",
+        "date": "2026-09-19"
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j3_B_eng|1": {
@@ -8461,21 +8474,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "１７比例と反比例のグラフ",
-        "page": "P60まで",
+        "content": "まとめ",
+        "page": "",
         "homework": [
-          "P61,64,65"
+          "次々回までに定期テスト対策P14～18"
         ],
-        "report": "最後少し急いだがカリキュラム通り。席替えをして石毛の手元が見られるようになったが、やはりスピードも遅いし出来は良くなかった。",
+        "report": "今日で比例反比例が終了。次々回までに定期テスト対策の箇所を宿題とした。時間があまったので質問を受け付けることもできた",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
+        "absence": "國府田・島・高橋",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "3",
+        "date": "2026-09-19"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -8492,21 +8505,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "三角形の合同条件",
-        "page": "ｐ34",
+        "content": "合同の証明",
+        "page": "ｐ41＃42まで",
         "homework": [
-          "ｐ26-27"
+          "ｐ38"
         ],
-        "report": "角度の計算から合同条件の練習まで終了した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/hjA2h4iejhFWzKAHABuAOus0VIIv7OgJCromGq41P4gMlBvY4mPnGF1WY-2ysyjMlU8smxyS2rmXpONM.j262sEgCgljrG_t3",
+        "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
+        "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
         "teacher": "鈴木",
-        "absence": "宮田みなみ",
-        "curriculumProgress": "＋1",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-18"
+        "weekNum": "3",
+        "date": "2026-09-19"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j2_S_math|1": {
@@ -8523,22 +8536,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "⑮⑯共通な角",
-        "page": "～ｐ49まで",
+        "content": "21角の二等分線と角",
+        "page": "P63",
         "homework": [
-          "ｐ54，55",
-          "録画を失念しました。再来週に南校舎の録画を掲載します"
+          "P57,58",
+          "＃69～74"
         ],
-        "report": "共通の角を用いた証明。案の定、疋田が証明するべき図形を見極めることが全くできなかったので、結論部を含む図形を区別してから、重なっている角に印をつける、その周りに仮定からわかる角を書く、と完全にマニュアル化して伝える。菅原がやや怪しいくらいで他は大体大丈夫そう。玉水などは平行であることの証明なども宿題でできていたのでスムースだった。正田はまさかの平行四辺形であることを示してからそのその性質から平行であることを述べるといったやや奇抜なものだった。内容は性格だったので褒めたが、学校の先生的にＮＧかもしれないことに気を付けるよう言った。インフルエンザの影響かオンラインが増えている。そして学力の怪しいものにオンラインや欠席が多い。大熊、疋田あたりが特に厳しいかもしれない。次回はまとめだが、今回録画を忘れてしまったので、欠席した生徒には少し丁寧目に証明を解説するようにする。",
+        "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
         "recordingUrl": "",
-        "teacher": "治彦",
-        "absence": "大熊　山田　清宮",
+        "teacher": "工藤",
+        "absence": "清宮・村佐・山田",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "35",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-18"
+        "weekNum": "3",
+        "date": "2026-09-19"
       }
     },
     "2026-09-25|6:35～8:05|hon|hon_j3_S_jp|4": {
