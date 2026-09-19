@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-19T01:14:39",
+  "generatedAt": "2026-09-19T15:11:59",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -5813,18 +5813,20 @@
       }
     },
     "2026-09-18|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "18三角形の面積",
+      "page": "P62まで",
+      "report": "最後は少し急ぐ形となってしまった。一応三角形の話はできた。次回が明日だが宿題とした。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "戸部",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "＃87，89，P66"
+      ],
       "prevEntry": {
         "content": "１７比例と反比例のグラフ",
         "page": "P60まで",
