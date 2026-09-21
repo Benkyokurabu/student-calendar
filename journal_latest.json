@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-09-21T01:11:08",
+  "generatedAt": "2026-09-21T19:59:20",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "",
@@ -224,7 +224,7 @@
       }
     },
     "2026-10-01|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -650,20 +650,21 @@
       "homework": [],
       "prevEntry": {
         "content": "和語・漢語・外来語",
-        "page": "テキストP1582⃣⑷まで",
+        "page": "P158",
         "homework": [
-          "漢字帳P122-125"
+          "漢字帳",
+          "P127-130"
         ],
-        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
+        "report": "音訓から和語と漢語の識別を行ったが、音訓の識別がまだ身についていないものが多数。関根も音訓の識別で苦労していた。長澤はここも絶好調。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-10-02|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -762,7 +763,7 @@
       }
     },
     "2026-10-02|6:35～8:05|hon|hon_j2_B_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -793,7 +794,7 @@
       }
     },
     "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -936,13 +937,13 @@
         "content": "Unit4",
         "page": "＃１８まで",
         "homework": [
-          "HWG!のP62-80"
+          "HWG! Unit4のP62-80"
         ],
         "report": "宿題の確認は中間テスト終了後に行う。音読→和訳と行ったが、水上、鹿内の落ち着きのなさがとても気になる。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/3Zgi6IRrjn2dPrLub153RGoo29EX4D4RTCq9HRvl0r_gTbhs_73WUBWeOiPRAFG059dAFi-bG_BtFsib.D0Y4QXp8e9bBSdA2",
         "teacher": "高山",
         "absence": "細野",
-        "curriculumProgress": "",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -982,7 +983,7 @@
       }
     },
     "2026-10-02|8:25～9:55|hon|hon_j3_A_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -1011,7 +1012,7 @@
       }
     },
     "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -1120,22 +1121,22 @@
       "weekNum": "特",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "古田兄弟",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-03|4:45～6:15|minami|minami_j3_A_soc|5": {
@@ -1152,22 +1153,22 @@
       "weekNum": "特",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-03|6:35～8:05|hon|hon_j1_B_eng|2": {
@@ -1440,22 +1441,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGp48#15まで",
+        "content": "Unit4,DailyLife,Unit5",
+        "page": "HereWeGop59#3まで",
         "homework": [
-          "HWGUnit4の",
-          "#5～7,12～14,16～18"
+          "Unit4の#19～21,DailyLifeの#5～7",
+          "Unit5の#4,8～11"
         ],
-        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "report": "宿題個所は戸部が一部未完。英作文のところはテキストを伏せて答えさせた。Unit4は確テも行い、代名詞表を再び暗唱させ、進めた。戸部が前置詞の後ろは目的格という事を忘れていた様子。DailyLifeでは齊藤と平岡がカタマリを意識していないミスがあり、再度解説。またUnit5は命令文とその否定を復習、be動詞の場合もここで指導した。思ったより進めなかった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、齋藤",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -1473,21 +1474,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
-        "absence": "清宮・疋田・林・茂呂・柳下",
+        "absence": "齋藤・疋田・美月・堀口",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -1504,22 +1505,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "古田兄弟",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -1554,7 +1555,7 @@
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -1567,22 +1568,19 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "２３歯車",
-        "page": "P82",
-        "homework": [
-          "P79＃101、P80,81",
-          "P83,84"
-        ],
-        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
+        "content": "中間対策",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "4",
+        "date": "2026-09-28"
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -1600,21 +1598,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -1631,22 +1629,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -1692,22 +1690,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4とUnit5",
-        "page": "HereWeGoのp84吹き出しまで",
+        "content": "Unit4/5",
+        "page": "p93#17まで",
         "homework": [
-          "HereWeGoUnit4の#23,24,p81確テ",
-          "単語プリントすべて(次回テストします)"
+          "前回分の単語プリント,",
+          "Unit5#5～7,12～14,18,p96確テ"
         ],
-        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤",
+        "absence": "松本",
         "curriculumProgress": "－0.7",
-        "note": "",
-        "sessionNumber": "35",
+        "note": "席替えをしたので教室も確認すること",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -1753,22 +1751,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
-        "absence": "",
+        "absence": "清水、沼倉、野澤",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -1785,21 +1783,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "３生物の種類の多様性",
-        "page": "p133",
+        "content": "16自然界の生物のはたらき",
+        "page": "ｐ206-ｐ209",
         "homework": [
-          "ドリルｐ70（71）"
+          "ドリルｐ72（73）",
+          "ｐ110（ｐ111）"
         ],
-        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
+        "report": "食物連鎖、菌類細菌類などのはたらきと、炭素の循環など。越川見学。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-05|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -1816,22 +1815,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-06|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -2146,7 +2145,7 @@
       }
     },
     "2026-10-06|6:35～8:05|minami|minami_j2_S_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2272,7 +2271,7 @@
       }
     },
     "2026-10-06|8:25～9:55|minami|minami_j3_B_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2301,7 +2300,7 @@
       }
     },
     "2026-10-06|8:25～9:55|minami|minami_j3_S_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2323,8 +2322,8 @@
         "report": "円周角と中心角のの練習。沖田・伊東がオンライン参加であった。出来は、柴田が少し調子悪い感じ。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "±0",
         "note": "",
         "sessionNumber": "38",
         "monthNum": "9",
@@ -2553,7 +2552,7 @@
       }
     },
     "2026-10-07|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2566,25 +2565,23 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "４章のまとめ",
-        "page": "ｐ73まで",
-        "homework": [
-          "ｐ74-ｐ76"
-        ],
-        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
+        "content": "中間対策",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "weekNum": "4",
+        "date": "2026-09-30"
       }
     },
     "2026-10-07|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2597,25 +2594,23 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "要点１５速さのグラフまで",
-        "page": "p57",
-        "homework": [
-          "p64、66"
-        ],
-        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
+        "content": "まとめ・中間対策",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "なし",
-        "curriculumProgress": "±0",
-        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
-        "sessionNumber": "33",
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "weekNum": "4",
+        "date": "2026-09-30"
       }
     },
     "2026-10-07|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2740,7 +2735,7 @@
       }
     },
     "2026-10-07|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -2992,7 +2987,7 @@
       }
     },
     "2026-10-08|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -3037,21 +3032,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "要点23歯車",
-        "page": "ｐ85♯１１２",
-        "homework": [
-          "＃113.＃114"
-        ],
-        "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "岡田・斎藤・佐々木・星",
-        "curriculumProgress": "±",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-01"
       }
     },
     "2026-10-08|6:35～8:05|hon|hon_j3_B_eng|1": {
@@ -3183,7 +3176,7 @@
       }
     },
     "2026-10-08|8:25～9:55|hon|hon_j3_B_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -3418,20 +3411,21 @@
       "homework": [],
       "prevEntry": {
         "content": "和語・漢語・外来語",
-        "page": "テキストP1582⃣⑷まで",
+        "page": "P158",
         "homework": [
-          "漢字帳P122-125"
+          "漢字帳",
+          "P127-130"
         ],
-        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
+        "report": "音訓から和語と漢語の識別を行ったが、音訓の識別がまだ身についていないものが多数。関根も音訓の識別で苦労していた。長澤はここも絶好調。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-10-09|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -3499,7 +3493,7 @@
       }
     },
     "2026-10-09|6:35～8:05|hon|hon_j1_A_math|3": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -3543,21 +3537,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "合同の証明",
-        "page": "ｐ41＃42まで",
-        "homework": [
-          "ｐ38"
-        ],
-        "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
-        "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-09|6:35～8:05|hon|hon_j2_S_math|1": {
@@ -3574,22 +3566,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "21角の二等分線と角",
-        "page": "P63",
-        "homework": [
-          "P57,58",
-          "＃69～74"
-        ],
-        "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "清宮・村佐・山田",
-        "curriculumProgress": "±0",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-09|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -3673,13 +3662,13 @@
         "content": "Unit4",
         "page": "＃１８まで",
         "homework": [
-          "HWG!のP62-80"
+          "HWG! Unit4のP62-80"
         ],
         "report": "宿題の確認は中間テスト終了後に行う。音読→和訳と行ったが、水上、鹿内の落ち着きのなさがとても気になる。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/3Zgi6IRrjn2dPrLub153RGoo29EX4D4RTCq9HRvl0r_gTbhs_73WUBWeOiPRAFG059dAFi-bG_BtFsib.D0Y4QXp8e9bBSdA2",
         "teacher": "高山",
         "absence": "細野",
-        "curriculumProgress": "",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -3701,7 +3690,7 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -3710,10 +3699,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-09|8:25～9:55|hon|hon_j3_S_math|2": {
@@ -3730,22 +3719,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "円周角に関する作図",
-        "page": "P70",
-        "homework": [
-          "P69＃１５～＃18",
-          "P71～７４"
-        ],
-        "report": "最後少し急いだが宿題が多めになってしまった。次回はなるべく簡潔に解説を終わらせて三平方に入りたい。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "川田",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "39",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-18"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-09|8:25～9:55|minami|minami_j2_S_eng|2": {
@@ -3918,21 +3904,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-10|6:35～8:05|minami|minami_special_数学　　補講②|1": {
@@ -4085,22 +4071,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGp48#15まで",
+        "content": "Unit4,DailyLife,Unit5",
+        "page": "HereWeGop59#3まで",
         "homework": [
-          "HWGUnit4の",
-          "#5～7,12～14,16～18"
+          "Unit4の#19～21,DailyLifeの#5～7",
+          "Unit5の#4,8～11"
         ],
-        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "report": "宿題個所は戸部が一部未完。英作文のところはテキストを伏せて答えさせた。Unit4は確テも行い、代名詞表を再び暗唱させ、進めた。戸部が前置詞の後ろは目的格という事を忘れていた様子。DailyLifeでは齊藤と平岡がカタマリを意識していないミスがあり、再度解説。またUnit5は命令文とその否定を復習、be動詞の場合もここで指導した。思ったより進めなかった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、齋藤",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j2_S_jp|2": {
@@ -4118,21 +4104,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
-        "absence": "清宮・疋田・林・茂呂・柳下",
+        "absence": "齋藤・疋田・美月・堀口",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -4149,22 +4135,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "古田兄弟",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -4212,22 +4198,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "２３歯車",
-        "page": "P82",
-        "homework": [
-          "P79＃101、P80,81",
-          "P83,84"
-        ],
-        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -4244,22 +4227,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -4305,22 +4288,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4とUnit5",
-        "page": "HereWeGoのp84吹き出しまで",
+        "content": "Unit4/5",
+        "page": "p93#17まで",
         "homework": [
-          "HereWeGoUnit4の#23,24,p81確テ",
-          "単語プリントすべて(次回テストします)"
+          "前回分の単語プリント,",
+          "Unit5#5～7,12～14,18,p96確テ"
         ],
-        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤",
+        "absence": "松本",
         "curriculumProgress": "－0.7",
-        "note": "",
-        "sessionNumber": "35",
+        "note": "席替えをしたので教室も確認すること",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -4366,22 +4349,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
-        "absence": "",
+        "absence": "清水、沼倉、野澤",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -4398,21 +4381,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "３生物の種類の多様性",
-        "page": "p133",
+        "content": "16自然界の生物のはたらき",
+        "page": "ｐ206-ｐ209",
         "homework": [
-          "ドリルｐ70（71）"
+          "ドリルｐ72（73）",
+          "ｐ110（ｐ111）"
         ],
-        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
+        "report": "食物連鎖、菌類細菌類などのはたらきと、炭素の循環など。越川見学。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-12|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -4429,22 +4413,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-13|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -4741,22 +4725,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "要点12三角形の合同",
-        "page": "ｐ40ポイントまで",
-        "homework": [
-          "ｐ40＃47.＃48",
-          "ｐ50□３まで"
-        ],
-        "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "進藤・茂呂・鹿内・鍔田",
-        "curriculumProgress": "－0.5",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-13|8:25～9:55|hon|hon_j2_A_jp|2": {
@@ -4836,7 +4817,7 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -4845,10 +4826,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-29"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-13|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -4865,22 +4846,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "３円周角の定理の逆",
-        "page": "ｐ67まで",
-        "homework": [
-          "ｐ67-65",
-          "プリントｐ3.ｐ4"
-        ],
-        "report": "円周角と中心角のの練習。沖田・伊東がオンライン参加であった。出来は、柴田が少し調子悪い感じ。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-14|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -5117,21 +5095,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "４章のまとめ",
-        "page": "ｐ73まで",
-        "homework": [
-          "ｐ74-ｐ76"
-        ],
-        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-14|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -5148,21 +5124,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "要点１５速さのグラフまで",
-        "page": "p57",
-        "homework": [
-          "p64、66"
-        ],
-        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "なし",
-        "curriculumProgress": "±0",
-        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-14|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -5179,21 +5153,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "放物線と三角形の面積２",
-        "page": "P45まで",
-        "homework": [
-          "P43"
-        ],
-        "report": "次回の、相似の最初のパワポだけ見せた。その代わりP43が宿題として残った。Bから上がってきた生徒たちはやはり基本的にできが良くない印象。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
-        "monthNum": "9",
+        "sessionNumber": "41",
+        "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-09-09"
+        "date": "2026-10-07"
       }
     },
     "2026-10-14|8:25～9:55|hon|hon_j2_S_eng|2": {
@@ -5302,22 +5274,19 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "要点８いろいろな角の求め方例４まで",
-        "page": "p22まで",
-        "homework": [
-          "p24、旧テキストp69～70",
-          "旧テキスト持ってくる"
-        ],
-        "report": "例１、例２の三角形の外角を使うものはみなよくできている。例３の平行線を使うものも、全体的に慣れれば問題はなさそう。例４のものだけ、大竹愛実夏さんがまったくわからずにいたので説明しなおした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-eaUTS0Vdnvmo7VKlSGmQXHgAo9EsCGwfvJ6FfBmuXGRby7LC8mSwSSz0b3omitR58Ucc-NRADoLJtYk.KK8k8s-eYBJcHSzz",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "末次ゆいかさん",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-14|8:25～9:55|minami|minami_j3_X_math|4": {
@@ -5552,22 +5521,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "平面図形６対称移動させた図形をかく",
-        "page": "P6",
-        "homework": [
-          "＃5②～⑥",
-          "＃7"
-        ],
-        "report": "なんとかぎりぎりP6まで終わらせました。宇田川は図形が苦手そうでした。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "新井・グエン・田口・戸部\n宮田（わ）・横関・狩野",
-        "curriculumProgress": "±0",
+        "teacher": "森松",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-15|6:35～8:05|hon|hon_j1_S_math|2": {
@@ -5584,21 +5550,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点23歯車",
-        "page": "ｐ85♯１１２",
-        "homework": [
-          "＃113.＃114"
-        ],
-        "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "岡田・斎藤・佐々木・星",
-        "curriculumProgress": "±",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-01"
       }
     },
     "2026-10-15|6:35～8:05|hon|hon_j3_B_eng|1": {
@@ -5809,7 +5773,7 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -5818,10 +5782,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-24"
+        "sessionNumber": "42",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-15|8:25～9:55|hon|hon_j3_S_eng|3": {
@@ -6093,20 +6057,21 @@
       "homework": [],
       "prevEntry": {
         "content": "和語・漢語・外来語",
-        "page": "テキストP1582⃣⑷まで",
+        "page": "P158",
         "homework": [
-          "漢字帳P122-125"
+          "漢字帳",
+          "P127-130"
         ],
-        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
+        "report": "音訓から和語と漢語の識別を行ったが、音訓の識別がまだ身についていないものが多数。関根も音訓の識別で苦労していた。長澤はここも絶好調。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -6187,21 +6152,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
+        "content": "単元テスト③",
         "page": "",
-        "homework": [
-          "次々回までに定期テスト対策P14～18"
-        ],
-        "report": "今日で比例反比例が終了。次々回までに定期テスト対策の箇所を宿題とした。時間があまったので質問を受け付けることもできた",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "國府田・島・高橋",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-09"
       }
     },
     "2026-10-16|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -6218,21 +6181,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "合同の証明",
-        "page": "ｐ41＃42まで",
-        "homework": [
-          "ｐ38"
-        ],
-        "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
-        "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-16|6:35～8:05|hon|hon_j2_S_math|1": {
@@ -6249,22 +6210,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "21角の二等分線と角",
-        "page": "P63",
-        "homework": [
-          "P57,58",
-          "＃69～74"
-        ],
-        "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "清宮・村佐・山田",
-        "curriculumProgress": "±0",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-16|6:35～8:05|hon|hon_j3_S_jp|4": {
@@ -6379,13 +6337,13 @@
         "content": "Unit4",
         "page": "＃１８まで",
         "homework": [
-          "HWG!のP62-80"
+          "HWG! Unit4のP62-80"
         ],
         "report": "宿題の確認は中間テスト終了後に行う。音読→和訳と行ったが、水上、鹿内の落ち着きのなさがとても気になる。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/3Zgi6IRrjn2dPrLub153RGoo29EX4D4RTCq9HRvl0r_gTbhs_73WUBWeOiPRAFG059dAFi-bG_BtFsib.D0Y4QXp8e9bBSdA2",
         "teacher": "高山",
         "absence": "細野",
-        "curriculumProgress": "",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -6438,7 +6396,7 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -6447,10 +6405,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-16|8:25～9:55|hon|hon_j3_S_math|2": {
@@ -6467,22 +6425,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "円周角に関する作図",
-        "page": "P70",
-        "homework": [
-          "P69＃１５～＃18",
-          "P71～７４"
-        ],
-        "report": "最後少し急いだが宿題が多めになってしまった。次回はなるべく簡潔に解説を終わらせて三平方に入りたい。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "川田",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "39",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-18"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-16|8:25～9:55|minami|minami_j2_S_eng|2": {
@@ -6636,22 +6591,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "３円周角の定理の逆",
-        "page": "ｐ67まで",
-        "homework": [
-          "ｐ67-65",
-          "プリントｐ3.ｐ4"
-        ],
-        "report": "円周角と中心角のの練習。沖田・伊東がオンライン参加であった。出来は、柴田が少し調子悪い感じ。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-17|6:35～8:05|minami|minami_special_英語　　補講③|2": {
@@ -6819,22 +6771,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGp48#15まで",
+        "content": "Unit4,DailyLife,Unit5",
+        "page": "HereWeGop59#3まで",
         "homework": [
-          "HWGUnit4の",
-          "#5～7,12～14,16～18"
+          "Unit4の#19～21,DailyLifeの#5～7",
+          "Unit5の#4,8～11"
         ],
-        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "report": "宿題個所は戸部が一部未完。英作文のところはテキストを伏せて答えさせた。Unit4は確テも行い、代名詞表を再び暗唱させ、進めた。戸部が前置詞の後ろは目的格という事を忘れていた様子。DailyLifeでは齊藤と平岡がカタマリを意識していないミスがあり、再度解説。またUnit5は命令文とその否定を復習、be動詞の場合もここで指導した。思ったより進めなかった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、齋藤",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -6852,21 +6804,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
-        "absence": "清宮・疋田・林・茂呂・柳下",
+        "absence": "齋藤・疋田・美月・堀口",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -6883,22 +6835,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "古田兄弟",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -6946,22 +6898,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "２３歯車",
-        "page": "P82",
-        "homework": [
-          "P79＃101、P80,81",
-          "P83,84"
-        ],
-        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -6979,21 +6928,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -7010,22 +6959,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -7071,22 +7020,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4とUnit5",
-        "page": "HereWeGoのp84吹き出しまで",
+        "content": "Unit4/5",
+        "page": "p93#17まで",
         "homework": [
-          "HereWeGoUnit4の#23,24,p81確テ",
-          "単語プリントすべて(次回テストします)"
+          "前回分の単語プリント,",
+          "Unit5#5～7,12～14,18,p96確テ"
         ],
-        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤",
+        "absence": "松本",
         "curriculumProgress": "－0.7",
-        "note": "",
-        "sessionNumber": "35",
+        "note": "席替えをしたので教室も確認すること",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -7132,22 +7081,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
-        "absence": "",
+        "absence": "清水、沼倉、野澤",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -7164,21 +7113,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "３生物の種類の多様性",
-        "page": "p133",
+        "content": "16自然界の生物のはたらき",
+        "page": "ｐ206-ｐ209",
         "homework": [
-          "ドリルｐ70（71）"
+          "ドリルｐ72（73）",
+          "ｐ110（ｐ111）"
         ],
-        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
+        "report": "食物連鎖、菌類細菌類などのはたらきと、炭素の循環など。越川見学。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-19|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -7195,22 +7145,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-20|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -7538,22 +7488,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点12三角形の合同",
-        "page": "ｐ40ポイントまで",
-        "homework": [
-          "ｐ40＃47.＃48",
-          "ｐ50□３まで"
-        ],
-        "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "進藤・茂呂・鹿内・鍔田",
-        "curriculumProgress": "－0.5",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-20|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -7664,7 +7611,7 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -7673,10 +7620,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-29"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-20|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -7693,22 +7640,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "３円周角の定理の逆",
-        "page": "ｐ67まで",
-        "homework": [
-          "ｐ67-65",
-          "プリントｐ3.ｐ4"
-        ],
-        "report": "円周角と中心角のの練習。沖田・伊東がオンライン参加であった。出来は、柴田が少し調子悪い感じ。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-21|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -7945,21 +7889,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "４章のまとめ",
-        "page": "ｐ73まで",
-        "homework": [
-          "ｐ74-ｐ76"
-        ],
-        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -7976,21 +7918,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点１５速さのグラフまで",
-        "page": "p57",
-        "homework": [
-          "p64、66"
-        ],
-        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "なし",
-        "curriculumProgress": "±0",
-        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -8007,21 +7947,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "放物線と三角形の面積２",
-        "page": "P45まで",
-        "homework": [
-          "P43"
-        ],
-        "report": "次回の、相似の最初のパワポだけ見せた。その代わりP43が宿題として残った。Bから上がってきた生徒たちはやはり基本的にできが良くない印象。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
-        "monthNum": "9",
+        "sessionNumber": "41",
+        "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-09-09"
+        "date": "2026-10-07"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j3_X_jp|5": {
@@ -8161,22 +8099,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "要点８いろいろな角の求め方例４まで",
-        "page": "p22まで",
-        "homework": [
-          "p24、旧テキストp69～70",
-          "旧テキスト持ってくる"
-        ],
-        "report": "例１、例２の三角形の外角を使うものはみなよくできている。例３の平行線を使うものも、全体的に慣れれば問題はなさそう。例４のものだけ、大竹愛実夏さんがまったくわからずにいたので説明しなおした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-eaUTS0Vdnvmo7VKlSGmQXHgAo9EsCGwfvJ6FfBmuXGRby7LC8mSwSSz0b3omitR58Ucc-NRADoLJtYk.KK8k8s-eYBJcHSzz",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "末次ゆいかさん",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-21|8:25～9:55|minami|minami_j3_A_jp|5": {
@@ -8442,22 +8377,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "平面図形６対称移動させた図形をかく",
-        "page": "P6",
-        "homework": [
-          "＃5②～⑥",
-          "＃7"
-        ],
-        "report": "なんとかぎりぎりP6まで終わらせました。宇田川は図形が苦手そうでした。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "新井・グエン・田口・戸部\n宮田（わ）・横関・狩野",
-        "curriculumProgress": "±0",
+        "teacher": "森松",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-22|6:35～8:05|hon|hon_j1_S_math|2": {
@@ -8474,21 +8406,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点23歯車",
-        "page": "ｐ85♯１１２",
-        "homework": [
-          "＃113.＃114"
-        ],
-        "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "岡田・斎藤・佐々木・星",
-        "curriculumProgress": "±",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-01"
       }
     },
     "2026-10-22|6:35～8:05|hon|hon_j3_B_eng|1": {
@@ -8650,7 +8580,7 @@
       }
     },
     "2026-10-22|8:25～9:55|hon|hon_j2_A_math|2": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -8695,7 +8625,7 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -8704,10 +8634,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-24"
+        "sessionNumber": "42",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-22|8:25～9:55|hon|hon_j3_S_eng|3": {
@@ -8917,20 +8847,21 @@
       "homework": [],
       "prevEntry": {
         "content": "和語・漢語・外来語",
-        "page": "テキストP1582⃣⑷まで",
+        "page": "P158",
         "homework": [
-          "漢字帳P122-125"
+          "漢字帳",
+          "P127-130"
         ],
-        "report": "宿題はみなOK。新出漢字の学習後、和語・漢語・外来語へ。長澤が本日は絶好調。とてもよく解けていた。岡崎はまだ",
+        "report": "音訓から和語と漢語の識別を行ったが、音訓の識別がまだ身についていないものが多数。関根も音訓の識別で苦労していた。長澤はここも絶好調。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "28",
+        "sessionNumber": "29",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-11"
+        "weekNum": "2",
+        "date": "2026-09-18"
       }
     },
     "2026-10-23|4:55～6:15|minami|minami_e6_A_eng|2": {
@@ -9011,21 +8942,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
+        "content": "単元テスト③",
         "page": "",
-        "homework": [
-          "次々回までに定期テスト対策P14～18"
-        ],
-        "report": "今日で比例反比例が終了。次々回までに定期テスト対策の箇所を宿題とした。時間があまったので質問を受け付けることもできた",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "國府田・島・高橋",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-09"
       }
     },
     "2026-10-23|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -9042,21 +8971,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "合同の証明",
-        "page": "ｐ41＃42まで",
-        "homework": [
-          "ｐ38"
-        ],
-        "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
-        "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-23|6:35～8:05|hon|hon_j2_S_math|1": {
@@ -9073,22 +9000,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "21角の二等分線と角",
-        "page": "P63",
-        "homework": [
-          "P57,58",
-          "＃69～74"
-        ],
-        "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "清宮・村佐・山田",
-        "curriculumProgress": "±0",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-23|6:35～8:05|hon|hon_j3_S_jp|4": {
@@ -9203,13 +9127,13 @@
         "content": "Unit4",
         "page": "＃１８まで",
         "homework": [
-          "HWG!のP62-80"
+          "HWG! Unit4のP62-80"
         ],
         "report": "宿題の確認は中間テスト終了後に行う。音読→和訳と行ったが、水上、鹿内の落ち着きのなさがとても気になる。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/3Zgi6IRrjn2dPrLub153RGoo29EX4D4RTCq9HRvl0r_gTbhs_73WUBWeOiPRAFG059dAFi-bG_BtFsib.D0Y4QXp8e9bBSdA2",
         "teacher": "高山",
         "absence": "細野",
-        "curriculumProgress": "",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -9262,7 +9186,7 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -9271,10 +9195,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-23|8:25～9:55|hon|hon_j3_S_math|2": {
@@ -9291,22 +9215,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "円周角に関する作図",
-        "page": "P70",
-        "homework": [
-          "P69＃１５～＃18",
-          "P71～７４"
-        ],
-        "report": "最後少し急いだが宿題が多めになってしまった。次回はなるべく簡潔に解説を終わらせて三平方に入りたい。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "川田",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "39",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-18"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-23|8:25～9:55|minami|minami_j2_S_eng|2": {
@@ -9415,22 +9336,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "古田兄弟",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-24|6:35～8:05|hon|hon_j3_S_sci|1": {
@@ -9539,22 +9460,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
-        "absence": "",
+        "absence": "清水、沼倉、野澤",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-24|8:25～9:55|minami|minami_j3_A_math|1": {
@@ -9571,21 +9492,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "放物線と三角形の面積２",
-        "page": "P45まで",
-        "homework": [
-          "P43"
-        ],
-        "report": "次回の、相似の最初のパワポだけ見せた。その代わりP43が宿題として残った。Bから上がってきた生徒たちはやはり基本的にできが良くない印象。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
-        "monthNum": "9",
+        "sessionNumber": "41",
+        "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-09-09"
+        "date": "2026-10-07"
       }
     },
     "2026-10-24|8:25～9:55|minami|minami_special_英語　　補講④|2": {
@@ -9662,22 +9581,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4",
-        "page": "HWGp48#15まで",
+        "content": "Unit4,DailyLife,Unit5",
+        "page": "HereWeGop59#3まで",
         "homework": [
-          "HWGUnit4の",
-          "#5～7,12～14,16～18"
+          "Unit4の#19～21,DailyLifeの#5～7",
+          "Unit5の#4,8～11"
         ],
-        "report": "宿題個所の英作文は少しずつミスはあったが、まずまず。後半はUnit4に入り、be動詞や代名詞を復習しつつ進めた。",
+        "report": "宿題個所は戸部が一部未完。英作文のところはテキストを伏せて答えさせた。Unit4は確テも行い、代名詞表を再び暗唱させ、進めた。戸部が前置詞の後ろは目的格という事を忘れていた様子。DailyLifeでは齊藤と平岡がカタマリを意識していないミスがあり、再度解説。またUnit5は命令文とその否定を復習、be動詞の場合もここで指導した。思ったより進めなかった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、齋藤",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "－0.7",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -9695,21 +9614,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
-        "absence": "清宮・疋田・林・茂呂・柳下",
+        "absence": "齋藤・疋田・美月・堀口",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j1_S_math|3": {
@@ -9726,22 +9645,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "２３歯車",
-        "page": "P82",
-        "homework": [
-          "P79＃101、P80,81",
-          "P83,84"
-        ],
-        "report": "次回で最終回なので、例題は全て終わらせた。残りを全部宿題にしたかったが多くなりすぎるので、少し調整した。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -9759,21 +9675,21 @@
       "homework": [],
       "prevEntry": {
         "content": "平家物語",
-        "page": "漢字帳P121",
+        "page": "P121-125",
         "homework": [
-          "漢字帳P126-129",
+          "漢字帳P133-136",
           "漢字帳P121冒頭の暗唱"
         ],
-        "report": "平家物語に入った。パワポで現代仮名遣いに直す練習をした際に、石原ができないことが判明。今後注視が必要。歴史的背景をを交えて行った。冒頭は暗唱できたものが早くもいたので驚いた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Z6wp5naVQcWtJr24GtKJQUl7FIp05hpQ2qFARTZrhQFg7-XeXqK0Xf9xfLhWPWe0sQP8t52jE8LpWE2M.13VUDwdcvTDAbEAB",
+        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "26",
+        "sessionNumber": "27",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_A_soc|2": {
@@ -9790,22 +9706,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "公民：現代社会、人権思想",
+        "page": "マイクリアp122～",
         "homework": [
-          "マイp571⃣2⃣〇付け込み",
-          "ドリルp42-43〇付け込み"
+          "ドリルp86-87〇こみ",
+          "マイp123〇こみ"
         ],
-        "report": "地理分野を終え、公民分野の指導に入った。p.123の問題については、地理と関連するものをいくつか扱いながら、公民は今後の得点源にしていける分野であることを伝えた。p.122は「男女雇用機会均等法」を紹介したところで終了。次回、p.122の残りを終えた後、次の単元に入る予定。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/DpZEZisAB13TayPxWH1bvYesUVRgqdRaPys9elcQgWnEHdlQ4uiL1uwnpN9Js5Rb7tLhc9UTg_tcGJJA.P3C7-SxZezjOfBtQ",
+        "report": "ロック、ルソー、モンテスキューまで。次回は世界の人権の動きから。平和主義まで終わらせたい。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/TKa-PxLfBNGbIXcvp53iKZdkaNo0MPxqT5yM7pz_BzCrfLn5eayPvAw1qYxfLID4.ca4BSVwYETv6obGT",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_S_sci|1": {
@@ -9851,22 +9767,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4とUnit5",
-        "page": "HereWeGoのp84吹き出しまで",
+        "content": "Unit4/5",
+        "page": "p93#17まで",
         "homework": [
-          "HereWeGoUnit4の#23,24,p81確テ",
-          "単語プリントすべて(次回テストします)"
+          "前回分の単語プリント,",
+          "Unit5#5～7,12～14,18,p96確テ"
         ],
-        "report": "Unit4の宿題個所の和→英はテキストを伏せて答えさせた。本当は何度もやりたいところ。その後はGoalに進み、下線部以外のところもいろいろ聞いていった。Unit5はPt1も終わりきらず。",
+        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤",
+        "absence": "松本",
         "curriculumProgress": "－0.7",
-        "note": "",
-        "sessionNumber": "35",
+        "note": "席替えをしたので教室も確認すること",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|8:25～9:55|hon|hon_j2_X_eng|3": {
@@ -9947,21 +9863,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "３生物の種類の多様性",
-        "page": "p133",
+        "content": "16自然界の生物のはたらき",
+        "page": "ｐ206-ｐ209",
         "homework": [
-          "ドリルｐ70（71）"
+          "ドリルｐ72（73）",
+          "ｐ110（ｐ111）"
         ],
-        "report": "S同様、生物の進化や器官のところまでの説明が終了。宿題はドリルの前のページをやるようにした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Mhq-axj5xtGdSiStXUl5WH9ldB3ZOmugOM-X37cIkESRqVUjycQqqlaeyIX4KanNiGB7GAfswTZtTYsH.1kEDLnBa1jr6XIDC",
+        "report": "食物連鎖、菌類細菌類などのはたらきと、炭素の循環など。越川見学。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-26|8:25～9:55|minami|minami_j3_S_soc|1": {
@@ -9978,22 +9895,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "地理終了、公民：現代の日本社会",
-        "page": "マイクリアp122-",
+        "content": "国民主権、平和主義、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇こみ",
-          "ドリルp88〇こみ"
+          "マイp129-131〇こみ",
+          "ドリルp88-89〇こみ"
         ],
-        "report": "p.126まで終了し、p.128の「国民主権」に入った。「象徴」の内容まで指導して終了。次回は「天皇の国事行為」から始める予定。次回は、国民主権・平和主義まで終えたうえで、可能な限り基本的人権の単元に入りたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/XbuXNeVUwy1zIkvLWv1kfYxNjbEbr0OVXfKNULgS4MJoChhorQT2mys_SaiALxiDePyuv3TA8qFgfkeC.Fd_8yYGTvKsoxQpE",
+        "report": "人権の生存権まで。次回はスクーリングだが、地形図のプリントは配布するが、中間前ということもあり公民を進める。地形図は中間後かなぁ。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/iaLFm2fnA-dOS94_lO-HYQeLgsnTgzgjJBzCgmiSaF-EZoazZTrC80ytZCq7ANxb.glKVzBjQKOTakZY2",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
+        "sessionNumber": "35",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-14"
+        "weekNum": "3",
+        "date": "2026-09-21"
       }
     },
     "2026-10-27|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -10310,7 +10227,7 @@
       }
     },
     "2026-10-27|6:35～8:05|minami|minami_j2_A_math|1": {
-      "content": "",
+      "content": "単元テスト③",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -10352,22 +10269,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点12三角形の合同",
-        "page": "ｐ40ポイントまで",
-        "homework": [
-          "ｐ40＃47.＃48",
-          "ｐ50□３まで"
-        ],
-        "report": "三角形の合同の証明まで。皆真面目に取り組んでいるので、問題はなさそう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/2LrygEQg2D_-FBgKe6ELbe-bmlaMNAZilDZ0pJfDJ4Sf6u0P4g9eyPy6fIYOydl0.ZxD1GspydOndFIo-?startTime=1789465050000",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "進藤・茂呂・鹿内・鍔田",
-        "curriculumProgress": "－0.5",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-27|6:35～8:05|minami|minami_j3_A_jp|4": {
@@ -10509,7 +10423,7 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -10518,10 +10432,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-29"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-27|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -10538,22 +10452,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "３円周角の定理の逆",
-        "page": "ｐ67まで",
-        "homework": [
-          "ｐ67-65",
-          "プリントｐ3.ｐ4"
-        ],
-        "report": "円周角と中心角のの練習。沖田・伊東がオンライン参加であった。出来は、柴田が少し調子悪い感じ。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-15"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     },
     "2026-10-28|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -10790,21 +10701,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "４章のまとめ",
-        "page": "ｐ73まで",
-        "homework": [
-          "ｐ74-ｐ76"
-        ],
-        "report": "比例反比例の章のまとめ問題を練習した。残りを宿題とした。みな、まじめにやっている。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -10821,21 +10730,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点１５速さのグラフまで",
-        "page": "p57",
-        "homework": [
-          "p64、66"
-        ],
-        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "なし",
-        "curriculumProgress": "±0",
-        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
-        "sessionNumber": "33",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -10852,21 +10759,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "放物線と三角形の面積２",
-        "page": "P45まで",
-        "homework": [
-          "P43"
-        ],
-        "report": "次回の、相似の最初のパワポだけ見せた。その代わりP43が宿題として残った。Bから上がってきた生徒たちはやはり基本的にできが良くない印象。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "37",
-        "monthNum": "9",
+        "sessionNumber": "41",
+        "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-09-09"
+        "date": "2026-10-07"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j3_X_jp|5": {
@@ -11006,22 +10911,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点８いろいろな角の求め方例４まで",
-        "page": "p22まで",
-        "homework": [
-          "p24、旧テキストp69～70",
-          "旧テキスト持ってくる"
-        ],
-        "report": "例１、例２の三角形の外角を使うものはみなよくできている。例３の平行線を使うものも、全体的に慣れれば問題はなさそう。例４のものだけ、大竹愛実夏さんがまったくわからずにいたので説明しなおした。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-eaUTS0Vdnvmo7VKlSGmQXHgAo9EsCGwfvJ6FfBmuXGRby7LC8mSwSSz0b3omitR58Ucc-NRADoLJtYk.KK8k8s-eYBJcHSzz",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "末次ゆいかさん",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-07"
       }
     },
     "2026-10-28|8:25～9:55|minami|minami_j3_A_jp|5": {
@@ -11129,22 +11031,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "平面図形６対称移動させた図形をかく",
-        "page": "P6",
-        "homework": [
-          "＃5②～⑥",
-          "＃7"
-        ],
-        "report": "なんとかぎりぎりP6まで終わらせました。宇田川は図形が苦手そうでした。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "新井・グエン・田口・戸部\n宮田（わ）・横関・狩野",
-        "curriculumProgress": "±0",
+        "teacher": "森松",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-29|6:35～8:05|hon|hon_j1_S_math|2": {
@@ -11161,21 +11060,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "要点23歯車",
-        "page": "ｐ85♯１１２",
-        "homework": [
-          "＃113.＃114"
-        ],
-        "report": "宿題の解答後、歯車、演習問題へ進んだ。イレギュラーな日なので欠席が多かった。高橋ユノがあまりできていなそうだった。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "鈴木",
-        "absence": "岡田・斎藤・佐々木・星",
-        "curriculumProgress": "±",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-01"
       }
     },
     "2026-10-29|6:35～8:05|hon|hon_j2_X_math|4": {
@@ -11412,22 +11309,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "要点１２合同の証明の進め方まで",
-        "page": "p40まで",
-        "homework": [
-          "p40残り、旧テキストp110～113",
-          "次回旧テキスト使うので持ってくる"
-        ],
-        "report": "欠席がとても多い授業だった。石原悠慎君がやや合同条件を使うのに苦労していた。海老根一輝君などよくできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/tK378Ony5CvuNx7HtBzPQXfslQzC5GIVrjGn_SugL14clEkX-syxz67XnEWH49Pz0FRzX1c-js2ssUID._qwiX6TDaV_KR-tj",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "森松",
-        "absence": "伊藤彩、笠松葵衣、齋藤龍彦、\n中野晴翔、西沢友羽",
-        "curriculumProgress": "±0",
-        "note": "次回中間テスト対策で一次関数",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-17"
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "4",
+        "date": "2026-10-22"
       }
     },
     "2026-10-29|8:25～9:55|hon|hon_j3_B_math|1": {
@@ -11444,7 +11338,7 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -11453,10 +11347,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-24"
+        "sessionNumber": "42",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-08"
       }
     },
     "2026-10-29|8:25～9:55|hon|hon_j3_S_eng|3": {
@@ -11569,21 +11463,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
+        "content": "単元テスト③",
         "page": "",
-        "homework": [
-          "次々回までに定期テスト対策P14～18"
-        ],
-        "report": "今日で比例反比例が終了。次々回までに定期テスト対策の箇所を宿題とした。時間があまったので質問を受け付けることもできた",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "國府田・島・高橋",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "34",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "2",
+        "date": "2026-10-09"
       }
     },
     "2026-10-30|6:35～8:05|hon|hon_j2_B_math|2": {
@@ -11600,21 +11492,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "合同の証明",
-        "page": "ｐ41＃42まで",
-        "homework": [
-          "ｐ38"
-        ],
-        "report": "合同条件から合同の証明まで進んだ。比較的みなよくできていた。豊田には少し厳しめにした。",
-        "recordingUrl": "https://benkyokurabu.github.io/student-calendar/calendar.html",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-30|6:35～8:05|hon|hon_j2_S_math|1": {
@@ -11631,22 +11521,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "21角の二等分線と角",
-        "page": "P63",
-        "homework": [
-          "P57,58",
-          "＃69～74"
-        ],
-        "report": "宿題の解説後、P56を演習。その後は要点１７を解説。続けて要点２１まで要点だけ説明をしました。残りを宿題にした感じです。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
-        "teacher": "工藤",
-        "absence": "清宮・村佐・山田",
-        "curriculumProgress": "±0",
+        "teacher": "治彦",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-19"
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-30|6:35～8:05|hon|hon_j3_S_jp|4": {
@@ -11761,13 +11648,13 @@
         "content": "Unit4",
         "page": "＃１８まで",
         "homework": [
-          "HWG!のP62-80"
+          "HWG! Unit4のP62-80"
         ],
         "report": "宿題の確認は中間テスト終了後に行う。音読→和訳と行ったが、水上、鹿内の落ち着きのなさがとても気になる。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/3Zgi6IRrjn2dPrLub153RGoo29EX4D4RTCq9HRvl0r_gTbhs_73WUBWeOiPRAFG059dAFi-bG_BtFsib.D0Y4QXp8e9bBSdA2",
         "teacher": "高山",
         "absence": "細野",
-        "curriculumProgress": "",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -11820,7 +11707,7 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -11829,10 +11716,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-30|8:25～9:55|hon|hon_j3_S_math|2": {
@@ -11849,22 +11736,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "円周角に関する作図",
-        "page": "P70",
-        "homework": [
-          "P69＃１５～＃18",
-          "P71～７４"
-        ],
-        "report": "最後少し急いだが宿題が多めになってしまった。次回はなるべく簡潔に解説を終わらせて三平方に入りたい。",
+        "content": "単元テスト③",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "川田",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "39",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-18"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-30|8:25～9:55|minami|minami_j2_S_eng|2": {
@@ -11987,7 +11871,7 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "中間対策",
+        "content": "単元テスト③",
         "page": "",
         "homework": [],
         "report": "",
@@ -11996,10 +11880,10 @@
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-29"
+        "sessionNumber": "41",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-06"
       }
     }
   }
