@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-24T01:05:27",
+  "generatedAt": "2026-09-24T18:54:06",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -1901,7 +1901,7 @@
       "teacher": "真下",
       "absence": "平居、堀切、大嶋、和田\n中田→無断",
       "curriculumProgress": "－2",
-      "note": "東江と矢田にアイスをあげた/堀切中田は未",
+      "note": "東江と矢田にアイスをあげた/堀切中田は未→24に上げた",
       "sessionNumber": "37",
       "monthNum": "9",
       "weekNum": "1",
@@ -5285,7 +5285,7 @@
         "teacher": "真下",
         "absence": "平居、堀切、大嶋、和田\n中田→無断",
         "curriculumProgress": "－2",
-        "note": "東江と矢田にアイスをあげた/堀切中田は未",
+        "note": "東江と矢田にアイスをあげた/堀切中田は未→24に上げた",
         "sessionNumber": "37",
         "monthNum": "9",
         "weekNum": "1",
@@ -5293,9 +5293,9 @@
       }
     },
     "2026-09-17|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "山形県",
+      "page": "山形県終了",
+      "report": "山形県は、解法に主眼を置き指導。金子・永田・大宮・那須はだいぶ良くなってきた。対して、平野は限界が来ているかもしれない。注視する。",
       "recordingUrl": "",
       "teacher": "高山",
       "absence": "",
@@ -5304,7 +5304,9 @@
       "sessionNumber": "21",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "成城学園"
+      ],
       "prevEntry": {
         "content": "桐朋",
         "page": "51行目まで",
@@ -5344,7 +5346,7 @@
       "recordingUrl": "",
       "teacher": "金子",
       "absence": "米倉",
-      "curriculumProgress": "－",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "9",
@@ -5405,18 +5407,20 @@
       }
     },
     "2026-09-17|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "山形県",
+      "page": "山形県終了",
+      "report": "山形県は、解法に主眼を置き指導。金子・永田・大宮・那須はだいぶ良くなってきた。対して、平野は限界が来ているかもしれない。注視する。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "21",
       "monthNum": "9",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "成城学園"
+      ],
       "prevEntry": {
         "content": "桐朋",
         "page": "51行目まで",
@@ -5545,7 +5549,7 @@
       "page": "P84 3行目まで",
       "report": "UNIT４Part３から。不定詞を忘れてしまっていた生徒が多かったので3用法を復習してから本文の訳に入った。鈴木、堀内以外はまずまずの出来。最後にmustの復習をしてから本文の訳に入った。",
       "recordingUrl": "",
-      "teacher": "岩本",
+      "teacher": "金子",
       "absence": "なし",
       "curriculumProgress": "－0.8",
       "note": "",
@@ -6115,7 +6119,7 @@
         ],
         "report": "UNIT４Part３から。不定詞を忘れてしまっていた生徒が多かったので3用法を復習してから本文の訳に入った。鈴木、堀内以外はまずまずの出来。最後にmustの復習をしてから本文の訳に入った。",
         "recordingUrl": "",
-        "teacher": "岩本",
+        "teacher": "金子",
         "absence": "なし",
         "curriculumProgress": "－0.8",
         "note": "",
@@ -7724,18 +7728,21 @@
       }
     },
     "2026-09-24|4:55～6:15|hon|hon_e4_A_arith|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "四角形の対角線",
+      "page": "P109まで",
+      "report": "対角線が終わり、次のまとめを各自解かせているところ。スピードにかなり差はあるが、川島もそこそこ進めることができていた。途中で集中力が尽きた感じだった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.3",
+      "note": "次回はテストのプリントを用意しておく必要あり",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "計算P47～49",
+        "ドリルP105～107"
+      ],
       "prevEntry": {
         "content": "四角形",
         "page": "P107□３まで",
@@ -7756,18 +7763,21 @@
       }
     },
     "2026-09-24|4:55～6:15|hon|hon_e5_S_arith|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "単位量あたり",
+      "page": "p109まで",
+      "report": "松本雪之丞君が眠そうにしていた。長谷川佳那汰君が平均と合計の関係で少し悩んでいた。解説されるとわかったようだったが、そもそもここは面倒な計算が多い単元なので他にもできてなさそうな者が多い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/XjwVCl1ToXnYg9Xl8D34k3gTdUd2h5aosi6TzivMYcw6fA18YYh5oTuOzkEdxGaZv8RMMPFW00QAIpIb.P2ejOmCNHDm0TMFP",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.5",
+      "note": "カリキュラムが少し遅れた。",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ホープドリルp60～61、p106～107",
+        "算数ドリルp92～95"
+      ],
       "prevEntry": {
         "content": "分数と小数、まとめまで",
         "page": "p63まで",
@@ -7788,18 +7798,21 @@
       }
     },
     "2026-09-24|4:55～6:15|hon|hon_e6_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit7",
+      "page": "Travelp39/ワークp22２(2)/緑p72まで",
+      "report": "堀切緑テキスト忘れ。その後の暗唱などでも冴えない。テスト前に補講に呼びたい。Unit7は４段目までやり、Let'sPのCも。最後に少しワークをやり終了。次回はテスト前のまとめ。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ワークp22の２残り、p23の３，４",
+        "緑p73"
+      ],
       "prevEntry": {
         "content": "Unit7Are you going to?",
         "page": "Travelp38の3段/緑p70まで",
@@ -7820,18 +7833,20 @@
       }
     },
     "2026-09-24|4:55～6:15|minami|minami_e4_A_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "物語文",
+      "page": "P92-93",
+      "report": "高橋は宿題は行ってあったが、かなり乱雑。とりあえず、本日は良しとした。物語文では、ダンさん・高橋の音読が壊滅的で進まない。また、菅原は集中力が続かない。手が非常にかかる。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "漢字帳P129-132"
+      ],
       "prevEntry": {
         "content": "慣用句",
         "page": "漢字帳P123-126",
@@ -7851,18 +7866,21 @@
       }
     },
     "2026-09-24|4:55～6:15|minami|minami_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "ＵＮＩＴ８　Ａ",
+      "page": "P44～46",
+      "report": "白テキストのＰ22～24の答え合わせから。発音はよくできていたが写しミスが多い。後半はＵＮＩＴ８に入り、what do you～の文をたくさん読ませた。かなり進み気味である。",
       "recordingUrl": "",
       "teacher": "金子",
       "absence": "",
-      "curriculumProgress": "",
+      "curriculumProgress": "＋2",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "P46 breafast～dinnerまで",
+        "白テキストＰ25　２"
+      ],
       "prevEntry": {
         "content": "Digital Lesson２",
         "page": "中部地方",
@@ -7882,18 +7900,20 @@
       }
     },
     "2026-09-24|4:55～6:15|minami|minami_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "ことわざ",
+      "page": "漢字帳ｐ１２１～１２２",
+      "report": "今回はことわざについて扱った。ことわざが使える状況を文で書いていったが、みなよく書けていた。文脈をとらえるのが上手になっている。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "細野",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "漢字帳ｐ１２３～１２４"
+      ],
       "prevEntry": {
         "content": "随筆",
         "page": "練成テキストｐｐ５４～５５",
@@ -7913,18 +7933,21 @@
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "中間対策・方程式",
+      "page": "旧テキストp84～91",
+      "report": "小松雅さん、横関亮太君、土屋雄吾君、グエンユミさんは方程式の基本から不安定な部分が多い。田口珠鳳さんはやや文章題に苦労している。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/6LJdi38xmr6slR-ZczQ6L8reHEynZj9KlX1imJCnq4JgLiho6hdYml5Nahglu58_MV9Lh6K8rCk19SPA.pLRFnU-VKVe42VAH",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "戸部海晴\n狩野瑛斗",
+      "curriculumProgress": "±0",
+      "note": "次回単元テストのこと伝える",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "定期テスト対策",
+        "p14～17"
+      ],
       "prevEntry": {
         "content": "平面図形６対称移動させた図形をかく",
         "page": "P6",
@@ -7945,18 +7968,20 @@
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j1_S_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "中間対策（一次方程式）",
+      "page": "巻末・定期テスト対策ｐ14～19",
+      "report": "中間対策として巻末の問題を進める。佐々木、平岡に危うさがあるものの他の者は大体はよくできていた。斎藤は読解力にやや難あり。単元テストでどのような結果になるか。",
       "recordingUrl": "",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "大木",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "単元テスト勉強"
+      ],
       "prevEntry": {
         "content": "要点23歯車",
         "page": "ｐ85♯１１２",
@@ -7976,18 +8001,21 @@
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "HereWeGoUnit4",
+      "page": "#15まで",
+      "report": "黄色の宿題個所の単語てすとから。長谷川、戸部、青木がいつも頑張っている。その後Unit4の続きへ。下線部以外もいろいろ見ていきつつ、下線部は一緒に訳を考えながら進んだ。遅れが大きい。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "単語はp120でいったんおわり/間接疑問、仮定法未指導/前回分の単語賞品",
+      "absence": "大嶋、平居",
+      "curriculumProgress": "－2.5",
+      "note": "単語はp120でいったんおわり/間接疑問、仮定法未指導/中田と堀切にアイス上げた",
       "sessionNumber": "39",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "HereWeGoUnit4の#12～14,",
+        "#16,17"
+      ],
       "prevEntry": {
         "content": "関係代名詞,HereWeGoUnit4",
         "page": "通常テキスト#34/HWGテキスト#4まで",
@@ -8021,36 +8049,39 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "桐朋",
-        "page": "51行目まで",
+        "content": "山形県",
+        "page": "山形県終了",
         "homework": [
-          "ST15/16"
+          "成城学園"
         ],
-        "report": "桐朋の問題は、高校内容が多くその都度解説を行った。金子も答えられないものも多かったので、それなりに歯ごたえは感じている様子。",
+        "report": "山形県は、解法に主眼を置き指導。金子・永田・大宮・那須はだいぶ良くなってきた。対して、平野は限界が来ているかもしれない。注視する。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "20",
+        "sessionNumber": "21",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-10"
+        "weekNum": "2",
+        "date": "2026-09-17"
       }
     },
     "2026-09-24|6:35～8:05|minami|minami_j1_S_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Here We Go UNIT５／Daily life ４",
+      "page": "Here We Go P78単語まで",
+      "report": "Here We Goの続きから。命令文は問題なかったが、疑問詞の抜けが散見。答えの文をしっかりと読み込むよう指導した。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Here We Go UNIT５",
+        "#19～21、24～26"
+      ],
       "prevEntry": {
         "content": "UNIT５",
         "page": "HWG　P69まで",
@@ -8062,7 +8093,7 @@
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "米倉",
-        "curriculumProgress": "－",
+        "curriculumProgress": "－0.5",
         "note": "",
         "sessionNumber": "34",
         "monthNum": "9",
@@ -8071,18 +8102,20 @@
       }
     },
     "2026-09-24|6:35～8:05|minami|minami_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "仮定法",
+      "page": "#５３まで",
+      "report": "今回は仮定法を扱った。過去形の持つニュアンスについて解説をしてから本編に入った。内容はみな問題なく出来ていた。見学の越川は問題なくついて来られていた。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "田中、古田陽、小尾",
+      "curriculumProgress": "±0",
       "note": "今日から越川君が見学予定です。入塾時のテストが２０点です。見学期間内に有料個別が必要かの判断をしてください。／工藤",
       "sessionNumber": "39",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "#５０，５４"
+      ],
       "prevEntry": {
         "content": "間接疑問文",
         "page": "#４４まで",
@@ -8116,36 +8149,39 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "桐朋",
-        "page": "51行目まで",
+        "content": "山形県",
+        "page": "山形県終了",
         "homework": [
-          "ST15/16"
+          "成城学園"
         ],
-        "report": "桐朋の問題は、高校内容が多くその都度解説を行った。金子も答えられないものも多かったので、それなりに歯ごたえは感じている様子。",
+        "report": "山形県は、解法に主眼を置き指導。金子・永田・大宮・那須はだいぶ良くなってきた。対して、平野は限界が来ているかもしれない。注視する。",
         "recordingUrl": "",
         "teacher": "高山",
         "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "20",
+        "sessionNumber": "21",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-10"
+        "weekNum": "2",
+        "date": "2026-09-17"
       }
     },
     "2026-09-24|8:25～9:55|hon|hon_j2_A_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "中間対策・一次関数",
+      "page": "p114～115",
+      "report": "石原悠馬君がやや苦戦気味だった。特に変域の意味などどうしてもわかっていないところが多かったようだった。式を求める問題でも、伊藤彩さんや西沢友羽さんや菊池ほのかさんはわからずにいた。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/Izsl5Mi2I_d5jq3KKwX2tPwP52S0wGd6fvx51TI5kA_UMZKoh0HHpVPtxgunCaCf.0hWu5lrkuuUxdfO6?startTime=1790249249000",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "川島結衣、相吉澤遼\n山口結月",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "旧テキストテスト対策",
+        "p17～22"
+      ],
       "prevEntry": {
         "content": "要点１２合同の証明の進め方まで",
         "page": "p40まで",
@@ -8168,16 +8204,18 @@
     "2026-09-24|8:25～9:55|hon|hon_j3_B_math|1": {
       "content": "中間対策",
       "page": "",
-      "report": "",
+      "report": "新井が宿題がよくできていた。中間対策は文章題を中心に②のテキストのまとめを行う。みなきれいに解き方を忘れていたので基本から。宝満は学校の授業はほとんど理解できないらしい。宝満のせいもあるし自覚もあるが、あまりよくない先生の様子。次回、戸部と宝満は授業後に補講を行う予定。",
       "recordingUrl": "",
       "teacher": "治彦",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "中間テスト教科書ｐ９２まで。基本的な計算も必須",
+      "absence": "大嶋",
+      "curriculumProgress": "±0",
+      "note": "中間テスト教科書ｐ９２まで（二次方程式）。基本的な計算も必須",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "方程式文章題・解き直し"
+      ],
       "prevEntry": {
         "content": "相似①～③",
         "page": "～ｐ６",
@@ -8198,18 +8236,21 @@
       }
     },
     "2026-09-24|8:25～9:55|hon|hon_j3_S_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "DL3はカットで／髙山",
+      "content": "Unit4",
+      "page": "p81Mr.Roboまで",
+      "report": "黄色の宿題個所動詞の活用は口頭で答えさせた。北澤、飯高、那須や川田が答えられないところがあった。Unit4の続きを進めた。関係代名詞以外にもhelpやwithの意味も確かめながら。また意見の述べ方として使える表現がたくさん出てくることを確認。立花や北澤がこのクラスの中ではいろいろ劣る。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.2",
       "note": "前回分の小テ賞品/中間北中10/9、瑞穂10/8の可能性",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "黄色p134,135",
+        "HereWeGoUnit4の#12～14,19～21,23残り"
+      ],
       "prevEntry": {
         "content": "仮定法演習、HereWeGoUnit4",
         "page": "通常テキストp51/HWGp68まで",
@@ -8244,18 +8285,21 @@
       "weekNum": ""
     },
     "2026-09-24|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "unit５",
+      "page": "part３",
+      "report": "今回はunit４，５の単語テストを行った。出来はかなりまちまちだった。堀内、鈴木が抜けて出来ない。逆にダヒョン、末次、川原はよくできる。テストの点数次第では上のクラスでも十分やれそう。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "unit５の#5-7/12-14/19-21",
+        "unit５、unit４part３単語テスト"
+      ],
       "prevEntry": {
         "content": "Unit5",
         "page": "Part2まで",
@@ -8276,18 +8320,20 @@
       }
     },
     "2026-09-24|8:25～9:55|minami|minami_j2_S_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Here We Go UNIT5／Daily life5 単語まで",
+      "page": "P97 単語発音まで",
+      "report": "UNIT5の続きから。have to とdon't have toは問題なかったが、it to構文のfor～の挿入個所を忘れている者が多かったのであらためて復習を入れながら進めた。最後にDaily life５の単語を発音して終了。明日もまた授業があるので、UNIT5のPart２～３の練習部分は宿題としなかった。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.2",
+      "note": "単語テストはファイルに挟んであります。茂呂は未受験。／金子",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "P97 ＃１"
+      ],
       "prevEntry": {
         "content": "HereWeGoUnit4,5",
         "page": "HWGp84#4まで",
@@ -8308,18 +8354,21 @@
       }
     },
     "2026-09-24|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "DLカット／髙山",
-      "recordingUrl": "",
+      "content": "Unit4",
+      "page": "Part3①の和訳まで",
+      "report": "Unit4から行う。解説・和訳を中心に行う。イディオム・指示代名詞・語彙を行ったが、まだ身についていないものが多い。清水はalsoの意味を理解していなかった。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/m8MDvet0iHInEKnOblApDgLAmPGPt2TYQnUu6yjKzb9VpEAouK6ezMeiPGyJCLpj.J_t1SAt89fhUXooV?startTime=1790249859000",
       "teacher": "高山",
-      "absence": "",
+      "absence": "小野・西村",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Unit4 P79-85",
+        "中間テスト勉強"
+      ],
       "prevEntry": {
         "content": "仮定法",
         "page": "#53",
@@ -8891,22 +8940,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit4,5",
-        "page": "HWGp84#4まで",
+        "content": "Here We Go UNIT5／Daily life5 単語まで",
+        "page": "P97 単語発音まで",
         "homework": [
-          "HWGUnit4の#19～21,23,24,単語プリント",
-          "Unit5の#5～7"
+          "P97 ＃１"
         ],
-        "report": "宿題個所のHWG英作文はテキストを伏せて答えさせた。その後Goalへ。下線部以外も解釈しつつ進めた。岩田が和訳で、主語を～は/がと訳さないミスがあったので、しゅごには必ず～は/がとつけて訳すように伝えた。Unit4は確テまで行った。Unit4の単語プリントを宿題化し、次回全く同じものでテストする、と伝えたので、出席簿に挟んであるものを印刷してテストしてください。",
+        "report": "UNIT5の続きから。have to とdon't have toは問題なかったが、it to構文のfor～の挿入個所を忘れている者が多かったのであらためて復習を入れながら進めた。最後にDaily life５の単語を発音して終了。明日もまた授業があるので、UNIT5のPart２～３の練習部分は宿題としなかった。",
         "recordingUrl": "",
-        "teacher": "真下",
-        "absence": "前田",
-        "curriculumProgress": "±0",
-        "note": "中間栄10/2かも/今のところ中間でUnit5が出そうなところはない",
-        "sessionNumber": "35",
+        "teacher": "金子",
+        "absence": "なし",
+        "curriculumProgress": "＋0.2",
+        "note": "単語テストはファイルに挟んであります。茂呂は未受験。／金子",
+        "sessionNumber": "36",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-18"
+        "weekNum": "3",
+        "date": "2026-09-24"
       }
     },
     "2026-09-25|8:25～9:55|minami|minami_j3_S_eng|1": {
@@ -8986,22 +9034,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "間接疑問文",
-        "page": "#４４まで",
+        "content": "仮定法",
+        "page": "#５３まで",
         "homework": [
-          "#４０，４５，５０",
-          "連語帳ｐ１１５，１１６"
+          "#５０，５４"
         ],
-        "report": "今回は間接疑問文を扱った。疑問文の順番から肯定文の順番に直すのがとにかく出来ない生徒が多かった。どこで疑問文を作っているのかが分かっていない様子。全体に向けて、普通の文をまずは復習するよう伝えた。",
+        "report": "今回は仮定法を扱った。過去形の持つニュアンスについて解説をしてから本編に入った。内容はみな問題なく出来ていた。見学の越川は問題なくついて来られていた。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "田中、針谷",
+        "absence": "田中、古田陽、小尾",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "37",
+        "note": "今日から越川君が見学予定です。入塾時のテストが２０点です。見学期間内に有料個別が必要かの判断をしてください。／工藤",
+        "sessionNumber": "39",
         "monthNum": "9",
-        "weekNum": "1",
-        "date": "2026-09-10"
+        "weekNum": "3",
+        "date": "2026-09-24"
       }
     },
     "2026-09-26|4:45～6:15|minami|minami_j3_S_eng|2": {
@@ -9616,22 +9663,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "関係代名詞,HereWeGoUnit4",
-        "page": "通常テキスト#34/HWGテキスト#4まで",
+        "content": "HereWeGoUnit4",
+        "page": "#15まで",
         "homework": [
-          "黄色p112:11～20、p120覚える",
-          "HWGUnit4の#5～7,10"
+          "HereWeGoUnit4の#12～14,",
+          "#16,17"
         ],
-        "report": "黄色の小テから。戸部、青木、矢田、寶滿がよい。瀬戸口もよくなってきた。東江、中村、堀切がよくない。次回分の発音の後、関係代名詞宿題個所。その後Unit4へ。単テまでにUnit5まで終わらせ、そのあと間接疑問と仮定法もあるので、スケジュールが厳しい。",
+        "report": "黄色の宿題個所の単語てすとから。長谷川、戸部、青木がいつも頑張っている。その後Unit4の続きへ。下線部以外もいろいろ見ていきつつ、下線部は一緒に訳を考えながら進んだ。遅れが大きい。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "なし",
-        "curriculumProgress": "－2",
-        "note": "座席を変えたので教室もチェック/出席簿も張り替え/関係代名詞の後Unit4へ/単テは教科書Unit4,5のみ",
-        "sessionNumber": "38",
+        "absence": "大嶋、平居",
+        "curriculumProgress": "－2.5",
+        "note": "単語はp120でいったんおわり/間接疑問、仮定法未指導/中田と堀切にアイス上げた",
+        "sessionNumber": "39",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-17"
+        "weekNum": "3",
+        "date": "2026-09-24"
       }
     },
     "2026-09-28|8:25～9:55|minami|minami_j3_A_sci|2": {
