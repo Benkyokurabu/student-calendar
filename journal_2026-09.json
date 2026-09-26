@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-26T01:37:20",
+  "generatedAt": "2026-09-26T18:36:21",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -5965,7 +5965,7 @@
       "recordingUrl": "",
       "teacher": "金子",
       "absence": "なし",
-      "curriculumProgress": "－",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "9",
@@ -8859,7 +8859,7 @@
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "なし",
-        "curriculumProgress": "－",
+        "curriculumProgress": "－1",
         "note": "",
         "sessionNumber": "33",
         "monthNum": "9",
@@ -9073,16 +9073,18 @@
     "2026-09-26|4:45～6:15|hon|hon_j3_A_math|1": {
       "content": "中間対策",
       "page": "",
-      "report": "",
+      "report": "２次方程式の文章題を練習した。山本がかなりできない。あとはまずまずの感じ。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "大嶋・井上・宍倉・野澤",
+      "curriculumProgress": "±",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "プリントのこり"
+      ],
       "prevEntry": {
         "content": "中間対策",
         "page": "",
@@ -9102,18 +9104,20 @@
       }
     },
     "2026-09-26|4:45～6:15|minami|minami_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "DLカット／髙山",
-      "recordingUrl": "",
+      "content": "Unit4",
+      "page": "#18まで",
+      "report": "教科書Unit4を＃１８まで進める。語彙暗唱・音読・和訳・解説とすすめた。古田兄弟は相変わらず画面オフなので放置。金子さんは具合が悪くなり途中退出した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/WwFjqIDjF9ZJd4lcWmyJ-Z-ZVwLQciAQzKdzXWYbi5kl8ZjerMccb70YAXjUgd0jKYw7tURxrMSfutE.Xs_mqGoYAIFCa4Ru",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "田中・長尾・金子（途中退出）",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Unit4のP66-78を完成"
+      ],
       "prevEntry": {
         "content": "仮定法",
         "page": "#５３まで",
@@ -9133,18 +9137,21 @@
       }
     },
     "2026-09-26|4:45～6:15|minami|minami_j3_S_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "DLカット／髙山",
+      "content": "Here We Go UNIT５　Part３",
+      "page": "P103②まで",
+      "report": "UNIT４を終え、UNIT５へ。関係代名詞の文を中心に復習を入れながら進め、書き換え表現も指導。金子、永田、島がよくできる。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Here We Go UNIT5",
+        "#18、23"
+      ],
       "prevEntry": {
         "content": "Here We Go UNIT4",
         "page": "Goal　Pandaまで",
@@ -9197,19 +9204,19 @@
       }
     },
     "2026-09-26|6:35～8:05|hon|hon_j3_S_sci|1": {
-      "content": "スクーリング",
-      "page": "",
-      "report": "",
+      "content": "スクーリングp142-3",
+      "page": "p１４０－□４まで",
+      "report": "イオンと電気分解。酸まで説明した。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "4",
       "homework": [
-        "重要事項の確認"
+        "ドリルｐ74・75"
       ],
       "prevEntry": {
         "content": "16自然界の生物のはたらき",
@@ -9230,18 +9237,20 @@
       }
     },
     "2026-09-26|6:35～8:05|minami|minami_j1_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "Unit5",
+      "page": "＃１８",
+      "report": "宿題忘れは菊池のみ。次回までに行う様に指示。音読・和訳・語彙を行うとともに、疑問詞操作も扱った。江藤がbe/doの混乱が見られたので、今後も注視が必要か。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/jopREH-J-gSi1071N7cLrvbgPmtdYvnqmV9yZiwyG0hnab_YDrJL6yxdVQCDtqEwMESqRCk19EfxeP--.OvY7Y9F8ocMLiNxR",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "狩野",
+      "curriculumProgress": "－2",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Unit5の#5-7/9/12-14/16"
+      ],
       "prevEntry": {
         "content": "HereWeGoDailyLife/Unit5",
         "page": "HWGテキストのp60#4まで",
@@ -9262,18 +9271,21 @@
       }
     },
     "2026-09-26|6:35～8:05|minami|minami_j1_B_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Here We Go UNIT５／落とし物",
+      "page": "Here We GoP77まで",
+      "report": "UNIT5続きから。疑問詞の意味は相変わらず混同していたのであらためて板書して確認した。柴は何度注意しても同じことを繰り返すので今日は冷たくあしらった。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "佐藤",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Here We Go UNIT5",
+        "#6 13 20"
+      ],
       "prevEntry": {
         "content": "Here We Go UNIT５",
         "page": "Part２まで",
@@ -9309,17 +9321,19 @@
     },
     "2026-09-26|8:25～9:55|hon|hon_j3_A_sci|2": {
       "content": "スクーリング",
-      "page": "",
-      "report": "",
+      "page": "139-3,142-2まで",
+      "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "大嶋・平居",
+      "curriculumProgress": "±1",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "ドリルｐ74・75"
+      ],
       "prevEntry": {
         "content": "16自然界の生物のはたらき",
         "page": "ｐ206-ｐ209",
@@ -9372,18 +9386,21 @@
       }
     },
     "2026-09-26|8:25～9:55|minami|minami_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit5",
+      "page": "確認テストまで",
+      "report": "Uni5を完成させた。昨日同様、川村は手がなかなか動かない。花桐、関は依然と比べだいぶ良化。水上はとにかく落ち着き・集中力がない。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "山本",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "Unit４完成",
+        "Unit5 #16まで完成"
+      ],
       "prevEntry": {
         "content": "Unit5",
         "page": "＃４まで",
@@ -9637,18 +9654,21 @@
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j3_A_soc|2": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "国民主権まで",
+      "page": "マイクリアp126～",
+      "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
       "teacher": "金城",
-      "absence": "",
+      "absence": "大嶋りほ",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "マイクリアp127〇込み",
+        "（p1301⃣～3⃣〇込み）"
+      ],
       "prevEntry": {
         "content": "公民：現代社会、人権思想",
         "page": "マイクリアp122～",
@@ -9796,18 +9816,21 @@
       }
     },
     "2026-09-28|8:25～9:55|minami|minami_j3_S_soc|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "基本的人権",
+      "page": "マイクリアp132～",
+      "report": "基本的人権は、基礎事項はすべて終了。演習はp1352⃣-3まで。次回は続きから。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "マイクリアp133〇こみ",
+        "ドリルp90-91〇込み"
+      ],
       "prevEntry": {
         "content": "国民主権、平和主義、基本的人権",
         "page": "マイクリアp128～",
