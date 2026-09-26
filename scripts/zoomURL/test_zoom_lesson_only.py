@@ -165,6 +165,40 @@ class LessonOnlyRecordingTests(unittest.TestCase):
         self.assertNotIn(url_list.event_key(hon), payload["entries"])
         self.assertIn(url_list.event_key(minami), payload["entries"])
 
+    @patch.object(url_list.z, "ZoomClient")
+    @patch.object(url_list.z, "fetch_recordings_for_events")
+    @patch.object(url_list.z, "load_schedule")
+    @patch.object(url_list.z, "load_meeting_ids")
+    def test_shares_same_meeting_recording_with_paired_online_class(
+        self, load_meeting_ids, load_schedule, fetch_recordings, zoom_client
+    ):
+        common = {
+            "date": "2026-09-16", "time": "8:25～9:55",
+            "grade": "j3", "class": "X", "subject": "math",
+            "teacher": "同じ先生", "faceToFace": False,
+        }
+        hon = {**common, "campus": "hon", "room": "6", "groupKey": "hon_j3_X_math"}
+        minami = {**common, "campus": "minami", "room": "4", "groupKey": "minami_j3_X_math"}
+        candidate = z.RecordingCandidate(
+            meeting_id="2501632659",
+            start_time=datetime(2026, 9, 16, 20, 27, tzinfo=z.JST),
+            end_time=datetime(2026, 9, 16, 21, 53, tzinfo=z.JST),
+            topic="南校 第4教室のパーソナルミーティングルーム",
+            url="https://example.test/south-four", raw={},
+        )
+        load_meeting_ids.return_value = {"hon": {"6": "2501632659"}, "minami": {"4": "2501632659"}}
+        load_schedule.return_value = [hon, minami]
+        fetch_recordings.return_value = {"2501632659": [candidate]}
+
+        payload = url_list.make_recording_json("2026-09")
+
+        hon_entry = payload["entries"][url_list.event_key(hon)]
+        minami_entry = payload["entries"][url_list.event_key(minami)]
+        self.assertEqual(minami_entry["url"], hon_entry["url"])
+        self.assertEqual("minami", hon_entry["recordingCampus"])
+        self.assertEqual(url_list.event_key(minami), hon_entry["sharedFromEventKey"])
+        self.assertNotIn("sharedFromEventKey", minami_entry)
+
     def test_rejects_insufficient_lesson_overlap(self):
         self.assertIsNone(self.match(recording(15, 10)))
 

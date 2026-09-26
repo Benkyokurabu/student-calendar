@@ -45,6 +45,39 @@ def online_lesson_key(ev: dict) -> str:
     ])
 
 
+def share_same_meeting_online_lessons(
+    events: list[dict],
+    local_matches: Dict[str, tuple[dict, z.RecordingCandidate]],
+    meeting_ids: Dict[str, Dict[str, str]],
+) -> Dict[str, tuple[dict, z.RecordingCandidate]]:
+    """Share one verified recording across the two campuses of the same online lesson."""
+    resolved = dict(local_matches)
+    by_lesson: Dict[str, list[dict]] = {}
+    for ev in events:
+        by_lesson.setdefault(online_lesson_key(ev), []).append(ev)
+
+    for pair in by_lesson.values():
+        if len(pair) != 2 or {ev.get("campus") for ev in pair} != {"hon", "minami"}:
+            continue
+        if any(ev.get("faceToFace") or ev.get("special") for ev in pair):
+            continue
+        teachers = {str(ev.get("teacher") or "").strip() for ev in pair}
+        if len(teachers) != 1 or not next(iter(teachers)):
+            continue
+        ids = {z.clean_meeting_id(z.meeting_id_for_event(ev, meeting_ids) or "") for ev in pair}
+        if len(ids) != 1 or not next(iter(ids)):
+            continue
+        sources = [resolved[event_key(ev)] for ev in pair if event_key(ev) in resolved]
+        if len(sources) != 1:
+            continue
+        source_ev, rec = sources[0]
+        if z.clean_meeting_id(rec.meeting_id) != next(iter(ids)):
+            continue
+        target = next(ev for ev in pair if event_key(ev) != event_key(source_ev))
+        resolved[event_key(target)] = (source_ev, rec)
+    return resolved
+
+
 def recording_distance_seconds(ev: dict, rec: z.RecordingCandidate) -> float:
     window = z.parse_lesson_window(ev)
     if window is None:
@@ -81,9 +114,7 @@ def make_recording_json(month: str) -> Dict[str, Any]:
         if rec is not None:
             local_matches[event_key(ev)] = (ev, rec)
 
-    # Never copy a recording between campuses.  Even when grade/class/subject
-    # match, each physical classroom has its own teacher and Zoom recording.
-    resolved_matches = dict(local_matches)
+    resolved_matches = share_same_meeting_online_lessons(events, local_matches, meeting_ids)
 
     entries: Dict[str, dict] = {}
     matched = 0
@@ -114,6 +145,7 @@ def make_recording_json(month: str) -> Dict[str, Any]:
             "onlineLessonKey": online_lesson_key(ev),
             "recordingCampus": source_ev.get("campus", ""),
             "recordingRoom": source_ev.get("room", ""),
+            **({"sharedFromEventKey": event_key(source_ev)} if source_ev is not ev else {}),
             **z.recording_match_audit(source_ev, rec),
         }
 
