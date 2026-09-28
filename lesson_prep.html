@@ -503,77 +503,55 @@ function findRecordingForLesson(ev) {
 }
 
 /* ====== 前回スロットの検索 ====== */
-/* 返り値: { entry, date, time } または null。date は "YYYY-MM-DD", time は "HH:MM～HH:MM" */
+/* 返り値: { entry, date, time } または null。空欄の授業枠も前回として扱う。 */
+function findPreviousSlot(keys, entries, todayDate) {
+  let prevKey = null;
+  for (const key of keys) {
+    if (key.split("|")[0] < todayDate && (!prevKey || key > prevKey)) prevKey = key;
+  }
+  if (!prevKey) return null;
+  const parts = prevKey.split("|");
+  return { entry: entries[prevKey] || {}, date: parts[0], time: parts[1] || "" };
+}
+
 function findPrevEntryForGroupKey(gk, todayDate) {
   const entries = (journalData && journalData.entries) || {};
-  const slots   = (journalMap && journalMap.slots) || {};
-  const slotList = slots[gk] || [];
+  const slots = (journalMap && journalMap.slots) || {};
+  const currentKeys = (slots[gk] || []).length
+    ? slots[gk]
+    : Object.keys(entries).filter(key => key.split("|")[3] === gk);
+  const current = findPreviousSlot(currentKeys, entries, todayDate);
+  if (current) return current;
 
-  // 今日以前の最後のスロットを探す
-  let prevKey = null;
-  for (const key of slotList) {
-    const keyDate = key.split("|")[0];
-    if (keyDate < todayDate) prevKey = key;
-  }
-  if (prevKey) {
-    const entry = entries[prevKey];
-    if (entry && entryHasData(entry)) {
-      const parts = prevKey.split("|");
-      return { entry: entry, date: parts[0], time: parts[1] || "" };
-    }
-  }
-
-  // 同月内になし → 前月を探す
+  // 今月に前回枠がないときだけ、前月の最後の枠を確認する。
   if (!prevMonthJournal || !prevMonthJournal.entries) return null;
   const prevEntries = prevMonthJournal.entries;
-
-  // 前月のjournal_mapがあればスロットベースで検索（最後のスロット）
   const prevSlots = (prevMonthJournalMap && prevMonthJournalMap.slots) || {};
-  const prevSlotList = prevSlots[gk] || [];
-  if (prevSlotList.length) {
-    // 最後のスロット（＝前月最後の授業）から遡って探す
-    for (let i = prevSlotList.length - 1; i >= 0; i--) {
-      const k = prevSlotList[i];
-      const entry = prevEntries[k];
-      if (entry && entryHasData(entry)) {
-        const parts = k.split("|");
-        return { entry: entry, date: parts[0], time: parts[1] || "" };
-      }
-    }
-  }
-
-  // journal_mapがない場合はキースキャンでフォールバック
-  let last = null;
-  for (const [k, v] of Object.entries(prevEntries)) {
-    if (k.includes("|" + gk + "|")) {
-      if (!last || k > last.key) {
-        last = { key: k, data: v };
-      }
-    }
-  }
-  if (last) {
-    const parts = last.key.split("|");
-    return { entry: last.data, date: parts[0], time: parts[1] || "" };
-  }
-  return null;
+  const prevKeys = (prevSlots[gk] || []).length
+    ? prevSlots[gk]
+    : Object.keys(prevEntries).filter(key => key.split("|")[3] === gk);
+  return findPreviousSlot(prevKeys, prevEntries, todayDate);
 }
 
 function entryHasData(e) {
-  return !!(e.content || e.page || e.report || (e.homework && e.homework.length));
+  return !!(e && (e.content || e.page || e.report ||
+    (e.homework && e.homework.length) || e.absence || e.note || e.curriculumProgress));
 }
 
 function findPrevEntry(ev) {
   const groupKeys = ev._pairGroupKeys || [ev.groupKey];
+  let latest = null;
   for (const gk of groupKeys) {
     const result = findPrevEntryForGroupKey(gk, ev.date);
-    if (result && entryHasData(result.entry)) return result;
+    if (!result) continue;
+    const sameSlot = latest && result.date === latest.date && result.time === latest.time;
+    if (!latest || result.date > latest.date ||
+        (result.date === latest.date && result.time > latest.time) ||
+        (sameSlot && entryHasData(result.entry) && !entryHasData(latest.entry))) {
+      latest = result;
+    }
   }
-  // データなしでも何か返す（空のペアの片方）
-  for (const gk of groupKeys) {
-    const result = findPrevEntryForGroupKey(gk, ev.date);
-    if (result) return result;
-  }
-  return null;
+  return latest;
 }
 
 /* ====== オンラインペア重複排除 ====== */
@@ -715,21 +693,12 @@ function render() {
   for (const ev of myLessons) {
     // ペアの場合、両方のキーからセッション情報を探す
     const todayEntry = findTodayEntry(ev, entries);
-    // 前回データ: 埋め込みprevEntryとjournal_map検索のうち、日付が新しい方を使う
+    // 直前の授業枠だけを使う。埋め込みprevEntryは空欄枠を飛ばすため使わない。
     const prevResult = findPrevEntry(ev);
-    const embeddedPrev = todayEntry.prevEntry || null;
-    const embeddedDate = embeddedPrev ? (embeddedPrev.date || "") : "";
-    const mappedDate = prevResult ? (prevResult.date || "") : "";
-    let prev, prevDateLabel, prevTime;
-    if (embeddedPrev && (!mappedDate || embeddedDate >= mappedDate)) {
-      prev = embeddedPrev;
-      prevDateLabel = embeddedDate ? formatDate(embeddedDate) : "";
-      prevTime = "";
-    } else {
-      prev = prevResult ? prevResult.entry : null;
-      prevDateLabel = mappedDate ? formatDate(mappedDate) : "";
-      prevTime = prevResult ? prevResult.time : "";
-    }
+    const hasPrevRecord = !!(prevResult && entryHasData(prevResult.entry));
+    const prev = hasPrevRecord ? prevResult.entry : null;
+    const prevDateLabel = hasPrevRecord ? formatDate(prevResult.date) : "";
+    const prevTime = hasPrevRecord ? prevResult.time : "";
 
     // セッション情報
     const coreSubject = /_(math|eng|jp|arith)$/.test(ev.groupKey || "");
@@ -769,7 +738,9 @@ function render() {
       if (teacher) s += (s ? "／" : "") + teacher;
       return s;
     }
-    const prevCombined = joinInfo(prevDateLabel, prevTime, pt);
+    const prevCombined = hasPrevRecord
+      ? joinInfo(prevDateLabel, prevTime, pt)
+      : "前回の記録がありません";
     const nextCombined = joinInfo(next.date, next.time, next.teacher);
 
     // 校舎・教室表記
