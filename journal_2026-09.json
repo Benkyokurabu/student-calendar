@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-09-28T14:16:06",
+  "generatedAt": "2026-09-28T21:22:58",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -9735,18 +9735,21 @@
       }
     },
     "2026-09-28|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "Unit5,DailyLife5",
+      "page": "p97#1まで",
+      "report": "予告していた単語テストは、加藤が全問正解。また数名が８割以上。一方石原、城崎、中野、松田が振るわず。城崎は授業内で指名した際もだいぶ苦戦することが多い。次回はUnit5の単語をテストするので、そのプリントを配布した。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/-3eAKSgaTX6woSh72Kn-xDqGztPMdD2h7Zm7KLwGoV2rAiQuwG1l81HNuhsLHbxM.uAO7u4aWnRIVyAOQ?startTime=1790594846000",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "笠松、小久保",
+      "curriculumProgress": "－0.7",
+      "note": "城崎単語4/20。次回も振るわなければ補講に。/次回単語満点賞はガリガリ君と宣言した",
       "sessionNumber": "37",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "HereWeGoテキストUnit5#19～21,DailyLife#2",
+        "配布した単語プリント(次回同じものでテストします)"
+      ],
       "prevEntry": {
         "content": "Unit4/5",
         "page": "p93#17まで",

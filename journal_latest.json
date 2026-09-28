@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-09-28T14:31:11",
+  "generatedAt": "2026-09-28T21:38:12",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "",
@@ -1694,22 +1694,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4/5",
-        "page": "p93#17まで",
+        "content": "Unit5,DailyLife5",
+        "page": "p97#1まで",
         "homework": [
-          "前回分の単語プリント,",
-          "Unit5#5～7,12～14,18,p96確テ"
+          "HereWeGoテキストUnit5#19～21,DailyLife#2",
+          "配布した単語プリント(次回同じものでテストします)"
         ],
-        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
-        "recordingUrl": "",
+        "report": "予告していた単語テストは、加藤が全問正解。また数名が８割以上。一方石原、城崎、中野、松田が振るわず。城崎は授業内で指名した際もだいぶ苦戦することが多い。次回はUnit5の単語をテストするので、そのプリントを配布した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/-3eAKSgaTX6woSh72Kn-xDqGztPMdD2h7Zm7KLwGoV2rAiQuwG1l81HNuhsLHbxM.uAO7u4aWnRIVyAOQ?startTime=1790594846000",
         "teacher": "真下",
-        "absence": "松本",
+        "absence": "笠松、小久保",
         "curriculumProgress": "－0.7",
-        "note": "席替えをしたので教室も確認すること",
-        "sessionNumber": "36",
+        "note": "城崎単語4/20。次回も振るわなければ補講に。/次回単語満点賞はガリガリ君と宣言した",
+        "sessionNumber": "37",
         "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "weekNum": "4",
+        "date": "2026-09-28"
       }
     },
     "2026-10-05|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -4295,22 +4295,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4/5",
-        "page": "p93#17まで",
+        "content": "Unit5,DailyLife5",
+        "page": "p97#1まで",
         "homework": [
-          "前回分の単語プリント,",
-          "Unit5#5～7,12～14,18,p96確テ"
+          "HereWeGoテキストUnit5#19～21,DailyLife#2",
+          "配布した単語プリント(次回同じものでテストします)"
         ],
-        "report": "前回宿題にしていた単語プリントとそのテストは次回に延期。Unit4確認テストでは、ところどころ再度解釈させた。Unit5はhave toとdon't have toをmust/mustn'tと比べながら復習。また形式主語のitも、未習の生徒がいる状況なので時間をかけた。",
-        "recordingUrl": "",
+        "report": "予告していた単語テストは、加藤が全問正解。また数名が８割以上。一方石原、城崎、中野、松田が振るわず。城崎は授業内で指名した際もだいぶ苦戦することが多い。次回はUnit5の単語をテストするので、そのプリントを配布した。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/-3eAKSgaTX6woSh72Kn-xDqGztPMdD2h7Zm7KLwGoV2rAiQuwG1l81HNuhsLHbxM.uAO7u4aWnRIVyAOQ?startTime=1790594846000",
         "teacher": "真下",
-        "absence": "松本",
+        "absence": "笠松、小久保",
         "curriculumProgress": "－0.7",
-        "note": "席替えをしたので教室も確認すること",
-        "sessionNumber": "36",
+        "note": "城崎単語4/20。次回も振るわなければ補講に。/次回単語満点賞はガリガリ君と宣言した",
+        "sessionNumber": "37",
         "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "weekNum": "4",
+        "date": "2026-09-28"
       }
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -6483,18 +6483,20 @@
       }
     },
     "2026-10-17|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "物語、文節・単語分け",
+      "page": "p46-49、p20-21",
+      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "11",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": []
+      "homework": [
+        "なし"
+      ]
     },
     "2026-10-17|4:55～6:15|hon|hon_special_英語　　補講③|1": {
       "content": "",
@@ -6511,18 +6513,20 @@
       "weekNum": ""
     },
     "2026-10-17|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "物語、文節・単語分け",
+      "page": "p46-49、p20-21",
+      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "11",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": []
+      "homework": [
+        "なし"
+      ]
     },
     "2026-10-17|6:35～8:05|hon|hon_j1_A_eng|1": {
       "content": "",
