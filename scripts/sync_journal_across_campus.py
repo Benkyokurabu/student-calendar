@@ -30,11 +30,15 @@ from typing import Dict, List, Optional, Set, Tuple
 
 import openpyxl
 
+from cloud_backup import backup_file as backup_file_to_cloud
+
 # ===== オンラインペア対象授業 =====
 # (grade, class, subject) の組み合わせ。これ以外はコピーしない。
 ONLINE_PAIR_CLASSES: List[Tuple[str, str, str]] = [
     ("e4", "X", "jp"),
     ("e4", "X", "arith"),
+    ("e5", "X", "jp"),
+    ("e6", "X", "jp"),
     ("j2", "X", "eng"),
     ("j2", "X", "math"),
     ("j3", "X", "eng"),
@@ -70,11 +74,17 @@ SUBJECT_JP = {
 }
 
 TARGET_FOLDER_NAME = "09　授業日誌"
-BACKUP_DIR_NAME = "_backup"
-BACKUP_KEEP_DAYS = 7
+BACKUP_CATEGORY = "授業日誌/sync_journal_across_campus"
 
 
 # ===== ユーティリティ =====
+
+def is_excluded_journal_path(path: Path, root: Path) -> bool:
+    parts = path.relative_to(root).parts
+    return any(
+        part == "__pycache__" or part.startswith("_backup") or part.startswith("退避")
+        for part in parts[:-1]
+    )
 
 def get_default_repo_dir() -> Optional[Path]:
     candidates = [
@@ -115,7 +125,8 @@ def workbook_filename(campus_code: str, grade_code: str, klass: str, subject_cod
 
 def find_workbook_path(journal_dir: Path, filename: str) -> Optional[Path]:
     for candidate in journal_dir.rglob(filename):
-        if candidate.is_file() and "~$" not in candidate.name and BACKUP_DIR_NAME not in str(candidate):
+        if (candidate.is_file() and "~$" not in candidate.name
+                and not is_excluded_journal_path(candidate, journal_dir)):
             return candidate
     return None
 
@@ -166,40 +177,37 @@ FIELD_OFFSETS = {
     "homework2":    (4, 3),   # top+4, left+3
     "report":       (5, 3),   # top+5, left+3
     "recordingUrl": (11, 2),  # top+11, left+2
+    "absence1":    (12, 1),  # top+12, left+1
+    "absence2":    (13, 1),  # top+13, left+1
+    "curriculumSign":  (14, 6),  # top+14, left+6
+    "curriculumValue": (14, 7),  # top+14, left+7
+    "note":        (15, 1),  # top+15, left+1
 }
+LEGACY_FIELDS = (
+    "content", "page", "homework1", "homework2", "report", "recordingUrl",
+)
 
 
 def read_block(ws, top_row: int, left_col: int) -> dict:
-    content = read_cell_text(ws, top_row + 1, left_col + 2)
-    page = read_cell_text(ws, top_row + 2, left_col + 4)
-    hw1 = read_cell_text(ws, top_row + 3, left_col + 3)
-    hw2 = read_cell_text(ws, top_row + 4, left_col + 3)
-    report = read_cell_text(ws, top_row + 5, left_col + 3)
-    recording_url = read_cell_text(ws, top_row + 11, left_col + 2)
     return {
-        "content": content,
-        "page": page,
-        "homework1": hw1,
-        "homework2": hw2,
-        "report": report,
-        "recordingUrl": recording_url,
+        field_name: read_cell_text(ws, top_row + row_off, left_col + col_off)
+        for field_name, (row_off, col_off) in FIELD_OFFSETS.items()
     }
 
 
 def block_has_content(block: dict) -> bool:
-    return any([block["content"], block["page"],
-                block["homework1"], block["homework2"],
-                block["report"], block["recordingUrl"]])
+    return any(block.get(field_name) for field_name in FIELD_OFFSETS)
 
 
 def write_block(ws, top_row: int, left_col: int, block: dict):
     for field_name, (row_off, col_off) in FIELD_OFFSETS.items():
-        value = block.get(field_name, "")
-        if value:
-            write_cell(ws, top_row + row_off, left_col + col_off, value)
+        if field_name in block:
+            write_cell(ws, top_row + row_off, left_col + col_off, block[field_name])
 
 
-def compare_block_fields(hon_block: dict, min_block: dict) -> Tuple[dict, dict, List[str]]:
+def compare_block_fields(
+    hon_block: dict, min_block: dict, fields=LEGACY_FIELDS,
+) -> Tuple[dict, dict, List[str]]:
     """項目単位で相互補完する差分を返す。
 
     戻り値は (本校に書く項目, 南教室に書く項目, 競合項目)。
@@ -208,7 +216,7 @@ def compare_block_fields(hon_block: dict, min_block: dict) -> Tuple[dict, dict, 
     to_hon = {}
     to_min = {}
     conflicts = []
-    for field_name in FIELD_OFFSETS:
+    for field_name in fields:
         hon_value = hon_block.get(field_name, "")
         min_value = min_block.get(field_name, "")
         if hon_value and not min_value:
@@ -217,6 +225,65 @@ def compare_block_fields(hon_block: dict, min_block: dict) -> Tuple[dict, dict, 
             to_hon[field_name] = min_value
         elif hon_value and min_value and hon_value != min_value:
             conflicts.append(field_name)
+    return to_hon, to_min, conflicts
+
+
+def journal_entry_to_block(entry: dict | None) -> dict | None:
+    """前回公開したJSONを、XクラスのExcel入力セルへ対応付ける。"""
+    if entry is None:
+        return None
+    homework = entry.get("homework") or []
+    if not isinstance(homework, list):
+        homework = [str(homework)]
+    absence = str(entry.get("absence") or "").splitlines()
+    progress = str(entry.get("curriculumProgress") or "").strip()
+    sign = progress[:1] if progress[:1] in {"+", "-", "±"} else ""
+    return {
+        "content": str(entry.get("content") or "").strip(),
+        "page": str(entry.get("page") or "").strip(),
+        "homework1": str(homework[0]).strip() if homework else "",
+        "homework2": str(homework[1]).strip() if len(homework) > 1 else "",
+        "report": str(entry.get("report") or "").strip(),
+        "recordingUrl": str(entry.get("recordingUrl") or "").strip(),
+        "absence1": absence[0].strip() if absence else "",
+        "absence2": absence[1].strip() if len(absence) > 1 else "",
+        "curriculumSign": sign,
+        "curriculumValue": progress[1:].strip() if sign else progress,
+        "note": str(entry.get("note") or "").strip(),
+    }
+
+
+def compare_x_block_fields(
+    hon_block: dict, min_block: dict,
+    previous_hon: dict | None, previous_min: dict | None,
+) -> Tuple[dict, dict, List[str]]:
+    """前回公開値から片側だけ変わった項目は、空欄への訂正も含めて反映する。"""
+    to_hon, to_min, conflicts = {}, {}, []
+    old_hon = journal_entry_to_block(previous_hon)
+    old_min = journal_entry_to_block(previous_min)
+    for field in FIELD_OFFSETS:
+        hon_value = hon_block.get(field, "")
+        min_value = min_block.get(field, "")
+        if hon_value == min_value:
+            continue
+        if old_hon is not None and old_min is not None:
+            hon_changed = hon_value != old_hon[field]
+            min_changed = min_value != old_min[field]
+            if hon_changed and not min_changed:
+                to_min[field] = hon_value
+                continue
+            if min_changed and not hon_changed:
+                to_hon[field] = min_value
+                continue
+            if hon_changed and min_changed:
+                conflicts.append(field)
+                continue
+        if hon_value and not min_value:
+            to_min[field] = hon_value
+        elif min_value and not hon_value:
+            to_hon[field] = min_value
+        else:
+            conflicts.append(field)
     return to_hon, to_min, conflicts
 
 
@@ -236,6 +303,16 @@ def load_schedule(repo_dir: Path, target_month: str) -> list:
     if latest.exists():
         return json.loads(latest.read_text(encoding="utf-8"))
     raise FileNotFoundError(f"スケジュールJSONが見つかりません: {repo_dir}")
+
+
+def journal_event_key(ev: dict) -> str:
+    return "|".join((
+        str(ev.get("date", "")),
+        str(ev.get("time", "")).replace("~", "～").strip(),
+        str(ev.get("campus", "")),
+        str(ev.get("groupKey", "")),
+        str(ev.get("room", "")),
+    ))
 
 
 def determine_month_from_schedule(repo_dir: Path) -> str:
@@ -268,7 +345,7 @@ def build_online_pairs(events: list, target_month: str) -> List[dict]:
     pairs = []
     for key, campus_map in groups.items():
         grade, klass, subject = key[2], key[3], key[4]
-        if (grade, klass, subject) not in ONLINE_PAIR_SET:
+        if klass != "X" and (grade, klass, subject) not in ONLINE_PAIR_SET:
             continue
         if "hon" not in campus_map or "minami" not in campus_map:
             continue
@@ -343,31 +420,18 @@ def event_slot_index(ev: dict, slot_map: Dict[str, int]) -> int:
 # ===== バックアップ =====
 
 def backup_file(file_path: Path, backup_base: Path, timestamp: str):
-    backup_dir = backup_base / BACKUP_DIR_NAME / timestamp
-    backup_dir.mkdir(parents=True, exist_ok=True)
-    dst = backup_dir / file_path.name
-    if not dst.exists():
-        shutil.copy2(file_path, dst)
-        print(f"  [backup] {file_path.name} → {dst.relative_to(backup_base)}")
+    destination = backup_file_to_cloud(
+        file_path,
+        category=BACKUP_CATEGORY,
+        timestamp=timestamp,
+        relative_path=file_path.relative_to(backup_base),
+    )
+    print(f"  [backup] {file_path.name} → {destination}")
 
 
-def cleanup_old_backups(backup_base: Path, keep_days: int = BACKUP_KEEP_DAYS):
-    backup_dir = backup_base / BACKUP_DIR_NAME
-    if not backup_dir.exists():
-        return
-    cutoff = datetime.now().strftime("%Y%m%d")
-    # 日付フォルダ名でソートして古いものを削除
-    dirs = sorted([d for d in backup_dir.iterdir() if d.is_dir()])
-    # keep_days 分の日付数を残す
-    date_set = set()
-    for d in dirs:
-        date_set.add(d.name[:8])
-    dates_sorted = sorted(date_set, reverse=True)
-    dates_to_remove = dates_sorted[keep_days:]
-    for d in dirs:
-        if d.name[:8] in dates_to_remove:
-            shutil.rmtree(d, ignore_errors=True)
-            print(f"  [cleanup] 古いバックアップを削除: {d.name}")
+def cleanup_old_backups(backup_base: Path, keep_days: int = 7):
+    """Compatibility no-op: cloud backups are retained under OneDrive/backup."""
+    return None
 
 
 # ===== Workbook キャッシュ（書き込み用: data_only=False） =====
@@ -400,7 +464,7 @@ class WritableWorkbookCache:
         self._modified.add(filename)
 
     def save_all(self, backup_base: Path, timestamp: str, dry_run: bool = False):
-        import tempfile
+        import os, tempfile
         for filename in self._modified:
             entry = self._cache.get(filename)
             if entry is None:
@@ -411,7 +475,9 @@ class WritableWorkbookCache:
                 continue
             backup_file(path, backup_base, timestamp)
             # OneDriveのロック回避: 一時ファイルに保存してからコピー
-            tmp = Path(tempfile.mktemp(suffix=".xlsx", dir=str(path.parent)))
+            fd, tmp_str = tempfile.mkstemp(suffix=".xlsx", dir=str(path.parent))
+            os.close(fd)
+            tmp = Path(tmp_str)
             try:
                 wb.save(tmp)
                 wb.close()
@@ -439,6 +505,7 @@ def sync_journals(
     journal_dir: Path,
     target_month: str,
     dry_run: bool = False,
+    x_only: bool = False,
 ) -> int:
     year, month = map(int, target_month.split("-"))
     timestamp = datetime.now().strftime("%Y%m%d_%H%M")
@@ -450,7 +517,14 @@ def sync_journals(
 
     # 1. スケジュール読み込み → ペア構築
     events = load_schedule(repo_dir, target_month)
+    previous_path = repo_dir / f"journal_{target_month}.json"
+    previous_entries = (
+        json.loads(previous_path.read_text(encoding="utf-8")).get("entries", {})
+        if previous_path.exists() else {}
+    )
     pairs = build_online_pairs(events, target_month)
+    if x_only:
+        pairs = [pair for pair in pairs if pair["class"] == "X"]
     slot_map = build_slot_indices(events, target_month)
 
     print(f"[sync] オンラインペア: {len(pairs)}件")
@@ -500,12 +574,29 @@ def sync_journals(
             hon_left = FIRST_BLOCK_COL + (hon_slot - 1) * BLOCK_WIDTH
             min_left = FIRST_BLOCK_COL + (min_slot - 1) * BLOCK_WIDTH
 
+            expected_day = int(date[-2:])
+            expected_month = int(date[5:7])
+            if any(
+                read_cell_text(ws, top_row + 5, left) != str(expected_day)
+                or read_cell_text(ws, top_row + 4, left) != str(expected_month)
+                for ws, left in ((hon_ws, hon_left), (min_ws, min_left))
+            ):
+                print(f"  [WARN] 日付が予定と一致しないためコピーを保留: {date} {grade}{klass} {subject}")
+                continue
+
             hon_block = read_block(hon_ws, top_row, hon_left)
             min_block = read_block(min_ws, top_row, min_left)
 
             label = f"{GRADE_JP.get(grade,'')}{klass} {SUBJECT_JP.get(subject,'')} {date}"
 
-            to_hon, to_min, conflicts = compare_block_fields(hon_block, min_block)
+            if klass == "X":
+                to_hon, to_min, conflicts = compare_x_block_fields(
+                    hon_block, min_block,
+                    previous_entries.get(journal_event_key(pair["hon_event"])),
+                    previous_entries.get(journal_event_key(pair["minami_event"])),
+                )
+            else:
+                to_hon, to_min, conflicts = compare_block_fields(hon_block, min_block)
 
             if to_min:
                 fields = ", ".join(to_min)
@@ -547,6 +638,7 @@ def main():
     ap.add_argument("--journal-dir", help="授業日誌フォルダ")
     ap.add_argument("--month", help="対象月（YYYY-MM）")
     ap.add_argument("--dry-run", action="store_true", help="書き込みせず確認だけ")
+    ap.add_argument("--x-only", action="store_true", help="Xクラスだけを同期する")
     args = ap.parse_args()
 
     repo_dir = Path(args.repo_dir).resolve() if args.repo_dir else get_default_repo_dir()
@@ -561,7 +653,7 @@ def main():
     if not target_month:
         target_month = determine_month_from_schedule(repo_dir)
 
-    sync_journals(repo_dir, journal_dir, target_month, dry_run=args.dry_run)
+    sync_journals(repo_dir, journal_dir, target_month, dry_run=args.dry_run, x_only=args.x_only)
 
 
 if __name__ == "__main__":
