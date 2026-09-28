@@ -75,6 +75,7 @@ SUBJECT_JP = {
 
 TARGET_FOLDER_NAME = "09　授業日誌"
 BACKUP_CATEGORY = "授業日誌/sync_journal_across_campus"
+X_SYNC_START_MONTH = "2026-09"
 
 
 # ===== ユーティリティ =====
@@ -365,6 +366,14 @@ def build_online_pairs(events: list, target_month: str) -> List[dict]:
     return pairs
 
 
+def select_sync_pairs(events: list, target_month: str, x_only: bool = False) -> List[dict]:
+    pairs = [
+        pair for pair in build_online_pairs(events, target_month)
+        if pair["class"] != "X" or target_month >= X_SYNC_START_MONTH
+    ]
+    return [pair for pair in pairs if pair["class"] == "X"] if x_only else pairs
+
+
 # ===== スロット番号の算出 =====
 
 def build_slot_indices(events: list, target_month: str) -> Dict[str, int]:
@@ -522,9 +531,7 @@ def sync_journals(
         json.loads(previous_path.read_text(encoding="utf-8")).get("entries", {})
         if previous_path.exists() else {}
     )
-    pairs = build_online_pairs(events, target_month)
-    if x_only:
-        pairs = [pair for pair in pairs if pair["class"] == "X"]
+    pairs = select_sync_pairs(events, target_month, x_only=x_only)
     slot_map = build_slot_indices(events, target_month)
 
     print(f"[sync] オンラインペア: {len(pairs)}件")

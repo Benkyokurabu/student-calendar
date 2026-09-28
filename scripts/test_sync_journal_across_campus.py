@@ -3,7 +3,7 @@ from openpyxl import Workbook
 
 from sync_journal_across_campus import (
     FIELD_OFFSETS, ONLINE_PAIR_SET, build_online_pairs, compare_block_fields,
-    compare_x_block_fields, read_block, write_block,
+    compare_x_block_fields, read_block, select_sync_pairs, write_block,
 )
 
 
@@ -20,6 +20,17 @@ class CompareBlockFieldsTests(unittest.TestCase):
             for campus in ("hon", "minami")
         ]
         self.assertEqual(1, len(build_online_pairs(events, "2026-10")))
+
+    def test_x_sync_is_limited_to_september_and_later(self):
+        def events(month):
+            return [
+                {"date": f"{month}-12", "time": "4:55～6:15", "grade": "e6",
+                 "class": "X", "subject": "jp", "campus": campus,
+                 "faceToFace": False}
+                for campus in ("hon", "minami")
+            ]
+        self.assertEqual([], select_sync_pairs(events("2026-08"), "2026-08", x_only=True))
+        self.assertEqual(1, len(select_sync_pairs(events("2026-09"), "2026-09", x_only=True)))
 
     def test_x_class_copies_absence_progress_and_note(self):
         hon = Workbook().active
