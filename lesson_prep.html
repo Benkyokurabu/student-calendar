@@ -743,8 +743,8 @@ function render() {
       if (teacher) s += (s ? "／" : "") + teacher;
       return s;
     }
-    const prevCombined = hasPrevRecord
-      ? joinInfo(prevDateLabel, prevTime, pt)
+    const prevCombined = prevResult
+      ? joinInfo(prevDateLabel, prevTime, pt) + (hasPrevRecord ? "" : "／前回の記録がありません")
       : "前回の記録がありません";
     const nextCombined = joinInfo(next.date, next.time, next.teacher);
 
