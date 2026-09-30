@@ -503,15 +503,22 @@ function findRecordingForLesson(ev) {
 }
 
 /* ====== 前回スロットの検索 ====== */
-/* 返り値: { entry, date, time } または null。空欄の授業枠も前回として扱う。 */
+/* 返り値: { entry, date, time } または null。date は "YYYY-MM-DD", time は "HH:MM～HH:MM" */
+function previousSlotOrder(result) {
+  const start = (result.time || "").split(/[～~]/)[0].trim();
+  const [hour = "0", minute = "0"] = start.split(":");
+  return result.date + "|" + hour.padStart(2, "0") + ":" + minute.padStart(2, "0");
+}
+
 function findPreviousSlot(keys, entries, todayDate) {
-  let prevKey = null;
+  let latest = null;
   for (const key of keys) {
-    if (key.split("|")[0] < todayDate && (!prevKey || key > prevKey)) prevKey = key;
+    const [date, time] = key.split("|");
+    if (date >= todayDate) continue;
+    const candidate = { entry: entries[key] || {}, date, time: time || "" };
+    if (!latest || previousSlotOrder(candidate) > previousSlotOrder(latest)) latest = candidate;
   }
-  if (!prevKey) return null;
-  const parts = prevKey.split("|");
-  return { entry: entries[prevKey] || {}, date: parts[0], time: parts[1] || "" };
+  return latest;
 }
 
 function findPrevEntryForGroupKey(gk, todayDate) {
@@ -523,7 +530,6 @@ function findPrevEntryForGroupKey(gk, todayDate) {
   const current = findPreviousSlot(currentKeys, entries, todayDate);
   if (current) return current;
 
-  // 今月に前回枠がないときだけ、前月の最後の枠を確認する。
   if (!prevMonthJournal || !prevMonthJournal.entries) return null;
   const prevEntries = prevMonthJournal.entries;
   const prevSlots = (prevMonthJournalMap && prevMonthJournalMap.slots) || {};
@@ -544,9 +550,8 @@ function findPrevEntry(ev) {
   for (const gk of groupKeys) {
     const result = findPrevEntryForGroupKey(gk, ev.date);
     if (!result) continue;
-    const sameSlot = latest && result.date === latest.date && result.time === latest.time;
-    if (!latest || result.date > latest.date ||
-        (result.date === latest.date && result.time > latest.time) ||
+    const sameSlot = latest && previousSlotOrder(result) === previousSlotOrder(latest);
+    if (!latest || previousSlotOrder(result) > previousSlotOrder(latest) ||
         (sameSlot && entryHasData(result.entry) && !entryHasData(latest.entry))) {
       latest = result;
     }
@@ -697,8 +702,8 @@ function render() {
     const prevResult = findPrevEntry(ev);
     const hasPrevRecord = !!(prevResult && entryHasData(prevResult.entry));
     const prev = hasPrevRecord ? prevResult.entry : null;
-    const prevDateLabel = hasPrevRecord ? formatDate(prevResult.date) : "";
-    const prevTime = hasPrevRecord ? prevResult.time : "";
+    const prevDateLabel = prevResult ? formatDate(prevResult.date) : "";
+    const prevTime = prevResult ? prevResult.time : "";
 
     // セッション情報
     const coreSubject = /_(math|eng|jp|arith)$/.test(ev.groupKey || "");
