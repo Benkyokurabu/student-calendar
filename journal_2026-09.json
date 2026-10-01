@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-10-01T00:14:28",
+  "generatedAt": "2026-10-01T15:35:22+09:00",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -7300,34 +7300,34 @@
       }
     },
     "2026-09-23|4:45～6:15|minami|minami_j1_B_math|3": {
-      "content": "まとめ・中間対策",
-      "page": "定期テスト対策p15",
-      "report": "齋藤陽茉さんがやはりまだやったことのないところが多く苦労していた。基本計算は時間をかけてやったが、まだ不安定なところが多い。",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/ePEPzGDuN-IwZMSkjy3KrOsNMKzvGbwvwt82fWwqNAdf8Yo96_q6lguAIKJwDXL8kjAwpYG6fcEHzD7-.tskFWXe5kl9sswhY",
+      "content": "方程式、基礎計算練習",
+      "page": "定期テスト対策p14",
+      "homework": [],
+      "report": "柴正樹君はまたしてもテキストを持ってきていなかったので、お父さんに持ってきてもらった。やはり宿題はやっていなかったので少し厳しめに叱った。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/FAAtVpD4FSZkOYTIkq4FW34nfHVLopjgV4Atr4TV-nKpxBi9ztMcm_DqJmZOoq48kEpCqzIBcV8as7tJ.qzElV0QH5twscz3n",
       "teacher": "森松",
       "absence": "安田美咲\n佐藤壱星",
       "curriculumProgress": "±0",
-      "note": "次回次のテキスト配布する。次回単元テストだと伝える。",
-      "sessionNumber": "特",
+      "note": "",
+      "sessionNumber": "34",
       "monthNum": "9",
-      "weekNum": "特",
-      "homework": [
-        "p39～41"
-      ],
+      "weekNum": "3",
       "prevEntry": {
-        "content": "方程式、基礎計算練習",
-        "page": "定期テスト対策p14",
-        "homework": [],
-        "report": "柴正樹君はまたしてもテキストを持ってきていなかったので、お父さんに持ってきてもらった。やはり宿題はやっていなかったので少し厳しめに叱った。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/FAAtVpD4FSZkOYTIkq4FW34nfHVLopjgV4Atr4TV-nKpxBi9ztMcm_DqJmZOoq48kEpCqzIBcV8as7tJ.qzElV0QH5twscz3n",
+        "content": "要点１５速さのグラフまで",
+        "page": "p57",
+        "homework": [
+          "p64、66"
+        ],
+        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
         "teacher": "森松",
-        "absence": "安田美咲\n佐藤壱星",
+        "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "34",
+        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
+        "sessionNumber": "33",
         "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-23"
+        "weekNum": "2",
+        "date": "2026-09-16"
       }
     },
     "2026-09-23|4:55～6:15|minami|minami_special_数学　補講③|1": {
@@ -7481,34 +7481,34 @@
       }
     },
     "2026-09-23|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "方程式、基礎計算練習",
-      "page": "定期テスト対策p14",
-      "report": "柴正樹君はまたしてもテキストを持ってきていなかったので、お父さんに持ってきてもらった。やはり宿題はやっていなかったので少し厳しめに叱った。",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/FAAtVpD4FSZkOYTIkq4FW34nfHVLopjgV4Atr4TV-nKpxBi9ztMcm_DqJmZOoq48kEpCqzIBcV8as7tJ.qzElV0QH5twscz3n",
+      "content": "まとめ・中間対策",
+      "page": "定期テスト対策p15",
+      "homework": [
+        "p39～41"
+      ],
+      "report": "齋藤陽茉さんがやはりまだやったことのないところが多く苦労していた。基本計算は時間をかけてやったが、まだ不安定なところが多い。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/ePEPzGDuN-IwZMSkjy3KrOsNMKzvGbwvwt82fWwqNAdf8Yo96_q6lguAIKJwDXL8kjAwpYG6fcEHzD7-.tskFWXe5kl9sswhY",
       "teacher": "森松",
       "absence": "安田美咲\n佐藤壱星",
       "curriculumProgress": "±0",
-      "note": "",
-      "sessionNumber": "34",
+      "note": "次回次のテキスト配布する。次回単元テストだと伝える。",
+      "sessionNumber": "特",
       "monthNum": "9",
-      "weekNum": "3",
-      "homework": [],
+      "weekNum": "特",
       "prevEntry": {
-        "content": "要点１５速さのグラフまで",
-        "page": "p57",
-        "homework": [
-          "p64、66"
-        ],
-        "report": "柴将希君、滑川澄玲さん、矢崎じょう君は宿題をやってこないのがくせになっている。一方安田美咲さん、藤井俊介君は以前よりかなり真面目にやってくるようになってきた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/-c317Is8U1C3oZ24fQqPYYQLVw5iCBgQQBQBaeRWU6P6qtDgolzxsbk9cLi3ju6DBKpy2pAXzRfMwC3v.ZhYOtJbdGc0F5LEc",
+        "content": "方程式、基礎計算練習",
+        "page": "定期テスト対策p14",
+        "homework": [],
+        "report": "柴正樹君はまたしてもテキストを持ってきていなかったので、お父さんに持ってきてもらった。やはり宿題はやっていなかったので少し厳しめに叱った。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/FAAtVpD4FSZkOYTIkq4FW34nfHVLopjgV4Atr4TV-nKpxBi9ztMcm_DqJmZOoq48kEpCqzIBcV8as7tJ.qzElV0QH5twscz3n",
         "teacher": "森松",
-        "absence": "なし",
+        "absence": "安田美咲\n佐藤壱星",
         "curriculumProgress": "±0",
-        "note": "柴正樹君は前回の宿題を確認（持ってくるのを忘れたとか言っていたため）p55～56、p68～71",
-        "sessionNumber": "33",
+        "note": "",
+        "sessionNumber": "34",
         "monthNum": "9",
-        "weekNum": "2",
-        "date": "2026-09-16"
+        "weekNum": "3",
+        "date": "2026-09-23"
       }
     },
     "2026-09-23|6:35～8:05|minami|minami_j3_A_math|1": {

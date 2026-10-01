@@ -267,6 +267,37 @@ def build_group_slot_map(events: List[dict], slots_map: Optional[dict]) -> Dict[
     return result
 
 
+def build_same_day_positions(events: List[dict]) -> Dict[str, Tuple[int, int]]:
+    """Match consecutive same-class lessons to Excel columns by start time."""
+    groups: Dict[Tuple[str, str, str, str, str], List[dict]] = defaultdict(list)
+    for ev in events:
+        identity = tuple(str(ev.get(field, "")) for field in
+                         ("campus", "grade", "subject", "class", "date"))
+        if all(identity):
+            groups[identity].append(ev)
+
+    positions: Dict[str, Tuple[int, int]] = {}
+    for identity, same_day in groups.items():
+        if len(same_day) < 2:
+            continue
+        timed = []
+        for ev in same_day:
+            start = normalize_time(ev.get("time", "")).split("～", 1)[0]
+            match = re.fullmatch(r"(\d{1,2}):(\d{2})", start)
+            if not match:
+                raise ValueError(f"連続授業の開始時刻を判定できません: {identity} {start}")
+            timed.append((int(match.group(1)) * 60 + int(match.group(2)), ev))
+        timed.sort(key=lambda item: item[0])
+        if len({minute for minute, _ in timed}) != len(timed):
+            raise ValueError(f"連続授業の開始時刻が重複しています: {identity}")
+        for index, (_, ev) in enumerate(timed):
+            key = make_entry_key(ev)
+            if key in positions:
+                raise ValueError(f"連続授業のキーが重複しています: {key}")
+            positions[key] = (index, len(timed))
+    return positions
+
+
 def subject_for_filename(grade_key: str, subj_key: str) -> str:
     """小学生(e4,e5,e6)の math は '算数' に変換"""
     if subj_key == "math" and grade_key in ("e4", "e5", "e6"):
@@ -366,6 +397,14 @@ def _slot_has_day(ws, col_left: int) -> bool:
         if v is not None and str(v).strip() != "":
             return True
     return False
+
+
+def _find_block_cols(ws, top_row: int, day: int) -> List[int]:
+    """Return all Excel columns matching the class and date, left to right."""
+    return [
+        col for col in slot_columns(ws)
+        if read_merged_text(ws, top_row + 5, col) == str(day)
+    ]
 
 
 def _find_block_col(ws, top_row: int, day: int, want_special: Optional[bool] = None) -> Optional[int]:
@@ -589,7 +628,10 @@ def _read_prev_entry(wb, ws, year: int, month: int, slot_index: int,
     return None
 
 
-def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) -> dict:
+def extract_entry_for_event(
+    ev: dict, slot_index: int, wb_cache: WorkbookCache, *,
+    same_day_position: Optional[Tuple[int, int]] = None,
+) -> dict:
     empty = {"content": "", "page": "", "homework": [], "report": "", "recordingUrl": "",
              "teacher": "", "absence": "", "curriculumProgress": "", "note": "",
              "sessionNumber": "", "monthNum": "", "weekNum": ""}
@@ -625,8 +667,19 @@ def extract_entry_for_event(ev: dict, slot_index: int, wb_cache: WorkbookCache) 
     # Excel上の実際の日付で列を特定し直す（繰り越し等のレイアウトズレに強い）。
     # 見つからない場合のみ slot_index からの計算値を使う。
     day = int(m.group(3))
-    want_special = bool(ev.get("special", False))
-    found_col = _find_block_col(ws, top_row, day, want_special)
+    if same_day_position is not None:
+        index, count = same_day_position
+        found_cols = _find_block_cols(ws, top_row, day)
+        if len(found_cols) != count:
+            raise ValueError(
+                "連続授業と日誌Excelの日付列数が一致しません: "
+                f"date={date} groupKey={ev.get('groupKey')} file={filename} "
+                f"lessons={count} columns={found_cols}"
+            )
+        found_col = found_cols[index]
+    else:
+        want_special = bool(ev.get("special", False))
+        found_col = _find_block_col(ws, top_row, day, want_special)
     if found_col is not None:
         left_col = found_col
         slot_index = (found_col - FIRST_BLOCK_COL) // BLOCK_WIDTH + 1
@@ -717,6 +770,7 @@ def main() -> None:
         slots_map = load_json(map_latest)
 
     slot_map = build_group_slot_map(events, slots_map)
+    same_day_positions = build_same_day_positions(events)
 
     entries = {}
     with tempfile.TemporaryDirectory() as tmp:
@@ -727,7 +781,10 @@ def main() -> None:
                     continue
                 key = make_entry_key(ev)
                 slot_index = slot_map.get(key, 1)
-                entries[key] = extract_entry_for_event(ev, slot_index, wb_cache)
+                entries[key] = extract_entry_for_event(
+                    ev, slot_index, wb_cache,
+                    same_day_position=same_day_positions.get(key),
+                )
         finally:
             wb_cache.close_all()
 
