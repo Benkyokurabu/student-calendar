@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-01T18:21:03.327082+09:00",
-  "matched": 2,
-  "missing": 377,
+  "generatedAt": "2026-10-01T18:30:03.669717+09:00",
+  "matched": 4,
+  "missing": 375,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/X8caYInL9w5cTrbVCDHtEYbBrHwCu4198ZVsMRbar_Ba5Hzn3C8IdiHxnHIN8M9T7i5qeQCLxfrw585I.oXMCVGF32dlsX_VS",
@@ -47,6 +47,50 @@
       "startOffsetMinutes": 8.8,
       "recordingDurationMinutes": 66.7,
       "lessonOverlapMinutes": 66.7
+    },
+    "2026-10-01|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "url": "https://us06web.zoom.us/rec/play/zxT69rS32Xu_1dWrIOtqkjkWyb7P4xdyNZf7E2Q9tYcxyJN8upF_1eKrQDLnCszpE0sV5d4oqAxhNyEk.aPookzvY-yvGPXe-",
+      "recordingStart": "2026-10-01T16:55:51+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-10-01",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "2",
+      "grade": "e5",
+      "class": "S",
+      "subject": "arith",
+      "label": "小５S 算数",
+      "teacher": "森松",
+      "onlineLessonKey": "2026-10-01|4:55～6:15|e5|S|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 0.8,
+      "recordingDurationMinutes": 80.6,
+      "lessonOverlapMinutes": 79.2
+    },
+    "2026-10-01|4:55～6:15|hon|hon_e6_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/dZnw9JBL76Art8BbRBduTX2XznLdcRtAN59k76aNJ1sXUvbTIgcLOWH_AlxIBUhn_GRepwEyodjE3r7V.u_zxFUMpXXPZ1UUG",
+      "recordingStart": "2026-10-01T17:37:04+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-01",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "1",
+      "grade": "e6",
+      "class": "A",
+      "subject": "eng",
+      "label": "小６A 英語",
+      "teacher": "真下",
+      "onlineLessonKey": "2026-10-01|4:55～6:15|e6|A|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 42.1,
+      "recordingDurationMinutes": 41.1,
+      "lessonOverlapMinutes": 37.9
     }
   }
 }
