@@ -454,6 +454,11 @@ def _day_int(ev) -> int:
     return int(d) if d.isdigit() else 0
 
 
+def _start_minutes(ev) -> Optional[int]:
+    match = re.match(r"\s*(\d{1,2}):(\d{2})", str(getattr(ev, "time", "") or ""))
+    return int(match.group(1)) * 60 + int(match.group(2)) if match else None
+
+
 def _build_merged_slots(classes: dict, order: List[str],
                         prepend_gray: Optional[Dict[str, int]] = None) -> List[dict]:
     """
@@ -486,7 +491,7 @@ def _build_merged_slots(classes: dict, order: List[str],
         regular_slots.append(slot)
 
     # 特イベントの挿入位置を決定（同クラスの通常イベントの時系列位置）
-    insert_items: List[Tuple[int, int, str, Event]] = []
+    insert_items: List[Tuple[int, int, int, str, Event]] = []
     for k in order:
         for ev in specials[k]:
             day_val = _day_int(ev)
@@ -494,18 +499,28 @@ def _build_merged_slots(classes: dict, order: List[str],
             for ri, reg_ev in enumerate(regulars[k]):
                 if reg_ev is _GRAY_PLACEHOLDER:
                     continue
-                if day_val < _day_int(reg_ev):
+                regular_day = _day_int(reg_ev)
+                if day_val < regular_day:
                     insert_before = ri
                     break
-            insert_items.append((insert_before, day_val, k, ev))
-    insert_items.sort(key=lambda x: (x[0], x[1]))
+                if day_val == regular_day:
+                    special_start = _start_minutes(ev)
+                    regular_start = _start_minutes(reg_ev)
+                    if special_start is None or regular_start is None or special_start == regular_start:
+                        raise ValueError(f"同日授業の時刻順を判定できません: class={k} day={day_val}")
+                    if special_start < regular_start:
+                        insert_before = ri
+                        break
+            start = _start_minutes(ev)
+            insert_items.append((insert_before, day_val, start if start is not None else 9999, k, ev))
+    insert_items.sort(key=lambda x: (x[0], x[1], x[2]))
 
     # 通常スロット列に特スロットを挿入
     merged: List[dict] = []
     sp_idx = 0
     for ri in range(max_regular):
         while sp_idx < len(insert_items) and insert_items[sp_idx][0] == ri:
-            _, _, k, ev = insert_items[sp_idx]
+            _, _, _, k, ev = insert_items[sp_idx]
             sp_slot: dict = {"_special": True}
             for kk in order:
                 sp_slot[kk] = ev if kk == k else None
@@ -515,7 +530,7 @@ def _build_merged_slots(classes: dict, order: List[str],
 
     # 通常イベントの末尾以降に挿入される特（末尾の特）
     while sp_idx < len(insert_items):
-        _, _, k, ev = insert_items[sp_idx]
+        _, _, _, k, ev = insert_items[sp_idx]
         sp_slot = {"_special": True}
         for kk in order:
             sp_slot[kk] = ev if kk == k else None

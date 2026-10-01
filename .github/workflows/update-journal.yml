@@ -19,6 +19,7 @@ on:
       - 'scripts/test_journal_slots.py'
       - 'scripts/test_journal_input_controls.py'
       - 'scripts/export_by_grade_subject.py'
+      - 'scripts/test_same_day_slot_order.py'
       - 'scripts/TEMPLATE_MAIN.xlsx'
       - 'scripts/TEMPLATE_X.xlsx'
   schedule:
@@ -87,6 +88,9 @@ jobs:
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
+
+      - name: Test same-day workbook slot order
+        run: python -m unittest discover -s scripts -p test_same_day_slot_order.py -v
 
       - name: Verify 21 lesson slots and preservation
         run: python -m unittest discover -s scripts -p test_journal_slots.py -v
