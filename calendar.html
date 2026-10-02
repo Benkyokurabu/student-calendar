@@ -511,6 +511,7 @@
   let journalLoadedYM = null;
   let zoomRecordingEntries = {};
   let recordingOverrides = {};
+  let recordingReleaseRules = [];
   let recordingsLoadedYM = null;
 
   gradeSelect.addEventListener("change", () => {
@@ -794,12 +795,14 @@
     const legacyOverrideLatestFile = "recording_overrides_latest.json";
     const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
     const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
-    const [monthly, latest, overrideLatest, overrideMonthly] = await Promise.all([
+    const [monthly, latest, overrideLatest, overrideMonthly, releaseState] = await Promise.all([
       fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
       fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),
       fetchNewestJsonAny([overrideLatestFile, rawJsonUrl(overrideLatestFile), legacyOverrideLatestFile, rawJsonUrl(legacyOverrideLatestFile)]),
       fetchNewestJsonAny([overrideMonthlyFile, rawJsonUrl(overrideMonthlyFile), legacyOverrideMonthlyFile, rawJsonUrl(legacyOverrideMonthlyFile)]),
+      fetchNewestJsonAny(["recording_release.json", rawJsonUrl("recording_release.json")]),
     ]);
+    recordingReleaseRules = releaseState?.rules || [];
     zoomRecordingEntries = {
       ...normalizeRecordingEntries(latest),
       ...normalizeRecordingEntries(monthly),
@@ -873,6 +876,7 @@
   }
 
   function findRecordingUrlForLesson(it, entry) {
+    if (isRecordingBlocked(it)) return "";
     const override = findRecordingRecordForLesson(it, recordingOverrides);
     if (override !== null) return recordingUrlFromRecord(override);
     // Exact date/time/campus/class/room match takes priority over stale journal links.
@@ -880,6 +884,11 @@
     const recordingUrl = recordingUrlFromRecord(matched);
     if (recordingUrl) return recordingUrl;
     return String(entry?.recordingUrl || "").trim();
+  }
+
+  function isRecordingBlocked(it) {
+    const key = buildEventKeyFromLesson(it);
+    return recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== "released");
   }
 
   function formatMultiline(text) {
@@ -898,7 +907,7 @@
     const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">－</span>`;
 
     const url = findRecordingUrlForLesson(it, entry);
-    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">－</span>`;
+    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">${isRecordingBlocked(it) ? "公開待ち" : "－"}</span>`;
 
     return `
       <tr class="journal-row">

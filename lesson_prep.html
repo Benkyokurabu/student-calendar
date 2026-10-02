@@ -765,6 +765,7 @@ function render() {
         <div class="card-tools">
           <div class="card-label">${shortLabel(ev)}</div>
           ${recordingButton}
+          ${recording ? `<button type="button" class="btn-copy-recording btn-release-settings" data-key="${escAttr(makeKey(ev))}">公開設定</button>` : ""}
         </div>
       </div>
       ${sessionText.length ? '<div class="card-session">' + sessionText.join("　") + '</div>' : ''}
@@ -838,6 +839,14 @@ function escAttr(s) {
 }
 
 document.addEventListener("click", async function(e) {
+  const settings = e.target.closest(".btn-release-settings");
+  if (settings) {
+    try { await navigator.clipboard.writeText(settings.dataset.key); }
+    catch { window.prompt("授業キーをコピーしてください", settings.dataset.key); }
+    window.open("https://github.com/Benkyokurabu/student-calendar/actions/workflows/recording-release.yml", "_blank", "noopener");
+    alert("授業キーをコピーしました。Run workflow の event_key に貼り付け、公開方法と日本時間を設定してください。scheduled＝日時指定、private＝非公開、public＝今すぐ公開。完了は実行結果で確認できます。");
+    return;
+  }
   const btn = e.target.closest(".btn-copy-recording");
   if (!btn) return;
   const url = btn.dataset.url || "";

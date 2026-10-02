@@ -1,0 +1,57 @@
+name: 録画の公開予約
+on:
+  workflow_dispatch:
+    inputs:
+      event_key:
+        description: '対象授業（授業準備の「公開設定」からコピー）'
+        required: true
+        type: string
+      mode:
+        description: 'scheduled=日時指定 / private=非公開 / public=今すぐ公開'
+        required: true
+        default: scheduled
+        type: choice
+        options: [scheduled, private, public]
+      release_at:
+        description: '公開日時（日本時間）例 2026-10-10T22:00。非公開・今すぐ公開は空欄'
+        type: string
+        required: false
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: zoom-recording-url-publish
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python -m unittest discover -s scripts/zoomURL -p 'test_recording_release.py'
+      - name: Zoom共有設定を適用・再取得
+        env:
+          ZOOM_ACCOUNT_ID: ${{ secrets.ZOOM_ACCOUNT_ID }}
+          ZOOM_CLIENT_ID: ${{ secrets.ZOOM_CLIENT_ID }}
+          ZOOM_CLIENT_SECRET: ${{ secrets.ZOOM_CLIENT_SECRET }}
+          RELEASE_EVENT_KEY: ${{ inputs.event_key }}
+          RELEASE_MODE: ${{ inputs.mode }}
+          RELEASE_AT: ${{ inputs.release_at }}
+        run: python scripts/zoomURL/recording_release.py
+      - name: 確認済み公開状態と再試行対象を保存
+        if: always()
+        run: |
+          if git diff --quiet -- recording_release.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add recording_release.json
+          git commit -m 'Update verified recording release settings'
+          git pull --rebase origin main
+          git push origin main
