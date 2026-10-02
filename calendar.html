@@ -512,7 +512,15 @@
   let zoomRecordingEntries = {};
   let recordingOverrides = {};
   let recordingReleaseRules = [];
+  let publicationRules = [];
   let recordingsLoadedYM = null;
+  setInterval(async () => {
+    if (document.hidden || !recordingsLoadedYM) return;
+    const before = JSON.stringify(publicationRules);
+    const data = await fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]);
+    if (data?.rules) publicationRules = data.rules;
+    if (JSON.stringify(publicationRules) !== before) renderAll();
+  }, 30000);
 
   gradeSelect.addEventListener("change", () => {
     state.grade = gradeSelect.value;
@@ -795,14 +803,16 @@
     const legacyOverrideLatestFile = "recording_overrides_latest.json";
     const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
     const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
-    const [monthly, latest, overrideLatest, overrideMonthly, releaseState] = await Promise.all([
+    const [monthly, latest, overrideLatest, overrideMonthly, releaseState, publicationState] = await Promise.all([
       fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
       fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),
       fetchNewestJsonAny([overrideLatestFile, rawJsonUrl(overrideLatestFile), legacyOverrideLatestFile, rawJsonUrl(legacyOverrideLatestFile)]),
       fetchNewestJsonAny([overrideMonthlyFile, rawJsonUrl(overrideMonthlyFile), legacyOverrideMonthlyFile, rawJsonUrl(legacyOverrideMonthlyFile)]),
       fetchNewestJsonAny(["recording_release.json", rawJsonUrl("recording_release.json")]),
+      fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
     ]);
     recordingReleaseRules = releaseState?.rules || [];
+    if (publicationState?.rules) publicationRules = publicationState.rules;
     zoomRecordingEntries = {
       ...normalizeRecordingEntries(latest),
       ...normalizeRecordingEntries(monthly),
@@ -877,6 +887,8 @@
 
   function findRecordingUrlForLesson(it, entry) {
     if (isRecordingBlocked(it)) return "";
+    const published = publicationRules.find(rule => rule.eventKeys.includes(buildEventKeyFromLesson(it)));
+    if (published?.status === "public") return recordingUrlFromRecord(zoomRecordingEntries[buildEventKeyFromLesson(it)]) || published.url || "";
     const override = findRecordingRecordForLesson(it, recordingOverrides);
     if (override !== null) return recordingUrlFromRecord(override);
     // Exact date/time/campus/class/room match takes priority over stale journal links.
@@ -888,6 +900,8 @@
 
   function isRecordingBlocked(it) {
     const key = buildEventKeyFromLesson(it);
+    const rule = publicationRules.find(rule => rule.eventKeys.includes(key));
+    if (rule) return rule.status !== "public";
     return recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== "released");
   }
 

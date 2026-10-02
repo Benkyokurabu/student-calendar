@@ -377,13 +377,15 @@ function inferMonthFromRecordingEntries(data) {
 async function loadZoomRecordings(mm) {
   const monthlyFile = "zoom_recording_urls_" + mm + ".json";
   const latestFile = "zoom_recording_urls_latest.json";
-  const [monthly, latest, visibility] = await Promise.all([
+  const [monthly, latest, visibility, publication] = await Promise.all([
     loadNewestJSON([monthlyFile, rawJsonUrl(monthlyFile)]),
     loadNewestJSON([latestFile, rawJsonUrl(latestFile)]),
     loadNewestJSON(["zoom_recording_overrides_" + mm + ".json", rawJsonUrl("zoom_recording_overrides_" + mm + ".json")]),
+    loadNewestJSON(["https://line-check-system.vercel.app/api/recordings/publication"]),
   ]);
   const data = mergeRecordingDataForMonth(mm, monthly, latest);
   data.hiddenEntries = visibility?.entries || {};
+  data.publicationRules = publication?.rules || zoomRecordingData?.publicationRules || [];
   return data;
 }
 
@@ -485,6 +487,12 @@ function eventKeyMatchesLessonGroup(key, ev, groupKey) {
 }
 
 function findRecordingForLesson(ev) {
+  const publication = zoomRecordingData?.publicationRules?.find(rule => rule.eventKeys.includes(makeKey(ev)));
+  if (publication) {
+    if (publication.status !== "public") return null;
+    const direct = zoomRecordingData?.entries?.[makeKey(ev)];
+    return { ...(direct || {}), url: direct?.url || publication.url };
+  }
   const hidden = zoomRecordingData?.hiddenEntries?.[makeKey(ev)];
   if (hidden?.hidden === true || hidden?.url === "") return null;
   const entries = (zoomRecordingData && zoomRecordingData.entries) || {};
@@ -846,10 +854,7 @@ function escAttr(s) {
 document.addEventListener("click", async function(e) {
   const settings = e.target.closest(".btn-release-settings");
   if (settings) {
-    try { await navigator.clipboard.writeText(settings.dataset.key); }
-    catch { window.prompt("授業キーをコピーしてください", settings.dataset.key); }
-    window.open("https://github.com/Benkyokurabu/student-calendar/actions/workflows/recording-release.yml", "_blank", "noopener");
-    alert("授業キーをコピーしました。Run workflow の event_key に貼り付け、公開方法と日本時間を設定してください。scheduled＝日時指定、private＝非公開、public＝今すぐ公開。完了は実行結果で確認できます。");
+    window.open("https://line-check-system.vercel.app/staff/recordings?month=" + settings.dataset.key.slice(0,7) + "&key=" + encodeURIComponent(settings.dataset.key), "_blank", "noopener");
     return;
   }
   const btn = e.target.closest(".btn-copy-recording");

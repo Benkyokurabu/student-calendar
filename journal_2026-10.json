@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-02T02:42:06",
+  "generatedAt": "2026-10-02T13:08:50.349368+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -271,7 +271,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-24"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-01|6:35～8:05|hon|hon_j1_S_math|2"
     },
     "2026-10-01|6:35～8:05|hon|hon_j3_B_eng|1": {
       "content": "HereWeGoUnit4とUnit5文法",

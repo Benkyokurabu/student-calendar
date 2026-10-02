@@ -13,6 +13,7 @@ function extract(name) {
 }
 const key = '2026-10-02|6:35～8:05|hon|hon_j3_B_eng|1';
 const ctx = {
+  publicationRules: [],
   recordingReleaseRules: [{eventKeys: [key], status: 'blocked', releaseAt: '2000-01-01T00:00'}],
   buildEventKeyFromLesson: it => it.key,
   recordingOverrides: {},
@@ -28,6 +29,12 @@ ctx.recordingReleaseRules[0].status = 'released';
 assert.equal(ctx.findRecordingUrlForLesson({key}, {}), 'https://example.test/override');
 ctx.recordingReleaseRules = [];
 assert.equal(ctx.findRecordingUrlForLesson({key}, {}), 'https://example.test/override');
+ctx.publicationRules=[{eventKeys:[key],status:'hidden',url:''}];
+assert.equal(ctx.findRecordingUrlForLesson({key}, {recordingUrl:'https://example.test/old'}),'');
+ctx.publicationRules[0]={eventKeys:[key],status:'public',url:'https://example.test/restored'};
+ctx.recordingReleaseRules=[{eventKeys:[key],status:'blocked'}];
+ctx.zoomRecordingEntries={};
+assert.equal(ctx.findRecordingUrlForLesson({key}, {}),'https://example.test/restored');
 // All inline JavaScript must parse, including the teacher settings handler.
 for (const page of ['calendar.html', 'lesson_prep.html']) {
   const source = fs.readFileSync(new URL('../' + page, import.meta.url), 'utf8');

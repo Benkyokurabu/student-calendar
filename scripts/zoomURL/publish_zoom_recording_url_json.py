@@ -103,7 +103,13 @@ def main() -> int:
     month = args.month or url_list.z.determine_latest_schedule_month()
     print(f"[publish] target month: {month}")
 
-    payload = url_list.make_recording_json(month)
+    import importlib.util
+    policy_script = Path(__file__).resolve().parents[2] / "scripts" / "recording_publication_filter.py"
+    spec = importlib.util.spec_from_file_location("recording_publication_filter", policy_script)
+    policy = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(policy)
+    rules = policy.load_rules()
+    payload = policy.apply_payload(url_list.make_recording_json(month), rules)
     out = url_list.SYSTEM_DIR / f"zoom_recording_urls_{month}.json"
     latest = url_list.SYSTEM_DIR / "zoom_recording_urls_latest.json"
 

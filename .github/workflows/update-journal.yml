@@ -207,6 +207,8 @@ jobs:
             [ -f "$f" ] && cp "$f" .
           done
 
+          python scripts/recording_publication_filter.py
+
           git add schedule_*.json journal_*.json journal_map_*.json 2>/dev/null || true
 
           if git diff --cached --quiet; then
