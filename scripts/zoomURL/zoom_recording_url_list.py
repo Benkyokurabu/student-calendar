@@ -149,6 +149,15 @@ def make_recording_json(month: str) -> Dict[str, Any]:
             **z.recording_match_audit(source_ev, rec),
         }
 
+    # Emergency suppression survives subsequent automatic Zoom imports.
+    policy_path = Path(__file__).resolve().parents[2] / f"zoom_recording_overrides_{month}.json"
+    if policy_path.exists():
+        policies = json.loads(policy_path.read_text(encoding="utf-8")).get("entries", {})
+        for key, policy in policies.items():
+            if isinstance(policy, dict) and policy.get("hidden") is True and key in entries:
+                entries[key]["url"] = ""
+                entries[key]["hidden"] = True
+
     return {
         "month": month,
         "generatedAt": datetime.now(z.JST).isoformat(),
