@@ -377,11 +377,14 @@ function inferMonthFromRecordingEntries(data) {
 async function loadZoomRecordings(mm) {
   const monthlyFile = "zoom_recording_urls_" + mm + ".json";
   const latestFile = "zoom_recording_urls_latest.json";
-  const [monthly, latest] = await Promise.all([
+  const [monthly, latest, visibility] = await Promise.all([
     loadNewestJSON([monthlyFile, rawJsonUrl(monthlyFile)]),
     loadNewestJSON([latestFile, rawJsonUrl(latestFile)]),
+    loadNewestJSON(["zoom_recording_overrides_" + mm + ".json", rawJsonUrl("zoom_recording_overrides_" + mm + ".json")]),
   ]);
-  return mergeRecordingDataForMonth(mm, monthly, latest);
+  const data = mergeRecordingDataForMonth(mm, monthly, latest);
+  data.hiddenEntries = visibility?.entries || {};
+  return data;
 }
 
 async function refreshZoomRecordingsIfChanged() {
@@ -389,8 +392,8 @@ async function refreshZoomRecordingsIfChanged() {
   if (!datePicker || !datePicker.value) return false;
   const mm = datePicker.value.slice(0, 7);
   const nextData = await loadZoomRecordings(mm);
-  const before = JSON.stringify((zoomRecordingData && zoomRecordingData.entries) || {});
-  const after = JSON.stringify((nextData && nextData.entries) || {});
+  const before = JSON.stringify(zoomRecordingData || {});
+  const after = JSON.stringify(nextData || {});
   if (before === after) return false;
   zoomRecordingData = nextData || {};
   render();
@@ -482,6 +485,8 @@ function eventKeyMatchesLessonGroup(key, ev, groupKey) {
 }
 
 function findRecordingForLesson(ev) {
+  const hidden = zoomRecordingData?.hiddenEntries?.[makeKey(ev)];
+  if (hidden?.hidden === true || hidden?.url === "") return null;
   const entries = (zoomRecordingData && zoomRecordingData.entries) || {};
   const direct = entries[makeKey(ev)];
   if (direct && direct.url) return direct;
