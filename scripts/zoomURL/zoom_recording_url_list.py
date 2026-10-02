@@ -153,6 +153,8 @@ def make_recording_json(month: str) -> Dict[str, Any]:
     policy_path = Path(__file__).resolve().parents[2] / f"zoom_recording_overrides_{month}.json"
     if policy_path.exists():
         policies = json.loads(policy_path.read_text(encoding="utf-8")).get("entries", {})
+        if not isinstance(policies, dict):
+            policies = {}
         for key, policy in policies.items():
             if isinstance(policy, dict) and policy.get("hidden") is True and key in entries:
                 entries[key]["url"] = ""
