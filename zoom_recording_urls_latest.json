@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-02T20:14:03.996535+09:00",
-  "matched": 19,
-  "missing": 360,
+  "generatedAt": "2026-10-02T20:15:03.168783+09:00",
+  "matched": 20,
+  "missing": 359,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -399,6 +399,28 @@
       "startOffsetMinutes": 2.7,
       "recordingDurationMinutes": 86.5,
       "lessonOverlapMinutes": 86.5
+    },
+    "2026-10-02|6:35～8:05|minami|minami_j2_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/f43q3uxAh4NEC3a4aZW4oAfNcFVsKmUsxxPKl1mDUE_0ullAbz11X1CM3azSuQT3-AT61V3SMl_wae81.w4qe2EzgSLXJExy8",
+      "recordingStart": "2026-10-02T18:40:22+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-02",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j2",
+      "class": "A",
+      "subject": "eng",
+      "label": "中２A 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-10-02|6:35～8:05|j2|A|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 5.4,
+      "recordingDurationMinutes": 83.1,
+      "lessonOverlapMinutes": 83.1
     },
     "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/VmWUAmUIQ44QDpp1RtLzf6dYI_LxCFWN766jhhvRTLx7UzOg4bMYSqe-5nEc5tFW3JVkLz1v8yURKh0f.PLkKT-ZT53xNtvFE",
