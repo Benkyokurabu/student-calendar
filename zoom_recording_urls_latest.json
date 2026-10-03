@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-02T22:25:03.406552+09:00",
+  "generatedAt": "2026-10-03T07:52:43.735930+00:00",
   "matched": 25,
   "missing": 354,
   "entries": {
@@ -425,7 +425,7 @@
       "lessonOverlapMinutes": 83.1
     },
     "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1": {
-      "url": "https://us06web.zoom.us/rec/play/VmWUAmUIQ44QDpp1RtLzf6dYI_LxCFWN766jhhvRTLx7UzOg4bMYSqe-5nEc5tFW3JVkLz1v8yURKh0f.PLkKT-ZT53xNtvFE",
+      "url": "",
       "recordingStart": "2026-10-02T19:26:29+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -444,7 +444,9 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 51.5,
       "recordingDurationMinutes": 37.7,
-      "lessonOverlapMinutes": 37.7
+      "lessonOverlapMinutes": 37.7,
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1"
     },
     "2026-10-02|6:35～8:05|hon|hon_j3_S_jp|4": {
       "url": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
@@ -514,7 +516,7 @@
       "lessonOverlapMinutes": 87.7
     },
     "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2": {
-      "url": "https://us06web.zoom.us/rec/play/JccHj6ZbHe2m-x889NNn7cj0zcU_bEQ2A_faBQg4pW0BYXkA6faegTz_qmQ6-tfWwwVg8vjml3lAgetV.tmbBycCzs5yOERUH",
+      "url": "",
       "recordingStart": "2026-10-02T21:32:16+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -533,7 +535,9 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 67.3,
       "recordingDurationMinutes": 20.9,
-      "lessonOverlapMinutes": 20.9
+      "lessonOverlapMinutes": 20.9,
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2"
     },
     "2026-10-02|8:25～9:55|minami|minami_j3_S_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/KLfolHrdBXogDbPd024FX0qQoe3XkON-jH-kl7yp6a8OvC5HPfTiVh8DiluSPbGZe08p5E2BUB7w-LAx.V05iGVg3LzYBabQ2",

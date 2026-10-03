@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-03T02:09:11.394760+00:00",
+  "generatedAt": "2026-10-03T07:52:40.298459+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -850,7 +850,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-25"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-809b-99c6-c814cf03cd0b"
     },
     "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1": {
       "content": "単元テスト③",
@@ -883,7 +885,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-25"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-02|6:35～8:05|hon|hon_j2_S_math|1"
     },
     "2026-10-02|6:35～8:05|hon|hon_j3_S_jp|4": {
       "content": "2026埼玉過去問【２】終了、【４】古文",
@@ -1083,13 +1087,15 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-800e-87c3-cddba97ad4cb"
     },
     "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2": {
       "content": "単元テスト③",
       "page": "",
       "report": "単元テストを実施。北澤と川田が２０点台だった。本来はAに落とすべきだが・・",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/JccHj6ZbHe2m-x889NNn7cj0zcU_bEQ2A_faBQg4pW0BYXkA6faegTz_qmQ6-tfWwwVg8vjml3lAgetV.tmbBycCzs5yOERUH",
+      "recordingUrl": "",
       "teacher": "工藤",
       "absence": "なし",
       "curriculumProgress": "±0",
@@ -1117,7 +1123,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-25"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2"
     },
     "2026-10-02|8:25～9:55|minami|minami_j2_S_eng|2": {
       "content": "Unit5の単語、比較",
@@ -1660,7 +1668,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8019-971a-eab0f9517456"
     },
     "2026-10-05|6:35～8:05|minami|minami_j2_S_jp|6": {
       "content": "",
@@ -2258,7 +2268,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8077-bb04-db50c2849ec9"
     },
     "2026-10-06|8:25～9:55|hon|hon_j2_A_jp|3": {
       "content": "",
@@ -2416,7 +2428,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-802f-8d8e-e19318214ad4"
     },
     "2026-10-07|4:55～6:15|hon|hon_e5_A_jp|2": {
       "content": "",
@@ -2668,7 +2682,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-b10c-d58bbd7c6281"
     },
     "2026-10-07|6:35～8:05|minami|minami_j1_B_math|3": {
       "content": "単元テスト③",
@@ -2699,7 +2715,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-801b-85cf-e40af26c269f"
     },
     "2026-10-07|6:35～8:05|minami|minami_j3_A_math|1": {
       "content": "単元テスト③",
@@ -2731,7 +2749,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80d1-9b52-ff98cfbf501f"
     },
     "2026-10-07|6:35～8:05|minami|minami_j3_X_jp|5": {
       "content": "",
@@ -2857,7 +2877,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-805c-a132-d7653e5d5fae"
     },
     "2026-10-07|8:25～9:55|minami|minami_j3_A_jp|5": {
       "content": "",
@@ -3048,7 +3070,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8050-a7c0-c0542c5c57b4"
     },
     "2026-10-08|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "",
@@ -3111,7 +3135,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8037-bb79-db0b79baa07c"
     },
     "2026-10-08|6:35～8:05|hon|hon_j1_S_math|2": {
       "content": "",
@@ -3300,7 +3326,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-801a-b7af-e603601a67e8"
     },
     "2026-10-08|8:25～9:55|hon|hon_j3_S_eng|3": {
       "content": "",
@@ -3425,7 +3453,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8010-88c8-f96d542ce9b0"
     },
     "2026-10-09|4:55～6:15|hon|hon_e6_A_arith|2": {
       "content": "",
@@ -3486,7 +3516,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8050-8378-e632eb25d793"
     },
     "2026-10-09|4:55～6:15|minami|minami_e5_A_jp|3": {
       "content": "",
@@ -3611,7 +3643,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8068-ba9a-cdd627150da8"
     },
     "2026-10-09|6:35～8:05|hon|hon_j2_B_math|2": {
       "content": "",
@@ -3986,7 +4020,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-807f-9710-df44019b361d"
     },
     "2026-10-10|6:35～8:05|minami|minami_j2_S_jp|2": {
       "content": "",
@@ -4018,7 +4054,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-21"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80ff-99db-d73d20ad1e9c"
     },
     "2026-10-10|6:35～8:05|minami|minami_special_数学　　補講②|1": {
       "content": "",
@@ -4077,7 +4115,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8004-a388-c931ad74d3b4"
     },
     "2026-10-10|8:25～9:55|minami|minami_j3_S_jp|1": {
       "content": "",
@@ -4108,7 +4148,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-806b-a224-f77cfe067f0d"
     },
     "2026-10-12|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "",
@@ -4214,7 +4256,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-21"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-800f-a6bf-e1f5ef87fe85"
     },
     "2026-10-12|6:35～8:05|hon|hon_j3_A_soc|4": {
       "content": "",
@@ -4622,7 +4666,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8016-973e-d8c291266c70"
     },
     "2026-10-13|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "",
@@ -4653,7 +4699,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80b3-a9c9-d4049f9e79ad"
     },
     "2026-10-13|6:35～8:05|hon|hon_j1_A_jp|3": {
       "content": "",
@@ -4684,7 +4732,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80a1-94b5-c105f166d9b8"
     },
     "2026-10-13|6:35～8:05|hon|hon_j1_S_jp|2": {
       "content": "",
@@ -4715,7 +4765,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80b9-a1f4-d800918f1e49"
     },
     "2026-10-13|6:35～8:05|hon|hon_j2_B_eng|1": {
       "content": "単元テスト③",
@@ -4778,7 +4830,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80c6-a9af-f7b2a0db6051"
     },
     "2026-10-13|6:35～8:05|minami|minami_j2_A_math|1": {
       "content": "",
@@ -4870,7 +4924,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8039-bb06-cfc18b357c11"
     },
     "2026-10-13|8:25～9:55|hon|hon_j3_A_eng|1": {
       "content": "",
@@ -4931,7 +4987,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80df-bd63-f7c87f95cf0a"
     },
     "2026-10-13|8:25～9:55|minami|minami_j3_S_math|2": {
       "content": "",
@@ -5181,7 +5239,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-801e-8c35-ca2d5997df30"
     },
     "2026-10-14|6:35～8:05|minami|minami_j1_A_math|2": {
       "content": "",
@@ -5331,7 +5391,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-bac8-e023a8c8aaf8"
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_X_math|6": {
       "content": "",
@@ -5454,7 +5516,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-801c-85c2-ebdbe57ebd63"
     },
     "2026-10-15|4:55～6:15|hon|hon_e5_S_arith|2": {
       "content": "",
@@ -5546,7 +5610,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-806b-9133-c3876fea4574"
     },
     "2026-10-15|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "",
@@ -5606,7 +5672,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8067-a406-f4ae3484c62a"
     },
     "2026-10-15|6:35～8:05|hon|hon_j1_B_math|3": {
       "content": "",
@@ -6160,7 +6228,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80e1-b8a5-d8d0f9a3d6fb"
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "",
@@ -6778,7 +6848,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-9109-cd90372d0c8c"
     },
     "2026-10-17|8:25～9:55|minami|minami_special_数学　　補講③|2": {
       "content": "",
@@ -6835,7 +6907,9 @@
       "sessionNumber": "33",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": []
+      "homework": [],
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-804e-9817-ceee28b04c67"
     },
     "2026-10-19|6:35～8:05|hon|hon_j1_S_eng|1": {
       "content": "",
@@ -7269,7 +7343,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80d2-90d1-e5af4151af13"
     },
     "2026-10-20|4:55～6:15|hon|hon_e6_S_eng|1": {
       "content": "",
@@ -7752,7 +7828,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8045-866b-ec7891f22c19"
     },
     "2026-10-21|4:55～6:15|hon|hon_e6_A_jp|1": {
       "content": "単元テストＡ③",
@@ -7783,7 +7861,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8024-865a-f022732f45cd"
     },
     "2026-10-21|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "単元テスト③",
@@ -7815,7 +7895,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80a2-9688-eb27c6876cc1"
     },
     "2026-10-21|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
@@ -8299,7 +8381,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8042-8e0f-ddf1ca048e9a"
     },
     "2026-10-22|4:55～6:15|hon|hon_e6_A_eng|1": {
       "content": "",
@@ -8656,7 +8740,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8029-b34d-ee2ddd5c9b70"
     },
     "2026-10-22|8:25～9:55|hon|hon_j3_B_math|1": {
       "content": "",
@@ -8833,7 +8919,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80a3-be83-ddddc7d935fa"
     },
     "2026-10-23|4:55～6:15|hon|hon_e6_S_arith|1": {
       "content": "",
@@ -9370,7 +9458,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80a6-b96f-de3582fd7309"
     },
     "2026-10-24|6:35～8:05|hon|hon_j3_S_sci|1": {
       "content": "",
@@ -9401,7 +9491,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-805f-8743-c53900f2e621"
     },
     "2026-10-24|6:35～8:05|minami|minami_j3_B_eng|1": {
       "content": "",
@@ -9461,7 +9553,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-803f-9421-c1c6f0d36f6b"
     },
     "2026-10-24|8:25～9:55|hon|hon_j3_S_soc|1": {
       "content": "",
@@ -9493,7 +9587,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80d1-959d-ce4cf4eb5e21"
     },
     "2026-10-24|8:25～9:55|minami|minami_j3_A_math|1": {
       "content": "",
@@ -9733,7 +9829,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-809c-90f5-c49f42429c8e"
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_S_sci|1": {
       "content": "",
@@ -9764,7 +9862,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80d7-8215-e52fac868f95"
     },
     "2026-10-26|8:25～9:55|hon|hon_j2_A_eng|1": {
       "content": "",
@@ -9888,7 +9988,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8008-8e7c-c35ab74205ae"
     },
     "2026-10-26|8:25～9:55|minami|minami_j3_S_soc|1": {
       "content": "",
@@ -9920,7 +10022,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-807d-b106-d7f291e80ba1"
     },
     "2026-10-27|4:55～6:15|hon|hon_e4_A_jp|2": {
       "content": "",
@@ -10255,7 +10359,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-29"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80ad-9b64-c499e202c8f8"
     },
     "2026-10-27|6:35～8:05|minami|minami_j2_S_math|2": {
       "content": "",
@@ -10584,7 +10690,9 @@
         "monthNum": "9",
         "weekNum": "3",
         "date": "2026-09-30"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-804d-b32a-cff5abe1e3a2"
     },
     "2026-10-28|6:35～8:05|hon|hon_j1_A_eng|1": {
       "content": "",
