@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-03T07:52:40.298459+00:00",
+  "generatedAt": "2026-10-03T18:19:40.131727+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -957,18 +957,20 @@
       }
     },
     "2026-10-02|6:35～8:05|minami|minami_j1_B_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Daily Life5",
+      "page": "UNIT4復習",
+      "report": "Daily Life５にて店での注文のやりとりを指導。細かい文法は伝えず、フレーズとして暗唱させた。今回は宿題忘れがなかったのでほめたが、男子の落ち着きのなさは相変わらずであった。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "中間テスト準備"
+      ],
       "prevEntry": {
         "content": "Here We Go UNIT５／落とし物",
         "page": "Here We GoP77まで",
@@ -1195,18 +1197,20 @@
       }
     },
     "2026-10-03|4:45～6:15|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "国民主権、平和主義終了、基本的人権",
+      "page": "マイクリアp128～",
+      "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
       "teacher": "金城",
-      "absence": "",
+      "absence": "青木、大嶋りほ、田村、長尾、西村",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "特",
       "monthNum": "10",
       "weekNum": "特",
-      "homework": [],
+      "homework": [
+        "月曜にまとめて"
+      ],
       "prevEntry": {
         "content": "国民主権まで",
         "page": "マイクリアp126～",
@@ -1227,10 +1231,10 @@
       }
     },
     "2026-10-03|4:45～6:15|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "国民主権、平和主義終了、基本的人権",
+      "page": "マイクリアp128～",
+      "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -1238,7 +1242,9 @@
       "sessionNumber": "特",
       "monthNum": "10",
       "weekNum": "特",
-      "homework": [],
+      "homework": [
+        "月曜にまとめて"
+      ],
       "prevEntry": {
         "content": "国民主権まで",
         "page": "マイクリアp126～",
@@ -1259,18 +1265,20 @@
       }
     },
     "2026-10-03|6:35～8:05|hon|hon_j1_B_eng|2": {
-      "content": "",
+      "content": "UNIT４・三単現復習",
       "page": "",
-      "report": "",
+      "report": "人数が少なかったため、単元テスト・定期テストの範囲であるUNIT４の基本文・発音練習を優先して実施した。来週の単元テスト・定期テストに向けての勉強方法を確認しながら進めた。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
+      "absence": "グエン・宮田・石毛・渡辺・戸部",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "特",
       "monthNum": "10",
       "weekNum": "特",
-      "homework": [],
+      "homework": [
+        "定期テストの準備"
+      ],
       "prevEntry": {
         "content": "Here We Go UNIT5",
         "page": "",
@@ -1282,7 +1290,7 @@
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "グエン、戸部",
-        "curriculumProgress": "－",
+        "curriculumProgress": "－1",
         "note": "",
         "sessionNumber": "35",
         "monthNum": "9",
@@ -1347,18 +1355,20 @@
       "weekNum": ""
     },
     "2026-10-03|8:25～9:55|minami|minami_j3_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "Unit5",
+      "page": "#11③",
+      "report": "Unit5の音読・語彙暗唱・解説と進んだ。音読ではまだ文の切れ目が分かっていないものが多いことが判明。関係代名詞の訳出はおおむねできるようになってきた。makeのSVOCは慣れが必要か。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/LrKiGiZCLQUHMRJG1BtYN-Egfah7Vb9w1k5Cbw3kBy8DNqPf7SgLjRcNOXQDlfXcBHzQUKkGtZpfEPUq.XyTRHaQjq0MrE1W8",
       "teacher": "高山",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "青木・木村・式田・高橋",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "特",
       "monthNum": "10",
       "weekNum": "特",
-      "homework": [],
+      "homework": [
+        "#18/23"
+      ],
       "prevEntry": {
         "content": "Unit5",
         "page": "#3",
@@ -1590,22 +1600,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "青木、大嶋りほ、田村、長尾、西村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -1718,22 +1727,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -2604,22 +2612,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "Here We Go UNIT5",
+        "content": "UNIT４・三単現復習",
         "page": "",
         "homework": [
-          "Here We Go UNIT５ #19～21",
-          "中間テスト準備"
+          "定期テストの準備"
         ],
-        "report": "UNIT5の続きから。先週に比べればまずまず出来が良かったが、疑問詞でかなり混乱していたので、もう一度復習を入れた。この中だと渡辺が一番よくできるか。",
+        "report": "人数が少なかったため、単元テスト・定期テストの範囲であるUNIT４の基本文・発音練習を優先して実施した。来週の単元テスト・定期テストに向けての勉強方法を確認しながら進めた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "グエン、戸部",
-        "curriculumProgress": "－",
+        "absence": "グエン・宮田・石毛・渡辺・戸部",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-30"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-07|6:35～8:05|hon|hon_j3_X_jp|4": {
@@ -3408,20 +3415,20 @@
       "homework": [],
       "prevEntry": {
         "content": "Unit5",
-        "page": "#3",
+        "page": "#11③",
         "homework": [
-          "Unit4の完成（P84まで）"
+          "#18/23"
         ],
-        "report": "Unit4終了後、Unit5のPart1の語彙まで。フェアトレードを説明したが、半数が分かっていなかった。内田はよく理解していたのでほめた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Kbdwu3BPNYhlQ1cFn2S6kt3xb-1URr-g_wt5a9U25noR1VLv_Ew5DppcvUmHbxMTVOXvaWE7-bc7a8DV.FXmwAmSDmVaNYbh9",
+        "report": "Unit5の音読・語彙暗唱・解説と進んだ。音読ではまだ文の切れ目が分かっていないものが多いことが判明。関係代名詞の訳出はおおむねできるようになってきた。makeのSVOCは慣れが必要か。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/LrKiGiZCLQUHMRJG1BtYN-Egfah7Vb9w1k5Cbw3kBy8DNqPf7SgLjRcNOXQDlfXcBHzQUKkGtZpfEPUq.XyTRHaQjq0MrE1W8",
         "teacher": "高山",
-        "absence": "青木・西村",
-        "curriculumProgress": "－1",
+        "absence": "青木・木村・式田・高橋",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "特",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-01"
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-09|4:55～6:15|hon|hon_e5_A_arith|3": {
@@ -3749,28 +3756,27 @@
       "teacher": "金子",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "藤田・壱星に200円",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "Here We Go UNIT５／落とし物",
-        "page": "Here We GoP77まで",
+        "content": "Daily Life5",
+        "page": "UNIT4復習",
         "homework": [
-          "Here We Go UNIT5",
-          "#6 13 20"
+          "中間テスト準備"
         ],
-        "report": "UNIT5続きから。疑問詞の意味は相変わらず混同していたのであらためて板書して確認した。柴は何度注意しても同じことを繰り返すので今日は冷たくあしらった。",
+        "report": "Daily Life５にて店での注文のやりとりを指導。細かい文法は伝えず、フレーズとして暗唱させた。今回は宿題忘れがなかったのでほめたが、男子の落ち着きのなさは相変わらずであった。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "佐藤",
-        "curriculumProgress": "－1",
+        "absence": "なし",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-02"
       }
     },
     "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1": {
@@ -4274,22 +4280,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "青木、大嶋りほ、田村、長尾、西村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -4366,22 +4371,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-12|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -5192,22 +5196,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "Here We Go UNIT5",
+        "content": "UNIT４・三単現復習",
         "page": "",
         "homework": [
-          "Here We Go UNIT５ #19～21",
-          "中間テスト準備"
+          "定期テストの準備"
         ],
-        "report": "UNIT5の続きから。先週に比べればまずまず出来が良かったが、疑問詞でかなり混乱していたので、もう一度復習を入れた。この中だと渡辺が一番よくできるか。",
+        "report": "人数が少なかったため、単元テスト・定期テストの範囲であるUNIT４の基本文・発音練習を優先して実施した。来週の単元テスト・定期テストに向けての勉強方法を確認しながら進めた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "グエン、戸部",
-        "curriculumProgress": "－",
+        "absence": "グエン・宮田・石毛・渡辺・戸部",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-30"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-14|6:35～8:05|hon|hon_j3_S_jp|1": {
@@ -6031,20 +6034,20 @@
       "homework": [],
       "prevEntry": {
         "content": "Unit5",
-        "page": "#3",
+        "page": "#11③",
         "homework": [
-          "Unit4の完成（P84まで）"
+          "#18/23"
         ],
-        "report": "Unit4終了後、Unit5のPart1の語彙まで。フェアトレードを説明したが、半数が分かっていなかった。内田はよく理解していたのでほめた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Kbdwu3BPNYhlQ1cFn2S6kt3xb-1URr-g_wt5a9U25noR1VLv_Ew5DppcvUmHbxMTVOXvaWE7-bc7a8DV.FXmwAmSDmVaNYbh9",
+        "report": "Unit5の音読・語彙暗唱・解説と進んだ。音読ではまだ文の切れ目が分かっていないものが多いことが判明。関係代名詞の訳出はおおむねできるようになってきた。makeのSVOCは慣れが必要か。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/LrKiGiZCLQUHMRJG1BtYN-Egfah7Vb9w1k5Cbw3kBy8DNqPf7SgLjRcNOXQDlfXcBHzQUKkGtZpfEPUq.XyTRHaQjq0MrE1W8",
         "teacher": "高山",
-        "absence": "青木・西村",
-        "curriculumProgress": "－1",
+        "absence": "青木・木村・式田・高橋",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "特",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-01"
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-16|4:55～6:15|hon|hon_e4_X_jp|4": {
@@ -6463,7 +6466,7 @@
         "teacher": "金子",
         "absence": "",
         "curriculumProgress": "",
-        "note": "",
+        "note": "藤田・壱星に200円",
         "sessionNumber": "37",
         "monthNum": "10",
         "weekNum": "2",
@@ -6986,22 +6989,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "青木、大嶋りほ、田村、長尾、西村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -7110,22 +7112,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -9212,7 +9213,7 @@
         "teacher": "金子",
         "absence": "",
         "curriculumProgress": "",
-        "note": "",
+        "note": "藤田・壱星に200円",
         "sessionNumber": "37",
         "monthNum": "10",
         "weekNum": "2",
@@ -9442,22 +9443,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "青木、大嶋りほ、田村、長尾、西村",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80a6-b96f-de3582fd7309"
@@ -9813,22 +9813,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権まで",
-        "page": "マイクリアp126～",
+        "content": "国民主権、平和主義終了、基本的人権",
+        "page": "マイクリアp128～",
         "homework": [
-          "マイクリアp127〇込み",
-          "（p1301⃣～3⃣〇込み）"
+          "月曜にまとめて"
         ],
-        "report": "国民主権の象徴まで。次回国事行為から。次回で基本的人権には入れるだろう。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/qpCy0bhR0UzUj5ayBDLpQaaaEVr1j4-woROMmNpcVOu9UDCutcH9sTYZq91AVMJjKX9-jxwqUk52Awjc.Rk2Ip9GFr_P5LjwC",
+        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
         "teacher": "金城",
-        "absence": "大嶋りほ",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "特",
+        "monthNum": "10",
+        "weekNum": "特",
+        "date": "2026-10-03"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-809c-90f5-c49f42429c8e"
@@ -11703,7 +11702,7 @@
         "teacher": "金子",
         "absence": "",
         "curriculumProgress": "",
-        "note": "",
+        "note": "藤田・壱星に200円",
         "sessionNumber": "37",
         "monthNum": "10",
         "weekNum": "2",
