@@ -43,7 +43,19 @@ def apply_payload(payload, rules):
     collect(payload)
     if candidates:
         token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
-        if not token:
+        # Installation GITHUB_TOKENs do not expose repository.permissions.push.
+        # A signed, short-lived Actions identity proves the allowed workflow.
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            oidc_url = os.environ.get('ACTIONS_ID_TOKEN_REQUEST_URL')
+            oidc_request_token = os.environ.get('ACTIONS_ID_TOKEN_REQUEST_TOKEN')
+            if not oidc_url or not oidc_request_token:
+                raise ValueError('GitHub Actions publisher identity unavailable; stop publication.')
+            request = Request(oidc_url + '&audience=bentan-recording-capture', headers={'Authorization': 'Bearer ' + oidc_request_token})
+            with urlopen(request, timeout=30) as response:
+                token = json.load(response).get('value')
+            if not token:
+                raise ValueError('GitHub Actions publisher identity missing; stop publication.')
+        elif not token:
             credential = subprocess.run(['git', 'credential', 'fill'], input='protocol=https\nhost=github.com\n\n', capture_output=True, text=True, timeout=30)
             token = next((line.split('=', 1)[1] for line in credential.stdout.splitlines() if line.startswith('password=')), None)
         if not token:

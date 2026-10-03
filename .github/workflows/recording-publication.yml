@@ -11,6 +11,7 @@ on:
       - '.github/workflows/recording-publication.yml'
 permissions:
   contents: write
+  id-token: write
   pages: write
 concurrency:
   group: zoom-recording-url-publish
