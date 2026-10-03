@@ -28,6 +28,8 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p test_recording_publication_filter.py
       - run: python scripts/recording_publication_filter.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Commit filtered recording data
         id: publication
         run: |

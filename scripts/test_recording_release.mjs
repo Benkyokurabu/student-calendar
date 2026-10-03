@@ -35,6 +35,16 @@ ctx.publicationRules[0]={eventKeys:[key],status:'public',url:'https://example.te
 ctx.recordingReleaseRules=[{eventKeys:[key],status:'blocked'}];
 ctx.zoomRecordingEntries={};
 assert.equal(ctx.findRecordingUrlForLesson({key}, {}),'https://example.test/restored');
+// Automatic test matches use each campus's own date and cover every recording
+// segment in that lesson. The server has already combined the campus checks.
+const hon='2026-10-01|18:00～19:00|hon|hon_j1_S_math|2';
+const minami='2026-10-05|18:00～19:00|minami|minami_j1_S_math|1';
+ctx.recordingReleaseRules=[];
+ctx.publicationRules=[{eventKeys:[],status:'hidden',match:{date:'2026-10-01',campus:'hon',group:'hon_j1_S_math'}},{eventKeys:[],status:'hidden',match:{date:'2026-10-05',campus:'minami',group:'minami_j1_S_math'}}];
+for(const lesson of [hon,minami])assert.equal(ctx.findRecordingUrlForLesson({key:lesson},{recordingUrl:'https://example.test/original'}),'');
+assert.equal(ctx.isRecordingBlocked({key:hon.replace('10-01','10-08')}),false);
+ctx.publicationRules.forEach(rule=>{rule.status='public';rule.url='https://example.test/released';});
+for(const lesson of [hon,minami])assert.equal(ctx.findRecordingUrlForLesson({key:lesson},{}),'https://example.test/released');
 // All inline JavaScript must parse, including the teacher settings handler.
 for (const page of ['calendar.html', 'lesson_prep.html']) {
   const source = fs.readFileSync(new URL('../' + page, import.meta.url), 'utf8');

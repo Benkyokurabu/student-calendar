@@ -887,7 +887,7 @@
 
   function findRecordingUrlForLesson(it, entry) {
     if (isRecordingBlocked(it)) return "";
-    const published = publicationRules.find(rule => rule.eventKeys.includes(buildEventKeyFromLesson(it)));
+    const published = publicationRules.find(rule => rule.eventKeys.includes(buildEventKeyFromLesson(it)) || (rule.match && rule.match.date===buildEventKeyFromLesson(it).split('|')[0] && rule.match.campus===buildEventKeyFromLesson(it).split('|')[2] && rule.match.group===buildEventKeyFromLesson(it).split('|')[3]));
     if (published?.status === "public") return recordingUrlFromRecord(zoomRecordingEntries[buildEventKeyFromLesson(it)]) || published.url || "";
     const override = findRecordingRecordForLesson(it, recordingOverrides);
     if (override !== null) return recordingUrlFromRecord(override);
@@ -900,7 +900,7 @@
 
   function isRecordingBlocked(it) {
     const key = buildEventKeyFromLesson(it);
-    const rule = publicationRules.find(rule => rule.eventKeys.includes(key));
+    const rule = publicationRules.find(rule => rule.eventKeys.includes(key) || (rule.match && rule.match.date===key.split('|')[0] && rule.match.campus===key.split('|')[2] && rule.match.group===key.split('|')[3]));
     if (rule) return rule.status !== "public";
     return recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== "released");
   }

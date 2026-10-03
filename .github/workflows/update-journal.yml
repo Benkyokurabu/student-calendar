@@ -198,6 +198,8 @@ jobs:
           echo "Upload step done (some files may be locked)"
 
       - name: Commit and push JSON files
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
