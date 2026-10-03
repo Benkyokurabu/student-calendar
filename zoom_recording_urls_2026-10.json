@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-03T07:52:42.614069+00:00",
-  "matched": 25,
-  "missing": 354,
+  "generatedAt": "2026-10-03T18:40:04.827673+09:00",
+  "matched": 26,
+  "missing": 353,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -559,6 +559,28 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 3.5,
       "recordingDurationMinutes": 83.7,
+      "lessonOverlapMinutes": 83.7
+    },
+    "2026-10-03|4:45～6:15|hon|hon_j3_A_soc|4": {
+      "url": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+      "recordingStart": "2026-10-03T16:51:19+09:00",
+      "meetingId": "3067983739",
+      "topic": "本校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-10-03",
+      "time": "4:45～6:15",
+      "campus": "hon",
+      "room": "4",
+      "grade": "j3",
+      "class": "A",
+      "subject": "soc",
+      "label": "中３A 社会",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-10-03|4:45～6:15|j3|A|soc",
+      "recordingCampus": "hon",
+      "recordingRoom": "4",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 6.3,
+      "recordingDurationMinutes": 84.2,
       "lessonOverlapMinutes": 83.7
     }
   }
