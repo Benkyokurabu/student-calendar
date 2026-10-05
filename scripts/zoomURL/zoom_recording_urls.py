@@ -443,6 +443,23 @@ def fetch_recordings_for_events(client: ZoomClient, events: List[dict], meeting_
     return by_id
 
 
+def first_restart_segment(candidates: List[RecordingCandidate]) -> Optional[RecordingCandidate]:
+    """Disambiguate non-overlapping restart segments of one Zoom occurrence."""
+    uuids = {str(recording.raw.get("uuid") or "") for recording in candidates}
+    if len(uuids) != 1 or not next(iter(uuids), ""):
+        return None
+    if len({clean_meeting_id(recording.meeting_id) for recording in candidates}) != 1:
+        return None
+    ordered = sorted(candidates, key=lambda recording: recording.start_time)
+    for earlier, later in zip(ordered, ordered[1:]):
+        if earlier.end_time is None:
+            return None
+        gap = (later.start_time - earlier.end_time).total_seconds()
+        if not 0 <= gap <= 10 * 60:
+            return None
+    return ordered[0] if ordered else None
+
+
 def match_recording(ev: dict, recordings: List[RecordingCandidate], tolerance_before: int, tolerance_after: int) -> Optional[RecordingCandidate]:
     window = parse_lesson_window(ev)
     if window is None:
@@ -481,7 +498,7 @@ def match_recording(ev: dict, recordings: List[RecordingCandidate], tolerance_be
         return None
     candidates.sort(key=lambda r: abs((r.start_time - lesson_start).total_seconds()))
     if len(candidates) != 1:
-        return None
+        return first_restart_segment(candidates)
     return candidates[0]
 
 

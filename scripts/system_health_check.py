@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import ctypes
 import json
+import hashlib
 import os
 import re
 import subprocess
@@ -90,7 +91,10 @@ def last_log_exit(path: Path) -> tuple[datetime | None, int | None]:
         try:
             stamp = line.split("]", 1)[0].lstrip("[")
             code = int(line.rsplit("=", 1)[1].strip())
-            return datetime.strptime(stamp, "%Y/%m/%d %H:%M:%S.%f").replace(tzinfo=JST), code
+            parsed = parse_datetime(stamp)
+            if parsed is None:
+                parsed = datetime.strptime(stamp, "%Y/%m/%d %H:%M:%S.%f").replace(tzinfo=JST)
+            return parsed, code
         except (ValueError, IndexError):
             continue
     return None, None
@@ -105,6 +109,45 @@ def zoom_failure_needs_alert(
     return not (log_time and public_generated_at and public_generated_at > log_time)
 
 
+def zoom_log_path() -> Path:
+    local_data = os.environ.get("LOCALAPPDATA")
+    if local_data:
+        stable = Path(local_data) / "BenkyoClub" / "zoom-publisher" / "logs" / "zoom_recording_json.log"
+        if stable.exists():
+            return stable
+    return SYSTEM_DIR / "zoomURL" / "logs" / "zoom_recording_json.log"
+
+
+def runtime_integrity_errors(root: Path) -> list[str]:
+    manifest = root / "runtime_integrity.json"
+    if not manifest.exists():
+        return []
+    try:
+        files = json.loads(manifest.read_text("utf-8"))["files"]
+        errors = []
+        for name, expected in files.items():
+            source = (root / name).resolve()
+            source.relative_to(root.resolve())
+            if not source.is_file():
+                errors.append(f"実行プログラムがありません: {name}")
+            elif hashlib.sha256(source.read_bytes()).hexdigest() != expected:
+                errors.append(f"検証済み実行プログラムが変更されています: {name}")
+        return errors
+    except Exception as exc:
+        return [f"実行プログラム整合性確認失敗: {exc}"]
+
+
+def validate_journal_health(payload: dict, month: str, now: datetime) -> list[str]:
+    if not isinstance(payload, dict) or payload.get("month") != month or not isinstance(payload.get("entries"), dict) or not payload["entries"]:
+        return ["当月の公開授業日誌データが空または不正です"]
+    generated = parse_datetime(str(payload.get("generatedAt", "")))
+    if generated is None:
+        return ["公開授業日誌に有効な生成時刻がありません"]
+    if now - generated > timedelta(hours=26):
+        return ["授業日誌の公開データが26時間以上更新されていません"]
+    return []
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--notify", action="store_true", help="Show a one-time Windows message for a new error set.")
@@ -114,6 +157,7 @@ def main() -> int:
     warnings: list[str] = []
     details: dict[str, Any] = {"checkedAt": now.isoformat()}
     public_zoom_generated_at: datetime | None = None
+    errors.extend(runtime_integrity_errors(SYSTEM_DIR))
 
     try:
         repo = resolve_repo(required=True)
@@ -159,8 +203,12 @@ def main() -> int:
             errors.append(f"当月スケジュールに別月の日付があります: {invalid_schedule_dates[:3]}")
         details["publicScheduleEvents"] = len(schedule)
 
-        # 授業日誌JSONは現在の運用では使用していないため、監視対象外とする。
-        details["journalMonitoring"] = "ignored: journal JSON is not used in current operations"
+        journal = fetch_json(f"journal_{month}.json")
+        errors.extend(validate_journal_health(journal, month, now))
+        details["journalMonitoring"] = "active"
+        if isinstance(journal, dict):
+            details["publicJournalGeneratedAt"] = journal.get("generatedAt")
+            details["publicJournalEntries"] = len(journal.get("entries") or {})
 
         meeting_ids = json.loads((SYSTEM_DIR / "zoomURL" / "zoom_meeting_ids.json").read_text(encoding="utf-8-sig"))
         published_keys = set((zoom.get("entries") or {}).keys())
@@ -182,7 +230,9 @@ def main() -> int:
     except Exception as exc:
         errors.append(f"公開カレンダーデータ確認失敗: {exc}")
 
-    zoom_log_time, zoom_exit = last_log_exit(SYSTEM_DIR / "zoomURL" / "logs" / "zoom_recording_json.log")
+    active_zoom_log = zoom_log_path()
+    details["zoomTaskLog"] = str(active_zoom_log)
+    zoom_log_time, zoom_exit = last_log_exit(active_zoom_log)
     details["zoomTaskLastEnd"] = zoom_log_time.isoformat() if zoom_log_time else None
     details["zoomTaskLastExit"] = zoom_exit
     details["zoomTaskFailureSupersededByPublic"] = bool(

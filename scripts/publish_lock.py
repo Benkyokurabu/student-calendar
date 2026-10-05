@@ -4,10 +4,37 @@
 from __future__ import annotations
 
 import json
+import ctypes
+from ctypes import wintypes
 import os
 import time
 import uuid
 from pathlib import Path
+
+
+def process_is_alive(pid: int) -> bool:
+    if os.name != "nt":
+        try:
+            os.kill(pid, 0)
+            return True
+        except ProcessLookupError:
+            return False
+        except PermissionError:
+            return True
+    kernel = ctypes.WinDLL("kernel32", use_last_error=True)
+    kernel.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
+    kernel.OpenProcess.restype = wintypes.HANDLE
+    kernel.WaitForSingleObject.argtypes = [wintypes.HANDLE, wintypes.DWORD]
+    kernel.WaitForSingleObject.restype = wintypes.DWORD
+    kernel.CloseHandle.argtypes = [wintypes.HANDLE]
+    kernel.CloseHandle.restype = wintypes.BOOL
+    handle = kernel.OpenProcess(0x00100000, False, pid)
+    if not handle:
+        return ctypes.get_last_error() != 87
+    try:
+        return kernel.WaitForSingleObject(handle, 0) != 0
+    finally:
+        kernel.CloseHandle(handle)
 
 
 class PublishLock:
@@ -20,6 +47,8 @@ class PublishLock:
         poll_seconds: float = 5.0,
         stale_seconds: int = 7200,
     ) -> None:
+        if os.name == "nt" and lock_path.name == "student_calendar_publish.lock" and os.environ.get("LOCALAPPDATA"):
+            lock_path = Path(os.environ["LOCALAPPDATA"]) / "BenkyoClub" / lock_path.name
         self.lock_path = lock_path
         self.purpose = purpose
         self.timeout_seconds = timeout_seconds
@@ -40,11 +69,20 @@ class PublishLock:
         )
 
     def _remove_if_stale(self) -> bool:
+        # タイムアウト等で所有プロセスが終了したロックは、2時間待たず回収する。
+        try:
+            payload = json.loads(self.lock_path.read_text(encoding="utf-8"))
+            owner_pid = int(payload.get("pid", 0))
+        except (FileNotFoundError, ValueError, TypeError, json.JSONDecodeError, OSError):
+            owner_pid = 0
+        owner_alive = True
+        if owner_pid > 0:
+            owner_alive = process_is_alive(owner_pid)
         try:
             age = time.time() - self.lock_path.stat().st_mtime
         except FileNotFoundError:
             return True
-        if age <= self.stale_seconds:
+        if owner_alive and age <= self.stale_seconds:
             return False
         stale_path = self.lock_path.with_name(
             self.lock_path.name + f".stale-{int(time.time())}"
@@ -59,6 +97,8 @@ class PublishLock:
             return False
 
     def acquire(self) -> None:
+        if self.acquired:
+            return
         self.lock_path.parent.mkdir(parents=True, exist_ok=True)
         deadline = time.monotonic() + self.timeout_seconds
         announced = False

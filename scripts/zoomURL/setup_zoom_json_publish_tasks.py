@@ -5,12 +5,15 @@
 from __future__ import annotations
 
 import subprocess
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 
 TASK_PREFIX = "BenkyoZoomRecordingURLJson"
 LESSON_END_TIMES = ["16:25", "18:15", "20:05", "21:55"]
-OFFSETS_MINUTES = [5, 10, 15, 20, 25, 30]
+# 授業終了直後はZoom側の録画生成時刻にばらつきがあるため毎分確認する。
+# 10分を過ぎた後は負荷を抑え、30分後まで5分間隔で確認する。
+OFFSETS_MINUTES = list(range(0, 11)) + [15, 20, 25, 30]
 
 
 def run_times() -> list[tuple[int, int]]:
@@ -22,12 +25,14 @@ def run_times() -> list[tuple[int, int]]:
         for offset in OFFSETS_MINUTES:
             target = base + timedelta(minutes=offset)
             times.append((target.hour, target.minute))
-    return times
+    return sorted(set(times))
 
 
 def create_task(hour: int, minute: int) -> bool:
     script_dir = Path(__file__).resolve().parent
-    launcher_path = script_dir / "scheduled_zoom_recording_url_json_publish_hidden.vbs"
+    local_runtime = Path(os.environ.get("LOCALAPPDATA", "")) / "BenkyoClub" / "zoom-publisher"
+    stable_launcher = local_runtime / "zoomURL" / "run_zoom_publisher_hidden.vbs"
+    launcher_path = stable_launcher if stable_launcher.exists() else script_dir / "scheduled_zoom_recording_url_json_publish_hidden.vbs"
     if not launcher_path.exists():
         print(f"[ERROR] not found: {launcher_path}")
         return False

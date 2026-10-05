@@ -232,6 +232,8 @@ def main() -> int:
     payload = url_list.make_recording_json(month)
     out = url_list.SYSTEM_DIR / f"zoom_recording_urls_{month}.json"
     latest = url_list.SYSTEM_DIR / "zoom_recording_urls_latest.json"
+    update_latest = month == url_list.z.determine_latest_schedule_month()
+    outputs = (out, latest) if update_latest else (out,)
 
     repo = url_list.repo_dir()
     if repo is None:
@@ -265,15 +267,16 @@ def main() -> int:
         return 0
 
     out.write_text(payload_text, encoding="utf-8")
-    latest.write_text(payload_text, encoding="utf-8")
+    if update_latest:
+        latest.write_text(payload_text, encoding="utf-8")
     print(f"[write] {out.name} matched={payload['matched']} missing={payload['missing']}")
 
-    for src in (out, latest):
+    for src in outputs:
         dst = repo / src.name
         shutil.copy2(src, dst)
         print(f"[copy] {dst.name}")
 
-    run(["git", "add", f"zoom_recording_urls_{month}.json", "zoom_recording_urls_latest.json"], cwd=repo)
+    run(["git", "add", *[file.name for file in outputs]], cwd=repo)
 
     diff = run(["git", "diff", "--cached", "--quiet"], cwd=repo, check=False, timeout=20)
     if diff.returncode == 0:
@@ -297,4 +300,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main())
