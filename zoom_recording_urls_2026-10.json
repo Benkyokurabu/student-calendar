@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-05T20:13:08.567260+09:00",
-  "matched": 33,
-  "missing": 346,
+  "generatedAt": "2026-10-05T20:14:38.384314+09:00",
+  "matched": 35,
+  "missing": 344,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -740,6 +740,51 @@
       "startOffsetMinutes": 4.7,
       "recordingDurationMinutes": 84.2,
       "lessonOverlapMinutes": 84.2
+    },
+    "2026-10-05|6:35～8:05|hon|hon_j3_S_sci|7": {
+      "url": "https://us06web.zoom.us/rec/play/MY3OTVYHpYyCMVm8EmbTGdHbwdV14u0yw_5fYqEOOitp9A1Twgzje3bgOWE5IuSAQgufDb6d0Kyrz2Ry.-ZvL-3sLK6VI2M4v",
+      "recordingStart": "2026-10-05T18:41:42+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-10-05",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "7",
+      "grade": "j3",
+      "class": "S",
+      "subject": "sci",
+      "label": "中３S 理科",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-10-05|6:35～8:05|j3|S|sci",
+      "recordingCampus": "minami",
+      "recordingRoom": "2",
+      "sharedFromEventKey": "2026-10-05|6:35～8:05|minami|minami_j3_S_sci|2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 6.7,
+      "recordingDurationMinutes": 82.8,
+      "lessonOverlapMinutes": 82.8
+    },
+    "2026-10-05|6:35～8:05|minami|minami_j3_S_sci|2": {
+      "url": "https://us06web.zoom.us/rec/play/MY3OTVYHpYyCMVm8EmbTGdHbwdV14u0yw_5fYqEOOitp9A1Twgzje3bgOWE5IuSAQgufDb6d0Kyrz2Ry.-ZvL-3sLK6VI2M4v",
+      "recordingStart": "2026-10-05T18:41:42+09:00",
+      "meetingId": "7707757842",
+      "topic": "南校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-10-05",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "2",
+      "grade": "j3",
+      "class": "S",
+      "subject": "sci",
+      "label": "中３S 理科",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-10-05|6:35～8:05|j3|S|sci",
+      "recordingCampus": "minami",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 6.7,
+      "recordingDurationMinutes": 82.8,
+      "lessonOverlapMinutes": 82.8
     }
   }
 }
