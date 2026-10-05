@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-05T18:30:19.418526+09:00",
-  "matched": 30,
-  "missing": 349,
+  "generatedAt": "2026-10-05T20:05:26.520336+09:00",
+  "matched": 31,
+  "missing": 348,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -671,6 +671,30 @@
       "startOffsetMinutes": 27.4,
       "recordingDurationMinutes": 50.3,
       "lessonOverlapMinutes": 50.3
+    },
+    "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1": {
+      "url": "",
+      "recordingStart": "2026-10-05T19:26:42+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-05",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j1",
+      "class": "S",
+      "subject": "math",
+      "label": "中１S 数学",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-10-05|6:35～8:05|j1|S|math",
+      "recordingCampus": "minami",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 51.7,
+      "recordingDurationMinutes": 33.3,
+      "lessonOverlapMinutes": 33.3,
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1"
     }
   }
 }
