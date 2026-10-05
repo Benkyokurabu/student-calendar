@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-05T01:31:05.002375+00:00",
+  "generatedAt": "2026-10-05T22:16:44.220483+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -1388,18 +1388,20 @@
       }
     },
     "2026-10-05|4:55～6:15|hon|hon_e4_X_arith|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "分配算",
+      "page": "P139□３まで",
+      "report": "分配算。いつもよりは少し苦戦している様子が見られた。足したり引いたり、どちらをすることで「何倍」をつくるのか、というところ。最後にはよくできるようになっていたと思う。次回の宿題で確認する。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "9",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P139□４，５"
+      ],
       "prevEntry": {
         "content": "計算のきまり",
         "page": "P28",
@@ -1420,17 +1422,19 @@
     },
     "2026-10-05|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "単元テスト③",
-      "page": "",
-      "report": "",
+      "page": "Unit8の１段目まで",
+      "report": "テストを実施。解説はリスニングから始め、すべて終了。国府田が100点、市川が95点、長谷川が90点、齋藤が85点のようだ。大竹は70、高田は60。大竹は整序作文で言葉の使い忘れがあり、高田はwhatとsubjectを離してしまうミスがあった。またローマ字でのミスもこの二人にはあった。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "31",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "Unit8の１段目暗唱"
+      ],
       "prevEntry": {
         "content": "デジタル中部/Unit6,7復習",
         "page": "",
@@ -1465,18 +1469,20 @@
       "homework": []
     },
     "2026-10-05|4:55～6:15|minami|minami_e4_X_arith|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "分配算",
+      "page": "P139□３まで",
+      "report": "分配算。いつもよりは少し苦戦している様子が見られた。足したり引いたり、どちらをすることで「何倍」をつくるのか、というところ。最後にはよくできるようになっていたと思う。次回の宿題で確認する。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "9",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P139□４，５"
+      ],
       "prevEntry": {
         "content": "計算のきまり",
         "page": "P28",
@@ -1524,21 +1530,24 @@
       "homework": []
     },
     "2026-10-05|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "HWGUnit5とDailyLife2",
+      "page": "p79#2まで",
+      "report": "HWGはDLScene2まで行い、その後プリントで三単現の復習をした。大宮、国府田、戸部にまだ疑問や否定でミスがある。また岡田は子音+ｙをいまいちわかっていなかった。またAから上がってきた高橋由乃と平岡も三単現の理解が怪しい。プリントの後半は宿題化し、木曜に答えを送ると伝えた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "テスト勉強",
+        "プリント右側"
+      ],
       "prevEntry": {
         "content": "HereWeGoUnit5",
-        "page": "下線部④の前まで",
+        "page": "p74下線部④の前まで",
         "homework": [
           "HereWeGoUnit5の#5～7,12～14,19～21"
         ],
@@ -1555,50 +1564,54 @@
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "古文",
+      "page": "テキストP118-120",
+      "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
       "teacher": "高山",
-      "absence": "",
+      "absence": "茂呂・林・鹿内",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "29",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字帳P146まで"
+      ],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "仁和寺にある法師",
+        "page": "",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P138-141"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "確認テスト後、平家物語の冒頭・徒然草の冒頭の暗唱から行う。暗唱後、仁和寺にある法師へ。笑い話になっている落ちを読み取れてはいるが、細かいところがまだまだ。",
+        "recordingUrl": "",
         "teacher": "高山",
-        "absence": "齋藤・疋田・美月・堀口",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "weekNum": "4",
+        "date": "2026-09-28"
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "基本的人権",
+      "page": "マイクリアp132～",
+      "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
       "teacher": "金城",
-      "absence": "",
+      "absence": "矢田、小野瀬",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "マイp133〇こみ",
+        "ドリルp88-89、90-91〇こみ"
+      ],
       "prevEntry": {
         "content": "国民主権、平和主義終了、基本的人権",
         "page": "マイクリアp128～",
@@ -1618,18 +1631,20 @@
       }
     },
     "2026-10-05|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "中和とイオン",
+      "page": "ｐ144-145，ｐ148-2まで",
+      "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "伊東・小出・沼倉・北面",
+      "curriculumProgress": "±0.5",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ドリルｐ78-79"
+      ],
       "prevEntry": {
         "content": "スクーリングp142-3",
         "page": "p１４０－□４まで",
@@ -1679,13 +1694,13 @@
         "date": "2026-09-28"
       },
       "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8019-971a-eab0f9517456"
+      "recordingPublicationKey": "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1"
     },
     "2026-10-05|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "古文",
+      "page": "テキストP118-120",
+      "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
       "teacher": "高山",
       "absence": "",
       "curriculumProgress": "",
@@ -1693,31 +1708,32 @@
       "sessionNumber": "29",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字帳P146まで"
+      ],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "仁和寺",
+        "page": "P131-132",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P138-141"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の確認後、平家の冒頭・徒然草の冒頭の暗唱、仁和寺にある法師へと進んだ。現代仮名遣いに直すことはおおむねできるようになったが、石原はＡクラスレベル。見守る。",
+        "recordingUrl": "",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
+        "sessionNumber": "28",
         "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "weekNum": "4",
+        "date": "2026-09-28"
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "基本的人権",
+      "page": "マイクリアp132～",
+      "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -1725,7 +1741,10 @@
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "マイp133〇こみ",
+        "ドリルp88-89、90-91〇こみ"
+      ],
       "prevEntry": {
         "content": "国民主権、平和主義終了、基本的人権",
         "page": "マイクリアp128～",
@@ -1745,9 +1764,9 @@
       }
     },
     "2026-10-05|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "中和とイオン",
+      "page": "ｐ144-145，ｐ148-2まで",
+      "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -1756,7 +1775,9 @@
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ドリルｐ78-79"
+      ],
       "prevEntry": {
         "content": "スクーリングp142-3",
         "page": "p１４０－□４まで",
@@ -1776,18 +1797,20 @@
       }
     },
     "2026-10-05|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit5/DailyLife5/リスニング研究",
+      "page": "HWGp98/通常テキストL4#40No.3まで",
+      "report": "予告していた単語テストから。自己採点では宮田が満点とのこと。HWGテキストをDL6までやったあと、通常テキストのL4リスニング研究へ。石原はここまですべて間違えたとのことだが、入試問題なのでまだ間違えても仕方ないと励ました。相吉澤は今回しっかり宿題をやってきていた。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "笠松",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "38",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "テスト勉強(その一部としてL4#43～45)"
+      ],
       "prevEntry": {
         "content": "Unit5,DailyLife5",
         "page": "p97#1まで",
@@ -1808,18 +1831,20 @@
       }
     },
     "2026-10-05|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "中和とイオン",
+      "page": "ｐ145まで",
+      "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "矢田・江川・小野瀬",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ドリルｐ76-78"
+      ],
       "prevEntry": {
         "content": "スクーリング",
         "page": "139-3,142-2まで",
@@ -1839,18 +1864,20 @@
       }
     },
     "2026-10-05|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "憲法終了、選挙制度",
+      "page": "p132～、p138～",
+      "report": "p134-135の演習を終えて、選挙制度に入った。様々な資料を見せながら、小選挙区比例代表並立制まで。次回は制度の復習とともに、ドント方式から。国会を可能な限り進めたい。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/4vRQpCZUzWBOZZbEucW0besyW3VZB2GycaNocv-aJkOGhX-Irdb-OQxNetjh_9Jeqd4aYz7B892Xdh7S.vPIkLj51pZ6TXo8F",
       "teacher": "金城",
-      "absence": "",
+      "absence": "伊東、小出、沼倉、北面",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "今回はなし。来週まとめて"
+      ],
       "prevEntry": {
         "content": "基本的人権",
         "page": "マイクリアp132～",
@@ -1871,9 +1898,9 @@
       }
     },
     "2026-10-05|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "中和とイオン",
+      "page": "ｐ145まで",
+      "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -1882,7 +1909,9 @@
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ドリルｐ76-78"
+      ],
       "prevEntry": {
         "content": "スクーリング",
         "page": "139-3,142-2まで",
@@ -4044,22 +4073,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80ff-99db-d73d20ad1e9c"
@@ -4173,12 +4201,14 @@
       "homework": [],
       "prevEntry": {
         "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "",
+        "page": "Unit8の１段目まで",
+        "homework": [
+          "Unit8の１段目暗唱"
+        ],
+        "report": "テストを実施。解説はリスニングから始め、すべて終了。国府田が100点、市川が95点、長谷川が90点、齋藤が85点のようだ。大竹は70、高田は60。大竹は整序作文で言葉の使い忘れがあり、高田はwhatとsubjectを離してしまうミスがあった。またローマ字でのミスもこの二人にはあった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "31",
@@ -4215,21 +4245,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "HereWeGoUnit5",
-        "page": "下線部④の前まで",
+        "content": "HWGUnit5とDailyLife2",
+        "page": "p79#2まで",
         "homework": [
-          "HereWeGoUnit5の#5～7,12～14,19～21"
+          "テスト勉強",
+          "プリント右側"
         ],
-        "report": "HereWeGoを進めた。疑問詞は先頭、後ろは疑問文、下げ調子で読むなどを復習しつつ。また読解の中で代名詞が何を指すのかなども。へんなところで終了となってしまった。次回はUnit5のあとDL2へ。",
+        "report": "HWGはDLScene2まで行い、その後プリントで三単現の復習をした。大宮、国府田、戸部にまだ疑問や否定でミスがある。また岡田は子音+ｙをいまいちわかっていなかった。またAから上がってきた高橋由乃と平岡も三単現の理解が怪しい。プリントの後半は宿題化し、木曜に答えを送ると伝えた。",
         "recordingUrl": "",
         "teacher": "真下",
         "absence": "なし",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "36",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j2_S_jp|2": {
@@ -4246,22 +4277,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
-        "absence": "齋藤・疋田・美月・堀口",
+        "absence": "茂呂・林・鹿内",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-800f-a6bf-e1f5ef87fe85"
@@ -4280,21 +4310,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
-        "absence": "青木、大嶋りほ、田村、長尾、西村",
+        "absence": "矢田、小野瀬",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -4311,21 +4342,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "＋1",
+        "absence": "伊東・小出・沼倉・北面",
+        "curriculumProgress": "±0.5",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|6:35～8:05|minami|minami_j1_S_math|1": {
@@ -4371,21 +4402,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -4402,21 +4434,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "柴田",
-        "curriculumProgress": "＋1",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -4433,22 +4465,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "Unit5,DailyLife5",
-        "page": "p97#1まで",
+        "content": "Unit5/DailyLife5/リスニング研究",
+        "page": "HWGp98/通常テキストL4#40No.3まで",
         "homework": [
-          "HereWeGoテキストUnit5#19～21,DailyLife#2",
-          "配布した単語プリント(次回同じものでテストします)"
+          "テスト勉強(その一部としてL4#43～45)"
         ],
-        "report": "予告していた単語テストは、加藤が全問正解。また数名が８割以上。一方石原、城崎、中野、松田が振るわず。城崎は授業内で指名した際もだいぶ苦戦することが多い。次回はUnit5の単語をテストするので、そのプリントを配布した。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/-3eAKSgaTX6woSh72Kn-xDqGztPMdD2h7Zm7KLwGoV2rAiQuwG1l81HNuhsLHbxM.uAO7u4aWnRIVyAOQ?startTime=1790594846000",
+        "report": "予告していた単語テストから。自己採点では宮田が満点とのこと。HWGテキストをDL6までやったあと、通常テキストのL4リスニング研究へ。石原はここまですべて間違えたとのことだが、入試問題なのでまだ間違えても仕方ないと励ました。相吉澤は今回しっかり宿題をやってきていた。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "笠松、小久保",
-        "curriculumProgress": "－0.7",
-        "note": "城崎単語4/20。次回も振るわなければ補講に。/次回単語満点賞はガリガリ君と宣言した",
-        "sessionNumber": "37",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "absence": "笠松",
+        "curriculumProgress": "－1",
+        "note": "",
+        "sessionNumber": "38",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -4465,21 +4496,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "大嶋・平居",
-        "curriculumProgress": "±1",
+        "absence": "矢田・江川・小野瀬",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_S_soc|4": {
@@ -4496,22 +4527,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "基本的人権",
-        "page": "マイクリアp132～",
+        "content": "憲法終了、選挙制度",
+        "page": "p132～、p138～",
         "homework": [
-          "マイクリアp133〇こみ",
-          "ドリルp90-91〇込み"
+          "今回はなし。来週まとめて"
         ],
-        "report": "基本的人権は、基礎事項はすべて終了。演習はp1352⃣-3まで。次回は続きから。",
-        "recordingUrl": "",
+        "report": "p134-135の演習を終えて、選挙制度に入った。様々な資料を見せながら、小選挙区比例代表並立制まで。次回は制度の復習とともに、ドント方式から。国会を可能な限り進めたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/4vRQpCZUzWBOZZbEucW0besyW3VZB2GycaNocv-aJkOGhX-Irdb-OQxNetjh_9Jeqd4aYz7B892Xdh7S.vPIkLj51pZ6TXo8F",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "伊東、小出、沼倉、北面",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -4528,21 +4558,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-12|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -6884,12 +6914,14 @@
       "homework": [],
       "prevEntry": {
         "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "",
+        "page": "Unit8の１段目まで",
+        "homework": [
+          "Unit8の１段目暗唱"
+        ],
+        "report": "テストを実施。解説はリスニングから始め、すべて終了。国府田が100点、市川が95点、長谷川が90点、齋藤が85点のようだ。大竹は70、高田は60。大竹は整序作文で言葉の使い忘れがあり、高田はwhatとsubjectを離してしまうミスがあった。またローマ字でのミスもこの二人にはあった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "31",
@@ -6957,22 +6989,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
-        "absence": "齋藤・疋田・美月・堀口",
+        "absence": "茂呂・林・鹿内",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -6989,21 +7020,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
-        "absence": "青木、大嶋りほ、田村、長尾、西村",
+        "absence": "矢田、小野瀬",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -7020,21 +7052,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "＋1",
+        "absence": "伊東・小出・沼倉・北面",
+        "curriculumProgress": "±0.5",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j1_S_math|1": {
@@ -7080,22 +7112,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -7112,21 +7143,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -7143,21 +7175,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "柴田",
-        "curriculumProgress": "＋1",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -7203,21 +7235,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "大嶋・平居",
-        "curriculumProgress": "±1",
+        "absence": "矢田・江川・小野瀬",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j3_S_soc|4": {
@@ -7234,22 +7266,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "基本的人権",
-        "page": "マイクリアp132～",
+        "content": "憲法終了、選挙制度",
+        "page": "p132～、p138～",
         "homework": [
-          "マイクリアp133〇こみ",
-          "ドリルp90-91〇込み"
+          "今回はなし。来週まとめて"
         ],
-        "report": "基本的人権は、基礎事項はすべて終了。演習はp1352⃣-3まで。次回は続きから。",
-        "recordingUrl": "",
+        "report": "p134-135の演習を終えて、選挙制度に入った。様々な資料を見せながら、小選挙区比例代表並立制まで。次回は制度の復習とともに、ドント方式から。国会を可能な限り進めたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/4vRQpCZUzWBOZZbEucW0besyW3VZB2GycaNocv-aJkOGhX-Irdb-OQxNetjh_9Jeqd4aYz7B892Xdh7S.vPIkLj51pZ6TXo8F",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "伊東、小出、沼倉、北面",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -7266,21 +7297,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-19|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -9443,21 +9474,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
-        "absence": "青木、大嶋りほ、田村、長尾、西村",
+        "absence": "矢田、小野瀬",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80a6-b96f-de3582fd7309"
@@ -9476,21 +9508,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "＋1",
+        "absence": "伊東・小出・沼倉・北面",
+        "curriculumProgress": "±0.5",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-805f-8743-c53900f2e621"
@@ -9538,21 +9570,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "大嶋・平居",
-        "curriculumProgress": "±1",
+        "absence": "矢田・江川・小野瀬",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-803f-9421-c1c6f0d36f6b"
@@ -9571,22 +9603,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "基本的人権",
-        "page": "マイクリアp132～",
+        "content": "憲法終了、選挙制度",
+        "page": "p132～、p138～",
         "homework": [
-          "マイクリアp133〇こみ",
-          "ドリルp90-91〇込み"
+          "今回はなし。来週まとめて"
         ],
-        "report": "基本的人権は、基礎事項はすべて終了。演習はp1352⃣-3まで。次回は続きから。",
-        "recordingUrl": "",
+        "report": "p134-135の演習を終えて、選挙制度に入った。様々な資料を見せながら、小選挙区比例代表並立制まで。次回は制度の復習とともに、ドント方式から。国会を可能な限り進めたい。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/4vRQpCZUzWBOZZbEucW0besyW3VZB2GycaNocv-aJkOGhX-Irdb-OQxNetjh_9Jeqd4aYz7B892Xdh7S.vPIkLj51pZ6TXo8F",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "伊東、小出、沼倉、北面",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-26"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80d1-959d-ce4cf4eb5e21"
@@ -9649,12 +9680,14 @@
       "homework": [],
       "prevEntry": {
         "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "",
+        "page": "Unit8の１段目まで",
+        "homework": [
+          "Unit8の１段目暗唱"
+        ],
+        "report": "テストを実施。解説はリスニングから始め、すべて終了。国府田が100点、市川が95点、長谷川が90点、齋藤が85点のようだ。大竹は70、高田は60。大竹は整序作文で言葉の使い忘れがあり、高田はwhatとsubjectを離してしまうミスがあった。またローマ字でのミスもこの二人にはあった。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "31",
@@ -9720,22 +9753,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
-        "absence": "齋藤・疋田・美月・堀口",
+        "absence": "茂呂・林・鹿内",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j1_S_math|3": {
@@ -9781,22 +9813,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "平家物語",
-        "page": "P121-125",
+        "content": "古文",
+        "page": "テキストP118-120",
         "homework": [
-          "漢字帳P133-136",
-          "漢字帳P121冒頭の暗唱"
+          "漢字帳P146まで"
         ],
-        "report": "冒頭から、義経の逸話まで音読をさせながら進めた。冒頭の暗唱につていは、篠田・大熊・酒井がよくぼ得ていた。馬具については画像で解説。設問部では、玉水がつまらぬミスを珍しくしていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/G0uDmr55ygZJUeUu5Fc7di6YDQ-rbyVyi6nNC3CxTK5XgAh_6E0W9cWRdxnCFFZwJYrIlmsU7yBK2mAf.ow1ES97NhDqskC0R",
+        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
         "teacher": "高山",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "27",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-21"
+        "sessionNumber": "29",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_A_soc|2": {
@@ -9813,21 +9844,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国民主権、平和主義終了、基本的人権",
-        "page": "マイクリアp128～",
+        "content": "基本的人権",
+        "page": "マイクリアp132～",
         "homework": [
-          "月曜にまとめて"
+          "マイp133〇こみ",
+          "ドリルp88-89、90-91〇こみ"
         ],
-        "report": "国民主権、平和主義を終わらせ、基本的人権へ。自由権の経済活動まで。次回、公共の福祉を扱ってから、可能な限り人権を終わらせたい。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/h_xV-fyT9koSzmDR8yIIGn8NJkk4GkfF8w03qe3yttW9HvNY0UTMELUEgd1YZRQooBLZHJDandXx87YM.R_bGF-MvV2FZPb8q",
+        "report": "人権の指導を進めた。暗記させる用語は暗記させながら。新しい人権の、自己決定権は指導できていない。次回はそこから始めて、選挙の単元に入る。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/r9yhgHq7mywYsqKlQKYhJaGTrlBuMGy0CpmAGZqzL7pLDonON8mZLJ-v1wb40CW7YrANUB0HktTKJhSa.Krdm2uroarBU1faM",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "特",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "特",
-        "date": "2026-10-03"
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-809c-90f5-c49f42429c8e"
@@ -9846,21 +9878,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリングp142-3",
-        "page": "p１４０－□４まで",
+        "content": "中和とイオン",
+        "page": "ｐ144-145，ｐ148-2まで",
         "homework": [
-          "ドリルｐ74-75"
+          "ドリルｐ78-79"
         ],
-        "report": "イオンと電気分解。酸まで説明した。",
+        "report": "算とアルカリ、中和と塩まで終了した。途中でしゅうりょうしたので、次回は続きから。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "柴田",
-        "curriculumProgress": "＋1",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80d7-8215-e52fac868f95"
@@ -9972,21 +10004,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "スクーリング",
-        "page": "139-3,142-2まで",
+        "content": "中和とイオン",
+        "page": "ｐ145まで",
         "homework": [
-          "ドリルｐ74・75"
+          "ドリルｐ76-78"
         ],
-        "report": "イオン・電気分解など。オンラインが３名、出席が４名という状況。",
+        "report": "酸性・アルカリ性から中和と塩まで説明した。硫酸バリウムの実験は飛ばした。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
-        "monthNum": "9",
-        "weekNum": "4",
-        "date": "2026-09-28"
+        "sessionNumber": "37",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-05"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-8008-8e7c-c35ab74205ae"
