@@ -22,6 +22,10 @@ on:
       - '.github/workflows/test-system-runtime.yml'
 permissions:
   contents: read
+env:
+  # Match the installed launchers, which always run Python with -X utf8.
+  PYTHONUTF8: '1'
+  PYTHONIOENCODING: utf-8
 jobs:
   runtime:
     strategy:
