@@ -30,6 +30,18 @@ class ExistingPayloadTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "would remove"):
             publisher.validate_payload(generated, "2026-08", existing)
 
+    def test_hidden_entry_keeps_empty_url_without_exposing_recording(self):
+        key = "2026-10-01|lesson|hon|group|2"
+        hidden = {
+            "date": "2026-10-01", "url": "", "hidden": True,
+            "recordingPublicationKey": key,
+        }
+        payload = {"month": "2026-10", "matched": 1, "entries": {key: hidden}}
+        publisher.validate_payload(payload, "2026-10")
+        for invalid in ({**hidden, "hidden": False}, {**hidden, "recordingPublicationKey": "other"}):
+            with self.assertRaisesRegex(RuntimeError, "invalid entries"):
+                publisher.validate_payload({**payload, "entries": {key: invalid}}, "2026-10")
+
     def test_merge_preserves_old_url_and_adds_new_entry(self):
         existing = {
             "month": "2026-08",
