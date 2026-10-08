@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-08T02:41:14.990950+00:00",
+  "generatedAt": "2026-10-08T14:53:47.765113+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -247,7 +247,7 @@
       "content": "単元テスト④",
       "page": "",
       "report": "文章題、特に使わない椅子が紛れているものや文字を置いて解く関数などに空欄が目立った。解き方に関していえばいまいちな生徒が目立った。何名か５０点を下回っていた印象。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/9UhqqIDm2Kchr6NsiQOFpz6ITEhmy50CQgyosNlzcsAyB39DbLueFRnOa67Fsw2v_lJ7mXAPGOObHQOV.M9mZY2rnNrX_jyhZ",
       "teacher": "治彦",
       "absence": "岡田",
       "curriculumProgress": "±0",
@@ -274,9 +274,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-24"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-01|6:35～8:05|hon|hon_j1_S_math|2"
+      }
     },
     "2026-10-01|6:35～8:05|hon|hon_j3_B_eng|1": {
       "content": "HereWeGoUnit4とUnit5文法",
@@ -1667,7 +1665,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/RHkTD7OJ-HLsCoPycSTJj5VpI8MpEIA7gpjpFgCKbCkufaesq4VEZoI_Qir-NAO8rlh58vtkJZmjYuru.IZGdOhulTZyLgR2b",
       "teacher": "工藤",
       "absence": "",
       "curriculumProgress": "",
@@ -1692,9 +1690,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1"
+      }
     },
     "2026-10-05|6:35～8:05|minami|minami_j2_S_jp|6": {
       "content": "古文",

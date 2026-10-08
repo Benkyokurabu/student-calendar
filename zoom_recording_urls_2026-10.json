@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-08T22:10:05.107034+09:00",
+  "generatedAt": "2026-10-08T14:53:47.826807+00:00",
   "matched": 78,
   "missing": 301,
   "entries": {
@@ -137,7 +137,7 @@
       "lessonOverlapMinutes": 85.1
     },
     "2026-10-01|6:35～8:05|hon|hon_j1_S_math|2": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/9UhqqIDm2Kchr6NsiQOFpz6ITEhmy50CQgyosNlzcsAyB39DbLueFRnOa67Fsw2v_lJ7mXAPGOObHQOV.M9mZY2rnNrX_jyhZ",
       "recordingStart": "2026-10-01T19:21:14+09:00",
       "meetingId": "2861244895",
       "topic": "本校　第２教室のパーソナルミーティングルーム",
@@ -156,9 +156,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 46.2,
       "recordingDurationMinutes": 34.5,
-      "lessonOverlapMinutes": 34.5,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-01|6:35～8:05|hon|hon_j1_S_math|2"
+      "lessonOverlapMinutes": 34.5
     },
     "2026-10-01|6:35～8:05|minami|minami_j1_S_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/58CvtJZkyWuUZVfqJjQfjQKcSEo4PsXbxgG308u8LubXqAdt89uDH0dNWvSTsmD7foS0-LGxlPVZkY7_.4ZqoccjCJCr9H_rx",
@@ -673,7 +671,7 @@
       "lessonOverlapMinutes": 50.3
     },
     "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/RHkTD7OJ-HLsCoPycSTJj5VpI8MpEIA7gpjpFgCKbCkufaesq4VEZoI_Qir-NAO8rlh58vtkJZmjYuru.IZGdOhulTZyLgR2b",
       "recordingStart": "2026-10-05T19:26:42+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -692,9 +690,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 51.7,
       "recordingDurationMinutes": 33.3,
-      "lessonOverlapMinutes": 33.3,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-05|6:35～8:05|minami|minami_j1_S_math|1"
+      "lessonOverlapMinutes": 33.3
     },
     "2026-10-05|6:35～8:05|hon|hon_j2_S_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
