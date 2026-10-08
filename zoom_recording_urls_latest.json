@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-08T22:00:05.449900+09:00",
-  "matched": 75,
-  "missing": 304,
+  "generatedAt": "2026-10-08T22:01:04.195041+09:00",
+  "matched": 77,
+  "missing": 302,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -1660,6 +1660,28 @@
       "recordingDurationMinutes": 24.0,
       "lessonOverlapMinutes": 24.0
     },
+    "2026-10-08|8:25～9:55|minami|minami_j3_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/6ENyR201j5u1U1L3sIOMXQemjKDhDQlMgzSpYREM11KSjuCm1mFkS9eJq3jtAnnFsU0C9rST2yV222y6.DhexHNjlU2pTGsm9",
+      "recordingStart": "2026-10-08T20:43:42+09:00",
+      "meetingId": "2921151272",
+      "topic": "南校　第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-08",
+      "time": "8:25～9:55",
+      "campus": "minami",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "eng",
+      "label": "中３A 英語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-10-08|8:25～9:55|j3|A|eng",
+      "recordingCampus": "minami",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 18.7,
+      "recordingDurationMinutes": 69.5,
+      "lessonOverlapMinutes": 69.5
+    },
     "2026-10-08|8:25～9:55|hon|hon_j3_B_math|1": {
       "url": "",
       "recordingStart": "2026-10-08T21:21:10+09:00",
@@ -1683,6 +1705,28 @@
       "lessonOverlapMinutes": 33.8,
       "hidden": true,
       "recordingPublicationKey": "2026-10-08|8:25～9:55|hon|hon_j3_B_math|1"
+    },
+    "2026-10-08|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "url": "https://us06web.zoom.us/rec/play/tCqNEk9fCM6tsF2KvjFXA4BgkTHAk0oNKjvQusaVUOQebel5Jpui3hKRBaMLpCx0phDi7traew3EgVRf.CZcfFK5MuT2Q00OW",
+      "recordingStart": "2026-10-08T20:29:51+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-10-08",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j3",
+      "class": "S",
+      "subject": "eng",
+      "label": "中３S 英語",
+      "teacher": "真下",
+      "onlineLessonKey": "2026-10-08|8:25～9:55|j3|S|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 4.8,
+      "recordingDurationMinutes": 84.5,
+      "lessonOverlapMinutes": 84.5
     }
   }
 }
