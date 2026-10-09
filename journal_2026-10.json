@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-09T02:44:30.194118+00:00",
+  "generatedAt": "2026-10-09T13:52:05.355189+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3185,9 +3185,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8050-a7c0-c0542c5c57b4"
+      }
     },
     "2026-10-08|4:55～6:15|minami|minami_e6_A_jp|1": {
       "content": "説明文",
