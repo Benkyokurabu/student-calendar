@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-09T13:52:05.355189+00:00",
+  "generatedAt": "2026-10-09T13:56:03.537945+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -313,7 +313,7 @@
       "content": "Unit5・L4",
       "page": "L4の#44①まで",
       "report": "Unit5を確認テストまで終え、DLS2には進まず、通常テキスト#40/41/43/44①を行った。三単現を忘れてしまっているものが多く、設問を用いて軽く解説した。また、疑問詞の理解もあやふやなものが多かった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/8fXvVxXvtGAgSqh9Vvk29pDOd-M7R7DX_7A-hJrg1G09HesuiALVu4oWdkhFqOfY45KXO4GH6TwZ9CvK.Ec5Tsf28nLvLgGcf",
+      "recordingUrl": "",
       "teacher": "高山",
       "absence": "藤井・狩野",
       "curriculumProgress": "－1.5",
@@ -340,7 +340,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-01|6:35～8:05|minami|minami_j1_A_eng|3"
     },
     "2026-10-01|6:35～8:05|minami|minami_j1_S_eng|2": {
       "content": "Daily Life２／Can I～?/which",
@@ -994,7 +996,7 @@
       "content": "Daily Lives6",
       "page": "#2まで",
       "report": "DL5/6をまとめて行った。体調不良は単元テスト範囲ともなっているので進めた。中間テスト前だが、出席者はOK.伊藤あすきがずっと画面オフだった。",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/f43q3uxAh4NEC3a4aZW4oAfNcFVsKmUsxxPKl1mDUE_0ullAbz11X1CM3azSuQT3-AT61V3SMl_wae81.w4qe2EzgSLXJExy8",
+      "recordingUrl": "",
       "teacher": "高山",
       "absence": "川村",
       "curriculumProgress": "",
@@ -1023,7 +1025,9 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-02|6:35～8:05|minami|minami_j2_A_eng|1"
     },
     "2026-10-02|6:35～8:05|minami|minami_j3_S_jp|5": {
       "content": "2026埼玉過去問【２】終了、【４】古文",
@@ -3119,7 +3123,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fa-b62b-f574158efb52"
     },
     "2026-10-08|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "慣用句",
@@ -3353,7 +3359,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-800f-9233-e9d2a62f1a61"
     },
     "2026-10-08|6:35～8:05|minami|minami_j3_B_eng|1": {
       "content": "unit５",
@@ -3523,7 +3531,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8085-8751-facea5b8eceb"
     },
     "2026-10-08|8:25～9:55|minami|minami_j3_A_eng|1": {
       "content": "Unit5",
@@ -3716,7 +3726,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80b2-b6dc-c795eeacfdb4"
     },
     "2026-10-09|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "単元テスト③",
@@ -3747,7 +3759,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80ae-bdf7-f978480f062b"
     },
     "2026-10-09|6:35～8:05|hon|hon_j1_A_math|3": {
       "content": "単元テスト③",
@@ -3874,7 +3888,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-807a-b332-ca3b826bdfdf"
     },
     "2026-10-09|6:35～8:05|minami|minami_j1_B_eng|3": {
       "content": "単元テスト③",
@@ -3905,7 +3921,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8001-833d-d0641e9c0475"
     },
     "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1": {
       "content": "単元テスト③",
@@ -3928,7 +3946,7 @@
           "HWG! P62-96の完成"
         ],
         "report": "DL5/6をまとめて行った。体調不良は単元テスト範囲ともなっているので進めた。中間テスト前だが、出席者はOK.伊藤あすきがずっと画面オフだった。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/f43q3uxAh4NEC3a4aZW4oAfNcFVsKmUsxxPKl1mDUE_0ullAbz11X1CM3azSuQT3-AT61V3SMl_wae81.w4qe2EzgSLXJExy8",
+        "recordingUrl": "",
         "teacher": "高山",
         "absence": "川村",
         "curriculumProgress": "",
@@ -3936,8 +3954,12 @@
         "sessionNumber": "38",
         "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-10-02"
-      }
+        "date": "2026-10-02",
+        "hidden": true,
+        "recordingPublicationKey": "2026-10-02|6:35～8:05|minami|minami_j2_A_eng|1"
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-808a-bbb1-d6dce9a6f419"
     },
     "2026-10-09|8:25～9:55|hon|hon_j3_A_math|1": {
       "content": "",
@@ -4032,7 +4054,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80ae-aabb-e95268f340f0"
     },
     "2026-10-09|8:25～9:55|minami|minami_j3_S_eng|1": {
       "content": "",
@@ -4359,7 +4383,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-05"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-804a-b604-d0bc288f6bc6"
     },
     "2026-10-12|6:35～8:05|hon|hon_j2_S_jp|2": {
       "content": "",
@@ -4578,7 +4604,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-05"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-808c-8489-ca2bc3481cb2"
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
       "content": "",
@@ -4765,7 +4793,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-8f5c-c52feea9e239"
     },
     "2026-10-13|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "単元テスト③",
@@ -4930,7 +4960,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80c3-83a8-d778b29d5695"
     },
     "2026-10-13|6:35～8:05|minami|minami_j1_A_jp|3": {
       "content": "",
@@ -5310,7 +5342,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80fe-ad40-d88683dcf5d0"
     },
     "2026-10-14|6:35～8:05|hon|hon_j1_B_eng|3": {
       "content": "単元テスト③",
@@ -5342,7 +5376,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-809b-8b86-d0a807988fd9"
     },
     "2026-10-14|6:35～8:05|hon|hon_j3_S_jp|1": {
       "content": "",
@@ -5500,7 +5536,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-805a-9782-d2970c7b6c94"
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_A_jp|1": {
       "content": "",
@@ -5912,7 +5950,9 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80b3-8e2c-f16e5ecd582c"
     },
     "2026-10-15|6:35～8:05|hon|hon_j3_X_eng|6": {
       "content": "ST16都立・新宿",
@@ -6007,7 +6047,9 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80f1-93a2-e82eb3f63601"
     },
     "2026-10-15|6:35～8:05|minami|minami_j3_X_eng|4": {
       "content": "ST16都立・新宿",
@@ -6134,7 +6176,9 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80c3-b8d9-d00c60d0bcca"
     },
     "2026-10-15|8:25～9:55|minami|minami_j2_B_eng|2": {
       "content": "",
@@ -6195,7 +6239,9 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8036-8dd5-f1d8ebbcf1f4"
     },
     "2026-10-16|4:55～6:15|hon|hon_e4_X_jp|4": {
       "content": "",
@@ -6801,7 +6847,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-8052-8837-d8ea1405aaaf"
     },
     "2026-10-17|4:55～6:15|hon|hon_e5_X_jp|6": {
       "content": "物語、文節・単語分け",
@@ -6952,7 +7000,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80d8-9fc1-f5d2b9254412"
     },
     "2026-10-17|8:25～9:55|hon|hon_special_数学　　補講③|2": {
       "content": "",
