@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-09T13:56:04.659928+00:00",
+  "generatedAt": "2026-10-09T14:08:37.897319+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -313,7 +313,7 @@
       "content": "Unit5・L4",
       "page": "L4の#44①まで",
       "report": "Unit5を確認テストまで終え、DLS2には進まず、通常テキスト#40/41/43/44①を行った。三単現を忘れてしまっているものが多く、設問を用いて軽く解説した。また、疑問詞の理解もあやふやなものが多かった。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Xd0VwofvH_eRb0NTmSq41kgpwwbHNLvO6DN9u8gUIG21Xi33-sjgdjZrmGzGfHVpoLoHrtDdZmPpc24x.LsMtq12kafIl5L4a",
       "teacher": "高山",
       "absence": "藤井・狩野",
       "curriculumProgress": "－1.5",
@@ -340,9 +340,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-01|6:35～8:05|minami|minami_j1_A_eng|3"
+      }
     },
     "2026-10-01|6:35～8:05|minami|minami_j1_S_eng|2": {
       "content": "Daily Life２／Can I～?/which",
@@ -996,7 +994,7 @@
       "content": "Daily Lives6",
       "page": "#2まで",
       "report": "DL5/6をまとめて行った。体調不良は単元テスト範囲ともなっているので進めた。中間テスト前だが、出席者はOK.伊藤あすきがずっと画面オフだった。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/f43q3uxAh4NEC3a4aZW4oAfNcFVsKmUsxxPKl1mDUE_0ullAbz11X1CM3azSuQT3-AT61V3SMl_wae81.w4qe2EzgSLXJExy8",
       "teacher": "高山",
       "absence": "川村",
       "curriculumProgress": "",
@@ -1025,9 +1023,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-02|6:35～8:05|minami|minami_j2_A_eng|1"
+      }
     },
     "2026-10-02|6:35～8:05|minami|minami_j3_S_jp|5": {
       "content": "2026埼玉過去問【２】終了、【４】古文",
@@ -3946,7 +3942,7 @@
           "HWG! P62-96の完成"
         ],
         "report": "DL5/6をまとめて行った。体調不良は単元テスト範囲ともなっているので進めた。中間テスト前だが、出席者はOK.伊藤あすきがずっと画面オフだった。",
-        "recordingUrl": "",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/f43q3uxAh4NEC3a4aZW4oAfNcFVsKmUsxxPKl1mDUE_0ullAbz11X1CM3azSuQT3-AT61V3SMl_wae81.w4qe2EzgSLXJExy8",
         "teacher": "高山",
         "absence": "川村",
         "curriculumProgress": "",
@@ -3954,9 +3950,7 @@
         "sessionNumber": "38",
         "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-10-02",
-        "hidden": true,
-        "recordingPublicationKey": "2026-10-02|6:35～8:05|minami|minami_j2_A_eng|1"
+        "date": "2026-10-02"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-808a-bbb1-d6dce9a6f419"
