@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-10T15:11:27.599221+00:00",
+  "generatedAt": "2026-10-10T18:59:13.733958+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -4153,18 +4153,20 @@
       "weekNum": ""
     },
     "2026-10-10|6:35～8:05|hon|hon_j3_B_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "UNIT5Part3まで／間接疑問文",
+      "page": "通常テキストP48 #42まで",
+      "report": "UNIT５のPart３までを実施。下線部の訳は単語の意味を指導し自分で訳出をさせた。Goalは未。後半は間接疑問へ。あまり難しい用語は使わずに、語順に気を付けることにしぼって指導。慣れてきたら一般動詞の三単現、過去形もクリアできる生徒が多かったのでほめた。次回は単元テストなので、UNIT４の復習をしてくるよう伝えた。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "川島、戸部、平居、宝満、和田",
+      "curriculumProgress": "－1.5",
       "note": "",
       "sessionNumber": "特",
       "monthNum": "10",
       "weekNum": "特",
-      "homework": [],
+      "homework": [
+        "UNIT4復習"
+      ],
       "prevEntry": {
         "content": "Unit4単語テストとUnit5",
         "page": "HWGテキスト#11下線部②まで",
@@ -4184,18 +4186,20 @@
       }
     },
     "2026-10-10|6:35～8:05|minami|minami_j1_S_jp|3": {
-      "content": "",
+      "content": "単元テストＡ①",
       "page": "",
-      "report": "",
+      "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "古文",
         "page": "テキストP56-57",
@@ -4217,18 +4221,20 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-807f-9710-df44019b361d"
     },
     "2026-10-10|6:35～8:05|minami|minami_j2_S_jp|2": {
-      "content": "",
+      "content": "単元テスト③実施",
       "page": "",
-      "report": "",
+      "report": "単元テスト③実施。佐々木純正の漢字が壊滅的だったのが大いに気なるところ。堀口はとても明るくなった印象。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "風間・野尻・茂呂・柳下",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "古文",
         "page": "テキストP118-120",
@@ -4278,18 +4284,20 @@
       "weekNum": ""
     },
     "2026-10-10|8:25～9:55|minami|minami_j2_A_jp|2": {
-      "content": "",
+      "content": "単元テスト③実施",
       "page": "",
-      "report": "",
+      "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "山本",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "30",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "古文",
         "page": "新中学問題集ｐ１３６～１３７",
@@ -4311,18 +4319,20 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-8004-a388-c931ad74d3b4"
     },
     "2026-10-10|8:25～9:55|minami|minami_j3_S_jp|1": {
-      "content": "",
+      "content": "単元テストＳ③",
       "page": "",
-      "report": "",
+      "report": "嶺井が漢字持参忘れ。思い返せば、この子がキッチリ持ってきた記憶が少ない。解説は説明文を中心に行った。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "伊東、小野ゆいか、小出、柴田",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "2026埼玉過去問【２】終了、【４】古文",
         "page": "",
@@ -4940,7 +4950,7 @@
       "teacher": "高山",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "メモあり、右クリック",
       "sessionNumber": "30",
       "monthNum": "10",
       "weekNum": "2",
@@ -5423,7 +5433,7 @@
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "漢字未完生徒メモ",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
@@ -5970,21 +5980,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "Unit4単語テストとUnit5",
-        "page": "HWGテキスト#11下線部②まで",
+        "content": "UNIT5Part3まで／間接疑問文",
+        "page": "通常テキストP48 #42まで",
         "homework": [
-          "HWGテキストUnit5の#5から7"
+          "UNIT4復習"
         ],
-        "report": "北中は翌日が中間だが、オンラインもあわせて10人ほど出席。ねぎらった。予告していたUnit4の単語テストから。寶滿と大嶋が満点、他の者もだいぶ頑張っていた。その後は北中もUnit5のPt.2までは本文が出るとのことなので、Unit5を進めた。Pt.2の途中までで時間切れとなってしまった。次回は続きと、未指導の間接疑問文をお願いします。",
+        "report": "UNIT５のPart３までを実施。下線部の訳は単語の意味を指導し自分で訳出をさせた。Goalは未。後半は間接疑問へ。あまり難しい用語は使わずに、語順に気を付けることにしぼって指導。慣れてきたら一般動詞の三単現、過去形もクリアできる生徒が多かったのでほめた。次回は単元テストなので、UNIT４の復習をしてくるよう伝えた。",
         "recordingUrl": "",
-        "teacher": "真下",
-        "absence": "川島、中田、長谷川、和田、中村",
-        "curriculumProgress": "－2.5",
-        "note": "間接疑問と仮定法は未指導",
-        "sessionNumber": "42",
+        "teacher": "金子",
+        "absence": "川島、戸部、平居、宝満、和田",
+        "curriculumProgress": "－1.5",
+        "note": "",
+        "sessionNumber": "特",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-08"
+        "weekNum": "特",
+        "date": "2026-10-10"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80b3-8e2c-f16e5ecd582c"
@@ -6767,21 +6777,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "嶺井が漢字持参忘れ。思い返せば、この子がキッチリ持ってきた記憶が少ない。解説は説明文を中心に行った。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "伊東、小野ゆいか、小出、柴田",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-16|8:25～9:55|hon|hon_j3_A_math|1": {
@@ -7338,21 +7348,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "テキストP118-120",
+        "content": "単元テスト③実施",
+        "page": "",
         "homework": [
-          "漢字帳P146まで"
+          "なし"
         ],
-        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
+        "report": "単元テスト③実施。佐々木純正の漢字が壊滅的だったのが大いに気なるところ。堀口はとても明るくなった印象。",
+        "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "風間・野尻・茂呂・柳下",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-05"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -7828,21 +7838,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "テキストP56-57",
+        "content": "単元テストＡ①",
+        "page": "",
         "homework": [
-          "漢字帳P139-142"
+          "なし"
         ],
-        "report": "現代仮名遣いに直す、蓬莱の玉の枝を終え、テキストの演習へと進めた。竹取物語の冒頭の暗唱はみなＯＫ。現代仮名遣いに直すことは外前田が少々難あり。本日はおおむね良好だった。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/ne7-wYBPTo5GrzG09mb9HLA0x0PYP2IDpzGn3T4ouTqT64bIU_ruu7YMUHZb3zrx.GS2xKglR5sqTBLKF?startTime=1791279629000",
-        "teacher": "高山",
-        "absence": "",
+        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
+        "recordingUrl": "",
+        "teacher": "金城",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-06"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-20|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -7981,21 +7991,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "新中学問題集ｐ１３６～１３７",
+        "content": "単元テスト③実施",
+        "page": "",
         "homework": [
-          "漢字帳ｐ１４３～１４６"
+          "なし"
         ],
-        "report": "今回は単元テストに向けた復習ポイントの解説と、古文のまとめ演習を行った。全体的に古文はまだまだ解き方や考え方が定着していないように思える。世界観や歴史的な知識がまだまだ不足しているため、その辺りを都度合わせて教えていく必要がありそう。",
+        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
         "recordingUrl": "",
-        "teacher": "岩本",
-        "absence": "",
+        "teacher": "高山",
+        "absence": "山本",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-06"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-20|8:25～9:55|minami|minami_j3_B_math|1": {
@@ -9555,21 +9565,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "嶺井が漢字持参忘れ。思い返せば、この子がキッチリ持ってきた記憶が少ない。解説は説明文を中心に行った。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "伊東、小野ゆいか、小出、柴田",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-23|8:25～9:55|hon|hon_j3_A_math|1": {
@@ -10078,21 +10088,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "テキストP118-120",
+        "content": "単元テスト③実施",
+        "page": "",
         "homework": [
-          "漢字帳P146まで"
+          "なし"
         ],
-        "report": "漢字帳の学習後、古文単語へ。テキストP118に掲載されている古文単語をいくつか暗唱させた。野尻・玉水・村佐はさすが。すぐに覚えた。石原は、とんちんかんな発言もありSではやはりきついかも。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/Fpqoj34oLklW9YQhWua1Qpb3qZ_DGBbrGq7b1yXPCnvezMLjTEJfZQn33DdHPYJRc9DnPZhf03C9FOfh.goLVNbtgGFV9AQ0N",
+        "report": "単元テスト③実施。佐々木純正の漢字が壊滅的だったのが大いに気なるところ。堀口はとても明るくなった印象。",
+        "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "風間・野尻・茂呂・柳下",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-05"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_A_soc|2": {
@@ -10605,21 +10615,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "テキストP56-57",
+        "content": "単元テストＡ①",
+        "page": "",
         "homework": [
-          "漢字帳P139-142"
+          "なし"
         ],
-        "report": "現代仮名遣いに直す、蓬莱の玉の枝を終え、テキストの演習へと進めた。竹取物語の冒頭の暗唱はみなＯＫ。現代仮名遣いに直すことは外前田が少々難あり。本日はおおむね良好だった。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/ne7-wYBPTo5GrzG09mb9HLA0x0PYP2IDpzGn3T4ouTqT64bIU_ruu7YMUHZb3zrx.GS2xKglR5sqTBLKF?startTime=1791279629000",
-        "teacher": "高山",
-        "absence": "",
+        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
+        "recordingUrl": "",
+        "teacher": "金城",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-06"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-27|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -10791,21 +10801,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "古文",
-        "page": "新中学問題集ｐ１３６～１３７",
+        "content": "単元テスト③実施",
+        "page": "",
         "homework": [
-          "漢字帳ｐ１４３～１４６"
+          "なし"
         ],
-        "report": "今回は単元テストに向けた復習ポイントの解説と、古文のまとめ演習を行った。全体的に古文はまだまだ解き方や考え方が定着していないように思える。世界観や歴史的な知識がまだまだ不足しているため、その辺りを都度合わせて教えていく必要がありそう。",
+        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
         "recordingUrl": "",
-        "teacher": "岩本",
-        "absence": "",
+        "teacher": "高山",
+        "absence": "山本",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "29",
+        "sessionNumber": "30",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-06"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-27|8:25～9:55|minami|minami_j3_B_math|1": {
@@ -12070,21 +12080,21 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "嶺井が漢字持参忘れ。思い返せば、この子がキッチリ持ってきた記憶が少ない。解説は説明文を中心に行った。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "伊東、小野ゆいか、小出、柴田",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-10"
       }
     },
     "2026-10-30|8:25～9:55|hon|hon_j3_A_math|1": {
