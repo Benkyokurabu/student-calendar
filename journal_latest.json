@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-10T02:27:02.268841+00:00",
+  "generatedAt": "2026-10-10T15:11:27.599221+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3712,7 +3712,7 @@
       "content": "Unit8",
       "page": "Travelp42の2段/ワークp25/緑p178#127まで",
       "report": "４人中３人が修学旅行で欠席だったので、急遽テストを延期して、山本とL8をやった。天気の表現を完全にフレーズで覚えさせ、いろいろ進めた。とてもよくできていた。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/L4oSEtmbHaaZO048oAeaTTYYHsHPbE3RcVIk9Xc38-Sy2aAKZ0ZBpXbFM_qP-0UUwZZplVSTYZaa5pC8.YN0LdvgDRJ-S_PXF",
       "teacher": "真下",
       "absence": "沼田、香月、本村",
       "curriculumProgress": "",
@@ -3741,9 +3741,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|4:55～6:15|minami|minami_e6_A_eng|2"
+      }
     },
     "2026-10-09|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "単元テスト③",
@@ -6502,7 +6500,9 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-09"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "test:3ddf0120-80a7-80b2-b6dc-c795eeacfdb4"
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "",
