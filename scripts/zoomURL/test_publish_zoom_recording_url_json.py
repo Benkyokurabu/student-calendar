@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 import publish_zoom_recording_url_json as publisher
+from recording_publication_filter import apply_payload
 
 
 class ExistingPayloadTests(unittest.TestCase):
@@ -63,6 +64,33 @@ class ExistingPayloadTests(unittest.TestCase):
         self.assertIn("new", merged["entries"])
         self.assertEqual(2, merged["matched"])
         self.assertEqual(1, merged["missing"])
+
+    def test_public_rule_changes_hidden_entry_without_mutating_existing(self):
+        key = "2026-10-09|lesson|minami|minami_e6_A_eng|2"
+        existing = {
+            "month": "2026-10", "matched": 1, "missing": 0,
+            "entries": {key: {
+                "date": "2026-10-09", "url": "", "hidden": True,
+                "recordingPublicationKey": key,
+            }},
+        }
+        generated = {"month": "2026-10", "matched": 0, "missing": 1, "entries": {}}
+        rules = [{
+            "key": key, "eventKeys": [key], "status": "public",
+            "url": "https://example.test/recording", "urlHashes": [],
+        }]
+
+        published = apply_payload(
+            publisher.merge_preserving_published_entries(generated, existing), rules,
+        )
+
+        self.assertEqual("", existing["entries"][key]["url"])
+        self.assertTrue(existing["entries"][key]["hidden"])
+        self.assertEqual("https://example.test/recording", published["entries"][key]["url"])
+        self.assertNotIn("hidden", published["entries"][key])
+        self.assertNotEqual(
+            publisher.comparable_payload(existing), publisher.comparable_payload(published),
+        )
 
 
 if __name__ == "__main__":

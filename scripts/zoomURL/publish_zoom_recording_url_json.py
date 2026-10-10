@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import atexit
+import copy
 import json
 import shutil
 import subprocess
@@ -45,7 +46,9 @@ def merge_preserving_published_entries(generated: dict, existing: dict | None) -
     merged = dict(generated)
     # A Zoom API response can stop returning an older recurring-meeting instance,
     # and play URLs can rotate between calls. Published URLs remain authoritative.
-    entries = {**generated_entries, **existing_entries}
+    # The publication filter edits entry dictionaries in place. Keep the
+    # comparison source intact so a changed rule cannot look unchanged.
+    entries = copy.deepcopy({**generated_entries, **existing_entries})
     merged["entries"] = entries
     merged["matched"] = len(entries)
     total = int(generated.get("matched", 0)) + int(generated.get("missing", 0))
