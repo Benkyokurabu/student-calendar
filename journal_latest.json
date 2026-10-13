@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-13T04:04:22.564624+00:00",
+  "generatedAt": "2026-10-13T15:32:38.567613+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3776,9 +3776,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80ae-bdf7-f978480f062b"
+      }
     },
     "2026-10-09|6:35～8:05|hon|hon_j1_A_math|3": {
       "content": "単元テスト③",
@@ -4872,9 +4870,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-8f5c-c52feea9e239"
+      }
     },
     "2026-10-13|4:55～6:15|minami|minami_e5_A_arith|1": {
       "content": "単元テスト③",
