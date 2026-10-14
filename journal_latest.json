@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-14T02:10:46.194341+00:00",
+  "generatedAt": "2026-10-14T18:44:46.157980+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -829,7 +829,7 @@
       "teacher": "鈴木",
       "absence": "宮田莉緒",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "38",
       "monthNum": "10",
       "weekNum": "1",
@@ -2623,7 +2623,7 @@
       "weekNum": "1",
       "homework": [
         "ホープドリルp78～79",
-        "計算ドリルp60～62"
+        "計算ドリルp63～65"
       ],
       "prevEntry": {
         "content": "比例反比例まとめまで",
@@ -2748,7 +2748,7 @@
     "2026-10-07|6:35～8:05|minami|minami_j1_A_math|2": {
       "content": "単元テスト③",
       "page": "",
-      "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が再開の様子。",
+      "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が最下位の様子。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "なし",
@@ -3821,7 +3821,7 @@
       "teacher": "鈴木",
       "absence": "なし",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
@@ -3839,7 +3839,7 @@
         "teacher": "鈴木",
         "absence": "宮田莉緒",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "38",
         "monthNum": "10",
         "weekNum": "1",
@@ -5264,7 +5264,7 @@
       "teacher": "鈴木",
       "absence": "伊東・永田・内田\n金子・沼倉",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "42",
       "monthNum": "10",
       "weekNum": "2",
@@ -5291,18 +5291,20 @@
       }
     },
     "2026-10-14|4:55～6:15|hon|hon_e5_A_jp|2": {
-      "content": "",
+      "content": "まとめと復習",
       "page": "",
-      "report": "",
+      "report": "今回は単元テスト③に合わせてまとめと復習を行った。やはり言葉の知識の部分についてはかなり抜けが多いようだった。再度解説をしながら知識の復習をした。その後漢字の復習も行った。大越が以前に比べてかなり出来るようになっていた。凡ミスはまだまだ多いが、かなり頼もしくなったように感じる。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "髙田",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "32",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "随筆文",
         "page": "練成テキストｐ５２～５３",
@@ -5322,18 +5324,20 @@
       }
     },
     "2026-10-14|4:55～6:15|hon|hon_e6_A_jp|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "説明文、漢字復習",
+      "page": "テキストp100-101",
+      "report": "前回の説明文を終えたのち、少々時間に余裕があったので漢字のまとめを行った。読解力、語彙力ともに山本が良くできる。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "32",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "単テに向けて勉強"
+      ],
       "prevEntry": {
         "content": "新出漢字、説明文",
         "page": "漢字p126-127、テキストp100-101",
@@ -5353,18 +5357,20 @@
       }
     },
     "2026-10-14|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "",
+      "content": "復習",
       "page": "",
-      "report": "",
+      "report": "次回のテストに向けて「まとめ」のページで復習した。計算のきまりは忘れている部分も多そうだった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "斉藤はるた",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "32",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "テスト勉強"
+      ],
       "prevEntry": {
         "content": "まとめ",
         "page": "",
@@ -5385,24 +5391,27 @@
       }
     },
     "2026-10-14|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "ホープテストいろいろな面積、角柱と円柱、資料",
+      "page": "p",
+      "report": "円の複合図形の問題では平田千尋さんはよくできていたが他の二人はあまりできていなかった。円柱の表面積の求め方もあいまいだったのであとで宿題に出す。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/OZ4IZmJKisL1NeTEncx3A_-YWPYJEunGeUVqUar4s8eIzqvMOt_SOd6Qnc1xUHtxQcDz6HRfZ4QHoZyr.fF3L5lvgyr506OAS",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "32",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "プリント３枚",
+        "計算ドリルp69～71"
+      ],
       "prevEntry": {
         "content": "ホープテスト比例反比例",
         "page": "12①ー１まで",
         "homework": [
           "ホープドリルp78～79",
-          "計算ドリルp60～62"
+          "計算ドリルp63～65"
         ],
         "report": "基礎的な部分が定着していても、少し小数が出てきただけで解けなくなるようなことが多い。嶋田のんさんなど、図形の例が出てくるだけで分からなくなってしまっていた。",
         "recordingUrl": "https://us06web.zoom.us/rec/play/4fuuFtErPPgAzCyLbubaIrVx-_aQ8Ea9w3DrKQgR67RsZagxqVDM64UAlIi9IqeJ5j6aCYweLs4wajqw.AGGndjKSTNJI9Ul-",
@@ -5419,16 +5428,18 @@
     "2026-10-14|6:35～8:05|hon|hon_j1_A_eng|2": {
       "content": "単元テスト③",
       "page": "",
-      "report": "",
+      "report": "今回は単元テスト③を行った。自己採点での最高点は野口の８４点。７０点台が二名という状態。最下位は外前田の４６点。他は５０点以上はあった。内容で見ると、三人称含めて、やはり文法の問題でミスが目立つ。ここから過去形も入るため、動詞の扱い方は絶対にマスターさせる必要がある。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "３６回",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "unit５Goal、DLS２",
         "page": "HWGｐ７３～７９",
@@ -5452,16 +5463,18 @@
     "2026-10-14|6:35～8:05|hon|hon_j1_B_eng|3": {
       "content": "単元テスト③",
       "page": "",
-      "report": "",
+      "report": "単元テストを実施。答え合わせの際に文法事項を確認したが、抜け落ちが多い。粘り強く指導にあたる。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
+      "absence": "戸部",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "UNIT５復習",
         "page": "",
@@ -5484,18 +5497,20 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-809b-8b86-d0a807988fd9"
     },
     "2026-10-14|6:35～8:05|hon|hon_j3_S_jp|1": {
-      "content": "",
+      "content": "単元テストＳ③",
       "page": "",
-      "report": "",
+      "report": "解説はほぼ全て終了。採点は終わっていないが、戸張が１位かなぁ。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "漢字未完生徒メモ",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "2026埼玉過去問【２】終了、【４】古文",
         "page": "",
@@ -5517,9 +5532,9 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-801e-8c35-ca2d5997df30"
     },
     "2026-10-14|6:35～8:05|minami|minami_j1_A_math|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "平面図形",
+      "page": "ｐ9要点８まで",
+      "report": "平面図形の平行移動・対称移動・回転移動の最初まで。次回続き。内容は簡単だったので問題なさそう。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -5528,7 +5543,9 @@
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "＃10、ｐ12"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -5536,7 +5553,7 @@
           "解きなおし",
           "間違えたところ"
         ],
-        "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が再開の様子。",
+        "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が最下位の様子。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
@@ -5549,18 +5566,21 @@
       }
     },
     "2026-10-14|6:35～8:05|minami|minami_j1_B_math|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "要点５対称移動させた図形を描くまで",
+      "page": "p7まで",
+      "report": "まだ導入だが各種用語で覚えられなそうな者が少しいる。図形を描く問題を宿題に出したので様子見。",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/Nd_mQ6oJF3fHCCz61vVXPw9Dieh7iBaOrezhQO0dLuyCZhI7SwHM1AAoLVRu6iezf6lfiq831Yr2Un5l.ZPHSGmZHr-z0NHDZ",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "菊地愛里",
+      "curriculumProgress": "±0",
+      "note": "席は暫定保留",
       "sessionNumber": "37",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "p5、p7、p12",
+        "★以外"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -5580,18 +5600,21 @@
       }
     },
     "2026-10-14|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三角形と比の定理（３）",
+      "page": "P23",
+      "report": "相似、三角形と比の定理（３）まで進むことができた。最後は少し早かったかもなので、次回丁寧にフォローしたい。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "具志堅\n※藤田、オンラインで一切応答なし",
+      "curriculumProgress": "＋0.2",
       "note": "",
       "sessionNumber": "42",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "P18～19□4",
+        "P21＃23、P23,24,26＃31"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -5613,16 +5636,18 @@
     "2026-10-14|8:25～9:55|hon|hon_j2_S_eng|2": {
       "content": "単元テスト③",
       "page": "",
-      "report": "",
+      "report": "今回は単元テスト③を実施。最高点は菅原、鈴木の８４点。５０点台はいなかった。大きく下振れる生徒は特にいなかった。本文の問題で少し難しいものになると記述の仕方で不安が残る部分があった。答案の作り方は今後も要指導。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "比較、リスニング",
         "page": "#４８まで",
@@ -5644,18 +5669,20 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-805a-9782-d2970c7b6c94"
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_A_jp|1": {
-      "content": "",
+      "content": "単元テストＡ③",
       "page": "",
       "report": "",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "漢字未完生徒メモ",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "26埼玉過去問【２】終了、【１】問２まで",
         "page": "",
@@ -5677,18 +5704,21 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-80fd-bac8-e023a8c8aaf8"
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_X_math|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "70２円の問題",
+      "page": "ｐ146まで",
+      "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "23",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ｐ145-1",
+        "ｐ147-1.2"
+      ],
       "prevEntry": {
         "content": "６７円と接線",
         "page": "ｐ141最後まで",
@@ -5708,18 +5738,20 @@
       }
     },
     "2026-10-14|8:25～9:55|minami|minami_j2_B_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "合同条件まで",
+      "page": "p34#34まで",
+      "report": "やや丁寧に時間をかけて解説したのである程度合同条件に理解はしてもらえたようだった。松元波音君や松浦礼奈さんはたまに対応順を間違うことはあったが、今のところ全体的に順調。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/FuzlKwXHPNtQN3RdBHXNTwgcxU_DzXWTUwLqrmfuSvcTUpUwpD0WIRdGLHIUIoQo.9mnMfHDPhi0yQ6yt",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.3",
+      "note": "次回宿題の答え合わせの後p36からやる",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "p34、35、37"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -5735,22 +5767,27 @@
         "sessionNumber": "38",
         "monthNum": "10",
         "weekNum": "1",
-        "date": "2026-10-07"
+        "date": "2026-10-07",
+        "hidden": true,
+        "recordingPublicationKey": "2026-10-07|8:25～9:55|minami|minami_j2_B_math|1"
       }
     },
     "2026-10-14|8:25～9:55|minami|minami_j3_X_math|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "70２円の問題",
+      "page": "ｐ146まで",
+      "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "23",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ｐ145-1",
+        "ｐ147-1.2"
+      ],
       "prevEntry": {
         "content": "６７円と接線",
         "page": "ｐ141最後まで",
@@ -6642,7 +6679,7 @@
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "40",
       "monthNum": "10",
       "weekNum": "3",
@@ -6658,7 +6695,7 @@
         "teacher": "鈴木",
         "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "39",
         "monthNum": "10",
         "weekNum": "2",
@@ -6710,21 +6747,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "解説はほぼ全て終了。採点は終わっていないが、戸張が１位かなぁ。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "小出",
+        "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-16|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -7041,12 +7078,14 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "今回は単元テスト③を行った。自己採点での最高点は野口の８４点。７０点台が二名という状態。最下位は外前田の４６点。他は５０点以上はあった。内容で見ると、三人称含めて、やはり文法の問題でミスが目立つ。ここから過去形も入るため、動詞の扱い方は絶対にマスターさせる必要がある。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "±0",
         "note": "３６回",
         "sessionNumber": "37",
         "monthNum": "10",
@@ -7079,7 +7118,7 @@
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
         "weekNum": "2",
@@ -8142,7 +8181,7 @@
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
         "weekNum": "2",
@@ -8163,21 +8202,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "随筆文",
-        "page": "練成テキストｐ５２～５３",
+        "content": "まとめと復習",
+        "page": "",
         "homework": [
-          "漢字帳ｐ１３２～１３５"
+          "なし"
         ],
-        "report": "今回も随筆文を扱った。答案の書き方として、聞かれたことを整理して答えるということがまだまだ未熟。宍倉でも必要以上に文字を書いてしまうことがある。ポイントをしっかりと絞るよう伝えた。",
+        "report": "今回は単元テスト③に合わせてまとめと復習を行った。やはり言葉の知識の部分についてはかなり抜けが多いようだった。再度解説をしながら知識の復習をした。その後漢字の復習も行った。大越が以前に比べてかなり出来るようになっていた。凡ミスはまだまだ多いが、かなり頼もしくなったように感じる。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
+        "absence": "髙田",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
+        "sessionNumber": "32",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-8045-866b-ec7891f22c19"
@@ -8196,21 +8235,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "新出漢字、説明文",
-        "page": "漢字p126-127、テキストp100-101",
+        "content": "説明文、漢字復習",
+        "page": "テキストp100-101",
         "homework": [
-          "漢字p126-129"
+          "単テに向けて勉強"
         ],
-        "report": "p100-101の説明文は、２段落目まで。問１の風、問２問３は終了。虫が入り込んだせいで、いささかドタバタした回となった。女子の比率が高いので仕方ないが・・・。",
+        "report": "前回の説明文を終えたのち、少々時間に余裕があったので漢字のまとめを行った。読解力、語彙力ともに山本が良くできる。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "なし",
         "curriculumProgress": "",
-        "note": "上萬オンライン",
-        "sessionNumber": "31",
+        "note": "",
+        "sessionNumber": "32",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-8024-865a-f022732f45cd"
@@ -8229,22 +8268,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "まとめ",
+        "content": "復習",
         "page": "",
         "homework": [
-          "計算P50",
-          "ドリルP108，109"
+          "テスト勉強"
         ],
-        "report": "今日でまとめが終わった。次回はテストのコピーか何かプリントを用意する必要がある。",
+        "report": "次回のテストに向けて「まとめ」のページで復習した。計算のきまりは忘れている部分も多そうだった。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
+        "absence": "斉藤はるた",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
+        "sessionNumber": "32",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80a2-9688-eb27c6876cc1"
@@ -8263,22 +8301,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "ホープテスト比例反比例",
-        "page": "12①ー１まで",
+        "content": "ホープテストいろいろな面積、角柱と円柱、資料",
+        "page": "p",
         "homework": [
-          "ホープドリルp78～79",
-          "計算ドリルp60～62"
+          "プリント３枚",
+          "計算ドリルp69～71"
         ],
-        "report": "基礎的な部分が定着していても、少し小数が出てきただけで解けなくなるようなことが多い。嶋田のんさんなど、図形の例が出てくるだけで分からなくなってしまっていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/4fuuFtErPPgAzCyLbubaIrVx-_aQ8Ea9w3DrKQgR67RsZagxqVDM64UAlIi9IqeJ5j6aCYweLs4wajqw.AGGndjKSTNJI9Ul-",
+        "report": "円の複合図形の問題では平田千尋さんはよくできていたが他の二人はあまりできていなかった。円柱の表面積の求め方もあいまいだったのであとで宿題に出す。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/OZ4IZmJKisL1NeTEncx3A_-YWPYJEunGeUVqUar4s8eIzqvMOt_SOd6Qnc1xUHtxQcDz6HRfZ4QHoZyr.fF3L5lvgyr506OAS",
         "teacher": "森松",
         "absence": "なし",
-        "curriculumProgress": "＋1",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
+        "sessionNumber": "32",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|6:35～8:05|hon|hon_j1_A_eng|1": {
@@ -8297,12 +8335,14 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "今回は単元テスト③を行った。自己採点での最高点は野口の８４点。７０点台が二名という状態。最下位は外前田の４６点。他は５０点以上はあった。内容で見ると、三人称含めて、やはり文法の問題でミスが目立つ。ここから過去形も入るため、動詞の扱い方は絶対にマスターさせる必要がある。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "±0",
         "note": "３６回",
         "sessionNumber": "37",
         "monthNum": "10",
@@ -8326,11 +8366,13 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "単元テストを実施。答え合わせの際に文法事項を確認したが、抜け落ちが多い。粘り強く指導にあたる。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
+        "absence": "戸部",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "37",
@@ -8384,22 +8426,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "平面図形",
+        "page": "ｐ9要点８まで",
         "homework": [
-          "解きなおし",
-          "間違えたところ"
+          "＃10、ｐ12"
         ],
-        "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が再開の様子。",
+        "report": "平面図形の平行移動・対称移動・回転移動の最初まで。次回続き。内容は簡単だったので問題なさそう。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -8416,21 +8457,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "要点５対称移動させた図形を描くまで",
+        "page": "p7まで",
         "homework": [
-          "とき直しプリント"
+          "p5、p7、p12",
+          "★以外"
         ],
-        "report": "基本で間違う者が多すぎる。テストの結果も全体的に悲惨。",
-        "recordingUrl": "",
+        "report": "まだ導入だが各種用語で覚えられなそうな者が少しいる。図形を描く問題を宿題に出したので様子見。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Nd_mQ6oJF3fHCCz61vVXPw9Dieh7iBaOrezhQO0dLuyCZhI7SwHM1AAoLVRu6iezf6lfiq831Yr2Un5l.ZPHSGmZHr-z0NHDZ",
         "teacher": "森松",
-        "absence": "佐藤壱星\n藤井俊介",
+        "absence": "菊地愛里",
         "curriculumProgress": "±0",
-        "note": "次回席替え",
-        "sessionNumber": "36",
+        "note": "席は暫定保留",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -8447,21 +8489,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "三角形と比の定理（３）",
+        "page": "P23",
         "homework": [
-          "解きなおしのプリント"
+          "P18～19□4",
+          "P21＃23、P23,24,26＃31"
         ],
-        "report": "テストを実施５名欠席。テスト後は解説もした。",
+        "report": "相似、三角形と比の定理（３）まで進むことができた。最後は少し早かったかもなので、次回丁寧にフォローしたい。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "油谷・池田・江川・小野（ゆ）・清水",
-        "curriculumProgress": "±0.1",
+        "absence": "具志堅\n※藤田、オンラインで一切応答なし",
+        "curriculumProgress": "＋0.2",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|6:35～8:05|minami|minami_j3_X_jp|5": {
@@ -8511,12 +8554,14 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "今回は単元テスト③を実施。最高点は菅原、鈴木の８４点。５０点台はいなかった。大きく下振れる生徒は特にいなかった。本文の問題で少し難しいものになると記述の仕方で不安が残る部分があった。答案の作り方は今後も要指導。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋1",
         "note": "",
         "sessionNumber": "39",
         "monthNum": "10",
@@ -8538,21 +8583,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "東江、梅木、川島、中村、こうき\n矢田、和田、油谷、金子、",
+        "absence": "",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|8:25～9:55|hon|hon_j3_X_math|6": {
@@ -8569,21 +8614,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "６７円と接線",
-        "page": "ｐ141最後まで",
+        "content": "70２円の問題",
+        "page": "ｐ146まで",
         "homework": [
-          "ｐ137-3、ｐ139-3"
+          "ｐ145-1",
+          "ｐ147-1.2"
         ],
-        "report": "円の問題を練習した。今日もみな頑張っていた。大宮が調子よくできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/0OD-6-lv7rtTL_B09L3WzYuU4O-aMLBbNI8DxZQKhzXlRryib9Cr1A1vY05lwYN-.sBndkjc83ZO76mFt\nパスコード: １２３４５",
+        "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "22",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-30"
+        "sessionNumber": "23",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|8:25～9:55|minami|minami_j2_B_math|1": {
@@ -8600,21 +8646,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "合同条件まで",
+        "page": "p34#34まで",
         "homework": [
-          "とき直しプリント"
+          "p34、35、37"
         ],
-        "report": "堀内遥稀君は変化の割合の考え方がよくわかっていないようだった。川原悠君は計算ミスが多いと本人が言っていた。",
-        "recordingUrl": "",
+        "report": "やや丁寧に時間をかけて解説したのである程度合同条件に理解はしてもらえたようだった。松元波音君や松浦礼奈さんはたまに対応順を間違うことはあったが、今のところ全体的に順調。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/FuzlKwXHPNtQN3RdBHXNTwgcxU_DzXWTUwLqrmfuSvcTUpUwpD0WIRdGLHIUIoQo.9mnMfHDPhi0yQ6yt",
         "teacher": "森松",
-        "absence": "松元波音",
-        "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "38",
+        "absence": "なし",
+        "curriculumProgress": "－0.3",
+        "note": "次回宿題の答え合わせの後p36からやる",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-21|8:25～9:55|minami|minami_j3_A_jp|5": {
@@ -8662,21 +8708,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "６７円と接線",
-        "page": "ｐ141最後まで",
+        "content": "70２円の問題",
+        "page": "ｐ146まで",
         "homework": [
-          "ｐ137-3、ｐ139-3"
+          "ｐ145-1",
+          "ｐ147-1.2"
         ],
-        "report": "円の問題を練習した。今日もみな頑張っていた。大宮が調子よくできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/0OD-6-lv7rtTL_B09L3WzYuU4O-aMLBbNI8DxZQKhzXlRryib9Cr1A1vY05lwYN-.sBndkjc83ZO76mFt\nパスコード: １２３４５",
+        "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "22",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-30"
+        "sessionNumber": "23",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-14"
       }
     },
     "2026-10-22|4:55～6:15|hon|hon_e4_A_arith|3": {
@@ -9453,7 +9500,7 @@
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "41",
       "monthNum": "10",
       "weekNum": "4",
@@ -9469,7 +9516,7 @@
         "teacher": "鈴木",
         "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "39",
         "monthNum": "10",
         "weekNum": "2",
@@ -9521,21 +9568,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "解説はほぼ全て終了。採点は終わっていないが、戸張が１位かなぁ。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "小出",
+        "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-23|6:35～8:05|minami|minami_j1_A_eng|2": {
@@ -9991,21 +10038,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "三角形と比の定理（３）",
+        "page": "P23",
         "homework": [
-          "解きなおしのプリント"
+          "P18～19□4",
+          "P21＃23、P23,24,26＃31"
         ],
-        "report": "テストを実施５名欠席。テスト後は解説もした。",
+        "report": "相似、三角形と比の定理（３）まで進むことができた。最後は少し早かったかもなので、次回丁寧にフォローしたい。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "油谷・池田・江川・小野（ゆ）・清水",
-        "curriculumProgress": "±0.1",
+        "absence": "具志堅\n※藤田、オンラインで一切応答なし",
+        "curriculumProgress": "＋0.2",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-24|8:25～9:55|minami|minami_special_英語　　補講④|2": {
@@ -10650,21 +10698,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "東江、梅木、川島、中村、こうき\n矢田、和田、油谷、金子、",
+        "absence": "",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-27|6:35～8:05|minami|minami_j1_A_jp|6": {
@@ -10970,7 +11018,7 @@
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
         "weekNum": "2",
@@ -11078,22 +11126,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "ホープテスト比例反比例",
-        "page": "12①ー１まで",
+        "content": "ホープテストいろいろな面積、角柱と円柱、資料",
+        "page": "p",
         "homework": [
-          "ホープドリルp78～79",
-          "計算ドリルp60～62"
+          "プリント３枚",
+          "計算ドリルp69～71"
         ],
-        "report": "基礎的な部分が定着していても、少し小数が出てきただけで解けなくなるようなことが多い。嶋田のんさんなど、図形の例が出てくるだけで分からなくなってしまっていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/4fuuFtErPPgAzCyLbubaIrVx-_aQ8Ea9w3DrKQgR67RsZagxqVDM64UAlIi9IqeJ5j6aCYweLs4wajqw.AGGndjKSTNJI9Ul-",
+        "report": "円の複合図形の問題では平田千尋さんはよくできていたが他の二人はあまりできていなかった。円柱の表面積の求め方もあいまいだったのであとで宿題に出す。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/OZ4IZmJKisL1NeTEncx3A_-YWPYJEunGeUVqUar4s8eIzqvMOt_SOd6Qnc1xUHtxQcDz6HRfZ4QHoZyr.fF3L5lvgyr506OAS",
         "teacher": "森松",
         "absence": "なし",
-        "curriculumProgress": "＋1",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "31",
+        "sessionNumber": "32",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-804d-b32a-cff5abe1e3a2"
@@ -11114,12 +11162,14 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "今回は単元テスト③を行った。自己採点での最高点は野口の８４点。７０点台が二名という状態。最下位は外前田の４６点。他は５０点以上はあった。内容で見ると、三人称含めて、やはり文法の問題でミスが目立つ。ここから過去形も入るため、動詞の扱い方は絶対にマスターさせる必要がある。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "±0",
         "note": "３６回",
         "sessionNumber": "37",
         "monthNum": "10",
@@ -11143,11 +11193,13 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "単元テストを実施。答え合わせの際に文法事項を確認したが、抜け落ちが多い。粘り強く指導にあたる。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
+        "absence": "戸部",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "37",
@@ -11201,22 +11253,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "平面図形",
+        "page": "ｐ9要点８まで",
         "homework": [
-          "解きなおし",
-          "間違えたところ"
+          "＃10、ｐ12"
         ],
-        "report": "35分のテスト後解答解説。加藤が90点以上でトップのようだ。内田が再開の様子。",
+        "report": "平面図形の平行移動・対称移動・回転移動の最初まで。次回続き。内容は簡単だったので問題なさそう。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "36",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j1_B_math|3": {
@@ -11233,21 +11284,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "要点５対称移動させた図形を描くまで",
+        "page": "p7まで",
         "homework": [
-          "とき直しプリント"
+          "p5、p7、p12",
+          "★以外"
         ],
-        "report": "基本で間違う者が多すぎる。テストの結果も全体的に悲惨。",
-        "recordingUrl": "",
+        "report": "まだ導入だが各種用語で覚えられなそうな者が少しいる。図形を描く問題を宿題に出したので様子見。",
+        "recordingUrl": "https://us06web.zoom.us/rec/play/Nd_mQ6oJF3fHCCz61vVXPw9Dieh7iBaOrezhQO0dLuyCZhI7SwHM1AAoLVRu6iezf6lfiq831Yr2Un5l.ZPHSGmZHr-z0NHDZ",
         "teacher": "森松",
-        "absence": "佐藤壱星\n藤井俊介",
+        "absence": "菊地愛里",
         "curriculumProgress": "±0",
-        "note": "次回席替え",
-        "sessionNumber": "36",
+        "note": "席は暫定保留",
+        "sessionNumber": "37",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j3_A_math|1": {
@@ -11264,21 +11316,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "三角形と比の定理（３）",
+        "page": "P23",
         "homework": [
-          "解きなおしのプリント"
+          "P18～19□4",
+          "P21＃23、P23,24,26＃31"
         ],
-        "report": "テストを実施５名欠席。テスト後は解説もした。",
+        "report": "相似、三角形と比の定理（３）まで進むことができた。最後は少し早かったかもなので、次回丁寧にフォローしたい。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "油谷・池田・江川・小野（ゆ）・清水",
-        "curriculumProgress": "±0.1",
+        "absence": "具志堅\n※藤田、オンラインで一切応答なし",
+        "curriculumProgress": "＋0.2",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j3_X_jp|5": {
@@ -11328,12 +11381,14 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "なし"
+        ],
+        "report": "今回は単元テスト③を実施。最高点は菅原、鈴木の８４点。５０点台はいなかった。大きく下振れる生徒は特にいなかった。本文の問題で少し難しいものになると記述の仕方で不安が残る部分があった。答案の作り方は今後も要指導。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋1",
         "note": "",
         "sessionNumber": "39",
         "monthNum": "10",
@@ -11355,21 +11410,21 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "東江、梅木、川島、中村、こうき\n矢田、和田、油谷、金子、",
+        "absence": "",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|8:25～9:55|hon|hon_j3_X_math|6": {
@@ -11386,21 +11441,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "６７円と接線",
-        "page": "ｐ141最後まで",
+        "content": "70２円の問題",
+        "page": "ｐ146まで",
         "homework": [
-          "ｐ137-3、ｐ139-3"
+          "ｐ145-1",
+          "ｐ147-1.2"
         ],
-        "report": "円の問題を練習した。今日もみな頑張っていた。大宮が調子よくできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/0OD-6-lv7rtTL_B09L3WzYuU4O-aMLBbNI8DxZQKhzXlRryib9Cr1A1vY05lwYN-.sBndkjc83ZO76mFt\nパスコード: １２３４５",
+        "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "22",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-30"
+        "sessionNumber": "23",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|8:25～9:55|minami|minami_j2_B_math|1": {
@@ -11417,21 +11473,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "合同条件まで",
+        "page": "p34#34まで",
         "homework": [
-          "とき直しプリント"
+          "p34、35、37"
         ],
-        "report": "堀内遥稀君は変化の割合の考え方がよくわかっていないようだった。川原悠君は計算ミスが多いと本人が言っていた。",
-        "recordingUrl": "",
+        "report": "やや丁寧に時間をかけて解説したのである程度合同条件に理解はしてもらえたようだった。松元波音君や松浦礼奈さんはたまに対応順を間違うことはあったが、今のところ全体的に順調。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/FuzlKwXHPNtQN3RdBHXNTwgcxU_DzXWTUwLqrmfuSvcTUpUwpD0WIRdGLHIUIoQo.9mnMfHDPhi0yQ6yt",
         "teacher": "森松",
-        "absence": "松元波音",
-        "curriculumProgress": "±0",
-        "note": "",
-        "sessionNumber": "38",
+        "absence": "なし",
+        "curriculumProgress": "－0.3",
+        "note": "次回宿題の答え合わせの後p36からやる",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-28|8:25～9:55|minami|minami_j3_A_jp|5": {
@@ -11479,21 +11535,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "６７円と接線",
-        "page": "ｐ141最後まで",
+        "content": "70２円の問題",
+        "page": "ｐ146まで",
         "homework": [
-          "ｐ137-3、ｐ139-3"
+          "ｐ145-1",
+          "ｐ147-1.2"
         ],
-        "report": "円の問題を練習した。今日もみな頑張っていた。大宮が調子よくできていた。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/0OD-6-lv7rtTL_B09L3WzYuU4O-aMLBbNI8DxZQKhzXlRryib9Cr1A1vY05lwYN-.sBndkjc83ZO76mFt\nパスコード: １２３４５",
+        "report": "三平方や掃除を利用した円の問題について練習した。みな、問題なく頑張っていたように思える。",
+        "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "なし",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "22",
-        "monthNum": "9",
-        "weekNum": "3",
-        "date": "2026-09-30"
+        "sessionNumber": "23",
+        "monthNum": "10",
+        "weekNum": "1",
+        "date": "2026-10-14"
       }
     },
     "2026-10-29|4:55～6:15|minami|minami_e6_A_jp|1": {
@@ -11986,7 +12043,7 @@
       "teacher": "鈴木",
       "absence": "",
       "curriculumProgress": "",
-      "note": "",
+      "note": "進捗を記入してください",
       "sessionNumber": "42",
       "monthNum": "10",
       "weekNum": "5",
@@ -12002,7 +12059,7 @@
         "teacher": "鈴木",
         "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
+        "note": "進捗を記入してください",
         "sessionNumber": "39",
         "monthNum": "10",
         "weekNum": "2",
@@ -12054,21 +12111,21 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "2026埼玉過去問【２】終了、【４】古文",
+        "content": "単元テストＳ③",
         "page": "",
         "homework": [
-          "漢字p225-228"
+          "なし"
         ],
-        "report": "ようやく本日から過去問に突入。問題ごとの解説はもとより、テクニック等を伝えるようにしている。【４】の古文は仮名遣いの問題のみ解いた。次回が本番。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/_Tc906CoO8Cr8YYnkqPjw3cqdUJboXGhQIBvgqSnBMFoqrgL9qREPL11qIiWLVC_g_2ZFcPLeEkWVCQ.VcgMTxmqxkLSv6-B",
+        "report": "解説はほぼ全て終了。採点は終わっていないが、戸張が１位かなぁ。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "小出",
+        "absence": "なし",
         "curriculumProgress": "",
-        "note": "",
-        "sessionNumber": "38",
+        "note": "漢字未完生徒メモ",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-02"
+        "weekNum": "2",
+        "date": "2026-10-14"
       }
     },
     "2026-10-30|6:35～8:05|minami|minami_j1_A_eng|2": {
