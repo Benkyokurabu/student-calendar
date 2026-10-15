@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-14T22:02:44.483266+09:00",
+  "generatedAt": "2026-10-15T05:11:49.833950+00:00",
   "matched": 111,
   "missing": 268,
   "entries": {
@@ -2441,7 +2441,7 @@
       "recordingPublicationKey": "2026-10-09|6:35～8:05|minami|minami_j1_A_eng|2"
     },
     "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/BYKAg7WymQQxZvXCLTH1o8YKf2u4Ialrx8S551GjonRU7ReAWsyv1OR1zOCPMSodPuy8g6RUuoXeWc7_.b7a9QgdwuTdsjl6v",
       "recordingStart": "2026-10-09T19:23:00+09:00",
       "meetingId": "2921151272",
       "topic": "南校　第１教室のパーソナルミーティングルーム",
@@ -2460,9 +2460,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 48.0,
       "recordingDurationMinutes": 37.8,
-      "lessonOverlapMinutes": 37.8,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1"
+      "lessonOverlapMinutes": 37.8
     },
     "2026-10-09|8:25～9:55|minami|minami_j2_S_eng|2": {
       "url": "",
