@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-15T05:11:47.300473+00:00",
+  "generatedAt": "2026-10-15T10:01:13.995452+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3360,9 +3360,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-800f-9233-e9d2a62f1a61"
+      }
     },
     "2026-10-08|6:35～8:05|minami|minami_j3_B_eng|1": {
       "content": "unit５",
@@ -3955,7 +3953,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "単元テスト③実施。できはあまりよくはなさそうなものが散見。採点が怖いが明日以降を行う。",
-      "recordingUrl": "https://us06web.zoom.us/rec/play/BYKAg7WymQQxZvXCLTH1o8YKf2u4Ialrx8S551GjonRU7ReAWsyv1OR1zOCPMSodPuy8g6RUuoXeWc7_.b7a9QgdwuTdsjl6v",
+      "recordingUrl": "",
       "teacher": "高山",
       "absence": "川村",
       "curriculumProgress": "",
@@ -3983,7 +3981,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1"
     },
     "2026-10-09|8:25～9:55|hon|hon_j3_A_math|1": {
       "content": "要点6相似の利用",
@@ -4429,9 +4429,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-05"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-804a-b604-d0bc288f6bc6"
+      }
     },
     "2026-10-12|6:35～8:05|hon|hon_j2_S_jp|2": {
       "content": "単元テスト③",
@@ -4668,7 +4666,9 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-05"
-      }
+      },
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-12|8:25～9:55|hon|hon_j2_A_eng|1"
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
       "content": "中和とイオン",
