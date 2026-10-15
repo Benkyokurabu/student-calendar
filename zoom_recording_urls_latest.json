@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-15T21:55:07.191564+09:00",
-  "matched": 126,
-  "missing": 253,
+  "generatedAt": "2026-10-15T22:02:07.393438+09:00",
+  "matched": 128,
+  "missing": 251,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -2830,6 +2830,52 @@
       "startOffsetMinutes": 3.1,
       "recordingDurationMinutes": 76.9,
       "lessonOverlapMinutes": 76.9
+    },
+    "2026-10-15|8:25～9:55|hon|hon_j3_B_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/zzoHJNpO0g52SOJuupX2UUpzUiUvXlZ0MDKdWrEGDFenkBOEMQY5Sp9FnVgvoaXlbWIPdUqbN8eEjrYZ.dpfPb7Kzu2Eqc93I",
+      "recordingStart": "2026-10-15T20:25:28+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-15",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "B",
+      "subject": "math",
+      "label": "中３B 数学",
+      "teacher": "治彦",
+      "onlineLessonKey": "2026-10-15|8:25～9:55|j3|B|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 0.5,
+      "recordingDurationMinutes": 90.7,
+      "lessonOverlapMinutes": 89.5
+    },
+    "2026-10-15|8:25～9:55|hon|hon_j3_S_eng|3": {
+      "url": "",
+      "recordingStart": "2026-10-15T21:16:26+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-10-15",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j3",
+      "class": "S",
+      "subject": "eng",
+      "label": "中３S 英語",
+      "teacher": "真下",
+      "onlineLessonKey": "2026-10-15|8:25～9:55|j3|S|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 51.4,
+      "recordingDurationMinutes": 41.1,
+      "lessonOverlapMinutes": 38.6,
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-15|8:25～9:55|hon|hon_j3_S_eng|3"
     }
   }
 }
