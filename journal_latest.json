@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-16T01:07:27.517989+00:00",
+  "generatedAt": "2026-10-16T14:14:37.503970+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3881,7 +3881,7 @@
       "content": "単元テスト③",
       "page": "解説は大問４の(2)まで",
       "report": "単元テストを実施。３名欠席で４名受験。古山が三単現を一番わかっていないかも。補講に呼びたい。解説は途中までで終わってしまったので次回続き。未受験者はそれまでに受けさせたいが..。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/OoD_QG7uo1fBOVJM0fOwfjdyZvpQzjR5LipJiLs3Xtd6jIsoKjvRptWKEHVDjcePIVR1uJ8rklm7ut36.7ee5TMMDT9WHQosN",
       "teacher": "真下",
       "absence": "藤井、菊地、園田",
       "curriculumProgress": "",
@@ -3910,9 +3910,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|6:35～8:05|minami|minami_j1_A_eng|2"
+      }
     },
     "2026-10-09|6:35～8:05|minami|minami_j1_B_eng|3": {
       "content": "単元テスト③",
@@ -4056,7 +4054,7 @@
       "content": "単元テスト③",
       "page": "解説は大問４の途中まで",
       "report": "単テを実施。リスから解説し、大問４のsupposeまで。堀口がミスが多そう。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/KLXxA9z8zHfQLjhnEb9pXbFmVzj1v39cCAWvDVVEjJ2_4BHD3IBogEoQY31DA78oom_pcpzfchXV3Qum.T949KMzsojxQ3Pf7",
       "teacher": "真下",
       "absence": "前田、茂呂、川島",
       "curriculumProgress": "",
@@ -4085,9 +4083,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|8:25～9:55|minami|minami_j2_S_eng|2"
+      }
     },
     "2026-10-09|8:25～9:55|minami|minami_j3_S_eng|1": {
       "content": "長文読解",
@@ -5448,9 +5444,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fe-ad40-d88683dcf5d0"
+      }
     },
     "2026-10-14|6:35～8:05|hon|hon_j1_B_eng|3": {
       "content": "単元テスト③",
@@ -5656,9 +5650,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-805a-9782-d2970c7b6c94"
+      }
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_A_jp|1": {
       "content": "単元テストＡ③",
