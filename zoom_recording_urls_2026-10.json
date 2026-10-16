@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-16T20:20:06.850816+09:00",
-  "matched": 137,
-  "missing": 242,
+  "generatedAt": "2026-10-16T20:25:15.824880+09:00",
+  "matched": 139,
+  "missing": 240,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -3076,6 +3076,51 @@
       "startOffsetMinutes": 1.2,
       "recordingDurationMinutes": 89.7,
       "lessonOverlapMinutes": 88.8
+    },
+    "2026-10-16|6:35～8:05|hon|hon_j3_S_jp|4": {
+      "url": "https://us06web.zoom.us/rec/play/Xmc1JnKBgRljlKUN1uEd4OWWQUH3dbtZZWetQ72TKoquUBDuPFsajE1U1Lf6OWm9Uo77lJpGDVgv6wwQ.a-vUZI3vEhc_zJ83",
+      "recordingStart": "2026-10-16T18:45:28+09:00",
+      "meetingId": "3067983739",
+      "topic": "本校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-10-16",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "4",
+      "grade": "j3",
+      "class": "S",
+      "subject": "jp",
+      "label": "中３S 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-10-16|6:35～8:05|j3|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "4",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 10.5,
+      "recordingDurationMinutes": 80.0,
+      "lessonOverlapMinutes": 79.5
+    },
+    "2026-10-16|6:35～8:05|minami|minami_j3_S_jp|5": {
+      "url": "https://us06web.zoom.us/rec/play/Xmc1JnKBgRljlKUN1uEd4OWWQUH3dbtZZWetQ72TKoquUBDuPFsajE1U1Lf6OWm9Uo77lJpGDVgv6wwQ.a-vUZI3vEhc_zJ83",
+      "recordingStart": "2026-10-16T18:45:28+09:00",
+      "meetingId": "3067983739",
+      "topic": "本校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-10-16",
+      "time": "6:35～8:05",
+      "campus": "minami",
+      "room": "5",
+      "grade": "j3",
+      "class": "S",
+      "subject": "jp",
+      "label": "中３S 国語",
+      "teacher": "金城",
+      "onlineLessonKey": "2026-10-16|6:35～8:05|j3|S|jp",
+      "recordingCampus": "hon",
+      "recordingRoom": "4",
+      "sharedFromEventKey": "2026-10-16|6:35～8:05|hon|hon_j3_S_jp|4",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 10.5,
+      "recordingDurationMinutes": 80.0,
+      "lessonOverlapMinutes": 79.5
     }
   }
 }
