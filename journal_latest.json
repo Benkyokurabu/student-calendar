@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-17T01:03:29.952250+00:00",
+  "generatedAt": "2026-10-17T06:11:22.831779+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -2777,9 +2777,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-b10c-d58bbd7c6281"
+      }
     },
     "2026-10-07|6:35～8:05|minami|minami_j1_B_math|3": {
       "content": "単元テスト③",
@@ -3780,7 +3778,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "テストを実施。全員出席。大越はできなかったらしい。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/GiwzLW13JMzpctFRuJBZi6DBgd1_Je90z4FJ3vmQHYuny_rb5yUpL6GbVdEkvXGdufQ-JLpi70TRWBs8.sbCDlXZsx87341Eh",
       "teacher": "工藤",
       "absence": "なし",
       "curriculumProgress": "±0",
@@ -3807,9 +3805,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|6:35～8:05|hon|hon_j1_A_math|3"
+      }
     },
     "2026-10-09|6:35～8:05|hon|hon_j2_B_math|2": {
       "content": "要点13共通な辺や角",
