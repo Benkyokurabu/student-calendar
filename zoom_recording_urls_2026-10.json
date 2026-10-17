@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-17T20:20:05.724709+09:00",
-  "matched": 144,
-  "missing": 235,
+  "generatedAt": "2026-10-17T22:12:19.411865+09:00",
+  "matched": 145,
+  "missing": 234,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -3221,6 +3221,30 @@
       "startOffsetMinutes": 9.1,
       "recordingDurationMinutes": 79.4,
       "lessonOverlapMinutes": 79.4
+    },
+    "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1": {
+      "url": "",
+      "recordingStart": "2026-10-17T21:11:38+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-17",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "eng",
+      "label": "中３A 英語",
+      "teacher": "金子",
+      "onlineLessonKey": "2026-10-17|8:25～9:55|j3|A|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 46.6,
+      "recordingDurationMinutes": 43.2,
+      "lessonOverlapMinutes": 43.2,
+      "hidden": true,
+      "recordingPublicationKey": "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1"
     }
   }
 }
