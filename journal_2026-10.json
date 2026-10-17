@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-17T06:11:20.702528+00:00",
+  "generatedAt": "2026-10-17T10:51:42.988306+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3947,7 +3947,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "単元テスト③実施。できはあまりよくはなさそうなものが散見。採点が怖いが明日以降を行う。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/BYKAg7WymQQxZvXCLTH1o8YKf2u4Ialrx8S551GjonRU7ReAWsyv1OR1zOCPMSodPuy8g6RUuoXeWc7_.b7a9QgdwuTdsjl6v",
       "teacher": "高山",
       "absence": "川村",
       "curriculumProgress": "",
@@ -3975,9 +3975,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-09|6:35～8:05|minami|minami_j2_A_eng|1"
+      }
     },
     "2026-10-09|8:25～9:55|hon|hon_j3_A_math|1": {
       "content": "要点6相似の利用",
@@ -4630,7 +4628,7 @@
       "content": "単元テスト③",
       "page": "解説大問３まで",
       "report": "テスト実施。時間が足りない者などはいなさそう。解説はリスから始め、大問３まで。大問３は12問中8問以上正解が数名。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/eifEoa8DTR6FdFgvFqoai65czguXmKs357oMGIK3hgZvim8OXJz1yCMYDLtFhnVxliKK4JnG8pn17tNc.Cjt8qf-DNgex_2rB",
       "teacher": "真下",
       "absence": "達木、城崎",
       "curriculumProgress": "－1",
@@ -4658,9 +4656,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-05"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-12|8:25～9:55|hon|hon_j2_A_eng|1"
+      }
     },
     "2026-10-12|8:25～9:55|hon|hon_j3_A_sci|7": {
       "content": "中和とイオン",
