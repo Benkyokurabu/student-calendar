@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-17T22:12:19.411865+09:00",
+  "generatedAt": "2026-10-17T14:03:00.322444+00:00",
   "matched": 145,
   "missing": 234,
   "entries": {
@@ -3223,7 +3223,7 @@
       "lessonOverlapMinutes": 79.4
     },
     "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/EgXHh1cBCFMCNj6D8aurjUoJJTzBdobCRSyjF_WxfeDvssk9Ib8qTKyDNOGsuy1Clf7y2Q7tQlNUc26E.4d7ihYNWjGyHp9pJ",
       "recordingStart": "2026-10-17T21:11:38+09:00",
       "meetingId": "9497119710",
       "topic": "本校 第１教室のパーソナルミーティングルーム",
@@ -3242,9 +3242,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 46.6,
       "recordingDurationMinutes": 43.2,
-      "lessonOverlapMinutes": 43.2,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1"
+      "lessonOverlapMinutes": 43.2
     }
   }
 }
