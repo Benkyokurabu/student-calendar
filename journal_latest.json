@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-17T17:06:15.508952+00:00",
+  "generatedAt": "2026-10-17T22:30:30.233407+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -2479,7 +2479,7 @@
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "伊東・永田・内田\n金子・沼倉・柴田",
-      "curriculumProgress": "",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "41",
       "monthNum": "10",
@@ -5243,7 +5243,7 @@
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "伊東・永田・内田\n金子・沼倉",
-      "curriculumProgress": "",
+      "curriculumProgress": "±0",
       "note": "進捗を記入してください",
       "sessionNumber": "42",
       "monthNum": "10",
@@ -5262,7 +5262,7 @@
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉・柴田",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "",
         "sessionNumber": "41",
         "monthNum": "10",
@@ -7083,8 +7083,8 @@
     },
     "2026-10-17|4:55～6:15|hon|hon_e5_X_jp|6": {
       "content": "物語、文節・単語分け",
-      "page": "p46-49、p20-21",
-      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
+      "page": "p77-79、p20-21",
+      "report": "本日の物語も長文ではあるが、問題は大したことない。物語は得意としているようで難なく解ける。文節・単語分けも、楽しんで取り組んでいた。ここ最近、泣きもしないし良い感じ。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "なし",
@@ -7113,8 +7113,8 @@
     },
     "2026-10-17|4:55～6:15|minami|minami_e5_X_jp|4": {
       "content": "物語、文節・単語分け",
-      "page": "p46-49、p20-21",
-      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
+      "page": "p77-79、p20-21",
+      "report": "本日の物語も長文ではあるが、問題は大したことない。物語は得意としているようで難なく解ける。文節・単語分けも、楽しんで取り組んでいた。ここ最近、泣きもしないし良い感じ。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "なし",
@@ -7125,21 +7125,40 @@
       "weekNum": "1",
       "homework": [
         "なし"
-      ]
+      ],
+      "prevEntry": {
+        "content": "物語、文節・単語分け",
+        "page": "p46-49、p20-21",
+        "homework": [
+          "なし"
+        ],
+        "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
+        "recordingUrl": "",
+        "teacher": "金城",
+        "absence": "なし",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "10",
+        "monthNum": "9",
+        "weekNum": "1",
+        "date": "2026-09-28"
+      }
     },
     "2026-10-17|6:35～8:05|hon|hon_j1_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "UNIT６に入ってください。",
+      "content": "ＵＮＩＴ６Part3基本文まで",
+      "page": "Here We Go UNIT6 #15まで",
+      "report": "UNIT６に入り、三単現のルール、ｓのつけ方、Does, doesn'tの使い方を復習しながら読み進めた。単語の覚えはまずまずよくできていたが、欠席が多かったせいもあり、少し静かだった。",
       "recordingUrl": "",
       "teacher": "金子",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "野口、外前田、姜山、高橋",
+      "curriculumProgress": "±0",
       "note": "３７回",
       "sessionNumber": "38",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "Here We Go UNIT6 #５～７、12～14"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -7182,7 +7201,7 @@
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
@@ -7207,16 +7226,18 @@
     "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1": {
       "content": "単元テスト③",
       "page": "",
-      "report": "",
+      "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
       "recordingUrl": "https://us06web.zoom.us/rec/play/EgXHh1cBCFMCNj6D8aurjUoJJTzBdobCRSyjF_WxfeDvssk9Ib8qTKyDNOGsuy1Clf7y2Q7tQlNUc26E.4d7ihYNWjGyHp9pJ",
       "teacher": "金子",
-      "absence": "",
+      "absence": "三上（単元テストは受験済）",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "43",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ＵＮＩＴ６#１，８、15"
+      ],
       "prevEntry": {
         "content": "Here We Go UNIT5　Goal",
         "page": "",
@@ -7251,18 +7272,20 @@
       "weekNum": ""
     },
     "2026-10-17|8:25～9:55|minami|minami_j3_A_jp|1": {
-      "content": "",
+      "content": "単元テストＡ③",
       "page": "",
-      "report": "",
+      "report": "単テ実施。解説は全て済み。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "小堀、針谷",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "26埼玉過去問【２】終了、【１】問２まで",
         "page": "",
@@ -8144,11 +8167,13 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "ＵＮＩＴ６#１，８、15"
+        ],
+        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
+        "absence": "三上（単元テストは受験済）",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "43",
@@ -8243,7 +8268,7 @@
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
@@ -8396,14 +8421,16 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "UNIT６に入ってください。",
+        "content": "ＵＮＩＴ６Part3基本文まで",
+        "page": "Here We Go UNIT6 #15まで",
+        "homework": [
+          "Here We Go UNIT6 #５～７、12～14"
+        ],
+        "report": "UNIT６に入り、三単現のルール、ｓのつけ方、Does, doesn'tの使い方を復習しながら読み進めた。単語の覚えはまずまずよくできていたが、欠席が多かったせいもあり、少し静かだった。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "野口、外前田、姜山、高橋",
+        "curriculumProgress": "±0",
         "note": "３７回",
         "sessionNumber": "38",
         "monthNum": "10",
@@ -8738,21 +8765,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "単テ実施。解説は全て済み。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "小堀、針谷",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-17"
       }
     },
     "2026-10-21|8:25～9:55|minami|minami_j3_X_math|4": {
@@ -10942,21 +10969,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "単テ実施。解説は全て済み。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "小堀、針谷",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-17"
       }
     },
     "2026-10-27|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -11004,11 +11031,13 @@
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "ＵＮＩＴ６#１，８、15"
+        ],
+        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
+        "absence": "三上（単元テストは受験済）",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "43",
@@ -11103,7 +11132,7 @@
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "伊東・永田・内田\n金子・沼倉",
-        "curriculumProgress": "",
+        "curriculumProgress": "±0",
         "note": "進捗を記入してください",
         "sessionNumber": "42",
         "monthNum": "10",
@@ -11246,14 +11275,16 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "UNIT６に入ってください。",
+        "content": "ＵＮＩＴ６Part3基本文まで",
+        "page": "Here We Go UNIT6 #15まで",
+        "homework": [
+          "Here We Go UNIT6 #５～７、12～14"
+        ],
+        "report": "UNIT６に入り、三単現のルール、ｓのつけ方、Does, doesn'tの使い方を復習しながら読み進めた。単語の覚えはまずまずよくできていたが、欠席が多かったせいもあり、少し静かだった。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "野口、外前田、姜山、高橋",
+        "curriculumProgress": "±0",
         "note": "３７回",
         "sessionNumber": "38",
         "monthNum": "10",
@@ -11584,21 +11615,21 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "26埼玉過去問【２】終了、【１】問２まで",
+        "content": "単元テストＡ③",
         "page": "",
         "homework": [
-          "漢字p220-223"
+          "なし"
         ],
-        "report": "埼玉過去問を進めた。中間前ということもあり、欠席多し。",
-        "recordingUrl": "https://us06web.zoom.us/rec/play/ULo1hGIled75gdVii0dCYB4IIeOOgsUmaUH9Z3sUu2r_NK2TZL1T7q0BFitUKxrY8jQWRBhIsqdVjRXq.lALdWCImFlIYw5wc",
+        "report": "単テ実施。解説は全て済み。",
+        "recordingUrl": "",
         "teacher": "金城",
-        "absence": "",
+        "absence": "小堀、針谷",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-07"
+        "weekNum": "2",
+        "date": "2026-10-17"
       }
     },
     "2026-10-28|8:25～9:55|minami|minami_j3_X_math|4": {
