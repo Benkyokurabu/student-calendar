@@ -1,0 +1,645 @@
+diff --git a/.github/workflows/test-student-calendar.yml b/.github/workflows/test-student-calendar.yml
+index d3ae4f4..9019584 100644
+--- a/.github/workflows/test-student-calendar.yml
++++ b/.github/workflows/test-student-calendar.yml
+@@ -7,9 +7,6 @@ on:
+       - "teacher_calendar.html"
+       - "calendar-mobile.css"
+       - "calendar-mobile.js"
+-      - "calendar-schedule-source.js"
+-      - "scripts/test_calendar_schedule_source.mjs"
+-      - "scripts/test_calendar_live.mjs"
+       - "scripts/test_calendar_mobile.mjs"
+       - "schedule_*.json"
+       - "scripts/test_calendar_state_migration.mjs"
+@@ -28,9 +25,6 @@ on:
+       - "teacher_calendar.html"
+       - "calendar-mobile.css"
+       - "calendar-mobile.js"
+-      - "calendar-schedule-source.js"
+-      - "scripts/test_calendar_schedule_source.mjs"
+-      - "scripts/test_calendar_live.mjs"
+       - "scripts/test_calendar_mobile.mjs"
+       - "schedule_*.json"
+       - "scripts/test_calendar_state_migration.mjs"
+@@ -56,7 +50,6 @@ jobs:
+         with:
+           node-version: "22"
+       - run: node scripts/test_calendar_state_migration.mjs
+-      - run: node scripts/test_calendar_schedule_source.mjs
+       - run: node scripts/test_recording_link_priority.mjs
+       - run: node scripts/test_recording_release.mjs
+       - uses: actions/setup-python@v5
+@@ -68,4 +61,3 @@ jobs:
+       - run: npm install --no-save --package-lock=false playwright@1.62.1
+       - run: npx playwright install --with-deps chromium
+       - run: node scripts/test_calendar_mobile.mjs
+-      - run: node scripts/test_calendar_live.mjs
+diff --git a/.github/workflows/update-journal.yml b/.github/workflows/update-journal.yml
+index ec02d12..37bca74 100644
+--- a/.github/workflows/update-journal.yml
++++ b/.github/workflows/update-journal.yml
+@@ -22,8 +22,6 @@ on:
+       - 'scripts/test_same_day_slot_order.py'
+       - 'scripts/TEMPLATE_MAIN.xlsx'
+       - 'scripts/TEMPLATE_X.xlsx'
+-      - 'scripts/build_teacher_calendar.py'
+-      - 'scripts/test_build_teacher_calendar.py'
+   schedule:
+     # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて3回冗長化。
+     # JST 04:17 / 07:17 / 22:37
+@@ -92,9 +90,6 @@ jobs:
+       - name: Test consecutive journal lessons
+         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
+ 
+-      - name: Verify teacher calendar shares student schedule data
+-        run: python -m unittest discover -s scripts -p test_build_teacher_calendar.py -v
+-
+       - name: Test same-day workbook slot order
+         run: python -m unittest discover -s scripts -p test_same_day_slot_order.py -v
+ 
+@@ -215,10 +210,9 @@ jobs:
+             [ -f "$f" ] && cp "$f" .
+           done
+ 
+-          python scripts/build_teacher_calendar.py
+           python scripts/recording_publication_filter.py
+ 
+-          git add schedule_*.json journal_*.json journal_map_*.json teacher_schedule_*.json
++          git add schedule_*.json journal_*.json journal_map_*.json 2>/dev/null || true
+ 
+           if git diff --cached --quiet; then
+             echo "No changes to commit"
+diff --git a/CALENDAR_PAGES.md b/CALENDAR_PAGES.md
+index ef0748d..8b8ee6a 100644
+--- a/CALENDAR_PAGES.md
++++ b/CALENDAR_PAGES.md
+@@ -4,10 +4,6 @@
+ - `teacher_calendar.html`：先生用スケジュール表。
+ - `lesson_prep.html`：授業準備シート。
+ 
+-2026-10-19から、3画面のスケジュールは `calendar-schedule-source.js` を通じて勉たんの読み取り専用 `/api/schedule/calendar?month=YYYY-MM` から取得する。原本の取り込みが完了すれば同じ授業DBを表示し、別のJSON公開を待たない。開いたままの画面は約1分で再確認する。通信に失敗した場合のみ同じ月の保存済みJSONに切り替え、注意文を表示する。別月のlatestデータを対象月として代用しない。
+-
+-先生用アーカイブは `scripts/build_teacher_calendar.py` で生徒用と同じイベントから生成する。日誌本文・録画は従来の公開処理を維持する。担当が空欄の授業も省略せず、先生用画面では「未判定」で選択できる。回帰確認は `node scripts/test_calendar_schedule_source.mjs`、`node scripts/test_calendar_live.mjs`、既存の `node scripts/test_calendar_mobile.mjs`、`python -B -m unittest discover -s scripts -p test_build_teacher_calendar.py -v`。
+-
+ `calendar_journal.html` の専用画面は利用していないため廃止した。古いブックマークを壊さないため、通常の `calendar.html` へ転送する小さなファイルだけを残す。独自UIや機能を追加せず、日誌付き画面としての保守・ブラウザ操作テストは不要。
+ 
+ `calendar_journal0309backup.html` も削除済み。必要な旧コードはGit履歴から取得できる。
+diff --git a/calendar-schedule-source.js b/calendar-schedule-source.js
+deleted file mode 100644
+index b9602a6..0000000
+--- a/calendar-schedule-source.js
++++ /dev/null
+@@ -1,77 +0,0 @@
+-/* All active calendars read the same accepted schedule as the classroom screen. */
+-(function (root) {
+-  "use strict";
+-  const endpoint = "https://line-check-system.vercel.app/api/schedule/calendar";
+-  const cache = new Map();
+-  const pending = new Map();
+-  const currentMonth = () => new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit" }).format(new Date());
+-  function notice(month, fallback, silent) {
+-    if (silent || !root.document) return;
+-    let element = document.getElementById("schedule-source-status");
+-    if (!element) {
+-      element = document.createElement("div"); element.id = "schedule-source-status";
+-      element.setAttribute("role", "status");
+-      element.style.cssText = "margin:12px;padding:12px;border:1px solid #d49c27;border-radius:8px;background:#fff8dc;color:#5d460e;font:14px/1.6 sans-serif";
+-      document.body.prepend(element);
+-    }
+-    element.hidden = !fallback || month < currentMonth();
+-    element.textContent = "最新の授業データに接続できないため、保存済みのスケジュールを表示しています。約1分ごとに再確認します。";
+-    element.dataset.source = fallback ? "archive" : "live";
+-    element.dataset.month = month;
+-  }
+-  function validRows(rows, month) {
+-    return Array.isArray(rows) && rows.length > 0 && rows.every((event) => event && event.date?.startsWith(month + "-") && event.time && event.groupKey && ["hon", "minami"].includes(event.campus));
+-  }
+-  async function request(url) {
+-    const response = await fetch(url, { cache: "no-store", credentials: "omit", signal: AbortSignal.timeout(10000) });
+-    if (!response.ok) throw new Error(`授業データを取得できません（${response.status}）`);
+-    return response.json();
+-  }
+-  async function live(month) {
+-    const previous = cache.get(month);
+-    if (previous && previous.until > Date.now()) return previous.value;
+-    if (!pending.has(month)) pending.set(month, (async () => {
+-      const data = await request(`${endpoint}?month=${month}`);
+-      if (data.month !== month || !validRows(data.schedule, month) || data.count !== data.schedule.length ||
+-          data.teacherSchedule?.items?.length !== data.count || !validRows(data.teacherSchedule.items, month)) throw new Error("授業データの月・件数が一致しません");
+-      cache.set(month, { value: data, until: Date.now() + 15000 });
+-      return data;
+-    })().finally(() => pending.delete(month)));
+-    return pending.get(month);
+-  }
+-  async function load(month, kind = "student", options = {}) {
+-    if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(month) || !["student", "teacher"].includes(kind)) throw new Error("対象月が不正です");
+-    try {
+-      const data = await live(month);
+-      notice(month, false, options.silent);
+-      return kind === "teacher" ? data.teacherSchedule : data.schedule;
+-    } catch {
+-      const prefix = kind === "teacher" ? "teacher_schedule_" : "schedule_";
+-      const archived = await request(`${prefix}${month}.json?ts=${Date.now()}`);
+-      const rows = kind === "teacher" ? archived?.items : archived;
+-      if (!validRows(rows, month)) throw new Error(`${month}の授業データを確認できません`);
+-      notice(month, true, options.silent);
+-      return archived;
+-    }
+-  }
+-  function watch(getMonth, kind, apply) {
+-    let running = false;
+-    const refresh = async () => {
+-      if (running || document.hidden) return;
+-      running = true;
+-      const month = getMonth();
+-      try {
+-        const value = await load(month, kind);
+-        if (getMonth() === month) apply(value);
+-      } catch {
+-        notice(month, true, false);
+-        const element = document.getElementById("schedule-source-status");
+-        if (element) { element.hidden = false; element.textContent = "授業データの更新を確認できません。現在の表示を保持し、約1分ごとに再確認します。"; }
+-      } finally { running = false; }
+-    };
+-    const timer = setInterval(refresh, 60000);
+-    document.addEventListener("visibilitychange", () => { if (!document.hidden) void refresh(); });
+-    return timer;
+-  }
+-  root.CalendarScheduleSource = { load, watch, currentMonth };
+-})(globalThis);
+diff --git a/calendar.html b/calendar.html
+index ff83dcd..fccee31 100644
+--- a/calendar.html
++++ b/calendar.html
+@@ -337,7 +337,6 @@
+   </style>
+ <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
+ <script src="calendar-mobile.js?v=20260911-1" defer></script>
+-<script src="calendar-schedule-source.js?v=20261019-1"></script>
+ </head>
+ <body>
+ 
+@@ -367,7 +366,7 @@
+     <div class="footer-note">
+       ※ 学年を選ぶと、その月に存在する授業だけが「科目→クラス」で選べます。<br/>
+       ※ 日付をクリックすると、その日の授業の内容・宿題・録画のURLが下に表示されます。<br/>
+-      <span class="update-note">※ スケジュールは取込完了後に反映されます。日誌の内容は定期更新されます。</span>
++      <span class="update-note">※ 更新は深夜に行われます。</span>
+     </div>
+   </div>
+ 
+@@ -383,7 +382,7 @@
+     <div class="cal-head">
+       <h2 style="margin:0;">月間カレンダー</h2>
+       <div class="cal-head-note muted">※ 日付をクリックすると、その日の授業の内容・宿題・録画のURLが下に表示されます。<br/>
+-        <span class="update-note">※ スケジュールは取込完了後に反映されます。日誌の内容は定期更新されます。</span></div>
++        <span class="update-note">※ 更新は深夜に行われます。</span></div>
+     </div>
+     <div class="calendar-mode-toggle" role="group" aria-label="カレンダーの表示方法">
+       <button type="button" data-view="compact" aria-pressed="true" aria-controls="calendarScroll">コンパクト表示</button>
+@@ -733,7 +732,17 @@
+   }
+ 
+   async function fetchJsonForMonth(ym) {
+-    return await CalendarScheduleSource.load(ym);
++    if (cachedLatestRaw && cachedLatestYM === ym) {
++      return cachedLatestRaw;
++    }
++    const candidates = [
++      `schedule_${ym}.json`,
++      `./schedule_${ym}.json`,
++      `../schedule_${ym}.json`,
++      `./data/schedule_${ym}.json`,
++      `./json/schedule_${ym}.json`,
++    ];
++    return await fetchScheduleFromCandidates(candidates, `schedule_${ym}.json`);
+   }
+ 
+   function inferYMFromLessons(list) {
+@@ -999,11 +1008,12 @@
+       statusArea.innerHTML = `
+         <div class="card error">
+           <div><b>${ymToLabel(ym)}のデータが読み込めませんでした。</b></div>
+-          <div style="margin-top:6px;">授業の取り込みが完了しているか、通信がつながっているかを確認してください。</div>
++          <div style="margin-top:6px;">原因例：この月の <code>schedule_${ym}.json</code> をまだアップしていない／ファイル名が違う</div>
++          <div style="margin-top:6px;">場所：${escapeHtml(location.href)}</div>
+           <div style="margin-top:6px;">詳細：${escapeHtml(String(e.message || e))}</div>
+         </div>
+       `;
+-      hintArea.textContent = "取り込み状況と通信をご確認ください。";
++      hintArea.textContent = "※ この月のJSONが無い場合は表示できません。";
+     }
+   }
+ 
+@@ -1424,13 +1434,6 @@
+   loadState();
+   rebuildUI();
+   loadInitialMonth();
+-  CalendarScheduleSource.watch(() => currentYM, "student", (data) => {
+-    const next = normalizeLessons(data);
+-    if (JSON.stringify(next) === JSON.stringify(allLessons)) return;
+-    allLessons = next;
+-    cachedLatestRaw = data; cachedLatestYM = currentYM;
+-    rebuildUI(); renderAll();
+-  });
+ 
+ })();
+ </script>
+diff --git a/lesson_prep.html b/lesson_prep.html
+index 22ee84f..53321fe 100644
+--- a/lesson_prep.html
++++ b/lesson_prep.html
+@@ -236,7 +236,6 @@
+ 
+   }
+ </style>
+-<script src="calendar-schedule-source.js?v=20261019-1"></script>
+ </head>
+ <body>
+ 
+@@ -410,8 +409,8 @@ async function loadMonth(mm) {
+   const nextYm = ny + "-" + String(nm).padStart(2,"0");
+ 
+   const [sched, nextSched, jrnl, jmap, zoomUrls, prevJ, prevM] = await Promise.all([
+-    CalendarScheduleSource.load(mm).catch(() => []),
+-    CalendarScheduleSource.load(nextYm, "student", { silent: true }).catch(() => []),
++    loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
++    loadJSON("schedule_" + nextYm + ".json"),
+     loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
+     loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
+     loadZoomRecordings(mm),
+@@ -898,13 +897,6 @@ document.addEventListener("click", async function(e) {
+ /* ====== 起動 ====== */
+ init();
+ setInterval(refreshZoomRecordingsIfChanged, 30000);
+-CalendarScheduleSource.watch(() => document.getElementById("datePicker").value.slice(0, 7), "student", async (rows) => {
+-  const month = document.getElementById("datePicker").value.slice(0, 7);
+-  const previous = scheduleData.filter((event) => event.date.startsWith(month + "-"));
+-  if (JSON.stringify(previous) === JSON.stringify(rows)) return;
+-  scheduleData = rows.concat(scheduleData.filter((event) => !event.date.startsWith(month + "-")));
+-  render();
+-});
+ </script>
+ </body>
+ </html>
+diff --git a/scripts/build_teacher_calendar.py b/scripts/build_teacher_calendar.py
+deleted file mode 100644
+index 54a6d88..0000000
+--- a/scripts/build_teacher_calendar.py
++++ /dev/null
+@@ -1,44 +0,0 @@
+-"""Build teacher calendar archives from the canonical student events, never a second parser."""
+-import argparse
+-import json
+-import re
+-from datetime import datetime, timezone, timedelta
+-from pathlib import Path
+-
+-
+-def teacher_payload(rows, month):
+-    if not rows or any(not event.get("date", "").startswith(month + "-") for event in rows):
+-        raise ValueError("Schedule is empty or contains another month")
+-    if len({"|".join(str(event.get(k, "")) for k in ("date", "time", "campus", "groupKey", "room")) for event in rows}) != len(rows):
+-        raise ValueError("Duplicate schedule entries")
+-    year, number = map(int, month.split("-"))
+-    items = [{**event, "campusLabel": {"hon": "本校", "minami": "南教室"}[event["campus"]],
+-              "teacherLabel": event.get("teacher") or "未判定", "title": event.get("displayTitle") or event.get("label", "")} for event in rows]
+-    return {"year": year, "month": number, "teachers": sorted({event["teacher"] for event in rows if event.get("teacher")}), "items": items}
+-
+-
+-def build(root, today=None):
+-    current = (today or datetime.now(timezone(timedelta(hours=9)))).strftime("%Y-%m")
+-    payloads = {}
+-    for path in sorted(root.glob("schedule_*.json")):
+-        match = re.fullmatch(r"schedule_(20\d{2}-\d{2})\.json", path.name)
+-        if not match:
+-            continue
+-        month = match[1]
+-        # Historical teacher files are retained. Only active months need rebuilding.
+-        if month < current:
+-            continue
+-        payload = teacher_payload(json.loads(path.read_text("utf-8")), month)
+-        payloads[month] = payload
+-        (root / f"teacher_schedule_{month}.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", "utf-8")
+-    if current in payloads:
+-        (root / "teacher_schedule_latest.json").write_text(json.dumps(payloads[current], ensure_ascii=False, indent=2) + "\n", "utf-8")
+-    return payloads
+-
+-
+-if __name__ == "__main__":
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parent.parent)
+-    args = parser.parse_args()
+-    for month, payload in build(args.root).items():
+-        print(f"{month}: teacher calendar {len(payload['items'])} events")
+diff --git a/scripts/test_build_teacher_calendar.py b/scripts/test_build_teacher_calendar.py
+deleted file mode 100644
+index eaafb56..0000000
+--- a/scripts/test_build_teacher_calendar.py
++++ /dev/null
+@@ -1,36 +0,0 @@
+-import json
+-import tempfile
+-import unittest
+-from datetime import datetime
+-from pathlib import Path
+-from build_teacher_calendar import teacher_payload, build
+-
+-
+-class TeacherCalendarTests(unittest.TestCase):
+-    def row(self, month):
+-        return {"date": month + "-02", "time": "5:00～6:00", "campus": "hon", "room": "1", "groupKey": "hon_j1_S_math", "teacher": "工藤", "label": "中1S 数学"}
+-
+-    def test_same_canonical_event_and_labels(self):
+-        payload = teacher_payload([self.row("2026-11")], "2026-11")
+-        self.assertEqual(payload["items"][0]["room"], "1")
+-        self.assertEqual(payload["items"][0]["campusLabel"], "本校")
+-        self.assertEqual(payload["teachers"], ["工藤"])
+-
+-    def test_wrong_month_empty_duplicate_stop(self):
+-        for rows in ([], [self.row("2026-10")], [self.row("2026-11")] * 2):
+-            with self.assertRaises(ValueError):
+-                teacher_payload(rows, "2026-11")
+-
+-    def test_next_month_does_not_replace_current_latest(self):
+-        with tempfile.TemporaryDirectory() as tmp:
+-            root = Path(tmp)
+-            for month in ("2026-10", "2026-11"):
+-                (root / f"schedule_{month}.json").write_text(json.dumps([self.row(month)]), "utf-8")
+-            build(root, datetime(2026, 10, 19))
+-            latest = json.loads((root / "teacher_schedule_latest.json").read_text("utf-8"))
+-            self.assertEqual(latest["month"], 10)
+-            self.assertTrue((root / "teacher_schedule_2026-11.json").exists())
+-
+-
+-if __name__ == "__main__":
+-    unittest.main()
+diff --git a/scripts/test_calendar_live.mjs b/scripts/test_calendar_live.mjs
+deleted file mode 100644
+index 65961ca..0000000
+--- a/scripts/test_calendar_live.mjs
++++ /dev/null
+@@ -1,77 +0,0 @@
+-import assert from "node:assert/strict";
+-import fs from "node:fs/promises";
+-import http from "node:http";
+-import path from "node:path";
+-import { fileURLToPath } from "node:url";
+-import { chromium } from "playwright";
+-
+-const root = fileURLToPath(new URL("../", import.meta.url));
+-const rows = JSON.parse(await fs.readFile(path.join(root, "schedule_2026-11.json"), "utf8"));
+-const teacher = { year: 2026, month: 11, teachers: [...new Set(rows.map((r) => r.teacher).filter(Boolean))], items: rows.map((r) => ({ ...r, campusLabel: r.campus === "hon" ? "本校" : "南教室", teacherLabel: r.teacher, title: r.displayTitle || r.label })) };
+-const server = http.createServer(async (request, response) => {
+-  try {
+-    const file = path.resolve(root, "." + new URL(request.url, "http://local").pathname);
+-    if (!file.startsWith(root)) throw new Error("outside root");
+-    response.setHeader("Content-Type", ({ ".html": "text/html", ".js": "text/javascript", ".json": "application/json", ".css": "text/css" })[path.extname(file)] || "text/plain");
+-    response.end(await fs.readFile(file));
+-  } catch { response.writeHead(404); response.end(); }
+-});
+-await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+-const base = process.env.CALENDAR_TEST_BASE || `http://127.0.0.1:${server.address().port}/`;
+-const browser = await chromium.launch({ headless: true, ...(process.env.CALENDAR_TEST_CHANNEL ? { channel: process.env.CALENDAR_TEST_CHANNEL } : {}) });
+-try {
+-  for (const name of ["calendar.html", "teacher_calendar.html", "lesson_prep.html"]) {
+-    const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+-    const errors = [];
+-    page.on("pageerror", (error) => errors.push(error.message));
+-    if (!process.env.CALENDAR_TEST_BASE) {
+-      await page.clock.install({ time: new Date("2026-10-19T12:00:00+09:00") });
+-      await page.route("https://line-check-system.vercel.app/api/schedule/calendar*", async (route) => {
+-        const month = new URL(route.request().url()).searchParams.get("month");
+-        if (month !== "2026-11") return route.fulfill({ status: 404, json: { error: "not ready" } });
+-        return route.fulfill({ json: { month, count: rows.length, schedule: rows, teacherSchedule: teacher } });
+-      });
+-      // Prove an absent archive cannot hide a disconnected live calendar.
+-      await page.route("**/schedule_2026-11.json*", (route) => route.fulfill({ status: 404, body: "" }));
+-      await page.route("**/teacher_schedule_2026-11.json*", (route) => route.fulfill({ status: 404, body: "" }));
+-    }
+-    await page.goto(base + name, { waitUntil: "networkidle" });
+-    if (name === "lesson_prep.html") {
+-      await page.locator("#datePicker").fill(rows[0].date);
+-      await page.locator("#datePicker").dispatchEvent("change");
+-      await page.waitForFunction(() => scheduleData.some((row) => row.date.startsWith("2026-11-")));
+-      assert.equal(await page.evaluate(() => scheduleData.filter((row) => row.date.startsWith("2026-11-")).length), rows.length);
+-    } else {
+-      await page.getByRole("button", { name: "翌月", exact: false }).click();
+-      await page.waitForFunction(() => document.getElementById("ym-pill").textContent.includes("11月"));
+-      await page.waitForFunction(() => document.querySelector("#schedule-source-status")?.dataset.month === "2026-11");
+-      await page.waitForLoadState("networkidle");
+-      if (name === "calendar.html") {
+-        await page.selectOption("#gradeSelect", "j3");
+-        await page.selectOption("#campusSelect", "hon");
+-        await page.locator("#subjectArea input").first().check();
+-      } else {
+-        for (const input of await page.locator("#teacherChecks input").all()) await input.uncheck();
+-        const unassigned = rows.filter((row) => !row.teacher).length;
+-        if (unassigned) {
+-          await page.getByLabel("未判定", { exact: true }).check();
+-          assert((await page.locator("#statusArea").innerText()).includes(`${unassigned}件`), "unassigned source events remain selectable");
+-          await page.getByLabel("未判定", { exact: true }).uncheck();
+-        }
+-        await page.locator("#teacherChecks input").first().check();
+-      }
+-      await page.locator("#monthGrid .cell.has-lessons").first().waitFor();
+-      await page.locator("#monthGrid .cell.has-lessons").first().click();
+-      assert((await page.locator("#dayDetailArea").innerText()).length > 20);
+-      assert.equal(await page.locator("#schedule-source-status").getAttribute("data-source"), "live");
+-    }
+-    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
+-    assert.deepEqual(errors, []);
+-    if (process.env.CALENDAR_SCREENSHOT_DIR) {
+-      await fs.mkdir(process.env.CALENDAR_SCREENSHOT_DIR, { recursive: true });
+-      await page.screenshot({ path: path.join(process.env.CALENDAR_SCREENSHOT_DIR, name + "-november-390.png"), fullPage: true });
+-    }
+-    await page.close();
+-    console.log(`${name}: November ${rows.length}-event live source, selection and 390px layout passed`);
+-  }
+-} finally { await browser.close(); await new Promise((resolve) => server.close(resolve)); }
+diff --git a/scripts/test_calendar_mobile.mjs b/scripts/test_calendar_mobile.mjs
+index e53cb24..5dae597 100644
+--- a/scripts/test_calendar_mobile.mjs
++++ b/scripts/test_calendar_mobile.mjs
+@@ -27,7 +27,6 @@ try {
+   for (const name of pages) for (const width of [320, 390]) {
+     const context = await browser.newContext({viewport: {width, height: 844}});
+     const page = await context.newPage();
+-    if (!process.env.CALENDAR_TEST_BASE) await context.route("https://line-check-system.vercel.app/api/schedule/calendar*", route => route.abort());
+     const errors = [];
+     page.on('pageerror', error => errors.push(error.message));
+     await page.clock.install({time: new Date(currentDate + 'T12:00:00+09:00')});
+diff --git a/scripts/test_calendar_schedule_source.mjs b/scripts/test_calendar_schedule_source.mjs
+deleted file mode 100644
+index c9c5579..0000000
+--- a/scripts/test_calendar_schedule_source.mjs
++++ /dev/null
+@@ -1,59 +0,0 @@
+-import assert from "node:assert/strict";
+-import fs from "node:fs";
+-import vm from "node:vm";
+-
+-const script = fs.readFileSync(new URL("../calendar-schedule-source.js", import.meta.url), "utf8");
+-const month = "2026-11";
+-const row = { date: month + "-02", time: "5:00～6:00", campus: "hon", groupKey: "hon_j1_S_math" };
+-function setup(responder, overrides = {}) {
+-  const calls = [];
+-  const context = { Intl, Date, AbortSignal, Map, setInterval, fetch: async (url, options) => {
+-    calls.push({ url, options });
+-    return responder(url);
+-  }, ...overrides };
+-  vm.createContext(context); vm.runInContext(script, context);
+-  return { source: context.CalendarScheduleSource, calls };
+-}
+-const ok = (data) => ({ ok: true, json: async () => data });
+-const payload = { month, count: 1, schedule: [row], teacherSchedule: { year: 2026, month: 11, teachers: ["工藤"], items: [{ ...row, teacher: "工藤" }] } };
+-{
+-  const { source, calls } = setup(() => ok(payload));
+-  assert.equal((await source.load(month)).length, 1);
+-  assert.equal((await source.load(month, "teacher")).items.length, 1);
+-  assert.equal(calls.length, 1, "both calendars share one accepted snapshot");
+-  assert.equal(calls[0].options.credentials, "omit");
+-}
+-{
+-  const { source, calls } = setup((url) => url.startsWith("https:") ? Promise.reject(new Error("offline")) : ok([row]));
+-  assert.equal((await source.load(month)).length, 1);
+-  assert(calls[1].url.startsWith("schedule_2026-11.json"));
+-  assert(!calls.some((call) => call.url.includes("latest")), "never substitute a different month's latest data");
+-}
+-{
+-  const { source, calls } = setup((url) => url.startsWith("https:") ? ok({ ...payload, count: 2 }) : ok([row]));
+-  await source.load(month);
+-  assert.equal(calls.length, 2, "count mismatch must use the checked archive");
+-}
+-{
+-  const { source } = setup(() => ok([{ ...row, date: "2026-10-01" }]));
+-  await assert.rejects(source.load(month), /確認できません/);
+-  await assert.rejects(source.load("2026-13"), /不正/);
+-}
+-{
+-  let clock = Date.parse("2026-10-19T09:00:00Z");
+-  class ClockDate extends Date { constructor(...args) { super(...(args.length ? args : [clock])); } static now() { return clock; } }
+-  let interval;
+-  let shown;
+-  const element = { dataset: {}, style: {}, setAttribute() {} };
+-  const document = { hidden: false, getElementById: () => element, addEventListener() {} };
+-  const { source } = setup(() => ok({ ...payload, schedule: [{ ...row, time: String(clock) }] }), {
+-    Date: ClockDate, document, setInterval(callback, ms) { assert.equal(ms, 60000); interval = callback; return 1; },
+-  });
+-  await source.load(month);
+-  source.watch(() => month, "student", (value) => { shown = value; });
+-  clock += 60000;
+-  await interval();
+-  assert.equal(shown[0].time, String(clock), "an open calendar picks up a new accepted month without another publish");
+-  assert.equal(element.dataset.source, "live");
+-}
+-console.log("Shared calendar source: accepted data, cache, offline fallback, count/month validation and automatic refresh passed.");
+diff --git a/teacher_calendar.html b/teacher_calendar.html
+index 814cc66..f343810 100644
+--- a/teacher_calendar.html
++++ b/teacher_calendar.html
+@@ -289,7 +289,6 @@
+   </style>
+ <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
+ <script src="calendar-mobile.js?v=20260911-1" defer></script>
+-<script src="calendar-schedule-source.js?v=20261019-1"></script>
+ </head>
+ <body>
+ 
+@@ -319,7 +318,8 @@
+     </div>
+ 
+     <div class="muted" style="margin-top:10px;">
+-      今月の取り込み済みスケジュールを表示します。前月・翌月のボタンで表示月を切り替えられます。
++      ※ 初回表示は <code>teacher_schedule_latest.json</code> を読み込みます。<br/>
++      ※ 前月・翌月へ移動した場合は <code>teacher_schedule_YYYY-MM.json</code> を読み込みます。
+     </div>
+   </div>
+ 
+@@ -544,7 +544,7 @@
+     const month = Number(raw?.month || (inferredYM ? inferredYM.slice(5, 7) : 0)) || null;
+ 
+     let teachers = Array.isArray(raw?.teachers) ? raw.teachers.map(x => String(x || "").trim()).filter(Boolean) : [];
+-    teachers = sortTeachers([...new Set([...teachers, ...collectTeachers(items)])]);
++    if (teachers.length === 0) teachers = collectTeachers(items);
+ 
+     return { year, month, teachers, items };
+   }
+@@ -557,7 +557,7 @@
+       campus: String(x.campus || ""),
+       campusLabel: String(x.campusLabel || ""),
+       room: String(x.room || "").trim(),
+-      teacher: String(x.teacher || "").trim() || "未判定",
++      teacher: String(x.teacher || "").trim(),
+       teacherLabel: String(x.teacherLabel || "").trim(),
+       title: String(x.title || x.displayTitle || x.label || "").trim(),
+       rawText: String(x.rawText || ""),
+@@ -612,7 +612,15 @@
+   }
+ 
+   async function fetchJsonForMonth(ym) {
+-    return await CalendarScheduleSource.load(ym, "teacher");
++    if (cachedLatestPayload && cachedLatestYM === ym) return cachedLatestPayload;
++    const candidates = [
++      `teacher_schedule_${ym}.json`,
++      `./teacher_schedule_${ym}.json`,
++      `../teacher_schedule_${ym}.json`,
++      `./data/teacher_schedule_${ym}.json`,
++      `./json/teacher_schedule_${ym}.json`,
++    ];
++    return await fetchJsonFromCandidates(candidates, `teacher_schedule_${ym}.json`);
+   }
+ 
+   async function loadInitialMonth() {
+@@ -622,7 +630,7 @@
+     dayDetailArea.innerHTML = "";
+ 
+     try {
+-      const raw = await fetchJsonForMonth(CalendarScheduleSource.currentMonth()).catch(() => fetchLatestJson());
++      const raw = await fetchLatestJson();
+       payload = normalizePayload(raw);
+       cachedLatestPayload = raw;
+       cachedLatestYM = payload.year && payload.month ? `${payload.year}-${pad2(payload.month)}` : inferYMFromItems(payload.items);
+@@ -652,7 +660,7 @@
+       statusArea.innerHTML = `
+         <div class="card error">
+           <div><b>${escapeHtml(ymToLabel(ym))}のデータが読み込めませんでした。</b></div>
+-          <div style="margin-top:6px;">授業の取り込みが完了しているか、通信がつながっているかを確認してください。</div>
++          <div style="margin-top:6px;">原因例：この月の <code>teacher_schedule_${escapeHtml(ym)}.json</code> をまだアップしていない／ファイル名が違う</div>
+           <div style="margin-top:6px;">詳細：${escapeHtml(String(e.message || e))}</div>
+         </div>
+       `;
+@@ -669,7 +677,17 @@
+   }
+ 
+   function setToThisMonth() {
+-    currentYM = CalendarScheduleSource.currentMonth();
++    if (cachedLatestYM) {
++      currentYM = cachedLatestYM;
++      state.selectedDate = null;
++      saveState();
++      payload = normalizePayload(cachedLatestPayload || payload);
++      rebuildTeacherChecks();
++      renderAll();
++      return;
++    }
++    const d = new Date();
++    currentYM = `${d.getFullYear()}-${pad2(d.getMonth() + 1)}`;
+     state.selectedDate = null;
+     saveState();
+     loadMonth(currentYM);
+@@ -953,13 +971,6 @@
+   campusSelect.value = state.campus;
+   teacherChecks.innerHTML = '<div class="muted">読み込み中…</div>';
+   loadInitialMonth();
+-  CalendarScheduleSource.watch(() => currentYM, "teacher", (data) => {
+-    const next = normalizePayload(data);
+-    if (JSON.stringify(next) === JSON.stringify(payload)) return;
+-    payload = next;
+-    cachedLatestPayload = data; cachedLatestYM = currentYM;
+-    rebuildTeacherChecks(); renderAll();
+-  });
+ })();
+ </script>
+ </body>
