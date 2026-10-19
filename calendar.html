@@ -337,6 +337,7 @@
   </style>
 <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
 <script src="calendar-mobile.js?v=20260911-1" defer></script>
+<script src="calendar-schedule-source.js?v=20261019-1"></script>
 </head>
 <body>
 
@@ -732,17 +733,7 @@
   }
 
   async function fetchJsonForMonth(ym) {
-    if (cachedLatestRaw && cachedLatestYM === ym) {
-      return cachedLatestRaw;
-    }
-    const candidates = [
-      `schedule_${ym}.json`,
-      `./schedule_${ym}.json`,
-      `../schedule_${ym}.json`,
-      `./data/schedule_${ym}.json`,
-      `./json/schedule_${ym}.json`,
-    ];
-    return await fetchScheduleFromCandidates(candidates, `schedule_${ym}.json`);
+    return await CalendarScheduleSource.load(ym);
   }
 
   function inferYMFromLessons(list) {
@@ -1434,6 +1425,13 @@
   loadState();
   rebuildUI();
   loadInitialMonth();
+  CalendarScheduleSource.watch(() => currentYM, "student", (data) => {
+    const next = normalizeLessons(data);
+    if (JSON.stringify(next) === JSON.stringify(allLessons)) return;
+    allLessons = next;
+    cachedLatestRaw = data; cachedLatestYM = currentYM;
+    rebuildUI(); renderAll();
+  });
 
 })();
 </script>

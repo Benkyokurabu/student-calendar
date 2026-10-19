@@ -27,6 +27,7 @@ try {
   for (const name of pages) for (const width of [320, 390]) {
     const context = await browser.newContext({viewport: {width, height: 844}});
     const page = await context.newPage();
+    if (!process.env.CALENDAR_TEST_BASE) await context.route("https://line-check-system.vercel.app/api/schedule/calendar*", route => route.abort());
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.clock.install({time: new Date(currentDate + 'T12:00:00+09:00')});

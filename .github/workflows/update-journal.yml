@@ -22,6 +22,8 @@ on:
       - 'scripts/test_same_day_slot_order.py'
       - 'scripts/TEMPLATE_MAIN.xlsx'
       - 'scripts/TEMPLATE_X.xlsx'
+      - 'scripts/build_teacher_calendar.py'
+      - 'scripts/test_build_teacher_calendar.py'
   schedule:
     # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて3回冗長化。
     # JST 04:17 / 07:17 / 22:37
@@ -89,6 +91,9 @@ jobs:
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
+
+      - name: Verify teacher calendar shares student schedule data
+        run: python -m unittest discover -s scripts -p test_build_teacher_calendar.py -v
 
       - name: Test same-day workbook slot order
         run: python -m unittest discover -s scripts -p test_same_day_slot_order.py -v
@@ -210,9 +215,10 @@ jobs:
             [ -f "$f" ] && cp "$f" .
           done
 
+          python scripts/build_teacher_calendar.py
           python scripts/recording_publication_filter.py
 
-          git add schedule_*.json journal_*.json journal_map_*.json 2>/dev/null || true
+          git add schedule_*.json journal_*.json journal_map_*.json teacher_schedule_*.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

@@ -236,6 +236,7 @@
 
   }
 </style>
+<script src="calendar-schedule-source.js?v=20261019-1"></script>
 </head>
 <body>
 
@@ -409,8 +410,8 @@ async function loadMonth(mm) {
   const nextYm = ny + "-" + String(nm).padStart(2,"0");
 
   const [sched, nextSched, jrnl, jmap, zoomUrls, prevJ, prevM] = await Promise.all([
-    loadJSON("schedule_" + mm + ".json").then(d => d || loadJSON("schedule_latest.json")),
-    loadJSON("schedule_" + nextYm + ".json"),
+    CalendarScheduleSource.load(mm).catch(() => []),
+    CalendarScheduleSource.load(nextYm, "student", { silent: true }).catch(() => []),
     loadJSON("journal_" + mm + ".json").then(d => d || loadJSON("journal_latest.json")),
     loadJSON("journal_map_" + mm + ".json").then(d => d || loadJSON("journal_map_latest.json")),
     loadZoomRecordings(mm),
@@ -897,6 +898,13 @@ document.addEventListener("click", async function(e) {
 /* ====== 起動 ====== */
 init();
 setInterval(refreshZoomRecordingsIfChanged, 30000);
+CalendarScheduleSource.watch(() => document.getElementById("datePicker").value.slice(0, 7), "student", async (rows) => {
+  const month = document.getElementById("datePicker").value.slice(0, 7);
+  const previous = scheduleData.filter((event) => event.date.startsWith(month + "-"));
+  if (JSON.stringify(previous) === JSON.stringify(rows)) return;
+  scheduleData = rows.concat(scheduleData.filter((event) => !event.date.startsWith(month + "-")));
+  render();
+});
 </script>
 </body>
 </html>

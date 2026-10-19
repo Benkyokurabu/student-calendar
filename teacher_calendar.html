@@ -289,6 +289,7 @@
   </style>
 <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
 <script src="calendar-mobile.js?v=20260911-1" defer></script>
+<script src="calendar-schedule-source.js?v=20261019-1"></script>
 </head>
 <body>
 
@@ -544,7 +545,7 @@
     const month = Number(raw?.month || (inferredYM ? inferredYM.slice(5, 7) : 0)) || null;
 
     let teachers = Array.isArray(raw?.teachers) ? raw.teachers.map(x => String(x || "").trim()).filter(Boolean) : [];
-    if (teachers.length === 0) teachers = collectTeachers(items);
+    teachers = sortTeachers([...new Set([...teachers, ...collectTeachers(items)])]);
 
     return { year, month, teachers, items };
   }
@@ -557,7 +558,7 @@
       campus: String(x.campus || ""),
       campusLabel: String(x.campusLabel || ""),
       room: String(x.room || "").trim(),
-      teacher: String(x.teacher || "").trim(),
+      teacher: String(x.teacher || "").trim() || "未判定",
       teacherLabel: String(x.teacherLabel || "").trim(),
       title: String(x.title || x.displayTitle || x.label || "").trim(),
       rawText: String(x.rawText || ""),
@@ -612,15 +613,7 @@
   }
 
   async function fetchJsonForMonth(ym) {
-    if (cachedLatestPayload && cachedLatestYM === ym) return cachedLatestPayload;
-    const candidates = [
-      `teacher_schedule_${ym}.json`,
-      `./teacher_schedule_${ym}.json`,
-      `../teacher_schedule_${ym}.json`,
-      `./data/teacher_schedule_${ym}.json`,
-      `./json/teacher_schedule_${ym}.json`,
-    ];
-    return await fetchJsonFromCandidates(candidates, `teacher_schedule_${ym}.json`);
+    return await CalendarScheduleSource.load(ym, "teacher");
   }
 
   async function loadInitialMonth() {
@@ -630,7 +623,7 @@
     dayDetailArea.innerHTML = "";
 
     try {
-      const raw = await fetchLatestJson();
+      const raw = await fetchJsonForMonth(CalendarScheduleSource.currentMonth()).catch(() => fetchLatestJson());
       payload = normalizePayload(raw);
       cachedLatestPayload = raw;
       cachedLatestYM = payload.year && payload.month ? `${payload.year}-${pad2(payload.month)}` : inferYMFromItems(payload.items);
@@ -677,17 +670,7 @@
   }
 
   function setToThisMonth() {
-    if (cachedLatestYM) {
-      currentYM = cachedLatestYM;
-      state.selectedDate = null;
-      saveState();
-      payload = normalizePayload(cachedLatestPayload || payload);
-      rebuildTeacherChecks();
-      renderAll();
-      return;
-    }
-    const d = new Date();
-    currentYM = `${d.getFullYear()}-${pad2(d.getMonth() + 1)}`;
+    currentYM = CalendarScheduleSource.currentMonth();
     state.selectedDate = null;
     saveState();
     loadMonth(currentYM);
@@ -971,6 +954,13 @@
   campusSelect.value = state.campus;
   teacherChecks.innerHTML = '<div class="muted">読み込み中…</div>';
   loadInitialMonth();
+  CalendarScheduleSource.watch(() => currentYM, "teacher", (data) => {
+    const next = normalizePayload(data);
+    if (JSON.stringify(next) === JSON.stringify(payload)) return;
+    payload = next;
+    cachedLatestPayload = data; cachedLatestYM = currentYM;
+    rebuildTeacherChecks(); renderAll();
+  });
 })();
 </script>
 </body>
