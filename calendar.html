@@ -999,12 +999,11 @@
       statusArea.innerHTML = `
         <div class="card error">
           <div><b>${ymToLabel(ym)}のデータが読み込めませんでした。</b></div>
-          <div style="margin-top:6px;">原因例：この月の <code>schedule_${ym}.json</code> をまだアップしていない／ファイル名が違う</div>
-          <div style="margin-top:6px;">場所：${escapeHtml(location.href)}</div>
+          <div style="margin-top:6px;">授業の取り込みが完了しているか、通信がつながっているかを確認してください。</div>
           <div style="margin-top:6px;">詳細：${escapeHtml(String(e.message || e))}</div>
         </div>
       `;
-      hintArea.textContent = "※ この月のJSONが無い場合は表示できません。";
+      hintArea.textContent = "取り込み状況と通信をご確認ください。";
     }
   }
 
