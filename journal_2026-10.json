@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-19T10:09:59.612831+00:00",
+  "generatedAt": "2026-10-19T20:34:03.550959+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -7321,18 +7321,21 @@
       "weekNum": ""
     },
     "2026-10-19|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit8の３段まで",
+      "page": "Travelp44の３段/ワークp26の３②まで",
+      "report": "単語テストから。大竹はb/dのミス一つ。高田が4/7。次回はもう少し練習してくるようにはっぱをかけた。ローマ字の練習をさせる必要があるか。travelは３段目に入ったが、暗唱が苦戦気味。ノートにSVO+その他という事を書かせた。単語は残り４つをノートに練習させ、次回テスト。let'sPのBをやった後ワーク②まで。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "33",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "Travelp44の３段暗唱/p46のhelpからwalk書けるように",
+        "ワークp26の３残り"
+      ],
       "prevEntry": {
         "content": "Unit8の２段まで",
         "page": "Travelp44の２段まで/ワークp25の２まで",
@@ -7369,18 +7372,21 @@
       "recordingPublicationKey": "test:3ddf0120-80a7-804e-9817-ceee28b04c67"
     },
     "2026-10-19|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "UNIT６に入ってください。",
+      "content": "HWGUnit6",
+      "page": "p93words発音まで",
+      "report": "宿題はなかったのでUnit6からスタート。三単現とその否定、疑問文の復習をしつつ進めた。quietとeitherはつづり練習も。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "齊藤",
+      "curriculumProgress": "－1.5",
       "note": "",
       "sessionNumber": "38",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "HWGUnit6の#5から7,12から14,19から21",
+        "#22,23"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "解説は最後まで",
@@ -7400,18 +7406,20 @@
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "漢文",
+      "page": "漢字帳P155導入まで",
+      "report": "漢文に入る。返り点の打ち方の復習から行ったが、佐々木絢政が全くできていなかった。10問ほど行ったが壊滅的だった。その後、春暁に入ったところで終了。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QenevOXQPUs3VZxe55EgGgX6uO5b-sIVFHjyOQIueqIiMmSNRkMORA--tKvFzjER.Q0N_AZ-T25rpmmen?startTime=1792402847000",
       "teacher": "高山",
-      "absence": "",
+      "absence": "林",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "31",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "漢字帳P150-153"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "",
@@ -7431,18 +7439,21 @@
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "選挙終了",
+      "page": "p138～",
+      "report": "選挙は本日終了。ひとまずカリキュラム通り。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/hXf_-f417pU6ht3Niknn9zBS1zUxve4D3vW80aqTtSBX4VWLUxIKi_l4CBQaY_Ia.3DSc32moEDc865dD",
       "teacher": "金城",
-      "absence": "",
+      "absence": "大嶋りほ、平居、深井",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "マイクリアp139〇こみ",
+        "ドリルp92-93〇こみ"
+      ],
       "prevEntry": {
         "content": "人権終了、選挙",
         "page": "p138～",
@@ -7462,18 +7473,20 @@
       }
     },
     "2026-10-19|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "6電池とイオン",
+      "page": "ｐ154-2まで",
+      "report": "電池とイオンのところを説明した。宮原は反応なく寝てしまったのかもしれない。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
+      "absence": "柴田",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ドリルｐ82-85"
+      ],
       "prevEntry": {
         "content": "中和とイオン",
         "page": "ｐ149まで",
@@ -7493,18 +7506,21 @@
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "16垂直二等分線",
+      "page": "P29",
+      "report": "垂直二等分線は最初の２問は皆確認済み。米倉が最初の説明を聞いていないタイミングが何回かあったので少し注意した。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0",
       "note": "",
       "sessionNumber": "38",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "P21,22",
+        "#25,27,28,30"
+      ],
       "prevEntry": {
         "content": "要点９移動の組み合わせ",
         "page": "P11",
@@ -7525,10 +7541,10 @@
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "漢文",
+      "page": "漢字帳P155導入まで",
+      "report": "漢文に入る。返り点の打ち方の復習から行ったが、佐々木絢政が全くできていなかった。10問ほど行ったが壊滅的だった。その後、春暁に入ったところで終了。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/QenevOXQPUs3VZxe55EgGgX6uO5b-sIVFHjyOQIueqIiMmSNRkMORA--tKvFzjER.Q0N_AZ-T25rpmmen?startTime=1792402847000",
       "teacher": "高山",
       "absence": "",
       "curriculumProgress": "",
@@ -7536,7 +7552,9 @@
       "sessionNumber": "31",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "漢字帳P150-153"
+      ],
       "prevEntry": {
         "content": "単元テスト③実施",
         "page": "",
@@ -7556,10 +7574,10 @@
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "選挙終了",
+      "page": "p138～",
+      "report": "選挙は本日終了。ひとまずカリキュラム通り。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/hXf_-f417pU6ht3Niknn9zBS1zUxve4D3vW80aqTtSBX4VWLUxIKi_l4CBQaY_Ia.3DSc32moEDc865dD",
       "teacher": "金城",
       "absence": "",
       "curriculumProgress": "",
@@ -7567,7 +7585,10 @@
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "マイクリアp139〇こみ",
+        "ドリルp92-93〇こみ"
+      ],
       "prevEntry": {
         "content": "人権終了、選挙",
         "page": "p138～",
@@ -7587,9 +7608,9 @@
       }
     },
     "2026-10-19|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "6電池とイオン",
+      "page": "ｐ154-2まで",
+      "report": "電池とイオンのところを説明した。宮原は反応なく寝てしまったのかもしれない。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -7598,7 +7619,9 @@
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ドリルｐ82-85"
+      ],
       "prevEntry": {
         "content": "中和とイオン",
         "page": "ｐ149まで",
@@ -7618,18 +7641,21 @@
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "DL6・Unit6を行ってください",
+      "content": "テスト解説残り/HWGDL6とUnit6",
+      "page": "HWGテキストp107の下線①まで",
+      "report": "テスト解説残りの学校の教科書部分から。there構文など復習しながら進めた。その後はHWGのDL6とUnit6へ。城崎が前向きでない姿勢があったので注意、後半は改善。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "不動、菱沼、児玉",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "HWGテキストp102からの#3から5",
+        "p107からの#4残り、#8から11"
+      ],
       "prevEntry": {
         "content": "単元テスト③",
         "page": "解説大問３まで",
@@ -7650,18 +7676,20 @@
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "6電池とイオン",
+      "page": "ｐ154-2まで",
+      "report": "電池とイオンのところまで。Ｓクラスと同じ進度で進んだ。古田は画面オフで、全く当てなかった。藤田は画面が見えたが、さしても反応なし。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ドリルｐ82.ｐ84"
+      ],
       "prevEntry": {
         "content": "中和とイオン",
         "page": "ｐ148-3まで",
@@ -7682,18 +7710,21 @@
       }
     },
     "2026-10-19|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
-      "recordingUrl": "",
+      "content": "国会終了",
+      "page": "p140",
+      "report": "国会は、細かい知識まで含めてすべて終了。大変な単元なので、励ましながら進めた。単元テスト後の回は、演習をこなしたのちに内閣へ入ること。",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/X7fy7ZTK5u_QnIij6mxFgz5QPrLvNGZOk_LZQWE2bBmp-PSg2aKQTTjxeBQNmuBS.frJQqXgh9jYlVLSd?startTime=1792409883000",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "マイクリアp141〇込み",
+        "ドリルp94-95〇込み"
+      ],
       "prevEntry": {
         "content": "選挙終了、国会",
         "page": "p138～",
@@ -7714,9 +7745,9 @@
       }
     },
     "2026-10-19|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "6電池とイオン",
+      "page": "ｐ154-2まで",
+      "report": "電池とイオンのところまで。Ｓクラスと同じ進度で進んだ。古田は画面オフで、全く当てなかった。藤田は画面が見えたが、さしても反応なし。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -7725,7 +7756,9 @@
       "sessionNumber": "39",
       "monthNum": "10",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "ドリルｐ82.ｐ84"
+      ],
       "prevEntry": {
         "content": "中和とイオン",
         "page": "ｐ148-3まで",
@@ -9995,21 +10028,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "人権終了、選挙",
+        "content": "選挙終了",
         "page": "p138～",
         "homework": [
-          "マイクリアp1392⃣3⃣〇こみ"
+          "マイクリアp139〇こみ",
+          "ドリルp92-93〇こみ"
         ],
-        "report": "人権は演習も抜粋して行い本日終了。選挙は公職選挙法まで。次回選挙制度。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/_V4hhtmPbgjjPfV7xioCoD0ndhr4gckZ8Pui65qo9RRA4QJBOBtYW_wFkTusCfUl.ghwHJXLbKS-rGY3D?startTime=1791798837000",
+        "report": "選挙は本日終了。ひとまずカリキュラム通り。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/hXf_-f417pU6ht3Niknn9zBS1zUxve4D3vW80aqTtSBX4VWLUxIKi_l4CBQaY_Ia.3DSc32moEDc865dD",
         "teacher": "金城",
-        "absence": "江川、長尾",
+        "absence": "大嶋りほ、平居、深井",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80a6-b96f-de3582fd7309"
@@ -10028,21 +10062,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中和とイオン",
-        "page": "ｐ149まで",
+        "content": "6電池とイオン",
+        "page": "ｐ154-2まで",
         "homework": [
-          "ドリルｐ80-81"
+          "ドリルｐ82-85"
         ],
-        "report": "中和とイオンのところ。濃度や体積を変えたときの、必要な量の計算のところが少し難しいようだ。",
+        "report": "電池とイオンのところを説明した。宮原は反応なく寝てしまったのかもしれない。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
+        "absence": "柴田",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-805f-8743-c53900f2e621"
@@ -10090,22 +10124,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中和とイオン",
-        "page": "ｐ148-3まで",
+        "content": "6電池とイオン",
+        "page": "ｐ154-2まで",
         "homework": [
-          "ｐ149-4",
-          "ドリルｐ80（81）"
+          "ドリルｐ82.ｐ84"
         ],
-        "report": "中和とイオンのところで、電離している塩化ナトリウムと硫酸バリウムなどについての学習。少し難しいところであった。",
+        "report": "電池とイオンのところまで。Ｓクラスと同じ進度で進んだ。古田は画面オフで、全く当てなかった。藤田は画面が見えたが、さしても反応なし。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-803f-9421-c1c6f0d36f6b"
@@ -10124,22 +10157,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "選挙終了、国会",
-        "page": "p138～",
+        "content": "国会終了",
+        "page": "p140",
         "homework": [
-          "マイクリアp139〇こみ",
-          "ドリルp92-93〇こみ"
+          "マイクリアp141〇込み",
+          "ドリルp94-95〇込み"
         ],
-        "report": "選挙を終えて国会へ。衆参の違いを伝え、衆議院の優越の意味まで指導。次回、軽く復習してから優越の詳細へ。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/ULrRl4G9BENjacBBuGNgynDFV6MJjBWlFtovLLX6Kyr1TwZmJDY0rvKrlmpkpgwk.Ck3To_HVmr1BeVFe?startTime=1791805151000",
+        "report": "国会は、細かい知識まで含めてすべて終了。大変な単元なので、励ましながら進めた。単元テスト後の回は、演習をこなしたのちに内閣へ入ること。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/X7fy7ZTK5u_QnIij6mxFgz5QPrLvNGZOk_LZQWE2bBmp-PSg2aKQTTjxeBQNmuBS.frJQqXgh9jYlVLSd?startTime=1792409883000",
         "teacher": "金城",
-        "absence": "油谷、原澤",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80d1-959d-ce4cf4eb5e21"
@@ -10204,22 +10237,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "Unit8の２段まで",
-        "page": "Travelp44の２段まで/ワークp25の２まで",
+        "content": "Unit8の３段まで",
+        "page": "Travelp44の３段/ワークp26の３②まで",
         "homework": [
-          "Travelp44の２段目暗唱",
-          "p46の朝食から行くまで書けるようにしてくる(次回テストします)"
+          "Travelp44の３段暗唱/p46のhelpからwalk書けるように",
+          "ワークp26の３残り"
         ],
-        "report": "宿題の暗唱はみなOK。２段目の指導の後、Let'sPのA、単語指導。単語は前回ノートにやらなかった朝食から夕食、その後掃除するから行くまで。大竹と長谷川がb/dのミスがあった。ワークはp25大問２を。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/4qHTHktJydqgs5SEqaauNoTj94rYg58w3gPkYwsC-5095_XaiUzMYWcEe6A2AcWM.IJjJZsTNxo-hQdd8?startTime=1791791842000",
+        "report": "単語テストから。大竹はb/dのミス一つ。高田が4/7。次回はもう少し練習してくるようにはっぱをかけた。ローマ字の練習をさせる必要があるか。travelは３段目に入ったが、暗唱が苦戦気味。ノートにSVO+その他という事を書かせた。単語は残り４つをノートに練習させ、次回テスト。let'sPのBをやった後ワーク②まで。",
+        "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤、高田",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       }
     },
     "2026-10-26|4:55～6:15|minami|minami_e5_S_arith|1": {
@@ -10250,14 +10283,17 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "UNIT６に入ってください。",
+        "content": "HWGUnit6",
+        "page": "p93words発音まで",
+        "homework": [
+          "HWGUnit6の#5から7,12から14,19から21",
+          "#22,23"
+        ],
+        "report": "宿題はなかったのでUnit6からスタート。三単現とその否定、疑問文の復習をしつつ進めた。quietとeitherはつづり練習も。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "齊藤",
+        "curriculumProgress": "－1.5",
         "note": "",
         "sessionNumber": "38",
         "monthNum": "10",
@@ -10279,21 +10315,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳P155導入まで",
         "homework": [
-          "なし"
+          "漢字帳P150-153"
         ],
-        "report": "単元テスト③実施。漢字帳の未完は相吉澤（P109-141）のみ。疋田は中１の漢字帳を持ってきた。斎藤は漢字帳を忘れた。次回見せるように伝えた。全体的に「詩」で失点しているものが多かった印象。疋田・清宮は記述を割けていた様子だった。",
-        "recordingUrl": "",
+        "report": "漢文に入る。返り点の打ち方の復習から行ったが、佐々木絢政が全くできていなかった。10問ほど行ったが壊滅的だった。その後、春暁に入ったところで終了。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/QenevOXQPUs3VZxe55EgGgX6uO5b-sIVFHjyOQIueqIiMmSNRkMORA--tKvFzjER.Q0N_AZ-T25rpmmen?startTime=1792402847000",
         "teacher": "高山",
-        "absence": "篠田・達木",
+        "absence": "林",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j1_S_math|3": {
@@ -10310,22 +10346,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "要点９移動の組み合わせ",
-        "page": "P11",
+        "content": "16垂直二等分線",
+        "page": "P29",
         "homework": [
-          "P5＃5、P7＃8、P10",
-          "P12～15"
+          "P21,22",
+          "#25,27,28,30"
         ],
-        "report": "移動の組み合わせまで進めることができた。清水は計算よりも図形の方が素早く解くことができていた。",
+        "report": "垂直二等分線は最初の２問は皆確認済み。米倉が最初の説明を聞いていないタイミングが何回かあったので少し注意した。",
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "なし",
-        "curriculumProgress": "＋0.3",
+        "curriculumProgress": "＋0",
         "note": "",
-        "sessionNumber": "37",
+        "sessionNumber": "38",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -10342,21 +10378,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③実施",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳P155導入まで",
         "homework": [
-          "なし"
+          "漢字帳P150-153"
         ],
-        "report": "単元テスト③実施。佐々木純正の漢字が壊滅的だったのが大いに気なるところ。堀口はとても明るくなった印象。",
-        "recordingUrl": "",
+        "report": "漢文に入る。返り点の打ち方の復習から行ったが、佐々木絢政が全くできていなかった。10問ほど行ったが壊滅的だった。その後、春暁に入ったところで終了。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/QenevOXQPUs3VZxe55EgGgX6uO5b-sIVFHjyOQIueqIiMmSNRkMORA--tKvFzjER.Q0N_AZ-T25rpmmen?startTime=1792402847000",
         "teacher": "高山",
-        "absence": "風間・野尻・茂呂・柳下",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-19"
       }
     },
     "2026-10-26|6:35～8:05|minami|minami_j3_A_soc|2": {
@@ -10373,21 +10409,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "人権終了、選挙",
+        "content": "選挙終了",
         "page": "p138～",
         "homework": [
-          "マイクリアp1392⃣3⃣〇こみ"
+          "マイクリアp139〇こみ",
+          "ドリルp92-93〇こみ"
         ],
-        "report": "人権は演習も抜粋して行い本日終了。選挙は公職選挙法まで。次回選挙制度。",
-        "recordingUrl": "https://us06web.zoom.us/rec/share/_V4hhtmPbgjjPfV7xioCoD0ndhr4gckZ8Pui65qo9RRA4QJBOBtYW_wFkTusCfUl.ghwHJXLbKS-rGY3D?startTime=1791798837000",
+        "report": "選挙は本日終了。ひとまずカリキュラム通り。",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/hXf_-f417pU6ht3Niknn9zBS1zUxve4D3vW80aqTtSBX4VWLUxIKi_l4CBQaY_Ia.3DSc32moEDc865dD",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-809c-90f5-c49f42429c8e"
@@ -10406,21 +10443,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中和とイオン",
-        "page": "ｐ149まで",
+        "content": "6電池とイオン",
+        "page": "ｐ154-2まで",
         "homework": [
-          "ドリルｐ80-81"
+          "ドリルｐ82-85"
         ],
-        "report": "中和とイオンのところ。濃度や体積を変えたときの、必要な量の計算のところが少し難しいようだ。",
+        "report": "電池とイオンのところを説明した。宮原は反応なく寝てしまったのかもしれない。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "油谷",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-80d7-8215-e52fac868f95"
@@ -10439,14 +10476,17 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "DL6・Unit6を行ってください",
+        "content": "テスト解説残り/HWGDL6とUnit6",
+        "page": "HWGテキストp107の下線①まで",
+        "homework": [
+          "HWGテキストp102からの#3から5",
+          "p107からの#4残り、#8から11"
+        ],
+        "report": "テスト解説残りの学校の教科書部分から。there構文など復習しながら進めた。その後はHWGのDL6とUnit6へ。城崎が前向きでない姿勢があったので注意、後半は改善。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "不動、菱沼、児玉",
+        "curriculumProgress": "－1",
         "note": "",
         "sessionNumber": "40",
         "monthNum": "10",
@@ -10532,22 +10572,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "中和とイオン",
-        "page": "ｐ148-3まで",
+        "content": "6電池とイオン",
+        "page": "ｐ154-2まで",
         "homework": [
-          "ｐ149-4",
-          "ドリルｐ80（81）"
+          "ドリルｐ82.ｐ84"
         ],
-        "report": "中和とイオンのところで、電離している塩化ナトリウムと硫酸バリウムなどについての学習。少し難しいところであった。",
+        "report": "電池とイオンのところまで。Ｓクラスと同じ進度で進んだ。古田は画面オフで、全く当てなかった。藤田は画面が見えたが、さしても反応なし。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "38",
+        "sessionNumber": "39",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-12"
+        "weekNum": "3",
+        "date": "2026-10-19"
       },
       "hidden": true,
       "recordingPublicationKey": "test:3ddf0120-80a7-8008-8e7c-c35ab74205ae"
