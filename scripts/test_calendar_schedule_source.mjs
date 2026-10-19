@@ -5,12 +5,12 @@ import vm from "node:vm";
 const script = fs.readFileSync(new URL("../calendar-schedule-source.js", import.meta.url), "utf8");
 const month = "2026-11";
 const row = { date: month + "-02", time: "5:00～6:00", campus: "hon", groupKey: "hon_j1_S_math" };
-function setup(responder) {
+function setup(responder, overrides = {}) {
   const calls = [];
   const context = { Intl, Date, AbortSignal, Map, setInterval, fetch: async (url, options) => {
     calls.push({ url, options });
     return responder(url);
-  } };
+  }, ...overrides };
   vm.createContext(context); vm.runInContext(script, context);
   return { source: context.CalendarScheduleSource, calls };
 }
@@ -39,4 +39,21 @@ const payload = { month, count: 1, schedule: [row], teacherSchedule: { year: 202
   await assert.rejects(source.load(month), /確認できません/);
   await assert.rejects(source.load("2026-13"), /不正/);
 }
-console.log("Shared calendar source: accepted data, cache, offline fallback, count and month validation passed.");
+{
+  let clock = Date.parse("2026-10-19T09:00:00Z");
+  class ClockDate extends Date { constructor(...args) { super(...(args.length ? args : [clock])); } static now() { return clock; } }
+  let interval;
+  let shown;
+  const element = { dataset: {}, style: {}, setAttribute() {} };
+  const document = { hidden: false, getElementById: () => element, addEventListener() {} };
+  const { source } = setup(() => ok({ ...payload, schedule: [{ ...row, time: String(clock) }] }), {
+    Date: ClockDate, document, setInterval(callback, ms) { assert.equal(ms, 60000); interval = callback; return 1; },
+  });
+  await source.load(month);
+  source.watch(() => month, "student", (value) => { shown = value; });
+  clock += 60000;
+  await interval();
+  assert.equal(shown[0].time, String(clock), "an open calendar picks up a new accepted month without another publish");
+  assert.equal(element.dataset.source, "live");
+}
+console.log("Shared calendar source: accepted data, cache, offline fallback, count/month validation and automatic refresh passed.");

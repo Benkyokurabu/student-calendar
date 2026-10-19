@@ -25,6 +25,7 @@ try {
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     if (!process.env.CALENDAR_TEST_BASE) {
+      await page.clock.install({ time: new Date("2026-10-19T12:00:00+09:00") });
       await page.route("https://line-check-system.vercel.app/api/schedule/calendar*", async (route) => {
         const month = new URL(route.request().url()).searchParams.get("month");
         if (month !== "2026-11") return route.fulfill({ status: 404, json: { error: "not ready" } });
@@ -39,7 +40,7 @@ try {
       await page.locator("#datePicker").fill(rows[0].date);
       await page.locator("#datePicker").dispatchEvent("change");
       await page.waitForFunction(() => scheduleData.some((row) => row.date.startsWith("2026-11-")));
-      assert.equal(await page.evaluate(() => scheduleData.filter((row) => row.date.startsWith("2026-11-")).length), 386);
+      assert.equal(await page.evaluate(() => scheduleData.filter((row) => row.date.startsWith("2026-11-")).length), rows.length);
     } else {
       await page.getByRole("button", { name: "翌月", exact: false }).click();
       await page.waitForFunction(() => document.getElementById("ym-pill").textContent.includes("11月"));
@@ -50,9 +51,12 @@ try {
         await page.locator("#subjectArea input").first().check();
       } else {
         for (const input of await page.locator("#teacherChecks input").all()) await input.uncheck();
-        await page.getByLabel("未判定", { exact: true }).check();
-        assert((await page.locator("#statusArea").innerText()).includes("16件"), "unassigned source events remain selectable");
-        await page.getByLabel("未判定", { exact: true }).uncheck();
+        const unassigned = rows.filter((row) => !row.teacher).length;
+        if (unassigned) {
+          await page.getByLabel("未判定", { exact: true }).check();
+          assert((await page.locator("#statusArea").innerText()).includes(`${unassigned}件`), "unassigned source events remain selectable");
+          await page.getByLabel("未判定", { exact: true }).uncheck();
+        }
         await page.locator("#teacherChecks input").first().check();
       }
       await page.locator("#monthGrid .cell.has-lessons").first().waitFor();
@@ -67,6 +71,6 @@ try {
       await page.screenshot({ path: path.join(process.env.CALENDAR_SCREENSHOT_DIR, name + "-november-390.png"), fullPage: true });
     }
     await page.close();
-    console.log(`${name}: November 386-event live source, selection and 390px layout passed`);
+    console.log(`${name}: November ${rows.length}-event live source, selection and 390px layout passed`);
   }
 } finally { await browser.close(); await new Promise((resolve) => server.close(resolve)); }
