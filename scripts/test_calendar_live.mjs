@@ -45,6 +45,7 @@ try {
       await page.getByRole("button", { name: "翌月", exact: false }).click();
       await page.waitForFunction(() => document.getElementById("ym-pill").textContent.includes("11月"));
       await page.waitForFunction(() => document.querySelector("#schedule-source-status")?.dataset.month === "2026-11");
+      await page.waitForLoadState("networkidle");
       if (name === "calendar.html") {
         await page.selectOption("#gradeSelect", "j3");
         await page.selectOption("#campusSelect", "hon");
