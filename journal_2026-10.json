@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-19T00:57:52.057377+00:00",
+  "generatedAt": "2026-10-19T10:09:59.612831+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -2148,7 +2148,7 @@
       "monthNum": "10",
       "weekNum": "1",
       "homework": [
-        "漢字帳P139-142"
+        "漢字帳P129-132"
       ],
       "prevEntry": {
         "content": "竹取物語",
@@ -4982,7 +4982,7 @@
         "content": "古文",
         "page": "テキストP56-57",
         "homework": [
-          "漢字帳P139-142"
+          "漢字帳P129-132"
         ],
         "report": "現代仮名遣いに直す、蓬莱の玉の枝を終え、テキストの演習へと進めた。竹取物語の冒頭の暗唱はみなＯＫ。現代仮名遣いに直すことは外前田が少々難あり。本日はおおむね良好だった。",
         "recordingUrl": "https://us06web.zoom.us/rec/share/ne7-wYBPTo5GrzG09mb9HLA0x0PYP2IDpzGn3T4ouTqT64bIU_ruu7YMUHZb3zrx.GS2xKglR5sqTBLKF?startTime=1791279629000",
@@ -9100,7 +9100,7 @@
       }
     },
     "2026-10-22|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "",
+      "content": "開智",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -9193,7 +9193,7 @@
       }
     },
     "2026-10-22|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "",
+      "content": "開智",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -11835,21 +11835,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "ST16都立・新宿",
-        "page": "22行目まで",
-        "homework": [
-          "ST17山形県（12分）"
-        ],
-        "report": "桐朋高校、農三を終え、都立新宿へ。物語文を連続で出しているが、徐々に慣れてきた様子。永田は語彙が豊かなので、今後が楽しみ。",
+        "content": "開智",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "23",
+        "sessionNumber": "24",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-15"
+        "weekNum": "2",
+        "date": "2026-10-22"
       }
     },
     "2026-10-29|6:35～8:05|minami|minami_j1_S_eng|2": {
@@ -11955,21 +11953,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "ST16都立・新宿",
-        "page": "22行目まで",
-        "homework": [
-          "ST17山形県（12分）"
-        ],
-        "report": "桐朋高校、農三を終え、都立新宿へ。物語文を連続で出しているが、徐々に慣れてきた様子。永田は語彙が豊かなので、今後が楽しみ。",
+        "content": "開智",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "23",
+        "sessionNumber": "24",
         "monthNum": "10",
-        "weekNum": "1",
-        "date": "2026-10-15"
+        "weekNum": "2",
+        "date": "2026-10-22"
       }
     },
     "2026-10-29|8:25～9:55|hon|hon_j2_A_math|2": {
