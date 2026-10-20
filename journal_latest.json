@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-10-20T02:57:36",
+  "generatedAt": "2026-10-20T19:10:47",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -466,22 +466,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "三平方の定理",
-        "page": "ｐ85＃20",
+        "content": "三平方の定理ｐ93",
+        "page": "ｐ96-1",
         "homework": [
-          "ｐ85＃21",
-          "プリントｐ9．ｐ10"
+          "ｐ94",
+          "プリントｐ13中央大"
         ],
-        "report": "三平方の定理の平面図形への応用問題まで。本日は、島がよくできていた。",
+        "report": "三平方の折る図形の問題まで進んで、最後に補充を１問やって終了した",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "伊東・永田・内田\n金子・沼倉",
+        "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "進捗を記入してください",
-        "sessionNumber": "42",
+        "note": "",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|4:45～6:15|minami|minami_j3_S_jp|1": {
@@ -532,11 +532,13 @@
       "prevEntry": {
         "content": "単元テストＡ③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "漢字帳P144-145/148"
+        ],
+        "report": "単元テスト③実施。漢字はみなしっかりと学習してきた様子。物語文では岡田の誤読がひどかった。寺本は徐々に良化してきたか。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "33",
@@ -559,21 +561,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "UNIT11　A",
+        "page": "Travel P56　2段目まで",
         "homework": [
-          "なし"
+          "緑　#174～176",
+          "#180、181"
         ],
-        "report": "単元テストを実施。前回、前々回に復習をした基本文は、おおむね良好だが、上島、市原がふるわない。心配していた加藤は、基本文をしっかりと復習してきたようで、79点と上々であった。",
+        "report": "単語の導入を済ませてからThere 構文の導入。単数複数に注意して発音訳出を行った。最後に音源を聞かせてシャドーイングも実施。ゆっくり進めていきたいところ。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "なし",
+        "absence": "方波見",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|4:55～6:15|minami|minami_e5_A_arith|2": {
@@ -590,21 +593,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "単位あたりの量①",
+        "page": "ｐ108～1101⃣まで",
         "homework": [
-          "解きなおし"
+          "計算ｐ55、56",
+          "ドリルｐ106、107"
         ],
-        "report": "長澤いわく月森はテストの日は学校ごと休むらしい。体調を崩しやすいのかもしれないが、あまり好ましい習慣ではなさそう。テストは相変わらずみなボロボロだった。秋野のみが抜けていた印象。",
+        "report": "秋野、長澤、が苦戦していた。秋野は計算が原因の様子。月森は言葉自体は覚えられていたが、ところどころ詰めの甘さの方が勝ってしまう。岡崎は相変わらずだが、平均に関しては初めて式をいうことができていた。そして計算は以前よりもかなり早くなっているし、小数の位置なども指摘すればわかるようにはなってきた。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "月森",
-        "curriculumProgress": "",
+        "absence": "",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|4:55～6:15|minami|minami_e6_S_arith|3": {
@@ -621,21 +625,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "29比例",
+        "page": "ｐ100-ｐ103□４",
         "homework": [
-          "＃11、ｐ22-23"
+          "計算100-102"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "比例反比例のうちの比例を練習した。特に問題なく進んだ。細野は宿題をやってこない",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-20"
+        "weekNum": "4",
+        "date": "2026-10-27"
       }
     },
     "2026-11-03|6:35～8:05|hon|hon_j1_A_jp|2": {
@@ -652,19 +656,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。自己採点での最高点は池田の９０点。次いで大木の８０点だった。最下位は大越の４９点。点数は上から下までかなりばらつきがあった。特に下位の生徒は授業中話を聞けていない可能性が大いにある。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
+        "homework": [
+          "漢字帳ｐ１３６～１３９"
+        ],
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "戸部、グエン",
+        "absence": "戸部、島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -681,21 +687,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "単元テスト③実施。漢字帳は姜山は次回までに提出を命じたが、外前田と平岡は英語補講に呼ぶ。全体的に詩での失点が目立っていた。",
-        "recordingUrl": "",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "清水",
         "curriculumProgress": "",
-        "note": "メモあり、右クリック",
-        "sessionNumber": "30",
+        "note": "",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|6:35～8:05|hon|hon_j2_B_eng|1": {
@@ -712,10 +718,12 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "DL6・Unit6を行ってください",
+        "content": "UNIT6 Part2　基本文まで",
+        "page": "Here We Go UNIT6 #10まで",
+        "homework": [
+          "Here We Go UNIT6 #5～7"
+        ],
+        "report": "UNIT６を実施。不定詞の基本３用法の意味を確認し、基本文の訳、発音を何度も行った。豊田がほぼずっと寝ていたので今日は落ち着いていたが、男子4人組は相変わらず落ち着きがない。",
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "",
@@ -741,21 +749,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳ｐ１３６～１３９"
         ],
-        "report": "解説は古文をメインに扱った。漢字帳未完者は、本校の日誌に記載。",
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "髙橋らら",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -772,21 +780,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ①",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -832,21 +840,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "要点11定理の逆",
+        "page": "ｐ14",
         "homework": [
-          "＃11、ｐ22-23"
+          "ｐ24-25"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "二等辺三角形になることの証明、定理の逆まで進んだ。佐々木、福本らも大丈夫そうであった。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "佐々木・茂呂",
-        "curriculumProgress": "±0",
+        "absence": "なし",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "39",
+        "sessionNumber": "40",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|8:25～9:55|hon|hon_j2_A_jp|2": {
@@ -863,19 +871,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。最高点は豊田の６０点。全体的に低い水準でまとまっていた。抜けて出来ない生徒もいなかった。今回は授業中に出る箇所を強調して迎えたテストだったが、その割に出来が悪かった。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
+        "homework": [
+          "漢字帳ｐ１５０～１５３"
+        ],
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "井上",
+        "absence": "内田、塩原",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|8:25～9:55|hon|hon_j3_A_eng|1": {
@@ -892,21 +902,22 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "Here We Go UNIT6",
+        "page": "Part2訳まで",
         "homework": [
-          "ＵＮＩＴ６#１，８、15"
+          "Here We Go UNIT6 #５～７",
+          "#12～14"
         ],
-        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
+        "report": "UNIT６を指導。分詞の形容詞的用法は語順をすっかり忘れてしまっている生徒が多かったので類題を何問か出して復習。その後本文の訳に入った。主語が大きくなるパターンも思っていたよりよくできていた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "三上（単元テストは受験済）",
-        "curriculumProgress": "",
+        "absence": "森、宮田、北面、三上、大嶋",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "43",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-17"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-03|8:25～9:55|minami|minami_j2_S_jp|2": {
@@ -954,21 +965,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "相似⑥",
+        "page": "ｐ13から16",
         "homework": [
-          "解きなおし"
+          "ｐ18"
         ],
-        "report": "室伏や根本はよくできていた。式田、小尾、越川、宮本がおそらく最下位。",
+        "report": "中間テストは40～50点がほとんど。本日の内容に関してはより小さいと以上が一番大変だった。ブイなどはよくできていたし、小尾も意外とできていたが、金子などはまだしっかり意味を覚えていない様子。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "古田　田中　金子　ブイ　長山",
+        "absence": "",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "42",
+        "sessionNumber": "43",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-04|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -1828,21 +1839,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③実施",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
         "homework": [
-          "なし"
+          "漢字帳ｐ１５０～１５３"
         ],
-        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
-        "teacher": "高山",
-        "absence": "山本",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-05|6:35～8:05|minami|minami_j2_X_math|5": {
@@ -3288,11 +3299,13 @@
       "prevEntry": {
         "content": "単元テストＡ③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "漢字帳P144-145/148"
+        ],
+        "report": "単元テスト③実施。漢字はみなしっかりと学習してきた様子。物語文では岡田の誤読がひどかった。寺本は徐々に良化してきたか。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "33",
@@ -3315,21 +3328,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "UNIT11　A",
+        "page": "Travel P56　2段目まで",
         "homework": [
-          "なし"
+          "緑　#174～176",
+          "#180、181"
         ],
-        "report": "単元テストを実施。前回、前々回に復習をした基本文は、おおむね良好だが、上島、市原がふるわない。心配していた加藤は、基本文をしっかりと復習してきたようで、79点と上々であった。",
+        "report": "単語の導入を済ませてからThere 構文の導入。単数複数に注意して発音訳出を行った。最後に音源を聞かせてシャドーイングも実施。ゆっくり進めていきたいところ。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "なし",
+        "absence": "方波見",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|4:55～6:15|minami|minami_e5_A_arith|1": {
@@ -3346,21 +3360,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "単位あたりの量①",
+        "page": "ｐ108～1101⃣まで",
         "homework": [
-          "解きなおし"
+          "計算ｐ55、56",
+          "ドリルｐ106、107"
         ],
-        "report": "長澤いわく月森はテストの日は学校ごと休むらしい。体調を崩しやすいのかもしれないが、あまり好ましい習慣ではなさそう。テストは相変わらずみなボロボロだった。秋野のみが抜けていた印象。",
+        "report": "秋野、長澤、が苦戦していた。秋野は計算が原因の様子。月森は言葉自体は覚えられていたが、ところどころ詰めの甘さの方が勝ってしまう。岡崎は相変わらずだが、平均に関しては初めて式をいうことができていた。そして計算は以前よりもかなり早くなっているし、小数の位置なども指摘すればわかるようにはなってきた。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "月森",
-        "curriculumProgress": "",
+        "absence": "",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|4:55～6:15|minami|minami_e6_S_arith|2": {
@@ -3377,21 +3392,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "29比例",
+        "page": "ｐ100-ｐ103□４",
         "homework": [
-          "＃11、ｐ22-23"
+          "計算100-102"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "比例反比例のうちの比例を練習した。特に問題なく進んだ。細野は宿題をやってこない",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-20"
+        "weekNum": "4",
+        "date": "2026-10-27"
       }
     },
     "2026-11-10|6:35～8:05|hon|hon_j1_A_jp|3": {
@@ -3408,19 +3423,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。自己採点での最高点は池田の９０点。次いで大木の８０点だった。最下位は大越の４９点。点数は上から下までかなりばらつきがあった。特に下位の生徒は授業中話を聞けていない可能性が大いにある。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
+        "homework": [
+          "漢字帳ｐ１３６～１３９"
+        ],
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "戸部、グエン",
+        "absence": "戸部、島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|6:35～8:05|hon|hon_j1_S_jp|2": {
@@ -3437,21 +3454,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "単元テスト③実施。漢字帳は姜山は次回までに提出を命じたが、外前田と平岡は英語補講に呼ぶ。全体的に詩での失点が目立っていた。",
-        "recordingUrl": "",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "清水",
         "curriculumProgress": "",
-        "note": "メモあり、右クリック",
-        "sessionNumber": "30",
+        "note": "",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|6:35～8:05|hon|hon_j2_B_eng|1": {
@@ -3468,10 +3485,12 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "DL6・Unit6を行ってください",
+        "content": "UNIT6 Part2　基本文まで",
+        "page": "Here We Go UNIT6 #10まで",
+        "homework": [
+          "Here We Go UNIT6 #5～7"
+        ],
+        "report": "UNIT６を実施。不定詞の基本３用法の意味を確認し、基本文の訳、発音を何度も行った。豊田がほぼずっと寝ていたので今日は落ち着いていたが、男子4人組は相変わらず落ち着きがない。",
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "",
@@ -3497,21 +3516,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳ｐ１３６～１３９"
         ],
-        "report": "解説は古文をメインに扱った。漢字帳未完者は、本校の日誌に記載。",
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "髙橋らら",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|6:35～8:05|minami|minami_j1_S_jp|3": {
@@ -3528,21 +3547,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ①",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -3588,21 +3607,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "要点11定理の逆",
+        "page": "ｐ14",
         "homework": [
-          "＃11、ｐ22-23"
+          "ｐ24-25"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "二等辺三角形になることの証明、定理の逆まで進んだ。佐々木、福本らも大丈夫そうであった。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "佐々木・茂呂",
-        "curriculumProgress": "±0",
+        "absence": "なし",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "39",
+        "sessionNumber": "40",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -3619,19 +3638,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。最高点は豊田の６０点。全体的に低い水準でまとまっていた。抜けて出来ない生徒もいなかった。今回は授業中に出る箇所を強調して迎えたテストだったが、その割に出来が悪かった。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
+        "homework": [
+          "漢字帳ｐ１５０～１５３"
+        ],
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "井上",
+        "absence": "内田、塩原",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|8:25～9:55|hon|hon_j3_A_eng|1": {
@@ -3648,21 +3669,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "Here We Go UNIT6",
+        "page": "Part2訳まで",
         "homework": [
-          "ＵＮＩＴ６#１，８、15"
+          "Here We Go UNIT6 #５～７",
+          "#12～14"
         ],
-        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
+        "report": "UNIT６を指導。分詞の形容詞的用法は語順をすっかり忘れてしまっている生徒が多かったので類題を何問か出して復習。その後本文の訳に入った。主語が大きくなるパターンも思っていたよりよくできていた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "三上（単元テストは受験済）",
-        "curriculumProgress": "",
+        "absence": "森、宮田、北面、三上、大嶋",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "43",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-17"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|8:25～9:55|hon|hon_special_英語　　補講②|2": {
@@ -3693,21 +3715,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③実施",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
         "homework": [
-          "なし"
+          "漢字帳ｐ１５０～１５３"
         ],
-        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
-        "teacher": "高山",
-        "absence": "山本",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|8:25～9:55|minami|minami_j3_B_math|1": {
@@ -3724,21 +3746,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "相似⑥",
+        "page": "ｐ13から16",
         "homework": [
-          "解きなおし"
+          "ｐ18"
         ],
-        "report": "室伏や根本はよくできていた。式田、小尾、越川、宮本がおそらく最下位。",
+        "report": "中間テストは40～50点がほとんど。本日の内容に関してはより小さいと以上が一番大変だった。ブイなどはよくできていたし、小尾も意外とできていたが、金子などはまだしっかり意味を覚えていない様子。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "古田　田中　金子　ブイ　長山",
+        "absence": "",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "42",
+        "sessionNumber": "43",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-10|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -3755,22 +3777,22 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "三平方の定理",
-        "page": "ｐ85＃20",
+        "content": "三平方の定理ｐ93",
+        "page": "ｐ96-1",
         "homework": [
-          "ｐ85＃21",
-          "プリントｐ9．ｐ10"
+          "ｐ94",
+          "プリントｐ13中央大"
         ],
-        "report": "三平方の定理の平面図形への応用問題まで。本日は、島がよくできていた。",
+        "report": "三平方の折る図形の問題まで進んで、最後に補充を１問やって終了した",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "伊東・永田・内田\n金子・沼倉",
+        "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "進捗を記入してください",
-        "sessionNumber": "42",
+        "note": "",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-11|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -5975,11 +5997,13 @@
       "prevEntry": {
         "content": "単元テストＡ③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "漢字帳P144-145/148"
+        ],
+        "report": "単元テスト③実施。漢字はみなしっかりと学習してきた様子。物語文では岡田の誤読がひどかった。寺本は徐々に良化してきたか。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "33",
@@ -6002,21 +6026,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "UNIT11　A",
+        "page": "Travel P56　2段目まで",
         "homework": [
-          "なし"
+          "緑　#174～176",
+          "#180、181"
         ],
-        "report": "単元テストを実施。前回、前々回に復習をした基本文は、おおむね良好だが、上島、市原がふるわない。心配していた加藤は、基本文をしっかりと復習してきたようで、79点と上々であった。",
+        "report": "単語の導入を済ませてからThere 構文の導入。単数複数に注意して発音訳出を行った。最後に音源を聞かせてシャドーイングも実施。ゆっくり進めていきたいところ。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "なし",
+        "absence": "方波見",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|4:55～6:15|minami|minami_e5_A_arith|1": {
@@ -6033,21 +6058,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "単位あたりの量①",
+        "page": "ｐ108～1101⃣まで",
         "homework": [
-          "解きなおし"
+          "計算ｐ55、56",
+          "ドリルｐ106、107"
         ],
-        "report": "長澤いわく月森はテストの日は学校ごと休むらしい。体調を崩しやすいのかもしれないが、あまり好ましい習慣ではなさそう。テストは相変わらずみなボロボロだった。秋野のみが抜けていた印象。",
+        "report": "秋野、長澤、が苦戦していた。秋野は計算が原因の様子。月森は言葉自体は覚えられていたが、ところどころ詰めの甘さの方が勝ってしまう。岡崎は相変わらずだが、平均に関しては初めて式をいうことができていた。そして計算は以前よりもかなり早くなっているし、小数の位置なども指摘すればわかるようにはなってきた。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "月森",
-        "curriculumProgress": "",
+        "absence": "",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|4:55～6:15|minami|minami_e6_S_arith|2": {
@@ -6064,21 +6090,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "29比例",
+        "page": "ｐ100-ｐ103□４",
         "homework": [
-          "＃11、ｐ22-23"
+          "計算100-102"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "比例反比例のうちの比例を練習した。特に問題なく進んだ。細野は宿題をやってこない",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-20"
+        "weekNum": "4",
+        "date": "2026-10-27"
       }
     },
     "2026-11-17|6:35～8:05|hon|hon_j1_A_jp|3": {
@@ -6095,19 +6121,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。自己採点での最高点は池田の９０点。次いで大木の８０点だった。最下位は大越の４９点。点数は上から下までかなりばらつきがあった。特に下位の生徒は授業中話を聞けていない可能性が大いにある。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
+        "homework": [
+          "漢字帳ｐ１３６～１３９"
+        ],
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "戸部、グエン",
+        "absence": "戸部、島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -6124,21 +6152,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "単元テスト③実施。漢字帳は姜山は次回までに提出を命じたが、外前田と平岡は英語補講に呼ぶ。全体的に詩での失点が目立っていた。",
-        "recordingUrl": "",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "清水",
         "curriculumProgress": "",
-        "note": "メモあり、右クリック",
-        "sessionNumber": "30",
+        "note": "",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|6:35～8:05|hon|hon_j2_B_eng|1": {
@@ -6155,10 +6183,12 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "DL6・Unit6を行ってください",
+        "content": "UNIT6 Part2　基本文まで",
+        "page": "Here We Go UNIT6 #10まで",
+        "homework": [
+          "Here We Go UNIT6 #5～7"
+        ],
+        "report": "UNIT６を実施。不定詞の基本３用法の意味を確認し、基本文の訳、発音を何度も行った。豊田がほぼずっと寝ていたので今日は落ち着いていたが、男子4人組は相変わらず落ち着きがない。",
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "",
@@ -6184,21 +6214,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳ｐ１３６～１３９"
         ],
-        "report": "解説は古文をメインに扱った。漢字帳未完者は、本校の日誌に記載。",
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "髙橋らら",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -6215,21 +6245,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ①",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -6275,21 +6305,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "要点11定理の逆",
+        "page": "ｐ14",
         "homework": [
-          "＃11、ｐ22-23"
+          "ｐ24-25"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "二等辺三角形になることの証明、定理の逆まで進んだ。佐々木、福本らも大丈夫そうであった。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "佐々木・茂呂",
-        "curriculumProgress": "±0",
+        "absence": "なし",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "39",
+        "sessionNumber": "40",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -6306,19 +6336,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。最高点は豊田の６０点。全体的に低い水準でまとまっていた。抜けて出来ない生徒もいなかった。今回は授業中に出る箇所を強調して迎えたテストだったが、その割に出来が悪かった。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
+        "homework": [
+          "漢字帳ｐ１５０～１５３"
+        ],
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "井上",
+        "absence": "内田、塩原",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|8:25～9:55|hon|hon_j3_A_eng|1": {
@@ -6335,21 +6367,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "Here We Go UNIT6",
+        "page": "Part2訳まで",
         "homework": [
-          "ＵＮＩＴ６#１，８、15"
+          "Here We Go UNIT6 #５～７",
+          "#12～14"
         ],
-        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
+        "report": "UNIT６を指導。分詞の形容詞的用法は語順をすっかり忘れてしまっている生徒が多かったので類題を何問か出して復習。その後本文の訳に入った。主語が大きくなるパターンも思っていたよりよくできていた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "三上（単元テストは受験済）",
-        "curriculumProgress": "",
+        "absence": "森、宮田、北面、三上、大嶋",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "43",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-17"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|8:25～9:55|minami|minami_j2_A_jp|6": {
@@ -6366,21 +6399,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③実施",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
         "homework": [
-          "なし"
+          "漢字帳ｐ１５０～１５３"
         ],
-        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
-        "teacher": "高山",
-        "absence": "山本",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|8:25～9:55|minami|minami_j3_B_math|1": {
@@ -6397,21 +6430,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "相似⑥",
+        "page": "ｐ13から16",
         "homework": [
-          "解きなおし"
+          "ｐ18"
         ],
-        "report": "室伏や根本はよくできていた。式田、小尾、越川、宮本がおそらく最下位。",
+        "report": "中間テストは40～50点がほとんど。本日の内容に関してはより小さいと以上が一番大変だった。ブイなどはよくできていたし、小尾も意外とできていたが、金子などはまだしっかり意味を覚えていない様子。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "古田　田中　金子　ブイ　長山",
+        "absence": "",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "42",
+        "sessionNumber": "43",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-17|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -6428,22 +6461,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "三平方の定理",
-        "page": "ｐ85＃20",
+        "content": "三平方の定理ｐ93",
+        "page": "ｐ96-1",
         "homework": [
-          "ｐ85＃21",
-          "プリントｐ9．ｐ10"
+          "ｐ94",
+          "プリントｐ13中央大"
         ],
-        "report": "三平方の定理の平面図形への応用問題まで。本日は、島がよくできていた。",
+        "report": "三平方の折る図形の問題まで進んで、最後に補充を１問やって終了した",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "伊東・永田・内田\n金子・沼倉",
+        "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "進捗を記入してください",
-        "sessionNumber": "42",
+        "note": "",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-18|4:55～6:15|hon|hon_e5_A_jp|2": {
@@ -8353,11 +8386,13 @@
       "prevEntry": {
         "content": "単元テストＡ③",
         "page": "",
-        "homework": [],
-        "report": "",
+        "homework": [
+          "漢字帳P144-145/148"
+        ],
+        "report": "単元テスト③実施。漢字はみなしっかりと学習してきた様子。物語文では岡田の誤読がひどかった。寺本は徐々に良化してきたか。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "",
+        "absence": "なし",
         "curriculumProgress": "",
         "note": "",
         "sessionNumber": "33",
@@ -8380,21 +8415,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "UNIT11　A",
+        "page": "Travel P56　2段目まで",
         "homework": [
-          "なし"
+          "緑　#174～176",
+          "#180、181"
         ],
-        "report": "単元テストを実施。前回、前々回に復習をした基本文は、おおむね良好だが、上島、市原がふるわない。心配していた加藤は、基本文をしっかりと復習してきたようで、79点と上々であった。",
+        "report": "単語の導入を済ませてからThere 構文の導入。単数複数に注意して発音訳出を行った。最後に音源を聞かせてシャドーイングも実施。ゆっくり進めていきたいところ。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "なし",
+        "absence": "方波見",
         "curriculumProgress": "－1",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|4:55～6:15|minami|minami_e5_A_arith|1": {
@@ -8411,21 +8447,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "単位あたりの量①",
+        "page": "ｐ108～1101⃣まで",
         "homework": [
-          "解きなおし"
+          "計算ｐ55、56",
+          "ドリルｐ106、107"
         ],
-        "report": "長澤いわく月森はテストの日は学校ごと休むらしい。体調を崩しやすいのかもしれないが、あまり好ましい習慣ではなさそう。テストは相変わらずみなボロボロだった。秋野のみが抜けていた印象。",
+        "report": "秋野、長澤、が苦戦していた。秋野は計算が原因の様子。月森は言葉自体は覚えられていたが、ところどころ詰めの甘さの方が勝ってしまう。岡崎は相変わらずだが、平均に関しては初めて式をいうことができていた。そして計算は以前よりもかなり早くなっているし、小数の位置なども指摘すればわかるようにはなってきた。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "月森",
-        "curriculumProgress": "",
+        "absence": "",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "32",
+        "sessionNumber": "33",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|4:55～6:15|minami|minami_e6_S_arith|2": {
@@ -8442,21 +8479,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "29比例",
+        "page": "ｐ100-ｐ103□４",
         "homework": [
-          "＃11、ｐ22-23"
+          "計算100-102"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "比例反比例のうちの比例を練習した。特に問題なく進んだ。細野は宿題をやってこない",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-20"
+        "weekNum": "4",
+        "date": "2026-10-27"
       }
     },
     "2026-11-24|6:35～8:05|hon|hon_j1_A_jp|3": {
@@ -8473,19 +8510,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。自己採点での最高点は池田の９０点。次いで大木の８０点だった。最下位は大越の４９点。点数は上から下までかなりばらつきがあった。特に下位の生徒は授業中話を聞けていない可能性が大いにある。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
+        "homework": [
+          "漢字帳ｐ１３６～１３９"
+        ],
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "戸部、グエン",
+        "absence": "戸部、島",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|6:35～8:05|hon|hon_j1_S_jp|4": {
@@ -8502,21 +8541,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "単元テスト③実施。漢字帳は姜山は次回までに提出を命じたが、外前田と平岡は英語補講に呼ぶ。全体的に詩での失点が目立っていた。",
-        "recordingUrl": "",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
         "teacher": "高山",
-        "absence": "なし",
+        "absence": "清水",
         "curriculumProgress": "",
-        "note": "メモあり、右クリック",
-        "sessionNumber": "30",
+        "note": "",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|6:35～8:05|hon|hon_j2_B_eng|1": {
@@ -8533,10 +8572,12 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "",
-        "page": "",
-        "homework": [],
-        "report": "DL6・Unit6を行ってください",
+        "content": "UNIT6 Part2　基本文まで",
+        "page": "Here We Go UNIT6 #10まで",
+        "homework": [
+          "Here We Go UNIT6 #5～7"
+        ],
+        "report": "UNIT６を実施。不定詞の基本３用法の意味を確認し、基本文の訳、発音を何度も行った。豊田がほぼずっと寝ていたので今日は落ち着いていたが、男子4人組は相変わらず落ち着きがない。",
         "recordingUrl": "",
         "teacher": "金子",
         "absence": "",
@@ -8562,21 +8603,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ③",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳ｐ１３６～１３９"
         ],
-        "report": "解説は古文をメインに扱った。漢字帳未完者は、本校の日誌に記載。",
+        "report": "今回は漢文を扱った。初めに基礎的なことを解説したのち、返り点の扱い方について見ていった。演習の中で大きなつまずきはなかったが、完璧に出来た生徒は少なかった。次週以降も復習を入れて様子を見る。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "髙橋らら",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|6:35～8:05|minami|minami_j1_S_jp|5": {
@@ -8593,21 +8634,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テストＡ①",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１３４～１３５",
         "homework": [
-          "なし"
+          "漢字帳P136-139"
         ],
-        "report": "池田のみ漢字帳未完。終えていないだけでなく、あまりにも杜撰な取り組みだったので叱った。抜けているページは本校日誌に記載。",
-        "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "なし",
+        "report": "幹部の導入を行う。返り点の打ち方を何度も練習したが、岡田は説明を聞かない、髙橋彩音は理解ができないと一苦労。最終的にはできるようになったが、岡田は要注意。漢字帳は池田はOK.",
+        "recordingUrl": "https://us06web.zoom.us/rec/share/i8yEvLb0cjvJncMVB-RDejQfWkc5-sVPW1muGQ5At10fm-L-2V3RC5De2coDUVvT.fIhbuJTzX6SSaxWV?startTime=1792489387000",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|6:35～8:05|minami|minami_j2_A_math|1": {
@@ -8653,21 +8694,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "５章三角形と四角形",
-        "page": "ｐ9まで",
+        "content": "要点11定理の逆",
+        "page": "ｐ14",
         "homework": [
-          "＃11、ｐ22-23"
+          "ｐ24-25"
         ],
-        "report": "三角形と四角形のところを進めた。比較的簡単なところなので問題なく進んだ。",
+        "report": "二等辺三角形になることの証明、定理の逆まで進んだ。佐々木、福本らも大丈夫そうであった。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "佐々木・茂呂",
-        "curriculumProgress": "±0",
+        "absence": "なし",
+        "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "39",
+        "sessionNumber": "40",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|8:25～9:55|hon|hon_j2_A_jp|3": {
@@ -8684,19 +8725,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
-        "homework": [],
-        "report": "今回は単元テスト③を実施。最高点は豊田の６０点。全体的に低い水準でまとまっていた。抜けて出来ない生徒もいなかった。今回は授業中に出る箇所を強調して迎えたテストだったが、その割に出来が悪かった。",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
+        "homework": [
+          "漢字帳ｐ１５０～１５３"
+        ],
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
         "teacher": "岩本",
-        "absence": "井上",
+        "absence": "内田、塩原",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|8:25～9:55|hon|hon_j3_A_eng|1": {
@@ -8713,21 +8756,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "Here We Go UNIT6",
+        "page": "Part2訳まで",
         "homework": [
-          "ＵＮＩＴ６#１，８、15"
+          "Here We Go UNIT6 #５～７",
+          "#12～14"
         ],
-        "report": "単元テストを実施。後半は答え合わせをし、大問４のみ未解説。火曜日に答え合わせを終え、ＵＮＩＴ６に入る。",
+        "report": "UNIT６を指導。分詞の形容詞的用法は語順をすっかり忘れてしまっている生徒が多かったので類題を何問か出して復習。その後本文の訳に入った。主語が大きくなるパターンも思っていたよりよくできていた。",
         "recordingUrl": "",
         "teacher": "金子",
-        "absence": "三上（単元テストは受験済）",
-        "curriculumProgress": "",
+        "absence": "森、宮田、北面、三上、大嶋",
+        "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "43",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-17"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|8:25～9:55|minami|minami_j2_A_jp|6": {
@@ -8744,21 +8788,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③実施",
-        "page": "",
+        "content": "漢文",
+        "page": "漢字帳ｐ１４８～１４９",
         "homework": [
-          "なし"
+          "漢字帳ｐ１５０～１５３"
         ],
-        "report": "単元テスト③実施。鹿内が間違えてきたので受講させた。Sと重なりの問題のみを解説。水上は少々、視点がずれているかもしれない。",
+        "report": "今回は漢文を扱った。返り点の練習を主に行ったが、比較的良く出来ていたように感じる。書き下し文は助詞のひらがな変換以外はよく出来ていた。来週以降もまだ練習を続ける。",
         "recordingUrl": "",
-        "teacher": "高山",
-        "absence": "山本",
+        "teacher": "岩本",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "30",
+        "sessionNumber": "31",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-10"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|8:25～9:55|minami|minami_j3_B_math|1": {
@@ -8775,21 +8819,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "相似⑥",
+        "page": "ｐ13から16",
         "homework": [
-          "解きなおし"
+          "ｐ18"
         ],
-        "report": "室伏や根本はよくできていた。式田、小尾、越川、宮本がおそらく最下位。",
+        "report": "中間テストは40～50点がほとんど。本日の内容に関してはより小さいと以上が一番大変だった。ブイなどはよくできていたし、小尾も意外とできていたが、金子などはまだしっかり意味を覚えていない様子。",
         "recordingUrl": "",
         "teacher": "治彦",
-        "absence": "古田　田中　金子　ブイ　長山",
+        "absence": "",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "42",
+        "sessionNumber": "43",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "3",
+        "date": "2026-10-20"
       }
     },
     "2026-11-24|8:25～9:55|minami|minami_j3_S_math|2": {
@@ -8806,22 +8850,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "三平方の定理",
-        "page": "ｐ85＃20",
+        "content": "三平方の定理ｐ93",
+        "page": "ｐ96-1",
         "homework": [
-          "ｐ85＃21",
-          "プリントｐ9．ｐ10"
+          "ｐ94",
+          "プリントｐ13中央大"
         ],
-        "report": "三平方の定理の平面図形への応用問題まで。本日は、島がよくできていた。",
+        "report": "三平方の折る図形の問題まで進んで、最後に補充を１問やって終了した",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "伊東・永田・内田\n金子・沼倉",
+        "absence": "なし",
         "curriculumProgress": "±0",
-        "note": "進捗を記入してください",
-        "sessionNumber": "42",
+        "note": "",
+        "sessionNumber": "44",
         "monthNum": "10",
-        "weekNum": "2",
-        "date": "2026-10-13"
+        "weekNum": "4",
+        "date": "2026-10-20"
       }
     },
     "2026-11-25|4:55～6:15|hon|hon_e5_A_jp|2": {
