@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-21T10:36:54.927735+00:00",
+  "generatedAt": "2026-10-21T15:37:40.008082+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -1092,9 +1092,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-26"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-800e-87c3-cddba97ad4cb"
+      }
     },
     "2026-10-02|8:25～9:55|hon|hon_j3_S_math|2": {
       "content": "単元テスト③",
@@ -2816,7 +2814,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "テストを実施５名欠席。テスト後は解説もした。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/HOSKu_iC96TXu1O5KDAuTKkQ14FWk5ieGlQzEWV8qHj4xXHqkwi_sKlpHtufRcknWCCPD5rIDsabG1wO.Ci-yp2obp-gDF6Mt",
       "teacher": "工藤",
       "absence": "油谷・池田・江川・小野（ゆ）・清水",
       "curriculumProgress": "±0.1",
@@ -2844,9 +2842,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-30"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-07|6:35～8:05|minami|minami_j3_A_math|1"
+      }
     },
     "2026-10-07|6:35～8:05|minami|minami_j3_X_jp|5": {
       "content": "論説文",
@@ -5774,7 +5770,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "テストを実施。全体的にはよくできていたと思う。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/xvydgDvjxpQX3ebQjmTn4xLIp0skLhbwjCJVWQeEVyzIK13WH1j07cLjIphqQGYk0KQPuisWErpm2As6.CLkttzmP8X5rsCGL",
       "teacher": "工藤",
       "absence": "なし",
       "curriculumProgress": "±0",
@@ -5801,9 +5797,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-15|4:55～6:15|hon|hon_e4_A_arith|3"
+      }
     },
     "2026-10-15|4:55～6:15|hon|hon_e5_S_arith|2": {
       "content": "まとめと演習",
@@ -8421,9 +8415,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-14"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80a2-9688-eb27c6876cc1"
+      }
     },
     "2026-10-21|4:55～6:15|minami|minami_e6_A_arith|1": {
       "content": "",
