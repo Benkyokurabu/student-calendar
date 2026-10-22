@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-22T02:35:58.682066+00:00",
+  "generatedAt": "2026-10-22T06:02:44.052671+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3116,9 +3116,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fa-b62b-f574158efb52"
+      }
     },
     "2026-10-08|4:55～6:15|minami|minami_e4_A_jp|3": {
       "content": "慣用句",
@@ -3495,7 +3493,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "今回は単元テストを実施。自己採点での最高点はダヒョンの６８点。次いで田口の５２点。４２点がかなり多かった。逆に最下位は木津の１８点。ついで末次の２８点だった。末次は何故点数が取れないのか不明。かなり真面目にやっており、授業中も能力の高さを感じさせる。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/TBXG7z5mGWAKnag55XRTtRb7BEGdPiA8VjpixGP2znNjRS5K2Xh567YGFlD_p9iCVsyy1Df3HyFdj9MA.CYMwrH-1jGryzaUs",
       "teacher": "岩本",
       "absence": "鈴木、中村",
       "curriculumProgress": "±0",
@@ -3520,9 +3518,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-08|8:25～9:55|minami|minami_j2_B_eng|2"
+      }
     },
     "2026-10-08|8:25～9:55|minami|minami_j3_A_eng|1": {
       "content": "Unit5",
@@ -5014,9 +5010,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80c3-83a8-d778b29d5695"
+      }
     },
     "2026-10-13|6:35～8:05|minami|minami_j1_A_jp|3": {
       "content": "単元テストＡ③",
@@ -6586,7 +6580,7 @@
       "content": "単元テスト③",
       "page": "解説最後まで",
       "report": "単テを実施。沼田と香月はインフルのため、本村と山本。山本のほうが単語力は圧倒的に高いが、忘れていることも多そう。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/nzb9LRK25bLDMetX7orp49pshQAmKmuN3Oo5I4uj639t55wuQFoGsFMKTG0-9Qrrf3cZKlOVe7X_0m7s.iTZCt7nbLJJwaZPe",
       "teacher": "真下",
       "absence": "沼田、香月",
       "curriculumProgress": "",
@@ -6614,9 +6608,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-09"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2"
+      }
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_S_eng|1": {
       "content": "UNIT11 There is / are",

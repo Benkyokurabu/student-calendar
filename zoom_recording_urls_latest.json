@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-21T22:09:43.130427+09:00",
+  "generatedAt": "2026-10-22T06:02:53.948295+00:00",
   "matched": 180,
   "missing": 199,
   "entries": {
@@ -3602,7 +3602,7 @@
       "lessonOverlapMinutes": 36.0
     },
     "2026-10-08|8:25～9:55|minami|minami_j2_B_eng|2": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/TBXG7z5mGWAKnag55XRTtRb7BEGdPiA8VjpixGP2znNjRS5K2Xh567YGFlD_p9iCVsyy1Df3HyFdj9MA.CYMwrH-1jGryzaUs",
       "recordingStart": "2026-10-08T21:22:50+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -3621,9 +3621,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 57.8,
       "recordingDurationMinutes": 24.0,
-      "lessonOverlapMinutes": 24.0,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-08|8:25～9:55|minami|minami_j2_B_eng|2"
+      "lessonOverlapMinutes": 24.0
     },
     "2026-10-08|8:25～9:55|hon|hon_j3_B_math|1": {
       "url": "",
@@ -3968,7 +3966,7 @@
       "lessonOverlapMinutes": 38.6
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2": {
-      "url": "",
+      "url": "https://us06web.zoom.us/rec/play/nzb9LRK25bLDMetX7orp49pshQAmKmuN3Oo5I4uj639t55wuQFoGsFMKTG0-9Qrrf3cZKlOVe7X_0m7s.iTZCt7nbLJJwaZPe",
       "recordingStart": "2026-10-16T17:28:25+09:00",
       "meetingId": "7707757842",
       "topic": "南校　第２教室のパーソナルミーティングルーム",
@@ -3987,9 +3985,7 @@
       "matchPolicy": "campus-room-segment-overlap-v4",
       "startOffsetMinutes": 33.4,
       "recordingDurationMinutes": 50.9,
-      "lessonOverlapMinutes": 46.6,
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2"
+      "lessonOverlapMinutes": 46.6
     },
     "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/EgXHh1cBCFMCNj6D8aurjUoJJTzBdobCRSyjF_WxfeDvssk9Ib8qTKyDNOGsuy1Clf7y2Q7tQlNUc26E.4d7ihYNWjGyHp9pJ",
