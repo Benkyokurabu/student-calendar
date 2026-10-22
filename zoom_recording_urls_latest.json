@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-22T18:24:05.525455+09:00",
-  "matched": 183,
-  "missing": 196,
+  "generatedAt": "2026-10-22T20:13:05.303964+09:00",
+  "matched": 184,
+  "missing": 195,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -4076,6 +4076,28 @@
       "lessonOverlapMinutes": 77.5,
       "hidden": true,
       "recordingPublicationKey": "2026-10-22|4:55～6:15|hon|hon_e5_S_arith|2"
+    },
+    "2026-10-22|6:35～8:05|hon|hon_j1_B_math|3": {
+      "url": "https://us06web.zoom.us/rec/play/T0PXhYzIjxFOU6zZuZNoGoPf9yCJ2mALv_imu4dWoBwbK-bDSZopM3WCW2K7rG59fTBed4R45hB-v61d.UUMo1qkXakQd3rWS",
+      "recordingStart": "2026-10-22T18:37:38+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-10-22",
+      "time": "6:35～8:05",
+      "campus": "hon",
+      "room": "3",
+      "grade": "j1",
+      "class": "B",
+      "subject": "math",
+      "label": "中１B 数学",
+      "teacher": "森松",
+      "onlineLessonKey": "2026-10-22|6:35～8:05|j1|B|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 2.6,
+      "recordingDurationMinutes": 82.8,
+      "lessonOverlapMinutes": 82.8
     }
   }
 }
