@@ -8,6 +8,9 @@ on:
       - "calendar-mobile.css"
       - "calendar-mobile.js"
       - "calendar-schedule-source.js"
+      - "calendar-request.js"
+      - "scripts/test_calendar_request.mjs"
+      - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_live.mjs"
       - "scripts/test_calendar_mobile.mjs"
@@ -29,6 +32,9 @@ on:
       - "calendar-mobile.css"
       - "calendar-mobile.js"
       - "calendar-schedule-source.js"
+      - "calendar-request.js"
+      - "scripts/test_calendar_request.mjs"
+      - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_live.mjs"
       - "scripts/test_calendar_mobile.mjs"
@@ -57,6 +63,7 @@ jobs:
           node-version: "22"
       - run: node scripts/test_calendar_state_migration.mjs
       - run: node scripts/test_calendar_schedule_source.mjs
+      - run: node scripts/test_calendar_request.mjs
       - run: node scripts/test_recording_link_priority.mjs
       - run: node scripts/test_recording_release.mjs
       - uses: actions/setup-python@v5
@@ -69,3 +76,4 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: node scripts/test_calendar_mobile.mjs
       - run: node scripts/test_calendar_live.mjs
+      - run: node scripts/test_calendar_failure.mjs

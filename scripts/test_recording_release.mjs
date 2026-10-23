@@ -13,6 +13,7 @@ function extract(name) {
 }
 const key = '2026-10-02|6:35～8:05|hon|hon_j3_B_eng|1';
 const ctx = {
+  publicationAvailable: true,
   publicationRules: [],
   recordingReleaseRules: [{eventKeys: [key], status: 'blocked', releaseAt: '2000-01-01T00:00'}],
   buildEventKeyFromLesson: it => it.key,
@@ -45,6 +46,8 @@ for(const lesson of [hon,minami])assert.equal(ctx.findRecordingUrlForLesson({key
 assert.equal(ctx.isRecordingBlocked({key:hon.replace('10-01','10-08')}),false);
 ctx.publicationRules.forEach(rule=>{rule.status='public';rule.url='https://example.test/released';});
 for(const lesson of [hon,minami])assert.equal(ctx.findRecordingUrlForLesson({key:lesson},{}),'https://example.test/released');
+ctx.publicationAvailable=false;
+for(const lesson of [hon,minami])assert.equal(ctx.findRecordingUrlForLesson({key:lesson},{}),'','unavailable publication state never releases a recording');
 // All inline JavaScript must parse, including the teacher settings handler.
 for (const page of ['calendar.html', 'lesson_prep.html']) {
   const source = fs.readFileSync(new URL('../' + page, import.meta.url), 'utf8');

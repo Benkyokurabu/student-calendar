@@ -31,6 +31,7 @@ try {
         if (month !== "2026-11") return route.fulfill({ status: 404, json: { error: "not ready" } });
         return route.fulfill({ json: { month, count: rows.length, schedule: rows, teacherSchedule: teacher } });
       });
+      await page.route("https://line-check-system.vercel.app/api/recordings/publication*", route => route.fulfill({ json: { rules: [] } }));
       // Prove an absent archive cannot hide a disconnected live calendar.
       await page.route("**/schedule_2026-11.json*", (route) => route.fulfill({ status: 404, body: "" }));
       await page.route("**/teacher_schedule_2026-11.json*", (route) => route.fulfill({ status: 404, body: "" }));

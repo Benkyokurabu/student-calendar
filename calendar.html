@@ -338,6 +338,7 @@
 <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
 <script src="calendar-mobile.js?v=20260911-1" defer></script>
 <script src="calendar-schedule-source.js?v=20261019-1"></script>
+<script src="calendar-request.js?v=20261023-1"></script>
 </head>
 <body>
 
@@ -514,13 +515,19 @@
   let recordingOverrides = {};
   let recordingReleaseRules = [];
   let publicationRules = [];
+  let publicationAvailable = false;
+  let journalAvailable = false;
+  let detailGeneration = 0;
   let recordingsLoadedYM = null;
   setInterval(async () => {
     if (document.hidden || !recordingsLoadedYM) return;
-    const before = JSON.stringify(publicationRules);
+    const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable]);
     const data = await fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]);
-    if (data?.rules) publicationRules = data.rules;
-    if (JSON.stringify(publicationRules) !== before) renderAll();
+    publicationAvailable = Array.isArray(data?.rules);
+    if (publicationAvailable) publicationRules = data.rules;
+    if (!journalAvailable) await loadJournalSafe(currentYM);
+    if (JSON.stringify([publicationRules, publicationAvailable, journalAvailable]) !== before) renderAll();
+    updateDetailNotice();
   }, 30000);
 
   gradeSelect.addEventListener("change", () => {
@@ -678,9 +685,7 @@
       const url = `${base}?ts=${Date.now()}`;
       tried.push(url);
       try {
-        const res = await fetch(url, { cache: "no-store" });
-        if (!res.ok) continue;
-        const data = await res.json();
+        const data = await CalendarRequest.json(url);
         if (!Array.isArray(data)) throw new Error("JSON形式エラー: 配列ではありません");
         return data;
       } catch (_) {}
@@ -696,9 +701,7 @@
       const separator = base.includes("?") ? "&" : "?";
       const url = `${base}${separator}ts=${Date.now()}`;
       try {
-        const res = await fetch(url, { cache: "no-store" });
-        if (!res.ok) continue;
-        return await res.json();
+        return await CalendarRequest.json(url);
       } catch (_) {}
     }
     return null;
@@ -751,6 +754,9 @@
     if (journalLoadedYM === ym) return;
     const monthly = await fetchJsonAny([`journal_${ym}.json`]);
     const latest = await fetchJsonAny(["journal_latest.json"]);
+    if (currentYM !== ym) return;
+    journalAvailable = Boolean(monthly?.entries || latest?.entries);
+    if (!journalAvailable) return;
     const merged = {};
     if (monthly && monthly.entries) Object.assign(merged, monthly.entries);
     if (latest && latest.entries) Object.assign(merged, latest.entries);
@@ -802,8 +808,10 @@
       fetchNewestJsonAny(["recording_release.json", rawJsonUrl("recording_release.json")]),
       fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
     ]);
+    if (currentYM !== ym) return;
     recordingReleaseRules = releaseState?.rules || [];
-    if (publicationState?.rules) publicationRules = publicationState.rules;
+    publicationAvailable = Array.isArray(publicationState?.rules);
+    if (publicationAvailable) publicationRules = publicationState.rules;
     zoomRecordingEntries = {
       ...normalizeRecordingEntries(latest),
       ...normalizeRecordingEntries(monthly),
@@ -890,6 +898,7 @@
   }
 
   function isRecordingBlocked(it) {
+    if (!publicationAvailable) return true;
     const key = buildEventKeyFromLesson(it);
     const rule = publicationRules.find(rule => rule.eventKeys.includes(key) || (rule.match && rule.match.date===key.split('|')[0] && rule.match.campus===key.split('|')[2] && rule.match.group===key.split('|')[3]));
     if (rule) return rule.status !== "public";
@@ -905,14 +914,14 @@
   function renderJournalRow(it) {
     const ek = buildEventKeyFromLesson(it);
     const entry = journalEntries[ek] || { content:"", page:"", homework:[], recordingUrl:"" };
-    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">－</span>`;
-    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">－</span>`;
+    const contentHtml = entry.content ? formatMultiline(entry.content) : `<span class="j-empty">${journalAvailable ? "－" : "未取得"}</span>`;
+    const pageHtml = entry.page ? formatMultiline(entry.page) : `<span class="j-empty">${journalAvailable ? "－" : "未取得"}</span>`;
 
     const hwArr = Array.isArray(entry.homework) ? entry.homework.filter(x => String(x||"").trim() !== "") : [];
-    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">－</span>`;
+    const hwHtml = hwArr.length ? hwArr.map(x => formatMultiline(x)).join("<br>") : `<span class="j-empty">${journalAvailable ? "－" : "未取得"}</span>`;
 
     const url = findRecordingUrlForLesson(it, entry);
-    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">${isRecordingBlocked(it) ? "公開待ち" : "－"}</span>`;
+    const recHtml = url ? `<a class="j-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">録画を見る</a>` : `<span class="j-empty">${!publicationAvailable ? "公開状況を確認できません" : isRecordingBlocked(it) ? "公開待ち" : "－"}</span>`;
 
     return `
       <tr class="journal-row">
@@ -929,6 +938,22 @@
   }
 
   // ====== 初期読み込み ======
+  function updateDetailNotice() {
+    const unavailable = [];
+    if (!journalAvailable) unavailable.push("指導内容・宿題");
+    if (!publicationAvailable) unavailable.push("録画の公開状況");
+    hintArea.textContent = unavailable.length ? `授業スケジュールは表示しています。${unavailable.join("と")}を取得できていません。接続先からの応答を確認できないため、約30秒ごとに再確認します。` : "";
+  }
+  async function loadMonthDetails(ym) {
+    const generation = ++detailGeneration;
+    publicationAvailable = false;
+    journalAvailable = journalLoadedYM === ym;
+    rebuildUI(); renderAll();
+    hintArea.textContent = "授業スケジュールを表示しました。指導内容・宿題・録画の公開状況を確認しています…";
+    await Promise.allSettled([loadJournalSafe(ym), loadRecordingsSafe(ym)]);
+    if (currentYM !== ym || generation !== detailGeneration) return;
+    rebuildUI(); renderAll(); updateDetailNotice();
+  }
   async function loadInitialMonth() {
     const todayYM = currentYM;  // 今月（初期値）
     ymPill.textContent = ymToLabel(currentYM);
@@ -940,6 +965,7 @@
     // まず今月のデータを読み込む
     try {
       const todayData = await fetchJsonForMonth(todayYM);
+      if (currentYM !== todayYM) return;
       const todayNorm = normalizeLessons(todayData);
       if (todayNorm.length > 0) {
         // 今月のデータがある → 今月を表示
@@ -949,10 +975,7 @@
         allLessons = todayNorm;
         migrateLegacySelectionsForLoadedMonth();
         hintArea.textContent = "";
-        await loadJournalSafe(currentYM);
-        await loadRecordingsSafe(currentYM);
-        rebuildUI();
-        renderAll();
+        await loadMonthDetails(currentYM);
         return;
       }
     } catch (_) {}
@@ -960,6 +983,7 @@
     // 今月のデータがない → latestにフォールバック
     try {
       const data = await fetchLatestJson();
+      if (currentYM !== todayYM) return;
       const normalized = normalizeLessons(data);
       cachedLatestRaw = data;
       cachedLatestYM = inferYMFromLessons(normalized);
@@ -967,10 +991,7 @@
       allLessons = normalized;
       migrateLegacySelectionsForLoadedMonth();
       hintArea.textContent = "";
-      await loadJournalSafe(currentYM);
-      await loadRecordingsSafe(currentYM);
-      rebuildUI();
-      renderAll();
+      await loadMonthDetails(currentYM);
     } catch (_) {
       await loadMonth(currentYM);
     }
@@ -985,14 +1006,13 @@
 
     try {
       const data = await fetchJsonForMonth(ym);
+      if (currentYM !== ym) return;
       allLessons = normalizeLessons(data);
       migrateLegacySelectionsForLoadedMonth();
       hintArea.textContent = "";
-      await loadJournalSafe(ym);
-      await loadRecordingsSafe(ym);
-      rebuildUI();
-      renderAll();
+      await loadMonthDetails(ym);
     } catch (e) {
+      if (currentYM !== ym) return;
       allLessons = [];
       rebuildUI();
       renderAll();
