@@ -25,11 +25,10 @@ on:
       - 'scripts/build_teacher_calendar.py'
       - 'scripts/test_build_teacher_calendar.py'
   schedule:
-    # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて3回冗長化。
-    # JST 04:17 / 07:17 / 22:37
+    # GitHub Actionsは正時に遅延・スキップしやすいため、正時を避けて朝の2回実行。
+    # JST 04:17 / 07:17
     - cron: '17 19 * * *'
     - cron: '17 22 * * *'
-    - cron: '37 13 * * *'
   workflow_dispatch:  # 手動実行も可能
 
 permissions:
