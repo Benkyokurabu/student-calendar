@@ -37,19 +37,20 @@ try{for(const width of [390,1280]){
  await page.locator('#monthGrid .cell.has-lessons').first().click();
  assert((await page.locator('#dayDetailArea').innerText()).includes('2026-10-23'));
  assert.equal(await page.locator('#dayDetailArea a.j-link').count(),0);
- await page.waitForFunction(()=>document.getElementById('schedule-source-status')?.dataset.source==='archive');
+ assert.equal(await page.locator('#schedule-source-status').count(),0,'student calendar omits the source connection notice');
  assert(publicationRequests>=1);await page.clock.runFor(8_001);
  await page.waitForFunction(()=>document.getElementById('hintArea').textContent.includes('取得できていません'));
  assert((await page.locator('#dayDetailArea').innerText()).includes('公開状況を確認できません'));
  assert.equal(await page.locator('#dayDetailArea a.j-link').count(),0);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   if(process.env.CALENDAR_SCREENSHOT_DIR){await fs.mkdir(process.env.CALENDAR_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.CALENDAR_SCREENSHOT_DIR,`calendar-unavailable-${width}.png`),fullPage:true});}
- unavailable=false;await page.clock.runFor(30_001);
+ unavailable=false;await page.clock.runFor(60_001);
  await page.locator('#dayDetailArea a.j-link').first().waitFor();
  assert.equal(await page.locator('#dayDetailArea a.j-link').first().getAttribute('href'),'https://example.test/recording');
  assert.equal(await page.locator('#subjectArea input').first().isChecked(),true);
  assert((await page.locator('#dayDetailArea').innerText()).includes('2026-10-23'));
  assert.equal(await page.locator('#hintArea').innerText(),'');
+ assert.equal(await page.locator('#schedule-source-status').count(),0,'automatic schedule refresh must also omit the notice');
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
  if(process.env.CALENDAR_SCREENSHOT_DIR){await fs.mkdir(process.env.CALENDAR_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.CALENDAR_SCREENSHOT_DIR,`calendar-recovered-${width}.png`),fullPage:true});}
  await page.close();console.log(`${width}px: stalled common APIs, archive display, fail-closed recordings, recovery and selection retention passed`);

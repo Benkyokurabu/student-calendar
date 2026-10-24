@@ -74,16 +74,17 @@
       return kind === "teacher" ? eventual.data.teacherSchedule : eventual.data.schedule;
     }
   }
-  function watch(getMonth, kind, apply) {
+  function watch(getMonth, kind, apply, options = {}) {
     let running = false;
     const refresh = async () => {
       if (running || document.hidden) return;
       running = true;
       const month = getMonth();
       try {
-        const value = await load(month, kind);
+        const value = await load(month, kind, options);
         if (getMonth() === month) apply(value);
       } catch {
+        if (options.silent) return;
         notice(month, true, false);
         const element = document.getElementById("schedule-source-status");
         if (element) { element.hidden = false; element.textContent = "授業データの更新を確認できません。現在の表示を保持し、約1分ごとに再確認します。"; }

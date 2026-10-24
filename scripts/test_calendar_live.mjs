@@ -45,7 +45,7 @@ try {
     } else {
       await page.getByRole("button", { name: "翌月", exact: false }).click();
       await page.waitForFunction(() => document.getElementById("ym-pill").textContent.includes("11月"));
-      await page.waitForFunction(() => document.querySelector("#schedule-source-status")?.dataset.month === "2026-11");
+      if (name !== "calendar.html") await page.waitForFunction(() => document.querySelector("#schedule-source-status")?.dataset.month === "2026-11");
       await page.waitForLoadState("networkidle");
       if (name === "calendar.html") {
         await page.selectOption("#gradeSelect", "j3");
@@ -64,7 +64,8 @@ try {
       await page.locator("#monthGrid .cell.has-lessons").first().waitFor();
       await page.locator("#monthGrid .cell.has-lessons").first().click();
       assert((await page.locator("#dayDetailArea").innerText()).length > 20);
-      assert.equal(await page.locator("#schedule-source-status").getAttribute("data-source"), "live");
+      if (name === "calendar.html") assert.equal(await page.locator("#schedule-source-status").count(), 0);
+      else assert.equal(await page.locator("#schedule-source-status").getAttribute("data-source"), "live");
     }
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
     assert.deepEqual(errors, []);

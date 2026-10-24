@@ -737,7 +737,7 @@
   }
 
   async function fetchJsonForMonth(ym) {
-    return await CalendarScheduleSource.load(ym);
+    return await CalendarScheduleSource.load(ym, "student", { silent: true });
   }
 
   function inferYMFromLessons(list) {
@@ -1493,7 +1493,7 @@
     allLessons = next;
     cachedLatestRaw = data; cachedLatestYM = currentYM;
     rebuildUI(); renderAll();
-  });
+  }, { silent: true });
 
 })();
 </script>
