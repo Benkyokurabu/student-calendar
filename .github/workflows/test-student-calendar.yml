@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - "calendar.html"
+      - "recording_emergency_*.json"
+      - "scripts/test_recording_emergency.mjs"
+      - "scripts/test_calendar_emergency.mjs"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"
@@ -28,6 +31,9 @@ on:
   pull_request:
     paths:
       - "calendar.html"
+      - "recording_emergency_*.json"
+      - "scripts/test_recording_emergency.mjs"
+      - "scripts/test_calendar_emergency.mjs"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"
@@ -66,6 +72,7 @@ jobs:
       - run: node scripts/test_calendar_request.mjs
       - run: node scripts/test_recording_link_priority.mjs
       - run: node scripts/test_recording_release.mjs
+      - run: node scripts/test_recording_emergency.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -77,3 +84,4 @@ jobs:
       - run: node scripts/test_calendar_mobile.mjs
       - run: node scripts/test_calendar_live.mjs
       - run: node scripts/test_calendar_failure.mjs
+      - run: node scripts/test_calendar_emergency.mjs

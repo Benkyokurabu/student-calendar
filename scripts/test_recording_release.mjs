@@ -14,6 +14,7 @@ function extract(name) {
 const key = '2026-10-02|6:35～8:05|hon|hon_j3_B_eng|1';
 const ctx = {
   publicationAvailable: true,
+  emergencyRecordings: null,
   publicationRules: [],
   recordingReleaseRules: [{eventKeys: [key], status: 'blocked', releaseAt: '2000-01-01T00:00'}],
   buildEventKeyFromLesson: it => it.key,
@@ -23,7 +24,7 @@ const ctx = {
   zoomRecordingEntries: {[key]: {url: 'https://example.test/recording'}},
 };
 vm.createContext(ctx);
-vm.runInContext(extract('isRecordingBlocked') + extract('findRecordingUrlForLesson'), ctx);
+vm.runInContext(extract('isRecordingBlocked') + extract('findRecordingUrlForLesson') + extract('emergencyRecordingUrl'), ctx);
 assert.equal(ctx.findRecordingUrlForLesson({key}, {recordingUrl: 'https://example.test/journal'}), '');
 assert.equal(ctx.isRecordingBlocked({key: key + '2'}), false);
 ctx.recordingReleaseRules[0].status = 'released';

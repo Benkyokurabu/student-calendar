@@ -516,6 +516,7 @@
   let recordingReleaseRules = [];
   let publicationRules = [];
   let publicationAvailable = false;
+  let emergencyRecordings = null;
   let journalAvailable = false;
   let detailGeneration = 0;
   let recordingsLoadedYM = null;
@@ -800,18 +801,20 @@
     const legacyOverrideLatestFile = "recording_overrides_latest.json";
     const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
     const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
-    const [monthly, latest, overrideLatest, overrideMonthly, releaseState, publicationState] = await Promise.all([
+    const [monthly, latest, overrideLatest, overrideMonthly, releaseState, publicationState, emergencyState] = await Promise.all([
       fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
       fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),
       fetchNewestJsonAny([overrideLatestFile, rawJsonUrl(overrideLatestFile), legacyOverrideLatestFile, rawJsonUrl(legacyOverrideLatestFile)]),
       fetchNewestJsonAny([overrideMonthlyFile, rawJsonUrl(overrideMonthlyFile), legacyOverrideMonthlyFile, rawJsonUrl(legacyOverrideMonthlyFile)]),
       fetchNewestJsonAny(["recording_release.json", rawJsonUrl("recording_release.json")]),
       fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
+      fetchNewestJsonAny([`recording_emergency_${ym}.json`, rawJsonUrl(`recording_emergency_${ym}.json`)]),
     ]);
     if (currentYM !== ym) return;
     recordingReleaseRules = releaseState?.rules || [];
     publicationAvailable = Array.isArray(publicationState?.rules);
     if (publicationAvailable) publicationRules = publicationState.rules;
+    emergencyRecordings = emergencyState?.version === 1 && emergencyState.month === ym ? emergencyState : null;
     zoomRecordingEntries = {
       ...normalizeRecordingEntries(latest),
       ...normalizeRecordingEntries(monthly),
@@ -885,6 +888,7 @@
   }
 
   function findRecordingUrlForLesson(it, entry) {
+    if (!publicationAvailable) return emergencyRecordingUrl(it);
     if (isRecordingBlocked(it)) return "";
     const published = publicationRules.find(rule => rule.eventKeys.includes(buildEventKeyFromLesson(it)) || (rule.match && rule.match.date===buildEventKeyFromLesson(it).split('|')[0] && rule.match.campus===buildEventKeyFromLesson(it).split('|')[2] && rule.match.group===buildEventKeyFromLesson(it).split('|')[3]));
     if (published?.status === "public") return recordingUrlFromRecord(zoomRecordingEntries[buildEventKeyFromLesson(it)]) || published.url || "";
@@ -898,11 +902,29 @@
   }
 
   function isRecordingBlocked(it) {
-    if (!publicationAvailable) return true;
+    if (!publicationAvailable) return !emergencyRecordingUrl(it);
     const key = buildEventKeyFromLesson(it);
     const rule = publicationRules.find(rule => rule.eventKeys.includes(key) || (rule.match && rule.match.date===key.split('|')[0] && rule.match.campus===key.split('|')[2] && rule.match.group===key.split('|')[3]));
     if (rule) return rule.status !== "public";
     return recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== "released");
+  }
+
+  // Explicit, time-limited operator approval of URLs that already passed the
+  // normal publication filter. Never infer permission from a raw journal URL.
+  function emergencyRecordingUrl(it) {
+    const approved = emergencyRecordings;
+    if (!approved || approved.version !== 1 || approved.month !== String(it.date || it.key || '').slice(0,7)
+        || !Number.isFinite(Date.parse(approved.expiresAt)) || Date.now() >= Date.parse(approved.expiresAt)) return "";
+    const key = buildEventKeyFromLesson(it);
+    if (recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== 'released')
+        || zoomRecordingEntries[key]?.hidden || recordingOverrides[key]?.hidden) return "";
+    const value = approved.entries?.[key];
+    if (typeof value !== 'string') return "";
+    try {
+      const url = new URL(value);
+      return url.protocol === 'https:' && /(^|\.)zoom\.us$/.test(url.hostname)
+        && /^\/rec\/(play|share)\//.test(url.pathname) && !url.username && !url.password ? value : "";
+    } catch { return ""; }
   }
 
   function formatMultiline(text) {
@@ -942,7 +964,9 @@
     const unavailable = [];
     if (!journalAvailable) unavailable.push("指導内容・宿題");
     if (!publicationAvailable) unavailable.push("録画の公開状況");
-    hintArea.textContent = unavailable.length ? `授業スケジュールは表示しています。${unavailable.join("と")}を取得できていません。接続先からの応答を確認できないため、約30秒ごとに再確認します。` : "";
+    const emergency = !publicationAvailable && emergencyRecordings && Date.now() < Date.parse(emergencyRecordings.expiresAt)
+      ? " 公開済みと確認できた録画は、保存済みのURLから視聴できます。" : "";
+    hintArea.textContent = unavailable.length ? `授業スケジュールは表示しています。${unavailable.join("と")}を取得できていません。${emergency} 接続先は約30秒ごとに再確認します。` : "";
   }
   async function loadMonthDetails(ym) {
     const generation = ++detailGeneration;
@@ -1429,6 +1453,7 @@
         </div>
       `;
     }
+    if (emergencyRecordings && recordingsLoadedYM === currentYM) updateDetailNotice();
   }
 
   function escapeHtml(s) {
