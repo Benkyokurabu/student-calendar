@@ -7,7 +7,7 @@ const month = "2026-11";
 const row = { date: month + "-02", time: "5:00～6:00", campus: "hon", groupKey: "hon_j1_S_math" };
 function setup(responder, overrides = {}) {
   const calls = [];
-  const context = { Intl, Date, AbortSignal, Map, setInterval, fetch: async (url, options) => {
+  const context = { Intl, Date, AbortSignal, Map, setInterval, setTimeout, clearTimeout, fetch: async (url, options) => {
     calls.push({ url, options });
     return responder(url);
   }, ...overrides };
@@ -56,4 +56,27 @@ const payload = { month, count: 1, schedule: [row], teacherSchedule: { year: 202
   assert.equal(shown[0].time, String(clock), "an open calendar picks up a new accepted month without another publish");
   assert.equal(element.dataset.source, "live");
 }
-console.log("Shared calendar source: accepted data, cache, offline fallback, count/month validation and automatic refresh passed.");
+{
+  let finishLive;
+  const stalled = new Promise(resolve => { finishLive = resolve; });
+  const { source, calls } = setup(url => url.startsWith("https:") ? stalled : ok([row]), {
+    setTimeout(callback, ms) { assert.equal(ms, 1200); queueMicrotask(callback); return 1; }, clearTimeout() {},
+  });
+  assert.equal((await source.load(month))[0].time, row.time, "a stalled API cannot hold the archive for ten seconds");
+  assert.equal(calls.length, 2);
+  finishLive(ok({ ...payload, schedule: [{ ...row, time: "updated" }] }));
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal((await source.load(month))[0].time, "updated", "late accepted data replaces the archive on the next read");
+}
+{
+  let finishLive;
+  const stalled = new Promise(resolve => { finishLive = resolve; });
+  const { source } = setup(url => url.startsWith("https:") ? stalled : Promise.reject(new Error("no archive")), {
+    setTimeout(callback) { queueMicrotask(callback); return 1; }, clearTimeout() {},
+  });
+  const loaded = source.load(month, "teacher");
+  await new Promise(resolve => setImmediate(resolve));
+  finishLive(ok(payload));
+  assert.equal((await loaded).items.length, 1, "a missing archive must still allow a slower live response");
+}
+console.log("Shared calendar source: accepted data, cache, bounded fallback, count/month validation and automatic refresh passed.");

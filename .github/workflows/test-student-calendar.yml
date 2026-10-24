@@ -7,6 +7,7 @@ on:
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
+      - "scripts/test_calendar_speed.mjs"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"
@@ -34,6 +35,7 @@ on:
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
+      - "scripts/test_calendar_speed.mjs"
       - "teacher_calendar.html"
       - "calendar-mobile.css"
       - "calendar-mobile.js"
@@ -85,3 +87,4 @@ jobs:
       - run: node scripts/test_calendar_live.mjs
       - run: node scripts/test_calendar_failure.mjs
       - run: node scripts/test_calendar_emergency.mjs
+      - run: node scripts/test_calendar_speed.mjs

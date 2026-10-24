@@ -801,13 +801,14 @@
     const legacyOverrideLatestFile = "recording_overrides_latest.json";
     const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
     const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
+    const publicationRequest = fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]);
     const [monthly, latest, overrideLatest, overrideMonthly, releaseState, publicationState, emergencyState] = await Promise.all([
       fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
       fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),
       fetchNewestJsonAny([overrideLatestFile, rawJsonUrl(overrideLatestFile), legacyOverrideLatestFile, rawJsonUrl(legacyOverrideLatestFile)]),
       fetchNewestJsonAny([overrideMonthlyFile, rawJsonUrl(overrideMonthlyFile), legacyOverrideMonthlyFile, rawJsonUrl(legacyOverrideMonthlyFile)]),
       fetchNewestJsonAny(["recording_release.json", rawJsonUrl("recording_release.json")]),
-      fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
+      publicationWithGrace(publicationRequest),
       fetchNewestJsonAny([`recording_emergency_${ym}.json`, rawJsonUrl(`recording_emergency_${ym}.json`)]),
     ]);
     if (currentYM !== ym) return;
@@ -824,6 +825,23 @@
       ...normalizeRecordingEntries(overrideMonthly),
     };
     recordingsLoadedYM = ym;
+    // An eventual live restriction must still replace an approved outage snapshot.
+    void publicationRequest.then(latest => {
+      if (currentYM !== ym || !Array.isArray(latest?.rules)) return;
+      publicationAvailable = true;
+      publicationRules = latest.rules;
+      rebuildUI(); renderAll(); updateDetailNotice();
+    });
+  }
+
+  async function publicationWithGrace(live) {
+    let timer;
+    const state = await Promise.race([
+      live,
+      new Promise(resolve => { timer = setTimeout(() => resolve(null), 1500); }),
+    ]);
+    clearTimeout(timer);
+    return state;
   }
 
   function buildEventKeyFromLesson(it) {

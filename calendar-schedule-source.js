@@ -41,17 +41,37 @@
   }
   async function load(month, kind = "student", options = {}) {
     if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(month) || !["student", "teacher"].includes(kind)) throw new Error("対象月が不正です");
-    try {
-      const data = await live(month);
+    // Keep checking live data, but do not hold the calendar behind an unhealthy API.
+    const liveResult = live(month).then(data => ({ data }), () => ({ data: null }));
+    let timer;
+    const quick = await Promise.race([
+      liveResult,
+      new Promise(resolve => { timer = setTimeout(() => resolve(null), 1200); }),
+    ]);
+    clearTimeout(timer);
+    if (quick?.data) {
       notice(month, false, options.silent);
-      return kind === "teacher" ? data.teacherSchedule : data.schedule;
-    } catch {
+      return kind === "teacher" ? quick.data.teacherSchedule : quick.data.schedule;
+    }
+    try {
       const prefix = kind === "teacher" ? "teacher_schedule_" : "schedule_";
       const archived = await request(`${prefix}${month}.json?ts=${Date.now()}`);
       const rows = kind === "teacher" ? archived?.items : archived;
       if (!validRows(rows, month)) throw new Error(`${month}の授業データを確認できません`);
+      // A live response may have arrived while reading the archive. It stays authoritative.
+      const snapshot = cache.get(month);
+      const accepted = snapshot?.until > Date.now() ? snapshot.value : null;
+      if (accepted) {
+        notice(month, false, options.silent);
+        return kind === "teacher" ? accepted.teacherSchedule : accepted.schedule;
+      }
       notice(month, true, options.silent);
       return archived;
+    } catch (error) {
+      const eventual = await liveResult;
+      if (!eventual.data) throw error;
+      notice(month, false, options.silent);
+      return kind === "teacher" ? eventual.data.teacherSchedule : eventual.data.schedule;
     }
   }
   function watch(getMonth, kind, apply) {
