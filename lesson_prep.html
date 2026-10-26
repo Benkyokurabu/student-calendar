@@ -419,7 +419,9 @@ async function loadMonth(mm) {
     loadJSON("journal_map_" + prevYm + ".json"),
   ]);
 
-  scheduleData        = (sched || []).concat(nextSched || []);
+  // Journals/recordings can finish after a slower live schedule. Keep the
+  // accepted response if it arrived while those other resources were loading.
+  scheduleData        = (CalendarScheduleSource.snapshot(mm) || sched || []).concat(CalendarScheduleSource.snapshot(nextYm) || nextSched || []);
   journalData         = jrnl  || {};
   journalMap          = jmap  || {};
   zoomRecordingData   = zoomUrls || {};

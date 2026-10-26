@@ -4,6 +4,11 @@
   const endpoint = "https://line-check-system.vercel.app/api/schedule/calendar";
   const cache = new Map();
   const pending = new Map();
+  const listeners = new Set();
+  const snapshot = (month, kind = "student") => {
+    const data = cache.get(month)?.value;
+    return data ? (kind === "teacher" ? data.teacherSchedule : data.schedule) : null;
+  };
   const currentMonth = () => new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit" }).format(new Date());
   function notice(month, fallback, silent) {
     if (silent || !root.document) return;
@@ -35,6 +40,9 @@
       if (data.month !== month || !validRows(data.schedule, month) || data.count !== data.schedule.length ||
           data.teacherSchedule?.items?.length !== data.count || !validRows(data.teacherSchedule.items, month)) throw new Error("授業データの月・件数が一致しません");
       cache.set(month, { value: data, until: Date.now() + 15000 });
+      // A healthy response can arrive after the archive was rendered. Apply it
+      // now rather than starting another cold request at the next minute tick.
+      for (const listener of listeners) listener(month, data);
       return data;
     })().finally(() => pending.delete(month)));
     return pending.get(month);
@@ -76,6 +84,13 @@
   }
   function watch(getMonth, kind, apply, options = {}) {
     let running = false;
+    listeners.add((month, data) => {
+      if (document.hidden || getMonth() !== month) return;
+      notice(month, false, options.silent);
+      Promise.resolve().then(() => {
+        if (getMonth() === month) return apply(kind === "teacher" ? data.teacherSchedule : data.schedule);
+      }).catch(error => console.error("授業データの表示更新に失敗しました", error));
+    });
     const refresh = async () => {
       if (running || document.hidden) return;
       running = true;
@@ -94,5 +109,5 @@
     document.addEventListener("visibilitychange", () => { if (!document.hidden) void refresh(); });
     return timer;
   }
-  root.CalendarScheduleSource = { load, watch, currentMonth };
+  root.CalendarScheduleSource = { load, watch, snapshot, currentMonth };
 })(globalThis);

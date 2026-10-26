@@ -80,3 +80,46 @@ const payload = { month, count: 1, schedule: [row], teacherSchedule: { year: 202
   assert.equal((await loaded).items.length, 1, "a missing archive must still allow a slower live response");
 }
 console.log("Shared calendar source: accepted data, cache, bounded fallback, count/month validation and automatic refresh passed.");
+{
+  let finishLive;
+  const stalled = new Promise(resolve => { finishLive = resolve; });
+  let current = month;
+  const shown = [];
+  const element = { dataset: {}, style: {}, setAttribute() {} };
+  const document = { hidden: false, getElementById: () => element, addEventListener() {} };
+  const { source } = setup(url => url.startsWith("https:") ? stalled : ok([row]), {
+    document, setInterval() { return 1; }, setTimeout(callback) { queueMicrotask(callback); return 1; }, clearTimeout() {},
+  });
+  source.watch(() => current, "student", rows => shown.push(rows));
+  const archived = await source.load(month);
+  assert.equal(archived[0].time, row.time);
+  assert.equal(element.dataset.source, "archive");
+  const updated = { ...payload, schedule: [{ ...row, time: "latest" }] };
+  finishLive(ok(updated));
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(shown.length, 1, "a delayed live response updates the open page without waiting a minute");
+  assert.equal(shown[0][0].time, "latest");
+  assert.equal(element.hidden, true);
+  assert.equal(element.dataset.source, "live");
+  assert.equal(source.snapshot(month)[0].time, "latest", "other slower resources cannot force an older archive back into the page");
+  assert.equal(source.snapshot(month, "teacher").items.length, 1);
+  assert.equal(source.snapshot("2026-09"), null);
+  current = "2026-12";
+}
+{
+  let finishLive;
+  const stalled = new Promise(resolve => { finishLive = resolve; });
+  let current = month;
+  const shown = [];
+  const document = { hidden: false, getElementById: () => null, addEventListener() {} };
+  const { source } = setup(url => url.startsWith("https:") ? stalled : ok([row]), {
+    document, setInterval() { return 1; }, setTimeout(callback) { queueMicrotask(callback); return 1; }, clearTimeout() {},
+  });
+  source.watch(() => current, "student", rows => shown.push(rows), { silent: true });
+  await source.load(month, "student", { silent: true });
+  current = "2026-12";
+  finishLive(ok(payload));
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(shown.length, 0, "a late response for a previous month never replaces the newly selected month");
+}
+console.log("Delayed live responses: immediate update, notice recovery, accepted snapshot and month-change isolation passed.");

@@ -16,6 +16,7 @@ on:
       - "scripts/test_calendar_request.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
+      - "scripts/test_calendar_late_live.mjs"
       - "scripts/test_calendar_live.mjs"
       - "scripts/test_calendar_mobile.mjs"
       - "schedule_*.json"
@@ -44,6 +45,7 @@ on:
       - "scripts/test_calendar_request.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
+      - "scripts/test_calendar_late_live.mjs"
       - "scripts/test_calendar_live.mjs"
       - "scripts/test_calendar_mobile.mjs"
       - "schedule_*.json"
@@ -85,6 +87,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: node scripts/test_calendar_mobile.mjs
       - run: node scripts/test_calendar_live.mjs
+      - run: node scripts/test_calendar_late_live.mjs
       - run: node scripts/test_calendar_failure.mjs
       - run: node scripts/test_calendar_emergency.mjs
       - run: node scripts/test_calendar_speed.mjs
