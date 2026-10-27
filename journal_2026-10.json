@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-25T23:42:26.397400+00:00",
+  "generatedAt": "2026-10-27T12:26:11.399061+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -4914,7 +4914,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "今回は単元テスト③を実施。自己採点での最高点は池田の９０点。次いで大木の８０点だった。最下位は大越の４９点。点数は上から下までかなりばらつきがあった。特に下位の生徒は授業中話を聞けていない可能性が大いにある。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/DlBKN-NTw5uIoKMEUs4EGmuGcxYJNnF5o4rVPo99-RUEoU7puZ7vy52_5wQhQ4v6rD9sRKTHltKgh6xs.SOZHDeFzuFqEuNJA",
       "teacher": "岩本",
       "absence": "戸部、グエン",
       "curriculumProgress": "±0",
@@ -4939,9 +4939,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-13|6:35～8:05|hon|hon_j1_A_jp|3"
+      }
     },
     "2026-10-13|6:35～8:05|hon|hon_j1_S_jp|2": {
       "content": "単元テスト③",
@@ -5041,9 +5039,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80c6-a9af-f7b2a0db6051"
+      }
     },
     "2026-10-13|6:35～8:05|minami|minami_j2_A_math|1": {
       "content": "⑬～⑮",
@@ -6568,9 +6564,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-09"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80e1-b8a5-d8d0f9a3d6fb"
+      }
     },
     "2026-10-16|4:55～6:15|minami|minami_e6_A_eng|2": {
       "content": "単元テスト③",
@@ -8339,9 +8333,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-14"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8045-866b-ec7891f22c19"
+      }
     },
     "2026-10-21|4:55～6:15|hon|hon_e6_A_jp|1": {
       "content": "単元テストＡ③",
