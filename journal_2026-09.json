@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "generatedAt": "2026-10-01T15:35:22+09:00",
+  "generatedAt": "2026-10-28T12:15:58",
   "entries": {
     "2026-09-07|4:55～6:15|hon|hon_e5_A_eng|2": {
       "content": "Unit7",
@@ -7302,7 +7302,6 @@
     "2026-09-23|4:45～6:15|minami|minami_j1_B_math|3": {
       "content": "方程式、基礎計算練習",
       "page": "定期テスト対策p14",
-      "homework": [],
       "report": "柴正樹君はまたしてもテキストを持ってきていなかったので、お父さんに持ってきてもらった。やはり宿題はやっていなかったので少し厳しめに叱った。",
       "recordingUrl": "https://us06web.zoom.us/rec/play/FAAtVpD4FSZkOYTIkq4FW34nfHVLopjgV4Atr4TV-nKpxBi9ztMcm_DqJmZOoq48kEpCqzIBcV8as7tJ.qzElV0QH5twscz3n",
       "teacher": "森松",
@@ -7312,6 +7311,7 @@
       "sessionNumber": "34",
       "monthNum": "9",
       "weekNum": "3",
+      "homework": [],
       "prevEntry": {
         "content": "要点１５速さのグラフまで",
         "page": "p57",
@@ -7483,9 +7483,6 @@
     "2026-09-23|6:35～8:05|minami|minami_j1_B_math|3": {
       "content": "まとめ・中間対策",
       "page": "定期テスト対策p15",
-      "homework": [
-        "p39～41"
-      ],
       "report": "齋藤陽茉さんがやはりまだやったことのないところが多く苦労していた。基本計算は時間をかけてやったが、まだ不安定なところが多い。",
       "recordingUrl": "https://us06web.zoom.us/rec/play/ePEPzGDuN-IwZMSkjy3KrOsNMKzvGbwvwt82fWwqNAdf8Yo96_q6lguAIKJwDXL8kjAwpYG6fcEHzD7-.tskFWXe5kl9sswhY",
       "teacher": "森松",
@@ -7495,6 +7492,9 @@
       "sessionNumber": "特",
       "monthNum": "9",
       "weekNum": "特",
+      "homework": [
+        "p39～41"
+      ],
       "prevEntry": {
         "content": "方程式、基礎計算練習",
         "page": "定期テスト対策p14",
@@ -8036,18 +8036,20 @@
       }
     },
     "2026-09-24|6:35～8:05|hon|hon_j3_X_eng|6": {
-      "content": "",
+      "content": "桐朋高校",
       "page": "",
-      "report": "",
+      "report": "桐朋高校を終了。富士山構文は完璧にできたのは大久保のみ。他は２～３つほど。内容に関しては、物語文ということもありまずまずの出来。次回より対策授業に入る。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "沢井",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "22",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "開智2026-1"
+      ],
       "prevEntry": {
         "content": "山形県",
         "page": "山形県終了",
@@ -8136,18 +8138,20 @@
       }
     },
     "2026-09-24|6:35～8:05|minami|minami_j3_X_eng|4": {
-      "content": "",
+      "content": "桐朋高校",
       "page": "",
-      "report": "",
+      "report": "桐朋高校を終了。富士山構文は完璧にできたのは大久保のみ。他は２～３つほど。内容に関しては、物語文ということもありまずまずの出来。次回より対策授業に入る。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "沢井",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "22",
       "monthNum": "9",
       "weekNum": "3",
-      "homework": [],
+      "homework": [
+        "開智2026-1"
+      ],
       "prevEntry": {
         "content": "山形県",
         "page": "山形県終了",
@@ -9077,7 +9081,7 @@
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "大嶋・井上・宍倉・野澤",
-      "curriculumProgress": "±",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
@@ -9476,18 +9480,20 @@
       }
     },
     "2026-09-28|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "物語、文節・単語分け",
+      "page": "p46-49、p20-21",
+      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "地球がわかる50話／手紙文",
         "page": "p52-54、p190-191",
@@ -9521,22 +9527,24 @@
       "homework": []
     },
     "2026-09-28|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "物語、文節・単語分け",
+      "page": "p46-49、p20-21",
+      "report": "物語は文章こそ長いものの、問題は易しい。問題なく解けていた。文節・単語分けは、細かいことは中学生になってからやるからね、と励ましつつ進めた。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "9",
       "weekNum": "1",
-      "homework": []
+      "homework": [
+        "なし"
+      ]
     },
     "2026-09-28|6:35～8:05|hon|hon_j1_S_eng|1": {
       "content": "HereWeGoUnit5",
-      "page": "下線部④の前まで",
+      "page": "p74下線部④の前まで",
       "report": "HereWeGoを進めた。疑問詞は先頭、後ろは疑問文、下げ調子で読むなどを復習しつつ。また読解の中で代名詞が何を指すのかなども。へんなところで終了となってしまった。次回はUnit5のあとDL2へ。",
       "recordingUrl": "",
       "teacher": "真下",
@@ -9569,9 +9577,9 @@
       }
     },
     "2026-09-28|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "仁和寺にある法師",
+      "page": "P131-132",
+      "report": "確認テスト後、平家物語の冒頭・徒然草の冒頭の暗唱から行う。暗唱後、仁和寺にある法師へ。笑い話になっている落ちを読み取れてはいるが、細かいところがまだまだ。",
       "recordingUrl": "",
       "teacher": "高山",
       "absence": "",
@@ -9580,7 +9588,9 @@
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "漢字帳P138-141"
+      ],
       "prevEntry": {
         "content": "平家物語",
         "page": "P121-125",
@@ -9635,9 +9645,9 @@
       }
     },
     "2026-09-28|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "仁和寺",
+      "page": "P131-132",
+      "report": "漢字帳の確認後、平家の冒頭・徒然草の冒頭の暗唱、仁和寺にある法師へと進んだ。現代仮名遣いに直すことはおおむねできるようになったが、石原はＡクラスレベル。見守る。",
       "recordingUrl": "",
       "teacher": "高山",
       "absence": "",
@@ -9646,7 +9656,9 @@
       "sessionNumber": "28",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "漢字帳P138-141"
+      ],
       "prevEntry": {
         "content": "平家物語",
         "page": "P121-125",
@@ -9770,18 +9782,20 @@
       }
     },
     "2026-09-28|8:25～9:55|hon|hon_j3_B_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit4",
+      "page": "＃２３まで",
+      "report": "宿題忘れは華歩と川島。単語・本文の音読、重要文の暗唱を行った。中田が前向きで良かったと思う。記憶がなくなりつつあります。申し訳ありません。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "平居・中村・堀切",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "40",
       "monthNum": "9",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "#19-21/24-26"
+      ],
       "prevEntry": {
         "content": "HereWeGoUnit4",
         "page": "#15まで",
@@ -10592,7 +10606,7 @@
       "recordingUrl": "",
       "teacher": "金子",
       "absence": "グエン、戸部",
-      "curriculumProgress": "－",
+      "curriculumProgress": "－1",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "9",
