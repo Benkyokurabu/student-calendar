@@ -247,7 +247,7 @@
   <label>先生
     <select id="teacherSelect"><option value="">読み込み中...</option></select>
   </label>
-  <button onclick="render()">表示</button>
+  <button onclick="showLatestLessons(this)">表示</button>
   <button type="button" class="btn-refresh" onclick="forceRefresh(this)">最新データに更新</button>
   <button class="btn-print" onclick="window.print()">印刷</button>
 </div>
@@ -427,6 +427,43 @@ async function loadMonth(mm) {
   zoomRecordingData   = zoomUrls || {};
   prevMonthJournal    = prevJ;
   prevMonthJournalMap = prevM;
+}
+
+// An open preparation sheet must receive newly published journal entries too.
+// Keep the current records on failure, and reject responses for a month left behind.
+const journalRefreshes = new Map();
+async function refreshJournalsIfChanged() {
+  const month = document.getElementById("datePicker").value.slice(0, 7);
+  if (!/^\d{4}-\d{2}$/.test(month)) return false;
+  if (!journalRefreshes.has(month)) {
+    const [year, number] = prevMonth(month);
+    const previous = year + "-" + String(number).padStart(2, "0");
+    journalRefreshes.set(month, Promise.all([
+      loadJSON("journal_" + month + ".json"), loadJSON("journal_map_" + month + ".json"),
+      loadJSON("journal_" + previous + ".json"), loadJSON("journal_map_" + previous + ".json"),
+    ]).finally(() => journalRefreshes.delete(month)));
+  }
+  const [journal, map, previousJournal, previousMap] = await journalRefreshes.get(month);
+  if (document.getElementById("datePicker").value.slice(0, 7) !== month ||
+      journal?.month !== month || !journal.entries || !map?.slots) return false;
+  if ((Date.parse(journal.generatedAt) || 0) < (Date.parse(journalData.generatedAt) || 0)) return false;
+  if (JSON.stringify([journalData, journalMap, prevMonthJournal, prevMonthJournalMap]) ===
+      JSON.stringify([journal, map, previousJournal || prevMonthJournal, previousMap || prevMonthJournalMap])) return false;
+  const teacher = document.getElementById("teacherSelect").value;
+  journalData = journal; journalMap = map;
+  prevMonthJournal = previousJournal || prevMonthJournal;
+  prevMonthJournalMap = previousMap || prevMonthJournalMap;
+  buildTeacherList();
+  document.getElementById("teacherSelect").value = teacher;
+  render();
+  return true;
+}
+
+async function showLatestLessons(button) {
+  render();
+  button.disabled = true;
+  try { await refreshJournalsIfChanged(); }
+  finally { button.disabled = false; }
 }
 
 function prevMonth(ym) {
@@ -900,6 +937,8 @@ document.addEventListener("click", async function(e) {
 /* ====== 起動 ====== */
 init();
 setInterval(refreshZoomRecordingsIfChanged, 30000);
+setInterval(() => { if (!document.hidden) void refreshJournalsIfChanged(); }, 60000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) void refreshJournalsIfChanged(); });
 CalendarScheduleSource.watch(() => document.getElementById("datePicker").value.slice(0, 7), "student", async (rows) => {
   const month = document.getElementById("datePicker").value.slice(0, 7);
   const previous = scheduleData.filter((event) => event.date.startsWith(month + "-"));
