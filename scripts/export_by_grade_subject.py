@@ -22,8 +22,8 @@
 - 「特」：授業名に「特」が含まれる回
   - 同一スロットに特がある場合：特のみ表示、他クラスはラベル含め完全空欄
   - 特ラベルは「特」
-  - 特スロットは回数セル（2行目：年回数、3行目：月内回数）に「特」を表示
-  - 月セル（$E$3参照）は触らない
+  - 特スロットは2行目の年回数に「特」を表示
+- 「何月何週」の数値・数式は空欄。繰り越しの集計月は非表示領域に保持する。
 - X：通常「X」、X特は「特」
 - 補講：英語補講／数学補講ファイルも出力（年ファイル＋月タブ）
 - 重複授業は除去
@@ -51,6 +51,8 @@ from copy import copy
 
 from journal_input_controls import ensure_controls, is_unused_gray
 from journal_slots import ensure_lesson_capacity, slot_columns, counter_address
+from journal_month_week import (clear_month_week_headers, slot_accounting_month,
+    set_slot_accounting_month, set_slot_week_value, STORED_WEEKS_CELL)
 import openpyxl
 from openpyxl.utils import column_index_from_string, get_column_letter
 from openpyxl.cell.cell import MergedCell
@@ -557,7 +559,7 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
             break
         col_left = 2 + 10 * si
         if target_month:
-            safe_write(ws_out, 3, col_left + 3, target_month)
+            set_slot_accounting_month(ws_out, col_left, target_month)
         is_special = slot["_special"]
 
         if is_special:
@@ -600,26 +602,23 @@ def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: 
             safe_write(ws_out, top + 6, col_left, ev.wday or "")
             safe_write(ws_out, top + 8, col_left, "" if teacher_blank else (ev.teacher or ""))
 
-        # 繰り越しスロットは「翌月1週」として扱う:
-        #   月セル(E3相当)=翌月、週セル=1 を直接書き込む。
-        #   - 月を翌月にすることで、当月の年通算回数カウントから除外される
-        #     （get_last_session_number / count_regular_slots_in_sheet が月不一致を除外）。
-        #   - これにより 6/29(S) は翌月の開始回数と同じ「第N回/翌月1週」となり、
-        #     翌月先頭の A/B(7/1) と回数・週がピタリ揃う（番号飛びが無くなる）。
+        # 繰り越し分は翌月の授業回数として集計する。表示欄には書き込まない。
         if carry_here and target_month:
             next_month = target_month % 12 + 1
-            safe_write(ws_out, 3, col_left + 3, next_month)
-            safe_write(ws_out, 3, col_left + 5, 1)
+            set_slot_accounting_month(ws_out, col_left, next_month)
+            set_slot_week_value(ws_out, col_left, 1)
     # 残りの空スロットをクリア＋グレー塗り
     for si in range(len(merged_slots), total_slots):
         col_left = 2 + 10 * si
         if target_month:
-            safe_write(ws_out, 3, col_left + 3, target_month)
+            set_slot_accounting_month(ws_out, col_left, target_month)
         for k in order:
             top = base_top + ROW_STEP * idx[k]
             clear_one_block(ws_out, top, col_left)
             write_class_label(ws_out, top, col_left, "")
             gray_out_block(ws_out, top, col_left)
+
+    clear_month_week_headers(ws_out)
 
 # ===== 出力（X） =====
 def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_blank: bool = False):
@@ -632,7 +631,7 @@ def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_bl
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
         if target_month:
-            safe_write(ws_out, 3, col_left + 3, target_month)
+            set_slot_accounting_month(ws_out, col_left, target_month)
         clear_one_block(ws_out, base_top, col_left)
 
         if slot < n:
@@ -654,6 +653,8 @@ def fill_sheet_x(ws_out, target_month: int, x_events: List[Event], *, teacher_bl
             safe_write(ws_out, base_top + 6, col_left, ev.wday or "")
             safe_write(ws_out, base_top + 8, col_left, "" if teacher_blank else (ev.teacher or ""))
 
+    clear_month_week_headers(ws_out)
+
 # ===== 表示名 =====
 def _display_subj_name(grade: str, subj: str) -> str:
     if subj == "数" and grade in ("4", "5", "6"):
@@ -673,31 +674,20 @@ def _chain_formula(prev_cells: List[str], base_cell_abs: str) -> str:
 def patch_counter_formulas(ws):
     total_slots = count_slots_in_template(ws)
     annual_cells = []
-    week_cells = []
     special_annual = set()  # 「特」が入っているセル
-    special_week = set()
     for slot in range(total_slots):
         col_left = 2 + 10 * slot
         a_coord = ws.cell(row=2, column=col_left + 4).coordinate
-        w_coord = ws.cell(row=3, column=col_left + 5).coordinate
         annual_cells.append(a_coord)
-        week_cells.append(w_coord)
         # 「特」のセルを記録
         a_val = ws[a_coord].value
         if isinstance(a_val, str) and a_val.strip() == "特":
             special_annual.add(i := slot)
-        w_val = ws[w_coord].value
-        if isinstance(w_val, str) and w_val.strip() == "特":
-            special_week.add(slot)
 
     for i in range(1, len(annual_cells)):
         if i in special_annual:
             continue  # 手動で入れた「特」を保持
         ws[annual_cells[i]].value = _chain_formula(annual_cells[:i], "$" + counter_address(ws, 2).replace("2", "$2"))
-    for i in range(1, len(week_cells)):
-        if i in special_week:
-            continue
-        ws[week_cells[i]].value = _chain_formula(week_cells[:i], "$" + counter_address(ws, 3).replace("3", "$3"))
 
 # ===== シートコピー安全版（StyleProxy対策） =====
 def copy_worksheet_contents_safe(src, dst):
@@ -876,7 +866,7 @@ def count_regular_slots_in_sheet(ws, sheet_month: int = None) -> int:
             continue
         # 月番号がシートの月と異なるスロットは除外（手動で翌月扱いにされたケース）
         if sheet_month is not None:
-            slot_month_val = ws.cell(row=3, column=col_left + 3).value  # E3相当
+            slot_month_val = slot_accounting_month(ws, col_left)
             if slot_month_val is not None:
                 try:
                     if int(slot_month_val) != sheet_month:
@@ -909,7 +899,7 @@ def get_last_session_number(ws, sheet_month: int) -> int | None:
         if isinstance(annual_val, str) and annual_val.strip() == "特":
             continue
         # 月番号がシートの月と異なるスロットは除外
-        slot_month_val = ws.cell(row=3, column=col_left + 3).value
+        slot_month_val = slot_accounting_month(ws, col_left)
         if slot_month_val is not None:
             try:
                 if int(slot_month_val) != sheet_month:
@@ -955,7 +945,6 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
     set_if_not_formula("B2", campus)
     set_if_not_formula("I2", grade_label)
     set_if_not_formula("I3", subject_name)
-    set_if_not_formula("E3", month)
 
     if wb is not None and year is not None:
         new_f2 = compute_annual_start(wb, year, month)
@@ -964,15 +953,15 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
             new_f2 += 1
         ws["F2"].value = new_f2
 
-    # 2026年8月の第1週は別日程の「実力テスト」として扱うため、
-    # 英語・数学・国語・算数の通常授業は第2週から開始する。
-    start_week = 2 if year == 2026 and month == 8 and subject_name in {"英語", "数学", "国語", "算数"} else 1
-    ws["G3"].value = start_week
-
     f2 = ws["F2"].value
-    g3 = ws["G3"].value
     ws[counter_address(ws, 2)].value = f2 if isinstance(f2, (int, float)) else ""
-    ws[counter_address(ws, 3)].value = g3 if isinstance(g3, (int, float)) else ""
+    for left in slot_columns(ws):
+        set_slot_accounting_month(ws, left, month)
+    clear_month_week_headers(ws)
+    ws[STORED_WEEKS_CELL] = None
+    # Preserve existing calendar/export numbering while retiring only its Excel display.
+    start_week = 2 if year == 2026 and month == 8 and subject_name in {"英語", "数学", "国語", "算数"} else 1
+    ws[counter_address(ws, 3)] = start_week
 
 def save_year_workbook(wb: openpyxl.Workbook, out_path: Path):
     if all(wb[sn].sheet_state != "visible" for sn in wb.sheetnames):

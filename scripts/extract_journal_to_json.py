@@ -28,6 +28,7 @@
 from __future__ import annotations
 
 from journal_slots import read_slot_columns as slot_columns, counter_value
+from journal_month_week import slot_accounting_month, slot_week_value
 import argparse
 import json
 import re
@@ -456,7 +457,7 @@ def _compute_annual_start_from_wb(wb, year: int, month: int) -> int | None:
         if isinstance(ann, str) and ann.strip() == "特":
             continue
         # 月番号が前月シートの月と異なる = 翌月へ繰り越し → 前月の回数には含めない
-        slot_month_val = prev_ws.cell(row=3, column=col + 3).value
+        slot_month_val = slot_accounting_month(prev_ws, col)
         if slot_month_val is not None:
             try:
                 if int(slot_month_val) != prev_month:
@@ -487,13 +488,17 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
 
     # E3 = 月番号, G3 = 月内カウンタ開始。
     # 実力テスト週などの運用調整でF2/G3を手動変更するため、実セル値を正とする。
-    month_n_raw = ws.cell(row=3, column=5).value  # E3
+    month_n_raw = slot_accounting_month(ws, 2)
     if month_n_raw is None:
         return ("", "", "")
     month_n = str(int(month_n_raw)) if isinstance(month_n_raw, (int, float)) else str(month_n_raw).strip()
 
     current_annual = int(f2)
     g3 = ws["G3"].value
+    if g3 is None:
+        g3 = slot_week_value(ws, 2)
+        if g3 is None:
+            g3 = counter_value(ws, 3)
     current_monthly = int(g3) if isinstance(g3, (int, float)) else 1
     sheet_month = int(month_n_raw) if isinstance(month_n_raw, (int, float)) else None
 
@@ -509,7 +514,7 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
         # 月番号がシートの月と異なるスロット = 翌月へ繰り越し（例: 6/29が7月1週扱い）。
         # 当月の通算カウントには含めないが、そのスロット自体が対象なら
         # 「年通算=現在値・月=繰り越し先・週=1」を返す（翌月先頭と回数・週が揃う）。
-        slot_month_val = ws.cell(row=3, column=col_left + 3).value
+        slot_month_val = slot_accounting_month(ws, col_left)
         if slot_month_val is not None:
             try:
                 sm = int(slot_month_val)
@@ -517,7 +522,7 @@ def _compute_slot_session(ws, target_left_col: int, *, wb=None, year: int = 0, m
                 sm = None
             if sm is not None and sm != sheet_month:
                 if col_left == target_left_col:
-                    week_val = ws.cell(row=3, column=col_left + 5).value
+                    week_val = slot_week_value(ws, col_left)
                     wk = str(int(week_val)) if isinstance(week_val, (int, float)) else "1"
                     return (str(current_annual), str(sm), wk)
                 continue
@@ -538,6 +543,15 @@ def read_slot_header(ws, left_col: int, *, wb=None, year: int = 0, month: int = 
     session = read_merged_text(ws, 2, left_col + 4)   # F2 相当
     month_n = read_merged_text(ws, 3, left_col + 3)    # E3 相当
     week_n = read_merged_text(ws, 3, left_col + 5)     # G3 相当
+    # Read moved header data so the calendar's existing output remains unchanged.
+    if not month_n:
+        hidden_month = slot_accounting_month(ws, left_col)
+        if hidden_month is not None:
+            month_n = str(hidden_month)
+    if not week_n:
+        hidden_week = slot_week_value(ws, left_col)
+        if hidden_week is not None:
+            week_n = str(hidden_week)
 
     # 後続列の数式が未キャッシュで空の場合だけ、F2/G3の実セル値から計算する。
     if not session or not month_n or not week_n:

@@ -460,6 +460,7 @@ def main():
         sys.path.insert(0, str(script_dir))
         from export_by_grade_subject import (count_slots_in_template, patch_counter_formulas,
             mark_special_counters, gray_out_block, clear_gray_block, _slot_has_day)
+        from journal_month_week import clear_month_week_headers, MONTH_WEEK_BLANK_FROM
         import openpyxl as _openpyxl
         import re as _re_sheet
         _RE_MONTH_SHEET = _re_sheet.compile(r"^(\d{4})-(\d{2})$")
@@ -499,6 +500,7 @@ def main():
                             special_restore_count += 1
 
                 patch_counter_formulas(ws)
+                clear_month_week_headers(ws, from_date=MONTH_WEEK_BLANK_FROM)
                 changed = True
                 formula_repair_count += 1
 

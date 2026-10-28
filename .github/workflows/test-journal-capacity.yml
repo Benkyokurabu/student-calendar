@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - 'scripts/journal_slots.py'
+      - 'scripts/journal_month_week.py'
+      - 'scripts/test_journal_month_week_blank.py'
       - 'scripts/journal_slot_patch.py'
       - 'scripts/test_journal_slots.py'
       - 'scripts/retry_deferred_journal_slots.py'
@@ -33,6 +35,7 @@ jobs:
       - run: python -m unittest discover -s scripts -p test_journal_slots.py -v
       - run: python -m unittest discover -s scripts -p test_journal_input_controls.py -v
       - run: python -m unittest discover -s scripts -p test_journal_counter_headers.py -v
+      - run: python -m unittest discover -s scripts -p test_journal_month_week_blank.py -v
       - run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
       - run: python -m unittest discover -s scripts -p test_same_day_slot_order.py -v
       - run: python -m unittest discover -s scripts -p test_worksheet_order.py -v

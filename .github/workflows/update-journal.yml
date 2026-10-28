@@ -16,6 +16,8 @@ on:
       - 'scripts/test_journal_counter_headers.py'
       - 'scripts/journal_input_controls.py'
       - 'scripts/journal_slots.py'
+      - 'scripts/journal_month_week.py'
+      - 'scripts/test_journal_month_week_blank.py'
       - 'scripts/test_journal_slots.py'
       - 'scripts/test_journal_input_controls.py'
       - 'scripts/export_by_grade_subject.py'
@@ -87,6 +89,9 @@ jobs:
 
       - name: Verify workbook counter extraction
         run: python -m unittest discover -s scripts -p test_journal_counter_headers.py -v
+
+      - name: Verify retired month and week fields stay blank
+        run: python -m unittest discover -s scripts -p test_journal_month_week_blank.py -v
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
