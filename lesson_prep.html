@@ -236,7 +236,7 @@
 
   }
 </style>
-<script src="calendar-schedule-source.js?v=20261019-1"></script>
+<script src="calendar-schedule-source.js?v=20261029-1"></script>
 </head>
 <body>
 
@@ -256,6 +256,7 @@
   <div class="no-data">日付と先生を選択してください</div>
 </div>
 
+<script src="lesson-prep-embed.js?v=20261029-1"></script>
 <script>
 /* ====== データ ====== */
 let scheduleData = [];
@@ -341,10 +342,11 @@ async function forceRefresh(button) {
 async function init() {
   const dp = document.getElementById("datePicker");
   const today = new Date();
-  dp.value = today.toISOString().slice(0, 10);
+  dp.value = globalThis.LessonPrepEmbed?.initialDate(today.toISOString().slice(0, 10)) || today.toISOString().slice(0, 10);
 
   await loadMonth(dp.value.slice(0, 7));
   buildTeacherList();
+  globalThis.LessonPrepEmbed?.ready(scheduleData, render);
 }
 
 function mergeRecordingDataForMonth(mm, monthly, latest) {
@@ -719,6 +721,7 @@ function render() {
 
   if (!dateVal || !teacher) {
     out.innerHTML = '<div class="no-data">日付と先生を選択してください</div>';
+    globalThis.LessonPrepEmbed?.onRendered(dateVal, teacher, false);
     return;
   }
 
@@ -739,6 +742,7 @@ function render() {
 
   if (myLessons.length === 0) {
     out.innerHTML = '<div class="no-data">' + formatDate(dateVal) + '<br>' + teacher + '先生の授業はありません</div>';
+    globalThis.LessonPrepEmbed?.onRendered(dateVal, teacher, false);
     return;
   }
 
@@ -878,6 +882,7 @@ function render() {
   out.innerHTML = html;
   // 授業数クラスを設定（印刷時の高さ調整用）
   out.className = "container count-" + Math.min(myLessons.length, 5);
+  globalThis.LessonPrepEmbed?.onRendered(dateVal, teacher, true);
 }
 
 function esc(s) {
