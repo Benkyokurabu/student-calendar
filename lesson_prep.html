@@ -236,7 +236,7 @@
 
   }
 </style>
-<script src="calendar-schedule-source.js?v=20261029-1"></script>
+<script src="calendar-schedule-source.js?v=20261029-2"></script>
 </head>
 <body>
 
@@ -253,13 +253,14 @@
 </div>
 
 <div class="container" id="output">
-  <div class="no-data">日付と先生を選択してください</div>
+  <div class="no-data">授業データを読み込んでいます…</div>
 </div>
 
 <script src="lesson-prep-embed.js?v=20261029-1"></script>
 <script>
 /* ====== データ ====== */
 let scheduleData = [];
+let initialLoading = true;
 let journalData  = {};   // { entries: { key: {...} } }
 let journalMap   = {};   // { slots: { groupKey: [key, ...] } }
 let zoomRecordingData = {}; // { entries: { key: { url: "..." } } }
@@ -346,7 +347,9 @@ async function init() {
 
   await loadMonth(dp.value.slice(0, 7));
   buildTeacherList();
+  initialLoading = false;
   globalThis.LessonPrepEmbed?.ready(scheduleData, render);
+  if (!document.getElementById("teacherSelect").value) render();
 }
 
 function mergeRecordingDataForMonth(mm, monthly, latest) {
@@ -720,7 +723,7 @@ function render() {
   const out = document.getElementById("output");
 
   if (!dateVal || !teacher) {
-    out.innerHTML = '<div class="no-data">日付と先生を選択してください</div>';
+    out.innerHTML = '<div class="no-data">' + (initialLoading ? '授業データを読み込んでいます…' : '日付と先生を選択してください') + '</div>';
     globalThis.LessonPrepEmbed?.onRendered(dateVal, teacher, false);
     return;
   }

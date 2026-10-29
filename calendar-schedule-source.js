@@ -14,18 +14,22 @@
   function notice(month, fallback, silent, loading = false) {
     if (silent || !root.document) return;
     let element = document.getElementById("schedule-source-status");
+    const visible = !!fallback && !loading && month >= currentMonth();
+    // Healthy/loading states must not create even a hidden warning or its text.
+    if (!visible && !element) return;
     if (!element) {
       element = document.createElement("div"); element.id = "schedule-source-status";
+      element.hidden = true;
       element.setAttribute("role", "status");
       element.style.cssText = "margin:12px;padding:12px;border:1px solid #d49c27;border-radius:8px;background:#fff8dc;color:#5d460e;font:14px/1.6 sans-serif";
       document.body.prepend(element);
     }
-    element.hidden = loading || !fallback || month < currentMonth();
-    element.textContent = fallback === "unavailable"
+    element.textContent = !visible ? "" : fallback === "unavailable"
       ? "授業データを取得できません。通信状態を確認して、再度読み込んでください。約1分ごとに再確認します。"
       : "最新の授業データに接続できないため、保存済みのスケジュールを表示しています。約1分ごとに再確認します。";
     element.dataset.source = fallback === "unavailable" ? "unavailable" : fallback ? "archive" : "live";
     element.dataset.month = month;
+    element.hidden = !visible;
   }
   function validRows(rows, month) {
     return Array.isArray(rows) && rows.length > 0 && rows.every((event) => event && event.date?.startsWith(month + "-") && event.time && event.groupKey && ["hon", "minami"].includes(event.campus));

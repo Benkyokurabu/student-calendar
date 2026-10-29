@@ -49,31 +49,35 @@ try{
   const notice=page.locator('#schedule-source-status');
   if(['delayed','timeout','changed-month'].includes(scenario)){
    await page.clock.runFor(1300);
-   await page.waitForFunction(()=>document.getElementById('schedule-source-status')?.dataset.source==='archive');
+   await page.waitForFunction(()=>document.querySelectorAll('#teacherSelect option').length>1);
+   assert.equal(await notice.count(),0,'pending loads must not create hidden warning markup either');
    assert.equal(await notice.isVisible(),false,`${scenario}: a pending live response must never show a warning`);
    assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
    await page.waitForFunction(()=>document.querySelectorAll('#teacherSelect option').length>1);
    if(scenario==='delayed'){
-    finish();await page.waitForFunction(()=>document.getElementById('schedule-source-status')?.dataset.source==='live');
+    finish();await page.waitForFunction(()=>Boolean(CalendarScheduleSource.snapshot('2026-11')));
+    assert.equal(await notice.count(),0,'healthy delayed data never creates a warning element');
     assert.equal(await notice.isVisible(),false);
     assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[],'a healthy delayed response must not flash a warning');
    }else if(scenario==='changed-month'){
     await page.locator('#datePicker').fill('2026-12-02');await page.locator('#datePicker').dispatchEvent('change');
-    await page.waitForFunction(()=>document.getElementById('schedule-source-status')?.dataset.month==='2026-12');
-    finish();await page.waitForFunction(()=>!document.getElementById('schedule-source-status')?.hidden===false);
+    await page.waitForFunction(()=>Boolean(CalendarScheduleSource.snapshot('2026-12')));
+    const failed=page.waitForResponse(response=>response.url().includes('month=2026-11')&&response.status()===503);
+    finish();await (await failed).finished();
     assert.equal(await notice.isVisible(),false);assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
-    assert.equal(await notice.getAttribute('data-month'),'2026-12','an old failed month cannot replace the current notice');
+    assert.equal(await notice.count(),0,'an old failed month cannot create a warning in the current month');
    }else{
     await page.clock.runFor(10_001);
-    await page.waitForFunction(()=>!document.getElementById('schedule-source-status')?.hidden);
+    await page.waitForFunction(()=>{const element=document.getElementById('schedule-source-status');return element&&!element.hidden;});
     assert.match(await notice.innerText(),/接続できないため、保存済み/);
     finish();
    }
   }else if(scenario==='fast'){
    await page.waitForFunction(()=>document.querySelectorAll('#teacherSelect option').length>1);
+   assert.equal(await notice.count(),0,'healthy loads must not create warning markup');
    assert.equal(await notice.isVisible(),false);assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
   }else{
-   await page.waitForFunction(()=>!document.getElementById('schedule-source-status')?.hidden);
+   await page.waitForFunction(()=>{const element=document.getElementById('schedule-source-status');return element&&!element.hidden;});
    assert.match(await notice.innerText(),scenario==='unavailable'?/授業データを取得できません/:/接続できないため、保存済み/);
   }
   assert.deepEqual(errors,[]);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);

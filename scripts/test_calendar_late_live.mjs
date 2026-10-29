@@ -38,8 +38,9 @@ try {
     await route.fulfill({ json: { rules: [] } });
   });
   await page.goto(`http://127.0.0.1:${server.address().port}/lesson_prep.html`, { waitUntil: "domcontentloaded" });
-  await page.waitForFunction(() => document.getElementById("schedule-source-status")?.dataset.source === "archive");
-  await page.waitForFunction(() => document.getElementById("schedule-source-status")?.dataset.source === "live");
+  await page.waitForResponse(response => response.url().includes("schedule_2026-11.json") && response.status() === 200);
+  assert.equal(await page.locator("#schedule-source-status").count(), 0, "loading must not create a warning element, even hidden");
+  await page.waitForFunction(() => Boolean(CalendarScheduleSource.snapshot("2026-11")));
   await page.waitForFunction(() => document.querySelectorAll("#teacherSelect option").length > 1);
   assert.equal(await page.evaluate(() => scheduleData.find(row => row.date.startsWith("2026-11-")).time), "19:01～20:01");
   assert.equal(await page.locator("#schedule-source-status").isVisible(), false);
