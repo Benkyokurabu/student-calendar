@@ -460,7 +460,7 @@ def main():
     try:
         sys.path.insert(0, str(script_dir))
         from export_by_grade_subject import (count_slots_in_template, patch_counter_formulas,
-            mark_special_counters, gray_out_block, clear_gray_block, _slot_has_day)
+            mark_special_counters, restore_unused_slot_colors)
         from journal_month_week import clear_month_week_headers, MONTH_WEEK_BLANK_FROM
         import openpyxl as _openpyxl
         import re as _re_sheet
@@ -505,32 +505,7 @@ def main():
                 changed = True
                 formula_repair_count += 1
 
-                is_x = any(
-                    isinstance(ws.cell(row=7, column=2 + 10 * s).value, str)
-                    and ws.cell(row=7, column=2 + 10 * s).value.strip() == "X"
-                    for s in range(_total) if _slot_has_day(ws, 2 + 10 * s)
-                )
-                last_used = -1
-                for s in range(_total):
-                    if _slot_has_day(ws, 2 + 10 * s):
-                        last_used = s
-                if is_x:
-                    base_top = 6
-                    for s in range(_total):
-                        cl = 2 + 10 * s
-                        if s <= last_used:
-                            clear_gray_block(ws, base_top, cl)
-                        else:
-                            gray_out_block(ws, base_top, cl)
-                else:
-                    order_tops = [6, 26, 46]
-                    for s in range(_total):
-                        cl = 2 + 10 * s
-                        for top in order_tops:
-                            if s <= last_used:
-                                clear_gray_block(ws, top, cl)
-                            else:
-                                gray_out_block(ws, top, cl)
+                restore_unused_slot_colors(ws)
 
             if changed:
                 wb.save(xlsx_path)

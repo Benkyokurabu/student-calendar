@@ -29,3 +29,15 @@ X用は従来の別レイアウトを使う。
 
 関連試験:
 `python -m unittest discover -s scripts -p test_journal_common_master.py -v`
+
+## 特別授業の列の色
+
+「特」がある列では、その特別授業の入力欄を白く保ち、授業がない他クラスの
+入力欄は右端の未使用枠と同じ灰色で塗る。色の範囲と色値は既存の
+`gray_out_block()` を共用する。後続の色修復が空欄を白へ戻さないよう、
+`restore_unused_slot_colors()` をクラウド・手動実行の両方で使う。
+この処理は塗りつぶしだけを更新し、本文・日付・回数・数式を変更しない。
+別クラスに実際の日付がある場合は、その記録を使える状態に保つ。
+
+関連試験:
+`python -m unittest discover -s scripts -p test_journal_special_colors.py -v`

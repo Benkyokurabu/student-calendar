@@ -19,6 +19,7 @@ on:
       - 'scripts/journal_month_week.py'
       - 'scripts/test_journal_month_week_blank.py'
       - 'scripts/test_journal_common_master.py'
+      - 'scripts/test_journal_special_colors.py'
       - 'scripts/test_journal_slots.py'
       - 'scripts/test_journal_input_controls.py'
       - 'scripts/export_by_grade_subject.py'
@@ -97,6 +98,9 @@ jobs:
 
       - name: Verify common masters preserve existing records and lesson headers
         run: python -m unittest discover -s scripts -p test_journal_common_master.py -v
+
+      - name: Verify special-only columns retain unused-form shading
+        run: python -m unittest discover -s scripts -p test_journal_special_colors.py -v
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v

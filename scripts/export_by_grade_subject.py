@@ -893,6 +893,34 @@ def _slot_has_day(ws, col_left: int) -> bool:
     return False
 
 
+def restore_unused_slot_colors(ws):
+    """Keep special-only empty class forms shaded like unused right-hand forms."""
+    columns = slot_columns(ws)
+    is_x = any(
+        isinstance(ws.cell(7, left).value, str)
+        and ws.cell(7, left).value.strip() == "X"
+        for left in columns if _slot_has_day(ws, left)
+    )
+    last_used = max((index for index, left in enumerate(columns)
+                     if _slot_has_day(ws, left)), default=-1)
+    for index, left in enumerate(columns):
+        tops = (6,) if is_x else (6, 26, 46)
+        special = any(str(ws.cell(top + 1, left).value or "").strip() == "特"
+                      for top in tops)
+        for top in tops:
+            # A populated lesson remains writable even if an old sheet contains
+            # inconsistent labels. This repair changes fills, never its data.
+            special_unused = (
+                special
+                and str(ws.cell(top + 1, left).value or "").strip() != "特"
+                and ws.cell(top + 5, left).value in (None, "")
+            )
+            if index > last_used or special_unused:
+                gray_out_block(ws, top, left)
+            else:
+                clear_gray_block(ws, top, left)
+
+
 def count_regular_slots_in_sheet(ws, sheet_month: int = None) -> int:
     """月シート内の通常（非特）使用済みスロット数をカウントする。
     sheet_month が指定された場合、スロットの月番号(E3相当)がシートの月と
