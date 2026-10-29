@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-28T12:44:04.821617+00:00",
+  "generatedAt": "2026-10-29T09:25:50.498822+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -6028,7 +6028,7 @@
       "content": "単元テスト③",
       "page": "解説リスニングまで",
       "report": "テストを実施。解説リスニングでは先に問を聞き取らせ、本文を聞かせた。青木がリス満点。新井、堀切、東江らの単語力不足がネック。１位ハーゲン、２位ガリガリ君と伝えた。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/d5cGD0YtAdoZ2Xtud6mjKnuNWT4nsOIeFwuoSVidI2PYLK3GtJZUl1HNXLNHWKWPzqRHWW3kbSiXFMDy.pdO0zN9IJXoG2i_5",
       "teacher": "真下",
       "absence": "中村",
       "curriculumProgress": "－1.5",
@@ -6056,9 +6056,7 @@
         "monthNum": "10",
         "weekNum": "特",
         "date": "2026-10-10"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-15|6:35～8:05|hon|hon_j3_B_eng|1"
+      }
     },
     "2026-10-15|6:35～8:05|hon|hon_j3_X_eng|6": {
       "content": "ST16都立・新宿",
@@ -6157,9 +6155,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80f1-93a2-e82eb3f63601"
+      }
     },
     "2026-10-15|6:35～8:05|minami|minami_j3_X_eng|4": {
       "content": "ST16都立・新宿",
