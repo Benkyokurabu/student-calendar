@@ -7,6 +7,7 @@ on:
       - "lesson_prep.html"
       - "scripts/test_lesson_journal_refresh.mjs"
       - "scripts/test_lesson_prep_previous.mjs"
+      - "scripts/test_lesson_prep_loading_notice.mjs"
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
@@ -39,6 +40,7 @@ on:
       - "lesson_prep.html"
       - "scripts/test_lesson_journal_refresh.mjs"
       - "scripts/test_lesson_prep_previous.mjs"
+      - "scripts/test_lesson_prep_loading_notice.mjs"
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
@@ -96,6 +98,7 @@ jobs:
       - run: node scripts/test_calendar_mobile.mjs
       - run: node scripts/test_calendar_live.mjs
       - run: node scripts/test_calendar_late_live.mjs
+      - run: node scripts/test_lesson_prep_loading_notice.mjs
       - run: node scripts/test_calendar_failure.mjs
       - run: node scripts/test_calendar_emergency.mjs
       - run: node scripts/test_calendar_speed.mjs

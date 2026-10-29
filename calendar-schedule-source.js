@@ -5,12 +5,13 @@
   const cache = new Map();
   const pending = new Map();
   const listeners = new Set();
+  let noticeVersion = 0;
   const snapshot = (month, kind = "student") => {
     const data = cache.get(month)?.value;
     return data ? (kind === "teacher" ? data.teacherSchedule : data.schedule) : null;
   };
   const currentMonth = () => new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit" }).format(new Date());
-  function notice(month, fallback, silent) {
+  function notice(month, fallback, silent, loading = false) {
     if (silent || !root.document) return;
     let element = document.getElementById("schedule-source-status");
     if (!element) {
@@ -19,9 +20,11 @@
       element.style.cssText = "margin:12px;padding:12px;border:1px solid #d49c27;border-radius:8px;background:#fff8dc;color:#5d460e;font:14px/1.6 sans-serif";
       document.body.prepend(element);
     }
-    element.hidden = !fallback || month < currentMonth();
-    element.textContent = "最新の授業データに接続できないため、保存済みのスケジュールを表示しています。約1分ごとに再確認します。";
-    element.dataset.source = fallback ? "archive" : "live";
+    element.hidden = loading || !fallback || month < currentMonth();
+    element.textContent = fallback === "unavailable"
+      ? "授業データを取得できません。通信状態を確認して、再度読み込んでください。約1分ごとに再確認します。"
+      : "最新の授業データに接続できないため、保存済みのスケジュールを表示しています。約1分ごとに再確認します。";
+    element.dataset.source = fallback === "unavailable" ? "unavailable" : fallback ? "archive" : "live";
     element.dataset.month = month;
   }
   function validRows(rows, month) {
@@ -49,6 +52,11 @@
   }
   async function load(month, kind = "student", options = {}) {
     if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(month) || !["student", "teacher"].includes(kind)) throw new Error("対象月が不正です");
+    const version = options.silent ? null : ++noticeVersion;
+    const showNotice = (fallback, loading = false) => {
+      if (version === noticeVersion) notice(month, fallback, options.silent, loading);
+    };
+    showNotice(false, true);
     // Keep checking live data, but do not hold the calendar behind an unhealthy API.
     const liveResult = live(month).then(data => ({ data }), () => ({ data: null }));
     let timer;
@@ -58,7 +66,7 @@
     ]);
     clearTimeout(timer);
     if (quick?.data) {
-      notice(month, false, options.silent);
+      showNotice(false);
       return kind === "teacher" ? quick.data.teacherSchedule : quick.data.schedule;
     }
     try {
@@ -70,15 +78,18 @@
       const snapshot = cache.get(month);
       const accepted = snapshot?.until > Date.now() ? snapshot.value : null;
       if (accepted) {
-        notice(month, false, options.silent);
+        showNotice(false);
         return kind === "teacher" ? accepted.teacherSchedule : accepted.schedule;
       }
-      notice(month, true, options.silent);
+      // The fast archive deadline is not a connection failure. Keep the page
+      // usable while live data is pending, and warn only after it actually fails.
+      showNotice(true, !quick);
+      if (!quick) void liveResult.then(eventual => showNotice(!eventual.data));
       return archived;
     } catch (error) {
       const eventual = await liveResult;
-      if (!eventual.data) throw error;
-      notice(month, false, options.silent);
+      if (!eventual.data) { showNotice("unavailable"); throw error; }
+      showNotice(false);
       return kind === "teacher" ? eventual.data.teacherSchedule : eventual.data.schedule;
     }
   }
