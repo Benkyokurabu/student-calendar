@@ -159,9 +159,10 @@ def _sync_canonical_validations(dst, src):
 def repair_hidden_template_validations(script_dir: Path, journal_dir: Path):
     """Restore hidden-sheet dropdowns from the canonical template workbooks."""
     import openpyxl
+    from export_by_grade_subject import resolve_template_path
 
     template_specs = [
-        ("__TEMPLATE_MAIN__", script_dir / "TEMPLATE_MAIN.xlsx"),
+        ("__TEMPLATE_MAIN__", resolve_template_path(script_dir / "TEMPLATE_MAIN.xlsx")),
         ("__TEMPLATE_X__", script_dir / "TEMPLATE_X.xlsx"),
     ]
     canonical = {}
@@ -291,7 +292,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                                 continue
                             wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
                             tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
-                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
                             if ws_out is None:
                                 continue
                             set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
@@ -308,7 +309,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                                 continue
                             wb = open_or_create_year_workbook(wb_path, TEMPLATE_X, "__TEMPLATE_X__")
                             tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_X, "__TEMPLATE_X__")
-                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_X)
                             if ws_out is None:
                                 continue
                             set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
@@ -328,7 +329,7 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir: Path):
                         continue
                     wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
                     tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
-                    ws_out = create_month_sheet(wb, tmpl, year, month)
+                    ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
                     if ws_out is None:
                         continue
                     set_header_cells(ws_out, campus, "", title, month, wb=wb, year=year)

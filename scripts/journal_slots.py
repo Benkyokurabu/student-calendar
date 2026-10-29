@@ -6,10 +6,21 @@ from openpyxl.formula.translate import Translator
 from openpyxl.utils import get_column_letter,range_boundaries
 from openpyxl.worksheet.cell_range import CellRange
 from openpyxl.worksheet.dimensions import ColumnDimension
+from openpyxl.worksheet.print_settings import PrintArea
 from journal_input_controls import ensure_controls,is_unused_gray,lesson_columns
 
 MIN_LESSON_SLOTS=21
 COUNTER_COLUMN=212  # HD: outside the 21st lesson (GT:HB).
+
+
+def print_area_ranges(ws):
+    """openpyxl 3.1 exposes the print area as a qualified string."""
+    area = ws.print_area
+    if not area:
+        return []
+    if isinstance(area, str):
+        area = PrintArea.from_string(area)
+    return list(area.ranges)
 
 def slot_columns(ws):
     headers=lesson_columns(ws)
@@ -107,7 +118,7 @@ def ensure_lesson_capacity(ws,source=None,minimum=MIN_LESSON_SLOTS):
     ensure_controls(ws,source)
     if ws.print_area:
         areas=[]
-        for area in ws.print_area.ranges:
+        for area in print_area_ranges(ws):
             a=CellRange(str(area))
             if a.max_col>=old*10:a.max_col=max(a.max_col,minimum*10)
             areas.append(str(a))

@@ -47,10 +47,10 @@ import zipfile
 from pathlib import Path
 from collections import defaultdict, namedtuple
 from typing import Optional, Dict, Tuple, Set, List, Any
-from copy import copy
+from copy import copy, deepcopy
 
 from journal_input_controls import ensure_controls, is_unused_gray
-from journal_slots import ensure_lesson_capacity, slot_columns, counter_address
+from journal_slots import ensure_lesson_capacity, slot_columns, counter_address, print_area_ranges
 from journal_month_week import (clear_month_week_headers, slot_accounting_month,
     set_slot_accounting_month, set_slot_week_value, STORED_WEEKS_CELL)
 import openpyxl
@@ -66,6 +66,17 @@ except Exception:
 # ===== 同フォルダのテンプレ =====
 TEMPLATE_MAIN = Path("TEMPLATE_MAIN.xlsx")
 TEMPLATE_X    = Path("TEMPLATE_X.xlsx")
+COMMON_MAIN_TEMPLATE_NAME = "TEMPLATE_MAIN_COMMON.xlsx"
+
+
+def resolve_template_path(template_path: Path) -> Path:
+    """Only a registered common master is used; editing copies never activate it."""
+    template_path = Path(template_path)
+    if template_path.name == TEMPLATE_MAIN.name:
+        common = template_path.with_name(COMMON_MAIN_TEMPLATE_NAME)
+        if common.is_file():
+            return common
+    return template_path
 
 # ===== 定数 =====
 ROW_STEP = 20
@@ -692,18 +703,20 @@ def patch_counter_formulas(ws):
 # ===== シートコピー安全版（StyleProxy対策） =====
 def copy_worksheet_contents_safe(src, dst):
     for col, dim in src.column_dimensions.items():
-        dd = dst.column_dimensions[col]
-        dd.width = dim.width
-        dd.hidden = dim.hidden
-        dd.outlineLevel = dim.outlineLevel
-        dd.collapsed = dim.collapsed
+        dst.column_dimensions[col] = copy(dim)
+        dst.column_dimensions[col].worksheet = dst
 
     for row, dim in src.row_dimensions.items():
-        rd = dst.row_dimensions[row]
-        rd.height = dim.height
-        rd.hidden = dim.hidden
-        rd.outlineLevel = dim.outlineLevel
-        rd.collapsed = dim.collapsed
+        dst.row_dimensions[row] = copy(dim)
+        dst.row_dimensions[row].worksheet = dst
+
+    for attribute in ("sheet_format", "sheet_properties", "page_margins",
+                      "page_setup", "print_options", "protection", "views", "HeaderFooter"):
+        setattr(dst, attribute, deepcopy(getattr(src, attribute)))
+    dst.print_area = [str(area) for area in print_area_ranges(src)] if src.print_area else None
+    dst.print_title_rows = src.print_title_rows
+    dst.print_title_cols = src.print_title_cols
+    dst.conditional_formatting = deepcopy(src.conditional_formatting)
 
     try:
         dst.freeze_panes = src.freeze_panes
@@ -737,6 +750,10 @@ def copy_worksheet_contents_safe(src, dst):
                 d_cell.protection = copy(s_cell.protection)
             else:
                 d_cell.number_format = s_cell.number_format
+            if s_cell.hyperlink:
+                d_cell._hyperlink = copy(s_cell.hyperlink)
+            if s_cell.comment:
+                d_cell.comment = copy(s_cell.comment)
 
 # ===== 破損xlsx処理（厳格） =====
 def quarantine_broken_xlsx(path: Path, reason: str) -> None:
@@ -770,7 +787,7 @@ def open_or_create_year_workbook(out_path: Path, template_path: Path, hidden_nam
         if wb is not None:
             return wb
         # ここには来ない（退避失敗なら例外で停止）
-    wb = openpyxl.load_workbook(template_path)
+    wb = openpyxl.load_workbook(resolve_template_path(template_path))
     ws0 = wb[wb.sheetnames[0]]
     for name in list(wb.sheetnames)[1:]:
         del wb[name]
@@ -780,6 +797,7 @@ def open_or_create_year_workbook(out_path: Path, template_path: Path, hidden_nam
     return wb
 
 def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hidden_name: str):
+    template_path = resolve_template_path(template_path)
     if hidden_name in wb.sheetnames:
         ws = wb[hidden_name]
         ws.sheet_state = "hidden"
@@ -801,24 +819,49 @@ def ensure_hidden_template_sheet(wb: openpyxl.Workbook, template_path: Path, hid
     patch_counter_formulas(ws)
     return ws
 
-def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int):
+def create_month_sheet(wb: openpyxl.Workbook, hidden_ws, year: int, month: int,
+                       *, template_path: Path = None):
     base = month_sheet_base_name(year, month)
 
     # 既に同じ月シートがある場合は何もしない
     if base in wb.sheetnames:
         return None
 
-    # Validate and extend controls before copying a new month.
-    ensure_lesson_capacity(hidden_ws)
-    # hidden template から複製
-    ws = wb.copy_worksheet(hidden_ws)
-    ws.title = base
-    ws.sheet_state = "visible"
+    reference = None
+    ws = None
+    source = hidden_ws
+    try:
+        if template_path is not None and hidden_ws.title == "__TEMPLATE_MAIN__":
+            common_path = resolve_template_path(template_path)
+            if common_path.name == COMMON_MAIN_TEMPLATE_NAME:
+                reference = openpyxl.load_workbook(common_path)
+                if len(reference.worksheets) != 1:
+                    raise ValueError("共通マスターは編集用テンプレートの1シートだけにしてください")
+                source = reference.worksheets[0]
+                from journal_input_controls import assert_template_controls
+                assert_template_controls(source)
+        # Existing month records and their hidden templates retain their layouts.
+        # Registered MAIN masters are copied directly for new months only.
+        ensure_lesson_capacity(source)
+        if reference is not None:
+            ws = wb.create_sheet(base)
+            copy_worksheet_contents_safe(source, ws)
+        else:
+            ws = wb.copy_worksheet(source)
+            ws.title = base
+        ws.sheet_state = "visible"
+    except Exception:
+        if ws is not None:
+            wb.remove(ws)
+        raise
+    finally:
+        if reference is not None:
+            reference.close()
 
     # データ入力規則が copy_worksheet で欠落する場合の補完
-    if hidden_ws.data_validations and hidden_ws.data_validations.dataValidation:
+    if source.data_validations and source.data_validations.dataValidation:
         existing = {str(dv.sqref) for dv in (ws.data_validations.dataValidation or [])}
-        for dv in hidden_ws.data_validations.dataValidation:
+        for dv in source.data_validations.dataValidation:
             if str(dv.sqref) not in existing:
                 ws.add_data_validation(copy(dv))
 
@@ -936,15 +979,14 @@ def compute_annual_start(wb, year: int, month: int) -> int:
 
 def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month: int,
                      *, wb=None, year: int = None):
-    def set_if_not_formula(addr: str, value: Any):
-        v = ws[addr].value
-        if isinstance(v, str) and v.startswith("="):
-            return
-        ws[addr].value = value
-
-    set_if_not_formula("B2", campus)
-    set_if_not_formula("I2", grade_label)
-    set_if_not_formula("I3", subject_name)
+    # The master may contain copied English/hon-campus labels or fixed counts.
+    # These fields belong to the generated lesson, in every frame.
+    for left in slot_columns(ws):
+        ws.cell(2, left).value = campus
+        ws.cell(2, left + 7).value = grade_label
+        ws.cell(3, left + 7).value = subject_name
+        if left != 2:
+            ws.cell(2, left + 4).value = None
 
     if wb is not None and year is not None:
         new_f2 = compute_annual_start(wb, year, month)
@@ -955,6 +997,7 @@ def set_header_cells(ws, campus: str, grade_label: str, subject_name: str, month
 
     f2 = ws["F2"].value
     ws[counter_address(ws, 2)].value = f2 if isinstance(f2, (int, float)) else ""
+    patch_counter_formulas(ws)
     for left in slot_columns(ws):
         set_slot_accounting_month(ws, left, month)
     clear_month_week_headers(ws)
@@ -1145,7 +1188,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
                 wb = open_or_create_year_workbook(out_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
                 tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
 
-                ws_out = create_month_sheet(wb, tmpl, year, month)
+                ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
                 if ws_out is None:
                     print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
                 else:
@@ -1163,7 +1206,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
                 wb = open_or_create_year_workbook(out_path, TEMPLATE_X, "__TEMPLATE_X__")
                 tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_X, "__TEMPLATE_X__")
 
-                ws_out = create_month_sheet(wb, tmpl, year, month)
+                ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_X)
                 if ws_out is None:
                     print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
                 else:
@@ -1184,7 +1227,7 @@ def export_one_campus(ws_schedule, campus: str, year: int, month: int):
         wb = open_or_create_year_workbook(out_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
         tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
 
-        ws_out = create_month_sheet(wb, tmpl, year, month)
+        ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
         if ws_out is None:
             print(f"[SKIP] {out_path.name}: {year:04d}-{month:02d} は既にあります")
         else:
@@ -1224,7 +1267,7 @@ def main():
     args = ap.parse_args()
     prefer = [int(x) for x in re.split(r"[,\s]+", args.prefer.strip()) if x] if args.prefer else None
 
-    if not TEMPLATE_MAIN.exists() or not TEMPLATE_X.exists():
+    if not resolve_template_path(TEMPLATE_MAIN).exists() or not TEMPLATE_X.exists():
         raise FileNotFoundError("TEMPLATE_MAIN.xlsx / TEMPLATE_X.xlsx が見つかりません（同フォルダに置いてください）。")
 
     y, m, sch = pick_schedule_in_same_folder(prefer)

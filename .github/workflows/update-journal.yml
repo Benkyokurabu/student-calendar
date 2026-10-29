@@ -18,11 +18,13 @@ on:
       - 'scripts/journal_slots.py'
       - 'scripts/journal_month_week.py'
       - 'scripts/test_journal_month_week_blank.py'
+      - 'scripts/test_journal_common_master.py'
       - 'scripts/test_journal_slots.py'
       - 'scripts/test_journal_input_controls.py'
       - 'scripts/export_by_grade_subject.py'
       - 'scripts/test_same_day_slot_order.py'
       - 'scripts/TEMPLATE_MAIN.xlsx'
+      - 'scripts/TEMPLATE_MAIN_COMMON.xlsx'
       - 'scripts/TEMPLATE_X.xlsx'
       - 'scripts/build_teacher_calendar.py'
       - 'scripts/test_build_teacher_calendar.py'
@@ -92,6 +94,9 @@ jobs:
 
       - name: Verify retired month and week fields stay blank
         run: python -m unittest discover -s scripts -p test_journal_month_week_blank.py -v
+
+      - name: Verify common masters preserve existing records and lesson headers
+        run: python -m unittest discover -s scripts -p test_journal_common_master.py -v
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
@@ -192,6 +197,14 @@ jobs:
         run: |
           cp scripts/_schedule/*.xlsm scripts/ 2>/dev/null || echo "No schedule xlsm found"
           ls scripts/*.xlsm 2>/dev/null || true
+
+      - name: Download registered common master from OneDrive
+        # An editing copy never has this name. Until registration, no file is
+        # downloaded and the existing per-workbook templates continue to work.
+        run: |
+          rclone copy "onedrive:デスクトップ/【完成版】授業日誌システム/" scripts/ \
+            --include "/TEMPLATE_MAIN_COMMON.xlsx" --max-depth 1 \
+            --transfers 1 --checkers 1
 
       - name: Run pipeline
         run: |
