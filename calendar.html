@@ -511,6 +511,7 @@
   let allLessons = [];
   let journalEntries = {};
   let journalLoadedYM = null;
+  let journalGeneratedAt = 0;
   let zoomRecordingEntries = {};
   let recordingOverrides = {};
   let recordingReleaseRules = [];
@@ -520,15 +521,26 @@
   let journalAvailable = false;
   let detailGeneration = 0;
   let recordingsLoadedYM = null;
+  let recordingRefreshPending = false;
   setInterval(async () => {
-    if (document.hidden || !recordingsLoadedYM) return;
-    const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable]);
-    const data = await fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]);
+    if (document.hidden || !recordingsLoadedYM || recordingRefreshPending) return;
+    recordingRefreshPending = true;
+    const ym = currentYM;
+    try {
+    const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings]);
+    const [data, emergency] = await Promise.all([
+      fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
+      fetchNewestJsonAny([`recording_emergency_${ym}.json`, rawJsonUrl(`recording_emergency_${ym}.json`)]),
+    ]);
+    if (currentYM !== ym || recordingsLoadedYM !== ym) return;
+    if (emergency?.version === 1 && emergency.month === ym) emergencyRecordings = emergency;
     publicationAvailable = Array.isArray(data?.rules);
     if (publicationAvailable) publicationRules = data.rules;
-    if (!journalAvailable) await loadJournalSafe(currentYM);
-    if (JSON.stringify([publicationRules, publicationAvailable, journalAvailable]) !== before) renderAll();
+    await loadJournalSafe(ym, true);
+    if (currentYM !== ym) return;
+    if (JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings]) !== before) renderAll();
     updateDetailNotice();
+    } finally { recordingRefreshPending = false; }
   }, 30000);
 
   gradeSelect.addEventListener("change", () => {
@@ -714,8 +726,8 @@
 
   function newestJson(items) {
     return items.filter(Boolean).sort((a, b) => {
-      const at = Date.parse(a.generatedAt || "") || 0;
-      const bt = Date.parse(b.generatedAt || "") || 0;
+      const at = Date.parse(a.generatedAt || a.renewedAt || a.approvedAt || "") || 0;
+      const bt = Date.parse(b.generatedAt || b.renewedAt || b.approvedAt || "") || 0;
       return bt - at;
     })[0] || null;
   }
@@ -751,18 +763,32 @@
   }
 
   // ====== 授業日誌 読み込み ======
-  async function loadJournalSafe(ym) {
-    if (journalLoadedYM === ym) return;
-    const monthly = await fetchJsonAny([`journal_${ym}.json`]);
-    const latest = await fetchJsonAny(["journal_latest.json"]);
+  async function loadJournalSafe(ym, refresh = false) {
+    if (journalLoadedYM === ym && !refresh) return;
+    const [monthly, latest] = await Promise.all([
+      fetchNewestJsonAny([`journal_${ym}.json`, rawJsonUrl(`journal_${ym}.json`)]),
+      fetchNewestJsonAny(["journal_latest.json", rawJsonUrl("journal_latest.json")]),
+    ]);
     if (currentYM !== ym) return;
-    journalAvailable = Boolean(monthly?.entries || latest?.entries);
-    if (!journalAvailable) return;
+    const payloads = [monthly, latest].filter(payload => payload?.entries &&
+      (payload.month === ym || Object.keys(payload.entries).some(key => key.startsWith(ym + '-'))));
+    if (!payloads.length) {
+      if (journalLoadedYM !== ym) journalAvailable = false;
+      return;
+    }
+    const generatedAt = Math.max(...payloads.map(payload => Date.parse(payload.generatedAt || '') || 0));
+    if (journalLoadedYM === ym && generatedAt < journalGeneratedAt) return;
+    journalAvailable = true;
     const merged = {};
-    if (monthly && monthly.entries) Object.assign(merged, monthly.entries);
-    if (latest && latest.entries) Object.assign(merged, latest.entries);
+    for (const payload of payloads.sort((a, b) =>
+      (Date.parse(a.generatedAt || '') || 0) - (Date.parse(b.generatedAt || '') || 0))) {
+      for (const [key, entry] of Object.entries(payload.entries || {})) {
+        if (key.startsWith(ym + '-')) merged[key] = entry;
+      }
+    }
     journalEntries = merged;
     journalLoadedYM = ym;
+    journalGeneratedAt = generatedAt;
   }
 
   function normalizeRecordingEntries(data) {
@@ -934,6 +960,8 @@
     if (!approved || approved.version !== 1 || approved.month !== String(it.date || it.key || '').slice(0,7)
         || !Number.isFinite(Date.parse(approved.expiresAt)) || Date.now() >= Date.parse(approved.expiresAt)) return "";
     const key = buildEventKeyFromLesson(it);
+    const knownRule = publicationRules.find(rule => rule.eventKeys.includes(key) || (rule.match && rule.match.date===key.split('|')[0] && rule.match.campus===key.split('|')[2] && rule.match.group===key.split('|')[3]));
+    if (knownRule && knownRule.status !== 'public') return "";
     if (recordingReleaseRules.some(rule => rule.eventKeys.includes(key) && rule.status !== 'released')
         || zoomRecordingEntries[key]?.hidden || recordingOverrides[key]?.hidden) return "";
     const value = approved.entries?.[key];

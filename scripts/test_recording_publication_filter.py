@@ -3,9 +3,71 @@ import hashlib
 import copy
 from unittest.mock import patch
 import io
-from recording_publication_filter import apply_payload
+import json
+import tempfile
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from types import SimpleNamespace
+from recording_publication_filter import apply_payload, preserve_recording_fields, publish_text_with_existing_recordings, refresh_approved_snapshots
 
 class PublicationFilterTests(unittest.TestCase):
+    def test_journal_only_publication_never_contacts_the_policy_service(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / 'journal_2026-10.json'
+            path.write_text(json.dumps({'entries': {'lesson': {'content': 'latest', 'recordingUrl': 'new'}}}), 'utf-8')
+            baseline = {'entries': {'lesson': {'content': 'old', 'recordingUrl': 'existing'}}}
+            with patch('recording_publication_filter.urlopen') as network, patch('recording_publication_filter.subprocess.run', return_value=SimpleNamespace(returncode=0, stdout=json.dumps(baseline).encode())):
+                publish_text_with_existing_recordings(root)
+                network.assert_not_called()
+            result = json.loads(path.read_text('utf-8'))['entries']['lesson']
+            self.assertEqual(result, {'content': 'latest', 'recordingUrl': 'existing'})
+
+    def test_verified_snapshots_refresh_automatically_and_exclude_restrictions(self):
+        now = datetime(2026, 10, 30, tzinfo=timezone.utc)
+        keys = [f'2026-10-29|18:00|hon|hon_j{i}_S_math|1' for i in range(1, 8)]
+        urls = [f'https://zoom.us/rec/play/video{i}' for i in range(7)]
+        entries = {key: {'url': url} for key, url in zip(keys, urls)}
+        entries[keys[1]]['hidden'] = True
+        entries[keys[4]]['url'] = 'https://zoom.us.evil.test/rec/play/wrong'
+        rules = [{'key': keys[2], 'status': 'hidden', 'eventKeys': [keys[2]]},
+                 {'key': 'test', 'status': 'hidden', 'eventKeys': [], 'match': {'date': '2026-10-29', 'campus': 'hon', 'group': 'hon_j4_S_math'}},
+                 {'key': 'alias', 'status': 'hidden', 'eventKeys': [], 'urlHashes': [hashlib.sha256(urls[5].encode()).hexdigest()]}]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'zoom_recording_urls_2026-10.json').write_text(json.dumps({'entries': entries}), 'utf-8')
+            (root / 'recording_release.json').write_text(json.dumps({'rules': [{'eventKeys': [keys[6]], 'status': 'blocked'}]}), 'utf-8')
+            self.assertEqual(refresh_approved_snapshots(root, rules, now), ['recording_emergency_2026-10.json'])
+            snapshot = json.loads((root / 'recording_emergency_2026-10.json').read_text('utf-8'))
+            self.assertEqual(snapshot['entries'], {keys[0]: urls[0]})
+            self.assertEqual(datetime.fromisoformat(snapshot['expiresAt']), now + timedelta(days=7))
+            self.assertEqual(refresh_approved_snapshots(root, rules, now + timedelta(hours=1)), [])
+            self.assertEqual(len(refresh_approved_snapshots(root, rules, now + timedelta(days=1))), 1)
+            rules.append({'key': keys[0], 'status': 'hidden', 'eventKeys': [keys[0]]})
+            refresh_approved_snapshots(root, rules, now + timedelta(days=1, hours=1))
+            self.assertEqual(json.loads((root / 'recording_emergency_2026-10.json').read_text('utf-8'))['entries'], {})
+
+    def test_outage_publishes_text_but_only_existing_recording_urls(self):
+        old = {'entries': {'same': {'content': 'old', 'recordingUrl': 'https://zoom.us/old'},
+                           'hidden': {'recordingUrl': '', 'hidden': True, 'recordingPublicationKey': 'hidden'}}}
+        new = {'entries': {'same': {'content': 'new', 'homework': ['new homework'], 'recordingUrl': 'https://zoom.us/new'},
+                           'hidden': {'content': 'new test', 'recordingUrl': 'https://zoom.us/private'},
+                           'new': {'content': 'new lesson', 'recordingUrl': 'https://zoom.us/unverified'}}}
+        preserve_recording_fields(new, old)
+        self.assertEqual(new['entries']['same']['content'], 'new')
+        self.assertEqual(new['entries']['same']['homework'], ['new homework'])
+        self.assertEqual(new['entries']['same']['recordingUrl'], 'https://zoom.us/old')
+        self.assertEqual(new['entries']['hidden']['recordingUrl'], '')
+        self.assertTrue(new['entries']['hidden']['hidden'])
+        self.assertEqual(new['entries']['new']['recordingUrl'], '')
+
+    def test_outage_does_not_reuse_a_previous_lesson_url_when_identity_changed(self):
+        old = {'prevEntry': {'date': '2026-10-20', 'recordingUrl': 'https://zoom.us/old'}}
+        new = {'prevEntry': {'date': '2026-10-27', 'content': 'latest', 'recordingUrl': 'https://zoom.us/new'}}
+        preserve_recording_fields(new, old)
+        self.assertEqual(new['prevEntry']['content'], 'latest')
+        self.assertEqual(new['prevEntry']['recordingUrl'], '')
+
     def test_cloud_publisher_uses_signed_workflow_identity(self):
         key='2026-10-01|18:00～19:00|hon|hon_j1_S_math|2'
         payload={'entries':{key:{'url':'https://example.test/private'}}}

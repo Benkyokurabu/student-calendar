@@ -22,7 +22,7 @@ try{for(const width of [390,1280]){
   }
   const file=path.basename(u.pathname);
   if(file.endsWith('.json')){
-   const data=file.startsWith('schedule_')?rows:file.startsWith('journal_')?{entries:Object.fromEntries(rows.map(r=>[key(r),{content:'テスト用の指導内容',homework:['テスト用の宿題'],recordingUrl:'https://example.test/journal'}]))}
+   const data=file.startsWith('schedule_')?rows:file.startsWith('journal_')?{entries:Object.fromEntries(rows.map(r=>[key(r),{content:unavailable?'テスト用の指導内容':'更新後の指導内容',homework:[unavailable?'テスト用の宿題':'更新後の宿題'],recordingUrl:'https://example.test/journal'}]))}
     :file.startsWith('zoom_recording_urls_')?{entries:Object.fromEntries(rows.map(r=>[key(r),{url:'https://example.test/recording'}]))}:file==='recording_release.json'?{rules:[]}:{};
    return route.fulfill({json:data});
   }
@@ -48,6 +48,9 @@ try{for(const width of [390,1280]){
  await page.locator('#dayDetailArea a.j-link').first().waitFor();
  assert.equal(await page.locator('#dayDetailArea a.j-link').first().getAttribute('href'),'https://example.test/recording');
  assert.equal(await page.locator('#subjectArea input').first().isChecked(),true);
+ await page.waitForFunction(()=>document.getElementById('dayDetailArea').textContent.includes('更新後の指導内容'));
+ assert((await page.locator('#dayDetailArea').innerText()).includes('更新後の指導内容'));
+ assert((await page.locator('#dayDetailArea').innerText()).includes('更新後の宿題'));
  assert((await page.locator('#dayDetailArea').innerText()).includes('2026-10-23'));
  assert.equal(await page.locator('#hintArea').innerText(),'');
  assert.equal(await page.locator('#schedule-source-status').count(),0,'automatic schedule refresh must also omit the notice');

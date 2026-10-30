@@ -7,7 +7,9 @@ from urllib.request import urlopen
 from urllib.request import Request
 import os
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import re
+from urllib.parse import urlparse
 
 POLICY_URL = 'https://line-check-system.vercel.app/api/recordings/publication'
 
@@ -119,8 +121,115 @@ def filter_repository(root, rules):
             changed.append(path.name)
     return changed
 
+
+def preserve_recording_fields(value, baseline):
+    """Publish journal text during an outage without publishing any new URL."""
+    if isinstance(value, list):
+        old = baseline if isinstance(baseline, list) else []
+        for index, child in enumerate(value):
+            preserve_recording_fields(child, old[index] if index < len(old) else None)
+    elif isinstance(value, dict):
+        old = baseline if isinstance(baseline, dict) else {}
+        identity = ('date', 'time', 'campus', 'groupKey', 'room')
+        if any(value.get(field) != old.get(field) for field in identity):
+            old = {}
+        for field in ('url', 'recordingUrl'):
+            if field in value:
+                value[field] = old.get(field, '')
+        for field in ('hidden', 'recordingPublicationKey'):
+            if field in old:
+                value[field] = old[field]
+            else:
+                value.pop(field, None)
+        for key, child in value.items():
+            preserve_recording_fields(child, old.get(key))
+    return value
+
+
+def publish_text_with_existing_recordings(root):
+    changed = []
+    for path in sorted(root.glob('journal_*.json')):
+        # The committed public JSON is the authority during an outage. Never
+        # obtain a fallback URL from the newly extracted Excel or an empty policy.
+        result = subprocess.run(['git', 'show', f'HEAD:{path.name}'], cwd=root,
+                                capture_output=True, check=False)
+        baseline = json.loads(result.stdout) if result.returncode == 0 else {}
+        payload = json.loads(path.read_text('utf-8'))
+        before = json.dumps(payload, sort_keys=True, ensure_ascii=False)
+        preserve_recording_fields(payload, baseline)
+        if json.dumps(payload, sort_keys=True, ensure_ascii=False) != before:
+            path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', 'utf-8')
+            changed.append(path.name)
+    return changed
+
+
+def refresh_approved_snapshots(root, rules, now=None):
+    """Refresh outage access only after a successful authoritative policy read."""
+    now = now or datetime.now(timezone.utc)
+    changed = []
+    hidden_keys = {key for rule in rules if rule['status'] != 'public' for key in rule['eventKeys']}
+    hidden_hashes = {digest for rule in rules if rule['status'] != 'public' for digest in rule.get('urlHashes', [])}
+    release_path = root / 'recording_release.json'
+    release = json.loads(release_path.read_text('utf-8')) if release_path.exists() else {}
+    hidden_keys.update(key for rule in release.get('rules', []) if rule.get('status') != 'released' for key in rule['eventKeys'])
+    for source in sorted(root.glob('zoom_recording_urls_*.json')):
+        match = re.fullmatch(r'zoom_recording_urls_(20\d{2}-\d{2})\.json', source.name)
+        if not match:
+            continue
+        month = match[1]
+        payload = json.loads(source.read_text('utf-8'))
+        entries = {}
+        for key, row in payload.get('entries', {}).items():
+            if not isinstance(row, dict) or row.get('hidden') or key in hidden_keys:
+                continue
+            parts = key.split('|')
+            if len(parts) != 5 or not parts[0].startswith(month + '-'):
+                continue
+            if any(rule['status'] != 'public' and rule.get('match') == {'date':parts[0], 'campus':parts[2], 'group':parts[3]} for rule in rules):
+                continue
+            url = row.get('url', '')
+            parsed = urlparse(url)
+            if (parsed.scheme != 'https' or not parsed.hostname
+                    or not (parsed.hostname == 'zoom.us' or parsed.hostname.endswith('.zoom.us'))
+                    or parsed.username or parsed.password or not re.match(r'^/rec/(play|share)/', parsed.path)
+                    or hashlib.sha256(url.encode()).hexdigest() in hidden_hashes):
+                continue
+            entries[key] = url
+        target = root / f'recording_emergency_{month}.json'
+        previous = json.loads(target.read_text('utf-8')) if target.exists() else {}
+        try:
+            renew_at = datetime.fromisoformat(previous.get('generatedAt', previous.get('approvedAt', '')).replace('Z', '+00:00'))
+            expires_at = datetime.fromisoformat(previous.get('expiresAt', '').replace('Z', '+00:00'))
+        except ValueError:
+            renew_at = expires_at = now - timedelta(days=1)
+        if (previous.get('entries') == entries and now - renew_at < timedelta(days=1)
+                and expires_at - now > timedelta(days=2)):
+            continue
+        snapshot = {'version': 1, 'month': month, 'approvedAt': now.isoformat(),
+                    'generatedAt': now.isoformat(), 'expiresAt': (now + timedelta(days=7)).isoformat(),
+                    'sourceGeneratedAt': payload.get('generatedAt'), 'entries': entries}
+        target.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n', 'utf-8')
+        changed.append(target.name)
+    return changed
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parent.parent)
+    parser.add_argument('--preserve-recordings', action='store_true',
+                        help='Publish journal text independently of the policy service, retaining only committed recording URLs and restrictions.')
+    parser.add_argument('--preserve-recordings-on-outage', action='store_true',
+                        help='Publish journal text with only previously committed recording URLs if the policy service is unavailable.')
     args = parser.parse_args()
-    print('Recording publication filter:', len(filter_repository(args.root, load_rules())), 'JSON files updated')
+    if args.preserve_recordings:
+        print('Recording preservation:', len(publish_text_with_existing_recordings(args.root)), 'JSON files updated; no policy service required')
+        raise SystemExit(0)
+    try:
+        rules = load_rules()
+    except OSError:
+        if not args.preserve_recordings_on_outage:
+            raise
+        print('Recording policy unavailable: journal text can update; all recording URLs and restrictions stay at their committed values.')
+        print('Recording preservation:', len(publish_text_with_existing_recordings(args.root)), 'JSON files updated')
+    else:
+        print('Recording publication filter:', len(filter_repository(args.root, rules)), 'JSON files updated')
+        print('Approved outage snapshots:', len(refresh_approved_snapshots(args.root, rules)), 'JSON files updated')

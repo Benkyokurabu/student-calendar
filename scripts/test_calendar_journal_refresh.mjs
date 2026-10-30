@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const html=fs.readFileSync(new URL('../calendar.html',import.meta.url),'utf8');
+const start=html.indexOf('  async function loadJournalSafe(');
+const end=html.indexOf('\n  function normalizeRecordingEntries',start);
+assert(start>=0&&end>start);
+const key='2026-10-29|6:35～8:05|hon|hon_j3_S_math|1';
+let monthly={generatedAt:'2026-10-30T03:00:00Z',entries:{[key]:{content:'latest'}}};
+let latest={generatedAt:'2026-10-29T03:00:00Z',entries:{[key]:{content:'stale'}}};
+const context={currentYM:'2026-10',journalLoadedYM:null,journalGeneratedAt:0,journalAvailable:false,journalEntries:{},rawJsonUrl:f=>f,
+fetchNewestJsonAny:async names=>names[0]==='journal_latest.json'?latest:monthly};
+vm.createContext(context);vm.runInContext(html.slice(start,end),context);
+await context.loadJournalSafe('2026-10');assert.equal(context.journalEntries[key].content,'latest');
+monthly={generatedAt:'2026-10-30T04:00:00Z',entries:{[key]:{content:'updated',homework:['new homework']}}};
+await context.loadJournalSafe('2026-10',true);assert.equal(context.journalEntries[key].content,'updated');
+latest={generatedAt:'2026-10-30T05:00:00Z',entries:{'2026-11-01|future':{content:'future'}}};
+await context.loadJournalSafe('2026-10',true);assert.equal(Object.keys(context.journalEntries).length,1);
+monthly=null;await context.loadJournalSafe('2026-10',true);
+assert.equal(context.journalEntries[key].content,'updated');assert.equal(context.journalAvailable,true);
+monthly={generatedAt:'2026-10-28T00:00:00Z',entries:{[key]:{content:'stale'}}};latest=null;
+await context.loadJournalSafe('2026-10',true);assert.equal(context.journalEntries[key].content,'updated');
+let release;const gate=new Promise(r=>release=r);
+context.fetchNewestJsonAny=async()=>{await gate;return monthly;};
+const pending=context.loadJournalSafe('2026-10',true);context.currentYM='2026-11';release();await pending;
+assert.equal(context.journalLoadedYM,'2026-10');assert.equal(context.journalEntries[key].content,'updated');
+console.log('Student journal: newer monthly data, background updates, month isolation and selection race passed');

@@ -237,7 +237,9 @@ jobs:
           done
 
           python scripts/build_teacher_calendar.py
-          python scripts/recording_publication_filter.py
+          # Text and homework publishing never depends on the recording policy DB.
+          # New recording URLs are published by the separate Zoom workflow.
+          python scripts/recording_publication_filter.py --preserve-recordings
 
           git add schedule_*.json journal_*.json journal_map_*.json teacher_schedule_*.json
 

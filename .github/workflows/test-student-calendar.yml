@@ -1,6 +1,7 @@
 name: Test student calendar
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "calendar.html"
@@ -20,6 +21,7 @@ on:
       - "calendar-schedule-source.js"
       - "calendar-request.js"
       - "scripts/test_calendar_request.mjs"
+      - "scripts/test_calendar_journal_refresh.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_late_live.mjs"
@@ -55,6 +57,7 @@ on:
       - "calendar-schedule-source.js"
       - "calendar-request.js"
       - "scripts/test_calendar_request.mjs"
+      - "scripts/test_calendar_journal_refresh.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_late_live.mjs"
@@ -88,6 +91,7 @@ jobs:
       - run: node scripts/test_lesson_prep_previous.mjs
       - run: node scripts/test_calendar_schedule_source.mjs
       - run: node scripts/test_calendar_request.mjs
+      - run: node scripts/test_calendar_journal_refresh.mjs
       - run: node scripts/test_recording_link_priority.mjs
       - run: node scripts/test_recording_release.mjs
       - run: node scripts/test_recording_emergency.mjs
