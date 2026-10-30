@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-30T14:19:18.148344+00:00",
+  "generatedAt": "2026-10-30T19:32:16.922148+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -5883,9 +5883,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-806b-9133-c3876fea4574"
+      }
     },
     "2026-10-15|4:55～6:15|minami|minami_e5_A_eng|2": {
       "content": "UNIT8 B When do you～？",
@@ -7811,9 +7809,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-13"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80d2-90d1-e5af4151af13"
+      }
     },
     "2026-10-20|4:55～6:15|hon|hon_e6_S_eng|1": {
       "content": "UNIT11　A",
@@ -11485,7 +11481,7 @@
       "content": "単元テスト",
       "page": "",
       "report": "そこまで難しい問題はなかったが、嶋田のんさんは時間が足りなくなっていた。全体的にいつもよりは出来はよさそうだった。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/wkjkjQipx5yXQzw_QW82OMicPP3UzjCvgpXaiS4O5DRXHPTgYkfZGPoqRBSj_AcoU1yyEutkNmono60_.ul3OYm8YpgxYdEhI",
       "teacher": "森松",
       "absence": "なし",
       "curriculumProgress": "±0",
