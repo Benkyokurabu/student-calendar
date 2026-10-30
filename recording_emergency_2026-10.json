@@ -2,7 +2,7 @@
   "version": 1,
   "month": "2026-10",
   "approvedAt": "2026-10-26T07:08:41.175Z",
-  "expiresAt": "2026-10-29T07:08:41.175Z",
+  "expiresAt": "2026-11-02T15:00:00.000Z",
   "sourceCommit": "3cfc3f5fd6a826de279bf1e1d5325feee2d2fba0",
   "sourceGeneratedAt": "2026-10-24T23:24:50.216494+09:00",
   "entries": {
@@ -201,5 +201,6 @@
     "2026-10-17|8:25～9:55|hon|hon_j3_A_eng|1": "https://us06web.zoom.us/rec/play/EgXHh1cBCFMCNj6D8aurjUoJJTzBdobCRSyjF_WxfeDvssk9Ib8qTKyDNOGsuy1Clf7y2Q7tQlNUc26E.4d7ihYNWjGyHp9pJ",
     "2026-10-21|4:55～6:15|minami|minami_e4_A_arith|3": "https://us06web.zoom.us/rec/play/OehE-bQE9SCSfgd7wnEF1Vu3VLrGcOgRQYhLpfz5FmivkgUgqT24Yhh28BmtjMVdDIpxTHfRkydT3-z6.WI0KUYrTYHWQur5a",
     "2026-10-22|6:35～8:05|hon|hon_j3_B_eng|1": "https://us06web.zoom.us/rec/share/j2MXaYEnYLdQOfxV6FaFMZEqvTcn8Y3_Ud9o97bst-4IjrwRpuDhTYZEwr5bhhkb.sZPoVm-4QfmldOYW"
-  }
+  },
+  "renewedAt": "2026-10-30T03:36:12.056Z"
 }
