@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-30T03:53:52.817693+00:00",
+  "generatedAt": "2026-10-30T14:19:18.148344+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3423,7 +3423,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "解説は二次方程式を中心に、明日のテストに備えてすぐに解き直しを行う。戸部は知識ゼロ。宝満は相変わらず方程式の扱いに難があった。堀切は思考が続かない、新井、瀬戸口もやはり一つのことしか思考できないのが目立った。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/MQdE17B2SU5Bxekf9ap2isV0Syocks0H2R5BAqMLtGQ638RtZ_SKBzWirsAq5aLnMuu72ALuSzdyjL12.uN9lNLFG7j41mkwr",
       "teacher": "治彦",
       "absence": "川島　東江　中村",
       "curriculumProgress": "±0",
@@ -3451,9 +3451,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-01"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-08|8:25～9:55|hon|hon_j3_B_math|1"
+      }
     },
     "2026-10-08|8:25～9:55|hon|hon_j3_S_eng|3": {
       "content": "HWGUnit4単語テストとUnit5",
@@ -5179,7 +5177,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "室伏や根本はよくできていた。式田、小尾、越川、宮本がおそらく最下位。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/cv8Da8xgwMO3S1XeOFrg5PADI4o02UwD0B3Jb_CuDTdHSy0-7ISvnmXSwEocJSt0iICwYlhb4Rb6Pr48.z_0vlyeObk90FWP7",
       "teacher": "治彦",
       "absence": "古田　田中　金子　ブイ　長山",
       "curriculumProgress": "±0",
@@ -5206,9 +5204,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-13|8:25～9:55|minami|minami_j3_B_math|1"
+      }
     },
     "2026-10-13|8:25～9:55|minami|minami_j3_S_math|2": {
       "content": "三平方の定理",
@@ -9556,9 +9552,7 @@
         "monthNum": "10",
         "weekNum": "3",
         "date": "2026-10-16"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80a3-be83-ddddc7d935fa"
+      }
     },
     "2026-10-23|4:55～6:15|hon|hon_e6_S_arith|1": {
       "content": "",
@@ -11519,9 +11513,7 @@
         "monthNum": "10",
         "weekNum": "3",
         "date": "2026-10-21"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-804d-b32a-cff5abe1e3a2"
+      }
     },
     "2026-10-28|6:35～8:05|hon|hon_j1_A_eng|1": {
       "content": "",
