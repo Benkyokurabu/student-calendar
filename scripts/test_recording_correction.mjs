@@ -12,8 +12,17 @@ ctx.recordingReleaseRules=[{eventKeys:[key],status:'blocked'}];assert.equal(ctx.
 ctx.recordingOverrides[key]={hidden:true,url:''};assert.equal(ctx.findRecordingUrlForLesson({key},{}),'');ctx.recordingOverrides={};
 rule.status='hidden';assert.equal(ctx.findRecordingUrlForLesson({key},{}),'');rule.status='public';
 const teacher={zoomRecordingData:{entries:{[key]:{url:original}},publicationRules:[rule],hiddenEntries:{}},makeKey:row=>row.key};
-vm.createContext(teacher);vm.runInContext(extract(fs.readFileSync(new URL('../lesson_prep.html',import.meta.url),'utf8'),'findRecordingForLesson'),teacher);
+const prep=fs.readFileSync(new URL('../lesson_prep.html',import.meta.url),'utf8');
+vm.createContext(teacher);vm.runInContext(['sameLessonTime','eventKeyMatchesLessonGroup','findRecordingForLesson'].map(name=>extract(prep,name)).join('\n'),teacher);
 assert.equal(teacher.findRecordingForLesson({key}).url,url);
 rule.status='hidden';assert.equal(teacher.findRecordingForLesson({key}),null);rule.status='public';
 teacher.zoomRecordingData.hiddenEntries[key]={hidden:true,url:''};assert.equal(teacher.findRecordingForLesson({key}),null);
+const partner=key.replaceAll('hon','minami');
+const paired={key,date:'2026-10-29',time:'18:35',_pairGroupKeys:['hon_j3_S_math','minami_j3_S_math']};
+teacher.zoomRecordingData={entries:{[key]:{url:original},[partner]:{url:original}},publicationRules:[{eventKeys:[partner],status:'public',recordingCorrection:true,corrected:true,url}],hiddenEntries:{}};
+assert.equal(teacher.findRecordingForLesson(paired).url,url,'the merged online preparation row uses the corrected campus');
+teacher.zoomRecordingData.publicationRules[0].status='hidden';assert.equal(teacher.findRecordingForLesson(paired),null);
+teacher.zoomRecordingData.publicationRules=[];teacher.zoomRecordingData.entries[partner]={url,recordingCorrected:true};
+assert.equal(teacher.findRecordingForLesson(paired).url,url,'published correction metadata remains available during a policy outage');
+teacher.zoomRecordingData.hiddenEntries[partner]={hidden:true,url:''};assert.equal(teacher.findRecordingForLesson(paired),null);
 console.log('Recording corrections: student and teacher links agree; automatic URL, private policy and local suppression verified');

@@ -533,6 +533,29 @@ function eventKeyMatchesLessonGroup(key, ev, groupKey) {
 
 function findRecordingForLesson(ev) {
   const publication = zoomRecordingData?.publicationRules?.find(rule => rule.eventKeys.includes(makeKey(ev)) || (rule.match && rule.match.date===makeKey(ev).split('|')[0] && rule.match.campus===makeKey(ev).split('|')[2] && rule.match.group===makeKey(ev).split('|')[3]));
+  // A preparation sheet combines the two campuses of one online lesson. Keep
+  // an explicit correction at either campus visible in that combined row.
+  const pairGroups = ev._pairGroupKeys || [];
+  if (pairGroups.length && !(publication?.recordingCorrection && publication.corrected !== false)) {
+    const entries = zoomRecordingData?.entries || {};
+    const rules = zoomRecordingData?.publicationRules || [];
+    const pairKeys = new Set([...Object.keys(entries), ...rules.filter(rule => rule.recordingCorrection).flatMap(rule => rule.eventKeys)]);
+    for (const key of pairKeys) {
+      if (key === makeKey(ev) || !pairGroups.some(group => eventKeyMatchesLessonGroup(key, ev, group))) continue;
+      const rule = rules.find(item => item.eventKeys.includes(key) || (item.match && item.match.date===key.split('|')[0] && item.match.campus===key.split('|')[2] && item.match.group===key.split('|')[3]));
+      const corrected = rule?.recordingCorrection ? rule.corrected !== false : entries[key]?.recordingCorrected;
+      if (!corrected) continue;
+      const own = entries[makeKey(ev)];
+      const suppressed = zoomRecordingData?.hiddenEntries || {};
+      if (publication?.status === 'hidden' || rule?.status === 'hidden'
+          || suppressed[makeKey(ev)]?.hidden || suppressed[makeKey(ev)]?.url === ''
+          || suppressed[key]?.hidden || suppressed[key]?.url === ''
+          || (own?.hidden && (!publication || !own.recordingPublicationKey))
+          || (entries[key]?.hidden && (!rule || !entries[key].recordingPublicationKey))) return null;
+      const url = rule?.recordingCorrection ? rule.url : entries[key]?.url;
+      if (url) return {...(entries[key] || {}), url};
+    }
+  }
   if (publication) {
     if (publication.status !== "public") return null;
     const direct = zoomRecordingData?.entries?.[makeKey(ev)];

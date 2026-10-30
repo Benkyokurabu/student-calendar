@@ -19,6 +19,7 @@ class PublicationFilterTests(unittest.TestCase):
             payload={'entries':{key:{'url':original,'content':'unchanged'}}}
             apply_payload(payload,[correction,ordinary])
             self.assertEqual(payload['entries'][key]['url'],correction['url'])
+            self.assertTrue(payload['entries'][key]['recordingCorrected'])
             self.assertEqual(payload['entries'][key]['content'],'unchanged')
         correction['status']='hidden';correction['url']=''
         payload={'entries':{key:{'url':'https://zoom.us/rec/play/original'}}}

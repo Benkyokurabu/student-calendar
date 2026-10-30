@@ -98,6 +98,8 @@ def apply_payload(payload, rules):
                         value[field] = ''
                     value['hidden'] = True
                     value['recordingPublicationKey'] = rule['key']
+                    if rule.get('recordingCorrection'):
+                        value['recordingCorrected'] = rule.get('corrected', True)
                 else:
                     if rule.get('recordingCorrection') and value.get('hidden') and not value.get('recordingPublicationKey'):
                         for field in fields:
@@ -108,6 +110,8 @@ def apply_payload(payload, rules):
                                 value[field] = rule['url']
                         value.pop('hidden', None)
                         value.pop('recordingPublicationKey', None)
+                        if rule.get('recordingCorrection'):
+                            value['recordingCorrected'] = rule.get('corrected', True)
             for key, child in list(value.items()):
                 visit(child, key if '|' in key else None)
     visit(payload)
