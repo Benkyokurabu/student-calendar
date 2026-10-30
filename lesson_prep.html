@@ -536,7 +536,9 @@ function findRecordingForLesson(ev) {
   if (publication) {
     if (publication.status !== "public") return null;
     const direct = zoomRecordingData?.entries?.[makeKey(ev)];
-    return { ...(direct || {}), url: direct?.url || publication.url };
+    const suppressed = zoomRecordingData?.hiddenEntries?.[makeKey(ev)];
+    if (publication.recordingCorrection && (suppressed?.hidden || suppressed?.url === "" || (direct?.hidden && !direct?.recordingPublicationKey))) return null;
+    return { ...(direct || {}), url: publication.recordingCorrection ? publication.url : direct?.url || publication.url };
   }
   const hidden = zoomRecordingData?.hiddenEntries?.[makeKey(ev)];
   if (hidden?.hidden === true || hidden?.url === "") return null;

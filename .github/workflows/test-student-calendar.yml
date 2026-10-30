@@ -22,6 +22,7 @@ on:
       - "calendar-request.js"
       - "scripts/test_calendar_request.mjs"
       - "scripts/test_calendar_journal_refresh.mjs"
+      - "scripts/test_recording_correction.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_late_live.mjs"
@@ -58,6 +59,7 @@ on:
       - "calendar-request.js"
       - "scripts/test_calendar_request.mjs"
       - "scripts/test_calendar_journal_refresh.mjs"
+      - "scripts/test_recording_correction.mjs"
       - "scripts/test_calendar_failure.mjs"
       - "scripts/test_calendar_schedule_source.mjs"
       - "scripts/test_calendar_late_live.mjs"
@@ -93,6 +95,7 @@ jobs:
       - run: node scripts/test_calendar_request.mjs
       - run: node scripts/test_calendar_journal_refresh.mjs
       - run: node scripts/test_recording_link_priority.mjs
+      - run: node scripts/test_recording_correction.mjs
       - run: node scripts/test_recording_release.mjs
       - run: node scripts/test_recording_emergency.mjs
       - uses: actions/setup-python@v5

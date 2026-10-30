@@ -11,6 +11,24 @@ from types import SimpleNamespace
 from recording_publication_filter import apply_payload, preserve_recording_fields, publish_text_with_existing_recordings, refresh_approved_snapshots
 
 class PublicationFilterTests(unittest.TestCase):
+    def test_correction_wins_over_automatic_import_and_keeps_hidden_recordings_hidden(self):
+        key='2026-10-29|18:35|hon|hon_j3_S_math|1'
+        correction={'key':key,'eventKeys':[key],'status':'public','recordingCorrection':True,'url':'https://zoom.us/rec/share/corrected'}
+        ordinary={'key':key,'eventKeys':[key],'status':'public','url':'https://zoom.us/rec/play/original'}
+        for original in ('https://zoom.us/rec/play/original','https://zoom.us/rec/play/reimported'):
+            payload={'entries':{key:{'url':original,'content':'unchanged'}}}
+            apply_payload(payload,[correction,ordinary])
+            self.assertEqual(payload['entries'][key]['url'],correction['url'])
+            self.assertEqual(payload['entries'][key]['content'],'unchanged')
+        correction['status']='hidden';correction['url']=''
+        payload={'entries':{key:{'url':'https://zoom.us/rec/play/original'}}}
+        apply_payload(payload,[correction,ordinary]);self.assertEqual(payload['entries'][key]['url'],'')
+        self.assertTrue(payload['entries'][key]['hidden'])
+        correction.update(status='public',url='https://zoom.us/rec/share/corrected')
+        payload={'entries':{key:{'url':'','hidden':True}}}
+        apply_payload(payload,[correction,ordinary]);self.assertEqual(payload['entries'][key]['url'],'')
+        self.assertTrue(payload['entries'][key]['hidden'])
+
     def test_journal_only_publication_never_contacts_the_policy_service(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

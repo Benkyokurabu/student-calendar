@@ -72,7 +72,10 @@ def apply_payload(payload, rules):
                 raise ValueError('Original test recording storage was not confirmed; stop publication.')
         rules[:] = load_rules()
         automatic = [rule for rule in rules if rule.get('match')]
-    by_key = {key: rule for rule in rules for key in rule['eventKeys']}
+    by_key = {}
+    for rule in rules:
+        for key in rule['eventKeys']:
+            by_key.setdefault(key, rule)
     by_hash = {digest: rule for rule in rules for digest in rule.get('urlHashes', [])}
 
     def visit(value, event_key=None):
@@ -96,11 +99,15 @@ def apply_payload(payload, rules):
                     value['hidden'] = True
                     value['recordingPublicationKey'] = rule['key']
                 else:
-                    for field in fields:
-                        if not value[field] or value.get('hidden'):
-                            value[field] = rule['url']
-                    value.pop('hidden', None)
-                    value.pop('recordingPublicationKey', None)
+                    if rule.get('recordingCorrection') and value.get('hidden') and not value.get('recordingPublicationKey'):
+                        for field in fields:
+                            value[field] = ''
+                    else:
+                        for field in fields:
+                            if rule.get('recordingCorrection') or not value[field] or value.get('hidden'):
+                                value[field] = rule['url']
+                        value.pop('hidden', None)
+                        value.pop('recordingPublicationKey', None)
             for key, child in list(value.items()):
                 visit(child, key if '|' in key else None)
     visit(payload)
