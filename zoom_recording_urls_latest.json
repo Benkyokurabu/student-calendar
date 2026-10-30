@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-10-30T20:20:05.377820+09:00",
-  "matched": 248,
-  "missing": 131,
+  "generatedAt": "2026-10-30T22:04:05.657486+09:00",
+  "matched": 249,
+  "missing": 130,
   "entries": {
     "2026-10-01|4:55～6:15|minami|minami_e4_A_jp|3": {
       "url": "https://us06web.zoom.us/rec/play/fyDykewmxArlSuyKu6SsHGUfM3wD71hIJF4F7hcUxpfUSSDLpAwWkDZ1bzA6m73IvcSIB-ifOA9c1aG-.9nqULDo40fhOOmFv",
@@ -5488,6 +5488,28 @@
       "startOffsetMinutes": 17.2,
       "recordingDurationMinutes": 72.7,
       "lessonOverlapMinutes": 72.7
+    },
+    "2026-10-30|8:25～9:55|hon|hon_j3_A_math|1": {
+      "url": "https://us06web.zoom.us/rec/play/4Zoml7wAoSe_1DwretpBj9EyOuLLSgqoMNYI4QCPxAI4UuGlK_F_1_pykG7VzXUBLTl7-JwNYzhRfWva.bKizgTIirpVDSZB0",
+      "recordingStart": "2026-10-30T20:29:48+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-10-30",
+      "time": "8:25～9:55",
+      "campus": "hon",
+      "room": "1",
+      "grade": "j3",
+      "class": "A",
+      "subject": "math",
+      "label": "中３A 数学",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-10-30|8:25～9:55|j3|A|math",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-segment-overlap-v4",
+      "startOffsetMinutes": 4.8,
+      "recordingDurationMinutes": 83.1,
+      "lessonOverlapMinutes": 83.1
     },
     "2026-10-22|6:35～8:05|hon|hon_j3_B_eng|1": {
       "url": "https://us06web.zoom.us/rec/share/j2MXaYEnYLdQOfxV6FaFMZEqvTcn8Y3_Ud9o97bst-4IjrwRpuDhTYZEwr5bhhkb.sZPoVm-4QfmldOYW",
