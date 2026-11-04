@@ -110,6 +110,23 @@ def get_months_to_process(month_arg=None, *, script_dir=None):
 SKIP_DIRS = {"_backup", "退避", "__pycache__"}
 
 
+def get_months_to_maintain(months, month_arg=None):
+    """Late previous-month entries need extraction, not extra workbook rewrites.
+
+    Keep the pre-existing month-end maintenance window and explicit manual
+    maintenance. The added all-month refresh must not multiply costly creation
+    and schedule rewrites for an already completed month.
+    """
+    if month_arg:
+        return list(months)
+    from calendar import monthrange
+    today = journal_today()
+    if today.day > monthrange(today.year, today.month)[1] - 5:
+        return list(months)
+    current_month = f"{today.year}-{today.month:02d}"
+    return [month for month in months if month >= current_month]
+
+
 def find_workbook_in_journal(journal_dir: Path, filename: str):
     p = journal_dir / filename
     if p.exists():
@@ -373,6 +390,7 @@ def main():
     repo_dir = script_dir.parent  # リポのルート
     month_arg = sys.argv[1] if len(sys.argv) > 1 else None
     months = get_months_to_process(month_arg, script_dir=script_dir)
+    maintenance_months = get_months_to_maintain(months, month_arg)
 
     journal_dir = script_dir / "_cloud_journal"
     if not journal_dir.exists():
@@ -382,6 +400,7 @@ def main():
     print("=" * 48)
     print("  CI: スケジュール＋授業日誌 JSON 生成")
     print(f"  対象月: {', '.join(months)}")
+    print(f"  月シート作成・予定枠保守: {', '.join(maintenance_months)}")
     print(f"  日誌フォルダ: {journal_dir}")
     print("=" * 48)
     print()
@@ -447,7 +466,7 @@ def main():
 
     # --- 1.5. 月シート作成（必要な場合） ---
     print("[1.5] 授業日誌Excelに新しい月シートを追加中...")
-    created = create_month_sheets(script_dir, months, journal_dir)
+    created = create_month_sheets(script_dir, maintenance_months, journal_dir)
     if created > 0:
         print(f"  → {created} 個のシートを作成しました")
     else:
@@ -527,7 +546,7 @@ def main():
     _RE_SCH = _re_sch.compile(r"^(\d{4})年0?(\d{1,2})月スケジュール\.xlsm$")
     update_journal_py = repo_dir / "update_journal.py"
     if update_journal_py.exists():
-        for m in months:
+        for m in maintenance_months:
             month_num = int(m.split("-")[1])
             sch_path = None
             for p in script_dir.iterdir():

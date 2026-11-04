@@ -220,6 +220,7 @@ jobs:
           python ci_extract_and_push.py
         env:
           CI: true
+          PYTHONUNBUFFERED: '1'
 
       - name: Upload modified Excel back to OneDrive
         continue-on-error: true
