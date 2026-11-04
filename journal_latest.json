@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-04T11:25:04.001219+00:00",
+  "generatedAt": "2026-11-04T12:32:16.424944+00:00",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -1062,18 +1062,20 @@
       }
     },
     "2026-11-04|4:55～6:15|hon|hon_e5_A_jp|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "詩",
+      "page": "練成テキストｐ２８～２９",
+      "report": "今回は詩を扱った。言葉の意味を深堀し、メタファーなどを確認しながら進めた。かなり細かく事前に解説をしたので、問題演習自体は出来ていたが、一人で一から理解するのはまだまだ難しいようだった。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "松本",
+      "curriculumProgress": "±",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "漢字帳ｐ１４３～１４６"
+      ],
       "prevEntry": {
         "content": "慣用句",
         "page": "漢字帳ｐ１３７～１４０",
@@ -1095,7 +1097,7 @@
     "2026-11-04|4:55～6:15|hon|hon_e6_A_jp|1": {
       "content": "",
       "page": "",
-      "report": "",
+      "report": "故事成語の宿題の答え合わせから。新出漢字も含め漢字帳にそこそこ時間がかかったので、説明文は当然終わらず。次回続きを。第一段落まで読み取り。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "",
@@ -1125,20 +1127,20 @@
       }
     },
     "2026-11-04|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "分数",
-      "page": "P75まで",
-      "report": "分数②まで進むことができた。七斗がいないのは実は大きいかも。分数の意味ははるたは最初分かっていなかったが最後にはわかってくれたと思う。",
+      "content": "③帯分数",
+      "page": "P77",
+      "report": "帯分数が終わったところまで。授業中、他の生徒とのやり取りを聞いていないものばかり。少しだけ厳しめに授業の受け方を伝えた。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "高橋",
+      "absence": "なし",
       "curriculumProgress": "＋0.3",
       "note": "",
       "sessionNumber": "35",
       "monthNum": "11",
       "weekNum": "1",
       "homework": [
-        "ドリルP70～７２",
-        "P73もできたらやって良い"
+        "ドリルP73～75",
+        "計算P71～73"
       ],
       "prevEntry": {
         "content": "分数",
