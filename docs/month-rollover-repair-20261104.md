@@ -15,3 +15,22 @@
 変更前バックアップは同フォルダのbefore_monthly_previous_journal_20261104等。復旧は今回のPython/workflow/test変更のみrevertし、正しく復旧した日誌・録画データは保持する。
 
 開いたままの生徒カレンダーでは、従来30秒更新の対象が公開可否と日誌だけで、後から更新された録画URLのJSONを再取得していなかった。既存の更新周期に月別/最新の録画JSON再取得を追加し、新規録画を表示へ反映する。別月・通信失敗で既存リンクを消さず、非公開ルールを保持し、変更がない場合は画面を作り直さない。新規リンク・失敗保持・非公開維持・別月・遅延応答の試験を追加し、既存の日誌更新・公開制限・URL優先試験も成功。Vercelへの追加ポーリングは増やさず、追加取得はGitHubの静的JSONだけ。
+
+## 過去の月替わり修正との照合
+
+本人の「以前も直したはず」という指摘を受け、Git履歴と各時点の対象月決定コードを比較した。過去の修正は存在する。
+
+| 日付 | 過去の変更 | 今回との関係 |
+| --- | --- | --- |
+| 2026-06-01 | [翌月の日誌JSONもGitHub Actionsで生成](https://github.com/Benkyokurabu/student-calendar/commit/794b9bee4be8b07d47d2adc33e3051e218a828b2) | 翌月の準備不足を修正。月初の前月再取得は未対応。 |
+| 2026-07-01 | [月別シートの作成をCIへ追加](https://github.com/Benkyokurabu/student-calendar/commit/97262293c1aaaf5dbb559599680c386cb2d7b9e8) | 新月の原本シート不足を修正。前月の日誌の取り込み条件は残存。 |
+| 2026-07-09 | [処理対象の全月の予定JSONを生成](https://github.com/Benkyokurabu/student-calendar/commit/918b09b7e238140297eb9e7fe02e93704f68b949) | 翌月予定の未生成による途中停止を修正。前月の条件は残存。 |
+| 2026-10-28 | [開いた授業準備シートで公開日誌を再取得](https://github.com/Benkyokurabu/student-calendar/commit/05ad47f4fca7b1115c2873c885e1b51c3b8f8a1d) | 画面を開いたままの更新を修正。取得元の前月JSONが更新されない場合は届かない。 |
+
+6月1日・7月1日・7月9日の変更直後と10月31日公開版の `get_months_to_process` を照合し、いずれにも「前月は月末の5日間だけ」という条件があった。確認した範囲では過去の修正が巻き戻された根拠はなく、月初以降の前月追記を拾う別の不足が残っていた。今回の8787279はこの条件を期間制限なしの前月＋当月に置き換える。
+
+## 2026-11-04 16:15 JST時点の検証
+
+- d260261の[生徒カレンダー試験](https://github.com/Benkyokurabu/student-calendar/actions/runs/41789025001)、[Pages配信](https://github.com/Benkyokurabu/student-calendar/actions/runs/41789023462)、[録画公開処理](https://github.com/Benkyokurabu/student-calendar/actions/runs/41789025084)はいずれも成功。
+- 公開ページそのものを使い、録画データだけ初回空欄→公開済みに変えたブラウザー検証で、390pxと1280pxとも30秒周期後にリンクが出現。ページの再読み込みなし、選択日は維持、JavaScriptエラー0。通常の復旧済み表示と匿名動画再生の検証とは別に行った。
+- [全件の日誌自動更新](https://github.com/Benkyokurabu/student-calendar/actions/runs/41788461696)は処理中。新しい月替わり試験と原本ダウンロード・取得鮮度確認は成功済み。全件の原本処理・アップロード・JSONコミットまで完了したとはまだ扱わない。
