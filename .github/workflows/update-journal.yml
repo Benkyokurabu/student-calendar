@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/update-journal.yml'
       - 'scripts/check_journal_freshness.py'
+      - 'scripts/safe_journal_upload.py'
+      - 'scripts/test_safe_journal_upload.py'
       - 'scripts/check_journal_publish_age.py'
       - 'scripts/ci_extract_and_push.py'
       - 'scripts/sync_journal_across_campus.py'
@@ -35,7 +37,12 @@ on:
     # JST 04:17 / 07:17
     - cron: '17 19 * * *'
     - cron: '17 22 * * *'
-  workflow_dispatch:  # 手動実行も可能
+  workflow_dispatch:
+    inputs:
+      validate_only:
+        description: 'Verify live concurrency guards without changing journal originals or public JSON'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -87,6 +94,9 @@ jobs:
 
       - name: Install Python dependencies
         run: pip install openpyxl
+
+      - name: Verify atomic journal upload and publication conflict handling
+        run: python -m unittest discover -s scripts -p test_safe_journal_upload.py -v
 
       - name: Verify journal dropdowns and unused-slot colors
         run: python -m unittest discover -s scripts -p test_journal_input_controls.py -v
@@ -201,12 +211,21 @@ jobs:
             cat scripts/journal_freshness_warning.txt
           fi
 
+      - name: Freeze original journal bytes and immutable versions before maintenance
+        run: |
+          python scripts/safe_journal_upload.py capture \
+            --remote "onedrive:●勉強クラブ共有/09　授業日誌" \
+            --local-dir scripts/_cloud_journal \
+            --manifest scripts/_journal_original_manifest.json
+
       - name: Copy schedule Excel to scripts folder
+        if: ${{ inputs.validate_only != true }}
         run: |
           cp scripts/_schedule/*.xlsm scripts/ 2>/dev/null || echo "No schedule xlsm found"
           ls scripts/*.xlsm 2>/dev/null || true
 
       - name: Download registered common master from OneDrive
+        if: ${{ inputs.validate_only != true }}
         # An editing copy never has this name. Until registration, no file is
         # downloaded and the existing per-workbook templates continue to work.
         run: |
@@ -215,6 +234,7 @@ jobs:
             --transfers 1 --checkers 1
 
       - name: Run pipeline
+        if: ${{ inputs.validate_only != true }}
         run: |
           cd scripts
           python ci_extract_and_push.py
@@ -222,14 +242,30 @@ jobs:
           CI: true
           PYTHONUNBUFFERED: '1'
 
-      - name: Upload modified Excel back to OneDrive
-        continue-on-error: true
+      # Any concurrent edit, lock, authentication error, or uncertain response
+      # stops this job before its generated JSON can replace the public data.
+      - name: Upload only unchanged original journal versions with atomic If-Match
+        if: ${{ inputs.validate_only != true }}
+        env:
+          JOURNAL_UPLOAD_PROBE_PARENTS: ${{ vars.JOURNAL_UPLOAD_PROBE_PARENTS }}
         run: |
-          rclone copy scripts/_cloud_journal/ "onedrive:●勉強クラブ共有/09　授業日誌" \
-            --transfers 8 --checkers 16 --update --ignore-errors
-          echo "Upload step done (some files may be locked)"
+          python scripts/safe_journal_upload.py apply \
+            --remote "onedrive:●勉強クラブ共有/09　授業日誌" \
+            --local-dir scripts/_cloud_journal \
+            --manifest scripts/_journal_original_manifest.json
+
+      - name: Verify live conditional writes without modifying originals
+        if: ${{ inputs.validate_only == true }}
+        env:
+          JOURNAL_UPLOAD_PROBE_PARENTS: ${{ vars.JOURNAL_UPLOAD_PROBE_PARENTS }}
+        run: |
+          python scripts/safe_journal_upload.py verify \
+            --remote "onedrive:●勉強クラブ共有/09　授業日誌" \
+            --local-dir scripts/_cloud_journal \
+            --manifest scripts/_journal_original_manifest.json
 
       - name: Commit and push JSON files
+        if: ${{ inputs.validate_only != true }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |

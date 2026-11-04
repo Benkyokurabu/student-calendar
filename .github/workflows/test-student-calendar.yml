@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "scripts/safe_journal_upload.py"
+      - "scripts/test_safe_journal_upload.py"
+      - "scripts/retry_deferred_journal_slots.py"
+      - ".github/workflows/update-journal.yml"
       - "calendar.html"
       - "lesson_prep.html"
       - "lesson-prep-embed.js"
@@ -42,6 +46,10 @@ on:
       - ".github/workflows/publish-zoom-recording-urls.yml"
   pull_request:
     paths:
+      - "scripts/safe_journal_upload.py"
+      - "scripts/test_safe_journal_upload.py"
+      - "scripts/retry_deferred_journal_slots.py"
+      - ".github/workflows/update-journal.yml"
       - "calendar.html"
       - "lesson_prep.html"
       - "lesson-prep-embed.js"
@@ -105,6 +113,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install openpyxl
+      - run: python -m unittest discover -s scripts -p "test_safe_journal_upload.py" -v
+      - run: python -m unittest discover -s scripts -p "test_retry_deferred_journal_slots.py" -v
       - run: python -m unittest discover -s scripts/zoomURL -p "test*.py"
       - run: python -m unittest discover -s scripts -p "test_recording_publication_filter.py"
       - run: npm install --no-save --package-lock=false playwright@1.62.1
