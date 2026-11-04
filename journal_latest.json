@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-04T08:47:24",
+  "generatedAt": "2026-11-04T11:25:04.001219+00:00",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -1160,18 +1160,21 @@
       }
     },
     "2026-11-04|4:55～6:15|minami|minami_e6_A_arith|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "場合の数",
+      "page": "p85まで",
+      "report": "樹形図の書き方に嶋田のんさんがやや苦労していたが、リーグ戦やトーナメント戦の試合数の問題はよくできていた。",
       "recordingUrl": "",
       "teacher": "森松",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
+      "note": "次回宿題メモ印刷する",
       "sessionNumber": "35",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "ホープドリルp80～83",
+        "計算ドリルp74～75"
+      ],
       "prevEntry": {
         "content": "単元テスト",
         "page": "",
