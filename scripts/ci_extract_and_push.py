@@ -6,12 +6,12 @@ rclone でダウンロード済みのファイルを使って JSON を生成す�
 git commit/push はワークフロー側で行うため、ここでは行わない。
 """
 
-import calendar
 import json
 import subprocess
 import sys
 import os
-from datetime import date
+from datetime import date, datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 import shutil
 from copy import copy
@@ -67,23 +67,22 @@ def warn_about_empty_past_content(repo_dir: Path, month: str):
         print(f"[CONTENT_CHECK][WARN] Could not inspect {journal_path.name}: {exc}")
 
 
+def journal_today():
+    """The cloud runner's UTC date must not decide a Japanese school month."""
+    return datetime.now(ZoneInfo("Asia/Tokyo")).date()
+
+
 def get_months_to_process(month_arg=None, *, script_dir=None):
     if month_arg:
         return [month_arg]
-    today = date.today()
-    last_day = calendar.monthrange(today.year, today.month)[1]
+    today = journal_today()
     current_month = f"{today.year}-{today.month:02d}"
 
-    months = []
-
-    if today.day > last_day - 5:
-        if today.month == 1:
-            prev_month = f"{today.year - 1}-12"
-        else:
-            prev_month = f"{today.year}-{today.month - 1:02d}"
-        months.append(prev_month)
-
-    months.append(current_month)
+    # Preparation sheets keep reading the previous month's final lessons.
+    # Refresh that month on every run, including late corrections entered
+    # after rollover. A narrow first-week window would recreate the same bug.
+    prev_month = f"{today.year - 1}-12" if today.month == 1 else f"{today.year}-{today.month - 1:02d}"
+    months = [prev_month, current_month]
 
     # 来月のスケジュールExcelが存在すれば来月も処理対象に含める
     if today.month == 12:

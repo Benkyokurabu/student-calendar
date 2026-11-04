@@ -11,6 +11,7 @@ on:
       - 'scripts/sync_journal_across_campus.py'
       - 'scripts/test_sync_journal_across_campus.py'
       - 'scripts/test_journal_month_failure.py'
+      - 'scripts/test_journal_month_rollover.py'
       - 'scripts/extract_journal_to_json.py'
       - 'scripts/test_extract_journal_same_day.py'
       - 'scripts/test_journal_counter_headers.py'
@@ -119,6 +120,9 @@ jobs:
 
       - name: Verify month generation failures stop publication
         run: python -m unittest discover -s scripts -p test_journal_month_failure.py -v
+
+      - name: Verify previous-month journals remain current after rollover
+        run: python -m unittest discover -s scripts -p test_journal_month_rollover.py -v
 
       - name: Verify cross-campus journal field synchronization
         run: python -m unittest discover -s scripts -p test_sync_journal_across_campus.py -v
