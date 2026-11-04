@@ -527,18 +527,27 @@
     recordingRefreshPending = true;
     const ym = currentYM;
     try {
-    const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings]);
-    const [data, emergency] = await Promise.all([
+    const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings, zoomRecordingEntries]);
+    const [data, emergency, monthly, latest] = await Promise.all([
       fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
       fetchNewestJsonAny([`recording_emergency_${ym}.json`, rawJsonUrl(`recording_emergency_${ym}.json`)]),
+      fetchNewestJsonAny([`zoom_recording_urls_${ym}.json`, rawJsonUrl(`zoom_recording_urls_${ym}.json`)]),
+      fetchNewestJsonAny(["zoom_recording_urls_latest.json", rawJsonUrl("zoom_recording_urls_latest.json")]),
     ]);
     if (currentYM !== ym || recordingsLoadedYM !== ym) return;
     if (emergency?.version === 1 && emergency.month === ym) emergencyRecordings = emergency;
+    // New recordings must appear in an already open calendar too. A failed
+    // refresh or another month's latest file must not clear accepted links.
+    if (monthly?.month === ym || latest?.month === ym) zoomRecordingEntries = {
+      ...zoomRecordingEntries,
+      ...normalizeRecordingEntries(latest?.month === ym ? latest : null),
+      ...normalizeRecordingEntries(monthly?.month === ym ? monthly : null),
+    };
     publicationAvailable = Array.isArray(data?.rules);
     if (publicationAvailable) publicationRules = data.rules;
     await loadJournalSafe(ym, true);
     if (currentYM !== ym) return;
-    if (JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings]) !== before) renderAll();
+    if (JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings, zoomRecordingEntries]) !== before) renderAll();
     updateDetailNotice();
     } finally { recordingRefreshPending = false; }
   }, 30000);
