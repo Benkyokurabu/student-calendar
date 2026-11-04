@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-04T08:29:20",
+  "generatedAt": "2026-11-04T09:52:37.971686+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -4268,9 +4268,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8004-a388-c931ad74d3b4"
+      }
     },
     "2026-10-10|8:25～9:55|minami|minami_j3_S_jp|1": {
       "content": "単元テストＳ③",
@@ -5094,7 +5092,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "今回は単元テスト③を実施。最高点は豊田の６０点。全体的に低い水準でまとまっていた。抜けて出来ない生徒もいなかった。今回は授業中に出る箇所を強調して迎えたテストだったが、その割に出来が悪かった。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/play/O7h0BPcCFAJrrfSVI-9jDmJvGdjwGq4ty3Eacl29BjiT7a1jXLDwW29ZNMAJ72z5wiboMIuzVr_tHSqU.oy6cSIn9zT8C5UEs",
       "teacher": "岩本",
       "absence": "井上",
       "curriculumProgress": "±0",
@@ -5119,9 +5117,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-13|8:25～9:55|hon|hon_j2_A_jp|2"
+      }
     },
     "2026-10-13|8:25～9:55|hon|hon_j3_A_eng|1": {
       "content": "Here We Go UNIT5　Goal",
@@ -9300,7 +9296,7 @@
       "content": "単元テスト③",
       "page": "",
       "report": "海老根一輝君は答えの書き方が一部乱れていて符号が見づらいことがある。今回は丸にする。",
-      "recordingUrl": "",
+      "recordingUrl": "https://us06web.zoom.us/rec/share/EdeYnoiaa4Jp5ScusOXHCw3LKpMzWfbKud2-TVQB6So8PX_bPGVisaKWYSf3vZCo.Gs9H86Aca8B_RL_G",
       "teacher": "森松",
       "absence": "相吉澤遼\n窪田夏芽",
       "curriculumProgress": "±0",
@@ -9327,9 +9323,7 @@
         "monthNum": "10",
         "weekNum": "3",
         "date": "2026-10-15"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "2026-10-22|8:25～9:55|hon|hon_j2_A_math|2"
+      }
     },
     "2026-10-22|8:25～9:55|hon|hon_j3_B_math|1": {
       "content": "⑦",
@@ -11116,9 +11110,7 @@
         "monthNum": "10",
         "weekNum": "3",
         "date": "2026-10-20"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80ad-9b64-c499e202c8f8"
+      }
     },
     "2026-10-27|6:35～8:05|minami|minami_j2_S_math|2": {
       "content": "13直角三角形の合同",
