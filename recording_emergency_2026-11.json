@@ -1,10 +1,10 @@
 {
   "version": 1,
   "month": "2026-11",
-  "approvedAt": "2026-11-04T09:52:47.525360+00:00",
-  "generatedAt": "2026-11-04T09:52:47.525360+00:00",
-  "expiresAt": "2026-11-11T09:52:47.525360+00:00",
-  "sourceGeneratedAt": "2026-11-04T15:34:17.825631+09:00",
+  "approvedAt": "2026-11-04T17:47:24.589129+00:00",
+  "generatedAt": "2026-11-04T17:47:24.589129+00:00",
+  "expiresAt": "2026-11-11T17:47:24.589129+00:00",
+  "sourceGeneratedAt": "2026-11-04T22:38:52.846748+09:00",
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
     "2026-11-02|6:35～8:05|minami|minami_j1_S_math|1": "https://us06web.zoom.us/rec/play/NZYopsrsXtk25__G3UNOPEFHR4Y0UZWze1NYAzYsUSbdUDoFHl5a1BEBcbmx1wDVnY6B7EZYYMkvVcka.cdOPjoCd-v7RQNV2",
@@ -29,6 +29,19 @@
     "2026-11-03|8:25～9:55|hon|hon_j2_A_jp|2": "https://us06web.zoom.us/rec/play/r6M1utGRO8YBo5rzV0EVi9qPJb9tkHRQjjUCSa4Fnlqj6vrdpVrLEZqAqBxioizfnHm83Xfy57ubVVrl.Ix8q9ppKx6igchdd",
     "2026-11-03|8:25～9:55|minami|minami_j2_S_jp|2": "https://us06web.zoom.us/rec/play/lDCADcCzGtXWmBn1kjA6MnWLae_Vo04BYAckYJJKNnCKqrPy3bQjipmJQUhETwFQJsBvThnCF5XbtCxF.lp5diUtMoO2pGaVT",
     "2026-11-03|8:25～9:55|hon|hon_j3_A_eng|1": "https://us06web.zoom.us/rec/play/-MbUrf0j8Pmm9ChG6Jj2geLXoJ9jJXFZA8hJIO4KiByy482S1A2Ia_1VWuKuVIq6QIVcmfvKywbZS2g.1ULmLSaJFowClyn0",
-    "2026-11-03|8:25～9:55|minami|minami_j3_B_math|1": "https://us06web.zoom.us/rec/play/xaPfzE9jO2acCNAIP0XIe8G1PTHkgtw3eIOHYIpmcnOS5Jp9W0qMx6SSQbjzJXKU7Yd3vHYK6c63lPpO.lKBEhHq2Im_tTimD"
+    "2026-11-03|8:25～9:55|minami|minami_j3_B_math|1": "https://us06web.zoom.us/rec/play/xaPfzE9jO2acCNAIP0XIe8G1PTHkgtw3eIOHYIpmcnOS5Jp9W0qMx6SSQbjzJXKU7Yd3vHYK6c63lPpO.lKBEhHq2Im_tTimD",
+    "2026-11-04|4:55～6:15|minami|minami_e4_A_arith|3": "https://us06web.zoom.us/rec/play/XaKD-XqU859lL9pKSRbw_vi6xKY1HyyxYfBfUfOFQ3uHSM8SNUXwDtoWjCZRGws0UJHiqeoEzoCX-xQ.z8mBhn43KwU7QBG7",
+    "2026-11-04|4:55～6:15|hon|hon_e5_A_jp|2": "https://us06web.zoom.us/rec/play/YqdHjLIjAlAf_zO_mdTZGJopTCC2MEq38oNS5knKt2AchLchG4ITd1f8nMzjiadKObdn_VGDQQ7FJMtu.Cw15LLgxC48Ch9T0",
+    "2026-11-04|4:55～6:15|minami|minami_e6_A_arith|1": "https://us06web.zoom.us/rec/play/4c1O6XEv7U-8muUpSI4AJxHx-YvlSjg4Bk11v1Eh2eHJiY7oC0bzJCqXFNVNfAvxIi1od1GgoBgNymtq.s1Tfqyakz5ZPdr7-",
+    "2026-11-04|6:35～8:05|hon|hon_j1_A_eng|2": "https://us06web.zoom.us/rec/play/skcIG2zyef-6Vuv1W7zP7NPCcErhM0_nFhtr0_XP5zGCBUS7QoYnd8ZLOJ-eOfPUx-d4BrWuJTl9ZxgN.4eE4E12zW38JhbPm",
+    "2026-11-04|6:35～8:05|minami|minami_j1_B_math|2": "https://us06web.zoom.us/rec/play/v_GOH4i4U-jq2LjbqP11bR8RvJDLX98dX3fejmBI0zu4aUW7U1KO41lAvY04i_o657vXTI9juDfmtNo.nMLa7Ic31mtmC4HV",
+    "2026-11-04|6:35～8:05|minami|minami_j3_A_math|1": "https://us06web.zoom.us/rec/play/V1tjIZ13jn7PHGuxs-RFKUE8n59MaYzXupZXPvyeq7Cqf-rLHCgdBFWwF0uUv1FAuaV8WTaMLNgUyUfU.3swYFTK4xPeaCiHx",
+    "2026-11-04|6:35～8:05|hon|hon_j3_S_jp|1": "https://us06web.zoom.us/rec/play/QS8YdFcWqUWKzUzIplgBosGnxuUFaaFQNQYxL9F2pYg6Gmz4f8oMTHgLREwAKCeDsu2ocszh5QmSKbYw.AzJn8G0rTkjZlIUI",
+    "2026-11-04|8:25～9:55|minami|minami_j2_B_math|1": "https://us06web.zoom.us/rec/play/7Qk3llKboTAGeVdSSsu5voBbwxL5gMK4A0D_8tng1xF9UMeNxOIiVI6XT-Ez-xqqyUEXvRvMZoP7iyR7.fEng5rb2T8-H9Oqa",
+    "2026-11-04|8:25～9:55|hon|hon_j2_S_eng|1": "https://us06web.zoom.us/rec/play/0Jn9xAP3Bi8m1U8WSrLN2xhAa-4Y56q-OvJfnfu2atyBOWekf-rlr-DCFhoScJSzzhqDjCQ_y5b5JzRL.YMaK2JU9fWur5QU-",
+    "2026-11-04|8:25～9:55|hon|hon_j3_A_jp|4": "https://us06web.zoom.us/rec/play/Y-uObtoLvEwf-254ZK1Mr1I5N_ZsZPNFYKRRCoAY1PdxEVgHsgrZJHKsbLQSdxpBotKqIEp7mEejoo5o.6knNO9iYaWCf-X4q",
+    "2026-11-04|8:25～9:55|minami|minami_j3_A_jp|5": "https://us06web.zoom.us/rec/play/Y-uObtoLvEwf-254ZK1Mr1I5N_ZsZPNFYKRRCoAY1PdxEVgHsgrZJHKsbLQSdxpBotKqIEp7mEejoo5o.6knNO9iYaWCf-X4q",
+    "2026-11-04|8:25～9:55|hon|hon_j3_X_math|6": "https://us06web.zoom.us/rec/play/ECIPc-Nn11atnpBTcegj74Vave0EIZjw0dxjJ46B3FekR_CYb-l6sWxHC0fscix4Kavv20sQhLObFf_7.h6QQLFxCGuvhjWMF",
+    "2026-11-04|8:25～9:55|minami|minami_j3_X_math|4": "https://us06web.zoom.us/rec/play/ECIPc-Nn11atnpBTcegj74Vave0EIZjw0dxjJ46B3FekR_CYb-l6sWxHC0fscix4Kavv20sQhLObFf_7.h6QQLFxCGuvhjWMF"
   }
 }
