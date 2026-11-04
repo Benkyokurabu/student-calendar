@@ -3,9 +3,11 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from safe_journal_upload import (GraphError, UploadSafetyError, apply_manifest,
-    capture_manifest, digest, read_original, replace_existing_if_unchanged, verify_manifest)
+    capture_manifest, digest, main, read_original, replace_existing_if_unchanged,
+    verify_listing_unchanged, verify_manifest)
 
 
 class FakeGraph:
@@ -100,6 +102,53 @@ class SafeUploadTests(unittest.TestCase):
         self.graph.items['book']['parentReference']['driveId']='another-shared-drive'
         with self.assertRaises(UploadSafetyError):
             capture_manifest(self.graph,self.root,self.listing,'onedrive:test')
+        self.assertEqual(self.graph.puts,[])
+
+    def test_capture_rejects_original_renamed_since_listing_even_with_same_bytes(self):
+        self.graph.items['book']['name']='renamed.xlsx'
+        with self.assertRaises(UploadSafetyError):
+            capture_manifest(self.graph,self.root,self.listing,'onedrive:test')
+        self.assertEqual(self.graph.puts,[])
+
+    def test_capture_rejects_duplicate_paths_case_collisions_and_item_aliases(self):
+        cases = [self.listing+self.listing,
+                 self.listing+[{'Path':'BOOK.xlsx','ID':'drive#another-item'}],
+                 self.listing+[{'Path':'moved/book.xlsx','ID':'DRIVE#book'}]]
+        for listing in cases:
+            with self.subTest(listing=listing),self.assertRaises(UploadSafetyError):
+                capture_manifest(self.graph,self.root,listing,'onedrive:test')
+
+    def test_final_listing_requires_exact_path_to_identity_mapping(self):
+        verify_listing_unchanged(self.manifest,copy.deepcopy(self.listing))
+        verify_listing_unchanged(self.manifest,[{'Path':'book.xlsx','ID':'DRIVE#book'}])
+        cases = [[],
+                 [{'Path':'renamed.xlsx','ID':'drive#book'}],
+                 [{'Path':'moved/book.xlsx','ID':'drive#book'}],
+                 [{'Path':'book.xlsx','ID':'drive#replacement'}],
+                 self.listing+[{'Path':'new.xlsx','ID':'drive#new'}],
+                 self.listing+self.listing]
+        for listing in cases:
+            with self.subTest(listing=listing),self.assertRaises(UploadSafetyError):
+                verify_listing_unchanged(self.manifest,listing)
+
+    def test_cli_capture_relists_before_saving_and_rejects_move_or_rename(self):
+        output=self.root/'manifest.json'
+        argv=['safe_journal_upload.py','capture','--remote','onedrive:test',
+              '--local-dir',str(self.root),'--manifest',str(output)]
+        for final in [self.listing,
+                      [{'Path':'renamed.xlsx','ID':'drive#book'}],
+                      [{'Path':'moved/book.xlsx','ID':'drive#book'}]]:
+            output.unlink(missing_ok=True)
+            with self.subTest(final=final),patch('sys.argv',argv),\
+                 patch('safe_journal_upload.GraphClient.from_rclone',return_value=self.graph),\
+                 patch('safe_journal_upload.remote_listing',side_effect=[self.listing,final]) as listing:
+                if final==self.listing:
+                    self.assertEqual(main(),0)
+                    self.assertEqual(json.loads(output.read_text(encoding='utf-8')),self.manifest)
+                else:
+                    with self.assertRaises(UploadSafetyError):main()
+                    self.assertFalse(output.exists())
+                self.assertEqual(listing.call_count,2)
         self.assertEqual(self.graph.puts,[])
 
     def test_unchanged_workbooks_do_not_upload_or_need_a_probe(self):

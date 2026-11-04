@@ -176,17 +176,44 @@ def split_rclone_id(value):
     return drive, item
 
 
-def capture_manifest(client, root, listing, remote):
-    entries = {}
+def listing_identities(listing):
+    """Reject ambiguous paths and aliases before accepting a remote snapshot."""
+    identities, seen_paths, seen_items = {}, set(), set()
     for listed in listing:
         relative = listed.get('Path', '')
         if not relative.lower().endswith('.xlsx') or any(part.startswith(('_backup', '退避')) for part in PurePosixPath(relative).parts[:-1]):
             continue
+        path = PurePosixPath(relative)
+        if path.is_absolute() or '..' in path.parts or path.as_posix() != relative or '\\' in relative:
+            raise UploadSafetyError('Invalid relative workbook path in remote listing')
         drive, item = split_rclone_id(listed.get('ID', ''))
+        identity = (drive.casefold(), item)
+        if relative.casefold() in seen_paths or identity in seen_items:
+            raise UploadSafetyError('Duplicate workbook path or DriveItem identity in remote listing')
+        seen_paths.add(relative.casefold())
+        seen_items.add(identity)
+        identities[relative] = (drive, item)
+    return identities
+
+
+def verify_listing_unchanged(manifest, listing):
+    expected = {relative: (entry['driveId'].casefold(), entry['itemId'])
+                for relative, entry in manifest['entries'].items()}
+    actual = {relative: (drive.casefold(), item)
+              for relative, (drive, item) in listing_identities(listing).items()}
+    if actual != expected:
+        raise UploadSafetyError('Remote workbook paths or identities changed during capture')
+
+
+def capture_manifest(client, root, listing, remote):
+    entries = {}
+    for relative, (drive, item) in listing_identities(listing).items():
         target = local_file(root, relative)
         if not target.is_file():
             raise UploadSafetyError('Downloaded workbook is missing: ' + relative)
         original, meta = read_original(client, drive, item)
+        if meta.get('name') != PurePosixPath(relative).name:
+            raise UploadSafetyError('Original was renamed since remote listing: ' + relative)
         if digest(target.read_bytes()) != digest(original):
             raise UploadSafetyError('Downloaded workbook does not match frozen remote bytes: ' + relative)
         entries[relative] = {'driveId': drive, 'itemId': item, 'eTag': meta['eTag'],
@@ -294,6 +321,13 @@ def apply_manifest(client, root, manifest, probe_parents):
     return {'checked': len(entries), 'uploaded': len(changed), 'unchanged': len(entries)-len(changed)}
 
 
+def remote_listing(remote):
+    result = subprocess.run(['rclone','lsjson',remote,'--recursive','--files-only',
+                             '--include','*.xlsx','--exclude','**/_backup*/**','--exclude','**/退避/**'],
+                            check=True,capture_output=True,text=True,encoding='utf-8')
+    return json.loads(result.stdout)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('operation', choices=('capture','apply','verify'))
@@ -304,10 +338,10 @@ def main():
     remote_name = args.remote.split(':',1)[0]
     client = GraphClient.from_rclone(remote_name)
     if args.operation == 'capture':
-        listing = subprocess.run(['rclone','lsjson',args.remote,'--recursive','--files-only',
-                                  '--include','*.xlsx','--exclude','**/_backup*/**','--exclude','**/退避/**'],
-                                  check=True,capture_output=True,text=True,encoding='utf-8')
-        manifest = capture_manifest(client,args.local_dir,json.loads(listing.stdout),args.remote)
+        manifest = capture_manifest(client,args.local_dir,remote_listing(args.remote),args.remote)
+        # A stable item can move/rename between listing and its byte read. Freeze
+        # only after a second complete listing confirms the path-to-ID mapping.
+        verify_listing_unchanged(manifest, remote_listing(args.remote))
         args.manifest.parent.mkdir(parents=True,exist_ok=True)
         args.manifest.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
         print(f'[SAFE_UPLOAD] Frozen {len(manifest["entries"])} original workbook versions',flush=True)

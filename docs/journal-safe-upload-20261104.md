@@ -34,11 +34,16 @@ folder名は `.bentan-cas-probe-` で始まる専用folderに限定し、原本f
 取得中・保守中・PUT直前・PUT後の編集、旧baseline、ロック、認証失敗、条件無視、
 応答喪失、未知の原本、共有drive取り違えを検証する。
 
-安全処理20件・旧期限付きwriter11件を独立したTest student calendar workflowでも実行する。
+安全処理24件・旧期限付きwriter11件を独立したTest student calendar workflowでも実行する。
 原本更新workflowが停止中でも、保護コード・workflowの変更時に試験を実行する。
 Update Schedule & Journalのvalidate_only=trueは検証用であり、全原本の取得・版固定・
 実接続での条件付き保存拒否の検証だけを行う。保守・原本更新・JSON公開はプログラムの
 条件でスキップする。通常の本番定期更新はfalseで実行し、上記すべての保護を通す。
+
+改名・移動の競合も、Graph名と取得時ファイル名の一致、capture前後の全パスとID対応の
+再一覧照合によって拒否する。重複パス・大小文字衝突・同一原本の別名登録も受理しない。
+実接続41837233016は60冊の版固定後、南中1数学の版変更を検出して安全停止した。
+保守・原本更新・JSON公開がすべてskipされたことをログで確認済み。
 
 Graphの[ファイル内容置換](https://learn.microsoft.com/en-us/graph/api/driveitem-put-content?view=graph-rest-1.0)を使用する。
 小PUTのIf-MatchはMicrosoft担当者の[説明](https://learn.microsoft.com/en-au/answers/questions/1515186/how-to-specify-conflict-behavior-for-a-put-request)に加え、
