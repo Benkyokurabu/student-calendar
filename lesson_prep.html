@@ -45,6 +45,7 @@
   .card-date { font-size: 16px; font-weight: bold; }
   .card-label { font-size: 20px; font-weight: bold; }
   .card-tools { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .recording-available { display: inline-block; font-size: 12px; font-weight: bold; white-space: nowrap; padding: 3px 7px; border: 1px solid #c8e6c9; border-radius: 4px; background: #e8f5e9; color: #1b5e20; }
   .btn-copy-recording {
     font-size: 13px; padding: 5px 10px; background: #fff3cd; color: #333;
     border: 1px solid #f0c36d; border-radius: 4px; cursor: pointer;
@@ -838,6 +839,8 @@ function render() {
     const roomStr = roomLabel(ev.room);
     const campusLabel = roomStr ? (campusName + "・" + roomStr) : campusName;
     const recording = findRecordingForLesson(ev);
+    const recordingStatus = recording?.url && recording.recordingCompleted === true
+      ? '<span class="recording-available" data-recording-available>録画あり</span>' : '';
     const recordingButton = recording ? `<button type="button" class="btn-copy-recording" data-url="${escAttr(recording.url)}">録画URLをコピー</button>` : "";
 
     html += `
@@ -849,6 +852,7 @@ function render() {
         </div>
         <div class="card-tools">
           <div class="card-label">${shortLabel(ev)}</div>
+          ${recordingStatus}
           ${recordingButton}
           ${recording ? `<button type="button" class="btn-copy-recording btn-release-settings" data-key="${escAttr(makeKey(ev))}">公開設定</button>` : ""}
         </div>

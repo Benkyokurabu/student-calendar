@@ -49,6 +49,11 @@ def merge_preserving_published_entries(generated: dict, existing: dict | None) -
     # The publication filter edits entry dictionaries in place. Keep the
     # comparison source intact so a changed rule cannot look unchanged.
     entries = copy.deepcopy({**generated_entries, **existing_entries})
+    for key, entry in generated_entries.items():
+        if entry.get('recordingCompleted') is True and key in existing_entries:
+            # Keep the already published link, while adding freshly verified
+            # video-completion evidence for the same exact lesson.
+            entries[key]['recordingCompleted'] = True
     merged["entries"] = entries
     merged["matched"] = len(entries)
     total = int(generated.get("matched", 0)) + int(generated.get("missing", 0))

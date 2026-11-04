@@ -1,0 +1,17 @@
+# AI処理を待たず、完成した録画を準備シートへ表示
+
+本人指定：録画が完成したかどうかだけはAIを使わずプログラムで先に取得し、授業準備シートへ「録画があります」と分かる表示を出す。Excel日誌を上書きしない。
+
+既存の独立workflow `publish-zoom-recording-urls.yml` と `publish_zoom_recording_url_json.py` はZoom APIと静的JSONだけで実行でき、AI処理と日誌Excel保存を呼ばない。これを利用する。既存の30秒間隔の準備シート再取得も維持する。
+
+生成時に、同一授業へ一致した再生可能な完成動画だけへ `recordingCompleted: true` を付ける。recording_filesがあるのにprocessingだけ、音声だけ、未対応形式だけ、play_urlなし、空配列/nullなら、新しい動画候補にしない。file_type/extensionがある場合はMP4、古い応答で形式項目が無い場合は既知の動画recording_typeに限る。録画files項目自体が欠けた旧形式のshare_urlは既存リンク互換として残すが、完成動画の証拠とは扱わずフラグfalseとする。
+
+公開済みのURLは回転・削除せず保持する。同じ授業に新しい完成証拠を取得した場合だけ既存entryへtrueを補充できるようにした。APIの一時的な欠落で、すでに確認済みの完成証拠やURLは消さない。
+
+準備シートは既存findRecordingForLessonの同一授業・非公開制御・修正URL優先を通過し、urlがありrecordingCompletedがtrueの場合だけ、録画ボタンと同じカード上部へ小さい「録画あり」を表示する。前回日誌欄へ新たな録画表示は加えない。旧リンク、未完成、他授業、非公開は新しい存在表示の対象外。
+
+検証：Zoom公開関連Python43件（新規6件とmerge追加2件を含む）、PC390/1280pxのブラウザー22ケース、既存の修正URL・非公開・前回日誌・日誌自動更新・カレンダー録画更新の5スイート、Python構文、diff確認が成功。ブラウザーは完成/欠落/別日/別時間/別クラス/旧リンク/未完成/非公開/手動抑止/修正URL/30秒後到着を確認。完成表示の自動到着でもコントロールバーの座標・寸法は保持し、横はみ出しとJavaScriptエラーは0。390/1280pxのPNGも目視した。
+
+独立generator試験ではWorkbookWriterとopenpyxl.load_workbookを呼ぶと失敗させる状態で実行し、日誌Excelを開かずに完成証拠を生成できることを検証した。今回の変更で原本を開く・保存する処理は追加していない。
+
+変更前backupはbefore_recording_completion_badge。反映時は新コードで録画公開workflowを実行して完成フラグをJSONへ補充する。更新前のJSONにURLだけが存在する場合、コピー操作は従来どおり使えるが、新しい「録画あり」は完成証拠が補充されるまで表示されない。rootがコードcommit・remote録画JSON取込・push・独立公開・公開画面確認を行う。

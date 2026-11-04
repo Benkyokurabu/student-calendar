@@ -130,6 +130,7 @@ def make_recording_json(month: str) -> Dict[str, Any]:
         matched += 1
         entries[key] = {
             "url": rec.url,
+            "recordingCompleted": rec.recording_completed,
             "recordingStart": rec.start_time.isoformat(),
             "meetingId": z.clean_meeting_id(meeting_id or ""),
             "topic": rec.topic,

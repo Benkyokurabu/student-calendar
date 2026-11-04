@@ -191,10 +191,21 @@ def preferred_recording_files(meeting: dict) -> List[dict]:
     one video file per start time instead of collapsing the whole meeting to a
     single file.
     """
+    video_types = {
+        'shared_screen_with_speaker_view', 'shared_screen_with_gallery_view',
+        'shared_screen', 'active_speaker', 'speaker_view', 'gallery_view',
+    }
+    def is_video(file):
+        recording_type = str(file.get('recording_type') or '')
+        if recording_type == 'audio_only':
+            return False
+        file_type = str(file.get('file_type') or file.get('file_extension') or '').upper()
+        return file_type == 'MP4' if file_type else recording_type in video_types
+
     files = [
         file
         for file in meeting.get("recording_files") or []
-        if str(file.get("status", "")).lower() == "completed" and file.get("play_url")
+        if str(file.get("status", "")).lower() == "completed" and file.get("play_url") and is_video(file)
     ]
     preferred = [
         "shared_screen_with_speaker_view",
@@ -234,6 +245,10 @@ def recording_url(meeting: dict) -> str:
     if selected is not None:
         return str(selected["play_url"])
 
+    # Metadata with pending/audio-only files must not look like a ready video.
+    # Keep the old link fallback only for legacy responses with no file field.
+    if 'recording_files' in meeting:
+        return ''
     url = str(meeting.get("share_url") or "")
     passcode = str(meeting.get("recording_play_passcode") or "")
     if url and passcode and "pwd=" not in url:
@@ -310,6 +325,7 @@ class RecordingCandidate:
     topic: str
     url: str
     raw: dict
+    recording_completed: bool = False
 
 
 def flatten_recordings(meeting_id: str, payload: dict) -> List[RecordingCandidate]:
@@ -319,6 +335,8 @@ def flatten_recordings(meeting_id: str, payload: dict) -> List[RecordingCandidat
     result: List[RecordingCandidate] = []
     for meeting in meetings:
         selected_files = preferred_recording_files(meeting)
+        if not selected_files and 'recording_files' in meeting:
+            continue
         # Preserve the legacy share-URL fallback for old recordings that have
         # no playable file metadata at all.
         for selected_file in selected_files or [None]:
@@ -339,6 +357,7 @@ def flatten_recordings(meeting_id: str, payload: dict) -> List[RecordingCandidat
                 topic=str(meeting.get("topic") or ""),
                 url=url,
                 raw=meeting,
+                recording_completed=selected_file is not None,
             ))
     return result
 

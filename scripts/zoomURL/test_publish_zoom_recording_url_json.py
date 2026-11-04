@@ -92,6 +92,20 @@ class ExistingPayloadTests(unittest.TestCase):
             publisher.comparable_payload(existing), publisher.comparable_payload(published),
         )
 
+    def test_adds_completion_evidence_without_rotating_published_url(self):
+        existing = {'month':'2026-11','entries':{'lesson':{'url':'https://example.test/stable'}}}
+        generated = {'month':'2026-11','matched':1,'missing':0,'entries':{'lesson':{'url':'https://example.test/rotated','recordingCompleted':True}}}
+        entry=publisher.merge_preserving_published_entries(generated,existing)['entries']['lesson']
+        self.assertEqual(entry['url'],'https://example.test/stable')
+        self.assertIs(entry['recordingCompleted'],True)
+        self.assertNotIn('recordingCompleted',existing['entries']['lesson'])
+
+    def test_incomplete_import_does_not_delete_published_video_or_its_evidence(self):
+        existing={'month':'2026-11','entries':{'lesson':{'url':'https://example.test/stable','recordingCompleted':True}}}
+        generated={'month':'2026-11','matched':0,'missing':1,'entries':{}}
+        entry=publisher.merge_preserving_published_entries(generated,existing)['entries']['lesson']
+        self.assertEqual(entry,existing['entries']['lesson'])
+
 
 if __name__ == "__main__":
     unittest.main()
