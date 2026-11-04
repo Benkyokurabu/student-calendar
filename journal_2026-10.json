@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-04T06:42:54.785801+00:00",
+  "generatedAt": "2026-11-04T06:50:32.523106+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -11652,18 +11652,20 @@
       }
     },
     "2026-10-28|6:35～8:05|minami|minami_j3_A_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "円周角",
+      "page": "P58まで",
+      "report": "円周角に先に入り、前の単元は宿題として出した",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "45",
       "monthNum": "10",
       "weekNum": "5",
-      "homework": [],
+      "homework": [
+        "P39□３以外,40,59"
+      ],
       "prevEntry": {
         "content": "中点連結定理",
         "page": "P32",
