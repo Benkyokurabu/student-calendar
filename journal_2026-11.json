@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-04T03:34:42",
+  "generatedAt": "2026-11-04T08:47:24",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -1141,21 +1141,22 @@
         "P73もできたらやって良い"
       ],
       "prevEntry": {
-        "content": "単元テスト③",
-        "page": "",
+        "content": "分数",
+        "page": "P75",
         "homework": [
-          "解きなおし"
+          "ドリルP70～７２",
+          "P73もできたらやって良い"
         ],
-        "report": "テストを実施。やはり本校の方が良くできていた様子。はるた・あさひ・ななとは計算の宿題が未完",
+        "report": "分数②まで進むことができた。七斗がいないのは実は大きいかも。分数の意味ははるたは最初分かっていなかったが最後にはわかってくれたと思う。",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "高橋",
+        "curriculumProgress": "±0.3",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "10",
-        "weekNum": "3",
-        "date": "2026-10-21"
+        "weekNum": "4",
+        "date": "2026-10-28"
       }
     },
     "2026-11-04|4:55～6:15|minami|minami_e6_A_arith|1": {
@@ -1359,22 +1360,21 @@
       "weekNum": "1",
       "homework": [],
       "prevEntry": {
-        "content": "中点連結定理",
-        "page": "P32",
+        "content": "円周角",
+        "page": "P58まで",
         "homework": [
-          "＃４３，46～48",
-          "P34,36"
+          "P39□３以外,40,59"
         ],
-        "report": "中点連結定理まで。少し遅れ気味になりそうな感じ。",
+        "report": "円周角に先に入り、前の単元は宿題として出した",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "具志堅・問芝\n佐藤ひ",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "44",
-        "monthNum": "10",
-        "weekNum": "4",
-        "date": "2026-10-24"
+        "sessionNumber": "45",
+        "monthNum": "11",
+        "weekNum": "1",
+        "date": "2026-10-28"
       }
     },
     "2026-11-04|8:25～9:55|hon|hon_j2_S_eng|1": {
@@ -4044,7 +4044,7 @@
       "homework": [],
       "prevEntry": {
         "content": "分数",
-        "page": "P75まで",
+        "page": "P75",
         "homework": [
           "ドリルP70～７２",
           "P73もできたらやって良い"
@@ -4053,12 +4053,12 @@
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "高橋",
-        "curriculumProgress": "＋0.3",
+        "curriculumProgress": "±0.3",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-04"
+        "sessionNumber": "34",
+        "monthNum": "10",
+        "weekNum": "4",
+        "date": "2026-10-28"
       }
     },
     "2026-11-11|4:55～6:15|minami|minami_e6_A_arith|1": {
@@ -4262,22 +4262,21 @@
       "weekNum": "2",
       "homework": [],
       "prevEntry": {
-        "content": "中点連結定理",
-        "page": "P32",
+        "content": "円周角",
+        "page": "P58まで",
         "homework": [
-          "＃４３，46～48",
-          "P34,36"
+          "P39□３以外,40,59"
         ],
-        "report": "中点連結定理まで。少し遅れ気味になりそうな感じ。",
+        "report": "円周角に先に入り、前の単元は宿題として出した",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "具志堅・問芝\n佐藤ひ",
+        "absence": "なし",
         "curriculumProgress": "±0",
         "note": "",
-        "sessionNumber": "44",
-        "monthNum": "10",
-        "weekNum": "4",
-        "date": "2026-10-24"
+        "sessionNumber": "45",
+        "monthNum": "11",
+        "weekNum": "1",
+        "date": "2026-10-28"
       }
     },
     "2026-11-11|6:35～8:05|minami|minami_j3_X_jp|5": {
@@ -6764,7 +6763,7 @@
       "homework": [],
       "prevEntry": {
         "content": "分数",
-        "page": "P75まで",
+        "page": "P75",
         "homework": [
           "ドリルP70～７２",
           "P73もできたらやって良い"
@@ -6773,12 +6772,12 @@
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "高橋",
-        "curriculumProgress": "＋0.3",
+        "curriculumProgress": "±0.3",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-04"
+        "sessionNumber": "34",
+        "monthNum": "10",
+        "weekNum": "4",
+        "date": "2026-10-28"
       }
     },
     "2026-11-18|4:55～6:15|minami|minami_e6_A_arith|1": {
@@ -9168,7 +9167,7 @@
       "homework": [],
       "prevEntry": {
         "content": "分数",
-        "page": "P75まで",
+        "page": "P75",
         "homework": [
           "ドリルP70～７２",
           "P73もできたらやって良い"
@@ -9177,12 +9176,12 @@
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "高橋",
-        "curriculumProgress": "＋0.3",
+        "curriculumProgress": "±0.3",
         "note": "",
-        "sessionNumber": "35",
-        "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-04"
+        "sessionNumber": "34",
+        "monthNum": "10",
+        "weekNum": "4",
+        "date": "2026-10-28"
       }
     },
     "2026-11-25|4:55～6:15|minami|minami_e6_A_arith|1": {

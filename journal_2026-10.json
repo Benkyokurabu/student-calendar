@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-04T06:50:32.523106+00:00",
+  "generatedAt": "2026-11-04T08:29:20",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -11328,8 +11328,8 @@
       "curriculumProgress": "＋0.5",
       "note": "",
       "sessionNumber": "45",
-      "monthNum": "10",
-      "weekNum": "5",
+      "monthNum": "11",
+      "weekNum": "1",
       "homework": [
         "ｐ101-ｐ103",
         "プリントのｐ14"
@@ -11421,19 +11421,20 @@
       }
     },
     "2026-10-28|4:55～6:15|minami|minami_e4_A_arith|3": {
-      "content": "",
+      "content": "分数",
       "page": "P75",
-      "report": "カリキュラムより少し先に進められた。ななとが居ないのは大きいかも",
+      "report": "分数②まで進むことができた。七斗がいないのは実は大きいかも。分数の意味ははるたは最初分かっていなかったが最後にはわかってくれたと思う。",
       "recordingUrl": "",
       "teacher": "工藤",
       "absence": "高橋",
-      "curriculumProgress": "±0.2",
+      "curriculumProgress": "±0.3",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "10",
       "weekNum": "4",
       "homework": [
-        "ドリルP70～72"
+        "ドリルP70～７２",
+        "P73もできたらやって良い"
       ],
       "prevEntry": {
         "content": "単元テスト③",
@@ -11661,8 +11662,8 @@
       "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "45",
-      "monthNum": "10",
-      "weekNum": "5",
+      "monthNum": "11",
+      "weekNum": "1",
       "homework": [
         "P39□３以外,40,59"
       ],
@@ -12883,8 +12884,8 @@
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "45",
-      "monthNum": "10",
-      "weekNum": "5",
+      "monthNum": "11",
+      "weekNum": "1",
       "homework": [
         "ｐ31□３、ｐ32□1-3"
       ],
