@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-04T22:27:07.308919+09:00",
+  "generatedAt": "2026-11-04T22:38:52.846748+09:00",
   "matched": 37,
   "missing": 317,
   "entries": {
@@ -24,7 +24,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 2.1,
       "recordingDurationMinutes": 77.2,
-      "lessonOverlapMinutes": 77.2
+      "lessonOverlapMinutes": 77.2,
+      "recordingCompleted": true
     },
     "2026-11-02|6:35～8:05|minami|minami_j1_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/NZYopsrsXtk25__G3UNOPEFHR4Y0UZWze1NYAzYsUSbdUDoFHl5a1BEBcbmx1wDVnY6B7EZYYMkvVcka.cdOPjoCd-v7RQNV2",
@@ -46,7 +47,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 1.1,
       "recordingDurationMinutes": 87.7,
-      "lessonOverlapMinutes": 87.7
+      "lessonOverlapMinutes": 87.7,
+      "recordingCompleted": true
     },
     "2026-11-02|6:35～8:05|hon|hon_j1_S_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/HQp34KWEuoACIAcBXjWeVu_ux6PBsYPnvAlygjVdXwjAhsr7RU9wS-0BcdpEjaXEm8aUjMKcExwi1SVQ.-T-t4K2dtjMHk_PU",
@@ -68,7 +70,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 0.8,
       "recordingDurationMinutes": 89.6,
-      "lessonOverlapMinutes": 89.2
+      "lessonOverlapMinutes": 89.2,
+      "recordingCompleted": true
     },
     "2026-11-02|6:35～8:05|hon|hon_j2_S_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/FAYN1kxcUbchU46Qtt-kV2jsTlpRKPXetT0RJ0VQp421qYp4392XINfjVCXtthj5-MVJ5dDmzvUq4PnE.F0ccp-iu6TBARFEj",
@@ -90,7 +93,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 8.7,
       "recordingDurationMinutes": 80.6,
-      "lessonOverlapMinutes": 80.6
+      "lessonOverlapMinutes": 80.6,
+      "recordingCompleted": true
     },
     "2026-11-02|6:35～8:05|hon|hon_j3_A_soc|4": {
       "url": "https://us06web.zoom.us/rec/play/I7ZoaRGwIjIZL4wsCIZBVa4pPeLBCj7SSU_cGEYKPl69R_pYuZ775yc9lJ7FQtcCLWe435GyOi5pyzp-.QF5tqS7E4nfJ3Zx5",
@@ -112,7 +116,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 19.2,
       "recordingDurationMinutes": 72.1,
-      "lessonOverlapMinutes": 70.8
+      "lessonOverlapMinutes": 70.8,
+      "recordingCompleted": true
     },
     "2026-11-02|6:35～8:05|minami|minami_j3_A_soc|5": {
       "url": "https://us06web.zoom.us/rec/play/I7ZoaRGwIjIZL4wsCIZBVa4pPeLBCj7SSU_cGEYKPl69R_pYuZ775yc9lJ7FQtcCLWe435GyOi5pyzp-.QF5tqS7E4nfJ3Zx5",
@@ -135,7 +140,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 19.2,
       "recordingDurationMinutes": 72.1,
-      "lessonOverlapMinutes": 70.8
+      "lessonOverlapMinutes": 70.8,
+      "recordingCompleted": true
     },
     "2026-11-02|8:25～9:55|hon|hon_j2_A_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/Qf62hhSRJRJL4XvKuxMJ_z6hNrbwoqLcjmFFtAR5YL--8KAGI4Ute6PBHn8CU3WHZyMIvO7LSE9RlRsL.8dXE1_dMeI1ijBED",
@@ -157,7 +163,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 0.8,
       "recordingDurationMinutes": 88.4,
-      "lessonOverlapMinutes": 88.4
+      "lessonOverlapMinutes": 88.4,
+      "recordingCompleted": true
     },
     "2026-11-02|8:25～9:55|hon|hon_j3_S_soc|4": {
       "url": "https://us06web.zoom.us/rec/play/jyOiq38DwPvUfTp8io8w0HkNXre74vixtC7Wx4YgIyO9b0SQdww-nZK_g6NzBmLmcV9BJQrPZcUfjbc.QLSFWEK0GMsbAeRT",
@@ -179,7 +186,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 9.9,
       "recordingDurationMinutes": 80.5,
-      "lessonOverlapMinutes": 80.1
+      "lessonOverlapMinutes": 80.1,
+      "recordingCompleted": true
     },
     "2026-11-02|8:25～9:55|minami|minami_j3_S_soc|5": {
       "url": "https://us06web.zoom.us/rec/play/jyOiq38DwPvUfTp8io8w0HkNXre74vixtC7Wx4YgIyO9b0SQdww-nZK_g6NzBmLmcV9BJQrPZcUfjbc.QLSFWEK0GMsbAeRT",
@@ -202,7 +210,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 9.9,
       "recordingDurationMinutes": 80.5,
-      "lessonOverlapMinutes": 80.1
+      "lessonOverlapMinutes": 80.1,
+      "recordingCompleted": true
     },
     "2026-11-03|2:55～4:25|minami|minami_j3_S_math|1": {
       "url": "https://us06web.zoom.us/rec/play/9tWw_mlY9mcQEj_T7OgudmTyuUMKiGof-bo8Ad9wos1OxiyBL5rK1NRLYyuZi4AMFalvkKvR7eO6aKLd.KibqtMSn_QjDJBKW",
@@ -224,7 +233,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 7.7,
       "recordingDurationMinutes": 78.5,
-      "lessonOverlapMinutes": 78.5
+      "lessonOverlapMinutes": 78.5,
+      "recordingCompleted": true
     },
     "2026-11-03|4:45～6:15|minami|minami_j3_S_jp|1": {
       "url": "https://us06web.zoom.us/rec/play/aLvbWJoKISIUfuZKWPTBdJYQIih4xQUbnjpZnK02074KeyaaUsZMProYZLQ168Pis0Fi0Xzp9OQxY8Jn.1IaTd4_6n5BpLJxP",
@@ -246,7 +256,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 16.3,
       "recordingDurationMinutes": 71.6,
-      "lessonOverlapMinutes": 71.6
+      "lessonOverlapMinutes": 71.6,
+      "recordingCompleted": true
     },
     "2026-11-03|4:55～6:15|minami|minami_e5_A_arith|2": {
       "url": "https://us06web.zoom.us/rec/play/eV9euYeYkDbYRJb-hNaKtx5EUEqLo7PGpw-shp6uR1Nl_P0PmBsX9cRg8GkE5XCGa-G9RMLmbwFuwPIC.-2lTfY-cESAMYOSv",
@@ -268,7 +279,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 3.0,
       "recordingDurationMinutes": 74.1,
-      "lessonOverlapMinutes": 74.1
+      "lessonOverlapMinutes": 74.1,
+      "recordingCompleted": true
     },
     "2026-11-03|4:55～6:15|minami|minami_e6_S_arith|3": {
       "url": "https://us06web.zoom.us/rec/play/TtxRAITkwEkoUdJK7hSqcX5ChzU8uFmEWo-wS-8dKaQEJ1gG6djwbBo4OgrZpGNcuwE4nnCB7IHas3Ql.QKQSTjtPHxOzbY3-",
@@ -290,7 +302,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 6.5,
       "recordingDurationMinutes": 71.0,
-      "lessonOverlapMinutes": 71.0
+      "lessonOverlapMinutes": 71.0,
+      "recordingCompleted": true
     },
     "2026-11-03|4:55～6:15|hon|hon_e6_S_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/e55pBUp3nV4wcsSbfxXYBhl_nRP5n61mJK9kwjlhJ17OmjlYeiifl-z6H_Q0MxeX3oGn869JXDEv2a8c.ndRW9M-gzIRR_L_t",
@@ -312,7 +325,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 1.6,
       "recordingDurationMinutes": 76.0,
-      "lessonOverlapMinutes": 76.0
+      "lessonOverlapMinutes": 76.0,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|hon|hon_j1_A_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/AQ6Y_Yf_r7-DKNS8P1outunVSIqKJAEnj9EIlQRYM-rfBOom18nkJhG8BRa6Vtd_0i3mR1TJEEcVsuOG.mkEpIPfZkREryhdC",
@@ -334,7 +348,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 5.0,
       "recordingDurationMinutes": 82.2,
-      "lessonOverlapMinutes": 82.2
+      "lessonOverlapMinutes": 82.2,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|hon|hon_j1_S_jp|4": {
       "url": "https://us06web.zoom.us/rec/play/tpU6UruUVLU1WSheMKgjzMcwWHCXkTERIQxTXRx88aABuYmmWOqcCxt1bRqvPVS8n13Gz5JxPpEwqXp9.bbFFPmFhRi5IGvCW",
@@ -356,7 +371,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 3.8,
       "recordingDurationMinutes": 85.3,
-      "lessonOverlapMinutes": 85.3
+      "lessonOverlapMinutes": 85.3,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|minami|minami_j1_S_jp|5": {
       "url": "https://us06web.zoom.us/rec/play/tpU6UruUVLU1WSheMKgjzMcwWHCXkTERIQxTXRx88aABuYmmWOqcCxt1bRqvPVS8n13Gz5JxPpEwqXp9.bbFFPmFhRi5IGvCW",
@@ -379,7 +395,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 3.8,
       "recordingDurationMinutes": 85.3,
-      "lessonOverlapMinutes": 85.3
+      "lessonOverlapMinutes": 85.3,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|minami|minami_j2_A_math|1": {
       "url": "https://us06web.zoom.us/rec/play/P-Ft911Mi_0a_Re89ttYCehhljhDLJWueSj3OvaeQU1Gs51Q3c6KFYnUk0TiKmZpo4DWkWEf1fHXzYP3.HTj6cKam1APResan",
@@ -401,7 +418,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 1.9,
       "recordingDurationMinutes": 86.4,
-      "lessonOverlapMinutes": 86.4
+      "lessonOverlapMinutes": 86.4,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|hon|hon_j2_B_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/daMg7AckxvMYsv1T5HsjRQyuOW2tNji7ijadQ6JZVsUapgCh7z4G-p14CKOstAQCQLxzdmn3RpizWDOG.ibWzCiPOpiwPVJy1",
@@ -423,7 +441,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 4.2,
       "recordingDurationMinutes": 84.1,
-      "lessonOverlapMinutes": 84.1
+      "lessonOverlapMinutes": 84.1,
+      "recordingCompleted": true
     },
     "2026-11-03|6:35～8:05|minami|minami_j2_S_math|2": {
       "url": "https://us06web.zoom.us/rec/play/7dYWq5oiNvNKRrA1-V9t2Ia0_hTxIh2SmcRpqeq5vM_p-83Laqvc5Dg1YEdm173xBl6LXnny0hVogQYP.wR7A1BMiG-bE-0fi",
@@ -445,7 +464,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 5.8,
       "recordingDurationMinutes": 80.4,
-      "lessonOverlapMinutes": 80.4
+      "lessonOverlapMinutes": 80.4,
+      "recordingCompleted": true
     },
     "2026-11-03|8:25～9:55|hon|hon_j2_A_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/r6M1utGRO8YBo5rzV0EVi9qPJb9tkHRQjjUCSa4Fnlqj6vrdpVrLEZqAqBxioizfnHm83Xfy57ubVVrl.Ix8q9ppKx6igchdd",
@@ -467,7 +487,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 10.7,
       "recordingDurationMinutes": 76.6,
-      "lessonOverlapMinutes": 76.6
+      "lessonOverlapMinutes": 76.6,
+      "recordingCompleted": true
     },
     "2026-11-03|8:25～9:55|minami|minami_j2_S_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/lDCADcCzGtXWmBn1kjA6MnWLae_Vo04BYAckYJJKNnCKqrPy3bQjipmJQUhETwFQJsBvThnCF5XbtCxF.lp5diUtMoO2pGaVT",
@@ -489,7 +510,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 14.1,
       "recordingDurationMinutes": 73.8,
-      "lessonOverlapMinutes": 73.8
+      "lessonOverlapMinutes": 73.8,
+      "recordingCompleted": true
     },
     "2026-11-03|8:25～9:55|hon|hon_j3_A_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/-MbUrf0j8Pmm9ChG6Jj2geLXoJ9jJXFZA8hJIO4KiByy482S1A2Ia_1VWuKuVIq6QIVcmfvKywbZS2g.1ULmLSaJFowClyn0",
@@ -511,7 +533,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 17.0,
       "recordingDurationMinutes": 72.4,
-      "lessonOverlapMinutes": 72.4
+      "lessonOverlapMinutes": 72.4,
+      "recordingCompleted": true
     },
     "2026-11-03|8:25～9:55|minami|minami_j3_B_math|1": {
       "url": "https://us06web.zoom.us/rec/play/xaPfzE9jO2acCNAIP0XIe8G1PTHkgtw3eIOHYIpmcnOS5Jp9W0qMx6SSQbjzJXKU7Yd3vHYK6c63lPpO.lKBEhHq2Im_tTimD",
@@ -533,7 +556,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 0.7,
       "recordingDurationMinutes": 87.7,
-      "lessonOverlapMinutes": 87.7
+      "lessonOverlapMinutes": 87.7,
+      "recordingCompleted": true
     },
     "2026-11-04|4:55～6:15|minami|minami_e4_A_arith|3": {
       "url": "https://us06web.zoom.us/rec/play/XaKD-XqU859lL9pKSRbw_vi6xKY1HyyxYfBfUfOFQ3uHSM8SNUXwDtoWjCZRGws0UJHiqeoEzoCX-xQ.z8mBhn43KwU7QBG7",
@@ -555,7 +579,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 4.7,
       "recordingDurationMinutes": 72.9,
-      "lessonOverlapMinutes": 72.9
+      "lessonOverlapMinutes": 72.9,
+      "recordingCompleted": true
     },
     "2026-11-04|4:55～6:15|hon|hon_e5_A_jp|2": {
       "url": "https://us06web.zoom.us/rec/play/YqdHjLIjAlAf_zO_mdTZGJopTCC2MEq38oNS5knKt2AchLchG4ITd1f8nMzjiadKObdn_VGDQQ7FJMtu.Cw15LLgxC48Ch9T0",
@@ -577,7 +602,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 2.6,
       "recordingDurationMinutes": 76.7,
-      "lessonOverlapMinutes": 76.7
+      "lessonOverlapMinutes": 76.7,
+      "recordingCompleted": true
     },
     "2026-11-04|4:55～6:15|minami|minami_e6_A_arith|1": {
       "url": "https://us06web.zoom.us/rec/play/4c1O6XEv7U-8muUpSI4AJxHx-YvlSjg4Bk11v1Eh2eHJiY7oC0bzJCqXFNVNfAvxIi1od1GgoBgNymtq.s1Tfqyakz5ZPdr7-",
@@ -599,7 +625,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 1.6,
       "recordingDurationMinutes": 73.5,
-      "lessonOverlapMinutes": 73.5
+      "lessonOverlapMinutes": 73.5,
+      "recordingCompleted": true
     },
     "2026-11-04|6:35～8:05|hon|hon_j1_A_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/skcIG2zyef-6Vuv1W7zP7NPCcErhM0_nFhtr0_XP5zGCBUS7QoYnd8ZLOJ-eOfPUx-d4BrWuJTl9ZxgN.4eE4E12zW38JhbPm",
@@ -621,7 +648,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 2.6,
       "recordingDurationMinutes": 86.8,
-      "lessonOverlapMinutes": 86.8
+      "lessonOverlapMinutes": 86.8,
+      "recordingCompleted": true
     },
     "2026-11-04|6:35～8:05|minami|minami_j1_B_math|2": {
       "url": "https://us06web.zoom.us/rec/play/v_GOH4i4U-jq2LjbqP11bR8RvJDLX98dX3fejmBI0zu4aUW7U1KO41lAvY04i_o657vXTI9juDfmtNo.nMLa7Ic31mtmC4HV",
@@ -643,7 +671,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 0.6,
       "recordingDurationMinutes": 87.6,
-      "lessonOverlapMinutes": 87.6
+      "lessonOverlapMinutes": 87.6,
+      "recordingCompleted": true
     },
     "2026-11-04|6:35～8:05|minami|minami_j3_A_math|1": {
       "url": "https://us06web.zoom.us/rec/play/V1tjIZ13jn7PHGuxs-RFKUE8n59MaYzXupZXPvyeq7Cqf-rLHCgdBFWwF0uUv1FAuaV8WTaMLNgUyUfU.3swYFTK4xPeaCiHx",
@@ -665,7 +694,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 6.9,
       "recordingDurationMinutes": 78.8,
-      "lessonOverlapMinutes": 78.8
+      "lessonOverlapMinutes": 78.8,
+      "recordingCompleted": true
     },
     "2026-11-04|6:35～8:05|hon|hon_j3_S_jp|1": {
       "url": "https://us06web.zoom.us/rec/play/QS8YdFcWqUWKzUzIplgBosGnxuUFaaFQNQYxL9F2pYg6Gmz4f8oMTHgLREwAKCeDsu2ocszh5QmSKbYw.AzJn8G0rTkjZlIUI",
@@ -687,7 +717,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 21.3,
       "recordingDurationMinutes": 70.0,
-      "lessonOverlapMinutes": 68.7
+      "lessonOverlapMinutes": 68.7,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|minami|minami_j2_B_math|1": {
       "url": "https://us06web.zoom.us/rec/play/7Qk3llKboTAGeVdSSsu5voBbwxL5gMK4A0D_8tng1xF9UMeNxOIiVI6XT-Ez-xqqyUEXvRvMZoP7iyR7.fEng5rb2T8-H9Oqa",
@@ -709,7 +740,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 1.5,
       "recordingDurationMinutes": 85.0,
-      "lessonOverlapMinutes": 85.0
+      "lessonOverlapMinutes": 85.0,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|hon|hon_j2_S_eng|1": {
       "url": "https://us06web.zoom.us/rec/play/0Jn9xAP3Bi8m1U8WSrLN2xhAa-4Y56q-OvJfnfu2atyBOWekf-rlr-DCFhoScJSzzhqDjCQ_y5b5JzRL.YMaK2JU9fWur5QU-",
@@ -731,7 +763,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 7.4,
       "recordingDurationMinutes": 82.0,
-      "lessonOverlapMinutes": 82.0
+      "lessonOverlapMinutes": 82.0,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|hon|hon_j3_A_jp|4": {
       "url": "https://us06web.zoom.us/rec/play/Y-uObtoLvEwf-254ZK1Mr1I5N_ZsZPNFYKRRCoAY1PdxEVgHsgrZJHKsbLQSdxpBotKqIEp7mEejoo5o.6knNO9iYaWCf-X4q",
@@ -753,7 +786,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 28.4,
       "recordingDurationMinutes": 62.2,
-      "lessonOverlapMinutes": 61.6
+      "lessonOverlapMinutes": 61.6,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|minami|minami_j3_A_jp|5": {
       "url": "https://us06web.zoom.us/rec/play/Y-uObtoLvEwf-254ZK1Mr1I5N_ZsZPNFYKRRCoAY1PdxEVgHsgrZJHKsbLQSdxpBotKqIEp7mEejoo5o.6knNO9iYaWCf-X4q",
@@ -776,7 +810,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 28.4,
       "recordingDurationMinutes": 62.2,
-      "lessonOverlapMinutes": 61.6
+      "lessonOverlapMinutes": 61.6,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|hon|hon_j3_X_math|6": {
       "url": "https://us06web.zoom.us/rec/play/ECIPc-Nn11atnpBTcegj74Vave0EIZjw0dxjJ46B3FekR_CYb-l6sWxHC0fscix4Kavv20sQhLObFf_7.h6QQLFxCGuvhjWMF",
@@ -799,7 +834,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 12.2,
       "recordingDurationMinutes": 76.9,
-      "lessonOverlapMinutes": 76.9
+      "lessonOverlapMinutes": 76.9,
+      "recordingCompleted": true
     },
     "2026-11-04|8:25～9:55|minami|minami_j3_X_math|4": {
       "url": "https://us06web.zoom.us/rec/play/ECIPc-Nn11atnpBTcegj74Vave0EIZjw0dxjJ46B3FekR_CYb-l6sWxHC0fscix4Kavv20sQhLObFf_7.h6QQLFxCGuvhjWMF",
@@ -821,7 +857,8 @@
       "matchPolicy": "campus-room-file-overlap-v2",
       "startOffsetMinutes": 12.2,
       "recordingDurationMinutes": 76.9,
-      "lessonOverlapMinutes": 76.9
+      "lessonOverlapMinutes": 76.9,
+      "recordingCompleted": true
     }
   }
 }
