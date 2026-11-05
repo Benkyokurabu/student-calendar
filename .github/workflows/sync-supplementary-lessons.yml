@@ -1,0 +1,59 @@
+name: Sync Supplementary Lessons
+on:
+  push:
+    branches: [main]
+    paths: ['schedule_2*.json']
+  workflow_run:
+    workflows: ['Update Schedule & Journal', 'Bentan Journal Management']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      month:
+        description: Target YYYY-MM (current or next month)
+        required: true
+        type: string
+      dry_run:
+        description: Compare only; do not write to Notion
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: notion-supplementary-lessons
+  cancel-in-progress: false
+jobs:
+  supplements:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Always execute trusted main, never code/artifacts from the source run.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl requests
+      - name: Verify supplement reader and failure boundaries
+        run: python -m unittest discover -s scripts -p test_sync_supplementary_lessons.py -v
+      - name: Install rclone
+        run: curl -fsSL https://rclone.org/install.sh | sudo bash
+      - name: Restore the existing read-only source connection
+        env:
+          RCLONE_CONF_B64: ${{ secrets.RCLONE_CONF_B64 }}
+        run: |
+          mkdir -p ~/.config/rclone
+          printf '%s' "$RCLONE_CONF_B64" | base64 -d > ~/.config/rclone/rclone.conf
+      - name: Create or compare supplementary lessons
+        env:
+          TARGET_MONTH: ${{ inputs.month }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          PARENT_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          args=()
+          if [ -n "$TARGET_MONTH" ]; then args+=(--month "$TARGET_MONTH"); fi
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          python scripts/sync_supplementary_lessons.py "${args[@]}"
