@@ -12,7 +12,8 @@ import sys
 import time
 from datetime import datetime, timezone, timedelta
 from urllib.request import Request, urlopen
-from xml.etree.ElementTree import tostring
+from xml.etree.ElementTree import tostring, fromstring
+from zipfile import ZipFile
 
 JST = timezone(timedelta(hours=9))
 REMOTE = 'onedrive:●勉強クラブ共有/09　授業日誌'
@@ -74,15 +75,29 @@ def workbook_sheets(path):
     finally:
         book.close()
 
+def has_month_sheet(path, month):
+    # Reading the workbook index avoids loading all historic cells for a no-op.
+    with ZipFile(path) as archive:
+        workbook = fromstring(archive.read('xl/workbook.xml'))
+    return any(element.get('name') == month for element in workbook.iter()
+               if element.tag.rsplit('}', 1)[-1] == 'sheet')
+
 def assert_only_new_month(before, after, month):
     if any(after.get(name) != value for name, value in before.items()):
         raise ValueError('An existing worksheet changed; original uploads are blocked')
     if set(after) - set(before) - {month}:
         raise ValueError('An unselected worksheet was added')
 
-def source_digest(manifest, schedule_bytes, public_schedule, public_journal):
-    return digest(encoded({'entries': manifest['entries'], 'schedule': digest(schedule_bytes),
-                           'publicSchedule': digest(public_schedule), 'publicJournal': digest(public_journal)}))
+def validate_master(operation, month, registered):
+    if operation == 'create' and month == '2026-12' and not registered:
+        raise ValueError('Register the approved October 29 common master before creating December journals')
+
+def source_digest(manifest, schedule_bytes, public_schedule, public_journal, common_master=None):
+    snapshot = {'entries': manifest['entries'], 'schedule': digest(schedule_bytes),
+                'publicSchedule': digest(public_schedule), 'publicJournal': digest(public_journal)}
+    if common_master is not None:
+        snapshot['commonMaster'] = digest(common_master)
+    return digest(encoded(snapshot))
 
 def merge_for_publication(baseline, extracted, today):
     result = copy.deepcopy(extracted)
@@ -136,6 +151,15 @@ def main():
     names = [name for name in listing.splitlines() if re.fullmatch(rf'{year}年0?{number}月スケジュール\.xlsm', name)]
     if len(names) != 1:
         raise ValueError('Exactly one schedule original is required')
+    registered_master = 'TEMPLATE_MAIN_COMMON.xlsx' in listing.splitlines()
+    validate_master(operation, month, registered_master)
+    common_bytes = None
+    common_path = scripts / 'TEMPLATE_MAIN_COMMON.xlsx'
+    if registered_master:
+        command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/TEMPLATE_MAIN_COMMON.xlsx', str(common_path)])
+        common_bytes = common_path.read_bytes()
+    elif operation in ('preview', 'create') and common_path.exists():
+        raise ValueError('An unregistered common master cannot be used')
     schedule = scripts / names[0]
     command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule)])
     schedule_bytes = schedule.read_bytes()
@@ -152,7 +176,7 @@ def main():
     verify_listing_unchanged(manifest, remote_listing(REMOTE))
     public_schedule = repo / f'schedule_{month}.json'
     public_journal = repo / f'journal_{month}.json'
-    frozen = source_digest(manifest, schedule_bytes, public_schedule.read_bytes() if public_schedule.exists() else b'', public_journal.read_bytes() if public_journal.exists() else b'')
+    frozen = source_digest(manifest, schedule_bytes, public_schedule.read_bytes() if public_schedule.exists() else b'', public_journal.read_bytes() if public_journal.exists() else b'', common_bytes)
     if operation != 'preview' and os.environ.get('BENTAN_EXPECTED_DIGEST') != frozen:
         raise ValueError('The originals or public data changed after preview; confirm again')
     output = export_month_schedule_json(str(schedule))
@@ -161,13 +185,12 @@ def main():
         raise ValueError('Both campuses and the selected month must be fully covered')
     originals = work / 'originals'
     changed = []
-    if operation in ('preview', 'create'):
+    if operation in ('preview', 'create') and not all(has_month_sheet(cloud / relative, month) for relative in manifest['entries']):
         for relative in manifest['entries']:
             destination = originals / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(cloud / relative, destination)
-        # An unregistered editing master is never downloaded or registered here.
-        command(['rclone', 'copy', 'onedrive:デスクトップ/【完成版】授業日誌システム', str(scripts), '--include', '/TEMPLATE_MAIN_COMMON.xlsx', '--max-depth', '1'])
+        # The registered master was frozen before the preview comparison.
         from ci_extract_and_push import create_month_sheets
         print('[BENTAN] Checking the selected month on isolated copies', flush=True)
         create_month_sheets(scripts, [month], cloud)
@@ -182,10 +205,15 @@ def main():
     command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule_check)])
     if schedule_check.read_bytes() != schedule_bytes:
         raise ValueError('The schedule changed during confirmation')
+    if common_bytes is not None:
+        master_check = work / 'common-master-recheck.xlsx'
+        command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/TEMPLATE_MAIN_COMMON.xlsx', str(master_check)])
+        if master_check.read_bytes() != common_bytes:
+            raise ValueError('The registered common master changed during confirmation')
     print('[BENTAN] Rechecking the schedule and every original version', flush=True)
     verify_listing_unchanged(manifest, remote_listing(REMOTE))
     verify_versions(client, manifest['entries'])
-    summary = {'sourceDigest': frozen, 'lessons': len(rows), 'changedWorkbooks': len(changed), 'uploaded': 0, 'published': False, 'publicationVerified': False}
+    summary = {'sourceDigest': frozen, 'lessons': len(rows), 'changedWorkbooks': len(changed), 'uploaded': 0, 'published': False, 'publicationVerified': False, 'masterRegistered': registered_master}
     if operation == 'create':
         # Back up the exact frozen original bytes before any original can be replaced.
         for relative in changed:

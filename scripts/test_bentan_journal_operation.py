@@ -5,7 +5,7 @@ import tempfile
 import unittest
 import openpyxl
 from bentan_journal_operation import (JST, validate_operation, workbook_sheets,
-    assert_only_new_month, source_digest, merge_for_publication)
+    assert_only_new_month, source_digest, merge_for_publication, validate_master, has_month_sheet)
 
 IDENTITY = '12345678-1234-4234-8234-123456789abc'
 
@@ -19,6 +19,10 @@ class Boundaries(unittest.TestCase):
             with self.assertRaises(ValueError):
                 validate_operation(action, month, identity, now)
         validate_operation('create', '2026-12', IDENTITY, datetime(2026,11,20,tzinfo=JST))
+        with self.assertRaises(ValueError):
+            validate_master('create', '2026-12', False)
+        validate_master('create', '2026-12', True)
+        validate_master('preview', '2026-12', False)
 
     def test_old_sheets_and_user_input_must_survive_new_month_creation(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -29,9 +33,12 @@ class Boundaries(unittest.TestCase):
             book.active['B2']='=1+2'
             book.active.merge_cells('C3:D4')
             book.save(path)
+            self.assertTrue(has_month_sheet(path,'2026-10'))
+            self.assertFalse(has_month_sheet(path,'2026-11'))
             before=workbook_sheets(path)
             book.create_sheet('2026-11')
             book.save(path)
+            self.assertTrue(has_month_sheet(path,'2026-11'))
             assert_only_new_month(before,workbook_sheets(path),'2026-11')
             book['2026-10']['A1']='changed'
             book.save(path)
@@ -45,6 +52,8 @@ class Boundaries(unittest.TestCase):
         self.assertNotEqual(baseline,source_digest(changed,b'schedule',b'publicSchedule',b'journal'))
         self.assertNotEqual(baseline,source_digest(manifest,b'edited',b'publicSchedule',b'journal'))
         self.assertNotEqual(baseline,source_digest(manifest,b'schedule',b'publicSchedule',b'newer'))
+        self.assertNotEqual(source_digest(manifest,b'schedule',b'publicSchedule',b'journal',b'master-v1'),
+                            source_digest(manifest,b'schedule',b'publicSchedule',b'journal',b'master-v2'))
 
     def test_publication_preserves_existing_content_recording_policy_and_future_entries(self):
         key='2026-11-05|time|hon|j2mathS|1'
