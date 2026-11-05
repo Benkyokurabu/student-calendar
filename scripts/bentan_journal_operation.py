@@ -130,6 +130,7 @@ def main():
     os.chdir(scripts)
     work = scripts / '_bentan_operation'
     work.mkdir()
+    print('[BENTAN] Checking the selected schedule original', flush=True)
     listing = command(['rclone', 'lsf', 'onedrive:デスクトップ/【完成版】授業日誌システム', '--files-only', '--max-depth', '1']).decode('utf-8')
     year, number = map(int, month.split('-'))
     names = [name for name in listing.splitlines() if re.fullmatch(rf'{year}年0?{number}月スケジュール\.xlsm', name)]
@@ -139,12 +140,14 @@ def main():
     command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule)])
     schedule_bytes = schedule.read_bytes()
     cloud = scripts / '_cloud_journal'
+    print('[BENTAN] Downloading shared journals without modifying originals', flush=True)
     command(['rclone', 'copy', REMOTE, str(cloud), '--exclude', '**/_backup*/**', '--exclude', '**/退避/**', '--include', '*.xlsx', '--transfers', '8'])
     from safe_journal_upload import GraphClient, capture_manifest, remote_listing, verify_listing_unchanged, verify_versions, apply_manifest
     from export_schedule_json import export_month_schedule_json
     from build_journal_map import build_slots
     from cloud_backup import backup_file
     client = GraphClient.from_rclone('onedrive')
+    print('[BENTAN] Freezing original file identities and versions', flush=True)
     manifest = capture_manifest(client, cloud, remote_listing(REMOTE), REMOTE)
     verify_listing_unchanged(manifest, remote_listing(REMOTE))
     public_schedule = repo / f'schedule_{month}.json'
@@ -156,28 +159,30 @@ def main():
     rows = json.loads(output.read_text('utf-8'))
     if not rows or {row.get('campus') for row in rows} != {'hon', 'minami'} or any(not row.get('date', '').startswith(month + '-') for row in rows):
         raise ValueError('Both campuses and the selected month must be fully covered')
-    before = {}
     originals = work / 'originals'
     changed = []
     if operation in ('preview', 'create'):
         for relative in manifest['entries']:
-            before[relative] = workbook_sheets(cloud / relative)
             destination = originals / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(cloud / relative, destination)
         # An unregistered editing master is never downloaded or registered here.
         command(['rclone', 'copy', 'onedrive:デスクトップ/【完成版】授業日誌システム', str(scripts), '--include', '/TEMPLATE_MAIN_COMMON.xlsx', '--max-depth', '1'])
         from ci_extract_and_push import create_month_sheets
+        print('[BENTAN] Checking the selected month on isolated copies', flush=True)
         create_month_sheets(scripts, [month], cloud)
         for relative, entry in manifest['entries'].items():
-            assert_only_new_month(before[relative], workbook_sheets(cloud / relative), month)
             if digest((cloud / relative).read_bytes()) != entry['sha256']:
+                # Exact byte equality is stronger and much cheaper for unchanged books.
+                # Only a changed copy needs every old worksheet compared semantically.
+                assert_only_new_month(workbook_sheets(originals / relative), workbook_sheets(cloud / relative), month)
                 changed.append(relative)
     # Saving an Excel original after this read cannot silently publish a stale snapshot.
     schedule_check = work / 'schedule-recheck.xlsm'
     command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule_check)])
     if schedule_check.read_bytes() != schedule_bytes:
         raise ValueError('The schedule changed during confirmation')
+    print('[BENTAN] Rechecking the schedule and every original version', flush=True)
     verify_listing_unchanged(manifest, remote_listing(REMOTE))
     verify_versions(client, manifest['entries'])
     summary = {'sourceDigest': frozen, 'lessons': len(rows), 'changedWorkbooks': len(changed), 'uploaded': 0, 'published': False, 'publicationVerified': False}
@@ -229,6 +234,7 @@ def main():
             time.sleep(10)
         if not summary['publicationVerified']:
             raise RuntimeError('The commit was saved, but the public output has not been verified')
+    print('[BENTAN] Saving the verified operation result to Bentan', flush=True)
     notify(request_id, operation, month, summary)
     print(json.dumps({'operation': operation, 'month': month, **summary}))
 
