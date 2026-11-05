@@ -1,0 +1,59 @@
+name: Bentan Journal Management
+run-name: 勉たん ${{ inputs.request_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Bentan operation UUID
+        required: true
+        type: string
+      operation:
+        description: Explicitly selected operation
+        required: true
+        type: choice
+        options: [preview, create, publish]
+      month:
+        description: Selected YYYY-MM
+        required: true
+        type: string
+      expected_digest:
+        description: Frozen source digest from the completed preview
+        required: false
+        default: ''
+        type: string
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: journal-cloud-write
+  cancel-in-progress: false
+jobs:
+  selected-operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install existing journal dependencies
+        run: pip install openpyxl requests
+      - name: Verify the operation boundaries
+        run: python -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
+      - name: Install rclone
+        run: curl -fsSL https://rclone.org/install.sh | sudo bash
+      - name: Restore the existing cloud connection
+        env:
+          RCLONE_CONF_B64: ${{ secrets.RCLONE_CONF_B64 }}
+        run: |
+          mkdir -p ~/.config/rclone
+          printf '%s' "$RCLONE_CONF_B64" | base64 -d > ~/.config/rclone/rclone.conf
+      - name: Run only the requested month and operation
+        env:
+          BENTAN_REQUEST_ID: ${{ inputs.request_id }}
+          BENTAN_OPERATION: ${{ inputs.operation }}
+          BENTAN_MONTH: ${{ inputs.month }}
+          BENTAN_EXPECTED_DIGEST: ${{ inputs.expected_digest }}
+          JOURNAL_UPLOAD_PROBE_PARENTS: ${{ vars.JOURNAL_UPLOAD_PROBE_PARENTS }}
+          PYTHONUNBUFFERED: '1'
+        run: python scripts/bentan_journal_operation.py
