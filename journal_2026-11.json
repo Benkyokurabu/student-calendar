@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-05T01:34:06",
+  "generatedAt": "2026-11-05T06:10:32.450364+00:00",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -1881,20 +1881,35 @@
       }
     },
     "2026-11-05|6:35～8:05|hon|hon_j2_X_math|4": {
-      "content": "座標平面上の四角形",
-      "page": "P５１",
-      "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
+      "content": "",
+      "page": "",
+      "report": "",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "茂呂",
-      "curriculumProgress": "±0",
+      "absence": "",
+      "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [
-        "P53,55,57"
-      ]
+      "homework": [],
+      "prevEntry": {
+        "content": "座標平面上の四角形",
+        "page": "P５１",
+        "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
+        "recordingUrl": "",
+        "teacher": "工藤",
+        "absence": "茂呂",
+        "curriculumProgress": "±0",
+        "note": "",
+        "sessionNumber": "9",
+        "monthNum": "10",
+        "weekNum": "1",
+        "homework": [
+          "P53,55,57"
+        ],
+        "date": "2026-10-29"
+      }
     },
     "2026-11-05|6:35～8:05|hon|hon_j3_B_eng|1": {
       "content": "",
@@ -1992,20 +2007,35 @@
       }
     },
     "2026-11-05|6:35～8:05|minami|minami_j2_X_math|5": {
-      "content": "座標平面上の四角形",
-      "page": "P５１",
-      "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
+      "content": "",
+      "page": "",
+      "report": "",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "茂呂",
-      "curriculumProgress": "±0",
+      "absence": "",
+      "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [
-        "P53,55,57"
-      ]
+      "homework": [],
+      "prevEntry": {
+        "content": "座標平面上の四角形",
+        "page": "P５１",
+        "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
+        "recordingUrl": "",
+        "teacher": "工藤",
+        "absence": "茂呂",
+        "curriculumProgress": "±0",
+        "note": "",
+        "sessionNumber": "9",
+        "monthNum": "10",
+        "weekNum": "1",
+        "homework": [
+          "P53,55,57"
+        ],
+        "date": "2026-10-29"
+      }
     },
     "2026-11-05|6:35～8:05|minami|minami_j3_B_eng|1": {
       "content": "",

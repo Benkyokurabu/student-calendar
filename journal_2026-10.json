@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-05T03:22:36.155810+00:00",
+  "generatedAt": "2026-11-05T06:10:32.450364+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -12006,18 +12006,20 @@
       }
     },
     "2026-10-29|6:35～8:05|hon|hon_j2_X_math|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "座標平面上の四角形",
+      "page": "P５１",
+      "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "茂呂",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "9",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P53,55,57"
+      ],
       "prevEntry": {
         "content": "座標平面上の三角形",
         "page": "P45まで",
@@ -12140,18 +12142,20 @@
       }
     },
     "2026-10-29|6:35～8:05|minami|minami_j2_X_math|5": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "座標平面上の四角形",
+      "page": "P５１",
+      "report": "この辺りに関しては、全体的によくできていた。斉藤はオンラインの環境が良くなかったが、スマホに変えたらよくなった。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "茂呂",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "9",
       "monthNum": "10",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P53,55,57"
+      ],
       "prevEntry": {
         "content": "座標平面上の三角形",
         "page": "P45まで",
