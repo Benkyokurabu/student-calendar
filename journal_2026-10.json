@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-05T01:20:06",
+  "generatedAt": "2026-11-05T03:22:36.155810+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -5621,9 +5621,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-bac8-e023a8c8aaf8"
+      }
     },
     "2026-10-14|8:25～9:55|hon|hon_j3_X_math|6": {
       "content": "70２円の問題",
@@ -5925,9 +5923,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-08"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8067-a406-f4ae3484c62a"
+      }
     },
     "2026-10-15|6:35～8:05|hon|hon_j1_B_math|3": {
       "content": "要点10円・扇形まで",
@@ -7245,9 +7241,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-07"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80fd-9109-cd90372d0c8c"
+      }
     },
     "2026-10-17|8:25～9:55|minami|minami_special_数学　　補講③|2": {
       "content": "",
@@ -8347,9 +8341,7 @@
         "monthNum": "10",
         "weekNum": "2",
         "date": "2026-10-14"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8024-865a-f022732f45cd"
+      }
     },
     "2026-10-21|4:55～6:15|minami|minami_e4_A_arith|3": {
       "content": "単元テスト③",
@@ -10265,9 +10257,7 @@
         "monthNum": "10",
         "weekNum": "3",
         "date": "2026-10-19"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-80d1-959d-ce4cf4eb5e21"
+      }
     },
     "2026-10-24|8:25～9:55|minami|minami_j3_A_math|1": {
       "content": "中点連結定理",
@@ -10741,9 +10731,7 @@
         "monthNum": "9",
         "weekNum": "4",
         "date": "2026-09-28"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-807d-b106-d7f291e80ba1"
+      }
     },
     "2026-10-27|4:55～6:15|hon|hon_e4_A_jp|2": {
       "content": "詩",
