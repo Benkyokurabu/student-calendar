@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-04T17:47:06.356751+00:00",
+  "generatedAt": "2026-11-05T01:20:06",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -11481,18 +11481,20 @@
       }
     },
     "2026-10-28|6:35～8:05|hon|hon_j1_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Can I、which orの疑問文",
+      "page": "#１１まで",
+      "report": "今回は各種疑問文を扱った。大きな問題はなく、スムーズに進められた。また後半で少し時間があったため、三単現の復習を行った。こちらは問題なく出来る生徒が増えてきた印象。かなり順調。",
       "recordingUrl": "",
       "teacher": "岩本",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "青木",
+      "curriculumProgress": "±0",
       "note": "３９回",
       "sessionNumber": "40",
       "monthNum": "10",
       "weekNum": "5",
-      "homework": [],
+      "homework": [
+        "#１２"
+      ],
       "prevEntry": {
         "content": "unit６",
         "page": "Goalまで",
