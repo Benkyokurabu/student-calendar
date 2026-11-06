@@ -96,9 +96,9 @@ def repo_dir() -> Optional[Path]:
     return None
 
 
-def make_recording_json(month: str) -> Dict[str, Any]:
+def make_recording_json(month: str, *, schedule: list[dict] | None = None) -> Dict[str, Any]:
     meeting_ids = z.load_meeting_ids()
-    events = z.relevant_events(z.load_schedule(month), month, meeting_ids)
+    events = z.relevant_events(z.load_schedule(month) if schedule is None else schedule, month, meeting_ids)
     client = z.ZoomClient()
     recordings_by_id = z.fetch_recordings_for_events(client, events, meeting_ids, month)
 

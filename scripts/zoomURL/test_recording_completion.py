@@ -60,6 +60,14 @@ class RecordingCompletionTests(unittest.TestCase):
             payload=generator.make_recording_json('2026-11')
         self.assertTrue(payload['entries'][generator.event_key(event)]['recordingCompleted'])
 
+        with patch.object(zoom,'ZoomClient'),patch.object(zoom,'load_meeting_ids',return_value={'minami':{'1':'123'}}), \
+             patch.object(zoom,'load_schedule',side_effect=AssertionError('stale local schedule must not be read')), \
+             patch.object(zoom,'fetch_recordings_for_events',return_value={'123':[candidate]}), \
+             patch.object(zoom,'WorkbookWriter',side_effect=AssertionError('Excel writer must not run')), \
+             patch.object(zoom.openpyxl,'load_workbook',side_effect=AssertionError('Excel workbook must not be opened')):
+            authoritative=generator.make_recording_json('2026-11',schedule=[event])
+        self.assertEqual(authoritative['entries'],payload['entries'])
+
 
 if __name__=='__main__':
     unittest.main()

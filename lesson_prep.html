@@ -840,7 +840,7 @@ function render() {
     const campusLabel = roomStr ? (campusName + "・" + roomStr) : campusName;
     const recording = findRecordingForLesson(ev);
     const recordingStatus = recording?.url && recording.recordingCompleted === true
-      ? '<span class="recording-available" data-recording-available>録画あり</span>' : '';
+      ? `<a class="recording-available" data-recording-available href="${escAttr(recording.url)}" target="_blank" rel="noopener noreferrer">動画を見る</a>` : '';
     const recordingButton = recording ? `<button type="button" class="btn-copy-recording" data-url="${escAttr(recording.url)}">録画URLをコピー</button>` : "";
 
     html += `

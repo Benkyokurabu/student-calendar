@@ -1,5 +1,6 @@
 @echo off
 setlocal
+set "PYTHONUTF8=1"
 cd /d "%~dp0"
 
 set "LOGDIR=%~dp0logs"
@@ -12,7 +13,7 @@ where python >nul 2>nul
 if errorlevel 1 set "PYTHON_EXE=%LOCALAPPDATA%\Programs\Python\Python313\python.exe"
 
 echo [%date% %time%] START >> "%LOGFILE%" 2>&1
-"%PYTHON_EXE%" "%~dp0publish_zoom_recording_url_json.py" >> "%LOGFILE%" 2>&1
+"%PYTHON_EXE%" "%LOCALAPPDATA%\BenkyoClub\student-calendar\scripts\zoomURL\publish_zoom_recording_url_json.py" --repo "%LOCALAPPDATA%\BenkyoClub\student-calendar" --config-dir "%~dp0." >> "%LOGFILE%" 2>&1
 set "EXITCODE=%ERRORLEVEL%"
 echo [%date% %time%] END exit=%EXITCODE% >> "%LOGFILE%" 2>&1
 

@@ -18,6 +18,7 @@ const base=`http://127.0.0.1:${server.address().port}`,browser=await chromium.la
 try{
  for(const width of [390,1280])for(const scenario of ['completed','missing','wrong-date','wrong-time','wrong-class','legacy','processing','hidden','override-hidden','corrected','late']){
   const page=await browser.newPage({viewport:{width,height:950}}),errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.context().route('https://example.test/**',route=>route.fulfill({contentType:'text/html',body:'<title>Recording destination</title>'}));
   await page.clock.install({time:new Date('2026-11-04T12:00:00+09:00')});
   let available=scenario!=='late';
   await page.route('**/*',async route=>{
@@ -46,13 +47,22 @@ try{
   const expected=['completed','corrected'].includes(scenario);
   assert.equal(await badge.count(),expected?1:0,scenario);
   assert.equal(await second.locator('[data-recording-available]').count(),0,'a different class must not borrow the status');
-  if(expected)assert.equal((await badge.innerText()).trim(),'録画あり');
+  if(expected){
+   assert.equal((await badge.innerText()).trim(),'動画を見る');
+   assert.equal(await badge.getAttribute('href'),scenario==='corrected'?corrected:url);
+   assert.equal(await badge.getAttribute('target'),'_blank');
+   assert.match(await badge.getAttribute('rel'),/noopener/);
+   const [popup]=await Promise.all([page.waitForEvent('popup'),badge.click()]);
+   await popup.waitForLoadState();
+   assert.equal(popup.url(),scenario==='corrected'?corrected:url);await popup.close();
+  }
   if(scenario==='corrected')assert.equal(await first.getByRole('button',{name:'録画URLをコピー',exact:true}).getAttribute('data-url'),corrected);
   if(['legacy','processing'].includes(scenario))assert.equal(await first.getByRole('button',{name:'録画URLをコピー',exact:true}).count(),1,'existing published links remain usable without claiming completed video');
   if(['hidden','override-hidden','missing','wrong-date','wrong-time','wrong-class'].includes(scenario))assert.equal(await first.getByRole('button',{name:'録画URLをコピー',exact:true}).count(),0);
   if(scenario==='late'){
    const controls=await page.locator('.controls').boundingBox();available=true;await page.clock.runFor(31000);
    await page.waitForFunction(()=>document.querySelectorAll('[data-recording-available]').length===1);
+   assert.equal(await first.getByRole('link',{name:'動画を見る',exact:true}).getAttribute('href'),url);
    assert.deepEqual(await page.locator('.controls').boundingBox(),controls,'auto refresh preserves the controls');
   }
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);assert.deepEqual(errors,[]);

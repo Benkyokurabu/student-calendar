@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 import zoom_recording_url_list as url_list
@@ -27,6 +28,21 @@ if str(SYSTEM_DIR) not in sys.path:
     sys.path.insert(0, str(SYSTEM_DIR))
 
 from publish_lock import PublishLock
+
+
+def load_publishing_schedule(repo: Path, month: str) -> list[dict]:
+    """Read the authoritative month from the fetched remote, never stale local JSON."""
+    result = run(["git", "show", f"origin/main:schedule_{month}.json"], cwd=repo, check=False)
+    if result.returncode != 0:
+        raise RuntimeError(f"当月の正本予定がありません: schedule_{month}.json。過去月への切替は行いません。")
+    events = json.loads(result.stdout.lstrip("\ufeff"))
+    if not isinstance(events, list) or not events or any(
+        not isinstance(ev, dict) or not str(ev.get("date", "")).startswith(month + "-")
+        for ev in events
+    ):
+        raise RuntimeError(f"正本予定の月・形式が不正です: schedule_{month}.json")
+    print(f"[schedule] origin/main:schedule_{month}.json events={len(events)}", flush=True)
+    return events
 
 def comparable_payload(payload: dict) -> dict:
     data = dict(payload)
@@ -221,7 +237,9 @@ def push_pending_commits(repo: Path, payload_text: str, month: str) -> bool:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Publish Zoom recording URL JSON for lesson_prep.html.")
-    ap.add_argument("--month", help="Target month, e.g. 2026-08. Defaults to latest schedule month.")
+    ap.add_argument("--month", help="Target month, e.g. 2026-08. Defaults to the current JST month.")
+    ap.add_argument("--repo", type=Path, help="Dedicated student-calendar publishing repository.")
+    ap.add_argument("--config-dir", type=Path, help="Existing Zoom .env and meeting IDs directory; no Excel files are accessed.")
     ap.add_argument("--dry-run", action="store_true", help="Fetch Zoom data and report whether JSON would change, but do not write, commit, or push.")
     args = ap.parse_args()
 
@@ -232,26 +250,38 @@ def main() -> int:
     publish_lock.acquire()
     atexit.register(publish_lock.release)
 
-    month = args.month or url_list.z.determine_latest_schedule_month()
+    current_month = datetime.now(url_list.z.JST).strftime("%Y-%m")
+    month = args.month or current_month
+    if len(month) != 7 or month[4] != "-" or not month.replace("-", "").isdigit() or not 1 <= int(month[5:]) <= 12:
+        raise ValueError("対象月はYYYY-MMで指定してください。")
     print(f"[publish] target month: {month}")
+
+    repo = args.repo or url_list.repo_dir()
+    if repo is None:
+        raise RuntimeError("student-calendar repo was not found.")
+    run(["git", "fetch", "origin", "main"], cwd=repo, timeout=60)
+    schedule = load_publishing_schedule(repo, month)
+    if args.config_dir:
+        url_list.z.load_dotenv(args.config_dir / ".env")
+        url_list.z.MEETING_IDS_PATH = args.config_dir / "zoom_meeting_ids.json"
 
     from recording_publication_filter import apply_payload, load_rules
     publication_rules = load_rules()
-    payload = url_list.make_recording_json(month)
+    payload = url_list.make_recording_json(month, schedule=schedule)
     out = url_list.SYSTEM_DIR / f"zoom_recording_urls_{month}.json"
     latest = url_list.SYSTEM_DIR / "zoom_recording_urls_latest.json"
-    update_latest = month == url_list.z.determine_latest_schedule_month()
+    update_latest = month == current_month
     outputs = (out, latest) if update_latest else (out,)
-
-    repo = url_list.repo_dir()
-    if repo is None:
-        print("[ERROR] student-calendar repo was not found.")
-        return 1
 
     existing = load_existing_payload(repo / out.name) or load_existing_payload(out)
     payload = apply_payload(merge_preserving_published_entries(payload, existing), publication_rules)
     validate_payload(payload, month, existing)
     payload_text = json.dumps(payload, ensure_ascii=False, indent=2)
+
+    if args.dry_run:
+        changed = not existing or comparable_payload(existing) != comparable_payload(payload)
+        print(f"[dry-run] month={month} changed={changed} matched={payload['matched']} missing={payload['missing']}")
+        return 0
 
     pending_pushed = push_pending_commits(repo, payload_text, month)
 
@@ -268,10 +298,6 @@ def main() -> int:
             print("[publish] pending commit was recovered; no new payload changes")
         else:
             print(f"[publish] no recording URL changes matched={payload['matched']} missing={payload['missing']}")
-        return 0
-
-    if args.dry_run:
-        print(f"[dry-run] recording URL JSON would change matched={payload['matched']} missing={payload['missing']}")
         return 0
 
     out.write_text(payload_text, encoding="utf-8")

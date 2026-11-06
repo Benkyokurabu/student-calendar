@@ -12,6 +12,7 @@ on:
       - 'scripts/zoomURL/publish_zoom_recording_url_json.py'
       - 'scripts/zoomURL/test_zoom_lesson_only.py'
       - 'scripts/zoomURL/test_recording_completion.py'
+      - 'scripts/zoomURL/test_publishing_schedule.py'
   schedule:
     # JST 16:25-16:35, 16:40/45/50/55
     - cron: '25-35 7 * * *'
@@ -97,6 +98,11 @@ jobs:
 
       - name: Verify completed video evidence and Excel isolation
         run: python -m unittest discover -s scripts/zoomURL -p 'test_recording_completion.py' -v
+
+      - name: Verify authoritative month and historical publication
+        run: |
+          python -m unittest discover -s scripts/zoomURL -p 'test_publishing_schedule.py' -v
+          python -m unittest discover -s scripts/zoomURL -p 'test_historical_zoom_publish.py' -v
 
       - name: Validate required secrets
         env:

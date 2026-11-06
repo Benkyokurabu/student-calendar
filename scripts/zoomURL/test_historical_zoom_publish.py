@@ -19,7 +19,8 @@ class HistoricalPublicationTests(unittest.TestCase):
             payload = {"month": "2026-09", "matched": 1, "missing": 0, "entries": {"lesson": {"date": "2026-09-21", "url": "https://example.test/old"}}}
             def git(args, **kwargs):
                 code = 1 if args[:3] == ["git", "diff", "--cached"] else 0
-                return subprocess.CompletedProcess(args, code, "", "")
+                stdout = json.dumps([{"date": "2026-09-21"}]) if args[:2] == ["git", "show"] else ""
+                return subprocess.CompletedProcess(args, code, stdout, "")
             with patch.object(sys, "argv", ["publisher", "--month", "2026-09"]), patch.object(publisher.url_list, "SYSTEM_DIR", output), patch.object(publisher.url_list.z, "determine_latest_schedule_month", return_value="2026-10"), patch.object(publisher.url_list, "make_recording_json", return_value=payload), patch.object(publisher.url_list, "repo_dir", return_value=repo), patch.object(publisher, "PublishLock"), patch.object(publisher, "push_pending_commits", return_value=False), patch.object(publisher, "pull_rebase_with_zoom_resolution"), patch.object(publisher, "run", side_effect=git) as calls, patch.object(policy, "load_rules", return_value=[]), patch.object(policy, "apply_payload", side_effect=lambda data, rules: data):
                 self.assertEqual(publisher.main(), 0)
             self.assertEqual((output / "zoom_recording_urls_latest.json").read_text("utf-8"), sentinel)
