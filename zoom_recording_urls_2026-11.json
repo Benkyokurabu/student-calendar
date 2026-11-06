@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-06T00:35:18.753970+09:00",
-  "matched": 52,
-  "missing": 302,
+  "generatedAt": "2026-11-06T18:20:06.298091+09:00",
+  "matched": 54,
+  "missing": 300,
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
@@ -1205,6 +1205,52 @@
       "startOffsetMinutes": -0.4,
       "recordingDurationMinutes": 91.0,
       "lessonOverlapMinutes": 90.0
+    },
+    "2026-11-06|4:55～6:15|minami|minami_e5_A_jp|3": {
+      "url": "https://us06web.zoom.us/rec/play/o5-eA9iHVnp1efKRJGh0x4AC4LjaOTaWrYKh8_cFPF9sdd9DxlJiN-RTTX-ogLNlUqLZk94NhP89WVo9.OU7w6YGvcMib1mlx",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-06T16:58:32+09:00",
+      "meetingId": "3721287174",
+      "topic": "南校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-11-06",
+      "time": "4:55～6:15",
+      "campus": "minami",
+      "room": "3",
+      "grade": "e5",
+      "class": "A",
+      "subject": "jp",
+      "label": "小５A 国語",
+      "teacher": "高山",
+      "onlineLessonKey": "2026-11-06|4:55～6:15|e5|A|jp",
+      "recordingCampus": "minami",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 3.5,
+      "recordingDurationMinutes": 72.8,
+      "lessonOverlapMinutes": 72.8
+    },
+    "2026-11-06|4:55～6:15|hon|hon_e5_A_arith|3": {
+      "url": "https://us06web.zoom.us/rec/play/7bXTWFmtLsGjcO7Fpz4A51gxqW3VChdCU1z8NBBcsJ9VqRKVLfgQyfqOgSzlo4uF6wyrnZJ0ypplZi0v.8AbyuXONNmqfB9yO",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-06T17:10:16+09:00",
+      "meetingId": "5883099324",
+      "topic": "本校　第３教室のパーソナルミーティングルーム",
+      "date": "2026-11-06",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "3",
+      "grade": "e5",
+      "class": "A",
+      "subject": "arith",
+      "label": "小５A 算数",
+      "teacher": "鈴木",
+      "onlineLessonKey": "2026-11-06|4:55～6:15|e5|A|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "3",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 15.3,
+      "recordingDurationMinutes": 61.3,
+      "lessonOverlapMinutes": 61.3
     }
   }
 }
