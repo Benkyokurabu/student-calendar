@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-07T03:31:43",
+  "generatedAt": "2026-11-07T23:56:52",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -2832,18 +2832,20 @@
       }
     },
     "2026-11-07|4:55～6:15|hon|hon_e5_X_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "説明的文章・文の成分",
+      "page": "P60-62/50-51",
+      "report": "＜塾長の代講：髙山＞音読→演習→解説と行う。知識面に弱さを感じたが、良く読み取れていたと思う。文の成分（主語・述語・修飾語）では、主述はしっかりとしていたが、修飾・被修飾の関係はまだあやふやな印象。にこやかに行うことができました。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "12",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "物語、文節・単語分け",
         "page": "p77-79、p20-21",
@@ -2877,18 +2879,20 @@
       "weekNum": ""
     },
     "2026-11-07|4:55～6:15|minami|minami_e5_X_jp|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "説明的文章・文の成分",
+      "page": "P60-62/50-51",
+      "report": "＜塾長の代講：髙山＞音読→演習→解説と行う。知識面に弱さを感じたが、良く読み取れていたと思う。文の成分（主語・述語・修飾語）では、主述はしっかりとしていたが、修飾・被修飾の関係はまだあやふやな印象。にこやかに行うことができました。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "なし",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "12",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "なし"
+      ],
       "prevEntry": {
         "content": "物語、文節・単語分け",
         "page": "p77-79、p20-21",
