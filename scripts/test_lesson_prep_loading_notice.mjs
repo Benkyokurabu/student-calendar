@@ -17,7 +17,8 @@ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const base=`http://127.0.0.1:${server.address().port}`;
 const browser=await chromium.launch({headless:true,...(process.env.CALENDAR_TEST_CHANNEL?{channel:process.env.CALENDAR_TEST_CHANNEL}:{})});
 try{
- for(const width of [390,1280])for(const scenario of ['fast','delayed','failed','timeout','unavailable','changed-month']){
+ for(const width of [390,1280])for(const scenario of ['fast','delayed','failed','timeout','unavailable','changed-month'].filter(value=>!process.env.CALENDAR_NOTICE_SCENARIO||value===process.env.CALENDAR_NOTICE_SCENARIO)){
+  console.log(`${width}px ${scenario}: checking`);
   const page=await browser.newPage({viewport:{width,height:900}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
   await page.clock.install({time:new Date('2026-11-02T12:00:00+09:00')});
@@ -25,11 +26,12 @@ try{
    window.visibleScheduleWarnings=[];
    new MutationObserver(()=>{const element=document.getElementById('schedule-source-status');if(element&&!element.hidden)window.visibleScheduleWarnings.push(element.textContent);}).observe(document,{subtree:true,childList:true,attributes:true,characterData:true});
   });
-  let finish;
+  let finish,liveRequests=0;
   const gate=new Promise(resolve=>{finish=resolve;});
   await page.route('**/*',async route=>{
    const url=new URL(route.request().url()),file=path.basename(url.pathname);
    if(url.pathname==='/api/schedule/calendar'){
+    liveRequests++;
     const ym=url.searchParams.get('month');
     if(ym!==month)return route.fulfill({json:payload(ym)});
     if(['delayed','timeout','changed-month'].includes(scenario))await gate;
@@ -68,8 +70,8 @@ try{
     assert.equal(await notice.count(),0,'an old failed month cannot create a warning in the current month');
    }else{
     await page.clock.runFor(10_001);
-    await page.waitForFunction(()=>{const element=document.getElementById('schedule-source-status');return element&&!element.hidden;});
-    assert.match(await notice.innerText(),/接続できないため、保存済み/);
+    assert.equal(await notice.count(),0,'a timed-out live source must remain silent while the archive is displayed');
+    assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
     finish();
    }
   }else if(scenario==='fast'){
@@ -77,11 +79,18 @@ try{
    assert.equal(await notice.count(),0,'healthy loads must not create warning markup');
    assert.equal(await notice.isVisible(),false);assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
   }else{
-   await page.waitForFunction(()=>{const element=document.getElementById('schedule-source-status');return element&&!element.hidden;});
-   assert.match(await notice.innerText(),scenario==='unavailable'?/授業データを取得できません/:/接続できないため、保存済み/);
+   await page.waitForFunction(()=>!initialLoading);
+   await page.clock.runFor(100);
+   assert.equal(await notice.count(),0,'actual connection failure must not insert a status banner');
+   assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
+   const reads=liveRequests;
+   const retried=page.waitForRequest(request=>request.url().includes('/api/schedule/calendar'));
+   await page.clock.runFor(60_001);await retried;
+   assert(liveRequests>reads,'the normal one-minute reconnection is preserved');
+   assert.equal(await notice.count(),0,'automatic retries must also remain silent');
   }
   assert.deepEqual(errors,[]);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   if(process.env.CALENDAR_SCREENSHOT_DIR&&['delayed','failed'].includes(scenario)){await fs.mkdir(process.env.CALENDAR_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.CALENDAR_SCREENSHOT_DIR,`lesson-prep-${scenario}-${width}.png`),fullPage:true});}
-  await page.close();console.log(`${width}px ${scenario}: initial loading/failure notice verified`);
+  await page.close();console.log(`${width}px ${scenario}: source notices omitted, schedule loading and retry preserved`);
  }
 }finally{await browser.close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}
