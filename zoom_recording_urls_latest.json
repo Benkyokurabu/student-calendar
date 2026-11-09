@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-06T22:20:05.189483+09:00",
-  "matched": 61,
-  "missing": 293,
+  "generatedAt": "2026-11-09T20:06:28.259985+09:00",
+  "matched": 63,
+  "missing": 291,
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
@@ -1412,6 +1412,53 @@
       "startOffsetMinutes": 3.8,
       "recordingDurationMinutes": 87.2,
       "lessonOverlapMinutes": 86.2
+    },
+    "2026-11-09|4:55～6:15|hon|hon_e4_X_arith|6": {
+      "url": "https://us06web.zoom.us/rec/play/DuY0wllCvrDURXBzc5W4ymY3uMefXBAMyW8xS26rxvkLO-pHTKyB5hNO83bbzfgEkZFENlyt-xhJQ8MU.rnm_z9gMezlrsbYU",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-09T17:01:13+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-11-09",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "6",
+      "grade": "e4",
+      "class": "X",
+      "subject": "arith",
+      "label": "小４X 算数",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-11-09|4:55～6:15|e4|X|arith",
+      "recordingCampus": "minami",
+      "recordingRoom": "4",
+      "sharedFromEventKey": "2026-11-09|4:55～6:15|minami|minami_e4_X_arith|4",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 6.2,
+      "recordingDurationMinutes": 74.9,
+      "lessonOverlapMinutes": 73.8
+    },
+    "2026-11-09|4:55～6:15|minami|minami_e4_X_arith|4": {
+      "url": "https://us06web.zoom.us/rec/play/DuY0wllCvrDURXBzc5W4ymY3uMefXBAMyW8xS26rxvkLO-pHTKyB5hNO83bbzfgEkZFENlyt-xhJQ8MU.rnm_z9gMezlrsbYU",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-09T17:01:13+09:00",
+      "meetingId": "2501632659",
+      "topic": "南校　第４教室のパーソナルミーティングルーム",
+      "date": "2026-11-09",
+      "time": "4:55～6:15",
+      "campus": "minami",
+      "room": "4",
+      "grade": "e4",
+      "class": "X",
+      "subject": "arith",
+      "label": "小４X 算数",
+      "teacher": "工藤",
+      "onlineLessonKey": "2026-11-09|4:55～6:15|e4|X|arith",
+      "recordingCampus": "minami",
+      "recordingRoom": "4",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 6.2,
+      "recordingDurationMinutes": 74.9,
+      "lessonOverlapMinutes": 73.8
     }
   }
 }
