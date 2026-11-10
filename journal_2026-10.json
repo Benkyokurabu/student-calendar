@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-10T03:06:19",
+  "generatedAt": "2026-11-10T18:12:42.025362+00:00",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -3571,9 +3571,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-02"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8010-88c8-f96d542ce9b0"
+      }
     },
     "2026-10-09|4:55～6:15|hon|hon_e6_A_arith|2": {
       "content": "比例・反比例まとめ",
@@ -4853,9 +4851,7 @@
         "monthNum": "10",
         "weekNum": "1",
         "date": "2026-10-06"
-      },
-      "hidden": true,
-      "recordingPublicationKey": "test:3ddf0120-80a7-8016-973e-d8c291266c70"
+      }
     },
     "2026-10-13|4:55～6:15|minami|minami_e6_S_arith|2": {
       "content": "単元テスト",
