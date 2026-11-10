@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-09T03:18:36",
+  "generatedAt": "2026-11-10T03:21:38",
   "entries": {
     "2026-11-01|4:55～6:15|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
       "content": "",
@@ -2968,18 +2968,20 @@
       "weekNum": ""
     },
     "2026-11-09|4:55～6:15|hon|hon_e4_X_arith|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "数・図形の並べ方",
+      "page": "P147□２",
+      "report": "規則的に並ぶ数や図形のところ。この部分も良く理解できていた。素晴らしい。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P147□３、４"
+      ],
       "prevEntry": {
         "content": "分配算",
         "page": "P139□３まで",
@@ -2999,18 +3001,21 @@
       }
     },
     "2026-11-09|4:55～6:15|hon|hon_e5_A_eng|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "Unit9Don't～",
+      "page": "Travelp48の3段/ワークp29の大問３まで",
+      "report": "Unit9の続き。今回は否定命令文。Don't be～も含め文法的なことには踏み込まず、～しないでと指導した。大竹がやはり理解力に劣る。初見学の西川は見よう見まねでよくやっており、暗唱もできた。ノートの紙は渡したが、宿題メモは渡し忘れた。Unit9までコピーを渡してある。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋1",
       "note": "",
       "sessionNumber": "36",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "Travelp49の３段暗唱",
+        "Travelp48のcomeからworkを書けるようにしてくる"
+      ],
       "prevEntry": {
         "content": "Unit8リスニングとUnit9",
         "page": "Travelp48の２段/ワークp28大問２(2)まで",
@@ -3045,18 +3050,20 @@
       "homework": []
     },
     "2026-11-09|4:55～6:15|minami|minami_e4_X_arith|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "数・図形の並べ方",
+      "page": "P147□２",
+      "report": "規則的に並ぶ数や図形のところ。この部分も良く理解できていた。素晴らしい。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "±0",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P147□３、４"
+      ],
       "prevEntry": {
         "content": "分配算",
         "page": "P139□３まで",
@@ -3121,18 +3128,21 @@
       "homework": []
     },
     "2026-11-09|6:35～8:05|hon|hon_j1_S_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "疑問詞",
+      "page": "L5#23まで",
+      "report": "疑問詞のまとめ続き。リストの中でいろいろ解説。高橋由乃はget upのupにsをつけていたので、正した。次回はやりはぐっていたDL3/4を手早く終わらせる。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "－0.5",
       "note": "",
       "sessionNumber": "41",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "L5#24,25",
+        "HWGp98～の#1,2/p102～の#1,2"
+      ],
       "prevEntry": {
         "content": "時刻表現と疑問詞まとめ",
         "page": "通常テキストL5p17例文9まで",
@@ -3152,18 +3162,20 @@
       }
     },
     "2026-11-09|6:35～8:05|hon|hon_j2_S_jp|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "小説文",
+      "page": "P62-63",
+      "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "茂呂",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "34",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳P182-185"
+      ],
       "prevEntry": {
         "content": "漢詩",
         "page": "漢字帳P164-171",
@@ -3183,18 +3195,21 @@
       }
     },
     "2026-11-09|6:35～8:05|hon|hon_j3_A_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "国会終了、内閣：議員内閣制まで",
+      "page": "p140～、p144～",
+      "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "長谷川こうき、平居、江川、小堀\n狩野",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp141すべて〇こみ",
+        "ドリルp94-95〇こみ"
+      ],
       "prevEntry": {
         "content": "国会：法律案成立まで",
         "page": "p140",
@@ -3214,18 +3229,21 @@
       }
     },
     "2026-11-09|6:35～8:05|hon|hon_j3_S_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "13地球の公転",
+      "page": "ｐ190まで",
+      "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "小出・板谷",
+      "curriculumProgress": "＋0.5",
       "note": "",
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "できたらドリル",
+        "ｐ110-111"
+      ],
       "prevEntry": {
         "content": "15太陽系、12天体の１日",
         "page": "15太陽系、12天体の１日",
@@ -3245,18 +3263,21 @@
       }
     },
     "2026-11-09|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "30おうぎ形の弧の長さと面積",
+      "page": "P59",
+      "report": "おうぎ形まで入ることができた。清水は今日は内容をしっかりと理解して正しい作図ができていた。もとの力はやはりある。良い。",
       "recordingUrl": "",
       "teacher": "工藤",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "なし",
+      "curriculumProgress": "＋0.3",
       "note": "",
       "sessionNumber": "41",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "＃59，62，63",
+        "P50，51，60～62"
+      ],
       "prevEntry": {
         "content": "２６接する円の作図",
         "page": "P44",
@@ -3277,9 +3298,9 @@
       }
     },
     "2026-11-09|6:35～8:05|minami|minami_j2_S_jp|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "小説文",
+      "page": "P62-63",
+      "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
       "recordingUrl": "",
       "teacher": "高山",
       "absence": "",
@@ -3288,7 +3309,9 @@
       "sessionNumber": "34",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "漢字帳P182-185"
+      ],
       "prevEntry": {
         "content": "漢詩終了",
         "page": "漢字帳p165-171",
@@ -3308,9 +3331,9 @@
       }
     },
     "2026-11-09|6:35～8:05|minami|minami_j3_A_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "国会終了、内閣：議員内閣制まで",
+      "page": "p140～、p144～",
+      "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "",
@@ -3319,7 +3342,10 @@
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp141すべて〇こみ",
+        "ドリルp94-95〇こみ"
+      ],
       "prevEntry": {
         "content": "国会：法律案成立まで",
         "page": "p140",
@@ -3339,9 +3365,9 @@
       }
     },
     "2026-11-09|6:35～8:05|minami|minami_j3_S_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "13地球の公転",
+      "page": "ｐ190まで",
+      "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -3350,7 +3376,10 @@
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "できたらドリル",
+        "ｐ110-111"
+      ],
       "prevEntry": {
         "content": "15太陽系、12天体の１日",
         "page": "15太陽系、12天体の１日",
@@ -3370,18 +3399,21 @@
       }
     },
     "2026-11-09|8:25～9:55|hon|hon_j2_A_eng|1": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "接続詞、比較基礎",
+      "page": "L5#13まで",
+      "report": "接続詞の演習続きから。書き換え問題は思ったよりもできていた。後半は比較に入り、p13のmore型は後で詳しくやるので、とさらっと流した。",
       "recordingUrl": "",
       "teacher": "真下",
-      "absence": "",
-      "curriculumProgress": "",
-      "note": "",
+      "absence": "中野",
+      "curriculumProgress": "－0.5",
+      "note": "小久保笠松宿題未完。10までにラインせよと/相吉澤宿題未完、録画未視聴。12日までにラインせよと",
       "sessionNumber": "43",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "L5#9,p11確テ,#10,11",
+        "#14,16"
+      ],
       "prevEntry": {
         "content": "HWGUnit6残りとL5接続詞",
         "page": "通常テキストL5p6まで",
@@ -3402,18 +3434,21 @@
       }
     },
     "2026-11-09|8:25～9:55|hon|hon_j2_X_eng|3": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "長文",
+      "page": "P222-228の８行目まで",
+      "report": "完全文・不完全文の見分け、どのようなときに不完全文を用いるかなどを行った。本日参加の3名はかなり高度なことを行ったが、しっかりと理解していた。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "茂呂・伊藤",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P222-223の読み直し",
+        "P226-227（20分）"
+      ],
       "prevEntry": {
         "content": "長文",
         "page": "P218-219の17行目まで",
@@ -3434,18 +3469,21 @@
       }
     },
     "2026-11-09|8:25～9:55|hon|hon_j3_A_sci|7": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "12天体の１日の動き",
+      "page": "ｐ186-189",
+      "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
       "recordingUrl": "",
       "teacher": "鈴木",
-      "absence": "",
-      "curriculumProgress": "",
+      "absence": "平居・江川・小堀・長尾・狩野",
+      "curriculumProgress": "＋0.5",
       "note": "",
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "できればドリル",
+        "ｐ100"
+      ],
       "prevEntry": {
         "content": "15太陽系",
         "page": "ｐ200-203",
@@ -3465,18 +3503,21 @@
       }
     },
     "2026-11-09|8:25～9:55|hon|hon_j3_S_soc|4": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三権分立終了、地方自治",
+      "page": "p144～、p150",
+      "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
       "recordingUrl": "",
       "teacher": "金城",
-      "absence": "",
+      "absence": "北面、板谷、小出",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp147〇こみ",
+        "ドリルp99まで完遂〇込み"
+      ],
       "prevEntry": {
         "content": "内閣と裁判所",
         "page": "p144",
@@ -3496,18 +3537,21 @@
       }
     },
     "2026-11-09|8:25～9:55|minami|minami_j2_X_eng|6": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "長文",
+      "page": "P222-228の８行目まで",
+      "report": "完全文・不完全文の見分け、どのようなときに不完全文を用いるかなどを行った。本日参加の3名はかなり高度なことを行ったが、しっかりと理解していた。",
       "recordingUrl": "",
       "teacher": "高山",
-      "absence": "",
+      "absence": "茂呂・伊藤",
       "curriculumProgress": "",
       "note": "",
       "sessionNumber": "10",
       "monthNum": "11",
       "weekNum": "1",
-      "homework": [],
+      "homework": [
+        "P222-223の読み直し",
+        "P226-227（20分）"
+      ],
       "prevEntry": {
         "content": "長文",
         "page": "P218-219の17行目まで",
@@ -3528,9 +3572,9 @@
       }
     },
     "2026-11-09|8:25～9:55|minami|minami_j3_A_sci|2": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "12天体の１日の動き",
+      "page": "ｐ186-189",
+      "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
       "recordingUrl": "",
       "teacher": "鈴木",
       "absence": "",
@@ -3539,7 +3583,10 @@
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "できればドリル",
+        "ｐ100"
+      ],
       "prevEntry": {
         "content": "15太陽系",
         "page": "ｐ200-203",
@@ -3559,9 +3606,9 @@
       }
     },
     "2026-11-09|8:25～9:55|minami|minami_j3_S_soc|5": {
-      "content": "",
-      "page": "",
-      "report": "",
+      "content": "三権分立終了、地方自治",
+      "page": "p144～、p150",
+      "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
       "recordingUrl": "",
       "teacher": "金城",
       "absence": "",
@@ -3570,7 +3617,10 @@
       "sessionNumber": "42",
       "monthNum": "11",
       "weekNum": "2",
-      "homework": [],
+      "homework": [
+        "マイp147〇こみ",
+        "ドリルp99まで完遂〇込み"
+      ],
       "prevEntry": {
         "content": "内閣と裁判所",
         "page": "p144",
@@ -4905,7 +4955,7 @@
     "2026-11-12|6:35～8:05|hon|hon_j3_B_eng|1": {
       "content": "",
       "page": "",
-      "report": "",
+      "report": "２A席替えしたのではりだす",
       "recordingUrl": "",
       "teacher": "真下",
       "absence": "",
@@ -5884,22 +5934,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "Unit8リスニングとUnit9",
-        "page": "Travelp48の２段/ワークp28大問２(2)まで",
+        "content": "Unit9Don't～",
+        "page": "Travelp48の3段/ワークp29の大問３まで",
         "homework": [
-          "ワークP28の大問２残りと意味を書く",
-          "カラーp48の１段、２段暗唱"
+          "Travelp49の３段暗唱",
+          "Travelp48のcomeからworkを書けるようにしてくる"
         ],
-        "report": "U8のリスニング。全員正解していた。意味も理解できている様子。その後はUnit9命令文へ。ノートに普通のSVOの文を書かせ、そこから展開していき、pleaseも指導。pleaseの二通りの位置も。またbeの命令もam/are/isの肯定文からBe～を指導。",
+        "report": "Unit9の続き。今回は否定命令文。Don't be～も含め文法的なことには踏み込まず、～しないでと指導した。大竹がやはり理解力に劣る。初見学の西川は見よう見まねでよくやっており、暗唱もできた。ノートの紙は渡したが、宿題メモは渡し忘れた。Unit9までコピーを渡してある。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤、国府田",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "35",
+        "sessionNumber": "36",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|4:55～6:15|minami|minami_e5_S_arith|1": {
@@ -5947,21 +5997,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "時刻表現と疑問詞まとめ",
-        "page": "通常テキストL5p17例文9まで",
+        "content": "疑問詞",
+        "page": "L5#23まで",
         "homework": [
-          "L5#14,17から19"
+          "L5#24,25",
+          "HWGp98～の#1,2/p102～の#1,2"
         ],
-        "report": "HWG宿題英作は伏せて答えさせたが、高橋由乃が答えられていなかった。whichやcan Iのあとは時刻表現に入ったが、みなよくできていた。疑問詞のまとめでは例文３で疑問詞主語の場合を軽く指導。肯定文と同じ語順、という事にとどめ、なぜそうなるかは飛ばした。次回例文10で再びそこを。",
+        "report": "疑問詞のまとめ続き。リストの中でいろいろ解説。高橋由乃はget upのupにsをつけていたので、正した。次回はやりはぐっていたDL3/4を手早く終わらせる。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、岡田、国府田",
+        "absence": "なし",
         "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "41",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -5978,21 +6029,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "漢詩",
-        "page": "漢字帳P164-171",
+        "content": "小説文",
+        "page": "P62-63",
         "homework": [
-          "漢字帳p177-180"
+          "漢字帳P182-185"
         ],
-        "report": "漢字帳の確認は疋田・斎藤・篠田が未完。疋田は先ほどラインで提出してきた。ここの所、多いような気がする。黄鶴楼から春望まで完了。音読・語彙説明・押韻まで行う。清宮は表情が良くなったように思える。",
+        "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "相吉澤・中野",
+        "absence": "茂呂",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -6009,21 +6060,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "長谷川こうき、平居、江川、小堀\n狩野",
         "curriculumProgress": "",
-        "note": "本日から狩野、堀口参加",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -6040,21 +6092,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "板谷・矢口",
+        "absence": "小出・板谷",
         "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|minami|minami_j1_S_math|1": {
@@ -6071,22 +6124,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "２６接する円の作図",
-        "page": "P44",
+        "content": "30おうぎ形の弧の長さと面積",
+        "page": "P59",
         "homework": [
-          "P41,＃５１③④",
-          "P43,44,48,49"
+          "＃59，62，63",
+          "P50，51，60～62"
         ],
-        "report": "接する円の作図まで。途中清水が線対称な図形の特徴と垂直二等分線がつながっておらずその説明で時間をとられてしまった。その後も解説の通りに練習できなかったりしていた。集中できていないときはできていない。",
+        "report": "おうぎ形まで入ることができた。清水は今日は内容をしっかりと理解して正しい作図ができていた。もとの力はやはりある。良い。",
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "なし",
-        "curriculumProgress": "±0",
+        "curriculumProgress": "＋0.3",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "41",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -6103,21 +6156,21 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "漢詩終了",
-        "page": "漢字帳p165-171",
+        "content": "小説文",
+        "page": "P62-63",
         "homework": [
-          "漢字p177-180"
+          "漢字帳P182-185"
         ],
-        "report": "漢字帳の漢詩は問題なく終了。歴史的背景や裏話、逸話などを交えながら進めた。見学の今村さん、よく頑張っていたように思う。",
+        "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "鹿内",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-03"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -6134,21 +6187,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -6165,21 +6219,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -6196,22 +6251,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "HWGUnit6残りとL5接続詞",
-        "page": "通常テキストL5p6まで",
+        "content": "接続詞、比較基礎",
+        "page": "L5#13まで",
         "homework": [
-          "HWGUnit6の#19～21,24～26",
-          "通常テキストL5#2～4,6"
+          "L5#9,p11確テ,#10,11",
+          "#14,16"
         ],
-        "report": "宿題個所のHWGUnit6英作はテキストを伏せて答えさせた。小久保苦戦。Unit6の残りは確テまでやり、その後通常テキストに。従位のリストまで。will禁止は副詞節という言葉は使わず、個別に。",
+        "report": "接続詞の演習続きから。書き換え問題は思ったよりもできていた。後半は比較に入り、p13のmore型は後で詳しくやるので、とさらっと流した。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "菱沼、宮崎、相吉澤、中野\n笠松早退(オンラインで)",
+        "absence": "中野",
         "curriculumProgress": "－0.5",
-        "note": "",
-        "sessionNumber": "42",
+        "note": "小久保笠松宿題未完。10までにラインせよと/相吉澤宿題未完、録画未視聴。12日までにラインせよと",
+        "sessionNumber": "43",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -6228,21 +6283,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "梅木・大嶋",
+        "absence": "平居・江川・小堀・長尾・狩野",
         "curriculumProgress": "＋0.5",
-        "note": "南教室　大下颯斗くんが参加します。ZOOMの名前が「営業本体」という名前で入ってくるかもしれないので、入室許可を出してあげてください。／金子",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|8:25～9:55|hon|hon_j3_S_soc|4": {
@@ -6259,21 +6315,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "板谷、伊東、矢口",
+        "absence": "北面、板谷、小出",
         "curriculumProgress": "",
-        "note": "本日から吉田参加。",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|8:25～9:55|hon|hon_special_英語　　補講③|2": {
@@ -6304,21 +6361,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-16|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -6335,21 +6393,22 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-17|4:55～6:15|hon|hon_e4_A_jp|2": {
@@ -7578,22 +7637,19 @@
       "weekNum": "3",
       "homework": [],
       "prevEntry": {
-        "content": "HWGUnit6残りと仮定法",
-        "page": "HWGUnit6最後まで/普通テキストL4#52まで",
-        "homework": [
-          "HWGUnit6の#19～21",
-          "普通テキスト#53,54"
-        ],
-        "report": "HWG残りを。確認テスト問２は矢田と青木がよくできていた。後半はHWGUnit7には入らず仮定法へ。",
+        "content": "",
+        "page": "",
+        "homework": [],
+        "report": "２A席替えしたのではりだす",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "戸部",
-        "curriculumProgress": "±0",
-        "note": "平居この日までの宿題を月曜までにラインを命じた。",
-        "sessionNumber": "46",
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "47",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-05"
+        "weekNum": "2",
+        "date": "2026-11-12"
       }
     },
     "2026-11-19|6:35～8:05|hon|hon_j3_X_eng|6": {
@@ -8521,21 +8577,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "時刻表現と疑問詞まとめ",
-        "page": "通常テキストL5p17例文9まで",
+        "content": "疑問詞",
+        "page": "L5#23まで",
         "homework": [
-          "L5#14,17から19"
+          "L5#24,25",
+          "HWGp98～の#1,2/p102～の#1,2"
         ],
-        "report": "HWG宿題英作は伏せて答えさせたが、高橋由乃が答えられていなかった。whichやcan Iのあとは時刻表現に入ったが、みなよくできていた。疑問詞のまとめでは例文３で疑問詞主語の場合を軽く指導。肯定文と同じ語順、という事にとどめ、なぜそうなるかは飛ばした。次回例文10で再びそこを。",
+        "report": "疑問詞のまとめ続き。リストの中でいろいろ解説。高橋由乃はget upのupにsをつけていたので、正した。次回はやりはぐっていたDL3/4を手早く終わらせる。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、岡田、国府田",
+        "absence": "なし",
         "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "41",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|6:35～8:05|hon|hon_j3_A_soc|3": {
@@ -8552,21 +8609,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "長谷川こうき、平居、江川、小堀\n狩野",
         "curriculumProgress": "",
-        "note": "本日から狩野、堀口参加",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|6:35～8:05|hon|hon_j3_S_sci|2": {
@@ -8583,25 +8641,26 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "板谷・矢口",
+        "absence": "小出・板谷",
         "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|6:35～8:05|minami|minami_j1_S_math|1": {
-      "content": "",
+      "content": "期末対策",
       "page": "",
       "report": "",
       "recordingUrl": "",
@@ -8614,22 +8673,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "２６接する円の作図",
-        "page": "P44",
+        "content": "30おうぎ形の弧の長さと面積",
+        "page": "P59",
         "homework": [
-          "P41,＃５１③④",
-          "P43,44,48,49"
+          "＃59，62，63",
+          "P50，51，60～62"
         ],
-        "report": "接する円の作図まで。途中清水が線対称な図形の特徴と垂直二等分線がつながっておらずその説明で時間をとられてしまった。その後も解説の通りに練習できなかったりしていた。集中できていないときはできていない。",
+        "report": "おうぎ形まで入ることができた。清水は今日は内容をしっかりと理解して正しい作図ができていた。もとの力はやはりある。良い。",
         "recordingUrl": "",
         "teacher": "工藤",
         "absence": "なし",
-        "curriculumProgress": "±0",
+        "curriculumProgress": "＋0.3",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "41",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|6:35～8:05|minami|minami_special_英語　　補講③|2": {
@@ -8660,22 +8719,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "HWGUnit6残りとL5接続詞",
-        "page": "通常テキストL5p6まで",
+        "content": "接続詞、比較基礎",
+        "page": "L5#13まで",
         "homework": [
-          "HWGUnit6の#19～21,24～26",
-          "通常テキストL5#2～4,6"
+          "L5#9,p11確テ,#10,11",
+          "#14,16"
         ],
-        "report": "宿題個所のHWGUnit6英作はテキストを伏せて答えさせた。小久保苦戦。Unit6の残りは確テまでやり、その後通常テキストに。従位のリストまで。will禁止は副詞節という言葉は使わず、個別に。",
+        "report": "接続詞の演習続きから。書き換え問題は思ったよりもできていた。後半は比較に入り、p13のmore型は後で詳しくやるので、とさらっと流した。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "菱沼、宮崎、相吉澤、中野\n笠松早退(オンラインで)",
+        "absence": "中野",
         "curriculumProgress": "－0.5",
-        "note": "",
-        "sessionNumber": "42",
+        "note": "小久保笠松宿題未完。10までにラインせよと/相吉澤宿題未完、録画未視聴。12日までにラインせよと",
+        "sessionNumber": "43",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|8:25～9:55|hon|hon_j3_A_sci|3": {
@@ -8692,21 +8751,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "梅木・大嶋",
+        "absence": "平居・江川・小堀・長尾・狩野",
         "curriculumProgress": "＋0.5",
-        "note": "南教室　大下颯斗くんが参加します。ZOOMの名前が「営業本体」という名前で入ってくるかもしれないので、入室許可を出してあげてください。／金子",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|8:25～9:55|hon|hon_j3_S_soc|2": {
@@ -8723,21 +8783,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "板谷、伊東、矢口",
+        "absence": "北面、板谷、小出",
         "curriculumProgress": "",
-        "note": "本日から吉田参加。",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-23|8:25～9:55|minami|minami_special_数学　　補講③|1": {
@@ -10011,22 +10072,19 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "HWGUnit6残りと仮定法",
-        "page": "HWGUnit6最後まで/普通テキストL4#52まで",
-        "homework": [
-          "HWGUnit6の#19～21",
-          "普通テキスト#53,54"
-        ],
-        "report": "HWG残りを。確認テスト問２は矢田と青木がよくできていた。後半はHWGUnit7には入らず仮定法へ。",
+        "content": "",
+        "page": "",
+        "homework": [],
+        "report": "２A席替えしたのではりだす",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "戸部",
-        "curriculumProgress": "±0",
-        "note": "平居この日までの宿題を月曜までにラインを命じた。",
-        "sessionNumber": "46",
+        "absence": "",
+        "curriculumProgress": "",
+        "note": "",
+        "sessionNumber": "47",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-05"
+        "weekNum": "2",
+        "date": "2026-11-12"
       }
     },
     "2026-11-26|6:35～8:05|hon|hon_j3_X_eng|6": {
@@ -11037,21 +11095,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-28|6:35～8:05|minami|minami_j3_S_sci|1": {
@@ -11068,21 +11127,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-28|6:35～8:05|minami|minami_special_英語　　補講④|3": {
@@ -11127,21 +11187,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-28|8:25～9:55|minami|minami_j3_S_soc|1": {
@@ -11158,21 +11219,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-29|2:55～4:25|hon|hon_special_★中学部／理社オンライン期末対策　（詳しくは、後日お知らせいたします。）|1": {
@@ -11217,22 +11279,22 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "Unit8リスニングとUnit9",
-        "page": "Travelp48の２段/ワークp28大問２(2)まで",
+        "content": "Unit9Don't～",
+        "page": "Travelp48の3段/ワークp29の大問３まで",
         "homework": [
-          "ワークP28の大問２残りと意味を書く",
-          "カラーp48の１段、２段暗唱"
+          "Travelp49の３段暗唱",
+          "Travelp48のcomeからworkを書けるようにしてくる"
         ],
-        "report": "U8のリスニング。全員正解していた。意味も理解できている様子。その後はUnit9命令文へ。ノートに普通のSVOの文を書かせ、そこから展開していき、pleaseも指導。pleaseの二通りの位置も。またbeの命令もam/are/isの肯定文からBe～を指導。",
+        "report": "Unit9の続き。今回は否定命令文。Don't be～も含め文法的なことには踏み込まず、～しないでと指導した。大竹がやはり理解力に劣る。初見学の西川は見よう見まねでよくやっており、暗唱もできた。ノートの紙は渡したが、宿題メモは渡し忘れた。Unit9までコピーを渡してある。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "齊藤、国府田",
-        "curriculumProgress": "",
+        "absence": "なし",
+        "curriculumProgress": "＋1",
         "note": "",
-        "sessionNumber": "35",
+        "sessionNumber": "36",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|4:55～6:15|minami|minami_e5_S_arith|1": {
@@ -11280,21 +11342,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "時刻表現と疑問詞まとめ",
-        "page": "通常テキストL5p17例文9まで",
+        "content": "疑問詞",
+        "page": "L5#23まで",
         "homework": [
-          "L5#14,17から19"
+          "L5#24,25",
+          "HWGp98～の#1,2/p102～の#1,2"
         ],
-        "report": "HWG宿題英作は伏せて答えさせたが、高橋由乃が答えられていなかった。whichやcan Iのあとは時刻表現に入ったが、みなよくできていた。疑問詞のまとめでは例文３で疑問詞主語の場合を軽く指導。肯定文と同じ語順、という事にとどめ、なぜそうなるかは飛ばした。次回例文10で再びそこを。",
+        "report": "疑問詞のまとめ続き。リストの中でいろいろ解説。高橋由乃はget upのupにsをつけていたので、正した。次回はやりはぐっていたDL3/4を手早く終わらせる。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "星、岡田、国府田",
+        "absence": "なし",
         "curriculumProgress": "－0.5",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "41",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|hon|hon_j2_S_jp|3": {
@@ -11311,21 +11374,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "漢詩",
-        "page": "漢字帳P164-171",
+        "content": "小説文",
+        "page": "P62-63",
         "homework": [
-          "漢字帳p177-180"
+          "漢字帳P182-185"
         ],
-        "report": "漢字帳の確認は疋田・斎藤・篠田が未完。疋田は先ほどラインで提出してきた。ここの所、多いような気がする。黄鶴楼から春望まで完了。音読・語彙説明・押韻まで行う。清宮は表情が良くなったように思える。",
+        "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
         "recordingUrl": "",
         "teacher": "高山",
-        "absence": "相吉澤・中野",
+        "absence": "茂呂",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|hon|hon_j3_A_soc|4": {
@@ -11342,21 +11405,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "なし",
+        "absence": "長谷川こうき、平居、江川、小堀\n狩野",
         "curriculumProgress": "",
-        "note": "本日から狩野、堀口参加",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|hon|hon_j3_S_sci|7": {
@@ -11373,21 +11437,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "板谷・矢口",
+        "absence": "小出・板谷",
         "curriculumProgress": "＋0.5",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|minami|minami_j1_S_math|1": {
@@ -11404,22 +11469,19 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "２６接する円の作図",
-        "page": "P44",
-        "homework": [
-          "P41,＃５１③④",
-          "P43,44,48,49"
-        ],
-        "report": "接する円の作図まで。途中清水が線対称な図形の特徴と垂直二等分線がつながっておらずその説明で時間をとられてしまった。その後も解説の通りに練習できなかったりしていた。集中できていないときはできていない。",
+        "content": "期末対策",
+        "page": "",
+        "homework": [],
+        "report": "",
         "recordingUrl": "",
         "teacher": "工藤",
-        "absence": "なし",
-        "curriculumProgress": "±0",
+        "absence": "",
+        "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "40",
+        "sessionNumber": "43",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "4",
+        "date": "2026-11-23"
       }
     },
     "2026-11-30|6:35～8:05|minami|minami_j2_S_jp|6": {
@@ -11436,21 +11498,21 @@
       "weekNum": "4",
       "homework": [],
       "prevEntry": {
-        "content": "漢詩終了",
-        "page": "漢字帳p165-171",
+        "content": "小説文",
+        "page": "P62-63",
         "homework": [
-          "漢字p177-180"
+          "漢字帳P182-185"
         ],
-        "report": "漢字帳の漢詩は問題なく終了。歴史的背景や裏話、逸話などを交えながら進めた。見学の今村さん、よく頑張っていたように思う。",
+        "report": "確認テスト終了後、小説文へ。大連・遼東半島の歴史的背景を行った後に読み取りを行い演習と進めた。毎度のことだが、石原は謎の質問・解答が多い。注視していく。",
         "recordingUrl": "",
-        "teacher": "金城",
-        "absence": "鹿内",
+        "teacher": "高山",
+        "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "33",
+        "sessionNumber": "34",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-03"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|minami|minami_j3_A_soc|5": {
@@ -11467,21 +11529,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "国会：法律案成立まで",
-        "page": "p140",
+        "content": "国会終了、内閣：議員内閣制まで",
+        "page": "p140～、p144～",
         "homework": [
-          "マイクリアp1411⃣2⃣〇込み"
+          "マイp141すべて〇こみ",
+          "ドリルp94-95〇こみ"
         ],
-        "report": "前回の復習を行ったのち、国会へ。暗記させるものは授業内で暗記させながら、法律案作成の流れまで。次回、復習を入れたのち、優越の詳細から。内閣もある程度すすめたい。",
+        "report": "国会の続きから。三権の中で一番難しい箇所なので、うんとゆっくり進めた。急ぎたかったが、議院内閣制までしか指導できず・・・。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|6:35～8:05|minami|minami_j3_S_sci|2": {
@@ -11498,21 +11561,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系、12天体の１日",
-        "page": "15太陽系、12天体の１日",
+        "content": "13地球の公転",
+        "page": "ｐ190まで",
         "homework": [
-          "ドリルｐ108-109"
+          "できたらドリル",
+          "ｐ110-111"
         ],
-        "report": "太陽系糸宇宙、天体の１日の動き。",
+        "report": "天体の年周運動のところ。ｐ190の説明で終了。次回は、ｐ191～進める。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|8:25～9:55|hon|hon_j2_A_eng|1": {
@@ -11529,22 +11593,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "HWGUnit6残りとL5接続詞",
-        "page": "通常テキストL5p6まで",
+        "content": "接続詞、比較基礎",
+        "page": "L5#13まで",
         "homework": [
-          "HWGUnit6の#19～21,24～26",
-          "通常テキストL5#2～4,6"
+          "L5#9,p11確テ,#10,11",
+          "#14,16"
         ],
-        "report": "宿題個所のHWGUnit6英作はテキストを伏せて答えさせた。小久保苦戦。Unit6の残りは確テまでやり、その後通常テキストに。従位のリストまで。will禁止は副詞節という言葉は使わず、個別に。",
+        "report": "接続詞の演習続きから。書き換え問題は思ったよりもできていた。後半は比較に入り、p13のmore型は後で詳しくやるので、とさらっと流した。",
         "recordingUrl": "",
         "teacher": "真下",
-        "absence": "菱沼、宮崎、相吉澤、中野\n笠松早退(オンラインで)",
+        "absence": "中野",
         "curriculumProgress": "－0.5",
-        "note": "",
-        "sessionNumber": "42",
+        "note": "小久保笠松宿題未完。10までにラインせよと/相吉澤宿題未完、録画未視聴。12日までにラインせよと",
+        "sessionNumber": "43",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|8:25～9:55|hon|hon_j3_A_sci|7": {
@@ -11561,21 +11625,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
-        "absence": "梅木・大嶋",
+        "absence": "平居・江川・小堀・長尾・狩野",
         "curriculumProgress": "＋0.5",
-        "note": "南教室　大下颯斗くんが参加します。ZOOMの名前が「営業本体」という名前で入ってくるかもしれないので、入室許可を出してあげてください。／金子",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|8:25～9:55|hon|hon_j3_S_soc|4": {
@@ -11592,21 +11657,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
-        "absence": "板谷、伊東、矢口",
+        "absence": "北面、板谷、小出",
         "curriculumProgress": "",
-        "note": "本日から吉田参加。",
-        "sessionNumber": "41",
+        "note": "",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|8:25～9:55|minami|minami_j3_A_sci|2": {
@@ -11623,21 +11689,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "15太陽系",
-        "page": "ｐ200-203",
+        "content": "12天体の１日の動き",
+        "page": "ｐ186-189",
         "homework": [
-          "ドリルｐ108"
+          "できればドリル",
+          "ｐ100"
         ],
-        "report": "太陽系糸宇宙と宇宙。録画を取り忘れてしまい、送れず。",
+        "report": "日周運動と地球の自転のところまで終了した。比較的、皆答えが出せている。古田・藤田は画面オフ。",
         "recordingUrl": "",
         "teacher": "鈴木",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     },
     "2026-11-30|8:25～9:55|minami|minami_j3_S_soc|5": {
@@ -11654,21 +11721,22 @@
       "weekNum": "5",
       "homework": [],
       "prevEntry": {
-        "content": "内閣と裁判所",
-        "page": "p144",
+        "content": "三権分立終了、地方自治",
+        "page": "p144～、p150",
         "homework": [
-          "マイクリアp145〇こみ"
+          "マイp147〇こみ",
+          "ドリルp99まで完遂〇込み"
         ],
-        "report": "p142-143の演習を終えたのち、p144の内閣へ。閣議まで指導終了。次回、内閣は早めに終えられそうなので、裁判所を可能な限り終わらせたい。",
+        "report": "地方自治は、直接請求権の詳細まで。次回、続きをやったら、カリキュラムに１回余裕があるので、資料読み取りなどの演習を行う。",
         "recordingUrl": "",
         "teacher": "金城",
         "absence": "",
         "curriculumProgress": "",
         "note": "",
-        "sessionNumber": "41",
+        "sessionNumber": "42",
         "monthNum": "11",
-        "weekNum": "1",
-        "date": "2026-11-02"
+        "weekNum": "2",
+        "date": "2026-11-09"
       }
     }
   }
