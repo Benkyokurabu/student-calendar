@@ -1,10 +1,10 @@
 {
   "version": 1,
   "month": "2026-11",
-  "approvedAt": "2026-11-11T18:08:25.205035+00:00",
-  "generatedAt": "2026-11-11T18:08:25.205035+00:00",
-  "expiresAt": "2026-11-18T18:08:25.205035+00:00",
-  "sourceGeneratedAt": "2026-11-12T00:23:58.781265+09:00",
+  "approvedAt": "2026-11-12T16:22:27.988081+00:00",
+  "generatedAt": "2026-11-12T16:22:27.988081+00:00",
+  "expiresAt": "2026-11-19T16:22:27.988081+00:00",
+  "sourceGeneratedAt": "2026-11-12T22:20:05.142801+09:00",
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
     "2026-11-02|6:35～8:05|minami|minami_j1_S_math|1": "https://us06web.zoom.us/rec/play/NZYopsrsXtk25__G3UNOPEFHR4Y0UZWze1NYAzYsUSbdUDoFHl5a1BEBcbmx1wDVnY6B7EZYYMkvVcka.cdOPjoCd-v7RQNV2",
@@ -105,6 +105,19 @@
     "2026-11-11|8:25～9:55|minami|minami_j2_B_math|1": "https://us06web.zoom.us/rec/play/waRLJl4q4hdMSSCPviYF3e94bALunipEfPcZTBrqLvun5yZx2bHNi-7TCuoIcaV1OftCZth8CunE7bTq.4n9fBASXF7tlempR",
     "2026-11-11|8:25～9:55|hon|hon_j2_S_eng|1": "https://us06web.zoom.us/rec/play/Q3ZUJXNLQUUnN6avZNUrgk1Km_EmcLEACpzXk1UINPMPVhq2IU0__8bS3hk8YQYZIVHr8poPNI_SlCSc.RVGPhznkg-irg5aN",
     "2026-11-11|8:25～9:55|hon|hon_j3_A_jp|4": "https://us06web.zoom.us/rec/play/8QqtuxKU_ylEsaU_eKpy0PKsZNWWntGHU90Vey7ZSBdjyCj8l04-mcJsTb8FymACOmdMkO2kI-4eFdXP.NtqkbUhFHqvy9jlj",
-    "2026-11-11|8:25～9:55|minami|minami_j3_A_jp|5": "https://us06web.zoom.us/rec/play/8QqtuxKU_ylEsaU_eKpy0PKsZNWWntGHU90Vey7ZSBdjyCj8l04-mcJsTb8FymACOmdMkO2kI-4eFdXP.NtqkbUhFHqvy9jlj"
+    "2026-11-11|8:25～9:55|minami|minami_j3_A_jp|5": "https://us06web.zoom.us/rec/play/8QqtuxKU_ylEsaU_eKpy0PKsZNWWntGHU90Vey7ZSBdjyCj8l04-mcJsTb8FymACOmdMkO2kI-4eFdXP.NtqkbUhFHqvy9jlj",
+    "2026-11-12|4:55～6:15|minami|minami_e4_A_jp|3": "https://us06web.zoom.us/rec/play/Gl3pY8oyNiKRJpcSMnEgbEYcAxsQvBA8PAb7e4aMCLxLv9Lk8Yg_NVyGOxFs8iqadOL3Z4iSsDOvjMX1.4-9Iw1uxAC12tski",
+    "2026-11-12|4:55～6:15|hon|hon_e4_A_arith|3": "https://us06web.zoom.us/rec/play/rbwgMBS_y8y6xJAl1aYDDVbfHJM8X_IUtWrZ1AFgFRUAudEGxyKR8d31OBJ1rkQEld6EdGIhiHnlRxZx.odNVpn3aIeWs16n1",
+    "2026-11-12|4:55～6:15|hon|hon_e5_S_arith|2": "https://us06web.zoom.us/rec/play/lnKB9l9WL_xjyRqh5fDUGBnvIBbotq70bqxbP4FbhcRzK04ZTvei8MOaJCfUwqhG8tnleCU6wTtdL8K8.RgGNrHdCElHcFDSh",
+    "2026-11-12|4:55～6:15|hon|hon_e6_A_eng|1": "https://us06web.zoom.us/rec/play/VpCl5Vaobx6uSl7GK_QZ05UN0gFqHu1QMNQCr35UCfFvcKBITJ3uDGTFowhhCMdgJe1PeyaoY3b1bAdG.zc1Qr5omGV0twgvz",
+    "2026-11-12|6:35～8:05|hon|hon_j1_B_math|3": "https://us06web.zoom.us/rec/play/tdqeIyh-fFpfzdvhOeqEEyRYfEIEnS39Pt72911f-9-6Mm7OgpWhZfxnecMRPoC3RgDeP3YzEbU8IpUx.CSK1_FpuYjdLsN4N",
+    "2026-11-12|6:35～8:05|hon|hon_j1_S_math|2": "https://us06web.zoom.us/rec/play/ZVlo_VA6b4l92nb45bGHvksyxLEsK6kx0vIbUUMhOdn6BYn_GuhqsmZJlO7wSZZ70uPfPGfE91LqB4jF.nSKC7Ull1L43i3om",
+    "2026-11-12|6:35～8:05|minami|minami_j1_S_eng|2": "https://us06web.zoom.us/rec/play/ka65f1X-0iuF5mN3aR8r8idrsxib0rzWBJHPAvKXeQOSyu0WSZ7M2fK9fu5vkaOXrEyIoJJ5tYbqw6Mo.I8EzT26AVcDJ9tTD",
+    "2026-11-12|6:35～8:05|hon|hon_j3_B_eng|1": "https://us06web.zoom.us/rec/play/njjoOSYJkPbAclgqGU4pMAF5W74G6chNpsrcpoRamkpydvpYKnYh1Ino0iN6AtMaMXag58Gvvfs9DTL6.lxuSknjBtxv0etCA",
+    "2026-11-12|6:35～8:05|minami|minami_j3_B_eng|1": "https://us06web.zoom.us/rec/play/fnTvLQl7omMbga8l9zVIwfn3rxSpySgsKefvOnIMQcouKG8s0ozda_Kce-mX5ueIuSJtTvt0MXigLlGA.ENHkBQS6HSFQ5XX9",
+    "2026-11-12|8:25～9:55|hon|hon_j2_A_math|2": "https://us06web.zoom.us/rec/play/fXpNRGTMlMtjPO0TrQ6neZ7zD6r_-vr3w7i5TuL3TUTC3lW3k3XdJrXtr3IfK3uaPPO8PDzZOu47gAKU.mN0ayYhnGlLn8GQD",
+    "2026-11-12|8:25～9:55|minami|minami_j2_B_eng|2": "https://us06web.zoom.us/rec/play/e1MWQukwRYbuGvvXCayUeR9N5qbY_8P_xZH3DKpAA7vkGY_obrVkjPuXeXhg2Y7VSiBbYRwvcfJQE-Ep.LNeR7GhT-fDqkNVB",
+    "2026-11-12|8:25～9:55|minami|minami_j3_A_eng|1": "https://us06web.zoom.us/rec/play/ybE3RnRDkgtETCw9Yw1RLUL3IGTLs1FINJI9Ybk2tCDyzzooSzCB37dNC88PWqWbJ4JC0PNzo-UCCA4-.pX4SxTlKackr0LAl",
+    "2026-11-12|8:25～9:55|hon|hon_j3_B_math|1": "https://us06web.zoom.us/rec/play/e5vW8-4LXWKv7tydwwpZea3zTLUdt2twpX-il5jIEy1MWPKe-TW-NvImWikpujo_2uuBJNXPnG8JOtZL.kgfLXM5edpPnepEa"
   }
 }
