@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-12T18:22:08.372259+09:00",
-  "matched": 103,
-  "missing": 251,
+  "generatedAt": "2026-11-12T18:23:07.031160+09:00",
+  "matched": 104,
+  "missing": 250,
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
@@ -2388,6 +2388,29 @@
       "startOffsetMinutes": 1.0,
       "recordingDurationMinutes": 74.3,
       "lessonOverlapMinutes": 74.3
+    },
+    "2026-11-12|4:55～6:15|hon|hon_e6_A_eng|1": {
+      "url": "https://us06web.zoom.us/rec/play/VpCl5Vaobx6uSl7GK_QZ05UN0gFqHu1QMNQCr35UCfFvcKBITJ3uDGTFowhhCMdgJe1PeyaoY3b1bAdG.zc1Qr5omGV0twgvz",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-12T17:21:05+09:00",
+      "meetingId": "9497119710",
+      "topic": "本校 第１教室のパーソナルミーティングルーム",
+      "date": "2026-11-12",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "1",
+      "grade": "e6",
+      "class": "A",
+      "subject": "eng",
+      "label": "小６A 英語",
+      "teacher": "真下",
+      "onlineLessonKey": "2026-11-12|4:55～6:15|e6|A|eng",
+      "recordingCampus": "hon",
+      "recordingRoom": "1",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 26.1,
+      "recordingDurationMinutes": 51.2,
+      "lessonOverlapMinutes": 51.2
     }
   }
 }
