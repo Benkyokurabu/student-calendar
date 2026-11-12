@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "generatedAt": "2026-11-12T18:20:09.871721+09:00",
-  "matched": 102,
-  "missing": 252,
+  "generatedAt": "2026-11-12T18:22:08.372259+09:00",
+  "matched": 103,
+  "missing": 251,
   "entries": {
     "2026-11-02|4:55～6:15|hon|hon_e5_A_eng|2": {
       "url": "https://us06web.zoom.us/rec/play/M2tBPIW7NJ_lqjA97QlEZ_MFiiiUuwwkqbC4Kd-pFF254Jq--TP-s-QgcUQNRj5pdHSMTLFodAz_Xzvo.bayirokfBanHZMSe",
@@ -2365,6 +2365,29 @@
       "startOffsetMinutes": 9.1,
       "recordingDurationMinutes": 69.7,
       "lessonOverlapMinutes": 69.7
+    },
+    "2026-11-12|4:55～6:15|hon|hon_e5_S_arith|2": {
+      "url": "https://us06web.zoom.us/rec/play/lnKB9l9WL_xjyRqh5fDUGBnvIBbotq70bqxbP4FbhcRzK04ZTvei8MOaJCfUwqhG8tnleCU6wTtdL8K8.RgGNrHdCElHcFDSh",
+      "recordingCompleted": true,
+      "recordingStart": "2026-11-12T16:55:58+09:00",
+      "meetingId": "2861244895",
+      "topic": "本校　第２教室のパーソナルミーティングルーム",
+      "date": "2026-11-12",
+      "time": "4:55～6:15",
+      "campus": "hon",
+      "room": "2",
+      "grade": "e5",
+      "class": "S",
+      "subject": "arith",
+      "label": "小５S 算数",
+      "teacher": "森松",
+      "onlineLessonKey": "2026-11-12|4:55～6:15|e5|S|arith",
+      "recordingCampus": "hon",
+      "recordingRoom": "2",
+      "matchPolicy": "campus-room-file-overlap-v2",
+      "startOffsetMinutes": 1.0,
+      "recordingDurationMinutes": 74.3,
+      "lessonOverlapMinutes": 74.3
     }
   }
 }
