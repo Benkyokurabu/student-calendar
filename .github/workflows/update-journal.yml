@@ -53,6 +53,9 @@ concurrency:
   group: journal-cloud-write
   cancel-in-progress: false
 
+env:
+  JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -159,7 +162,8 @@ jobs:
       - name: Download schedule Excel from OneDrive
         run: |
           mkdir -p scripts/_schedule
-          rclone copy "onedrive:デスクトップ/【完成版】授業日誌システム/" scripts/_schedule/ --include "*.xlsm" --max-depth 1
+          source=$(python scripts/journal_source.py)
+          rclone copy "$source/" scripts/_schedule/ --include "*.xlsm" --max-depth 1
           echo "--- Schedule files ---"
           ls -la scripts/_schedule/
 
@@ -229,7 +233,8 @@ jobs:
         # An editing copy never has this name. Until registration, no file is
         # downloaded and the existing per-workbook templates continue to work.
         run: |
-          rclone copy "onedrive:デスクトップ/【完成版】授業日誌システム/" scripts/ \
+          source=$(python scripts/journal_source.py)
+          rclone copy "$source/" scripts/ \
             --include "/TEMPLATE_MAIN_COMMON.xlsx" --max-depth 1 \
             --transfers 1 --checkers 1
 

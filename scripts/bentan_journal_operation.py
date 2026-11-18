@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 from urllib.request import Request, urlopen
 from xml.etree.ElementTree import tostring, fromstring
 from zipfile import ZipFile
+from journal_source import source_remote, source_file
 
 JST = timezone(timedelta(hours=9))
 REMOTE = 'onedrive:●勉強クラブ共有/09　授業日誌'
@@ -146,7 +147,7 @@ def main():
     work = scripts / '_bentan_operation'
     work.mkdir()
     print('[BENTAN] Checking the selected schedule original', flush=True)
-    listing = command(['rclone', 'lsf', 'onedrive:デスクトップ/【完成版】授業日誌システム', '--files-only', '--max-depth', '1']).decode('utf-8')
+    listing = command(['rclone', 'lsf', source_remote(), '--files-only', '--max-depth', '1']).decode('utf-8')
     year, number = map(int, month.split('-'))
     names = [name for name in listing.splitlines() if re.fullmatch(rf'{year}年0?{number}月スケジュール\.xlsm', name)]
     if len(names) != 1:
@@ -156,12 +157,12 @@ def main():
     common_bytes = None
     common_path = scripts / 'TEMPLATE_MAIN_COMMON.xlsx'
     if registered_master:
-        command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/TEMPLATE_MAIN_COMMON.xlsx', str(common_path)])
+        command(['rclone', 'copyto', source_file('TEMPLATE_MAIN_COMMON.xlsx'), str(common_path)])
         common_bytes = common_path.read_bytes()
     elif operation in ('preview', 'create') and common_path.exists():
         raise ValueError('An unregistered common master cannot be used')
     schedule = scripts / names[0]
-    command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule)])
+    command(['rclone', 'copyto', source_file(names[0]), str(schedule)])
     schedule_bytes = schedule.read_bytes()
     cloud = scripts / '_cloud_journal'
     print('[BENTAN] Downloading shared journals without modifying originals', flush=True)
@@ -202,12 +203,12 @@ def main():
                 changed.append(relative)
     # Saving an Excel original after this read cannot silently publish a stale snapshot.
     schedule_check = work / 'schedule-recheck.xlsm'
-    command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/' + names[0], str(schedule_check)])
+    command(['rclone', 'copyto', source_file(names[0]), str(schedule_check)])
     if schedule_check.read_bytes() != schedule_bytes:
         raise ValueError('The schedule changed during confirmation')
     if common_bytes is not None:
         master_check = work / 'common-master-recheck.xlsx'
-        command(['rclone', 'copyto', 'onedrive:デスクトップ/【完成版】授業日誌システム/TEMPLATE_MAIN_COMMON.xlsx', str(master_check)])
+        command(['rclone', 'copyto', source_file('TEMPLATE_MAIN_COMMON.xlsx'), str(master_check)])
         if master_check.read_bytes() != common_bytes:
             raise ValueError('The registered common master changed during confirmation')
     print('[BENTAN] Rechecking the schedule and every original version', flush=True)

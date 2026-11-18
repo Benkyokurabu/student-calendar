@@ -13,9 +13,9 @@ import time
 import unicodedata
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from journal_source import source_remote
 
 ENDPOINT = 'https://line-check-system.vercel.app/api/journal-management/supplements'
-REMOTE = 'onedrive:デスクトップ/【完成版】授業日誌システム'
 JST = timezone(timedelta(hours=9))
 
 def allowed_months(now=None):
@@ -106,7 +106,8 @@ def main():
         if args.month not in months:
             raise ValueError('Only current/next month is allowed')
         months = [args.month]
-    listing = json.loads(command(['rclone', 'lsjson', REMOTE, '--files-only', '--max-depth', '1']))
+    remote = source_remote()
+    listing = json.loads(command(['rclone', 'lsjson', remote, '--files-only', '--max-depth', '1']))
     parent = os.environ.get('PARENT_RUN_ID') or None
     summaries = []
     with tempfile.TemporaryDirectory(prefix='bentan-supplements-') as temporary:
@@ -119,10 +120,10 @@ def main():
             if len(names) != 1 or any('/' in name or '\\' in name for name in names):
                 raise ValueError('Ambiguous schedule source')
             path = work / f'{month}.xlsm'
-            command(['rclone', 'copyto', REMOTE + '/' + names[0], str(path)])
+            command(['rclone', 'copyto', remote + '/' + names[0], str(path)])
             def download():
                 check = work / f'{month}-recheck.xlsm'
-                command(['rclone', 'copyto', REMOTE + '/' + names[0], str(check)])
+                command(['rclone', 'copyto', remote + '/' + names[0], str(check)])
                 return check.read_bytes()
             def send(body):
                 request = Request(ENDPOINT, data=json.dumps(body, ensure_ascii=False).encode('utf-8'),

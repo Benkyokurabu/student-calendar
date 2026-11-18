@@ -27,6 +27,8 @@ permissions:
 concurrency:
   group: journal-cloud-write
   cancel-in-progress: false
+env:
+  JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
 jobs:
   selected-operation:
     runs-on: ubuntu-latest
@@ -39,7 +41,9 @@ jobs:
       - name: Install existing journal dependencies
         run: pip install openpyxl requests
       - name: Verify the operation boundaries
-        run: python -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
+        run: |
+          python -m unittest discover -s scripts -p test_journal_source.py -v
+          python -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
       - name: Install rclone
         run: curl -fsSL https://rclone.org/install.sh | sudo bash
       - name: Restore the existing cloud connection

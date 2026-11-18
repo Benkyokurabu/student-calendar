@@ -5,6 +5,9 @@ from pathlib import Path
 import subprocess
 import sys
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from journal_source import source_remote
+
 BASE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
 STAGE = BASE / 'stable-runtime'
 sys.path.insert(0, str(STAGE))
@@ -13,7 +16,7 @@ from cloud_backup import backup_file, backup_cloud_file, find_rclone
 stamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 category = 'zoom_task_runtime'
 print(backup_file(BASE / 'tasks-before.json', category=category, timestamp=stamp, relative_path='scheduled_tasks/tasks-before.json'))
-cloud = 'onedrive:デスクトップ/【完成版】授業日誌システム/zoomURL/setup_zoom_json_publish_tasks.py'
+cloud = source_remote() + '/zoomURL/setup_zoom_json_publish_tasks.py'
 original = BASE / 'setup-original.py'
 rclone = find_rclone()
 subprocess.run([rclone, 'copyto', cloud, str(original)], check=True)

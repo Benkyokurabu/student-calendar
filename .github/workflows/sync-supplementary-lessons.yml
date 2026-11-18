@@ -23,6 +23,8 @@ permissions:
 concurrency:
   group: notion-supplementary-lessons
   cancel-in-progress: false
+env:
+  JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
 jobs:
   supplements:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'

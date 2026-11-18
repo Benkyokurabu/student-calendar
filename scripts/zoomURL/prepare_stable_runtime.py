@@ -6,10 +6,13 @@ import subprocess
 import sys
 import tempfile
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from journal_source import source_remote
+
 SOURCE = Path(__file__).resolve().parent
 BASE = Path(tempfile.mkdtemp(prefix='zoom-runtime-install-'))
 STAGE = BASE / 'stable-runtime'
-CLOUD = 'onedrive:デスクトップ/【完成版】授業日誌システム'
+CLOUD = source_remote()
 FILES = [
     'cloud_backup.py', 'publish_lock.py', 'student_calendar_repo.py',
     'recording_publication_filter.py',
@@ -48,7 +51,6 @@ health_launcher = launcher.replace(str(runtime / 'zoomURL/run_zoom_publisher.py'
 health_launcher = health_launcher.replace('run_system_health_check.py --notify""', 'run_system_health_check.py"" --notify')
 (STAGE / 'run_system_health_check_hidden.vbs').write_text(health_launcher, 'ascii')
 
-original = Path.home() / 'OneDrive/デスクトップ/【完成版】授業日誌システム'
 (STAGE / 'runtime.json').write_text(json.dumps({'sharedLock': str(runtime.parent / 'student_calendar_publish.lock'), 'cloudSource': CLOUD}, ensure_ascii=False, indent=2), 'utf-8')
 
 for file in STAGE.rglob('*.py'):

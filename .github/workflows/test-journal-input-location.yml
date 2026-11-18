@@ -1,0 +1,29 @@
+name: Test journal input locations
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/journal_source.py'
+      - 'scripts/test_journal_source.py'
+      - 'scripts/bentan_journal_operation.py'
+      - 'scripts/sync_supplementary_lessons.py'
+      - 'scripts/zoomURL/prepare_stable_runtime.py'
+      - 'scripts/zoomURL/backup_and_update_setup.py'
+      - '.github/workflows/test-journal-input-location.yml'
+permissions:
+  contents: read
+jobs:
+  input-locations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl requests
+      - name: Check source selection and original preservation
+        run: |
+          python -B -m unittest discover -s scripts -p test_journal_source.py -v
+          python -B -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
+          python -B -m unittest discover -s scripts -p test_sync_supplementary_lessons.py -v
