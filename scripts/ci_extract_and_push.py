@@ -72,8 +72,18 @@ def journal_today():
     return datetime.now(ZoneInfo("Asia/Tokyo")).date()
 
 
+def december_creation_ready(month, script_dir, today=None):
+    """The original December acceptance hold also applies to the daily pipeline."""
+    if month != '2026-12':
+        return True
+    return (today or journal_today()) >= date(2026, 11, 20) and bool(
+        script_dir and (Path(script_dir) / 'TEMPLATE_MAIN_COMMON.xlsx').is_file())
+
+
 def get_months_to_process(month_arg=None, *, script_dir=None):
     if month_arg:
+        if not december_creation_ready(month_arg, script_dir):
+            raise ValueError('December requires November 20 or later and a registered common master')
         return [month_arg]
     today = journal_today()
     current_month = f"{today.year}-{today.month:02d}"
@@ -90,7 +100,7 @@ def get_months_to_process(month_arg=None, *, script_dir=None):
     else:
         next_year, next_month = today.year, today.month + 1
     next_month_str = f"{next_year}-{next_month:02d}"
-    if next_month_str not in months and script_dir:
+    if next_month_str not in months and script_dir and december_creation_ready(next_month_str, script_dir, today):
         import re as _re
         # CI環境: _backup/スケジュール表/ にスケジュールExcelがある
         backup_dir = script_dir / "_cloud_journal" / "_backup" / "スケジュール表"

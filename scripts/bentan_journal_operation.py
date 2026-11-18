@@ -27,6 +27,12 @@ def digest(data):
 def encoded(data):
     return json.dumps(data, ensure_ascii=False, sort_keys=True, default=str).encode()
 
+
+def semantic_style(style):
+    # Excel/openpyxl can materialize an implicit default as an all-zero style.
+    # Keep every non-default style component; these two forms render identically.
+    return tuple(style) if style is not None and any(style) else None
+
 def validate_operation(operation, month, request_id, now=None):
     now = now or datetime.now(JST)
     current = now.strftime('%Y-%m')
@@ -50,11 +56,11 @@ def command(args, cwd=None):
 def sheet_fingerprint(sheet):
     return digest(encoded({
         'state': sheet.sheet_state,
-        'cells': [(r, c, cell.value, cell.data_type, str(cell._style), cell.number_format,
+        'cells': [(r, c, cell.value, cell.data_type, semantic_style(cell._style), cell.number_format,
                    str(cell.hyperlink), str(cell.comment)) for (r, c), cell in sorted(sheet._cells.items())],
         'merged': sorted(str(item) for item in sheet.merged_cells.ranges),
-        'rows': [(k, v.height, v.hidden, v.outlineLevel, v.collapsed, str(v._style)) for k, v in sorted(sheet.row_dimensions.items())],
-        'columns': [(k, v.width, v.hidden, v.min, v.max, v.outlineLevel, str(v._style)) for k, v in sorted(sheet.column_dimensions.items())],
+        'rows': [(k, v.height, v.hidden, v.outlineLevel, v.collapsed, semantic_style(v._style)) for k, v in sorted(sheet.row_dimensions.items())],
+        'columns': [(k, v.width, v.hidden, v.min, v.max, v.outlineLevel, semantic_style(v._style)) for k, v in sorted(sheet.column_dimensions.items())],
         'validations': tostring(sheet.data_validations.to_tree()).decode(),
         'conditional': [(str(k), [tostring(r.to_tree()).decode() for r in rules]) for k, rules in sheet.conditional_formatting._cf_rules.items()],
         'print_area': str(sheet.print_area), 'print_rows': sheet.print_title_rows, 'print_cols': sheet.print_title_cols,

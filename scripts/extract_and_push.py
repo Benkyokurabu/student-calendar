@@ -146,10 +146,10 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir_override: Pa
 
                             wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
                             tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
-                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
                             if ws_out is None:
                                 continue  # 既にある
-                            set_header_cells(ws_out, campus, grade_j, subj_j, month)
+                            set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
                             fill_sheet_main(ws_out, month, {"S": s_list, "A": a_list, "B": b_list}, teacher_blank=False)
                             save_year_workbook(wb, wb_path)
                             print(f"  [NEW] {fname} + {ws_out.title}")
@@ -164,10 +164,10 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir_override: Pa
 
                             wb = open_or_create_year_workbook(wb_path, TEMPLATE_X, "__TEMPLATE_X__")
                             tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_X, "__TEMPLATE_X__")
-                            ws_out = create_month_sheet(wb, tmpl, year, month)
+                            ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_X)
                             if ws_out is None:
                                 continue
-                            set_header_cells(ws_out, campus, grade_j, subj_j, month)
+                            set_header_cells(ws_out, campus, grade_j, subj_j, month, wb=wb, year=year)
                             fill_sheet_x(ws_out, month, x_list, teacher_blank=False)
                             save_year_workbook(wb, wb_path)
                             print(f"  [NEW] {fname} + {ws_out.title}")
@@ -185,10 +185,10 @@ def create_month_sheets(script_dir: Path, months: list, journal_dir_override: Pa
 
                     wb = open_or_create_year_workbook(wb_path, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
                     tmpl = ensure_hidden_template_sheet(wb, TEMPLATE_MAIN, "__TEMPLATE_MAIN__")
-                    ws_out = create_month_sheet(wb, tmpl, year, month)
+                    ws_out = create_month_sheet(wb, tmpl, year, month, template_path=TEMPLATE_MAIN)
                     if ws_out is None:
                         continue
-                    set_header_cells(ws_out, campus, "", title, month)
+                    set_header_cells(ws_out, campus, "", title, month, wb=wb, year=year)
                     fill_sheet_main(ws_out, month, {"S": hits, "A": [], "B": []}, teacher_blank=True)
                     save_year_workbook(wb, wb_path)
                     print(f"  [NEW] {fname} + {ws_out.title}")

@@ -5,11 +5,22 @@ import tempfile
 import unittest
 import openpyxl
 from bentan_journal_operation import (JST, validate_operation, workbook_sheets,
-    assert_only_new_month, source_digest, merge_for_publication, validate_master, has_month_sheet)
+    assert_only_new_month, source_digest, merge_for_publication, validate_master, has_month_sheet, sheet_fingerprint)
 
 IDENTITY = '12345678-1234-4234-8234-123456789abc'
 
 class Boundaries(unittest.TestCase):
+    def test_implicit_and_explicit_default_styles_match_but_real_format_changes_do_not(self):
+        from openpyxl.styles import Font
+        from openpyxl.styles.cell_style import StyleArray
+        book=openpyxl.Workbook();sheet=book.active;sheet.row_dimensions[2].height=15
+        before=sheet_fingerprint(sheet)
+        sheet.row_dimensions[2]._style=StyleArray()
+        self.assertEqual(before,sheet_fingerprint(sheet))
+        sheet.row_dimensions[2].font=Font(bold=True)
+        self.assertNotEqual(before,sheet_fingerprint(sheet))
+        book.close()
+
     def test_current_next_month_and_existing_december_hold(self):
         now = datetime(2026, 11, 5, tzinfo=JST)
         validate_operation('preview', '2026-12', IDENTITY, now)

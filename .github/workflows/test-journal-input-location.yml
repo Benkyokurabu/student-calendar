@@ -7,6 +7,10 @@ on:
       - 'scripts/journal_source.py'
       - 'scripts/test_journal_source.py'
       - 'scripts/bentan_journal_operation.py'
+      - 'scripts/extract_and_push.py'
+      - 'scripts/test_desktop_common_master.py'
+      - 'scripts/ci_extract_and_push.py'
+      - 'scripts/test_december_daily_hold.py'
       - 'scripts/sync_supplementary_lessons.py'
       - 'scripts/zoomURL/prepare_stable_runtime.py'
       - 'scripts/zoomURL/backup_and_update_setup.py'
@@ -27,3 +31,5 @@ jobs:
           python -B -m unittest discover -s scripts -p test_journal_source.py -v
           python -B -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
           python -B -m unittest discover -s scripts -p test_sync_supplementary_lessons.py -v
+          python -B -m unittest discover -s scripts -p test_desktop_common_master.py -v
+          python -B -m unittest discover -s scripts -p test_december_daily_hold.py -v

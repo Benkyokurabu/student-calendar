@@ -41,7 +41,8 @@ class JournalMonthRolloverTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / '2026年12月スケジュール.xlsm').touch()
-            self.assertEqual(self.months(date(2026, 11, 4), script_dir=root), ['2026-10', '2026-11', '2026-12'])
+            (root / 'TEMPLATE_MAIN_COMMON.xlsx').touch()
+            self.assertEqual(self.months(date(2026, 11, 20), script_dir=root), ['2026-10', '2026-11', '2026-12'])
 
     def test_explicit_manual_month_remains_limited(self):
         self.assertEqual(pipeline.get_months_to_process('2026-09'), ['2026-09'])
@@ -72,13 +73,14 @@ class JournalMonthRolloverTests(unittest.TestCase):
             (scripts / '_cloud_journal').mkdir()
             (root / 'update_journal.py').touch()
             (scripts / 'sync_journal_across_campus.py').touch()
+            (scripts / 'TEMPLATE_MAIN_COMMON.xlsx').touch()
             for month in ['2026-10', '2026-11', '2026-12']:
                 (scripts / f'2026年{int(month[-2:])}月スケジュール.xlsm').touch()
                 (root / f'journal_{month}.json').write_text(json.dumps({'month': month, 'entries': {}}), encoding='utf-8')
                 (root / f'schedule_{month}.json').write_text('[]', encoding='utf-8')
             with patch.object(pipeline, '__file__', str(scripts / 'ci_extract_and_push.py')), \
                  patch.object(pipeline.sys, 'argv', ['ci_extract_and_push.py']), \
-                 patch.object(pipeline, 'journal_today', return_value=date(2026, 11, 4)), \
+                 patch.object(pipeline, 'journal_today', return_value=date(2026, 11, 20)), \
                  patch.object(pipeline, 'repair_hidden_template_validations'), \
                  patch.object(pipeline, 'create_month_sheets', return_value=0) as create, \
                  patch.object(pipeline.subprocess, 'run', return_value=SimpleNamespace(returncode=0, stdout='', stderr='')) as update, \
