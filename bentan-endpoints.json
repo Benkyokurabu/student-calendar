@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "apiBaseUrl": "https://line-check-system.vercel.app",
+  "staffBaseUrl": "https://line-check-system.vercel.app"
+}

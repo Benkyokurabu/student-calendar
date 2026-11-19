@@ -15,10 +15,13 @@ from urllib.request import Request, urlopen
 from xml.etree.ElementTree import tostring, fromstring
 from zipfile import ZipFile
 from journal_source import source_remote, source_file
+from publication_branch import publication_branch, require_publication_branch
 
 JST = timezone(timedelta(hours=9))
 REMOTE = 'onedrive:●勉強クラブ共有/09　授業日誌'
-CALLBACK = 'https://line-check-system.vercel.app/api/journal-management/callback'
+from bentan_endpoints import endpoint
+
+CALLBACK = endpoint('/api/journal-management/callback')
 PUBLIC = 'https://benkyokurabu.github.io/student-calendar'
 
 def digest(data):
@@ -149,6 +152,7 @@ def main():
     validate_operation(operation, month, request_id)
     scripts = Path(__file__).resolve().parent
     repo = scripts.parent
+    require_publication_branch(repo)
     os.chdir(scripts)
     work = scripts / '_bentan_operation'
     work.mkdir()
@@ -255,7 +259,7 @@ def main():
         if command(['git', 'diff', '--cached', '--name-only'], repo).strip():
             command(['git', '-c', 'user.name=github-actions[bot]', '-c', 'user.email=github-actions[bot]@users.noreply.github.com', 'commit', '-m', 'Publish journal from Bentan ' + request_id], repo)
             # Never rebase stale generated data over another publisher's changes.
-            command(['git', 'push', 'origin', 'HEAD:main'], repo)
+            command(['git', 'push', 'origin', 'HEAD:' + publication_branch()], repo)
         summary['published'] = True
         for attempt in range(18):
             try:

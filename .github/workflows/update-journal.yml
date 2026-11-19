@@ -54,6 +54,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  BENTAN_PUBLICATION_BRANCH: g10-live-20261120
+  BENTAN_API_BASE_URL: ${{ vars.BENTAN_API_BASE_URL }}
   JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
 
 jobs:
@@ -67,6 +69,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: g10-live-20261120
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -100,45 +104,73 @@ jobs:
 
       - name: Verify atomic journal upload and publication conflict handling
         run: python -m unittest discover -s scripts -p test_safe_journal_upload.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify journal dropdowns and unused-slot colors
         run: python -m unittest discover -s scripts -p test_journal_input_controls.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify workbook counter extraction
         run: python -m unittest discover -s scripts -p test_journal_counter_headers.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify retired month and week fields stay blank
         run: python -m unittest discover -s scripts -p test_journal_month_week_blank.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify common masters preserve existing records and lesson headers
         run: python -m unittest discover -s scripts -p test_journal_common_master.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify special-only columns retain unused-form shading
         run: python -m unittest discover -s scripts -p test_journal_special_colors.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Test consecutive journal lessons
         run: python -m unittest discover -s scripts -p test_extract_journal_same_day.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify teacher calendar shares student schedule data
         run: python -m unittest discover -s scripts -p test_build_teacher_calendar.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Test same-day workbook slot order
         run: python -m unittest discover -s scripts -p test_same_day_slot_order.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify 21 lesson slots and preservation
         run: python -m unittest discover -s scripts -p test_journal_slots.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify deferred migration safety
         run: python -m unittest discover -s scripts -p test_retry_deferred_journal_slots.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify month generation failures stop publication
         run: python -m unittest discover -s scripts -p test_journal_month_failure.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify previous-month journals remain current after rollover
         run: python -m unittest discover -s scripts -p test_journal_month_rollover.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify cross-campus journal field synchronization
         run: python -m unittest discover -s scripts -p test_sync_journal_across_campus.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Install rclone
         run: |
@@ -293,8 +325,8 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update schedule & journal JSON (GitHub Actions)"
-            git pull --rebase origin main
-            git push
+            git pull --rebase origin "$BENTAN_PUBLICATION_BRANCH"
+            git push origin "HEAD:$BENTAN_PUBLICATION_BRANCH"
           fi
 
       - name: Create issue on failure

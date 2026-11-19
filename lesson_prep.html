@@ -237,6 +237,7 @@
 
   }
 </style>
+<script src="bentan-endpoints.js?v=20261119-1"></script>
 <script src="calendar-schedule-source.js?v=20261029-2"></script>
 </head>
 <body>
@@ -285,12 +286,12 @@ function roomLabel(room) {
 }
 
 /* ====== JSON読み込み ====== */
-const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/main/";
+const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/g10-live-20261120/";
 
 async function loadJSON(url) {
   try {
     const separator = url.includes("?") ? "&" : "?";
-    const r = await fetch(url + separator + "_=" + Date.now(), { cache: "no-store" });
+    const r = await fetch(url + separator + "_=" + Date.now(), bentanApiFetchOptions(url, { cache: "no-store" }));
     if (!r.ok) return null;
     return await r.json();
   } catch { return null; }
@@ -343,6 +344,7 @@ async function forceRefresh(button) {
 }
 
 async function init() {
+  await globalThis.LessonPrepEmbedReady;
   const dp = document.getElementById("datePicker");
   const today = new Date();
   dp.value = globalThis.LessonPrepEmbed?.initialDate(today.toISOString().slice(0, 10)) || today.toISOString().slice(0, 10);
@@ -406,7 +408,7 @@ async function loadZoomRecordings(mm) {
     loadNewestJSON([monthlyFile, rawJsonUrl(monthlyFile)]),
     loadNewestJSON([latestFile, rawJsonUrl(latestFile)]),
     loadNewestJSON(["zoom_recording_overrides_" + mm + ".json", rawJsonUrl("zoom_recording_overrides_" + mm + ".json")]),
-    loadNewestJSON(["https://line-check-system.vercel.app/api/recordings/publication"]),
+    bentanPublication(loadNewestJSON),
   ]);
   const data = recordingSnapshotForMonth(mm, monthly, latest, visibility, publication, zoomRecordingMonths.get(mm));
   zoomRecordingMonths.set(mm, data);
@@ -949,7 +951,7 @@ function escAttr(s) {
 document.addEventListener("click", async function(e) {
   const settings = e.target.closest(".btn-release-settings");
   if (settings) {
-    window.open("https://line-check-system.vercel.app/staff/recordings?month=" + settings.dataset.key.slice(0,7) + "&key=" + encodeURIComponent(settings.dataset.key), "_blank", "noopener");
+    window.open(await bentanStaffUrl("/staff/recordings?month=" + settings.dataset.key.slice(0,7) + "&key=" + encodeURIComponent(settings.dataset.key)), "_blank", "noopener");
     return;
   }
   const btn = e.target.closest(".btn-copy-recording");

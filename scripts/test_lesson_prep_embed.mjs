@@ -1,15 +1,17 @@
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {chromium} from 'playwright';
+const {chromium}=await import(process.env.CALENDAR_PLAYWRIGHT_MODULE||'playwright');
 const root=fileURLToPath(new URL('../',import.meta.url));
 // Use the real child origin with local files, avoiding local-network permission
 // differences while exercising the same cross-origin message contract as production.
 const childBase='https://benkyokurabu.github.io/student-calendar';
-const browser=await chromium.launch({headless:true,...(process.env.CALENDAR_TEST_CHANNEL?{channel:process.env.CALENDAR_TEST_CHANNEL}:{})});
+const browser=await chromium.launch({headless:true,...(process.env.CALENDAR_TEST_CHANNEL?{channel:process.env.CALENDAR_TEST_CHANNEL}:{}),proxy:{server:"http://127.0.0.1:9",bypass:"127.0.0.1,localhost"}});
 const event=(teacher,date='2026-11-02')=>({teacher,date,time:'18:00～19:00',campus:'hon',groupKey:'hon_j1_A_math',grade:'j1',class:'A',subject:'math',room:'1'});
 try{
  for(const scenario of [
+  {label:'configured-private-parent',privateParent:true,teacher:'工藤',rows:[event('工藤')],expected:'工藤'},
+  {label:'retired-cloud-parent',parentOrigin:'https://line-check-system.vercel.app',untrusted:true,teacher:'工藤',rows:[event('工藤')],expected:''},
   {label:'today',teacher:'工藤',rows:[event('工藤'),event('金城')],expected:'工藤'},
   {label:'alias',teacher:'佐藤（治）',rows:[event('治彦')],expected:'治彦'},
   {label:'no-lessons',teacher:'金城',rows:[event('工藤')],expected:''},
@@ -29,6 +31,7 @@ try{
     const child=new URL(childBase+'/lesson_prep.html');child.search=new URLSearchParams({embedded:'1',teacher:scenario.teacher,date:scenario.date||'2026-11-02'}).toString();
     return route.fulfill({contentType:'text/html; charset=utf-8',body:`<!doctype html><meta name="viewport" content="width=device-width"><script>window.messages=[];addEventListener('message',e=>messages.push(e.data));</script><iframe title="授業準備" src="${child.href.replaceAll('&','&amp;')}" style="width:100%;height:650px;border:0"></iframe>`});
    }
+   if(file==='bentan-endpoints.json')return route.fulfill({json:{version:1,apiBaseUrl:'https://g10.example.invalid',staffBaseUrl:'https://g10.staff.example.invalid'}});
    if(url.pathname==='/api/schedule/calendar'){
     const month=url.searchParams.get('month'),rows=scenario.rows.map(row=>({...row,date:month+'-02'}));
     return route.fulfill({json:{month,count:rows.length,schedule:rows,teacherSchedule:{items:rows}}});
@@ -38,7 +41,7 @@ try{
    if(url.href.startsWith(childBase+'/'))return route.fulfill({path:path.join(root,url.pathname.slice('/student-calendar/'.length))});
    return route.abort();
   });
-  await page.goto(scenario.standalone?childBase+'/lesson_prep.html?embedded=1&teacher=工藤&date=2026-11-02':scenario.untrusted?'https://untrusted.example/embed-test':'http://localhost:31888/embed-test',{waitUntil:'domcontentloaded'});
+  await page.goto(scenario.standalone?childBase+'/lesson_prep.html?embedded=1&teacher=工藤&date=2026-11-02':scenario.untrusted?(scenario.parentOrigin||'https://untrusted.example')+'/embed-test':scenario.privateParent?'https://g10.staff.example.invalid/embed-test':'http://localhost:31888/embed-test',{waitUntil:'domcontentloaded'});
   const frame=scenario.standalone?page.mainFrame():page.frames().find(frame=>frame.url().startsWith(childBase+'/lesson_prep.html'))||await page.waitForEvent('framenavigated',{predicate:frame=>frame.url().startsWith(childBase+'/lesson_prep.html')});
   assert(frame);
   await frame.waitForFunction(()=>document.querySelectorAll('#teacherSelect option').length>1);

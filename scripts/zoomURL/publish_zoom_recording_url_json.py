@@ -28,11 +28,12 @@ if str(SYSTEM_DIR) not in sys.path:
     sys.path.insert(0, str(SYSTEM_DIR))
 
 from publish_lock import PublishLock
+from publication_branch import publication_branch, require_publication_branch
 
 
 def load_publishing_schedule(repo: Path, month: str) -> list[dict]:
     """Read the authoritative month from the fetched remote, never stale local JSON."""
-    result = run(["git", "show", f"origin/main:schedule_{month}.json"], cwd=repo, check=False)
+    result = run(["git", "show", f"origin/{publication_branch()}:schedule_{month}.json"], cwd=repo, check=False)
     if result.returncode != 0:
         raise RuntimeError(f"当月の正本予定がありません: schedule_{month}.json。過去月への切替は行いません。")
     events = json.loads(result.stdout.lstrip("\ufeff"))
@@ -41,7 +42,7 @@ def load_publishing_schedule(repo: Path, month: str) -> list[dict]:
         for ev in events
     ):
         raise RuntimeError(f"正本予定の月・形式が不正です: schedule_{month}.json")
-    print(f"[schedule] origin/main:schedule_{month}.json events={len(events)}", flush=True)
+    print(f"[schedule] origin/{publication_branch()}:schedule_{month}.json events={len(events)}", flush=True)
     return events
 
 def comparable_payload(payload: dict) -> dict:
@@ -157,7 +158,7 @@ def pull_rebase_with_zoom_resolution(repo: Path, payload_text: str, month: str) 
         f"zoom_recording_urls_{month}.json",
         "zoom_recording_urls_latest.json",
     }
-    pulled = run(["git", "pull", "--rebase", "origin", "main"], cwd=repo, check=False, timeout=60)
+    pulled = run(["git", "pull", "--rebase", "origin", publication_branch()], cwd=repo, check=False, timeout=60)
     if pulled.returncode == 0:
         return
 
@@ -209,12 +210,12 @@ def pull_rebase_with_zoom_resolution(repo: Path, payload_text: str, month: str) 
 
 def push_pending_commits(repo: Path, payload_text: str, month: str) -> bool:
     """Push an earlier local commit before deciding the current payload is unchanged."""
-    fetch = run(["git", "fetch", "origin", "main"], cwd=repo, check=False, timeout=45)
+    fetch = run(["git", "fetch", "origin", publication_branch()], cwd=repo, check=False, timeout=45)
     if fetch.returncode != 0:
-        print("[WARN] could not fetch origin/main; continuing with normal publish", flush=True)
+        print(f"[WARN] could not fetch origin/{publication_branch()}; continuing with normal publish", flush=True)
         return False
     pending = run(
-        ["git", "rev-list", "--count", "origin/main..HEAD"],
+        ["git", "rev-list", "--count", f"origin/{publication_branch()}..HEAD"],
         cwd=repo,
         check=False,
         timeout=20,
@@ -225,7 +226,7 @@ def push_pending_commits(repo: Path, payload_text: str, month: str) -> bool:
     print(f"[publish] {pending.stdout.strip()} unpushed commit(s) detected", flush=True)
     for attempt in range(1, 4):
         print(f"[publish] push attempt {attempt}/3", flush=True)
-        pushed = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
+        pushed = run(["git", "push", "origin", publication_branch()], cwd=repo, check=False, timeout=60)
         if pushed.returncode == 0:
             print("[publish] pending commit(s) pushed", flush=True)
             return True
@@ -259,7 +260,8 @@ def main() -> int:
     repo = args.repo or url_list.repo_dir()
     if repo is None:
         raise RuntimeError("student-calendar repo was not found.")
-    run(["git", "fetch", "origin", "main"], cwd=repo, timeout=60)
+    require_publication_branch(repo)
+    run(["git", "fetch", "origin", publication_branch()], cwd=repo, timeout=60)
     schedule = load_publishing_schedule(repo, month)
     if args.config_dir:
         url_list.z.load_dotenv(args.config_dir / ".env")
@@ -318,13 +320,13 @@ def main() -> int:
         return 0
 
     run(["git", "commit", "-m", f"Update Zoom recording URLs {month}"], cwd=repo, timeout=60)
-    pushed = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
+    pushed = run(["git", "push", "origin", publication_branch()], cwd=repo, check=False, timeout=60)
     if pushed.returncode != 0:
         print("[WARN] initial push failed; retrying after rebase", flush=True)
         for attempt in range(2, 4):
             pull_rebase_with_zoom_resolution(repo, payload_text, month)
             time.sleep(5 * (attempt - 1))
-            pushed = run(["git", "push", "origin", "main"], cwd=repo, check=False, timeout=60)
+            pushed = run(["git", "push", "origin", publication_branch()], cwd=repo, check=False, timeout=60)
             if pushed.returncode == 0:
                 break
     if pushed.returncode != 0:

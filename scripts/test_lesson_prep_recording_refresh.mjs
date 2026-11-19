@@ -10,6 +10,7 @@ function context(){
  let current=month,rendered=0;
  const ctx={Map,Date,JSON,rawJsonUrl:file=>'https://example.test/'+file,zoomRecordingData:{},zoomRecordingMonths:new Map(),responses:[],
   loadNewestJSON:async()=>ctx.responses.shift()??null,document:{getElementById:()=>({get value(){return current+'-19'}})},render:()=>rendered++};
+ ctx.bentanPublication = loader => loader(["https://g10.example.invalid/api/recordings/publication"]);
  vm.createContext(ctx);
  const names=['inferMonthFromRecordingEntries','mergeRecordingDataForMonth','loadZoomRecordings','refreshZoomRecordingsIfChanged'];
  if(html.includes('function recordingSnapshotForMonth('))names.unshift('recordingSnapshotForMonth');

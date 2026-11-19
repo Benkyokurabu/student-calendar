@@ -24,6 +24,7 @@ concurrency:
   group: notion-supplementary-lessons
   cancel-in-progress: false
 env:
+  BENTAN_API_BASE_URL: ${{ vars.BENTAN_API_BASE_URL }}
   JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
 jobs:
   supplements:

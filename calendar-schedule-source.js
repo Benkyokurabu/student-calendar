@@ -1,7 +1,7 @@
 /* All active calendars read the same accepted schedule as the classroom screen. */
 (function (root) {
   "use strict";
-  const endpoint = "https://line-check-system.vercel.app/api/schedule/calendar";
+
   const cache = new Map();
   const pending = new Map();
   const listeners = new Set();
@@ -35,7 +35,7 @@
     return Array.isArray(rows) && rows.length > 0 && rows.every((event) => event && event.date?.startsWith(month + "-") && event.time && event.groupKey && ["hon", "minami"].includes(event.campus));
   }
   async function request(url) {
-    const response = await fetch(url, { cache: "no-store", credentials: "omit", signal: AbortSignal.timeout(10000) });
+    const response = await fetch(url, root.bentanApiFetchOptions(url, { cache: "no-store", credentials: "omit", signal: AbortSignal.timeout(10000) }));
     if (!response.ok) throw new Error(`授業データを取得できません（${response.status}）`);
     return response.json();
   }
@@ -43,6 +43,7 @@
     const previous = cache.get(month);
     if (previous && previous.until > Date.now()) return previous.value;
     if (!pending.has(month)) pending.set(month, (async () => {
+      const endpoint = await root.bentanApiUrl("/api/schedule/calendar");
       const data = await request(`${endpoint}?month=${month}`);
       if (data.month !== month || !validRows(data.schedule, month) || data.count !== data.schedule.length ||
           data.teacherSchedule?.items?.length !== data.count || !validRows(data.teacherSchedule.items, month)) throw new Error("授業データの月・件数が一致しません");
