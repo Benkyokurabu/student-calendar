@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from urllib.request import urlopen
 from urllib.request import Request
+from urllib.error import HTTPError, URLError
+import time
 import os
 import subprocess
 from datetime import datetime, timezone, timedelta
@@ -14,8 +16,18 @@ from urllib.parse import urlparse
 POLICY_URL = 'https://line-check-system.vercel.app/api/recordings/publication'
 
 def load_rules():
-    with urlopen(POLICY_URL, timeout=30) as response:
-        payload = json.load(response)
+    for attempt in range(3):
+        try:
+            with urlopen(POLICY_URL, timeout=30) as response:
+                payload = json.load(response)
+            break
+        except (HTTPError, URLError, TimeoutError, ConnectionError) as error:
+            if isinstance(error, HTTPError) and error.code not in (408, 429, 500, 502, 503, 504):
+                raise
+            if attempt == 2:
+                raise
+            print(f'[policy] temporary read failure; retry {attempt + 2}/3', flush=True)
+            time.sleep(2 * (attempt + 1))
     rules = payload.get('rules')
     if not isinstance(rules, list) or any(r.get('status') not in ('hidden', 'public') for r in rules):
         raise ValueError('Invalid recording policy; stop publishing rather than exposing hidden URLs.')

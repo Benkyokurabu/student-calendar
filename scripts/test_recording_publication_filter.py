@@ -8,7 +8,58 @@ import tempfile
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from types import SimpleNamespace
+from urllib.error import HTTPError, URLError
+from recording_publication_filter import load_rules
 from recording_publication_filter import apply_payload, preserve_recording_fields, publish_text_with_existing_recordings, refresh_approved_snapshots
+
+class PolicyReadRetryTests(unittest.TestCase):
+    def response(self, rules):
+        return io.BytesIO(json.dumps({'rules': rules}).encode())
+
+    @patch('recording_publication_filter.time.sleep')
+    @patch('recording_publication_filter.urlopen')
+    def test_transient_failure_recovers_with_restrictions_intact(self, request, sleep):
+        rules = [{'status': 'hidden', 'eventKeys': ['private-lesson']}]
+        request.side_effect = [HTTPError('https://example.test', 503, 'unavailable', {}, None), self.response(rules)]
+        self.assertEqual(load_rules(), rules)
+        self.assertEqual(request.call_count, 2)
+        sleep.assert_called_once_with(2)
+
+    @patch('recording_publication_filter.time.sleep')
+    @patch('recording_publication_filter.urlopen')
+    def test_connection_failure_recovers_on_third_attempt(self, request, sleep):
+        request.side_effect = [URLError('offline'), TimeoutError(), self.response([])]
+        self.assertEqual(load_rules(), [])
+        self.assertEqual(request.call_count, 3)
+        self.assertEqual([call.args[0] for call in sleep.call_args_list], [2, 4])
+
+    @patch('recording_publication_filter.time.sleep')
+    @patch('recording_publication_filter.urlopen')
+    def test_persistent_failure_stops_without_an_empty_policy_fallback(self, request, sleep):
+        request.side_effect = HTTPError('https://example.test', 503, 'unavailable', {}, None)
+        with self.assertRaises(HTTPError):
+            load_rules()
+        self.assertEqual(request.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
+
+    @patch('recording_publication_filter.time.sleep')
+    @patch('recording_publication_filter.urlopen')
+    def test_authentication_failures_are_not_retried(self, request, sleep):
+        request.side_effect = HTTPError('https://example.test', 401, 'unauthorized', {}, None)
+        with self.assertRaises(HTTPError):
+            load_rules()
+        self.assertEqual(request.call_count, 1)
+        sleep.assert_not_called()
+
+    @patch('recording_publication_filter.time.sleep')
+    @patch('recording_publication_filter.urlopen')
+    def test_invalid_policy_is_rejected_without_retries(self, request, sleep):
+        request.return_value = self.response([{'status': 'unexpected'}])
+        with self.assertRaises(ValueError):
+            load_rules()
+        self.assertEqual(request.call_count, 1)
+        sleep.assert_not_called()
+
 
 class PublicationFilterTests(unittest.TestCase):
     def test_correction_wins_over_automatic_import_and_keeps_hidden_recordings_hidden(self):
