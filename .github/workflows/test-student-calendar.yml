@@ -16,6 +16,7 @@ on:
       - "scripts/test_lesson_prep_previous.mjs"
       - "scripts/test_lesson_prep_loading_notice.mjs"
       - "scripts/test_lesson_prep_recording_available.mjs"
+      - "scripts/test_lesson_prep_recording_refresh.mjs"
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
@@ -59,6 +60,7 @@ on:
       - "scripts/test_lesson_prep_previous.mjs"
       - "scripts/test_lesson_prep_loading_notice.mjs"
       - "scripts/test_lesson_prep_recording_available.mjs"
+      - "scripts/test_lesson_prep_recording_refresh.mjs"
       - "recording_emergency_*.json"
       - "scripts/test_recording_emergency.mjs"
       - "scripts/test_calendar_emergency.mjs"
@@ -102,6 +104,7 @@ jobs:
           node-version: "22"
       - run: node scripts/test_calendar_state_migration.mjs
       - run: node scripts/test_lesson_journal_refresh.mjs
+      - run: node --test scripts/test_lesson_prep_recording_refresh.mjs
       - run: node scripts/test_lesson_prep_previous.mjs
       - run: node scripts/test_calendar_schedule_source.mjs
       - run: node scripts/test_calendar_request.mjs
