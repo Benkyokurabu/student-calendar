@@ -23,6 +23,8 @@ permissions:
 concurrency:
   group: zoom-recording-url-publish
   cancel-in-progress: false
+env:
+  BENTAN_PUBLICATION_BRANCH: g10-live-20261120
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -30,12 +32,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: g10-live-20261120
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install openpyxl
       - run: python -m unittest discover -s scripts/zoomURL -p 'test_recording_release.py'
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
+
       - name: Zoom共有設定を適用・再取得
         env:
           ZOOM_ACCOUNT_ID: ${{ secrets.ZOOM_ACCOUNT_ID }}
@@ -53,5 +58,5 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add recording_release.json
           git commit -m 'Update verified recording release settings'
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin "$BENTAN_PUBLICATION_BRANCH"
+          git push origin "$BENTAN_PUBLICATION_BRANCH"

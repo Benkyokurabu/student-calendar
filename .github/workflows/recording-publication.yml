@@ -16,6 +16,9 @@ permissions:
 concurrency:
   group: zoom-recording-url-publish
   cancel-in-progress: false
+env:
+  BENTAN_PUBLICATION_BRANCH: g10-live-20261120
+  BENTAN_API_BASE_URL: ${{ vars.BENTAN_API_BASE_URL }}
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -23,11 +26,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: g10-live-20261120
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p test_recording_publication_filter.py
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
+
       - run: python scripts/recording_publication_filter.py
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -39,8 +45,8 @@ jobs:
           git add journal_*.json zoom_recording_*.json recording_emergency_*.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Apply Bentan recording publication settings'
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin "$BENTAN_PUBLICATION_BRANCH"
+          git push origin "$BENTAN_PUBLICATION_BRANCH"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
       - name: Refresh published Pages JSON
         if: steps.publication.outputs.changed == 'true'

@@ -28,6 +28,8 @@ concurrency:
   group: journal-cloud-write
   cancel-in-progress: false
 env:
+  BENTAN_PUBLICATION_BRANCH: g10-live-20261120
+  BENTAN_API_BASE_URL: ${{ vars.BENTAN_API_BASE_URL }}
   JOURNAL_INPUT_LOCATION: ${{ vars.JOURNAL_INPUT_LOCATION || 'desktop' }}
 jobs:
   selected-operation:
@@ -35,6 +37,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: g10-live-20261120
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -44,6 +48,9 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p test_journal_source.py -v
           python -m unittest discover -s scripts -p test_bentan_journal_operation.py -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
+
       - name: Install rclone
         run: curl -fsSL https://rclone.org/install.sh | sudo bash
       - name: Restore the existing cloud connection

@@ -14,7 +14,7 @@ const server=http.createServer(async(req,res)=>{
  catch{res.writeHead(404);res.end();}
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
-const base=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({headless:true});
+const base=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({headless:true,...(process.env.CALENDAR_TEST_CHANNEL?{channel:process.env.CALENDAR_TEST_CHANNEL}:{}),proxy:{server:"http://127.0.0.1:9",bypass:"127.0.0.1,localhost"}});
 try{
  for(const width of [390,1280])for(const scenario of ['completed','missing','wrong-date','wrong-time','wrong-class','legacy','processing','hidden','override-hidden','corrected','late']){
   const page=await browser.newPage({viewport:{width,height:950}}),errors=[];page.on('pageerror',error=>errors.push(error.message));
@@ -23,6 +23,7 @@ try{
   let available=scenario!=='late';
   await page.route('**/*',async route=>{
    const requestUrl=new URL(route.request().url()),file=path.basename(requestUrl.pathname);
+   if(file==='bentan-endpoints.json')return route.fulfill({json:{version:1,apiBaseUrl:'https://g10.example.invalid',staffBaseUrl:'https://line-check-system.vercel.app'}});
    if(requestUrl.pathname==='/api/schedule/calendar'){
     const ym=requestUrl.searchParams.get('month'),rows=[event(ym),other(ym)];
     return route.fulfill({json:{month:ym,count:rows.length,schedule:rows,teacherSchedule:{items:rows}}});

@@ -7,7 +7,8 @@
     try {
       return await Promise.race([
         (async () => {
-          const response = await fetch(url, { cache: "no-store", signal: controller.signal });
+          const options = { cache: "no-store", signal: controller.signal };
+          const response = await fetch(url, typeof root.bentanApiFetchOptions === 'function' ? root.bentanApiFetchOptions(url, options) : options);
           if (!response.ok) throw new Error(`データを取得できません（${response.status}）`);
           return await response.json();
         })(),

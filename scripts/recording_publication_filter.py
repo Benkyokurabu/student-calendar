@@ -13,12 +13,16 @@ from datetime import datetime, timezone, timedelta
 import re
 from urllib.parse import urlparse
 
-POLICY_URL = 'https://line-check-system.vercel.app/api/recordings/publication'
+from bentan_endpoints import endpoint, public_read_headers
+
+POLICY_URL = endpoint('/api/recordings/publication')
 
 def load_rules():
     for attempt in range(3):
         try:
-            with urlopen(POLICY_URL, timeout=30) as response:
+            headers = public_read_headers(POLICY_URL)
+            target = Request(POLICY_URL, headers=headers) if headers else POLICY_URL
+            with urlopen(target, timeout=30) as response:
                 payload = json.load(response)
             break
         except (HTTPError, URLError, TimeoutError, ConnectionError) as error:

@@ -1,11 +1,13 @@
 /* Optional bridge for the authenticated 勉たん lesson-preparation screen. */
 (function (root) {
   "use strict";
+  root.LessonPrepEmbedReady = (async () => {
+  const origins = await root.bentanEndpointOrigins().catch(() => null);
   const params = new URLSearchParams(root.location.search);
   function allowedOrigin(value) {
     try {
       const url = new URL(value);
-      return url.origin === "https://line-check-system.vercel.app" ||
+      return url.origin === origins?.staff ||
         (url.protocol === "http:" && ["127.0.0.1", "localhost"].includes(url.hostname));
     } catch { return false; }
   }
@@ -81,4 +83,5 @@
     });
   }
   root.LessonPrepEmbed = {initialDate, ready, onRendered};
+  })();
 })(globalThis);

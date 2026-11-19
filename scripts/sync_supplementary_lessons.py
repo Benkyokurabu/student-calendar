@@ -15,7 +15,9 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from journal_source import source_remote
 
-ENDPOINT = 'https://line-check-system.vercel.app/api/journal-management/supplements'
+from bentan_endpoints import endpoint
+
+ENDPOINT = endpoint('/api/journal-management/supplements')
 JST = timezone(timedelta(hours=9))
 
 def allowed_months(now=None):

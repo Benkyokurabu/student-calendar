@@ -48,6 +48,11 @@ on:
         required: true
         default: false
         type: boolean
+      verify_connection_only:
+        description: 'Verify G10 connectivity and publisher identity without publishing or incident messages.'
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -58,8 +63,40 @@ concurrency:
   group: zoom-recording-url-publish
   cancel-in-progress: false
 
+env:
+  BENTAN_PUBLICATION_BRANCH: g10-live-20261120
+  BENTAN_API_BASE_URL: ${{ vars.BENTAN_API_BASE_URL }}
 jobs:
+  verify-g10-connection:
+    if: github.event_name == 'workflow_dispatch' && inputs.verify_connection_only
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Verify publisher identity against G10
+        env:
+          API_BASE: ${{ vars.BENTAN_API_BASE_URL }}
+        shell: python
+        run: |
+          import json, os
+          from urllib.request import Request, urlopen
+          expected = 'https://bentang10ops20261119.shares.zrok.io'
+          if os.environ.get('API_BASE', '').rstrip('/') != expected:
+              raise SystemExit('Reviewed G10 API origin is not configured.')
+          request = Request(os.environ['ACTIONS_ID_TOKEN_REQUEST_URL'] + '&audience=bentan-recording-capture', headers={'Authorization': 'Bearer ' + os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']})
+          with urlopen(request, timeout=20) as response:
+              token = json.load(response)['value']
+          request = Request(expected + '/api/recordings/capture', data=b'{"recordings":[]}', headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json', 'skip_zrok_interstitial': 'true'}, method='POST')
+          with urlopen(request, timeout=60) as response:
+              result = json.load(response)
+          if result != {'captured': 0}:
+              raise SystemExit('G10 publisher verification failed.')
+          print('G10 accepted the GitHub publisher identity. No recordings or repository content were changed.')
+
   publish-zoom-recording-urls:
+    if: github.event_name != 'workflow_dispatch' || !inputs.verify_connection_only
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -67,6 +104,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: g10-live-20261120
           fetch-depth: 0
 
       - name: Simulate failure for cloud alert verification
@@ -97,14 +135,25 @@ jobs:
 
       - name: Verify lesson-only recording policy
         run: python -m unittest discover -s scripts/zoomURL -p 'test_zoom_lesson_only.py'
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify completed video evidence and Excel isolation
         run: python -m unittest discover -s scripts/zoomURL -p 'test_recording_completion.py' -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
 
       - name: Verify authoritative month and historical publication
         run: |
           python -m unittest discover -s scripts/zoomURL -p 'test_publishing_schedule.py' -v
           python -m unittest discover -s scripts/zoomURL -p 'test_historical_zoom_publish.py' -v
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
+
+      - name: Verify dedicated publication branch isolation
+        env:
+          BENTAN_PUBLICATION_BRANCH: main
+        run: python -m unittest discover -s scripts -p test_publication_branch.py -v
 
       - name: Validate required secrets
         env:

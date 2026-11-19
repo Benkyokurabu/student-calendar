@@ -336,6 +336,7 @@
     .j-link:hover{ background:#f3f4f6; }
   </style>
 <link rel="stylesheet" href="calendar-mobile.css?v=20260911-1">
+<script src="bentan-endpoints.js?v=20261119-1"></script>
 <script src="calendar-mobile.js?v=20260911-1" defer></script>
 <script src="calendar-schedule-source.js?v=20261019-1"></script>
 <script src="calendar-request.js?v=20261023-1"></script>
@@ -529,7 +530,7 @@
     try {
     const before = JSON.stringify([publicationRules, publicationAvailable, journalAvailable, journalEntries, emergencyRecordings, zoomRecordingEntries]);
     const [data, emergency, monthly, latest] = await Promise.all([
-      fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]),
+      bentanPublication(fetchNewestJsonAny),
       fetchNewestJsonAny([`recording_emergency_${ym}.json`, rawJsonUrl(`recording_emergency_${ym}.json`)]),
       fetchNewestJsonAny([`zoom_recording_urls_${ym}.json`, rawJsonUrl(`zoom_recording_urls_${ym}.json`)]),
       fetchNewestJsonAny(["zoom_recording_urls_latest.json", rawJsonUrl("zoom_recording_urls_latest.json")]),
@@ -716,7 +717,7 @@
   }
 
   // 日誌JSON用（配列でなくオブジェクト）
-  const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/main/";
+  const RAW_JSON_BASE = "https://raw.githubusercontent.com/Benkyokurabu/student-calendar/g10-live-20261120/";
 
   async function fetchJsonAny(candidates) {
     for (const base of candidates) {
@@ -836,7 +837,7 @@
     const legacyOverrideLatestFile = "recording_overrides_latest.json";
     const overrideMonthlyFile = `zoom_recording_overrides_${ym}.json`;
     const legacyOverrideMonthlyFile = `recording_overrides_${ym}.json`;
-    const publicationRequest = fetchNewestJsonAny(["https://line-check-system.vercel.app/api/recordings/publication"]);
+    const publicationRequest = bentanPublication(fetchNewestJsonAny);
     const [monthly, latest, overrideLatest, overrideMonthly, releaseState, publicationState, emergencyState] = await Promise.all([
       fetchNewestJsonAny([monthlyFile, rawJsonUrl(monthlyFile)]),
       fetchNewestJsonAny([latestFile, rawJsonUrl(latestFile)]),

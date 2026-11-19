@@ -7,7 +7,7 @@ const month = "2026-11";
 const row = { date: month + "-02", time: "5:00～6:00", campus: "hon", groupKey: "hon_j1_S_math" };
 function setup(responder, overrides = {}) {
   const calls = [];
-  const context = { Intl, Date, AbortSignal, Map, setInterval, setTimeout, clearTimeout, fetch: async (url, options) => {
+  const context = { bentanApiFetchOptions: (url,options)=>options, bentanApiUrl: async route => "https://g10.example.invalid" + route, Intl, Date, AbortSignal, Map, setInterval, setTimeout, clearTimeout, fetch: async (url, options) => {
     calls.push({ url, options });
     return responder(url);
   }, ...overrides };

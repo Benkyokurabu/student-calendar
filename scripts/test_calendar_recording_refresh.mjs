@@ -9,7 +9,7 @@ const normalizeEnd=html.indexOf('\n  async function loadRecordingsSafe(',normali
 assert(start>=0&&end>start&&normalizeStart>=0&&normalizeEnd>normalizeStart);
 const key='2026-11-02|6:35～8:05|minami|minami_j1_S_math|1';
 let tick,rendered=0,monthly=null,latest=null;
-const ctx={document:{hidden:false},currentYM:'2026-11',recordingsLoadedYM:'2026-11',publicationRules:[],publicationAvailable:false,journalAvailable:true,journalEntries:{},emergencyRecordings:null,zoomRecordingEntries:{},
+const ctx={bentanPublication: loader => loader(["https://g10.example.invalid/api/recordings/publication"]),document:{hidden:false},currentYM:'2026-11',recordingsLoadedYM:'2026-11',publicationRules:[],publicationAvailable:false,journalAvailable:true,journalEntries:{},emergencyRecordings:null,zoomRecordingEntries:{},
  rawJsonUrl:name=>'raw/'+name,setInterval:fn=>{tick=fn;},renderAll:()=>{rendered++;},updateDetailNotice:()=>{},loadJournalSafe:async()=>{},
  fetchNewestJsonAny:async names=>names[0].includes('/publication')?{rules:[{status:'hidden',eventKeys:[key]}]}:names[0].startsWith('recording_emergency_')?null:names[0]==='zoom_recording_urls_latest.json'?latest:monthly};
 vm.createContext(ctx);vm.runInContext(html.slice(normalizeStart,normalizeEnd)+html.slice(start,end),ctx);
