@@ -18,7 +18,11 @@ import json
 import os
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
+
+from journal_pc_upload import (MANIFEST, freeze_download, guarded_upload,
+    isolated_download_dir, operation_lock)
 
 # rclone リモート名（rclone config で設定した名前）
 RCLONE_REMOTE = "onedrive"
@@ -26,8 +30,9 @@ RCLONE_REMOTE = "onedrive"
 # OneDrive上の日誌フォルダパス
 CLOUD_JOURNAL_PATH = "●勉強クラブ共有/09　授業日誌"
 
-# ローカルのダウンロード先（スクリプトと同じフォルダの _cloud_journal）
-DEFAULT_LOCAL_DIR = Path(__file__).parent / "_cloud_journal"
+# Legacy explicit-upload location. New downloads always use isolated temp dirs.
+DEFAULT_LOCAL_DIR = Path(tempfile.gettempdir()) / "benkyo_club_cloud_journal"
+_LAST_DOWNLOAD_DIR = None
 
 # OneDrive は「:」をフォルダ名に使えるが、Windows は使えない。rclone は
 # OneDrive 上の「:」を Windows 側では U+201B + U+FF1A として可逆変換する。
@@ -144,6 +149,19 @@ def validate_remote_tree_names(rclone: str, remote_path: str) -> None:
 
 
 def download_journal(local_dir: Path = None, exclude_backup: bool = True) -> Path:
+    """Download to an isolated session and freeze originals before editing."""
+    global _LAST_DOWNLOAD_DIR
+    _LAST_DOWNLOAD_DIR = None
+    root = Path(local_dir) if local_dir is not None else isolated_download_dir()
+    root.mkdir(parents=True, exist_ok=True)
+    with operation_lock(root):
+        (root / MANIFEST).unlink(missing_ok=True)
+        result = _download_journal_to(root, exclude_backup)
+    _LAST_DOWNLOAD_DIR = result
+    return result
+
+
+def _download_journal_to(local_dir: Path, exclude_backup: bool = True) -> Path:
     """OneDrive クラウドから授業日誌フォルダをダウンロードする。
 
     Args:
@@ -198,53 +216,26 @@ def download_journal(local_dir: Path = None, exclude_backup: bool = True) -> Pat
     )
     print(f"  → {xlsx_count} 個のExcelファイルをダウンロード済み")
 
+    freeze_download(rclone, remote_path, local_dir)
+    print(f"  → 原本の版・内容を固定済み: {local_dir}")
+
     return local_dir
 
 
 def upload_journal(local_dir: Path = None):
-    """ローカルの変更をOneDriveクラウドにアップロードする。
-    sync_journal_across_campus で変更されたファイルをクラウドに戻す。
-
-    Args:
-        local_dir: アップロード元。未指定時は _cloud_journal/
-    """
-    if local_dir is None:
-        local_dir = DEFAULT_LOCAL_DIR
-
-    if not local_dir.exists():
-        print("  [SKIP] アップロード元フォルダがありません")
-        return
-
-    validate_cloud_tree_names(local_dir)
-
-    rclone = find_rclone()
-    remote_path = f"{RCLONE_REMOTE}:{CLOUD_JOURNAL_PATH}"
-
-    validate_remote_tree_names(rclone, remote_path)
-
-    cmd = [
-        rclone, "copy",
-        str(local_dir),
-        remote_path,
-        "--transfers", "8",
-        "--checkers", "16",
-        "--update",  # 新しいファイルのみアップロード
-        "--exclude", "_backup*/**",
-        "--exclude", "**/_backup*/**",
-        "--exclude", "退避*/**",
-        "--exclude", "**/退避/**",
-    ]
-
-    print(f"  rclone: {local_dir} → {remote_path}")
-    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
-
-    if result.returncode != 0:
-        print(f"  [ERROR] rclone upload 失敗: {result.stderr.strip()}")
-        raise RuntimeError(f"rclone upload failed (exit {result.returncode})")
-
-    # 書き込み後にも再監査し、表記違いが生じていないことを確かめる。
-    validate_remote_tree_names(rclone, remote_path)
-    print("  → アップロード完了（OneDriveフォルダ名の再監査済み）")
+    """Write only the original version captured by this download session."""
+    root = Path(local_dir) if local_dir is not None else (_LAST_DOWNLOAD_DIR or DEFAULT_LOCAL_DIR)
+    if not root.is_dir():
+        raise RuntimeError("原本取得時の作業フォルダがないため、書き戻しを停止しました。")
+    with operation_lock(root):
+        validate_cloud_tree_names(root)
+        rclone = find_rclone()
+        remote_path = f"{RCLONE_REMOTE}:{CLOUD_JOURNAL_PATH}"
+        validate_remote_tree_names(rclone, remote_path)
+        result = guarded_upload(rclone, remote_path, root)
+        validate_remote_tree_names(rclone, remote_path)
+    print(f"  → 条件付き保存・再取得検証完了（更新{result['uploaded']}冊）")
+    return result
 
 
 if __name__ == "__main__":

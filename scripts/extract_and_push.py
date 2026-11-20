@@ -238,7 +238,7 @@ def main():
     if pull_pre.returncode == 0:
         print("  → 最新に同期しました。")
     else:
-        print(f"  [WARN] git pull 失敗（続行）: {pull_pre.stderr.strip()}")
+        raise RuntimeError("公開元の最新状態を取得できないため、日誌更新を停止しました。")
     print()
 
     # --- 0. rclone でクラウドから日誌Excelをダウンロード ---
@@ -249,11 +249,9 @@ def main():
         cloud_journal_dir = download_journal()
         print()
     except FileNotFoundError as e:
-        print(f"[0/5] rclone 未設定のためローカル同期フォルダを使用: {e}")
-        print()
+        raise RuntimeError("本番日誌を取得できないため、古い同期コピーを使わず停止しました。") from e
     except Exception as e:
-        print(f"[0/5] クラウドダウンロード失敗。ローカル同期フォルダを使用: {e}")
-        print()
+        raise RuntimeError("本番日誌の原本・版を確定できないため、公開を停止しました。") from e
 
     # --- 1. スケジュールJSON再生成 ---
     print("[1/5] スケジュールExcelから JSON を生成中...")
@@ -351,7 +349,8 @@ def main():
         try:
             upload_journal(cloud_journal_dir)
         except Exception as e:
-            print(f"  [WARN] アップロード失敗: {e}")
+            print(f"  [ERROR] 原本保存を確認できないため、公開を停止しました: {e}")
+            raise
         print()
 
     # --- 3.5. 日誌データ マージ ---

@@ -60,6 +60,9 @@ env:
 
 jobs:
   update:
+    # Code pushes run the independent regression workflow. They must never
+    # start original workbook maintenance during a teacher's lesson.
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     # A next-month rollout rewrites many workbooks. The old 60-minute cap
     # cancelled the job before the upload step, so a workbook that had been
