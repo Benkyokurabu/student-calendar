@@ -5,7 +5,14 @@ const html=readFileSync(new URL('../lesson_prep.html',import.meta.url),'utf8');
 const script=html.match(/<script>([\s\S]*?)<\/script>/)[1].replace(/\/\* ====== 起動 ====== \*\/[\s\S]*$/,'');
 const group='minami_j3_A_math', key='2026-10-24|8:25～9:55|minami|'+group+'|1';
 const elements={datePicker:{value:'2026-10-28',addEventListener(){}},teacherSelect:{value:'工藤'}};
-const context={document:{getElementById:id=>elements[id],addEventListener(){},body:{classList:{add(){}}}},location:{search:''},localStorage:{getItem:()=>null},URLSearchParams,fetch:async()=>null};
+const manifestUrl='https://fixture.invalid/student-calendar/bentan-endpoints.json';
+const endpointManifest=JSON.parse(readFileSync(new URL('../bentan-endpoints.json',import.meta.url),'utf8'));
+const context={document:{currentScript:{src:'https://fixture.invalid/student-calendar/bentan-endpoints.js'},getElementById:id=>elements[id],addEventListener(){},body:{classList:{add(){}}}},location:{search:''},localStorage:{getItem:()=>null},URL,URLSearchParams,
+  fetch:async url=>{assert.equal(String(url),manifestUrl,'the fixture must load only the local endpoint manifest');return {ok:true,json:async()=>endpointManifest};}};
+context.window=context;
+// Match the real page's external script; do not replace its fetch policy with a stub.
+runInNewContext(readFileSync(new URL('../bentan-endpoints.js',import.meta.url),'utf8'),context);
+await context.bentanEndpointOrigins();
 runInNewContext(script,context);
 runInNewContext("buildTeacherList=()=>{};render=()=>{};journalData={month:'2026-10',generatedAt:'2026-10-23T00:00:00Z',entries:{}};journalMap={slots:{}}",context);
 const next={month:'2026-10',generatedAt:'2026-10-27T12:26:11Z',entries:{[key]:{teacher:'工藤',content:'中点連結定理'}}};
