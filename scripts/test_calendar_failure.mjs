@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';import http from 'node:http';import path from 'node:path';import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 const root=fileURLToPath(new URL('../',import.meta.url));
+const endpointManifest=JSON.parse(await fs.readFile(path.join(root,'bentan-endpoints.json'),'utf8'));
 const server=http.createServer(async(req,res)=>{try{const f=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!f.startsWith(root))throw Error();res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[path.extname(f)]||'application/json');res.end(await fs.readFile(f));}catch{res.writeHead(404);res.end();}});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const base=`http://127.0.0.1:${server.address().port}`;
 const browser=await chromium.launch({headless:true,...(process.env.CALENDAR_TEST_CHANNEL?{channel:process.env.CALENDAR_TEST_CHANNEL}:{})});
@@ -21,6 +22,7 @@ try{for(const width of [390,1280]){
    publicationRequests++;if(unavailable)return new Promise(()=>{});return route.fulfill({json:{rules:[]}});
   }
   const file=path.basename(u.pathname);
+  if(file==='bentan-endpoints.json')return route.fulfill({json:endpointManifest});
   if(file.endsWith('.json')){
    const data=file.startsWith('schedule_')?rows:file.startsWith('journal_')?{entries:Object.fromEntries(rows.map(r=>[key(r),{content:unavailable?'テスト用の指導内容':'更新後の指導内容',homework:[unavailable?'テスト用の宿題':'更新後の宿題'],recordingUrl:'https://example.test/journal'}]))}
     :file.startsWith('zoom_recording_urls_')?{entries:Object.fromEntries(rows.map(r=>[key(r),{url:'https://example.test/recording'}]))}:file==='recording_release.json'?{rules:[]}:{};

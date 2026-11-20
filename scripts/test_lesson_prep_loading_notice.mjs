@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
+const endpointManifest=JSON.parse(await fs.readFile(path.join(root,'bentan-endpoints.json'),'utf8'));
 const month='2026-11';
 const row=ym=>({date:ym+'-02',time:'18:00～19:00',campus:'hon',groupKey:'hon_j1_A_math',grade:'j1',class:'A',subject:'math',room:'1',teacher:'工藤'});
 const payload=ym=>({month:ym,count:1,schedule:[row(ym)],teacherSchedule:{items:[row(ym)]}});
@@ -30,6 +31,7 @@ try{
   const gate=new Promise(resolve=>{finish=resolve;});
   await page.route('**/*',async route=>{
    const url=new URL(route.request().url()),file=path.basename(url.pathname);
+   if(file==='bentan-endpoints.json')return route.fulfill({json:endpointManifest});
    if(url.pathname==='/api/schedule/calendar'){
     liveRequests++;
     const ym=url.searchParams.get('month');
@@ -85,7 +87,10 @@ try{
    assert.deepEqual(await page.evaluate(()=>window.visibleScheduleWarnings),[]);
    const reads=liveRequests;
    const retried=page.waitForRequest(request=>request.url().includes('/api/schedule/calendar'));
-   await page.clock.runFor(60_001);await retried;
+   await page.clock.runFor(60_001);
+   const retryResponse=await (await retried).response();
+   assert(retryResponse&&retryResponse.status()===503,'the retried source must return the mocked outage');
+   await retryResponse.finished();
    assert(liveRequests>reads,'the normal one-minute reconnection is preserved');
    assert.equal(await notice.count(),0,'automatic retries must also remain silent');
   }
