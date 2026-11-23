@@ -2,7 +2,7 @@
 import re
 from datetime import date,timedelta
 
-def previous_class_sessions(sheet):
+def _counter_rows(sheet):
     from export_by_grade_subject import _chain_formula
     from openpyxl.utils import get_column_letter
     def read(row,column):
@@ -11,7 +11,7 @@ def previous_class_sessions(sheet):
     headers=sorted(c for (r,c),cell in sheet._cells.items() if r==6 and cell.value=='クラス')
     columns=headers or list(range(2,min(max(sheet.max_column,2),211)+1,10))
     base='HD2' if len(headers)>=17 or read(2,212) is not None else 'FG2'
-    counters=[];addresses=[];last={}
+    counters=[];addresses=[];result=[]
     for left in columns:
         address=get_column_letter(left+4)+'2';value=read(2,left+4)
         if isinstance(value,str) and value.startswith('='):
@@ -25,13 +25,29 @@ def previous_class_sessions(sheet):
                 value=numeric+1 if numeric is not None else read(2,212 if base=='HD2' else 163)
             elif isinstance(previous,(int,float)):value=previous+1
             else:raise ValueError('Cannot read previous class annual session')
+        if isinstance(value,str) and value.strip().isdigit():value=int(value.strip())
+        if isinstance(value,(int,float)) and (not float(value).is_integer() or value<1 or value>10000):
+            raise ValueError(f'{sheet.title}!{address}: annual session must be a positive integer')
         counters.append(value);addresses.append(address)
-        if not isinstance(value,(int,float)):continue
+        result.append((left,value))
+    return result
+
+def class_session_entries(sheet):
+    def read(row,column):
+        cell=sheet._cells.get((row,column))
+        return cell.value if cell is not None else None
+    result={k:[] for k in ('S','A','B')}
+    for left,value in _counter_rows(sheet):
         for klass,top in [('S',6),('A',26),('B',46)]:
             day=read(top+5,left)
             label=read(top+1,left)
-            if day not in (None,'') and label!='特':last[klass]=int(value)
-    return last
+            if day in (None,'') or label=='特' or value=='特':continue
+            if not isinstance(value,(int,float)):raise ValueError('A populated normal lesson has no valid annual session')
+            result[klass].append({'counter':int(value),'day':day,'column':left})
+    return result
+
+def previous_class_sessions(sheet):
+    return {k:entries[-1]['counter'] for k,entries in class_session_entries(sheet).items() if entries}
 
 def align_new_month(sheet,month,classes,explicit=None):
     from export_by_grade_subject import patch_counter_formulas

@@ -47,4 +47,25 @@ class ClassAlignmentTests(unittest.TestCase):
         prev['B31']=None
         with self.assertRaises(ValueError):align_new_month(out,12,classes)
 
+    def test_human_override_of_start_is_the_source_of_truth(self):
+        wb,prev,out,classes=self.fixture()
+        prev['F2']=60;prev['HD2']=60
+        self.assertEqual(align_new_month(out,12,classes),{'S':1,'A':0,'B':0})
+        self.assertEqual(out['F2'].value,61)
+
+    def test_human_override_of_a_later_counter_is_used(self):
+        wb,prev,out,classes=self.fixture()
+        prev['P2']=47
+        self.assertEqual(align_new_month(out,12,classes),{'S':4,'A':0,'B':0})
+        rows=_build_merged_slots(classes,['S','A','B'],align_new_month(out,12,classes))
+        self.assertIs(rows[0]['S'],_GRAY_PLACEHOLDER)
+        self.assertEqual(out['F2'].value,44)
+
+    def test_integer_text_is_supported_and_fractional_sessions_are_rejected(self):
+        wb,prev,out,classes=self.fixture()
+        prev['P2']='４７'
+        self.assertEqual(align_new_month(out,12,classes)['S'],4)
+        prev['P2']=47.5
+        with self.assertRaises(ValueError):align_new_month(out,12,classes)
+
 if __name__=='__main__':unittest.main()
