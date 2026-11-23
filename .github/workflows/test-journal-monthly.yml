@@ -1,0 +1,28 @@
+name: Test scoped monthly journal creation
+on:
+  push:
+    paths:
+      - scripts/bentan_monthly_create.py
+      - scripts/journal_month_workbook.py
+      - scripts/journal_class_alignment.py
+      - scripts/test_bentan_monthly_create.py
+      - scripts/test_journal_month_workbook.py
+      - scripts/test_journal_class_alignment.py
+      - .github/workflows/bentan-journal-management.yml
+      - .github/workflows/test-journal-monthly.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  boundaries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl==3.1.5 requests==2.32.5 lxml==6.1.0
+      - run: python -m unittest test_bentan_monthly_create test_journal_month_workbook test_journal_class_alignment test_bentan_journal_operation test_safe_journal_upload
+        working-directory: scripts
+        env:
+          BENTAN_PUBLICATION_BRANCH: main

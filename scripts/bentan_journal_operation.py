@@ -153,6 +153,9 @@ def main():
     scripts = Path(__file__).resolve().parent
     repo = scripts.parent
     require_publication_branch(repo)
+    if operation in ('preview','create'):
+        from bentan_monthly_create import run_month_creation
+        return run_month_creation(scripts,repo,operation,month,request_id,notify)
     os.chdir(scripts)
     work = scripts / '_bentan_operation'
     work.mkdir()
