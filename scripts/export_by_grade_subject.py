@@ -555,6 +555,8 @@ def _build_merged_slots(classes: dict, order: List[str],
 
 def fill_sheet_main(ws_out, target_month: int, classes: dict, *, teacher_blank: bool = False,
                     prepend_gray: Optional[Dict[str, int]] = None):
+    from journal_class_alignment import align_new_month
+    prepend_gray = align_new_month(ws_out, target_month, classes, prepend_gray)
     base_top = 6
     order = ["S", "A", "B"]
     idx = {k: i for i, k in enumerate(order)}

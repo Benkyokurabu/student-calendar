@@ -1,0 +1,22 @@
+name: Test journal class session alignment
+on:
+  push:
+    paths:
+      - scripts/journal_class_alignment.py
+      - scripts/export_by_grade_subject.py
+      - scripts/test_journal_class_alignment.py
+      - .github/workflows/test-journal-class-alignment.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python -m unittest test_journal_class_alignment test_same_day_slot_order test_journal_month_week_blank test_journal_counter_headers
+        working-directory: scripts
