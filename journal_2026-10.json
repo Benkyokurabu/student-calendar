@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "generatedAt": "2026-11-27T05:20:07",
+  "generatedAt": "2026-11-28T03:18:52",
   "entries": {
     "2026-10-01|4:55～6:15|hon|hon_e4_A_arith|3": {
       "content": "まとめ　四角形",
@@ -9518,8 +9518,8 @@
       }
     },
     "2026-10-23|4:55～6:15|hon|hon_e6_S_arith|1": {
-      "content": "",
-      "page": "",
+      "content": "反比例・まとめ",
+      "page": "ｐ102～103",
       "report": "",
       "recordingUrl": "",
       "teacher": "治彦",
@@ -9529,7 +9529,9 @@
       "sessionNumber": "34",
       "monthNum": "10",
       "weekNum": "4",
-      "homework": [],
+      "homework": [
+        "ｐ113～117"
+      ],
       "prevEntry": {
         "content": "比例・反比例①～③",
         "page": "ｐ100～102",
